@@ -1,0 +1,5734 @@
+{
+  "captures": {
+    "9.0": true
+  },
+  "frames": [
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 14.236,
+      "physics_ms": 5.382,
+      "primitives": 8455142.0,
+      "process_ms": 2.87,
+      "simulation_s": 3.00999999999996,
+      "wall_usec": 3601037
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 9.604,
+      "physics_ms": 5.382,
+      "primitives": 8455142.0,
+      "process_ms": 2.87,
+      "simulation_s": 3.01999999999996,
+      "wall_usec": 3610641
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 9.226,
+      "physics_ms": 5.382,
+      "primitives": 8455142.0,
+      "process_ms": 2.87,
+      "simulation_s": 3.02999999999996,
+      "wall_usec": 3619867
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 9.173,
+      "physics_ms": 5.382,
+      "primitives": 8455142.0,
+      "process_ms": 2.87,
+      "simulation_s": 3.03999999999996,
+      "wall_usec": 3629040
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 9.198,
+      "physics_ms": 5.382,
+      "primitives": 8455142.0,
+      "process_ms": 2.87,
+      "simulation_s": 3.04999999999996,
+      "wall_usec": 3638238
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 9.15,
+      "physics_ms": 5.382,
+      "primitives": 8455142.0,
+      "process_ms": 2.87,
+      "simulation_s": 3.05999999999996,
+      "wall_usec": 3647388
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 9.12,
+      "physics_ms": 5.382,
+      "primitives": 8455142.0,
+      "process_ms": 2.87,
+      "simulation_s": 3.06999999999996,
+      "wall_usec": 3656508
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 5.255,
+      "physics_ms": 5.382,
+      "primitives": 8455142.0,
+      "process_ms": 2.87,
+      "simulation_s": 3.07499999999996,
+      "wall_usec": 3661763
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 5.168,
+      "physics_ms": 5.382,
+      "primitives": 8455142.0,
+      "process_ms": 2.87,
+      "simulation_s": 3.07999999999996,
+      "wall_usec": 3666931
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 5.128,
+      "physics_ms": 5.382,
+      "primitives": 8455142.0,
+      "process_ms": 2.87,
+      "simulation_s": 3.08499999999996,
+      "wall_usec": 3672059
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 5.225,
+      "physics_ms": 5.382,
+      "primitives": 8455142.0,
+      "process_ms": 2.87,
+      "simulation_s": 3.08999999999996,
+      "wall_usec": 3677284
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 9.214,
+      "physics_ms": 5.382,
+      "primitives": 8455142.0,
+      "process_ms": 2.87,
+      "simulation_s": 3.09999999999996,
+      "wall_usec": 3686498
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 5.453,
+      "physics_ms": 5.382,
+      "primitives": 8455142.0,
+      "process_ms": 2.87,
+      "simulation_s": 3.10499999999996,
+      "wall_usec": 3691951
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 5.529,
+      "physics_ms": 5.382,
+      "primitives": 8455142.0,
+      "process_ms": 2.87,
+      "simulation_s": 3.10999999999996,
+      "wall_usec": 3697480
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 9.337,
+      "physics_ms": 5.382,
+      "primitives": 8455142.0,
+      "process_ms": 2.87,
+      "simulation_s": 3.11999999999996,
+      "wall_usec": 3706817
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 5.295,
+      "physics_ms": 5.382,
+      "primitives": 8455142.0,
+      "process_ms": 2.87,
+      "simulation_s": 3.12499999999996,
+      "wall_usec": 3712112
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 9.281,
+      "physics_ms": 5.382,
+      "primitives": 8455142.0,
+      "process_ms": 2.87,
+      "simulation_s": 3.13499999999996,
+      "wall_usec": 3721393
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 5.313,
+      "physics_ms": 5.382,
+      "primitives": 8455142.0,
+      "process_ms": 2.87,
+      "simulation_s": 3.13999999999996,
+      "wall_usec": 3726706
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 5.537,
+      "physics_ms": 5.382,
+      "primitives": 8455142.0,
+      "process_ms": 2.87,
+      "simulation_s": 3.14499999999996,
+      "wall_usec": 3732243
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 9.423,
+      "physics_ms": 5.382,
+      "primitives": 8455142.0,
+      "process_ms": 2.87,
+      "simulation_s": 3.15499999999995,
+      "wall_usec": 3741666
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 5.528,
+      "physics_ms": 5.382,
+      "primitives": 8455142.0,
+      "process_ms": 2.87,
+      "simulation_s": 3.15999999999995,
+      "wall_usec": 3747194
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 9.722,
+      "physics_ms": 5.382,
+      "primitives": 8455142.0,
+      "process_ms": 2.87,
+      "simulation_s": 3.16999999999995,
+      "wall_usec": 3756916
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 9.893,
+      "physics_ms": 5.382,
+      "primitives": 8455142.0,
+      "process_ms": 2.87,
+      "simulation_s": 3.17999999999995,
+      "wall_usec": 3766809
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 9.902,
+      "physics_ms": 5.382,
+      "primitives": 8455142.0,
+      "process_ms": 2.87,
+      "simulation_s": 3.18999999999995,
+      "wall_usec": 3776711
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 10.332,
+      "physics_ms": 5.382,
+      "primitives": 8455142.0,
+      "process_ms": 2.87,
+      "simulation_s": 3.19999999999995,
+      "wall_usec": 3787043
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 12.044,
+      "physics_ms": 5.382,
+      "primitives": 8455142.0,
+      "process_ms": 2.87,
+      "simulation_s": 3.20999999999995,
+      "wall_usec": 3799087
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 10.154,
+      "physics_ms": 5.382,
+      "primitives": 8455142.0,
+      "process_ms": 2.87,
+      "simulation_s": 3.21999999999995,
+      "wall_usec": 3809241
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 9.57,
+      "physics_ms": 5.382,
+      "primitives": 8455142.0,
+      "process_ms": 2.87,
+      "simulation_s": 3.22999999999995,
+      "wall_usec": 3818811
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 9.584,
+      "physics_ms": 5.382,
+      "primitives": 8455142.0,
+      "process_ms": 2.87,
+      "simulation_s": 3.23999999999995,
+      "wall_usec": 3828395
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 9.406,
+      "physics_ms": 5.382,
+      "primitives": 8455142.0,
+      "process_ms": 2.87,
+      "simulation_s": 3.24999999999995,
+      "wall_usec": 3837801
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 9.179,
+      "physics_ms": 5.382,
+      "primitives": 8455142.0,
+      "process_ms": 2.87,
+      "simulation_s": 3.25999999999995,
+      "wall_usec": 3846980
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 9.433,
+      "physics_ms": 5.382,
+      "primitives": 8455142.0,
+      "process_ms": 2.87,
+      "simulation_s": 3.26999999999995,
+      "wall_usec": 3856413
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 5.297,
+      "physics_ms": 5.382,
+      "primitives": 8455142.0,
+      "process_ms": 2.87,
+      "simulation_s": 3.27499999999995,
+      "wall_usec": 3861710
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 5.342,
+      "physics_ms": 5.382,
+      "primitives": 8455142.0,
+      "process_ms": 2.87,
+      "simulation_s": 3.27999999999995,
+      "wall_usec": 3867052
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 5.211,
+      "physics_ms": 5.382,
+      "primitives": 8455142.0,
+      "process_ms": 2.87,
+      "simulation_s": 3.28499999999995,
+      "wall_usec": 3872263
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 9.056,
+      "physics_ms": 5.382,
+      "primitives": 8455142.0,
+      "process_ms": 2.87,
+      "simulation_s": 3.29499999999995,
+      "wall_usec": 3881319
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 5.488,
+      "physics_ms": 5.382,
+      "primitives": 8455142.0,
+      "process_ms": 2.87,
+      "simulation_s": 3.29999999999995,
+      "wall_usec": 3886807
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 5.286,
+      "physics_ms": 5.382,
+      "primitives": 8455142.0,
+      "process_ms": 2.87,
+      "simulation_s": 3.30499999999995,
+      "wall_usec": 3892093
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 5.411,
+      "physics_ms": 5.382,
+      "primitives": 8455142.0,
+      "process_ms": 2.87,
+      "simulation_s": 3.30999999999995,
+      "wall_usec": 3897504
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 9.433,
+      "physics_ms": 5.382,
+      "primitives": 8455142.0,
+      "process_ms": 2.87,
+      "simulation_s": 3.31999999999995,
+      "wall_usec": 3906937
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 5.278,
+      "physics_ms": 5.382,
+      "primitives": 8455142.0,
+      "process_ms": 2.87,
+      "simulation_s": 3.32499999999995,
+      "wall_usec": 3912215
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 9.364,
+      "physics_ms": 5.382,
+      "primitives": 8455142.0,
+      "process_ms": 2.87,
+      "simulation_s": 3.33499999999995,
+      "wall_usec": 3921579
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 5.376,
+      "physics_ms": 5.382,
+      "primitives": 8455142.0,
+      "process_ms": 2.87,
+      "simulation_s": 3.33999999999995,
+      "wall_usec": 3926955
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 9.395,
+      "physics_ms": 5.382,
+      "primitives": 8455142.0,
+      "process_ms": 2.87,
+      "simulation_s": 3.34999999999995,
+      "wall_usec": 3936350
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 5.373,
+      "physics_ms": 5.382,
+      "primitives": 8455142.0,
+      "process_ms": 2.87,
+      "simulation_s": 3.35499999999995,
+      "wall_usec": 3941723
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 5.272,
+      "physics_ms": 5.382,
+      "primitives": 8455142.0,
+      "process_ms": 2.87,
+      "simulation_s": 3.35999999999995,
+      "wall_usec": 3946995
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 5.302,
+      "physics_ms": 5.382,
+      "primitives": 8455142.0,
+      "process_ms": 2.87,
+      "simulation_s": 3.36499999999995,
+      "wall_usec": 3952297
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 9.145,
+      "physics_ms": 5.382,
+      "primitives": 8455142.0,
+      "process_ms": 2.87,
+      "simulation_s": 3.37499999999995,
+      "wall_usec": 3961442
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 10.049,
+      "physics_ms": 5.382,
+      "primitives": 8455142.0,
+      "process_ms": 2.87,
+      "simulation_s": 3.38499999999995,
+      "wall_usec": 3971491
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 11.604,
+      "physics_ms": 5.382,
+      "primitives": 8455142.0,
+      "process_ms": 2.87,
+      "simulation_s": 3.39499999999995,
+      "wall_usec": 3983095
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 10.77,
+      "physics_ms": 5.382,
+      "primitives": 8455142.0,
+      "process_ms": 2.87,
+      "simulation_s": 3.40499999999995,
+      "wall_usec": 3993865
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 11.473,
+      "physics_ms": 5.382,
+      "primitives": 8455142.0,
+      "process_ms": 2.87,
+      "simulation_s": 3.41499999999995,
+      "wall_usec": 4005338
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 10.548,
+      "physics_ms": 5.382,
+      "primitives": 8455142.0,
+      "process_ms": 2.87,
+      "simulation_s": 3.42499999999995,
+      "wall_usec": 4015886
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 10.478,
+      "physics_ms": 5.382,
+      "primitives": 8455142.0,
+      "process_ms": 2.87,
+      "simulation_s": 3.43499999999995,
+      "wall_usec": 4026364
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 9.873,
+      "physics_ms": 5.382,
+      "primitives": 8455142.0,
+      "process_ms": 2.87,
+      "simulation_s": 3.44499999999995,
+      "wall_usec": 4036237
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 14.282,
+      "physics_ms": 5.382,
+      "primitives": 8455142.0,
+      "process_ms": 2.87,
+      "simulation_s": 3.45999999999995,
+      "wall_usec": 4050519
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 11.336,
+      "physics_ms": 5.382,
+      "primitives": 8455142.0,
+      "process_ms": 2.87,
+      "simulation_s": 3.46999999999995,
+      "wall_usec": 4061855
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 14.885,
+      "physics_ms": 5.382,
+      "primitives": 8455142.0,
+      "process_ms": 2.87,
+      "simulation_s": 3.48499999999995,
+      "wall_usec": 4076740
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 15.314,
+      "physics_ms": 5.382,
+      "primitives": 8455142.0,
+      "process_ms": 2.87,
+      "simulation_s": 3.49999999999995,
+      "wall_usec": 4092054
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 16.948,
+      "physics_ms": 5.382,
+      "primitives": 8455142.0,
+      "process_ms": 2.87,
+      "simulation_s": 3.51499999999995,
+      "wall_usec": 4109002
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 14.668,
+      "physics_ms": 5.452,
+      "primitives": 8455142.0,
+      "process_ms": 2.259,
+      "simulation_s": 3.52999999999995,
+      "wall_usec": 4123670
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 14.048,
+      "physics_ms": 5.452,
+      "primitives": 8455144.0,
+      "process_ms": 2.259,
+      "simulation_s": 3.54499999999995,
+      "wall_usec": 4137718
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 13.257,
+      "physics_ms": 5.452,
+      "primitives": 8455144.0,
+      "process_ms": 2.259,
+      "simulation_s": 3.55999999999995,
+      "wall_usec": 4150975
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 9.525,
+      "physics_ms": 5.452,
+      "primitives": 8455144.0,
+      "process_ms": 2.259,
+      "simulation_s": 3.56999999999995,
+      "wall_usec": 4160500
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 9.27,
+      "physics_ms": 5.452,
+      "primitives": 8455144.0,
+      "process_ms": 2.259,
+      "simulation_s": 3.57999999999995,
+      "wall_usec": 4169770
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 9.409,
+      "physics_ms": 5.452,
+      "primitives": 8455144.0,
+      "process_ms": 2.259,
+      "simulation_s": 3.58999999999995,
+      "wall_usec": 4179179
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 9.351,
+      "physics_ms": 5.452,
+      "primitives": 8455144.0,
+      "process_ms": 2.259,
+      "simulation_s": 3.59999999999995,
+      "wall_usec": 4188530
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 9.594,
+      "physics_ms": 5.452,
+      "primitives": 8455144.0,
+      "process_ms": 2.259,
+      "simulation_s": 3.60999999999995,
+      "wall_usec": 4198124
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 9.197,
+      "physics_ms": 5.452,
+      "primitives": 8455144.0,
+      "process_ms": 2.259,
+      "simulation_s": 3.61999999999995,
+      "wall_usec": 4207321
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 9.588,
+      "physics_ms": 5.452,
+      "primitives": 8455144.0,
+      "process_ms": 2.259,
+      "simulation_s": 3.62999999999994,
+      "wall_usec": 4216909
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 9.4,
+      "physics_ms": 5.452,
+      "primitives": 8455144.0,
+      "process_ms": 2.259,
+      "simulation_s": 3.63999999999994,
+      "wall_usec": 4226309
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 5.374,
+      "physics_ms": 5.452,
+      "primitives": 8455144.0,
+      "process_ms": 2.259,
+      "simulation_s": 3.64499999999994,
+      "wall_usec": 4231683
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 5.262,
+      "physics_ms": 5.452,
+      "primitives": 8455144.0,
+      "process_ms": 2.259,
+      "simulation_s": 3.64999999999994,
+      "wall_usec": 4236945
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 5.27,
+      "physics_ms": 5.452,
+      "primitives": 8455144.0,
+      "process_ms": 2.259,
+      "simulation_s": 3.65499999999994,
+      "wall_usec": 4242215
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 9.288,
+      "physics_ms": 5.452,
+      "primitives": 8455144.0,
+      "process_ms": 2.259,
+      "simulation_s": 3.66499999999994,
+      "wall_usec": 4251503
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 5.517,
+      "physics_ms": 5.452,
+      "primitives": 8455144.0,
+      "process_ms": 2.259,
+      "simulation_s": 3.66999999999994,
+      "wall_usec": 4257020
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 5.309,
+      "physics_ms": 5.452,
+      "primitives": 8455144.0,
+      "process_ms": 2.259,
+      "simulation_s": 3.67499999999994,
+      "wall_usec": 4262329
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 9.181,
+      "physics_ms": 5.452,
+      "primitives": 8455144.0,
+      "process_ms": 2.259,
+      "simulation_s": 3.68499999999994,
+      "wall_usec": 4271510
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 5.253,
+      "physics_ms": 5.452,
+      "primitives": 8455144.0,
+      "process_ms": 2.259,
+      "simulation_s": 3.68999999999994,
+      "wall_usec": 4276763
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 5.277,
+      "physics_ms": 5.452,
+      "primitives": 8455144.0,
+      "process_ms": 2.259,
+      "simulation_s": 3.69499999999994,
+      "wall_usec": 4282040
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 5.205,
+      "physics_ms": 5.452,
+      "primitives": 8455144.0,
+      "process_ms": 2.259,
+      "simulation_s": 3.69999999999994,
+      "wall_usec": 4287245
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 9.079,
+      "physics_ms": 5.452,
+      "primitives": 8455144.0,
+      "process_ms": 2.259,
+      "simulation_s": 3.70999999999994,
+      "wall_usec": 4296324
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 5.201,
+      "physics_ms": 5.452,
+      "primitives": 8455144.0,
+      "process_ms": 2.259,
+      "simulation_s": 3.71499999999994,
+      "wall_usec": 4301525
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 5.281,
+      "physics_ms": 5.452,
+      "primitives": 8455144.0,
+      "process_ms": 2.259,
+      "simulation_s": 3.71999999999994,
+      "wall_usec": 4306806
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 5.211,
+      "physics_ms": 5.452,
+      "primitives": 8455144.0,
+      "process_ms": 2.259,
+      "simulation_s": 3.72499999999994,
+      "wall_usec": 4312017
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 9.289,
+      "physics_ms": 5.452,
+      "primitives": 8455144.0,
+      "process_ms": 2.259,
+      "simulation_s": 3.73499999999994,
+      "wall_usec": 4321306
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 5.726,
+      "physics_ms": 5.452,
+      "primitives": 8455144.0,
+      "process_ms": 2.259,
+      "simulation_s": 3.73999999999994,
+      "wall_usec": 4327032
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 9.52,
+      "physics_ms": 5.452,
+      "primitives": 8455144.0,
+      "process_ms": 2.259,
+      "simulation_s": 3.74999999999994,
+      "wall_usec": 4336552
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 10.995,
+      "physics_ms": 5.452,
+      "primitives": 8455144.0,
+      "process_ms": 2.259,
+      "simulation_s": 3.75999999999994,
+      "wall_usec": 4347547
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 11.705,
+      "physics_ms": 5.452,
+      "primitives": 8455144.0,
+      "process_ms": 2.259,
+      "simulation_s": 3.76999999999994,
+      "wall_usec": 4359252
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 10.708,
+      "physics_ms": 5.452,
+      "primitives": 8455144.0,
+      "process_ms": 2.259,
+      "simulation_s": 3.77999999999994,
+      "wall_usec": 4369960
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 10.721,
+      "physics_ms": 5.452,
+      "primitives": 8455144.0,
+      "process_ms": 2.259,
+      "simulation_s": 3.78999999999994,
+      "wall_usec": 4380681
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 11.336,
+      "physics_ms": 5.452,
+      "primitives": 8455144.0,
+      "process_ms": 2.259,
+      "simulation_s": 3.79999999999994,
+      "wall_usec": 4392017
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 14.327,
+      "physics_ms": 5.452,
+      "primitives": 8455144.0,
+      "process_ms": 2.259,
+      "simulation_s": 3.81499999999994,
+      "wall_usec": 4406344
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 9.582,
+      "physics_ms": 5.452,
+      "primitives": 8455144.0,
+      "process_ms": 2.259,
+      "simulation_s": 3.82499999999994,
+      "wall_usec": 4415926
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 9.973,
+      "physics_ms": 5.452,
+      "primitives": 8455144.0,
+      "process_ms": 2.259,
+      "simulation_s": 3.83499999999994,
+      "wall_usec": 4425899
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 9.894,
+      "physics_ms": 5.452,
+      "primitives": 8455144.0,
+      "process_ms": 2.259,
+      "simulation_s": 3.84499999999994,
+      "wall_usec": 4435793
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 9.165,
+      "physics_ms": 5.452,
+      "primitives": 8455144.0,
+      "process_ms": 2.259,
+      "simulation_s": 3.85499999999994,
+      "wall_usec": 4444958
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 9.151,
+      "physics_ms": 5.452,
+      "primitives": 8455144.0,
+      "process_ms": 2.259,
+      "simulation_s": 3.86499999999994,
+      "wall_usec": 4454109
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 9.046,
+      "physics_ms": 5.452,
+      "primitives": 8455144.0,
+      "process_ms": 2.259,
+      "simulation_s": 3.87499999999994,
+      "wall_usec": 4463155
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 10.471,
+      "physics_ms": 5.452,
+      "primitives": 8455144.0,
+      "process_ms": 2.259,
+      "simulation_s": 3.88499999999994,
+      "wall_usec": 4473626
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 11.243,
+      "physics_ms": 5.452,
+      "primitives": 8455144.0,
+      "process_ms": 2.259,
+      "simulation_s": 3.89499999999994,
+      "wall_usec": 4484869
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 11.067,
+      "physics_ms": 5.452,
+      "primitives": 8455144.0,
+      "process_ms": 2.259,
+      "simulation_s": 3.90499999999994,
+      "wall_usec": 4495936
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 11.245,
+      "physics_ms": 5.452,
+      "primitives": 8455144.0,
+      "process_ms": 2.259,
+      "simulation_s": 3.91499999999994,
+      "wall_usec": 4507181
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 15.401,
+      "physics_ms": 5.452,
+      "primitives": 8455144.0,
+      "process_ms": 2.259,
+      "simulation_s": 3.92999999999994,
+      "wall_usec": 4522582
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 14.877,
+      "physics_ms": 5.452,
+      "primitives": 8455144.0,
+      "process_ms": 2.259,
+      "simulation_s": 3.94499999999994,
+      "wall_usec": 4537459
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 14.875,
+      "physics_ms": 5.452,
+      "primitives": 8455144.0,
+      "process_ms": 2.259,
+      "simulation_s": 3.95999999999994,
+      "wall_usec": 4552334
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 14.795,
+      "physics_ms": 5.452,
+      "primitives": 8455144.0,
+      "process_ms": 2.259,
+      "simulation_s": 3.97499999999994,
+      "wall_usec": 4567129
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 14.069,
+      "physics_ms": 5.452,
+      "primitives": 8455144.0,
+      "process_ms": 2.259,
+      "simulation_s": 3.98999999999994,
+      "wall_usec": 4581198
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 10.448,
+      "physics_ms": 5.452,
+      "primitives": 8455144.0,
+      "process_ms": 2.259,
+      "simulation_s": 3.99999999999994,
+      "wall_usec": 4591646
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 10.142,
+      "physics_ms": 5.452,
+      "primitives": 8455144.0,
+      "process_ms": 2.259,
+      "simulation_s": 4.00999999999994,
+      "wall_usec": 4601788
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 13.414,
+      "physics_ms": 5.452,
+      "primitives": 8455144.0,
+      "process_ms": 2.259,
+      "simulation_s": 4.02499999999994,
+      "wall_usec": 4615202
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 9.561,
+      "physics_ms": 5.452,
+      "primitives": 8455144.0,
+      "process_ms": 2.259,
+      "simulation_s": 4.03499999999994,
+      "wall_usec": 4624763
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 9.217,
+      "physics_ms": 5.452,
+      "primitives": 8455144.0,
+      "process_ms": 2.259,
+      "simulation_s": 4.04499999999994,
+      "wall_usec": 4633980
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 9.281,
+      "physics_ms": 5.452,
+      "primitives": 8455144.0,
+      "process_ms": 2.259,
+      "simulation_s": 4.05499999999994,
+      "wall_usec": 4643261
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 9.143,
+      "physics_ms": 5.452,
+      "primitives": 8455144.0,
+      "process_ms": 2.259,
+      "simulation_s": 4.06499999999994,
+      "wall_usec": 4652404
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 9.322,
+      "physics_ms": 5.452,
+      "primitives": 8455144.0,
+      "process_ms": 2.259,
+      "simulation_s": 4.07499999999994,
+      "wall_usec": 4661726
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 11.814,
+      "physics_ms": 5.452,
+      "primitives": 8455144.0,
+      "process_ms": 2.259,
+      "simulation_s": 4.08499999999994,
+      "wall_usec": 4673540
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 12.306,
+      "physics_ms": 5.452,
+      "primitives": 8455144.0,
+      "process_ms": 2.259,
+      "simulation_s": 4.09499999999993,
+      "wall_usec": 4685846
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 10.384,
+      "physics_ms": 5.452,
+      "primitives": 8455144.0,
+      "process_ms": 2.259,
+      "simulation_s": 4.10499999999993,
+      "wall_usec": 4696230
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 9.504,
+      "physics_ms": 5.452,
+      "primitives": 8455144.0,
+      "process_ms": 2.259,
+      "simulation_s": 4.11499999999993,
+      "wall_usec": 4705734
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 10.554,
+      "physics_ms": 5.452,
+      "primitives": 8455144.0,
+      "process_ms": 2.259,
+      "simulation_s": 4.12499999999993,
+      "wall_usec": 4716288
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 12.166,
+      "physics_ms": 5.452,
+      "primitives": 8455144.0,
+      "process_ms": 2.259,
+      "simulation_s": 4.13499999999993,
+      "wall_usec": 4728454
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 13.354,
+      "physics_ms": 5.452,
+      "primitives": 8455144.0,
+      "process_ms": 2.259,
+      "simulation_s": 4.14999999999993,
+      "wall_usec": 4741808
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 14.016,
+      "physics_ms": 5.452,
+      "primitives": 8455144.0,
+      "process_ms": 2.259,
+      "simulation_s": 4.16499999999993,
+      "wall_usec": 4755824
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 10.436,
+      "physics_ms": 5.452,
+      "primitives": 8455144.0,
+      "process_ms": 2.259,
+      "simulation_s": 4.17499999999993,
+      "wall_usec": 4766260
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 9.528,
+      "physics_ms": 5.452,
+      "primitives": 8455144.0,
+      "process_ms": 2.259,
+      "simulation_s": 4.18499999999993,
+      "wall_usec": 4775788
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 9.165,
+      "physics_ms": 5.452,
+      "primitives": 8455144.0,
+      "process_ms": 2.259,
+      "simulation_s": 4.19499999999993,
+      "wall_usec": 4784953
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 9.538,
+      "physics_ms": 5.452,
+      "primitives": 8455144.0,
+      "process_ms": 2.259,
+      "simulation_s": 4.20499999999993,
+      "wall_usec": 4794491
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 13.428,
+      "physics_ms": 5.452,
+      "primitives": 8455144.0,
+      "process_ms": 2.259,
+      "simulation_s": 4.21499999999993,
+      "wall_usec": 4807919
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 21.445,
+      "physics_ms": 5.452,
+      "primitives": 8455144.0,
+      "process_ms": 2.259,
+      "simulation_s": 4.22999999999993,
+      "wall_usec": 4829364
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 19.668,
+      "physics_ms": 5.452,
+      "primitives": 8455144.0,
+      "process_ms": 2.259,
+      "simulation_s": 4.24999999999993,
+      "wall_usec": 4849032
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 17.423,
+      "physics_ms": 5.452,
+      "primitives": 8455144.0,
+      "process_ms": 2.259,
+      "simulation_s": 4.26999999999993,
+      "wall_usec": 4866455
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 15.636,
+      "physics_ms": 5.452,
+      "primitives": 8455144.0,
+      "process_ms": 2.259,
+      "simulation_s": 4.28499999999993,
+      "wall_usec": 4882091
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 19.686,
+      "physics_ms": 5.452,
+      "primitives": 8455144.0,
+      "process_ms": 2.259,
+      "simulation_s": 4.30499999999993,
+      "wall_usec": 4901777
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 20.112,
+      "physics_ms": 5.452,
+      "primitives": 8455144.0,
+      "process_ms": 2.259,
+      "simulation_s": 4.32499999999993,
+      "wall_usec": 4921889
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 19.36,
+      "physics_ms": 5.452,
+      "primitives": 8455144.0,
+      "process_ms": 2.259,
+      "simulation_s": 4.34499999999993,
+      "wall_usec": 4941249
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 19.213,
+      "physics_ms": 5.452,
+      "primitives": 8455144.0,
+      "process_ms": 2.259,
+      "simulation_s": 4.36499999999993,
+      "wall_usec": 4960462
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 14.26,
+      "physics_ms": 5.452,
+      "primitives": 8455144.0,
+      "process_ms": 2.259,
+      "simulation_s": 4.37999999999993,
+      "wall_usec": 4974722
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 14.971,
+      "physics_ms": 5.452,
+      "primitives": 8455144.0,
+      "process_ms": 2.259,
+      "simulation_s": 4.39499999999993,
+      "wall_usec": 4989693
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 15.532,
+      "physics_ms": 5.452,
+      "primitives": 8455144.0,
+      "process_ms": 2.259,
+      "simulation_s": 4.40999999999993,
+      "wall_usec": 5005225
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 14.209,
+      "physics_ms": 5.452,
+      "primitives": 8455144.0,
+      "process_ms": 2.259,
+      "simulation_s": 4.42499999999993,
+      "wall_usec": 5019434
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 14.722,
+      "physics_ms": 5.452,
+      "primitives": 8455144.0,
+      "process_ms": 2.259,
+      "simulation_s": 4.43999999999993,
+      "wall_usec": 5034156
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 13.383,
+      "physics_ms": 5.452,
+      "primitives": 8455144.0,
+      "process_ms": 2.259,
+      "simulation_s": 4.45499999999993,
+      "wall_usec": 5047539
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 14.673,
+      "physics_ms": 5.452,
+      "primitives": 8455144.0,
+      "process_ms": 2.259,
+      "simulation_s": 4.46999999999993,
+      "wall_usec": 5062212
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 15.014,
+      "physics_ms": 5.452,
+      "primitives": 8455144.0,
+      "process_ms": 2.259,
+      "simulation_s": 4.48499999999993,
+      "wall_usec": 5077226
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 13.881,
+      "physics_ms": 5.452,
+      "primitives": 8455144.0,
+      "process_ms": 2.259,
+      "simulation_s": 4.49999999999993,
+      "wall_usec": 5091107
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 9.985,
+      "physics_ms": 5.452,
+      "primitives": 8455144.0,
+      "process_ms": 2.259,
+      "simulation_s": 4.50999999999993,
+      "wall_usec": 5101092
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 9.858,
+      "physics_ms": 6.637,
+      "primitives": 8455144.0,
+      "process_ms": 2.31,
+      "simulation_s": 4.51999999999993,
+      "wall_usec": 5110950
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 10.242,
+      "physics_ms": 6.637,
+      "primitives": 8455142.0,
+      "process_ms": 2.31,
+      "simulation_s": 4.52999999999993,
+      "wall_usec": 5121192
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 9.656,
+      "physics_ms": 6.637,
+      "primitives": 8455142.0,
+      "process_ms": 2.31,
+      "simulation_s": 4.53999999999993,
+      "wall_usec": 5130848
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 9.579,
+      "physics_ms": 6.637,
+      "primitives": 8455142.0,
+      "process_ms": 2.31,
+      "simulation_s": 4.54999999999993,
+      "wall_usec": 5140427
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 9.627,
+      "physics_ms": 6.637,
+      "primitives": 8455142.0,
+      "process_ms": 2.31,
+      "simulation_s": 4.55999999999993,
+      "wall_usec": 5150054
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 9.837,
+      "physics_ms": 6.637,
+      "primitives": 8455142.0,
+      "process_ms": 2.31,
+      "simulation_s": 4.56999999999992,
+      "wall_usec": 5159891
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 9.226,
+      "physics_ms": 6.637,
+      "primitives": 8455142.0,
+      "process_ms": 2.31,
+      "simulation_s": 4.57999999999992,
+      "wall_usec": 5169117
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 9.091,
+      "physics_ms": 6.637,
+      "primitives": 8455142.0,
+      "process_ms": 2.31,
+      "simulation_s": 4.58999999999992,
+      "wall_usec": 5178208
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 9.525,
+      "physics_ms": 6.637,
+      "primitives": 8455142.0,
+      "process_ms": 2.31,
+      "simulation_s": 4.59999999999992,
+      "wall_usec": 5187733
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 9.888,
+      "physics_ms": 6.637,
+      "primitives": 8455142.0,
+      "process_ms": 2.31,
+      "simulation_s": 4.60999999999992,
+      "wall_usec": 5197621
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 9.557,
+      "physics_ms": 6.637,
+      "primitives": 8455142.0,
+      "process_ms": 2.31,
+      "simulation_s": 4.61999999999992,
+      "wall_usec": 5207178
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 9.665,
+      "physics_ms": 6.637,
+      "primitives": 8455142.0,
+      "process_ms": 2.31,
+      "simulation_s": 4.62999999999992,
+      "wall_usec": 5216843
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 10.894,
+      "physics_ms": 6.637,
+      "primitives": 8455142.0,
+      "process_ms": 2.31,
+      "simulation_s": 4.63999999999992,
+      "wall_usec": 5227737
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 9.121,
+      "physics_ms": 6.637,
+      "primitives": 8455142.0,
+      "process_ms": 2.31,
+      "simulation_s": 4.64999999999992,
+      "wall_usec": 5236858
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 5.312,
+      "physics_ms": 6.637,
+      "primitives": 8455142.0,
+      "process_ms": 2.31,
+      "simulation_s": 4.65499999999992,
+      "wall_usec": 5242170
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 9.796,
+      "physics_ms": 6.637,
+      "primitives": 8455142.0,
+      "process_ms": 2.31,
+      "simulation_s": 4.66499999999992,
+      "wall_usec": 5251966
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 11.965,
+      "physics_ms": 6.637,
+      "primitives": 8455142.0,
+      "process_ms": 2.31,
+      "simulation_s": 4.67499999999992,
+      "wall_usec": 5263931
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 10.096,
+      "physics_ms": 6.637,
+      "primitives": 8455142.0,
+      "process_ms": 2.31,
+      "simulation_s": 4.68499999999992,
+      "wall_usec": 5274027
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 9.336,
+      "physics_ms": 6.637,
+      "primitives": 8455142.0,
+      "process_ms": 2.31,
+      "simulation_s": 4.69499999999992,
+      "wall_usec": 5283363
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 9.917,
+      "physics_ms": 6.637,
+      "primitives": 8455142.0,
+      "process_ms": 2.31,
+      "simulation_s": 4.70499999999992,
+      "wall_usec": 5293280
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 9.166,
+      "physics_ms": 6.637,
+      "primitives": 8455142.0,
+      "process_ms": 2.31,
+      "simulation_s": 4.71499999999992,
+      "wall_usec": 5302446
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 8.989,
+      "physics_ms": 6.637,
+      "primitives": 8455142.0,
+      "process_ms": 2.31,
+      "simulation_s": 4.72499999999992,
+      "wall_usec": 5311435
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 5.127,
+      "physics_ms": 6.637,
+      "primitives": 8455142.0,
+      "process_ms": 2.31,
+      "simulation_s": 4.72999999999992,
+      "wall_usec": 5316562
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 5.131,
+      "physics_ms": 6.637,
+      "primitives": 8455142.0,
+      "process_ms": 2.31,
+      "simulation_s": 4.73499999999992,
+      "wall_usec": 5321693
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 4.969,
+      "physics_ms": 6.637,
+      "primitives": 8455142.0,
+      "process_ms": 2.31,
+      "simulation_s": 4.73999999999992,
+      "wall_usec": 5326662
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 5.04,
+      "physics_ms": 6.637,
+      "primitives": 8455142.0,
+      "process_ms": 2.31,
+      "simulation_s": 4.74499999999992,
+      "wall_usec": 5331702
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 10.296,
+      "physics_ms": 6.637,
+      "primitives": 8455142.0,
+      "process_ms": 2.31,
+      "simulation_s": 4.75499999999992,
+      "wall_usec": 5341998
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 10.986,
+      "physics_ms": 6.637,
+      "primitives": 8455142.0,
+      "process_ms": 2.31,
+      "simulation_s": 4.76499999999992,
+      "wall_usec": 5352984
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 11.343,
+      "physics_ms": 6.637,
+      "primitives": 8455142.0,
+      "process_ms": 2.31,
+      "simulation_s": 4.77499999999992,
+      "wall_usec": 5364327
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 10.612,
+      "physics_ms": 6.637,
+      "primitives": 8455142.0,
+      "process_ms": 2.31,
+      "simulation_s": 4.78499999999992,
+      "wall_usec": 5374939
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 9.511,
+      "physics_ms": 6.637,
+      "primitives": 8455142.0,
+      "process_ms": 2.31,
+      "simulation_s": 4.79499999999992,
+      "wall_usec": 5384450
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 10.343,
+      "physics_ms": 6.637,
+      "primitives": 8455142.0,
+      "process_ms": 2.31,
+      "simulation_s": 4.80499999999992,
+      "wall_usec": 5394793
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 11.259,
+      "physics_ms": 6.637,
+      "primitives": 8455142.0,
+      "process_ms": 2.31,
+      "simulation_s": 4.81499999999992,
+      "wall_usec": 5406052
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 10.643,
+      "physics_ms": 6.637,
+      "primitives": 8455142.0,
+      "process_ms": 2.31,
+      "simulation_s": 4.82499999999992,
+      "wall_usec": 5416695
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 13.438,
+      "physics_ms": 6.637,
+      "primitives": 8455142.0,
+      "process_ms": 2.31,
+      "simulation_s": 4.83999999999992,
+      "wall_usec": 5430133
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 11.136,
+      "physics_ms": 6.637,
+      "primitives": 8455142.0,
+      "process_ms": 2.31,
+      "simulation_s": 4.84999999999992,
+      "wall_usec": 5441269
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 9.315,
+      "physics_ms": 6.637,
+      "primitives": 8455142.0,
+      "process_ms": 2.31,
+      "simulation_s": 4.85999999999992,
+      "wall_usec": 5450584
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 9.171,
+      "physics_ms": 6.637,
+      "primitives": 8455142.0,
+      "process_ms": 2.31,
+      "simulation_s": 4.86999999999992,
+      "wall_usec": 5459755
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 9.906,
+      "physics_ms": 6.637,
+      "primitives": 8455142.0,
+      "process_ms": 2.31,
+      "simulation_s": 4.87999999999992,
+      "wall_usec": 5469661
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 10.291,
+      "physics_ms": 6.637,
+      "primitives": 8455142.0,
+      "process_ms": 2.31,
+      "simulation_s": 4.88999999999992,
+      "wall_usec": 5479952
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 9.49,
+      "physics_ms": 6.637,
+      "primitives": 8455142.0,
+      "process_ms": 2.31,
+      "simulation_s": 4.89999999999992,
+      "wall_usec": 5489442
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 9.145,
+      "physics_ms": 6.637,
+      "primitives": 8455142.0,
+      "process_ms": 2.31,
+      "simulation_s": 4.90999999999992,
+      "wall_usec": 5498587
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 12.5,
+      "physics_ms": 6.637,
+      "primitives": 8455142.0,
+      "process_ms": 2.31,
+      "simulation_s": 4.91999999999992,
+      "wall_usec": 5511087
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 10.008,
+      "physics_ms": 6.637,
+      "primitives": 8455142.0,
+      "process_ms": 2.31,
+      "simulation_s": 4.92999999999992,
+      "wall_usec": 5521095
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 9.149,
+      "physics_ms": 6.637,
+      "primitives": 8455142.0,
+      "process_ms": 2.31,
+      "simulation_s": 4.93999999999992,
+      "wall_usec": 5530244
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 11.399,
+      "physics_ms": 6.637,
+      "primitives": 8455142.0,
+      "process_ms": 2.31,
+      "simulation_s": 4.94999999999992,
+      "wall_usec": 5541643
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 15.27,
+      "physics_ms": 6.637,
+      "primitives": 8455142.0,
+      "process_ms": 2.31,
+      "simulation_s": 4.96499999999992,
+      "wall_usec": 5556913
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 15.446,
+      "physics_ms": 6.637,
+      "primitives": 8455142.0,
+      "process_ms": 2.31,
+      "simulation_s": 4.97999999999992,
+      "wall_usec": 5572359
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 15.364,
+      "physics_ms": 6.637,
+      "primitives": 8455142.0,
+      "process_ms": 2.31,
+      "simulation_s": 4.99499999999992,
+      "wall_usec": 5587723
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 14.893,
+      "physics_ms": 6.637,
+      "primitives": 8455142.0,
+      "process_ms": 2.31,
+      "simulation_s": 5.00999999999992,
+      "wall_usec": 5602616
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 13.22,
+      "physics_ms": 6.637,
+      "primitives": 8455142.0,
+      "process_ms": 2.31,
+      "simulation_s": 5.02499999999992,
+      "wall_usec": 5615836
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 10.195,
+      "physics_ms": 6.637,
+      "primitives": 8455142.0,
+      "process_ms": 2.31,
+      "simulation_s": 5.03499999999991,
+      "wall_usec": 5626031
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 15.876,
+      "physics_ms": 6.637,
+      "primitives": 8455142.0,
+      "process_ms": 2.31,
+      "simulation_s": 5.04999999999991,
+      "wall_usec": 5641907
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 13.864,
+      "physics_ms": 6.637,
+      "primitives": 8455142.0,
+      "process_ms": 2.31,
+      "simulation_s": 5.06499999999991,
+      "wall_usec": 5655771
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 15.119,
+      "physics_ms": 6.637,
+      "primitives": 8455142.0,
+      "process_ms": 2.31,
+      "simulation_s": 5.07999999999991,
+      "wall_usec": 5670890
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 15.618,
+      "physics_ms": 6.637,
+      "primitives": 8455142.0,
+      "process_ms": 2.31,
+      "simulation_s": 5.09499999999991,
+      "wall_usec": 5686508
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 15.128,
+      "physics_ms": 6.637,
+      "primitives": 8455142.0,
+      "process_ms": 2.31,
+      "simulation_s": 5.10999999999991,
+      "wall_usec": 5701636
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 14.187,
+      "physics_ms": 6.637,
+      "primitives": 8455142.0,
+      "process_ms": 2.31,
+      "simulation_s": 5.12499999999991,
+      "wall_usec": 5715823
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 11.297,
+      "physics_ms": 6.637,
+      "primitives": 8455142.0,
+      "process_ms": 2.31,
+      "simulation_s": 5.13499999999991,
+      "wall_usec": 5727120
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 14.823,
+      "physics_ms": 6.637,
+      "primitives": 8455142.0,
+      "process_ms": 2.31,
+      "simulation_s": 5.14999999999991,
+      "wall_usec": 5741943
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 13.088,
+      "physics_ms": 6.637,
+      "primitives": 8455142.0,
+      "process_ms": 2.31,
+      "simulation_s": 5.16499999999991,
+      "wall_usec": 5755031
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 9.036,
+      "physics_ms": 6.637,
+      "primitives": 8455142.0,
+      "process_ms": 2.31,
+      "simulation_s": 5.17499999999991,
+      "wall_usec": 5764067
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 8.941,
+      "physics_ms": 6.637,
+      "primitives": 8455142.0,
+      "process_ms": 2.31,
+      "simulation_s": 5.18499999999991,
+      "wall_usec": 5773008
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 8.854,
+      "physics_ms": 6.637,
+      "primitives": 8455142.0,
+      "process_ms": 2.31,
+      "simulation_s": 5.19499999999991,
+      "wall_usec": 5781862
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 5.174,
+      "physics_ms": 6.637,
+      "primitives": 8455142.0,
+      "process_ms": 2.31,
+      "simulation_s": 5.19999999999991,
+      "wall_usec": 5787036
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 5.05,
+      "physics_ms": 6.637,
+      "primitives": 8455142.0,
+      "process_ms": 2.31,
+      "simulation_s": 5.20499999999991,
+      "wall_usec": 5792086
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 4.93,
+      "physics_ms": 6.637,
+      "primitives": 8455142.0,
+      "process_ms": 2.31,
+      "simulation_s": 5.20999999999991,
+      "wall_usec": 5797016
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 11.604,
+      "physics_ms": 6.637,
+      "primitives": 8455142.0,
+      "process_ms": 2.31,
+      "simulation_s": 5.21999999999991,
+      "wall_usec": 5808620
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 9.574,
+      "physics_ms": 6.637,
+      "primitives": 8455142.0,
+      "process_ms": 2.31,
+      "simulation_s": 5.22999999999991,
+      "wall_usec": 5818194
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 9.31,
+      "physics_ms": 6.637,
+      "primitives": 8455142.0,
+      "process_ms": 2.31,
+      "simulation_s": 5.23999999999991,
+      "wall_usec": 5827504
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 9.3,
+      "physics_ms": 6.637,
+      "primitives": 8455142.0,
+      "process_ms": 2.31,
+      "simulation_s": 5.24999999999991,
+      "wall_usec": 5836804
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 5.412,
+      "physics_ms": 6.637,
+      "primitives": 8455142.0,
+      "process_ms": 2.31,
+      "simulation_s": 5.25499999999991,
+      "wall_usec": 5842216
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 9.514,
+      "physics_ms": 6.637,
+      "primitives": 8455142.0,
+      "process_ms": 2.31,
+      "simulation_s": 5.26499999999991,
+      "wall_usec": 5851730
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 11.59,
+      "physics_ms": 6.637,
+      "primitives": 8455142.0,
+      "process_ms": 2.31,
+      "simulation_s": 5.27499999999991,
+      "wall_usec": 5863320
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 12.371,
+      "physics_ms": 6.637,
+      "primitives": 8455142.0,
+      "process_ms": 2.31,
+      "simulation_s": 5.28499999999991,
+      "wall_usec": 5875691
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 15.77,
+      "physics_ms": 6.637,
+      "primitives": 8455142.0,
+      "process_ms": 2.31,
+      "simulation_s": 5.29999999999991,
+      "wall_usec": 5891461
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 15.491,
+      "physics_ms": 6.637,
+      "primitives": 8455142.0,
+      "process_ms": 2.31,
+      "simulation_s": 5.31499999999991,
+      "wall_usec": 5906952
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 15.046,
+      "physics_ms": 6.637,
+      "primitives": 8455142.0,
+      "process_ms": 2.31,
+      "simulation_s": 5.32999999999991,
+      "wall_usec": 5921998
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 14.883,
+      "physics_ms": 6.637,
+      "primitives": 8455142.0,
+      "process_ms": 2.31,
+      "simulation_s": 5.34499999999991,
+      "wall_usec": 5936881
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 15.045,
+      "physics_ms": 6.637,
+      "primitives": 8455142.0,
+      "process_ms": 2.31,
+      "simulation_s": 5.35999999999991,
+      "wall_usec": 5951926
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 16.313,
+      "physics_ms": 6.637,
+      "primitives": 8455142.0,
+      "process_ms": 2.31,
+      "simulation_s": 5.37499999999991,
+      "wall_usec": 5968239
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 15.958,
+      "physics_ms": 6.637,
+      "primitives": 8455142.0,
+      "process_ms": 2.31,
+      "simulation_s": 5.38999999999991,
+      "wall_usec": 5984197
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 15.926,
+      "physics_ms": 6.637,
+      "primitives": 8455142.0,
+      "process_ms": 2.31,
+      "simulation_s": 5.40499999999991,
+      "wall_usec": 6000123
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 15.219,
+      "physics_ms": 6.637,
+      "primitives": 8455142.0,
+      "process_ms": 2.31,
+      "simulation_s": 5.41999999999991,
+      "wall_usec": 6015342
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 19.971,
+      "physics_ms": 6.637,
+      "primitives": 8455142.0,
+      "process_ms": 2.31,
+      "simulation_s": 5.43999999999991,
+      "wall_usec": 6035313
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 13.725,
+      "physics_ms": 6.637,
+      "primitives": 8455142.0,
+      "process_ms": 2.31,
+      "simulation_s": 5.45499999999991,
+      "wall_usec": 6049038
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 13.991,
+      "physics_ms": 6.637,
+      "primitives": 8455142.0,
+      "process_ms": 2.31,
+      "simulation_s": 5.46999999999991,
+      "wall_usec": 6063029
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 16.637,
+      "physics_ms": 6.637,
+      "primitives": 8455142.0,
+      "process_ms": 2.31,
+      "simulation_s": 5.48499999999991,
+      "wall_usec": 6079666
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 15.419,
+      "physics_ms": 6.637,
+      "primitives": 8455142.0,
+      "process_ms": 2.31,
+      "simulation_s": 5.4999999999999,
+      "wall_usec": 6095085
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 16.286,
+      "physics_ms": 6.637,
+      "primitives": 8455142.0,
+      "process_ms": 2.31,
+      "simulation_s": 5.5149999999999,
+      "wall_usec": 6111371
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 19.466,
+      "physics_ms": 5.553,
+      "primitives": 8455142.0,
+      "process_ms": 2.425,
+      "simulation_s": 5.5349999999999,
+      "wall_usec": 6130837
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 19.628,
+      "physics_ms": 5.553,
+      "primitives": 8455142.0,
+      "process_ms": 2.425,
+      "simulation_s": 5.5549999999999,
+      "wall_usec": 6150465
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 19.679,
+      "physics_ms": 5.553,
+      "primitives": 8455142.0,
+      "process_ms": 2.425,
+      "simulation_s": 5.5749999999999,
+      "wall_usec": 6170144
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 19.896,
+      "physics_ms": 5.553,
+      "primitives": 8455142.0,
+      "process_ms": 2.425,
+      "simulation_s": 5.5949999999999,
+      "wall_usec": 6190040
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 15.822,
+      "physics_ms": 5.553,
+      "primitives": 8455142.0,
+      "process_ms": 2.425,
+      "simulation_s": 5.6099999999999,
+      "wall_usec": 6205862
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 19.192,
+      "physics_ms": 5.553,
+      "primitives": 8455142.0,
+      "process_ms": 2.425,
+      "simulation_s": 5.6299999999999,
+      "wall_usec": 6225054
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 15.699,
+      "physics_ms": 5.553,
+      "primitives": 8455142.0,
+      "process_ms": 2.425,
+      "simulation_s": 5.6449999999999,
+      "wall_usec": 6240753
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 18.982,
+      "physics_ms": 5.553,
+      "primitives": 8455142.0,
+      "process_ms": 2.425,
+      "simulation_s": 5.6649999999999,
+      "wall_usec": 6259735
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 15.224,
+      "physics_ms": 5.553,
+      "primitives": 8455142.0,
+      "process_ms": 2.425,
+      "simulation_s": 5.6799999999999,
+      "wall_usec": 6274959
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 15.578,
+      "physics_ms": 5.553,
+      "primitives": 8455142.0,
+      "process_ms": 2.425,
+      "simulation_s": 5.6949999999999,
+      "wall_usec": 6290537
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 15.345,
+      "physics_ms": 5.553,
+      "primitives": 8455142.0,
+      "process_ms": 2.425,
+      "simulation_s": 5.7099999999999,
+      "wall_usec": 6305882
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 19.695,
+      "physics_ms": 5.553,
+      "primitives": 8455142.0,
+      "process_ms": 2.425,
+      "simulation_s": 5.7299999999999,
+      "wall_usec": 6325577
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 19.962,
+      "physics_ms": 5.553,
+      "primitives": 8455142.0,
+      "process_ms": 2.425,
+      "simulation_s": 5.7499999999999,
+      "wall_usec": 6345539
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 15.598,
+      "physics_ms": 5.553,
+      "primitives": 8455142.0,
+      "process_ms": 2.425,
+      "simulation_s": 5.7649999999999,
+      "wall_usec": 6361137
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 18.891,
+      "physics_ms": 5.553,
+      "primitives": 8455142.0,
+      "process_ms": 2.425,
+      "simulation_s": 5.7849999999999,
+      "wall_usec": 6380028
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 15.164,
+      "physics_ms": 5.553,
+      "primitives": 8455142.0,
+      "process_ms": 2.425,
+      "simulation_s": 5.7999999999999,
+      "wall_usec": 6395192
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 13.893,
+      "physics_ms": 5.553,
+      "primitives": 8455142.0,
+      "process_ms": 2.425,
+      "simulation_s": 5.8149999999999,
+      "wall_usec": 6409085
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 13.582,
+      "physics_ms": 5.553,
+      "primitives": 8455142.0,
+      "process_ms": 2.425,
+      "simulation_s": 5.8299999999999,
+      "wall_usec": 6422667
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 14.194,
+      "physics_ms": 5.553,
+      "primitives": 8455142.0,
+      "process_ms": 2.425,
+      "simulation_s": 5.8449999999999,
+      "wall_usec": 6436861
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 15.207,
+      "physics_ms": 5.553,
+      "primitives": 8455142.0,
+      "process_ms": 2.425,
+      "simulation_s": 5.8599999999999,
+      "wall_usec": 6452068
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 14.637,
+      "physics_ms": 5.553,
+      "primitives": 8455142.0,
+      "process_ms": 2.425,
+      "simulation_s": 5.8749999999999,
+      "wall_usec": 6466705
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 13.83,
+      "physics_ms": 5.553,
+      "primitives": 8455142.0,
+      "process_ms": 2.425,
+      "simulation_s": 5.8899999999999,
+      "wall_usec": 6480535
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 10.545,
+      "physics_ms": 5.553,
+      "primitives": 8455142.0,
+      "process_ms": 2.425,
+      "simulation_s": 5.8999999999999,
+      "wall_usec": 6491080
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 14.979,
+      "physics_ms": 5.553,
+      "primitives": 8455142.0,
+      "process_ms": 2.425,
+      "simulation_s": 5.9149999999999,
+      "wall_usec": 6506059
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 15.137,
+      "physics_ms": 5.553,
+      "primitives": 8455142.0,
+      "process_ms": 2.425,
+      "simulation_s": 5.9299999999999,
+      "wall_usec": 6521196
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 10.111,
+      "physics_ms": 5.553,
+      "primitives": 8455142.0,
+      "process_ms": 2.425,
+      "simulation_s": 5.9399999999999,
+      "wall_usec": 6531307
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 9.701,
+      "physics_ms": 5.553,
+      "primitives": 8455142.0,
+      "process_ms": 2.425,
+      "simulation_s": 5.9499999999999,
+      "wall_usec": 6541008
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 9.789,
+      "physics_ms": 5.553,
+      "primitives": 8455142.0,
+      "process_ms": 2.425,
+      "simulation_s": 5.9599999999999,
+      "wall_usec": 6550797
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 16.592,
+      "physics_ms": 5.553,
+      "primitives": 8455142.0,
+      "process_ms": 2.425,
+      "simulation_s": 5.97499999999989,
+      "wall_usec": 6567389
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 15.953,
+      "physics_ms": 5.553,
+      "primitives": 8455142.0,
+      "process_ms": 2.425,
+      "simulation_s": 5.98999999999989,
+      "wall_usec": 6583342
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 15.332,
+      "physics_ms": 5.553,
+      "primitives": 8455142.0,
+      "process_ms": 2.425,
+      "simulation_s": 6.00499999999989,
+      "wall_usec": 6598674
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 15.103,
+      "physics_ms": 5.553,
+      "primitives": 8455142.0,
+      "process_ms": 2.425,
+      "simulation_s": 6.01999999999989,
+      "wall_usec": 6613777
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 14.664,
+      "physics_ms": 5.553,
+      "primitives": 8455142.0,
+      "process_ms": 2.425,
+      "simulation_s": 6.03499999999989,
+      "wall_usec": 6628441
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 13.154,
+      "physics_ms": 5.553,
+      "primitives": 8455142.0,
+      "process_ms": 2.425,
+      "simulation_s": 6.04999999999989,
+      "wall_usec": 6641595
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 14.171,
+      "physics_ms": 5.553,
+      "primitives": 8455142.0,
+      "process_ms": 2.425,
+      "simulation_s": 6.06499999999989,
+      "wall_usec": 6655766
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 9.154,
+      "physics_ms": 5.553,
+      "primitives": 8455142.0,
+      "process_ms": 2.425,
+      "simulation_s": 6.07499999999989,
+      "wall_usec": 6664920
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 9.028,
+      "physics_ms": 5.553,
+      "primitives": 8455142.0,
+      "process_ms": 2.425,
+      "simulation_s": 6.08499999999989,
+      "wall_usec": 6673948
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 10.545,
+      "physics_ms": 5.553,
+      "primitives": 8455142.0,
+      "process_ms": 2.425,
+      "simulation_s": 6.09499999999989,
+      "wall_usec": 6684493
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 10.943,
+      "physics_ms": 5.553,
+      "primitives": 8455142.0,
+      "process_ms": 2.425,
+      "simulation_s": 6.10499999999989,
+      "wall_usec": 6695436
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 10.931,
+      "physics_ms": 5.553,
+      "primitives": 8455142.0,
+      "process_ms": 2.425,
+      "simulation_s": 6.11499999999989,
+      "wall_usec": 6706367
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 15.657,
+      "physics_ms": 5.553,
+      "primitives": 8455142.0,
+      "process_ms": 2.425,
+      "simulation_s": 6.12999999999989,
+      "wall_usec": 6722024
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 13.589,
+      "physics_ms": 5.553,
+      "primitives": 8455142.0,
+      "process_ms": 2.425,
+      "simulation_s": 6.14499999999989,
+      "wall_usec": 6735613
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 10.794,
+      "physics_ms": 5.553,
+      "primitives": 8455142.0,
+      "process_ms": 2.425,
+      "simulation_s": 6.15499999999989,
+      "wall_usec": 6746407
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 14.711,
+      "physics_ms": 5.553,
+      "primitives": 8455142.0,
+      "process_ms": 2.425,
+      "simulation_s": 6.16999999999989,
+      "wall_usec": 6761118
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 9.511,
+      "physics_ms": 5.553,
+      "primitives": 8455142.0,
+      "process_ms": 2.425,
+      "simulation_s": 6.17999999999989,
+      "wall_usec": 6770629
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 15.061,
+      "physics_ms": 5.553,
+      "primitives": 8455142.0,
+      "process_ms": 2.425,
+      "simulation_s": 6.19499999999989,
+      "wall_usec": 6785690
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 11.495,
+      "physics_ms": 5.553,
+      "primitives": 8455142.0,
+      "process_ms": 2.425,
+      "simulation_s": 6.20499999999989,
+      "wall_usec": 6797185
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 15.887,
+      "physics_ms": 5.553,
+      "primitives": 8455142.0,
+      "process_ms": 2.425,
+      "simulation_s": 6.21999999999989,
+      "wall_usec": 6813072
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 15.288,
+      "physics_ms": 5.553,
+      "primitives": 8455142.0,
+      "process_ms": 2.425,
+      "simulation_s": 6.23499999999989,
+      "wall_usec": 6828360
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 13.958,
+      "physics_ms": 5.553,
+      "primitives": 8455142.0,
+      "process_ms": 2.425,
+      "simulation_s": 6.24999999999989,
+      "wall_usec": 6842318
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 13.036,
+      "physics_ms": 5.553,
+      "primitives": 8455142.0,
+      "process_ms": 2.425,
+      "simulation_s": 6.26499999999989,
+      "wall_usec": 6855354
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 10.032,
+      "physics_ms": 5.553,
+      "primitives": 8455142.0,
+      "process_ms": 2.425,
+      "simulation_s": 6.27499999999989,
+      "wall_usec": 6865386
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 10.436,
+      "physics_ms": 5.553,
+      "primitives": 8455142.0,
+      "process_ms": 2.425,
+      "simulation_s": 6.28499999999989,
+      "wall_usec": 6875822
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 10.487,
+      "physics_ms": 5.553,
+      "primitives": 8455142.0,
+      "process_ms": 2.425,
+      "simulation_s": 6.29499999999989,
+      "wall_usec": 6886309
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 11.507,
+      "physics_ms": 5.553,
+      "primitives": 8455142.0,
+      "process_ms": 2.425,
+      "simulation_s": 6.30499999999989,
+      "wall_usec": 6897816
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 15.043,
+      "physics_ms": 5.553,
+      "primitives": 8455142.0,
+      "process_ms": 2.425,
+      "simulation_s": 6.31999999999989,
+      "wall_usec": 6912859
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 16.561,
+      "physics_ms": 5.553,
+      "primitives": 8455142.0,
+      "process_ms": 2.425,
+      "simulation_s": 6.33499999999989,
+      "wall_usec": 6929420
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 15.058,
+      "physics_ms": 5.553,
+      "primitives": 8455142.0,
+      "process_ms": 2.425,
+      "simulation_s": 6.34999999999989,
+      "wall_usec": 6944478
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 14.421,
+      "physics_ms": 5.553,
+      "primitives": 8455142.0,
+      "process_ms": 2.425,
+      "simulation_s": 6.36499999999989,
+      "wall_usec": 6958899
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 13.563,
+      "physics_ms": 5.553,
+      "primitives": 8455142.0,
+      "process_ms": 2.425,
+      "simulation_s": 6.37999999999989,
+      "wall_usec": 6972462
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 15.738,
+      "physics_ms": 5.553,
+      "primitives": 8455142.0,
+      "process_ms": 2.425,
+      "simulation_s": 6.39499999999989,
+      "wall_usec": 6988200
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 15.223,
+      "physics_ms": 5.553,
+      "primitives": 8455142.0,
+      "process_ms": 2.425,
+      "simulation_s": 6.40999999999989,
+      "wall_usec": 7003423
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 16.57,
+      "physics_ms": 5.553,
+      "primitives": 8455142.0,
+      "process_ms": 2.425,
+      "simulation_s": 6.42499999999989,
+      "wall_usec": 7019993
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 15.216,
+      "physics_ms": 5.553,
+      "primitives": 8455142.0,
+      "process_ms": 2.425,
+      "simulation_s": 6.43999999999988,
+      "wall_usec": 7035209
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 13.572,
+      "physics_ms": 5.553,
+      "primitives": 8455142.0,
+      "process_ms": 2.425,
+      "simulation_s": 6.45499999999988,
+      "wall_usec": 7048781
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 14.627,
+      "physics_ms": 5.553,
+      "primitives": 8455142.0,
+      "process_ms": 2.425,
+      "simulation_s": 6.46999999999988,
+      "wall_usec": 7063408
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 16.055,
+      "physics_ms": 5.553,
+      "primitives": 8455142.0,
+      "process_ms": 2.425,
+      "simulation_s": 6.48499999999988,
+      "wall_usec": 7079463
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 15.186,
+      "physics_ms": 5.553,
+      "primitives": 8455142.0,
+      "process_ms": 2.425,
+      "simulation_s": 6.49999999999988,
+      "wall_usec": 7094649
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 14.216,
+      "physics_ms": 5.553,
+      "primitives": 8455142.0,
+      "process_ms": 2.425,
+      "simulation_s": 6.51499999999988,
+      "wall_usec": 7108865
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 13.881,
+      "physics_ms": 5.533,
+      "primitives": 8455142.0,
+      "process_ms": 2.63,
+      "simulation_s": 6.52999999999988,
+      "wall_usec": 7122746
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 14.862,
+      "physics_ms": 5.533,
+      "primitives": 8455142.0,
+      "process_ms": 2.63,
+      "simulation_s": 6.54499999999988,
+      "wall_usec": 7137608
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 13.898,
+      "physics_ms": 5.533,
+      "primitives": 8455142.0,
+      "process_ms": 2.63,
+      "simulation_s": 6.55999999999988,
+      "wall_usec": 7151506
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 16.767,
+      "physics_ms": 5.533,
+      "primitives": 8455142.0,
+      "process_ms": 2.63,
+      "simulation_s": 6.57499999999988,
+      "wall_usec": 7168273
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 15.147,
+      "physics_ms": 5.533,
+      "primitives": 8455142.0,
+      "process_ms": 2.63,
+      "simulation_s": 6.58999999999988,
+      "wall_usec": 7183420
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 15.531,
+      "physics_ms": 5.533,
+      "primitives": 8455142.0,
+      "process_ms": 2.63,
+      "simulation_s": 6.60499999999988,
+      "wall_usec": 7198951
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 14.647,
+      "physics_ms": 5.533,
+      "primitives": 8455142.0,
+      "process_ms": 2.63,
+      "simulation_s": 6.61999999999988,
+      "wall_usec": 7213598
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 14.113,
+      "physics_ms": 5.533,
+      "primitives": 8455142.0,
+      "process_ms": 2.63,
+      "simulation_s": 6.63499999999988,
+      "wall_usec": 7227711
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 14.12,
+      "physics_ms": 5.533,
+      "primitives": 8455142.0,
+      "process_ms": 2.63,
+      "simulation_s": 6.64999999999988,
+      "wall_usec": 7241831
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 14.412,
+      "physics_ms": 5.533,
+      "primitives": 8455142.0,
+      "process_ms": 2.63,
+      "simulation_s": 6.66499999999988,
+      "wall_usec": 7256243
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 14.236,
+      "physics_ms": 5.533,
+      "primitives": 8455142.0,
+      "process_ms": 2.63,
+      "simulation_s": 6.67999999999988,
+      "wall_usec": 7270479
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 11.455,
+      "physics_ms": 5.533,
+      "primitives": 8455142.0,
+      "process_ms": 2.63,
+      "simulation_s": 6.68999999999988,
+      "wall_usec": 7281934
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 14.849,
+      "physics_ms": 5.533,
+      "primitives": 8455142.0,
+      "process_ms": 2.63,
+      "simulation_s": 6.70499999999988,
+      "wall_usec": 7296783
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 14.788,
+      "physics_ms": 5.533,
+      "primitives": 8455142.0,
+      "process_ms": 2.63,
+      "simulation_s": 6.71999999999988,
+      "wall_usec": 7311571
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 15.788,
+      "physics_ms": 5.533,
+      "primitives": 8455142.0,
+      "process_ms": 2.63,
+      "simulation_s": 6.73499999999988,
+      "wall_usec": 7327359
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 15.081,
+      "physics_ms": 5.533,
+      "primitives": 8455142.0,
+      "process_ms": 2.63,
+      "simulation_s": 6.74999999999988,
+      "wall_usec": 7342440
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 15.447,
+      "physics_ms": 5.533,
+      "primitives": 8455142.0,
+      "process_ms": 2.63,
+      "simulation_s": 6.76499999999988,
+      "wall_usec": 7357887
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 14.069,
+      "physics_ms": 5.533,
+      "primitives": 8455142.0,
+      "process_ms": 2.63,
+      "simulation_s": 6.77999999999988,
+      "wall_usec": 7371956
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 13.525,
+      "physics_ms": 5.533,
+      "primitives": 8455142.0,
+      "process_ms": 2.63,
+      "simulation_s": 6.79499999999988,
+      "wall_usec": 7385481
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 11.573,
+      "physics_ms": 5.533,
+      "primitives": 8455142.0,
+      "process_ms": 2.63,
+      "simulation_s": 6.80499999999988,
+      "wall_usec": 7397054
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 14.158,
+      "physics_ms": 5.533,
+      "primitives": 8455142.0,
+      "process_ms": 2.63,
+      "simulation_s": 6.81999999999988,
+      "wall_usec": 7411212
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 14.616,
+      "physics_ms": 5.533,
+      "primitives": 8455142.0,
+      "process_ms": 2.63,
+      "simulation_s": 6.83499999999988,
+      "wall_usec": 7425828
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 9.014,
+      "physics_ms": 5.533,
+      "primitives": 8455142.0,
+      "process_ms": 2.63,
+      "simulation_s": 6.84499999999988,
+      "wall_usec": 7434842
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 9.701,
+      "physics_ms": 5.533,
+      "primitives": 8455142.0,
+      "process_ms": 2.63,
+      "simulation_s": 6.85499999999988,
+      "wall_usec": 7444543
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 10.836,
+      "physics_ms": 5.533,
+      "primitives": 8455142.0,
+      "process_ms": 2.63,
+      "simulation_s": 6.86499999999988,
+      "wall_usec": 7455379
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 10.555,
+      "physics_ms": 5.533,
+      "primitives": 8455142.0,
+      "process_ms": 2.63,
+      "simulation_s": 6.87499999999988,
+      "wall_usec": 7465934
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 14.872,
+      "physics_ms": 5.533,
+      "primitives": 8455142.0,
+      "process_ms": 2.63,
+      "simulation_s": 6.88999999999988,
+      "wall_usec": 7480806
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 9.869,
+      "physics_ms": 5.533,
+      "primitives": 8455142.0,
+      "process_ms": 2.63,
+      "simulation_s": 6.89999999999988,
+      "wall_usec": 7490675
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 10.942,
+      "physics_ms": 5.533,
+      "primitives": 8455142.0,
+      "process_ms": 2.63,
+      "simulation_s": 6.90999999999987,
+      "wall_usec": 7501617
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 15.055,
+      "physics_ms": 5.533,
+      "primitives": 8455142.0,
+      "process_ms": 2.63,
+      "simulation_s": 6.92499999999987,
+      "wall_usec": 7516672
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 13.221,
+      "physics_ms": 5.533,
+      "primitives": 8455142.0,
+      "process_ms": 2.63,
+      "simulation_s": 6.93999999999987,
+      "wall_usec": 7529893
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 9.35,
+      "physics_ms": 5.533,
+      "primitives": 8455142.0,
+      "process_ms": 2.63,
+      "simulation_s": 6.94999999999987,
+      "wall_usec": 7539243
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 9.039,
+      "physics_ms": 5.533,
+      "primitives": 8455142.0,
+      "process_ms": 2.63,
+      "simulation_s": 6.95999999999987,
+      "wall_usec": 7548282
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 9.01,
+      "physics_ms": 5.533,
+      "primitives": 8455142.0,
+      "process_ms": 2.63,
+      "simulation_s": 6.96999999999987,
+      "wall_usec": 7557292
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 9.022,
+      "physics_ms": 5.533,
+      "primitives": 8455142.0,
+      "process_ms": 2.63,
+      "simulation_s": 6.97999999999987,
+      "wall_usec": 7566314
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 5.163,
+      "physics_ms": 5.533,
+      "primitives": 8455142.0,
+      "process_ms": 2.63,
+      "simulation_s": 6.98499999999987,
+      "wall_usec": 7571477
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 5.046,
+      "physics_ms": 5.533,
+      "primitives": 8455142.0,
+      "process_ms": 2.63,
+      "simulation_s": 6.98999999999987,
+      "wall_usec": 7576523
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 5.164,
+      "physics_ms": 5.533,
+      "primitives": 8455142.0,
+      "process_ms": 2.63,
+      "simulation_s": 6.99499999999987,
+      "wall_usec": 7581687
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 5.266,
+      "physics_ms": 5.533,
+      "primitives": 8455142.0,
+      "process_ms": 2.63,
+      "simulation_s": 6.99999999999987,
+      "wall_usec": 7586953
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 9.109,
+      "physics_ms": 5.533,
+      "primitives": 8455142.0,
+      "process_ms": 2.63,
+      "simulation_s": 7.00999999999987,
+      "wall_usec": 7596062
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 5.022,
+      "physics_ms": 5.533,
+      "primitives": 8455142.0,
+      "process_ms": 2.63,
+      "simulation_s": 7.01499999999987,
+      "wall_usec": 7601084
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 5.123,
+      "physics_ms": 5.533,
+      "primitives": 8455142.0,
+      "process_ms": 2.63,
+      "simulation_s": 7.01999999999987,
+      "wall_usec": 7606207
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 5.108,
+      "physics_ms": 5.533,
+      "primitives": 8455142.0,
+      "process_ms": 2.63,
+      "simulation_s": 7.02499999999987,
+      "wall_usec": 7611315
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 5.035,
+      "physics_ms": 5.533,
+      "primitives": 8455142.0,
+      "process_ms": 2.63,
+      "simulation_s": 7.02999999999987,
+      "wall_usec": 7616350
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 5.311,
+      "physics_ms": 5.533,
+      "primitives": 8455142.0,
+      "process_ms": 2.63,
+      "simulation_s": 7.03499999999987,
+      "wall_usec": 7621661
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 5.224,
+      "physics_ms": 5.533,
+      "primitives": 8455142.0,
+      "process_ms": 2.63,
+      "simulation_s": 7.03999999999987,
+      "wall_usec": 7626885
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 5.027,
+      "physics_ms": 5.533,
+      "primitives": 8455142.0,
+      "process_ms": 2.63,
+      "simulation_s": 7.04499999999987,
+      "wall_usec": 7631912
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 5.295,
+      "physics_ms": 5.533,
+      "primitives": 8455142.0,
+      "process_ms": 2.63,
+      "simulation_s": 7.04999999999987,
+      "wall_usec": 7637207
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 9.225,
+      "physics_ms": 5.533,
+      "primitives": 8455142.0,
+      "process_ms": 2.63,
+      "simulation_s": 7.05999999999987,
+      "wall_usec": 7646432
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 10.956,
+      "physics_ms": 5.533,
+      "primitives": 8455142.0,
+      "process_ms": 2.63,
+      "simulation_s": 7.06999999999987,
+      "wall_usec": 7657388
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 10.485,
+      "physics_ms": 5.533,
+      "primitives": 8455142.0,
+      "process_ms": 2.63,
+      "simulation_s": 7.07999999999987,
+      "wall_usec": 7667873
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 9.802,
+      "physics_ms": 5.533,
+      "primitives": 8455142.0,
+      "process_ms": 2.63,
+      "simulation_s": 7.08999999999987,
+      "wall_usec": 7677675
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 10.319,
+      "physics_ms": 5.533,
+      "primitives": 8455142.0,
+      "process_ms": 2.63,
+      "simulation_s": 7.09999999999987,
+      "wall_usec": 7687994
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 11.963,
+      "physics_ms": 5.533,
+      "primitives": 8455142.0,
+      "process_ms": 2.63,
+      "simulation_s": 7.10999999999987,
+      "wall_usec": 7699957
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 9.743,
+      "physics_ms": 5.533,
+      "primitives": 8455142.0,
+      "process_ms": 2.63,
+      "simulation_s": 7.11999999999987,
+      "wall_usec": 7709700
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 13.028,
+      "physics_ms": 5.533,
+      "primitives": 8455142.0,
+      "process_ms": 2.63,
+      "simulation_s": 7.12999999999987,
+      "wall_usec": 7722728
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 14.874,
+      "physics_ms": 5.533,
+      "primitives": 8455142.0,
+      "process_ms": 2.63,
+      "simulation_s": 7.14499999999987,
+      "wall_usec": 7737602
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 16.508,
+      "physics_ms": 5.533,
+      "primitives": 8455142.0,
+      "process_ms": 2.63,
+      "simulation_s": 7.15999999999987,
+      "wall_usec": 7754110
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 15.982,
+      "physics_ms": 5.533,
+      "primitives": 8455142.0,
+      "process_ms": 2.63,
+      "simulation_s": 7.17499999999987,
+      "wall_usec": 7770092
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 15.825,
+      "physics_ms": 5.533,
+      "primitives": 8455142.0,
+      "process_ms": 2.63,
+      "simulation_s": 7.18999999999987,
+      "wall_usec": 7785917
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 18.883,
+      "physics_ms": 5.533,
+      "primitives": 8455142.0,
+      "process_ms": 2.63,
+      "simulation_s": 7.20999999999987,
+      "wall_usec": 7804800
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 13.305,
+      "physics_ms": 5.533,
+      "primitives": 8455142.0,
+      "process_ms": 2.63,
+      "simulation_s": 7.22499999999987,
+      "wall_usec": 7818105
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 15.73,
+      "physics_ms": 5.533,
+      "primitives": 8455142.0,
+      "process_ms": 2.63,
+      "simulation_s": 7.23999999999987,
+      "wall_usec": 7833835
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 15.597,
+      "physics_ms": 5.533,
+      "primitives": 8455142.0,
+      "process_ms": 2.63,
+      "simulation_s": 7.25499999999987,
+      "wall_usec": 7849432
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 13.857,
+      "physics_ms": 5.533,
+      "primitives": 8455142.0,
+      "process_ms": 2.63,
+      "simulation_s": 7.26999999999987,
+      "wall_usec": 7863289
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 13.653,
+      "physics_ms": 5.533,
+      "primitives": 8455142.0,
+      "process_ms": 2.63,
+      "simulation_s": 7.28499999999987,
+      "wall_usec": 7876942
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 13.872,
+      "physics_ms": 5.533,
+      "primitives": 8455142.0,
+      "process_ms": 2.63,
+      "simulation_s": 7.29999999999987,
+      "wall_usec": 7890814
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 9.858,
+      "physics_ms": 5.533,
+      "primitives": 8455142.0,
+      "process_ms": 2.63,
+      "simulation_s": 7.30999999999987,
+      "wall_usec": 7900672
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 9.845,
+      "physics_ms": 5.533,
+      "primitives": 8455142.0,
+      "process_ms": 2.63,
+      "simulation_s": 7.31999999999987,
+      "wall_usec": 7910517
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 9.664,
+      "physics_ms": 5.533,
+      "primitives": 8455142.0,
+      "process_ms": 2.63,
+      "simulation_s": 7.32999999999987,
+      "wall_usec": 7920181
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 11.336,
+      "physics_ms": 5.533,
+      "primitives": 8455142.0,
+      "process_ms": 2.63,
+      "simulation_s": 7.33999999999987,
+      "wall_usec": 7931517
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 15.447,
+      "physics_ms": 5.533,
+      "primitives": 8455142.0,
+      "process_ms": 2.63,
+      "simulation_s": 7.35499999999987,
+      "wall_usec": 7946964
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 14.696,
+      "physics_ms": 5.533,
+      "primitives": 8455142.0,
+      "process_ms": 2.63,
+      "simulation_s": 7.36999999999987,
+      "wall_usec": 7961660
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 15.545,
+      "physics_ms": 5.533,
+      "primitives": 8455142.0,
+      "process_ms": 2.63,
+      "simulation_s": 7.38499999999986,
+      "wall_usec": 7977205
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 14.335,
+      "physics_ms": 5.533,
+      "primitives": 8455142.0,
+      "process_ms": 2.63,
+      "simulation_s": 7.39999999999986,
+      "wall_usec": 7991540
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 15.375,
+      "physics_ms": 5.533,
+      "primitives": 8455142.0,
+      "process_ms": 2.63,
+      "simulation_s": 7.41499999999986,
+      "wall_usec": 8006915
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 14.016,
+      "physics_ms": 5.533,
+      "primitives": 8455142.0,
+      "process_ms": 2.63,
+      "simulation_s": 7.42999999999986,
+      "wall_usec": 8020931
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 9.773,
+      "physics_ms": 5.533,
+      "primitives": 8455142.0,
+      "process_ms": 2.63,
+      "simulation_s": 7.43999999999986,
+      "wall_usec": 8030704
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 9.666,
+      "physics_ms": 5.533,
+      "primitives": 8455142.0,
+      "process_ms": 2.63,
+      "simulation_s": 7.44999999999986,
+      "wall_usec": 8040370
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 9.502,
+      "physics_ms": 5.533,
+      "primitives": 8455142.0,
+      "process_ms": 2.63,
+      "simulation_s": 7.45999999999986,
+      "wall_usec": 8049872
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 9.844,
+      "physics_ms": 5.533,
+      "primitives": 8455142.0,
+      "process_ms": 2.63,
+      "simulation_s": 7.46999999999986,
+      "wall_usec": 8059716
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 9.886,
+      "physics_ms": 5.533,
+      "primitives": 8455142.0,
+      "process_ms": 2.63,
+      "simulation_s": 7.47999999999986,
+      "wall_usec": 8069602
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 10.479,
+      "physics_ms": 5.533,
+      "primitives": 8455142.0,
+      "process_ms": 2.63,
+      "simulation_s": 7.48999999999986,
+      "wall_usec": 8080081
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 11.315,
+      "physics_ms": 5.533,
+      "primitives": 8455142.0,
+      "process_ms": 2.63,
+      "simulation_s": 7.49999999999986,
+      "wall_usec": 8091396
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 15.124,
+      "physics_ms": 5.533,
+      "primitives": 8455142.0,
+      "process_ms": 2.63,
+      "simulation_s": 7.51499999999986,
+      "wall_usec": 8106520
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 15.155,
+      "physics_ms": 5.836,
+      "primitives": 8455142.0,
+      "process_ms": 2.68,
+      "simulation_s": 7.52999999999986,
+      "wall_usec": 8121675
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 16.222,
+      "physics_ms": 5.836,
+      "primitives": 8455142.0,
+      "process_ms": 2.68,
+      "simulation_s": 7.54499999999986,
+      "wall_usec": 8137897
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 14.212,
+      "physics_ms": 5.836,
+      "primitives": 8455142.0,
+      "process_ms": 2.68,
+      "simulation_s": 7.55999999999986,
+      "wall_usec": 8152109
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 14.424,
+      "physics_ms": 5.836,
+      "primitives": 8455142.0,
+      "process_ms": 2.68,
+      "simulation_s": 7.57499999999986,
+      "wall_usec": 8166533
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 14.392,
+      "physics_ms": 5.836,
+      "primitives": 8455142.0,
+      "process_ms": 2.68,
+      "simulation_s": 7.58999999999986,
+      "wall_usec": 8180925
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 10.144,
+      "physics_ms": 5.836,
+      "primitives": 8455142.0,
+      "process_ms": 2.68,
+      "simulation_s": 7.59999999999986,
+      "wall_usec": 8191069
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 9.627,
+      "physics_ms": 5.836,
+      "primitives": 8455142.0,
+      "process_ms": 2.68,
+      "simulation_s": 7.60999999999986,
+      "wall_usec": 8200696
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 9.455,
+      "physics_ms": 5.836,
+      "primitives": 8455142.0,
+      "process_ms": 2.68,
+      "simulation_s": 7.61999999999986,
+      "wall_usec": 8210151
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 9.153,
+      "physics_ms": 5.836,
+      "primitives": 8455142.0,
+      "process_ms": 2.68,
+      "simulation_s": 7.62999999999986,
+      "wall_usec": 8219304
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 8.859,
+      "physics_ms": 5.836,
+      "primitives": 8455142.0,
+      "process_ms": 2.68,
+      "simulation_s": 7.63999999999986,
+      "wall_usec": 8228163
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 11.169,
+      "physics_ms": 5.836,
+      "primitives": 8455142.0,
+      "process_ms": 2.68,
+      "simulation_s": 7.64999999999986,
+      "wall_usec": 8239332
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 12.174,
+      "physics_ms": 5.836,
+      "primitives": 8455142.0,
+      "process_ms": 2.68,
+      "simulation_s": 7.65999999999986,
+      "wall_usec": 8251506
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 14.734,
+      "physics_ms": 5.836,
+      "primitives": 8455142.0,
+      "process_ms": 2.68,
+      "simulation_s": 7.67499999999986,
+      "wall_usec": 8266240
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 9.824,
+      "physics_ms": 5.836,
+      "primitives": 8455142.0,
+      "process_ms": 2.68,
+      "simulation_s": 7.68499999999986,
+      "wall_usec": 8276064
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 10.294,
+      "physics_ms": 5.836,
+      "primitives": 8455142.0,
+      "process_ms": 2.68,
+      "simulation_s": 7.69499999999986,
+      "wall_usec": 8286358
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 9.617,
+      "physics_ms": 5.836,
+      "primitives": 8455142.0,
+      "process_ms": 2.68,
+      "simulation_s": 7.70499999999986,
+      "wall_usec": 8295975
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 9.066,
+      "physics_ms": 5.836,
+      "primitives": 8455142.0,
+      "process_ms": 2.68,
+      "simulation_s": 7.71499999999986,
+      "wall_usec": 8305041
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 8.931,
+      "physics_ms": 5.836,
+      "primitives": 8455142.0,
+      "process_ms": 2.68,
+      "simulation_s": 7.72499999999986,
+      "wall_usec": 8313972
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 9.262,
+      "physics_ms": 5.836,
+      "primitives": 8455142.0,
+      "process_ms": 2.68,
+      "simulation_s": 7.73499999999986,
+      "wall_usec": 8323234
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 11.006,
+      "physics_ms": 5.836,
+      "primitives": 8455142.0,
+      "process_ms": 2.68,
+      "simulation_s": 7.74499999999986,
+      "wall_usec": 8334240
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 9.35,
+      "physics_ms": 5.836,
+      "primitives": 8455142.0,
+      "process_ms": 2.68,
+      "simulation_s": 7.75499999999986,
+      "wall_usec": 8343590
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 8.948,
+      "physics_ms": 5.836,
+      "primitives": 8455142.0,
+      "process_ms": 2.68,
+      "simulation_s": 7.76499999999986,
+      "wall_usec": 8352538
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 9.531,
+      "physics_ms": 5.836,
+      "primitives": 8455142.0,
+      "process_ms": 2.68,
+      "simulation_s": 7.77499999999986,
+      "wall_usec": 8362069
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 9.056,
+      "physics_ms": 5.836,
+      "primitives": 8455142.0,
+      "process_ms": 2.68,
+      "simulation_s": 7.78499999999986,
+      "wall_usec": 8371125
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 5.206,
+      "physics_ms": 5.836,
+      "primitives": 8455142.0,
+      "process_ms": 2.68,
+      "simulation_s": 7.78999999999986,
+      "wall_usec": 8376331
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 5.046,
+      "physics_ms": 5.836,
+      "primitives": 8455142.0,
+      "process_ms": 2.68,
+      "simulation_s": 7.79499999999986,
+      "wall_usec": 8381377
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 5.242,
+      "physics_ms": 5.836,
+      "primitives": 8455142.0,
+      "process_ms": 2.68,
+      "simulation_s": 7.79999999999986,
+      "wall_usec": 8386619
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 5.09,
+      "physics_ms": 5.836,
+      "primitives": 8455142.0,
+      "process_ms": 2.68,
+      "simulation_s": 7.80499999999986,
+      "wall_usec": 8391709
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 5.051,
+      "physics_ms": 5.836,
+      "primitives": 8455142.0,
+      "process_ms": 2.68,
+      "simulation_s": 7.80999999999986,
+      "wall_usec": 8396760
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 5.26,
+      "physics_ms": 5.836,
+      "primitives": 8455142.0,
+      "process_ms": 2.68,
+      "simulation_s": 7.81499999999986,
+      "wall_usec": 8402020
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 4.918,
+      "physics_ms": 5.836,
+      "primitives": 8455142.0,
+      "process_ms": 2.68,
+      "simulation_s": 7.81999999999986,
+      "wall_usec": 8406938
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 5.106,
+      "physics_ms": 5.836,
+      "primitives": 8455142.0,
+      "process_ms": 2.68,
+      "simulation_s": 7.82499999999986,
+      "wall_usec": 8412044
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 9.459,
+      "physics_ms": 5.836,
+      "primitives": 8455142.0,
+      "process_ms": 2.68,
+      "simulation_s": 7.83499999999986,
+      "wall_usec": 8421503
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 5.06,
+      "physics_ms": 5.836,
+      "primitives": 8455142.0,
+      "process_ms": 2.68,
+      "simulation_s": 7.83999999999986,
+      "wall_usec": 8426563
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 5.107,
+      "physics_ms": 5.836,
+      "primitives": 8455142.0,
+      "process_ms": 2.68,
+      "simulation_s": 7.84499999999985,
+      "wall_usec": 8431670
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 4.956,
+      "physics_ms": 5.836,
+      "primitives": 8455142.0,
+      "process_ms": 2.68,
+      "simulation_s": 7.84999999999985,
+      "wall_usec": 8436626
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 4.861,
+      "physics_ms": 5.836,
+      "primitives": 8455142.0,
+      "process_ms": 2.68,
+      "simulation_s": 7.85499999999985,
+      "wall_usec": 8441487
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 4.879,
+      "physics_ms": 5.836,
+      "primitives": 8455142.0,
+      "process_ms": 2.68,
+      "simulation_s": 7.85999999999985,
+      "wall_usec": 8446366
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 4.925,
+      "physics_ms": 5.836,
+      "primitives": 8455142.0,
+      "process_ms": 2.68,
+      "simulation_s": 7.86499999999985,
+      "wall_usec": 8451291
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 5.153,
+      "physics_ms": 5.836,
+      "primitives": 8455142.0,
+      "process_ms": 2.68,
+      "simulation_s": 7.86999999999985,
+      "wall_usec": 8456444
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 5.14,
+      "physics_ms": 5.836,
+      "primitives": 8455142.0,
+      "process_ms": 2.68,
+      "simulation_s": 7.87499999999985,
+      "wall_usec": 8461584
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 5.144,
+      "physics_ms": 5.836,
+      "primitives": 8455142.0,
+      "process_ms": 2.68,
+      "simulation_s": 7.87999999999985,
+      "wall_usec": 8466728
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 5.158,
+      "physics_ms": 5.836,
+      "primitives": 8455142.0,
+      "process_ms": 2.68,
+      "simulation_s": 7.88499999999985,
+      "wall_usec": 8471886
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 5.156,
+      "physics_ms": 5.836,
+      "primitives": 8455142.0,
+      "process_ms": 2.68,
+      "simulation_s": 7.88999999999985,
+      "wall_usec": 8477042
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 10.41,
+      "physics_ms": 5.836,
+      "primitives": 8455142.0,
+      "process_ms": 2.68,
+      "simulation_s": 7.89999999999985,
+      "wall_usec": 8487452
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 10.689,
+      "physics_ms": 5.836,
+      "primitives": 8455142.0,
+      "process_ms": 2.68,
+      "simulation_s": 7.90999999999985,
+      "wall_usec": 8498141
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 10.598,
+      "physics_ms": 5.836,
+      "primitives": 8455142.0,
+      "process_ms": 2.68,
+      "simulation_s": 7.91999999999985,
+      "wall_usec": 8508739
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 11.277,
+      "physics_ms": 5.836,
+      "primitives": 8455142.0,
+      "process_ms": 2.68,
+      "simulation_s": 7.92999999999985,
+      "wall_usec": 8520016
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 10.43,
+      "physics_ms": 5.836,
+      "primitives": 8455142.0,
+      "process_ms": 2.68,
+      "simulation_s": 7.93999999999985,
+      "wall_usec": 8530446
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 10.952,
+      "physics_ms": 5.836,
+      "primitives": 8455142.0,
+      "process_ms": 2.68,
+      "simulation_s": 7.94999999999985,
+      "wall_usec": 8541398
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 13.84,
+      "physics_ms": 5.836,
+      "primitives": 8455142.0,
+      "process_ms": 2.68,
+      "simulation_s": 7.96499999999985,
+      "wall_usec": 8555238
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 10.526,
+      "physics_ms": 5.836,
+      "primitives": 8455142.0,
+      "process_ms": 2.68,
+      "simulation_s": 7.97499999999985,
+      "wall_usec": 8565764
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 15.506,
+      "physics_ms": 5.836,
+      "primitives": 8455142.0,
+      "process_ms": 2.68,
+      "simulation_s": 7.98999999999985,
+      "wall_usec": 8581270
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 16.584,
+      "physics_ms": 5.836,
+      "primitives": 8455142.0,
+      "process_ms": 2.68,
+      "simulation_s": 8.00499999999985,
+      "wall_usec": 8597854
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 16.113,
+      "physics_ms": 5.836,
+      "primitives": 8455142.0,
+      "process_ms": 2.68,
+      "simulation_s": 8.01999999999985,
+      "wall_usec": 8613967
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 17.003,
+      "physics_ms": 5.836,
+      "primitives": 8455142.0,
+      "process_ms": 2.68,
+      "simulation_s": 8.03499999999986,
+      "wall_usec": 8630970
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 20.286,
+      "physics_ms": 5.836,
+      "primitives": 8455142.0,
+      "process_ms": 2.68,
+      "simulation_s": 8.05499999999986,
+      "wall_usec": 8651256
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 19.409,
+      "physics_ms": 5.836,
+      "primitives": 8455142.0,
+      "process_ms": 2.68,
+      "simulation_s": 8.07499999999986,
+      "wall_usec": 8670665
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 14.958,
+      "physics_ms": 5.836,
+      "primitives": 8455142.0,
+      "process_ms": 2.68,
+      "simulation_s": 8.08999999999986,
+      "wall_usec": 8685623
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 14.619,
+      "physics_ms": 5.836,
+      "primitives": 8455142.0,
+      "process_ms": 2.68,
+      "simulation_s": 8.10499999999987,
+      "wall_usec": 8700242
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 13.678,
+      "physics_ms": 5.836,
+      "primitives": 8455142.0,
+      "process_ms": 2.68,
+      "simulation_s": 8.11999999999987,
+      "wall_usec": 8713920
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 16.176,
+      "physics_ms": 5.836,
+      "primitives": 8455142.0,
+      "process_ms": 2.68,
+      "simulation_s": 8.13499999999987,
+      "wall_usec": 8730096
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 14.747,
+      "physics_ms": 5.836,
+      "primitives": 8455142.0,
+      "process_ms": 2.68,
+      "simulation_s": 8.14999999999987,
+      "wall_usec": 8744843
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 15.262,
+      "physics_ms": 5.836,
+      "primitives": 8455142.0,
+      "process_ms": 2.68,
+      "simulation_s": 8.16499999999988,
+      "wall_usec": 8760105
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 15.257,
+      "physics_ms": 5.836,
+      "primitives": 8455142.0,
+      "process_ms": 2.68,
+      "simulation_s": 8.17999999999988,
+      "wall_usec": 8775362
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 14.601,
+      "physics_ms": 5.836,
+      "primitives": 8455142.0,
+      "process_ms": 2.68,
+      "simulation_s": 8.19499999999988,
+      "wall_usec": 8789963
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 14.799,
+      "physics_ms": 5.836,
+      "primitives": 8455142.0,
+      "process_ms": 2.68,
+      "simulation_s": 8.20999999999988,
+      "wall_usec": 8804762
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 14.595,
+      "physics_ms": 5.836,
+      "primitives": 8455142.0,
+      "process_ms": 2.68,
+      "simulation_s": 8.22499999999989,
+      "wall_usec": 8819357
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 12.885,
+      "physics_ms": 5.836,
+      "primitives": 8455142.0,
+      "process_ms": 2.68,
+      "simulation_s": 8.23999999999989,
+      "wall_usec": 8832242
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 12.869,
+      "physics_ms": 5.836,
+      "primitives": 8455142.0,
+      "process_ms": 2.68,
+      "simulation_s": 8.25499999999989,
+      "wall_usec": 8845111
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 9.271,
+      "physics_ms": 5.836,
+      "primitives": 8455142.0,
+      "process_ms": 2.68,
+      "simulation_s": 8.26499999999989,
+      "wall_usec": 8854382
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 9.03,
+      "physics_ms": 5.836,
+      "primitives": 8455142.0,
+      "process_ms": 2.68,
+      "simulation_s": 8.27499999999989,
+      "wall_usec": 8863412
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 10.542,
+      "physics_ms": 5.836,
+      "primitives": 8455142.0,
+      "process_ms": 2.68,
+      "simulation_s": 8.2849999999999,
+      "wall_usec": 8873954
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 9.466,
+      "physics_ms": 5.836,
+      "primitives": 8455142.0,
+      "process_ms": 2.68,
+      "simulation_s": 8.2949999999999,
+      "wall_usec": 8883420
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 9.438,
+      "physics_ms": 5.836,
+      "primitives": 8455142.0,
+      "process_ms": 2.68,
+      "simulation_s": 8.3049999999999,
+      "wall_usec": 8892858
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 8.996,
+      "physics_ms": 5.836,
+      "primitives": 8455142.0,
+      "process_ms": 2.68,
+      "simulation_s": 8.3149999999999,
+      "wall_usec": 8901854
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 5.36,
+      "physics_ms": 5.836,
+      "primitives": 8455142.0,
+      "process_ms": 2.68,
+      "simulation_s": 8.3199999999999,
+      "wall_usec": 8907214
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 9.266,
+      "physics_ms": 5.836,
+      "primitives": 8455142.0,
+      "process_ms": 2.68,
+      "simulation_s": 8.3299999999999,
+      "wall_usec": 8916480
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 5.129,
+      "physics_ms": 5.836,
+      "primitives": 8455142.0,
+      "process_ms": 2.68,
+      "simulation_s": 8.3349999999999,
+      "wall_usec": 8921609
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 10.118,
+      "physics_ms": 5.836,
+      "primitives": 8455142.0,
+      "process_ms": 2.68,
+      "simulation_s": 8.3449999999999,
+      "wall_usec": 8931727
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 11.232,
+      "physics_ms": 5.836,
+      "primitives": 8455142.0,
+      "process_ms": 2.68,
+      "simulation_s": 8.35499999999991,
+      "wall_usec": 8942959
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 9.484,
+      "physics_ms": 5.836,
+      "primitives": 8455142.0,
+      "process_ms": 2.68,
+      "simulation_s": 8.36499999999991,
+      "wall_usec": 8952443
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 10.392,
+      "physics_ms": 5.836,
+      "primitives": 8455142.0,
+      "process_ms": 2.68,
+      "simulation_s": 8.37499999999991,
+      "wall_usec": 8962835
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 10.192,
+      "physics_ms": 5.836,
+      "primitives": 8455142.0,
+      "process_ms": 2.68,
+      "simulation_s": 8.38499999999991,
+      "wall_usec": 8973027
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 11.316,
+      "physics_ms": 5.836,
+      "primitives": 8455142.0,
+      "process_ms": 2.68,
+      "simulation_s": 8.39499999999991,
+      "wall_usec": 8984343
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 11.482,
+      "physics_ms": 5.836,
+      "primitives": 8455142.0,
+      "process_ms": 2.68,
+      "simulation_s": 8.40499999999991,
+      "wall_usec": 8995825
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 15.645,
+      "physics_ms": 5.836,
+      "primitives": 8455142.0,
+      "process_ms": 2.68,
+      "simulation_s": 8.41999999999992,
+      "wall_usec": 9011470
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 15.167,
+      "physics_ms": 5.836,
+      "primitives": 8455142.0,
+      "process_ms": 2.68,
+      "simulation_s": 8.43499999999992,
+      "wall_usec": 9026637
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 14.441,
+      "physics_ms": 5.836,
+      "primitives": 8455142.0,
+      "process_ms": 2.68,
+      "simulation_s": 8.44999999999992,
+      "wall_usec": 9041078
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 9.14,
+      "physics_ms": 5.836,
+      "primitives": 8455142.0,
+      "process_ms": 2.68,
+      "simulation_s": 8.45999999999992,
+      "wall_usec": 9050218
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 9.332,
+      "physics_ms": 5.836,
+      "primitives": 8455142.0,
+      "process_ms": 2.68,
+      "simulation_s": 8.46999999999992,
+      "wall_usec": 9059550
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 11.456,
+      "physics_ms": 5.836,
+      "primitives": 8455142.0,
+      "process_ms": 2.68,
+      "simulation_s": 8.47999999999993,
+      "wall_usec": 9071006
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 10.487,
+      "physics_ms": 5.836,
+      "primitives": 8455142.0,
+      "process_ms": 2.68,
+      "simulation_s": 8.48999999999993,
+      "wall_usec": 9081493
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 9.461,
+      "physics_ms": 5.836,
+      "primitives": 8455142.0,
+      "process_ms": 2.68,
+      "simulation_s": 8.49999999999993,
+      "wall_usec": 9090954
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 10.042,
+      "physics_ms": 5.836,
+      "primitives": 8455142.0,
+      "process_ms": 2.68,
+      "simulation_s": 8.50999999999993,
+      "wall_usec": 9100996
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 11.07,
+      "physics_ms": 5.485,
+      "primitives": 8455142.0,
+      "process_ms": 2.348,
+      "simulation_s": 8.51999999999993,
+      "wall_usec": 9112066
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 15.159,
+      "physics_ms": 5.485,
+      "primitives": 8455142.0,
+      "process_ms": 2.348,
+      "simulation_s": 8.53499999999993,
+      "wall_usec": 9127225
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 13.462,
+      "physics_ms": 5.485,
+      "primitives": 8455142.0,
+      "process_ms": 2.348,
+      "simulation_s": 8.54999999999994,
+      "wall_usec": 9140687
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 9.052,
+      "physics_ms": 5.485,
+      "primitives": 8455142.0,
+      "process_ms": 2.348,
+      "simulation_s": 8.55999999999994,
+      "wall_usec": 9149739
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 9.878,
+      "physics_ms": 5.485,
+      "primitives": 8455142.0,
+      "process_ms": 2.348,
+      "simulation_s": 8.56999999999994,
+      "wall_usec": 9159617
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 10.68,
+      "physics_ms": 5.485,
+      "primitives": 8455142.0,
+      "process_ms": 2.348,
+      "simulation_s": 8.57999999999994,
+      "wall_usec": 9170297
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 10.698,
+      "physics_ms": 5.485,
+      "primitives": 8455142.0,
+      "process_ms": 2.348,
+      "simulation_s": 8.58999999999994,
+      "wall_usec": 9180995
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 16.015,
+      "physics_ms": 5.485,
+      "primitives": 8455142.0,
+      "process_ms": 2.348,
+      "simulation_s": 8.60499999999995,
+      "wall_usec": 9197010
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 15.996,
+      "physics_ms": 5.485,
+      "primitives": 8455142.0,
+      "process_ms": 2.348,
+      "simulation_s": 8.61999999999995,
+      "wall_usec": 9213006
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 16.282,
+      "physics_ms": 5.485,
+      "primitives": 8455142.0,
+      "process_ms": 2.348,
+      "simulation_s": 8.63499999999995,
+      "wall_usec": 9229288
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 16.717,
+      "physics_ms": 5.485,
+      "primitives": 8455142.0,
+      "process_ms": 2.348,
+      "simulation_s": 8.64999999999995,
+      "wall_usec": 9246005
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 15.006,
+      "physics_ms": 5.485,
+      "primitives": 8455142.0,
+      "process_ms": 2.348,
+      "simulation_s": 8.66499999999995,
+      "wall_usec": 9261011
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 14.403,
+      "physics_ms": 5.485,
+      "primitives": 8455142.0,
+      "process_ms": 2.348,
+      "simulation_s": 8.67999999999996,
+      "wall_usec": 9275414
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 15.675,
+      "physics_ms": 5.485,
+      "primitives": 8455142.0,
+      "process_ms": 2.348,
+      "simulation_s": 8.69499999999996,
+      "wall_usec": 9291089
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 19.868,
+      "physics_ms": 5.485,
+      "primitives": 8455142.0,
+      "process_ms": 2.348,
+      "simulation_s": 8.71499999999996,
+      "wall_usec": 9310957
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 19.111,
+      "physics_ms": 5.485,
+      "primitives": 8455142.0,
+      "process_ms": 2.348,
+      "simulation_s": 8.73499999999997,
+      "wall_usec": 9330068
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 15.843,
+      "physics_ms": 5.485,
+      "primitives": 8455142.0,
+      "process_ms": 2.348,
+      "simulation_s": 8.74999999999997,
+      "wall_usec": 9345911
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 14.718,
+      "physics_ms": 5.485,
+      "primitives": 8455142.0,
+      "process_ms": 2.348,
+      "simulation_s": 8.76499999999997,
+      "wall_usec": 9360629
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 20.656,
+      "physics_ms": 5.485,
+      "primitives": 8455142.0,
+      "process_ms": 2.348,
+      "simulation_s": 8.78499999999997,
+      "wall_usec": 9381285
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 20.509,
+      "physics_ms": 5.485,
+      "primitives": 8455142.0,
+      "process_ms": 2.348,
+      "simulation_s": 8.80499999999998,
+      "wall_usec": 9401794
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 19.609,
+      "physics_ms": 5.485,
+      "primitives": 8455142.0,
+      "process_ms": 2.348,
+      "simulation_s": 8.82499999999998,
+      "wall_usec": 9421403
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 19.458,
+      "physics_ms": 5.485,
+      "primitives": 8455142.0,
+      "process_ms": 2.348,
+      "simulation_s": 8.84499999999998,
+      "wall_usec": 9440861
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 19.84,
+      "physics_ms": 5.485,
+      "primitives": 8455142.0,
+      "process_ms": 2.348,
+      "simulation_s": 8.86499999999999,
+      "wall_usec": 9460701
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 20.018,
+      "physics_ms": 5.485,
+      "primitives": 8455142.0,
+      "process_ms": 2.348,
+      "simulation_s": 8.88499999999999,
+      "wall_usec": 9480719
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 15.065,
+      "physics_ms": 5.485,
+      "primitives": 8455142.0,
+      "process_ms": 2.348,
+      "simulation_s": 8.89999999999999,
+      "wall_usec": 9495784
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 13.892,
+      "physics_ms": 5.485,
+      "primitives": 8455142.0,
+      "process_ms": 2.348,
+      "simulation_s": 8.91499999999999,
+      "wall_usec": 9509676
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 15.353,
+      "physics_ms": 5.485,
+      "primitives": 8455142.0,
+      "process_ms": 2.348,
+      "simulation_s": 8.93,
+      "wall_usec": 9525029
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 14.799,
+      "physics_ms": 5.485,
+      "primitives": 8455142.0,
+      "process_ms": 2.348,
+      "simulation_s": 8.945,
+      "wall_usec": 9539828
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 16.458,
+      "physics_ms": 5.485,
+      "primitives": 8455142.0,
+      "process_ms": 2.348,
+      "simulation_s": 8.96,
+      "wall_usec": 9556286
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 19.249,
+      "physics_ms": 5.485,
+      "primitives": 8455142.0,
+      "process_ms": 2.348,
+      "simulation_s": 8.98,
+      "wall_usec": 9575535
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 20.118,
+      "physics_ms": 5.485,
+      "primitives": 8455142.0,
+      "process_ms": 2.348,
+      "simulation_s": 9.00000000000001,
+      "wall_usec": 9595653
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 125.745,
+      "physics_ms": 5.485,
+      "primitives": 8455142.0,
+      "process_ms": 2.348,
+      "simulation_s": 9.16000000000003,
+      "wall_usec": 9980344
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 103.268,
+      "physics_ms": 5.485,
+      "primitives": 8455142.0,
+      "process_ms": 2.348,
+      "simulation_s": 9.29000000000005,
+      "wall_usec": 10083612
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 81.901,
+      "physics_ms": 5.485,
+      "primitives": 8455142.0,
+      "process_ms": 2.348,
+      "simulation_s": 9.39000000000007,
+      "wall_usec": 10165513
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 74.635,
+      "physics_ms": 5.485,
+      "primitives": 8455142.0,
+      "process_ms": 2.348,
+      "simulation_s": 9.47500000000008,
+      "wall_usec": 10240148
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 60.679,
+      "physics_ms": 5.471,
+      "primitives": 8455142.0,
+      "process_ms": 259.463,
+      "simulation_s": 9.54500000000009,
+      "wall_usec": 10300827
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 54.698,
+      "physics_ms": 5.471,
+      "primitives": 8455142.0,
+      "process_ms": 259.463,
+      "simulation_s": 9.6100000000001,
+      "wall_usec": 10355525
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 42.514,
+      "physics_ms": 5.471,
+      "primitives": 8455142.0,
+      "process_ms": 259.463,
+      "simulation_s": 9.66000000000011,
+      "wall_usec": 10398039
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 38.828,
+      "physics_ms": 5.471,
+      "primitives": 8455142.0,
+      "process_ms": 259.463,
+      "simulation_s": 9.70500000000012,
+      "wall_usec": 10436867
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 34.171,
+      "physics_ms": 5.471,
+      "primitives": 8455142.0,
+      "process_ms": 259.463,
+      "simulation_s": 9.74500000000012,
+      "wall_usec": 10471038
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 30.746,
+      "physics_ms": 5.471,
+      "primitives": 8455142.0,
+      "process_ms": 259.463,
+      "simulation_s": 9.78000000000013,
+      "wall_usec": 10501784
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 25.099,
+      "physics_ms": 5.471,
+      "primitives": 8455142.0,
+      "process_ms": 259.463,
+      "simulation_s": 9.81000000000013,
+      "wall_usec": 10526883
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 22.638,
+      "physics_ms": 5.471,
+      "primitives": 8455142.0,
+      "process_ms": 259.463,
+      "simulation_s": 9.83500000000014,
+      "wall_usec": 10549521
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 18.289,
+      "physics_ms": 5.471,
+      "primitives": 8455142.0,
+      "process_ms": 259.463,
+      "simulation_s": 9.85500000000014,
+      "wall_usec": 10567810
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 17.352,
+      "physics_ms": 5.471,
+      "primitives": 8455142.0,
+      "process_ms": 259.463,
+      "simulation_s": 9.87500000000014,
+      "wall_usec": 10585162
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 16.03,
+      "physics_ms": 5.471,
+      "primitives": 8455142.0,
+      "process_ms": 259.463,
+      "simulation_s": 9.89000000000015,
+      "wall_usec": 10601192
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 20.09,
+      "physics_ms": 5.471,
+      "primitives": 8455142.0,
+      "process_ms": 259.463,
+      "simulation_s": 9.91000000000015,
+      "wall_usec": 10621282
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 19.284,
+      "physics_ms": 5.471,
+      "primitives": 8455142.0,
+      "process_ms": 259.463,
+      "simulation_s": 9.93000000000015,
+      "wall_usec": 10640566
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 20.313,
+      "physics_ms": 5.471,
+      "primitives": 8455142.0,
+      "process_ms": 259.463,
+      "simulation_s": 9.95000000000016,
+      "wall_usec": 10660879
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 14.913,
+      "physics_ms": 5.471,
+      "primitives": 8455142.0,
+      "process_ms": 259.463,
+      "simulation_s": 9.96500000000016,
+      "wall_usec": 10675792
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 14.738,
+      "physics_ms": 5.471,
+      "primitives": 8455142.0,
+      "process_ms": 259.463,
+      "simulation_s": 9.98000000000016,
+      "wall_usec": 10690530
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 14.716,
+      "physics_ms": 5.471,
+      "primitives": 8455142.0,
+      "process_ms": 259.463,
+      "simulation_s": 9.99500000000016,
+      "wall_usec": 10705246
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 15.492,
+      "physics_ms": 5.471,
+      "primitives": 8455142.0,
+      "process_ms": 259.463,
+      "simulation_s": 10.0100000000002,
+      "wall_usec": 10720738
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 15.025,
+      "physics_ms": 5.471,
+      "primitives": 8455142.0,
+      "process_ms": 259.463,
+      "simulation_s": 10.0250000000002,
+      "wall_usec": 10735763
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 15.802,
+      "physics_ms": 5.471,
+      "primitives": 8455142.0,
+      "process_ms": 259.463,
+      "simulation_s": 10.0400000000002,
+      "wall_usec": 10751565
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 18.414,
+      "physics_ms": 5.471,
+      "primitives": 8455142.0,
+      "process_ms": 259.463,
+      "simulation_s": 10.0600000000002,
+      "wall_usec": 10769979
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 15.192,
+      "physics_ms": 5.471,
+      "primitives": 8455142.0,
+      "process_ms": 259.463,
+      "simulation_s": 10.0750000000002,
+      "wall_usec": 10785171
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 20.375,
+      "physics_ms": 5.471,
+      "primitives": 8455142.0,
+      "process_ms": 259.463,
+      "simulation_s": 10.0950000000002,
+      "wall_usec": 10805546
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 15.59,
+      "physics_ms": 5.471,
+      "primitives": 8455142.0,
+      "process_ms": 259.463,
+      "simulation_s": 10.1100000000002,
+      "wall_usec": 10821136
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 14.202,
+      "physics_ms": 5.471,
+      "primitives": 8455142.0,
+      "process_ms": 259.463,
+      "simulation_s": 10.1250000000002,
+      "wall_usec": 10835338
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 13.759,
+      "physics_ms": 5.471,
+      "primitives": 8455142.0,
+      "process_ms": 259.463,
+      "simulation_s": 10.1400000000002,
+      "wall_usec": 10849097
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 15.978,
+      "physics_ms": 5.471,
+      "primitives": 8455142.0,
+      "process_ms": 259.463,
+      "simulation_s": 10.1550000000002,
+      "wall_usec": 10865075
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 14.541,
+      "physics_ms": 5.471,
+      "primitives": 8455142.0,
+      "process_ms": 259.463,
+      "simulation_s": 10.1700000000002,
+      "wall_usec": 10879616
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 16.525,
+      "physics_ms": 5.471,
+      "primitives": 8455142.0,
+      "process_ms": 259.463,
+      "simulation_s": 10.1850000000002,
+      "wall_usec": 10896141
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 21.083,
+      "physics_ms": 5.471,
+      "primitives": 8455142.0,
+      "process_ms": 259.463,
+      "simulation_s": 10.2050000000002,
+      "wall_usec": 10917224
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 19.586,
+      "physics_ms": 5.471,
+      "primitives": 8455142.0,
+      "process_ms": 259.463,
+      "simulation_s": 10.2250000000002,
+      "wall_usec": 10936810
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 19.374,
+      "physics_ms": 5.471,
+      "primitives": 8455142.0,
+      "process_ms": 259.463,
+      "simulation_s": 10.2450000000002,
+      "wall_usec": 10956184
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 18.993,
+      "physics_ms": 5.471,
+      "primitives": 8455142.0,
+      "process_ms": 259.463,
+      "simulation_s": 10.2650000000002,
+      "wall_usec": 10975177
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 14.858,
+      "physics_ms": 5.471,
+      "primitives": 8455142.0,
+      "process_ms": 259.463,
+      "simulation_s": 10.2800000000002,
+      "wall_usec": 10990035
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 14.905,
+      "physics_ms": 5.471,
+      "primitives": 8455142.0,
+      "process_ms": 259.463,
+      "simulation_s": 10.2950000000002,
+      "wall_usec": 11004940
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 15.45,
+      "physics_ms": 5.471,
+      "primitives": 8455142.0,
+      "process_ms": 259.463,
+      "simulation_s": 10.3100000000002,
+      "wall_usec": 11020390
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 15.057,
+      "physics_ms": 5.471,
+      "primitives": 8455142.0,
+      "process_ms": 259.463,
+      "simulation_s": 10.3250000000002,
+      "wall_usec": 11035447
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 22.114,
+      "physics_ms": 5.471,
+      "primitives": 8455142.0,
+      "process_ms": 259.463,
+      "simulation_s": 10.3450000000002,
+      "wall_usec": 11057561
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 20.419,
+      "physics_ms": 5.471,
+      "primitives": 8455142.0,
+      "process_ms": 259.463,
+      "simulation_s": 10.3650000000002,
+      "wall_usec": 11077980
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 19.524,
+      "physics_ms": 5.471,
+      "primitives": 8455142.0,
+      "process_ms": 259.463,
+      "simulation_s": 10.3850000000002,
+      "wall_usec": 11097504
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 20.332,
+      "physics_ms": 5.471,
+      "primitives": 8455142.0,
+      "process_ms": 259.463,
+      "simulation_s": 10.4050000000002,
+      "wall_usec": 11117836
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 18.941,
+      "physics_ms": 5.357,
+      "primitives": 8455142.0,
+      "process_ms": 2.692,
+      "simulation_s": 10.4250000000002,
+      "wall_usec": 11136777
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 20.674,
+      "physics_ms": 5.357,
+      "primitives": 8455142.0,
+      "process_ms": 2.692,
+      "simulation_s": 10.4450000000002,
+      "wall_usec": 11157451
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 17.923,
+      "physics_ms": 5.357,
+      "primitives": 8455142.0,
+      "process_ms": 2.692,
+      "simulation_s": 10.4650000000002,
+      "wall_usec": 11175374
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 14.085,
+      "physics_ms": 5.357,
+      "primitives": 8455142.0,
+      "process_ms": 2.692,
+      "simulation_s": 10.4800000000002,
+      "wall_usec": 11189459
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 14.303,
+      "physics_ms": 5.357,
+      "primitives": 8455142.0,
+      "process_ms": 2.692,
+      "simulation_s": 10.4950000000002,
+      "wall_usec": 11203762
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 14.624,
+      "physics_ms": 5.357,
+      "primitives": 8455142.0,
+      "process_ms": 2.692,
+      "simulation_s": 10.5100000000002,
+      "wall_usec": 11218386
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 16.987,
+      "physics_ms": 5.357,
+      "primitives": 8455142.0,
+      "process_ms": 2.692,
+      "simulation_s": 10.5250000000002,
+      "wall_usec": 11235373
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 16.688,
+      "physics_ms": 5.357,
+      "primitives": 8455142.0,
+      "process_ms": 2.692,
+      "simulation_s": 10.5400000000002,
+      "wall_usec": 11252061
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 21.472,
+      "physics_ms": 5.357,
+      "primitives": 8455142.0,
+      "process_ms": 2.692,
+      "simulation_s": 10.5600000000003,
+      "wall_usec": 11273533
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 20.932,
+      "physics_ms": 5.357,
+      "primitives": 8455142.0,
+      "process_ms": 2.692,
+      "simulation_s": 10.5800000000003,
+      "wall_usec": 11294465
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 19.664,
+      "physics_ms": 5.357,
+      "primitives": 8455142.0,
+      "process_ms": 2.692,
+      "simulation_s": 10.6000000000003,
+      "wall_usec": 11314129
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 22.533,
+      "physics_ms": 5.357,
+      "primitives": 8455142.0,
+      "process_ms": 2.692,
+      "simulation_s": 10.6200000000003,
+      "wall_usec": 11336662
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 25.094,
+      "physics_ms": 5.357,
+      "primitives": 8455142.0,
+      "process_ms": 2.692,
+      "simulation_s": 10.6450000000003,
+      "wall_usec": 11361756
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 22.763,
+      "physics_ms": 5.357,
+      "primitives": 8455142.0,
+      "process_ms": 2.692,
+      "simulation_s": 10.6700000000003,
+      "wall_usec": 11384519
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 22.976,
+      "physics_ms": 5.357,
+      "primitives": 8455142.0,
+      "process_ms": 2.692,
+      "simulation_s": 10.6900000000003,
+      "wall_usec": 11407495
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 23.764,
+      "physics_ms": 5.357,
+      "primitives": 8455142.0,
+      "process_ms": 2.692,
+      "simulation_s": 10.7150000000003,
+      "wall_usec": 11431259
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 22.847,
+      "physics_ms": 5.357,
+      "primitives": 8455142.0,
+      "process_ms": 2.692,
+      "simulation_s": 10.7400000000003,
+      "wall_usec": 11454106
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 19.472,
+      "physics_ms": 5.357,
+      "primitives": 8455142.0,
+      "process_ms": 2.692,
+      "simulation_s": 10.7600000000003,
+      "wall_usec": 11473578
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 19.549,
+      "physics_ms": 5.357,
+      "primitives": 8455142.0,
+      "process_ms": 2.692,
+      "simulation_s": 10.7800000000003,
+      "wall_usec": 11493127
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 19.789,
+      "physics_ms": 5.357,
+      "primitives": 8455142.0,
+      "process_ms": 2.692,
+      "simulation_s": 10.8000000000003,
+      "wall_usec": 11512916
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 19.171,
+      "physics_ms": 5.357,
+      "primitives": 8455142.0,
+      "process_ms": 2.692,
+      "simulation_s": 10.8200000000003,
+      "wall_usec": 11532087
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 19.3,
+      "physics_ms": 5.357,
+      "primitives": 8455142.0,
+      "process_ms": 2.692,
+      "simulation_s": 10.8400000000003,
+      "wall_usec": 11551387
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 21.759,
+      "physics_ms": 5.357,
+      "primitives": 8455142.0,
+      "process_ms": 2.692,
+      "simulation_s": 10.8600000000003,
+      "wall_usec": 11573146
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 23.515,
+      "physics_ms": 5.357,
+      "primitives": 8455142.0,
+      "process_ms": 2.692,
+      "simulation_s": 10.8800000000003,
+      "wall_usec": 11596661
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 24.448,
+      "physics_ms": 5.357,
+      "primitives": 8455142.0,
+      "process_ms": 2.692,
+      "simulation_s": 10.9050000000003,
+      "wall_usec": 11621109
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 18.415,
+      "physics_ms": 5.357,
+      "primitives": 8455142.0,
+      "process_ms": 2.692,
+      "simulation_s": 10.9250000000003,
+      "wall_usec": 11639524
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 22.515,
+      "physics_ms": 5.357,
+      "primitives": 8455142.0,
+      "process_ms": 2.692,
+      "simulation_s": 10.9450000000003,
+      "wall_usec": 11662039
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 23.15,
+      "physics_ms": 5.357,
+      "primitives": 8455142.0,
+      "process_ms": 2.692,
+      "simulation_s": 10.9700000000003,
+      "wall_usec": 11685189
+    },
+    {
+      "draw_calls": 1211.0,
+      "frame_ms": 21.308,
+      "physics_ms": 5.357,
+      "primitives": 8455142.0,
+      "process_ms": 2.692,
+      "simulation_s": 10.9900000000003,
+      "wall_usec": 11706497
+    }
+  ],
+  "godot": {
+    "build": "official",
+    "hash": "ed1daf0bf001b61586d9930840f2f1394092c079",
+    "hex": 263938,
+    "major": 4,
+    "minor": 7,
+    "patch": 2,
+    "status": "stable",
+    "string": "4.7.2-stable (official)",
+    "timestamp": 0
+  },
+  "gpu": "NVIDIA GB10",
+  "groups": 51,
+  "maximum_idler_binding_error_m": 0.0000229130055231508,
+  "maximum_wheel_binding_error_m": 0.0000229108354687924,
+  "maximum_wheel_stroke_m": 0.0305557250976562,
+  "mean_visual_update_ms": 0.378116368286445,
+  "msaa": 4,
+  "native_path_active": true,
+  "native_wheel_positions": {
+    "front_bogie_aft_left_wheel_left_1": [
+      -13.058048248291,
+      13.5500068664551,
+      1.04203569889069
+    ],
+    "front_bogie_aft_left_wheel_left_2": [
+      -10.5079469680786,
+      13.550009727478,
+      1.06714391708374
+    ],
+    "front_bogie_aft_left_wheel_left_3": [
+      -7.95803213119507,
+      13.5500116348267,
+      1.0379273891449
+    ],
+    "front_bogie_aft_left_wheel_right_1": [
+      -13.0580453872681,
+      10.0500068664551,
+      1.04203319549561
+    ],
+    "front_bogie_aft_left_wheel_right_2": [
+      -10.5079441070557,
+      10.050009727478,
+      1.0671409368515
+    ],
+    "front_bogie_aft_left_wheel_right_3": [
+      -7.95802927017212,
+      10.0500116348267,
+      1.03792381286621
+    ],
+    "front_bogie_aft_right_wheel_left_1": [
+      -13.0580406188965,
+      -10.0500059127808,
+      1.042032122612
+    ],
+    "front_bogie_aft_right_wheel_left_2": [
+      -10.5079393386841,
+      -10.0500087738037,
+      1.06714081764221
+    ],
+    "front_bogie_aft_right_wheel_left_3": [
+      -7.95802450180054,
+      -10.0500106811523,
+      1.03792452812195
+    ],
+    "front_bogie_aft_right_wheel_right_1": [
+      -13.0580434799194,
+      -13.5500059127808,
+      1.04203474521637
+    ],
+    "front_bogie_aft_right_wheel_right_2": [
+      -10.507942199707,
+      -13.5500087738037,
+      1.06714379787445
+    ],
+    "front_bogie_aft_right_wheel_right_3": [
+      -7.95802783966064,
+      -13.5500106811523,
+      1.03792786598206
+    ],
+    "front_bogie_fore_left_wheel_left_1": [
+      7.94175720214844,
+      13.5500116348267,
+      1.04225540161133
+    ],
+    "front_bogie_fore_left_wheel_left_2": [
+      10.4918603897095,
+      13.5500144958496,
+      1.06737244129181
+    ],
+    "front_bogie_fore_left_wheel_left_3": [
+      13.0417737960815,
+      13.5500164031982,
+      1.03814351558685
+    ],
+    "front_bogie_fore_left_wheel_right_1": [
+      7.9417610168457,
+      10.0500116348267,
+      1.04225301742554
+    ],
+    "front_bogie_fore_left_wheel_right_2": [
+      10.4918642044067,
+      10.0500144958496,
+      1.06736958026886
+    ],
+    "front_bogie_fore_left_wheel_right_3": [
+      13.0417776107788,
+      10.0500164031982,
+      1.03814029693604
+    ],
+    "front_bogie_fore_right_wheel_left_1": [
+      7.94175863265991,
+      -10.0500068664551,
+      1.04225301742554
+    ],
+    "front_bogie_fore_right_wheel_left_2": [
+      10.4918622970581,
+      -10.050009727478,
+      1.06736934185028
+    ],
+    "front_bogie_fore_right_wheel_left_3": [
+      13.0417757034302,
+      -10.0500116348267,
+      1.03813970088959
+    ],
+    "front_bogie_fore_right_wheel_right_1": [
+      7.94175481796265,
+      -13.5500068664551,
+      1.0422557592392
+    ],
+    "front_bogie_fore_right_wheel_right_2": [
+      10.4918584823608,
+      -13.550009727478,
+      1.06737267971039
+    ],
+    "front_bogie_fore_right_wheel_right_3": [
+      13.0417718887329,
+      -13.5500116348267,
+      1.03814351558685
+    ],
+    "rear_bogie_aft_left_wheel_left_1": [
+      -55.0584564208984,
+      13.549994468689,
+      1.04190444946289
+    ],
+    "rear_bogie_aft_left_wheel_left_2": [
+      -52.5083541870117,
+      13.5500078201294,
+      1.0669778585434
+    ],
+    "rear_bogie_aft_left_wheel_left_3": [
+      -49.9584426879883,
+      13.5500221252441,
+      1.03777313232422
+    ],
+    "rear_bogie_aft_left_wheel_right_1": [
+      -55.0584373474121,
+      10.049994468689,
+      1.04190289974213
+    ],
+    "rear_bogie_aft_left_wheel_right_2": [
+      -52.5083351135254,
+      10.0500078201294,
+      1.06697630882263
+    ],
+    "rear_bogie_aft_left_wheel_right_3": [
+      -49.958423614502,
+      10.0500221252441,
+      1.03777134418488
+    ],
+    "rear_bogie_aft_right_wheel_left_1": [
+      -55.0584564208984,
+      -10.0499992370605,
+      1.04190373420715
+    ],
+    "rear_bogie_aft_right_wheel_left_2": [
+      -52.5083541870117,
+      -10.0500011444092,
+      1.06697690486908
+    ],
+    "rear_bogie_aft_right_wheel_left_3": [
+      -49.9584426879883,
+      -10.0500030517578,
+      1.03777194023132
+    ],
+    "rear_bogie_aft_right_wheel_right_1": [
+      -55.0584602355957,
+      -13.5499992370605,
+      1.04190409183502
+    ],
+    "rear_bogie_aft_right_wheel_right_2": [
+      -52.508358001709,
+      -13.5500011444092,
+      1.06697690486908
+    ],
+    "rear_bogie_aft_right_wheel_right_3": [
+      -49.9584465026855,
+      -13.5500030517578,
+      1.03777241706848
+    ],
+    "rear_bogie_fore_left_wheel_left_1": [
+      -34.0583686828613,
+      13.5500059127808,
+      1.04194903373718
+    ],
+    "rear_bogie_fore_left_wheel_left_2": [
+      -31.5082721710205,
+      13.5500049591064,
+      1.06702291965485
+    ],
+    "rear_bogie_fore_left_wheel_left_3": [
+      -28.9583568572998,
+      13.5500040054321,
+      1.03781521320343
+    ],
+    "rear_bogie_fore_left_wheel_right_1": [
+      -34.0583686828613,
+      10.0500059127808,
+      1.04194808006287
+    ],
+    "rear_bogie_fore_left_wheel_right_2": [
+      -31.5082721710205,
+      10.0500049591064,
+      1.06702244281769
+    ],
+    "rear_bogie_fore_left_wheel_right_3": [
+      -28.9583568572998,
+      10.0500040054321,
+      1.03781402111053
+    ],
+    "rear_bogie_fore_right_wheel_left_1": [
+      -34.0583801269531,
+      -10.0500020980835,
+      1.04194903373718
+    ],
+    "rear_bogie_fore_right_wheel_left_2": [
+      -31.5082836151123,
+      -10.0500040054321,
+      1.06702256202698
+    ],
+    "rear_bogie_fore_right_wheel_left_3": [
+      -28.9583702087402,
+      -10.0500059127808,
+      1.03781461715698
+    ],
+    "rear_bogie_fore_right_wheel_right_1": [
+      -34.0583839416504,
+      -13.5500020980835,
+      1.04194927215576
+    ],
+    "rear_bogie_fore_right_wheel_right_2": [
+      -31.5082874298096,
+      -13.5500040054321,
+      1.067023396492
+    ],
+    "rear_bogie_fore_right_wheel_right_3": [
+      -28.9583721160889,
+      -13.5500059127808,
+      1.03781521320343
+    ],
+    "tail_bogie_aft_left_wheel_left_1": [
+      -97.059684753418,
+      13.5499935150146,
+      1.04230868816376
+    ],
+    "tail_bogie_aft_left_wheel_left_2": [
+      -94.5095825195312,
+      13.5500135421753,
+      1.06742238998413
+    ],
+    "tail_bogie_aft_left_wheel_left_3": [
+      -91.9596633911133,
+      13.5500345230103,
+      1.03818202018738
+    ],
+    "tail_bogie_aft_left_wheel_right_1": [
+      -97.0596542358398,
+      10.0499935150146,
+      1.04230642318726
+    ],
+    "tail_bogie_aft_left_wheel_right_2": [
+      -94.5095520019531,
+      10.0500135421753,
+      1.06741833686829
+    ],
+    "tail_bogie_aft_left_wheel_right_3": [
+      -91.9596328735352,
+      10.0500345230103,
+      1.03817856311798
+    ],
+    "tail_bogie_aft_right_wheel_left_1": [
+      -97.0596008300781,
+      -10.0500011444092,
+      1.04230546951294
+    ],
+    "tail_bogie_aft_right_wheel_left_2": [
+      -94.5094985961914,
+      -10.0500116348267,
+      1.06741797924042
+    ],
+    "tail_bogie_aft_right_wheel_left_3": [
+      -91.9595794677734,
+      -10.0500202178955,
+      1.03817784786224
+    ],
+    "tail_bogie_aft_right_wheel_right_1": [
+      -97.0596160888672,
+      -13.5500011444092,
+      1.04230880737305
+    ],
+    "tail_bogie_aft_right_wheel_right_2": [
+      -94.5095062255859,
+      -13.5500116348267,
+      1.06742250919342
+    ],
+    "tail_bogie_aft_right_wheel_right_3": [
+      -91.9595947265625,
+      -13.5500202178955,
+      1.03818261623383
+    ],
+    "tail_bogie_fore_left_wheel_left_1": [
+      -76.0593948364258,
+      13.5499925613403,
+      1.04198908805847
+    ],
+    "tail_bogie_fore_left_wheel_left_2": [
+      -73.5093002319336,
+      13.5500106811523,
+      1.06708991527557
+    ],
+    "tail_bogie_fore_left_wheel_left_3": [
+      -70.9593734741211,
+      13.5500288009644,
+      1.03786885738373
+    ],
+    "tail_bogie_fore_left_wheel_right_1": [
+      -76.0593719482422,
+      10.0499925613403,
+      1.04198634624481
+    ],
+    "tail_bogie_fore_left_wheel_right_2": [
+      -73.5092697143555,
+      10.0500106811523,
+      1.06708681583405
+    ],
+    "tail_bogie_fore_left_wheel_right_3": [
+      -70.9593505859375,
+      10.0500288009644,
+      1.03786551952362
+    ],
+    "tail_bogie_fore_right_wheel_left_1": [
+      -76.059326171875,
+      -10.0500078201294,
+      1.04198861122131
+    ],
+    "tail_bogie_fore_right_wheel_left_2": [
+      -73.5092315673828,
+      -10.0500087738037,
+      1.06708681583405
+    ],
+    "tail_bogie_fore_right_wheel_left_3": [
+      -70.9593048095703,
+      -10.0500087738037,
+      1.03786635398865
+    ],
+    "tail_bogie_fore_right_wheel_right_1": [
+      -76.059326171875,
+      -13.5500078201294,
+      1.04199028015137
+    ],
+    "tail_bogie_fore_right_wheel_right_2": [
+      -73.5092315673828,
+      -13.5500087738037,
+      1.06709015369415
+    ],
+    "tail_bogie_fore_right_wheel_right_3": [
+      -70.9593048095703,
+      -13.5500087738037,
+      1.03786909580231
+    ]
+  },
+  "physical_wheels": 72,
+  "physics_hz": 200,
+  "rendering_method": "forward_plus",
+  "resolution": [
+    1920,
+    1080
+  ],
+  "scope": "Sainiverse 001 authored skin and native movable robot boarding lifts. Same finite-force suspension and traction; manually controlled candidate. Provisional mass, not hardware qualification.",
+  "seconds": 10.9950000000003,
+  "state_texture_bytes_match": true,
+  "state_texture_size": [
+    36,
+    24
+  ],
+  "view": "art",
+  "visual_meshes": 273,
+  "visual_updates": 782,
+  "wall_seconds": 11.714419
+}

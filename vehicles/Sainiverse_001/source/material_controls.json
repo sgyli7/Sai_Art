@@ -1,0 +1,16 @@
+{
+  "normal_strength": 0.8,
+  "paint_tile_m": 4.0,
+  "deck_tile_m": 4.0,
+  "paint_relief_depth_m": 0.0025,
+  "deck_relief_depth_m": 0.003,
+  "tread_spacing_m": 0.2,
+  "grain": false,
+  "random_scratches": false,
+  "scope": "Tangent-space OpenGL normal data generated from stated height fields. Optical detail only; does not alter contact or silhouette.",
+  "artwork_strength": 1.0,
+  "steel_roughness": 0.7,
+  "paint_roughness": 0.88,
+  "paint_normal": "flat; painted ink is albedo, not height",
+  "artwork_asset": "service_panel_handpainted.png"
+}

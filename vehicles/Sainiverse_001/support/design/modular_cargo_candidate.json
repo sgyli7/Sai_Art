@@ -1,0 +1,60 @@
+{
+  "status": "Three-module authored/native-dynamics candidate exists; latest order containers then energy. Crane handling, turning, suspension visual binding, indoor boarding and full FPS remain pending.",
+  "module_kind": "powered_transport_4bogie_4crane",
+  "coordinate_convention": "SI, X forward, Y left, Z up; module center datum",
+  "bogies_per_module": 4,
+  "belts_per_bogie": 2,
+  "cranes_per_transport_module": 4,
+  "crane_candidate_pivots_local_xy_m": [
+    [
+      -14.7,
+      -11.0
+    ],
+    [
+      -14.7,
+      11.0
+    ],
+    [
+      14.7,
+      -11.0
+    ],
+    [
+      14.7,
+      11.0
+    ]
+  ],
+  "current_crane_planar_tip_reach_m": 11.2,
+  "proposed_planar_coverage_radius_m": 19.5,
+  "coverage_radius_status": "Geometric design target only; new telescoping stages, load chart and high-cargo clearance not implemented",
+  "payload_profiles": [
+    "energy_cylinder_bank",
+    "container_cargo"
+  ],
+  "demonstration_train": [
+    "front_work_cab",
+    "container_cargo",
+    "energy_cylinder_bank"
+  ],
+  "hitch_mechanical_yaw_degrees": [
+    -30.0,
+    30.0
+  ],
+  "modules_have_independent_powered_bogies": true,
+  "required_shared_interfaces": [
+    "fore and aft load-bearing coupler",
+    "payload mounting and restraints",
+    "drive and braking coordination",
+    "power and communication",
+    "bilateral robot lifts"
+  ],
+  "required_validation": [
+    "four-crane reach with height and obstacles",
+    "stowed and operating crane interference",
+    "payload mass and center of mass",
+    "support reactions during lifting",
+    "three-module articulation and braking",
+    "native MuJoCo and Jolt dynamics",
+    "all-module rendering and physics performance"
+  ],
+  "current_candidate": "candidates/r016_modular/train_containers_first"
+}

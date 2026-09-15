@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "status": "r015 candidate; not yet deployed or trained",
+  "coordinates": "SI; X forward, Y left, Z up",
+  "reference_anchor_m": [
+    -21.0,
+    0.0,
+    6.5
+  ],
+  "extension_m": [
+    0.0,
+    4.0
+  ],
+  "yaw_degrees": [
+    -30.0,
+    30.0
+  ],
+  "pitch_degrees": [
+    -8.0,
+    8.0
+  ],
+  "roll_degrees": [
+    -6.0,
+    6.0
+  ],
+  "moving_carrier_mass_kg": [
+    20000.0,
+    10000.0,
+    10000.0
+  ],
+  "carrier_inertia_kg_m2": [
+    25000.0,
+    12000.0,
+    12000.0
+  ],
+  "extension_force_limit_N": 5000000.0,
+  "rotation_torque_limits_Nm": [
+    50000000.0,
+    50000000.0,
+    30000000.0
+  ],
+  "extension_kp_N_per_m": 4000000.0,
+  "extension_kd_Ns_per_m": 9000000.0,
+  "rotation_kp_Nm_per_rad": [
+    150000000.0,
+    300000000.0,
+    200000000.0
+  ],
+  "rotation_kd_Nms_per_rad": [
+    1100000000.0,
+    1200000000.0,
+    600000000.0
+  ],
+  "basis": "Latest user steering supersedes the earlier +/-45 degree target: reduce the maximum articulation and add modular cargo trailers with four cranes per transport module. Candidate mechanical yaw limits are now +/-30 degrees, with tighter speed-dependent operation still to implement. Earlier 45-degree geometry/fixture and suite_v1 straight-ground evidence are historical and retained with their original configuration. Recheck clearances for added cranes, interchangeable cargo and an additional powered module; the 4 m extension is retained as available travel pending a smaller required-stroke assessment. Masses, actuator limits and terrain articulation ranges are design assumptions, not hardware ratings. Bearing axes remain yaw at reference anchor, pitch 2.2 m aft, roll 0.9 m aft of pitch.",
+  "deployment_condition": "New native joint geometry, finite actuator controls, collision sweeps and cross-engine tests must pass before promotion; original r014 remains installed.",
+  "transport_extension_target_m": 0.0,
+  "extension_policy_basis": "The four-crane two-hull candidate passes 333 discrete offset-axis surface screens at 0 to 4 m extension and +/-30 deg yaw with sampled pitch/roll. Retraction (0 m) already passes the sampled nominal-suspension poses, so transport defaults to retracted. This does not certify continuous, suspended, three-module or deployed-crane clearance; mechanical locking remains to implement.",
+  "pitch_axis_offset_m": [
+    -2.2,
+    0,
+    0
+  ],
+  "roll_axis_offset_from_pitch_m": [
+    -0.9,
+    0,
+    0
+  ]
+}

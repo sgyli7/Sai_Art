@@ -1,0 +1,21 @@
+{
+  "status": "Four feedback gains trained by seeded CEM in MuJoCo; independent holdouts/native validation pending",
+  "module_center_spacing_m": 42.0,
+  "mechanical_hitch_yaw_deg": 30.0,
+  "operating_hitch_yaw_deg": 28.0,
+  "lateral_accel_command_limit_m_s2": 0.8,
+  "hitch_target_rate_deg_s": 3.0,
+  "bogie_target_rate_deg_s": 5.0,
+  "bogie_yaw_limit_deg": 35.0,
+  "bogie_yaw_kp_Nm_rad": 30000000.0,
+  "bogie_yaw_kd_Nms_rad": 12000000.0,
+  "bogie_yaw_torque_limit_Nm": 20000000.0,
+  "path_heading_gain_per_s": 1.1392344426024612,
+  "path_cross_track_gain_per_s": 0.2960096011082783,
+  "basis": "Finite steering of the twelve existing bogie yaw joints plus two coupler yaw joints. Initial geometry uses symmetric 21 m half-spacing and zero extension. Radius/angle relation is a kinematic command approximation, not a handling rating. Speed and curvature commands are limited together; native force/torque constraints still determine actual motion. Actual lateral acceleration and trailer response require separate measurement. The nominal path request uses a 25 degree equivalent joint angle, leaving correction authority up to the 28 degree operating target and 30 degree mechanical stop.",
+  "path_hitch_equivalent_limit_deg": 25.0,
+  "hitch_yaw_kp_Nm_rad": 207434306.650621,
+  "hitch_yaw_kd_Nms_rad": 993920833.0511922,
+  "reverse_path_leader": "tail",
+  "training_result_sha256": "e2294bbcdc97ee7675ed7eb5d1081f6f54c69d72f61678d1aaaab74b26d4af0b"
+}

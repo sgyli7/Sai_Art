@@ -1,0 +1,354 @@
+{
+  "id": "Leviathan_003",
+  "schema": 1,
+  "units": "metres, radians",
+  "frame": "+X forward +Y left +Z up",
+  "basis": "Image-derived proportions, not original CAD dimensions. Physics benchmark parameters remain in source/physics.py and assets/physics.json.",
+  "undercarriage": {
+    "hull_centers_x": [
+      0,
+      -42
+    ],
+    "bogie_offsets_x": [
+      -10.5,
+      10.5
+    ],
+    "bogie_offsets_y": [
+      -11.8,
+      11.8
+    ],
+    "pivot_z": 3.0,
+    "belt_offsets_y": [
+      -1.75,
+      1.75
+    ],
+    "wheels_x_z_radius": [
+      [
+        -4.15,
+        2.4,
+        0.88
+      ],
+      [
+        -2.55,
+        1.15,
+        0.8
+      ],
+      [
+        0,
+        1.18,
+        0.83
+      ],
+      [
+        2.55,
+        1.15,
+        0.8
+      ],
+      [
+        4.15,
+        2.4,
+        0.88
+      ]
+    ],
+    "belt_centerline_clearance": 0.09,
+    "target_link_pitch": 0.46,
+    "link_width": 1.8,
+    "link_thickness": 0.18,
+    "guide_horn_width": 0.22,
+    "end_housing": {
+      "half_width_y": 0.72,
+      "outline_positive_xz": [
+        [
+          3.55,
+          4.07
+        ],
+        [
+          5.15,
+          4.07
+        ],
+        [
+          5.45,
+          3.77
+        ],
+        [
+          5.45,
+          1.95
+        ],
+        [
+          4.95,
+          1.3
+        ],
+        [
+          3.55,
+          1.3
+        ]
+      ],
+      "basis": "Visible central end service covers between the two belts in references1/4; dimensions proportional, no gearbox internals or new dynamics."
+    }
+  },
+  "cranes": {
+    "placement_x_y_direction": [
+      [
+        -52.7,
+        -11,
+        -1
+      ],
+      [
+        -23.3,
+        -11,
+        1
+      ]
+    ],
+    "boom_tip_offset_x": 11.2,
+    "hook_center_z": 13.4,
+    "state": "visual transport lock; no lifting physics or load rating",
+    "pedestal_size": [
+      3.2,
+      3.4,
+      3.7
+    ],
+    "foundation_size": [
+      3.3,
+      3.6,
+      0.18
+    ],
+    "transport_heading_degrees": [
+      90,
+      90
+    ],
+    "pose_basis": "Reference images2/5: both pedestals lie on the flat-cover (-Y) deck edge, at opposite longitudinal ends; both booms point +Y in this transport pose. Image4 shows a different arm orientation. Third placement element remains the legacy authoring X-direction, not installed heading."
+  },
+  "panel": {
+    "tilt_degrees": -18,
+    "outer_width": 7.4,
+    "outer_height": 10.3,
+    "outer_thickness": 0.8,
+    "lower_pivot": [
+      4.8,
+      0,
+      18.3
+    ],
+    "upper_pivot": [
+      3.6,
+      0,
+      20.55
+    ],
+    "arm_y": [
+      -2.25,
+      2.25
+    ],
+    "pattern_pitch": 0.145,
+    "state": "static visual upper works; no sensing, targeting or deployed mechanism dynamics"
+  },
+  "reservoirs": {
+    "centers_y": [
+      -9.4,
+      -3.6,
+      3.6,
+      9.4
+    ],
+    "levels_z": [
+      12.0,
+      17.5
+    ],
+    "shell_radius": 2.45,
+    "band_stations_x": [
+      -49.15,
+      -44.69,
+      -40.23,
+      -35.77,
+      -31.31,
+      -26.85
+    ],
+    "clamp_pin_radial_offset": 2.72,
+    "clamp_pin_angle_degrees": 40,
+    "state": "sealed static transport forms; no deployment or weapon function",
+    "installation_yaw_degrees": 90,
+    "rack_y": 13.1,
+    "frame_note": "Tube and mounting profiles are authored along X in the legacy rear frame, then rotated +90 degrees about rear center. Installed tubes run along Y, four columns run along X. Flat covers face -Y; ribbed domes face +Y. Images 1/2/4/5 confirm transverse installation."
+  },
+  "surface_marks": {
+    "front_identifier": "\u042d\u041c-350",
+    "rear_identifier": "\u041c-380",
+    "support_numbers": {
+      "front": {
+        "0": "40",
+        "1": "20"
+      },
+      "rear": {
+        "0": "80",
+        "1": "60"
+      }
+    },
+    "basis": "Reference images 4/5/6: identifier lettering partly occluded; prefixes are provisional transcription. Visible support numerals and paint locations reconstructed. Unreadable small captions omitted.",
+    "state": "static visual paint geometry; no additional collision or gameplay function"
+  },
+  "bridge": {
+    "floor_z": 11.35,
+    "door_x": [
+      19.15,
+      23.15,
+      25.05
+    ],
+    "door_window": [
+      false,
+      false,
+      true
+    ],
+    "door_height": 2.9,
+    "door_width": 1.25,
+    "square_windows_x": [
+      26.85,
+      29.3
+    ],
+    "window_center_z": 13.65,
+    "ladder_x": 21.1,
+    "side_panel_seams_x": [
+      17.8,
+      22.0,
+      24.05,
+      25.95,
+      28.1,
+      30.5
+    ],
+    "lower_hatch_center_x_z": [
+      29.55,
+      10.52
+    ],
+    "shell_outline_xz": [
+      [
+        16,
+        11.35
+      ],
+      [
+        27.4,
+        11.35
+      ],
+      [
+        29.1,
+        9.5
+      ],
+      [
+        31.8,
+        9.5
+      ],
+      [
+        34,
+        11.6
+      ],
+      [
+        34,
+        14.9
+      ],
+      [
+        17,
+        14.9
+      ]
+    ],
+    "stairs": {
+      "count": 20,
+      "bottom_z": 7.5,
+      "first_y": 10.0,
+      "pitch_y": 0.28,
+      "tread_depth": 0.32,
+      "lower_landing_y": 10.55
+    },
+    "basis": "Reconstructed from reference images 1,4,6. Door/window pattern and short lower truss replace uniform four-door block. Dimensions are proportional estimates; no interior or structural validation.",
+    "gallery_center_y": 4.3,
+    "gallery_width": 1.65
+  },
+  "layout": {
+    "authoring_hull_centers_x": [
+      0,
+      -38
+    ],
+    "hitch_x": -21,
+    "hitch_z": 6.5,
+    "basis": "Four bogie row centers near-equidistant in reference images 4 and 5; 21 m rounded at inherited 8.3 m upper-wheel span. Absolute scale is not measured. Rear upper-work authoring coordinates use the explicit legacy frame and are translated once at export."
+  },
+  "track_tension_candidate": {
+    "belt_stiffness_N_m": 20000000.0,
+    "belt_damping_Ns_m": 50000.0,
+    "tension_limit_N": 1500000.0,
+    "recoil_stiffness_N_m": 350000.0,
+    "recoil_damping_Ns_m": 180000.0,
+    "recoil_force_limit_N": 1200000.0,
+    "idler_travel_m": [
+      -0.32,
+      0.24
+    ],
+    "idler_effective_mass_kg": 12000.0
+  },
+  "bridge_interior_candidate": {
+    "floor_z": 11.35,
+    "ceiling_z": 14.7,
+    "wall_thickness_m": 0.2,
+    "door_clear_width_m": 1.2,
+    "door_clear_height_m": 2.82,
+    "central_aisle_half_width_m": 0.8,
+    "worktop_height_m": 0.38,
+    "control_top_height_m": 0.46,
+    "workshop_x": 21.05,
+    "workshop_centers_y": [
+      -2.73,
+      2.73
+    ],
+    "control_centers_x_y": [
+      [
+        32.7,
+        -1.8
+      ],
+      [
+        32.7,
+        1.8
+      ]
+    ],
+    "cabinet_centers_x_y": [
+      [
+        17.9,
+        -2.72
+      ],
+      [
+        17.9,
+        2.72
+      ],
+      [
+        27.1,
+        -2.72
+      ],
+      [
+        27.1,
+        2.72
+      ],
+      [
+        29.25,
+        -2.72
+      ],
+      [
+        29.25,
+        2.72
+      ]
+    ],
+    "basis": "Robot-height servicing and controls, centralized clear aisle; An-225 references supply panel grouping and material relationships only. Geometry candidate, not arm reach, load rating, functional doors or boarding validation.",
+    "floor_friction_coefficient": 0.8,
+    "native_contact_cache_enabled": false
+  },
+  "cabin_access_candidate": {
+    "hinge_offset_x_m": 0.69,
+    "hinge_abs_y_m": 3.7,
+    "maximum_open_deg": 110.0,
+    "effective_door_mass_kg": 80.0,
+    "maximum_angular_speed_rad_s": 0.35,
+    "open_torque_limit_Nm": 120.0,
+    "close_torque_limit_Nm": 25.0,
+    "velocity_gain_Nms_rad": 200.0,
+    "position_gain_s_inv": 1.5,
+    "motor_power_limit_W": 100.0,
+    "opening_vehicle_speed_limit_m_s": 0.02,
+    "latch_stiffness_Nm_rad": 200000.0,
+    "latch_damping_Nms_rad": 2500.0,
+    "latch_torque_limit_Nm": 1500.0,
+    "latch_capture_angle_rad": 0.003,
+    "latch_capture_speed_rad_s": 0.02,
+    "basis": "Provisional six-door mechanism and finite drive inputs. Adds 480 kg to the previous lumped carrier; no complete CAD mass ledger, rated hardware or safety qualification."
+  }
+}

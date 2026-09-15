@@ -1,0 +1,7 @@
+[configuration]
+entry_symbol = "leviathan_track_path_init"
+compatibility_minimum = "4.7"
+reloadable = false
+
+[libraries]
+linux.single.arm64 = "@SAI_ROOT@/support/native/bin/libleviathan_track_path.so"

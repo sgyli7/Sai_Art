@@ -1,0 +1,163 @@
+{
+  "recipe": {
+    "seed": 73031,
+    "tile_px": 512,
+    "variants_per_family": 4,
+    "families": [
+      "edge_chips",
+      "stencil_loss",
+      "runoff",
+      "access_scuffs"
+    ],
+    "maximum_paint_loss_coverage": 0.12,
+    "edge_band_fraction": 0.06,
+    "logo": "SAINIVERSE",
+    "font": "/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf",
+    "notes": "Authored panel-space edge/usage proxies, not baked mesh curvature or AO. Seed changes stroke silhouettes only inside permitted regions. No global speckle layer."
+  },
+  "tiles": [
+    {
+      "index": 0,
+      "family": "edge_chips",
+      "variant": 0,
+      "coverage": 0.023101806640625,
+      "file": "edge_chips_00.png",
+      "sha256": "60fff4e067905df5d25a058bc3200576be0cc2348082c0bfb7065746a55a8412"
+    },
+    {
+      "index": 1,
+      "family": "edge_chips",
+      "variant": 1,
+      "coverage": 0.023174285888671875,
+      "file": "edge_chips_01.png",
+      "sha256": "c9b98a1346a01c161efb691eab6ec30f3b17cd7ff3aeea16b47bb2cd766ef553"
+    },
+    {
+      "index": 2,
+      "family": "edge_chips",
+      "variant": 2,
+      "coverage": 0.02126312255859375,
+      "file": "edge_chips_02.png",
+      "sha256": "503023973b0ef26734fb48fada4337c38a0a50e48698fbae4e7adc6abcd61526"
+    },
+    {
+      "index": 3,
+      "family": "edge_chips",
+      "variant": 3,
+      "coverage": 0.017444610595703125,
+      "file": "edge_chips_03.png",
+      "sha256": "2da2b5f736f063db26f143a6d96123a9a503b4bc894c0b7d30e207966abecc2d"
+    },
+    {
+      "index": 4,
+      "family": "stencil_loss",
+      "variant": 0,
+      "coverage": 0.0305328369140625,
+      "file": "stencil_loss_00.png",
+      "sha256": "1687b1cf2d7b8b298c8aa7f9b756a1a11178f335ed5b4387953a2224ae0ae61b"
+    },
+    {
+      "index": 5,
+      "family": "stencil_loss",
+      "variant": 1,
+      "coverage": 0.061916351318359375,
+      "file": "stencil_loss_01.png",
+      "sha256": "5a504d74284901ac86ea7256fa4d25e7837c4c0627a471db3489a8fe825c7dcc"
+    },
+    {
+      "index": 6,
+      "family": "stencil_loss",
+      "variant": 2,
+      "coverage": 0.08132553100585938,
+      "file": "stencil_loss_02.png",
+      "sha256": "bded0a33a824e013b3584e48162424a414ff1d4e82a1a4ff614f1e38f06c5163"
+    },
+    {
+      "index": 7,
+      "family": "stencil_loss",
+      "variant": 3,
+      "coverage": 0.11834335327148438,
+      "file": "stencil_loss_03.png",
+      "sha256": "8bfd26e657dc072a29ddb53899f57c389dc9531213c54d71980472b48ec4f0f9"
+    },
+    {
+      "index": 8,
+      "family": "runoff",
+      "variant": 0,
+      "coverage": 0.0034332275390625,
+      "file": "runoff_00.png",
+      "sha256": "206962d5e37434accb1b3d667400159b1bd16809fa166294a03ba1bf8b82fa3c"
+    },
+    {
+      "index": 9,
+      "family": "runoff",
+      "variant": 1,
+      "coverage": 0.00301361083984375,
+      "file": "runoff_01.png",
+      "sha256": "af5b5d23ef61ca16caa5184319f0cf0aefac17c8e9be081f6cd7446a260fb1bd"
+    },
+    {
+      "index": 10,
+      "family": "runoff",
+      "variant": 2,
+      "coverage": 0.00370025634765625,
+      "file": "runoff_02.png",
+      "sha256": "f70b4d6de1528dc8cd9e6244952d720499014407b8e1d72f950cc860dc70fb3b"
+    },
+    {
+      "index": 11,
+      "family": "runoff",
+      "variant": 3,
+      "coverage": 0.0046539306640625,
+      "file": "runoff_03.png",
+      "sha256": "e9c9080f862937b9779a7dd9e86d91b2b6439d713bacf3243879da58b2078b87"
+    },
+    {
+      "index": 12,
+      "family": "access_scuffs",
+      "variant": 0,
+      "coverage": 0.014186859130859375,
+      "file": "access_scuffs_00.png",
+      "sha256": "aa54b48c84cac1c83dc46b3a229cef9b6dba4210dc1953176cb9ef6f6f1f127a"
+    },
+    {
+      "index": 13,
+      "family": "access_scuffs",
+      "variant": 1,
+      "coverage": 0.014984130859375,
+      "file": "access_scuffs_01.png",
+      "sha256": "795ac7e883a5edace5df78844ca6ca55971083b220f41d2d045a804f319bf8f9"
+    },
+    {
+      "index": 14,
+      "family": "access_scuffs",
+      "variant": 2,
+      "coverage": 0.015415191650390625,
+      "file": "access_scuffs_02.png",
+      "sha256": "8aa2ccb0a17d23fb4e5dbfb8826f94a9d15d3d26b60744a9e89006eca7efe7e8"
+    },
+    {
+      "index": 15,
+      "family": "access_scuffs",
+      "variant": 3,
+      "coverage": 0.015228271484375,
+      "file": "access_scuffs_03.png",
+      "sha256": "b4c0f4e7fadb74d12f1836fb4f5f8760d6c09aad87c656277789d5f4cc1970f4"
+    }
+  ],
+  "atlas_grid": [
+    4,
+    4
+  ],
+  "channels": {
+    "R": "paint loss",
+    "G": "grime",
+    "B": "edge accent"
+  },
+  "scope": "Offline semantic panel masks; no mesh-map bake. 16 wear variants, 4 stencils, 4 warning strips.",
+  "runtime_atlases": [
+    "wear_atlas.png",
+    "stencil_atlas.png",
+    "warning_atlas.png"
+  ]
+}

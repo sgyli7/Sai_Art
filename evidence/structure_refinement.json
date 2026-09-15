@@ -1,0 +1,201 @@
+{
+  "changes": [
+    {
+      "change": "container roof pressing detail moved to filtered normal/albedo atlas",
+      "removed_parts": 1008,
+      "removed_triangles": 12096
+    },
+    {
+      "change": "rounded cabin roof plan",
+      "radius_m": 0.32
+    },
+    {
+      "change": "receiver clear of roof on concave saddles",
+      "tank_bottom_m": 14.23,
+      "roof_top_m": 14.1
+    }
+  ],
+  "collar_intersections": [
+    {
+      "part": "0001_front_side_fascia",
+      "collar": "0183_steering_collar",
+      "before_m3": 0.3115509421662151,
+      "after_m3": 0.0
+    },
+    {
+      "part": "0001_front_side_fascia",
+      "collar": "1879_steering_collar",
+      "before_m3": 0.3115509421662151,
+      "after_m3": 0.0
+    },
+    {
+      "part": "0017_front_lower_web",
+      "collar": "0183_steering_collar",
+      "before_m3": 0.0023448856953817016,
+      "after_m3": 0.0
+    },
+    {
+      "part": "0024_front_lower_web",
+      "collar": "1879_steering_collar",
+      "before_m3": 0.0010528292678895583,
+      "after_m3": 0.0
+    },
+    {
+      "part": "0025_front_lower_web",
+      "collar": "1879_steering_collar",
+      "before_m3": 0.01054440709498274,
+      "after_m3": 0.0
+    },
+    {
+      "part": "0052_front_side_fascia",
+      "collar": "1031_steering_collar",
+      "before_m3": 0.3115509421662153,
+      "after_m3": 0.0
+    },
+    {
+      "part": "0052_front_side_fascia",
+      "collar": "2727_steering_collar",
+      "before_m3": 0.3115509421662153,
+      "after_m3": 0.0
+    },
+    {
+      "part": "0068_front_lower_web",
+      "collar": "1031_steering_collar",
+      "before_m3": 0.0023448842418377267,
+      "after_m3": 0.0
+    },
+    {
+      "part": "0075_front_lower_web",
+      "collar": "2727_steering_collar",
+      "before_m3": 0.0010528302340175693,
+      "after_m3": 0.0
+    },
+    {
+      "part": "0076_front_lower_web",
+      "collar": "2727_steering_collar",
+      "before_m3": 0.010544400940256013,
+      "after_m3": 0.0
+    },
+    {
+      "part": "3576_rear_side_fascia",
+      "collar": "3758_steering_collar",
+      "before_m3": 0.31155130348827303,
+      "after_m3": 0.0
+    },
+    {
+      "part": "3576_rear_side_fascia",
+      "collar": "5454_steering_collar",
+      "before_m3": 0.31155112282724345,
+      "after_m3": 0.0
+    },
+    {
+      "part": "3592_rear_lower_web",
+      "collar": "3758_steering_collar",
+      "before_m3": 0.0023448885015447582,
+      "after_m3": 0.0
+    },
+    {
+      "part": "3599_rear_lower_web",
+      "collar": "5454_steering_collar",
+      "before_m3": 0.0010528425585048702,
+      "after_m3": 0.0
+    },
+    {
+      "part": "3600_rear_lower_web",
+      "collar": "5454_steering_collar",
+      "before_m3": 0.010544426823340966,
+      "after_m3": 0.0
+    },
+    {
+      "part": "3627_rear_side_fascia",
+      "collar": "4606_steering_collar",
+      "before_m3": 0.31155130348827315,
+      "after_m3": 0.0
+    },
+    {
+      "part": "3627_rear_side_fascia",
+      "collar": "6302_steering_collar",
+      "before_m3": 0.3115511228272439,
+      "after_m3": 0.0
+    },
+    {
+      "part": "3643_rear_lower_web",
+      "collar": "4606_steering_collar",
+      "before_m3": 0.002344890084183334,
+      "after_m3": 0.0
+    },
+    {
+      "part": "3650_rear_lower_web",
+      "collar": "6302_steering_collar",
+      "before_m3": 0.0010528413405470987,
+      "after_m3": 0.0
+    },
+    {
+      "part": "3651_rear_lower_web",
+      "collar": "6302_steering_collar",
+      "before_m3": 0.010544420832086732,
+      "after_m3": 0.0
+    },
+    {
+      "part": "20028_rear_side_fascia",
+      "collar": "20210_steering_collar",
+      "before_m3": 0.3115504597779288,
+      "after_m3": 0.0
+    },
+    {
+      "part": "20028_rear_side_fascia",
+      "collar": "21906_steering_collar",
+      "before_m3": 0.31155045977792817,
+      "after_m3": 0.0
+    },
+    {
+      "part": "20044_rear_lower_web",
+      "collar": "20210_steering_collar",
+      "before_m3": 0.002344895232754459,
+      "after_m3": 0.0
+    },
+    {
+      "part": "20051_rear_lower_web",
+      "collar": "21906_steering_collar",
+      "before_m3": 0.0010527660010245892,
+      "after_m3": 0.0
+    },
+    {
+      "part": "20052_rear_lower_web",
+      "collar": "21906_steering_collar",
+      "before_m3": 0.010544322164229255,
+      "after_m3": 0.0
+    },
+    {
+      "part": "20079_rear_side_fascia",
+      "collar": "21058_steering_collar",
+      "before_m3": 0.31155045977792845,
+      "after_m3": 0.0
+    },
+    {
+      "part": "20079_rear_side_fascia",
+      "collar": "22754_steering_collar",
+      "before_m3": 0.3115504597779273,
+      "after_m3": 0.0
+    },
+    {
+      "part": "20095_rear_lower_web",
+      "collar": "21058_steering_collar",
+      "before_m3": 0.002344881412428945,
+      "after_m3": 0.0
+    },
+    {
+      "part": "20102_rear_lower_web",
+      "collar": "22754_steering_collar",
+      "before_m3": 0.0010527691344854873,
+      "after_m3": 0.0
+    },
+    {
+      "part": "20103_rear_lower_web",
+      "collar": "22754_steering_collar",
+      "before_m3": 0.010544270839454898,
+      "after_m3": 0.0
+    }
+  ],
+  "scope": "Visual assembly clearance checks. Local bearing relief is not a certified load-bearing redesign."
+}

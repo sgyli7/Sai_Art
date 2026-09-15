@@ -1,0 +1,23 @@
+{
+  "status": "Packaging candidate; no lift mechanism or interchange load qualification yet",
+  "coordinates": "+X forward, +Y left, +Z up, metres; hull datum at nominal main deck plane Z=7.2",
+  "common_interface": "leviathan003_base_v1_candidate",
+  "hulls": {
+    "front": {"datum_source_m": [0, 0, 7.2], "superstructure": "cab_workshop"},
+    "rear": {"datum_source_m": [-42, 0, 7.2], "superstructure": "cargo"}
+  },
+  "lift_station_local_x_m": 0,
+  "lift_sides": [-1, 1],
+  "lift_platform_clear_size_m": [1.4, 1.4],
+  "lift_station_reserved_source_relative_hull_xy_bounds_m": [[-1, 13.55], [1, 15.3]],
+  "lift_stowed_reserved_bounds_source_relative_hull_xy_m": [[-1, 13.55], [1, 14.2]],
+  "lift_stowed_reserved_z_source_m": [4.95, 7.7],
+  "lift_deployment_reserved_z_source_m": [0.05, 7.7],
+  "platform_upper_floor_z_source_m": 7.45,
+  "nominal_passage_clear_width_m": 1.2,
+  "nominal_robot_portal_clear_height_m": 1.2,
+  "drive_interlock_required": ["all_lifts_stowed", "platforms_mechanically_locked", "all_boarding_gates_closed", "cross_hull_walkway_stowed"],
+  "boarding_interlock_required": ["vehicle_parked", "brake_held", "lift_stop_aligned", "landing_contact_verified"],
+  "universal_scope": ["lift mechanism interfaces", "mounting datums", "power and communications service interface", "robot passage and task API"],
+  "not_yet_qualified": ["arbitrary superstructure interchange", "rated payload", "complete lift mechanism", "door and landing threshold", "robot traversal", "terrain ground clearance", "dynamic locks and braking"]
+}

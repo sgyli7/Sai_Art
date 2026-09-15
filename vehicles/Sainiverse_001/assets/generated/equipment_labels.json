@@ -1,0 +1,56 @@
+[
+  {
+    "id": 0,
+    "title": "FIELD SERVICE",
+    "subtitle": "FS / 001",
+    "symbol": "circle"
+  },
+  {
+    "id": 1,
+    "title": "THERMAL LOOP",
+    "subtitle": "RETURN / INSPECT SEALS",
+    "symbol": "arrow"
+  },
+  {
+    "id": 2,
+    "title": "ISOLATE",
+    "subtitle": "BEFORE SERVICE",
+    "symbol": "red"
+  },
+  {
+    "id": 3,
+    "title": "FILTER ACCESS",
+    "subtitle": "FA / 02",
+    "symbol": "filter"
+  },
+  {
+    "id": 4,
+    "title": "ROBOT BOARDING",
+    "subtitle": "KEEP ACCESS CLEAR",
+    "symbol": "robot"
+  },
+  {
+    "id": 5,
+    "title": "CRANE",
+    "subtitle": "PINCH ZONE",
+    "symbol": "triangle"
+  },
+  {
+    "id": 6,
+    "title": "CARGO MODULE",
+    "subtitle": "CHECK LOCKS",
+    "symbol": "module"
+  },
+  {
+    "id": 7,
+    "title": "CREW ENTRY",
+    "subtitle": "KEEP AISLE CLEAR",
+    "symbol": "entry"
+  },
+  {
+    "id": 8,
+    "title": "RECOVERY",
+    "subtitle": "TOW POINT",
+    "symbol": "ring"
+  }
+]

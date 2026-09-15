@@ -1,0 +1,25 @@
+{
+  "additions": [
+    {
+      "body": "front",
+      "added_kg": 17856.96,
+      "web_kg": 17156.96,
+      "fixed_lift_mount_allowance_kg": 700
+    },
+    {
+      "body": "rear",
+      "added_kg": 17856.96,
+      "web_kg": 17156.96,
+      "fixed_lift_mount_allowance_kg": 700
+    },
+    {
+      "body": "tail",
+      "added_kg": 17856.96,
+      "web_kg": 17156.96,
+      "fixed_lift_mount_allowance_kg": 700
+    }
+  ],
+  "moving_lift_mass_kg": 8280,
+  "total_mass_kg": 15322330.879999999,
+  "scope": "Provisional closed-box web and mechanism allocation; no detailed hardware load certification."
+}

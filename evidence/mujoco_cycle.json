@@ -1,0 +1,4061 @@
+{
+  "seconds": 75.00000000000428,
+  "wall_seconds": 11.39061998797115,
+  "bodies": 184,
+  "dofs": 188,
+  "actuators": 50,
+  "peak_qvel": 0.5823148356844233,
+  "rows": [
+    {
+      "time": 0.0,
+      "name": "lift_front_right",
+      "out": 0.0,
+      "depth": 0.0,
+      "floor_z": 7.34,
+      "underside_gap_m": 7.09,
+      "ground_contacts": 0
+    },
+    {
+      "time": 0.0,
+      "name": "lift_front_left",
+      "out": 0.0,
+      "depth": 0.0,
+      "floor_z": 7.34,
+      "underside_gap_m": 7.09,
+      "ground_contacts": 0
+    },
+    {
+      "time": 0.0,
+      "name": "lift_rear_right",
+      "out": 0.0,
+      "depth": 0.0,
+      "floor_z": 7.34,
+      "underside_gap_m": 7.09,
+      "ground_contacts": 0
+    },
+    {
+      "time": 0.0,
+      "name": "lift_rear_left",
+      "out": 0.0,
+      "depth": 0.0,
+      "floor_z": 7.34,
+      "underside_gap_m": 7.09,
+      "ground_contacts": 0
+    },
+    {
+      "time": 0.0,
+      "name": "lift_tail_right",
+      "out": 0.0,
+      "depth": 0.0,
+      "floor_z": 7.34,
+      "underside_gap_m": 7.09,
+      "ground_contacts": 0
+    },
+    {
+      "time": 0.0,
+      "name": "lift_tail_left",
+      "out": 0.0,
+      "depth": 0.0,
+      "floor_z": 7.34,
+      "underside_gap_m": 7.09,
+      "ground_contacts": 0
+    },
+    {
+      "time": 1.0000000000000007,
+      "name": "lift_front_right",
+      "out": 1.905331757194327e-17,
+      "depth": 0.0018528289133860941,
+      "floor_z": 7.321345891413846,
+      "underside_gap_m": 7.071345891413846,
+      "ground_contacts": 0
+    },
+    {
+      "time": 1.0000000000000007,
+      "name": "lift_front_left",
+      "out": 6.0458672110129854e-18,
+      "depth": 0.0018528289133861496,
+      "floor_z": 7.321345891413846,
+      "underside_gap_m": 7.071345891413846,
+      "ground_contacts": 0
+    },
+    {
+      "time": 1.0000000000000007,
+      "name": "lift_rear_right",
+      "out": 1.123246090597769e-17,
+      "depth": 0.002219733786473494,
+      "floor_z": 7.316863928517469,
+      "underside_gap_m": 7.066863928517469,
+      "ground_contacts": 0
+    },
+    {
+      "time": 1.0000000000000007,
+      "name": "lift_rear_left",
+      "out": -1.9807274980244237e-18,
+      "depth": 0.0022197337864735414,
+      "floor_z": 7.316863928517467,
+      "underside_gap_m": 7.066863928517467,
+      "ground_contacts": 0
+    },
+    {
+      "time": 1.0000000000000007,
+      "name": "lift_tail_right",
+      "out": 6.242758509888582e-19,
+      "depth": 0.0017026626068238865,
+      "floor_z": 7.321402472141212,
+      "underside_gap_m": 7.071402472141212,
+      "ground_contacts": 0
+    },
+    {
+      "time": 1.0000000000000007,
+      "name": "lift_tail_left",
+      "out": 3.865842694621456e-18,
+      "depth": 0.0017026626068239155,
+      "floor_z": 7.321402472141212,
+      "underside_gap_m": 7.071402472141212,
+      "ground_contacts": 0
+    },
+    {
+      "time": 1.9999999999999793,
+      "name": "lift_front_right",
+      "out": 1.2303312623493464e-18,
+      "depth": 0.0004954399343061375,
+      "floor_z": 7.322660997959575,
+      "underside_gap_m": 7.072660997959575,
+      "ground_contacts": 0
+    },
+    {
+      "time": 1.9999999999999793,
+      "name": "lift_front_left",
+      "out": 8.88994910634476e-18,
+      "depth": 0.0004954399343061422,
+      "floor_z": 7.322660997959575,
+      "underside_gap_m": 7.072660997959575,
+      "ground_contacts": 0
+    },
+    {
+      "time": 1.9999999999999793,
+      "name": "lift_rear_right",
+      "out": 2.2955601859528042e-18,
+      "depth": 0.0004811238943986173,
+      "floor_z": 7.3188816695480385,
+      "underside_gap_m": 7.0688816695480385,
+      "ground_contacts": 0
+    },
+    {
+      "time": 1.9999999999999793,
+      "name": "lift_rear_left",
+      "out": 8.328744816208073e-18,
+      "depth": 0.0004811238943986537,
+      "floor_z": 7.3188816695480385,
+      "underside_gap_m": 7.0688816695480385,
+      "ground_contacts": 0
+    },
+    {
+      "time": 1.9999999999999793,
+      "name": "lift_tail_right",
+      "out": 1.2139175758786262e-17,
+      "depth": 0.0004790799286179398,
+      "floor_z": 7.322609417297237,
+      "underside_gap_m": 7.072609417297237,
+      "ground_contacts": 0
+    },
+    {
+      "time": 1.9999999999999793,
+      "name": "lift_tail_left",
+      "out": 7.144909393542647e-18,
+      "depth": 0.00047907992861794435,
+      "floor_z": 7.322609417297237,
+      "underside_gap_m": 7.072609417297237,
+      "ground_contacts": 0
+    },
+    {
+      "time": 2.9999999999999583,
+      "name": "lift_front_right",
+      "out": 8.989779056236434e-14,
+      "depth": 8.9818483899515e-06,
+      "floor_z": 7.323707548430102,
+      "underside_gap_m": 7.073707548430102,
+      "ground_contacts": 0
+    },
+    {
+      "time": 2.9999999999999583,
+      "name": "lift_front_left",
+      "out": 2.996762025185301e-12,
+      "depth": 8.98184203032598e-06,
+      "floor_z": 7.323707548436068,
+      "underside_gap_m": 7.073707548436068,
+      "ground_contacts": 0
+    },
+    {
+      "time": 2.9999999999999583,
+      "name": "lift_rear_right",
+      "out": 3.821140511084858e-13,
+      "depth": 7.812129420722768e-06,
+      "floor_z": 7.319920393209888,
+      "underside_gap_m": 7.069920393209888,
+      "ground_contacts": 0
+    },
+    {
+      "time": 2.9999999999999583,
+      "name": "lift_rear_left",
+      "out": 5.4784365601612715e-12,
+      "depth": 7.850405164868808e-06,
+      "floor_z": 7.319920353428518,
+      "underside_gap_m": 7.069920353428518,
+      "ground_contacts": 0
+    },
+    {
+      "time": 2.9999999999999583,
+      "name": "lift_tail_right",
+      "out": 1.248541353126425e-13,
+      "depth": 8.424041564775912e-06,
+      "floor_z": 7.323624834650082,
+      "underside_gap_m": 7.073624834650082,
+      "ground_contacts": 0
+    },
+    {
+      "time": 2.9999999999999583,
+      "name": "lift_tail_left",
+      "out": 3.1325780543101313e-12,
+      "depth": 8.424113251865384e-06,
+      "floor_z": 7.3236248345779655,
+      "underside_gap_m": 7.0736248345779655,
+      "ground_contacts": 0
+    },
+    {
+      "time": 3.999999999999937,
+      "name": "lift_front_right",
+      "out": 1.8223820532349823e-13,
+      "depth": -9.868212275666785e-08,
+      "floor_z": 7.323843098241744,
+      "underside_gap_m": 7.073843098241744,
+      "ground_contacts": 0
+    },
+    {
+      "time": 3.999999999999937,
+      "name": "lift_front_left",
+      "out": 2.3470756562578727e-13,
+      "depth": -9.868205401575129e-08,
+      "floor_z": 7.323843098239882,
+      "underside_gap_m": 7.073843098239882,
+      "ground_contacts": 0
+    },
+    {
+      "time": 3.999999999999937,
+      "name": "lift_rear_right",
+      "out": 2.657024423192533e-13,
+      "depth": -1.0115014009245207e-07,
+      "floor_z": 7.320064379510317,
+      "underside_gap_m": 7.070064379510317,
+      "ground_contacts": 0
+    },
+    {
+      "time": 3.999999999999937,
+      "name": "lift_rear_left",
+      "out": 3.7404743114065493e-13,
+      "depth": -1.0115077261862894e-07,
+      "floor_z": 7.320064379508246,
+      "underside_gap_m": 7.070064379508246,
+      "ground_contacts": 0
+    },
+    {
+      "time": 3.999999999999937,
+      "name": "lift_tail_right",
+      "out": 1.808539380105413e-13,
+      "depth": -1.0177021690070329e-07,
+      "floor_z": 7.323756867008897,
+      "underside_gap_m": 7.073756867008897,
+      "ground_contacts": 0
+    },
+    {
+      "time": 3.999999999999937,
+      "name": "lift_tail_left",
+      "out": 2.3722834222493744e-13,
+      "depth": -1.0177015252365619e-07,
+      "floor_z": 7.32375686700704,
+      "underside_gap_m": 7.07375686700704,
+      "ground_contacts": 0
+    },
+    {
+      "time": 4.999999999999916,
+      "name": "lift_front_right",
+      "out": 9.176841131158713e-15,
+      "depth": -3.7742625576449085e-08,
+      "floor_z": 7.323944853497445,
+      "underside_gap_m": 7.073944853497445,
+      "ground_contacts": 0
+    },
+    {
+      "time": 4.999999999999916,
+      "name": "lift_front_left",
+      "out": 1.6276495321922515e-14,
+      "depth": -3.774246775027976e-08,
+      "floor_z": 7.323944853497179,
+      "underside_gap_m": 7.073944853497179,
+      "ground_contacts": 0
+    },
+    {
+      "time": 4.999999999999916,
+      "name": "lift_rear_right",
+      "out": 7.824091719710911e-15,
+      "depth": 1.4602360534743217e-08,
+      "floor_z": 7.320178373260632,
+      "underside_gap_m": 7.070178373260632,
+      "ground_contacts": 0
+    },
+    {
+      "time": 4.999999999999916,
+      "name": "lift_rear_left",
+      "out": 1.5885017999680997e-14,
+      "depth": 1.4602657826856578e-08,
+      "floor_z": 7.320178373260234,
+      "underside_gap_m": 7.070178373260234,
+      "ground_contacts": 0
+    },
+    {
+      "time": 4.999999999999916,
+      "name": "lift_tail_right",
+      "out": 9.89362498402763e-15,
+      "depth": 3.020134863011309e-08,
+      "floor_z": 7.323857411413452,
+      "underside_gap_m": 7.073857411413452,
+      "ground_contacts": 0
+    },
+    {
+      "time": 4.999999999999916,
+      "name": "lift_tail_left",
+      "out": 1.8373934876185696e-14,
+      "depth": 3.0201511386868516e-08,
+      "floor_z": 7.323857411413179,
+      "underside_gap_m": 7.073857411413179,
+      "ground_contacts": 0
+    },
+    {
+      "time": 5.999999999999894,
+      "name": "lift_front_right",
+      "out": 6.660982060891343e-16,
+      "depth": 7.575207234568779e-08,
+      "floor_z": 7.3240508164089135,
+      "underside_gap_m": 7.0740508164089135,
+      "ground_contacts": 0
+    },
+    {
+      "time": 5.999999999999894,
+      "name": "lift_front_left",
+      "out": 1.0687165865693405e-15,
+      "depth": 7.575208784564302e-08,
+      "floor_z": 7.324050816408893,
+      "underside_gap_m": 7.074050816408893,
+      "ground_contacts": 0
+    },
+    {
+      "time": 5.999999999999894,
+      "name": "lift_rear_right",
+      "out": 3.5472759237554973e-16,
+      "depth": 6.566871377584329e-08,
+      "floor_z": 7.320296489827492,
+      "underside_gap_m": 7.070296489827492,
+      "ground_contacts": 0
+    },
+    {
+      "time": 5.999999999999894,
+      "name": "lift_rear_left",
+      "out": 9.376634077927306e-16,
+      "depth": 6.566872231820977e-08,
+      "floor_z": 7.320296489827476,
+      "underside_gap_m": 7.070296489827476,
+      "ground_contacts": 0
+    },
+    {
+      "time": 5.999999999999894,
+      "name": "lift_tail_right",
+      "out": 9.91424228370244e-16,
+      "depth": 8.001591428790447e-08,
+      "floor_z": 7.323962413150472,
+      "underside_gap_m": 7.073962413150472,
+      "ground_contacts": 0
+    },
+    {
+      "time": 5.999999999999894,
+      "name": "lift_tail_left",
+      "out": 1.1141691364226413e-15,
+      "depth": 8.00159845533191e-08,
+      "floor_z": 7.323962413150392,
+      "underside_gap_m": 7.073962413150392,
+      "ground_contacts": 0
+    },
+    {
+      "time": 6.999999999999873,
+      "name": "lift_front_right",
+      "out": 1.295144619555863e-16,
+      "depth": 5.626154196787362e-09,
+      "floor_z": 7.324155029802316,
+      "underside_gap_m": 7.074155029802316,
+      "ground_contacts": 0
+    },
+    {
+      "time": 6.999999999999873,
+      "name": "lift_front_left",
+      "out": -1.7574061655910727e-18,
+      "depth": 5.626373663049336e-09,
+      "floor_z": 7.3241550298021805,
+      "underside_gap_m": 7.0741550298021805,
+      "ground_contacts": 0
+    },
+    {
+      "time": 6.999999999999873,
+      "name": "lift_rear_right",
+      "out": 1.47656095468507e-16,
+      "depth": -5.87221964954164e-10,
+      "floor_z": 7.320412510858878,
+      "underside_gap_m": 7.070412510858878,
+      "ground_contacts": 0
+    },
+    {
+      "time": 6.999999999999873,
+      "name": "lift_rear_left",
+      "out": 1.1673288301256821e-16,
+      "depth": -5.872505551956763e-10,
+      "floor_z": 7.32041251085891,
+      "underside_gap_m": 7.07041251085891,
+      "ground_contacts": 0
+    },
+    {
+      "time": 6.999999999999873,
+      "name": "lift_tail_right",
+      "out": 8.58671954020334e-17,
+      "depth": -2.593879838073862e-09,
+      "floor_z": 7.324065597659862,
+      "underside_gap_m": 7.074065597659862,
+      "ground_contacts": 0
+    },
+    {
+      "time": 6.999999999999873,
+      "name": "lift_tail_left",
+      "out": 7.477724222698342e-17,
+      "depth": -2.5938813279826038e-09,
+      "floor_z": 7.324065597659864,
+      "underside_gap_m": 7.074065597659864,
+      "ground_contacts": 0
+    },
+    {
+      "time": 7.999999999999852,
+      "name": "lift_front_right",
+      "out": 9.392574394651772e-16,
+      "depth": -2.342088953693134e-09,
+      "floor_z": 7.324256681586477,
+      "underside_gap_m": 7.074256681586477,
+      "ground_contacts": 0
+    },
+    {
+      "time": 7.999999999999852,
+      "name": "lift_front_left",
+      "out": 1.7060526542200135e-15,
+      "depth": -2.3800334905293908e-09,
+      "floor_z": 7.324256681628181,
+      "underside_gap_m": 7.074256681628181,
+      "ground_contacts": 0
+    },
+    {
+      "time": 7.999999999999852,
+      "name": "lift_rear_right",
+      "out": 3.3758436007534904e-16,
+      "depth": 7.945396824285323e-09,
+      "floor_z": 7.320525726390332,
+      "underside_gap_m": 7.070525726390332,
+      "ground_contacts": 0
+    },
+    {
+      "time": 7.999999999999852,
+      "name": "lift_rear_left",
+      "out": 6.64824613745833e-16,
+      "depth": 7.945378193139768e-09,
+      "floor_z": 7.3205257263903505,
+      "underside_gap_m": 7.0705257263903505,
+      "ground_contacts": 0
+    },
+    {
+      "time": 7.999999999999852,
+      "name": "lift_tail_right",
+      "out": 3.878765845726309e-17,
+      "depth": -1.5229532328245713e-09,
+      "floor_z": 7.324166225059621,
+      "underside_gap_m": 7.074166225059621,
+      "ground_contacts": 0
+    },
+    {
+      "time": 7.999999999999852,
+      "name": "lift_tail_left",
+      "out": 6.007098691230458e-16,
+      "depth": -1.5229532616089795e-09,
+      "floor_z": 7.324166225059621,
+      "underside_gap_m": 7.074166225059621,
+      "ground_contacts": 0
+    },
+    {
+      "time": 9.000000000000007,
+      "name": "lift_front_right",
+      "out": 6.207308386109061e-13,
+      "depth": 1.530261980982121e-08,
+      "floor_z": 7.3243559563889,
+      "underside_gap_m": 7.0743559563889,
+      "ground_contacts": 0
+    },
+    {
+      "time": 9.000000000000007,
+      "name": "lift_front_left",
+      "out": 1.9624693599401275e-12,
+      "depth": 2.726334430381601e-10,
+      "floor_z": 7.324355971130598,
+      "underside_gap_m": 7.074355971130598,
+      "ground_contacts": 0
+    },
+    {
+      "time": 9.000000000000007,
+      "name": "lift_rear_right",
+      "out": 2.303175751844521e-13,
+      "depth": 5.960054448742724e-09,
+      "floor_z": 7.320636371038178,
+      "underside_gap_m": 7.070636371038178,
+      "ground_contacts": 0
+    },
+    {
+      "time": 9.000000000000007,
+      "name": "lift_rear_left",
+      "out": 7.879339512556282e-13,
+      "depth": 5.95796145431265e-09,
+      "floor_z": 7.320636371040401,
+      "underside_gap_m": 7.070636371040401,
+      "ground_contacts": 0
+    },
+    {
+      "time": 9.000000000000007,
+      "name": "lift_tail_right",
+      "out": 1.0877799562339558e-13,
+      "depth": -1.4786731760268124e-09,
+      "floor_z": 7.324264526494491,
+      "underside_gap_m": 7.074264526494491,
+      "ground_contacts": 0
+    },
+    {
+      "time": 9.000000000000007,
+      "name": "lift_tail_left",
+      "out": 2.374816042897786e-14,
+      "depth": -1.4786802815534445e-09,
+      "floor_z": 7.324264526494564,
+      "underside_gap_m": 7.074264526494564,
+      "ground_contacts": 0
+    },
+    {
+      "time": 10.000000000000163,
+      "name": "lift_front_right",
+      "out": 8.464997818192123e-13,
+      "depth": 2.0410293248752754e-09,
+      "floor_z": 7.324452969883063,
+      "underside_gap_m": 7.074452969883063,
+      "ground_contacts": 0
+    },
+    {
+      "time": 10.000000000000163,
+      "name": "lift_front_left",
+      "out": 1.198580225524815e-12,
+      "depth": 1.048341768888954e-08,
+      "floor_z": 7.324452961497306,
+      "underside_gap_m": 7.074452961497306,
+      "ground_contacts": 0
+    },
+    {
+      "time": 10.000000000000163,
+      "name": "lift_rear_right",
+      "out": 3.9742490658145087e-13,
+      "depth": 2.2697467690384624e-08,
+      "floor_z": 7.320744486691202,
+      "underside_gap_m": 7.070744486691202,
+      "ground_contacts": 0
+    },
+    {
+      "time": 10.000000000000163,
+      "name": "lift_rear_left",
+      "out": 3.595358794870113e-13,
+      "depth": 2.2700867248359986e-08,
+      "floor_z": 7.320744486688293,
+      "underside_gap_m": 7.070744486688293,
+      "ground_contacts": 0
+    },
+    {
+      "time": 10.000000000000163,
+      "name": "lift_tail_right",
+      "out": 2.99127001384065e-14,
+      "depth": -1.441352961051596e-09,
+      "floor_z": 7.324360563946919,
+      "underside_gap_m": 7.074360563946919,
+      "ground_contacts": 0
+    },
+    {
+      "time": 10.000000000000163,
+      "name": "lift_tail_left",
+      "out": 2.1945101715233566e-14,
+      "depth": -1.4413470648284755e-09,
+      "floor_z": 7.324360563946869,
+      "underside_gap_m": 7.074360563946869,
+      "ground_contacts": 0
+    },
+    {
+      "time": 11.00000000000032,
+      "name": "lift_front_right",
+      "out": 1.3882765386829152e-12,
+      "depth": 1.5320297691278275e-08,
+      "floor_z": 7.3245477140761555,
+      "underside_gap_m": 7.0745477140761555,
+      "ground_contacts": 0
+    },
+    {
+      "time": 11.00000000000032,
+      "name": "lift_front_left",
+      "out": 5.535409218000823e-13,
+      "depth": -1.4253219597242457e-09,
+      "floor_z": 7.324547731875732,
+      "underside_gap_m": 7.074547731875732,
+      "ground_contacts": 0
+    },
+    {
+      "time": 11.00000000000032,
+      "name": "lift_rear_right",
+      "out": 7.082742752432738e-13,
+      "depth": 1.6002856909619704e-08,
+      "floor_z": 7.3208501683222265,
+      "underside_gap_m": 7.0708501683222265,
+      "ground_contacts": 0
+    },
+    {
+      "time": 11.00000000000032,
+      "name": "lift_rear_left",
+      "out": 4.192531701256702e-14,
+      "depth": 3.9131453543604154e-11,
+      "floor_z": 7.320850183562273,
+      "underside_gap_m": 7.070850183562273,
+      "ground_contacts": 0
+    },
+    {
+      "time": 11.00000000000032,
+      "name": "lift_tail_right",
+      "out": 5.636335482683211e-14,
+      "depth": -1.4098061533105227e-09,
+      "floor_z": 7.324454384984272,
+      "underside_gap_m": 7.074454384984272,
+      "ground_contacts": 0
+    },
+    {
+      "time": 11.00000000000032,
+      "name": "lift_tail_left",
+      "out": 1.9735344269736439e-13,
+      "depth": -1.4098708545053917e-09,
+      "floor_z": 7.3244543849836825,
+      "underside_gap_m": 7.0744543849836825,
+      "ground_contacts": 0
+    },
+    {
+      "time": 12.000000000000476,
+      "name": "lift_front_right",
+      "out": 7.136640110820466e-13,
+      "depth": -1.3946178157104594e-09,
+      "floor_z": 7.324640299268244,
+      "underside_gap_m": 7.074640299268244,
+      "ground_contacts": 0
+    },
+    {
+      "time": 12.000000000000476,
+      "name": "lift_front_left",
+      "out": 2.8293074937637933e-14,
+      "depth": -1.3943723605449916e-09,
+      "floor_z": 7.324640299266894,
+      "underside_gap_m": 7.074640299266894,
+      "ground_contacts": 0
+    },
+    {
+      "time": 12.000000000000476,
+      "name": "lift_rear_right",
+      "out": 8.72397352898069e-13,
+      "depth": 1.0588319796280931e-08,
+      "floor_z": 7.320953444239751,
+      "underside_gap_m": 7.070953444239751,
+      "ground_contacts": 0
+    },
+    {
+      "time": 12.000000000000476,
+      "name": "lift_rear_left",
+      "out": 2.062262407111636e-12,
+      "depth": 1.1875382605464506e-08,
+      "floor_z": 7.320953442463609,
+      "underside_gap_m": 7.070953442463609,
+      "ground_contacts": 0
+    },
+    {
+      "time": 12.000000000000476,
+      "name": "lift_tail_right",
+      "out": 5.421598368157997e-13,
+      "depth": -1.3793142239933526e-09,
+      "floor_z": 7.324546037487459,
+      "underside_gap_m": 7.074546037487459,
+      "ground_contacts": 0
+    },
+    {
+      "time": 12.000000000000476,
+      "name": "lift_tail_left",
+      "out": 1.2635528717768732e-12,
+      "depth": -1.3793802931328474e-09,
+      "floor_z": 7.324546037486984,
+      "underside_gap_m": 7.074546037486984,
+      "ground_contacts": 0
+    },
+    {
+      "time": 13.000000000000632,
+      "name": "lift_front_right",
+      "out": 0.45699855853814797,
+      "depth": -1.3635552000708806e-09,
+      "floor_z": 7.324730723036748,
+      "underside_gap_m": 7.074730723036748,
+      "ground_contacts": 0
+    },
+    {
+      "time": 13.000000000000632,
+      "name": "lift_front_left",
+      "out": 0.45699855853811583,
+      "depth": -1.3635522549883321e-09,
+      "floor_z": 7.324730723036614,
+      "underside_gap_m": 7.074730723036614,
+      "ground_contacts": 0
+    },
+    {
+      "time": 13.000000000000632,
+      "name": "lift_rear_right",
+      "out": 0.4569985585381544,
+      "depth": -1.4948274130809268e-09,
+      "floor_z": 7.321054377633223,
+      "underside_gap_m": 7.071054377633223,
+      "ground_contacts": 0
+    },
+    {
+      "time": 13.000000000000632,
+      "name": "lift_rear_left",
+      "out": 0.4569985585381112,
+      "depth": -1.4948264847105003e-09,
+      "floor_z": 7.321054377633155,
+      "underside_gap_m": 7.071054377633155,
+      "ground_contacts": 0
+    },
+    {
+      "time": 13.000000000000632,
+      "name": "lift_tail_right",
+      "out": 0.4569985585381515,
+      "depth": -1.349059690083654e-09,
+      "floor_z": 7.324635568792827,
+      "underside_gap_m": 7.074635568792827,
+      "ground_contacts": 0
+    },
+    {
+      "time": 13.000000000000632,
+      "name": "lift_tail_left",
+      "out": 0.45699855853811167,
+      "depth": -1.3490577078704916e-09,
+      "floor_z": 7.324635568792731,
+      "underside_gap_m": 7.074635568792731,
+      "ground_contacts": 0
+    },
+    {
+      "time": 14.000000000000789,
+      "name": "lift_front_right",
+      "out": 1.0065016006088443,
+      "depth": -1.3335130633054285e-09,
+      "floor_z": 7.3248190504194834,
+      "underside_gap_m": 7.0748190504194834,
+      "ground_contacts": 0
+    },
+    {
+      "time": 14.000000000000789,
+      "name": "lift_front_left",
+      "out": 1.0065016006088403,
+      "depth": -1.3335130429299531e-09,
+      "floor_z": 7.3248190504194834,
+      "underside_gap_m": 7.0748190504194834,
+      "ground_contacts": 0
+    },
+    {
+      "time": 14.000000000000789,
+      "name": "lift_rear_right",
+      "out": 1.0065016006088439,
+      "depth": -1.4620320351122065e-09,
+      "floor_z": 7.321153000191007,
+      "underside_gap_m": 7.071153000191007,
+      "ground_contacts": 0
+    },
+    {
+      "time": 14.000000000000789,
+      "name": "lift_rear_left",
+      "out": 1.0065016006088405,
+      "depth": -1.4620320597474426e-09,
+      "floor_z": 7.321153000191009,
+      "underside_gap_m": 7.071153000191009,
+      "ground_contacts": 0
+    },
+    {
+      "time": 14.000000000000789,
+      "name": "lift_tail_right",
+      "out": 1.0065016006088434,
+      "depth": -1.319454072241481e-09,
+      "floor_z": 7.324723025345094,
+      "underside_gap_m": 7.074723025345094,
+      "ground_contacts": 0
+    },
+    {
+      "time": 14.000000000000789,
+      "name": "lift_tail_left",
+      "out": 1.006501600608841,
+      "depth": -1.319454060097105e-09,
+      "floor_z": 7.324723025345091,
+      "underside_gap_m": 7.074723025345091,
+      "ground_contacts": 0
+    },
+    {
+      "time": 15.000000000000945,
+      "name": "lift_front_right",
+      "out": 1.5564999981849983,
+      "depth": -1.304131344637768e-09,
+      "floor_z": 7.324905327602472,
+      "underside_gap_m": 7.074905327602472,
+      "ground_contacts": 0
+    },
+    {
+      "time": 15.000000000000945,
+      "name": "lift_front_left",
+      "out": 1.5564999981849983,
+      "depth": -1.3041313418502425e-09,
+      "floor_z": 7.324905327602472,
+      "underside_gap_m": 7.074905327602472,
+      "ground_contacts": 0
+    },
+    {
+      "time": 15.000000000000945,
+      "name": "lift_rear_right",
+      "out": 1.556499998184998,
+      "depth": -1.4299661972929873e-09,
+      "floor_z": 7.321249374615747,
+      "underside_gap_m": 7.071249374615747,
+      "ground_contacts": 0
+    },
+    {
+      "time": 15.000000000000945,
+      "name": "lift_rear_left",
+      "out": 1.5564999981849983,
+      "depth": -1.4299661917139411e-09,
+      "floor_z": 7.321249374615747,
+      "underside_gap_m": 7.071249374615747,
+      "ground_contacts": 0
+    },
+    {
+      "time": 15.000000000000945,
+      "name": "lift_tail_right",
+      "out": 1.556499998184998,
+      "depth": -1.2904615585191668e-09,
+      "floor_z": 7.324808452661399,
+      "underside_gap_m": 7.074808452661399,
+      "ground_contacts": 0
+    },
+    {
+      "time": 15.000000000000945,
+      "name": "lift_tail_left",
+      "out": 1.556499998184998,
+      "depth": -1.2904615596581188e-09,
+      "floor_z": 7.324808452661399,
+      "underside_gap_m": 7.074808452661399,
+      "ground_contacts": 0
+    },
+    {
+      "time": 16.0000000000011,
+      "name": "lift_front_right",
+      "out": 2.1064999999261427,
+      "depth": -1.2753923806271182e-09,
+      "floor_z": 7.324989599759614,
+      "underside_gap_m": 7.074989599759614,
+      "ground_contacts": 0
+    },
+    {
+      "time": 16.0000000000011,
+      "name": "lift_front_left",
+      "out": 2.106499999926143,
+      "depth": -1.2753923736169412e-09,
+      "floor_z": 7.324989599759615,
+      "underside_gap_m": 7.074989599759615,
+      "ground_contacts": 0
+    },
+    {
+      "time": 16.0000000000011,
+      "name": "lift_rear_right",
+      "out": 2.1064999999261427,
+      "depth": -1.3986088938848926e-09,
+      "floor_z": 7.3213435502155075,
+      "underside_gap_m": 7.0713435502155075,
+      "ground_contacts": 0
+    },
+    {
+      "time": 16.0000000000011,
+      "name": "lift_rear_left",
+      "out": 2.1064999999261427,
+      "depth": -1.3986088749860436e-09,
+      "floor_z": 7.3213435502155075,
+      "underside_gap_m": 7.0713435502155075,
+      "ground_contacts": 0
+    },
+    {
+      "time": 16.0000000000011,
+      "name": "lift_tail_right",
+      "out": 2.1064999999261427,
+      "depth": -1.2620811608676319e-09,
+      "floor_z": 7.324891895323174,
+      "underside_gap_m": 7.074891895323174,
+      "ground_contacts": 0
+    },
+    {
+      "time": 16.0000000000011,
+      "name": "lift_tail_left",
+      "out": 2.1064999999261427,
+      "depth": -1.2620811587419433e-09,
+      "floor_z": 7.324891895323174,
+      "underside_gap_m": 7.074891895323174,
+      "ground_contacts": 0
+    },
+    {
+      "time": 17.000000000000902,
+      "name": "lift_front_right",
+      "out": 2.6528271113652027,
+      "depth": -1.2472807149590908e-09,
+      "floor_z": 7.325071911076557,
+      "underside_gap_m": 7.075071911076557,
+      "ground_contacts": 0
+    },
+    {
+      "time": 17.000000000000902,
+      "name": "lift_front_left",
+      "out": 2.652827111365203,
+      "depth": -1.2472807114854976e-09,
+      "floor_z": 7.325071911076557,
+      "underside_gap_m": 7.075071911076557,
+      "ground_contacts": 0
+    },
+    {
+      "time": 17.000000000000902,
+      "name": "lift_rear_right",
+      "out": 2.6528271113652027,
+      "depth": -1.367939634407882e-09,
+      "floor_z": 7.321435575208866,
+      "underside_gap_m": 7.071435575208866,
+      "ground_contacts": 0
+    },
+    {
+      "time": 17.000000000000902,
+      "name": "lift_rear_left",
+      "out": 2.6528271113652027,
+      "depth": -1.3679396423448446e-09,
+      "floor_z": 7.321435575208866,
+      "underside_gap_m": 7.071435575208866,
+      "ground_contacts": 0
+    },
+    {
+      "time": 17.000000000000902,
+      "name": "lift_tail_right",
+      "out": 2.6528271113652027,
+      "depth": -1.234306814653963e-09,
+      "floor_z": 7.324973396974011,
+      "underside_gap_m": 7.074973396974011,
+      "ground_contacts": 0
+    },
+    {
+      "time": 17.000000000000902,
+      "name": "lift_tail_left",
+      "out": 2.6528271113652027,
+      "depth": -1.2343068226478216e-09,
+      "floor_z": 7.32497339697401,
+      "underside_gap_m": 7.07497339697401,
+      "ground_contacts": 0
+    },
+    {
+      "time": 18.000000000000703,
+      "name": "lift_front_right",
+      "out": 2.6999965575774003,
+      "depth": 0.5705280902929062,
+      "floor_z": 6.758146156682464,
+      "underside_gap_m": 6.508146156682464,
+      "ground_contacts": 0
+    },
+    {
+      "time": 18.000000000000703,
+      "name": "lift_front_left",
+      "out": 2.699996557577401,
+      "depth": 0.5705280902929063,
+      "floor_z": 6.758146156682465,
+      "underside_gap_m": 6.508146156682465,
+      "ground_contacts": 0
+    },
+    {
+      "time": 18.000000000000703,
+      "name": "lift_rear_right",
+      "out": 2.6999966181914727,
+      "depth": 0.5705280442921739,
+      "floor_z": 6.754519512043939,
+      "underside_gap_m": 6.504519512043939,
+      "ground_contacts": 0
+    },
+    {
+      "time": 18.000000000000703,
+      "name": "lift_rear_left",
+      "out": 2.6999966181914705,
+      "depth": 0.5705280442921737,
+      "floor_z": 6.754519512043939,
+      "underside_gap_m": 6.504519512043939,
+      "ground_contacts": 0
+    },
+    {
+      "time": 18.000000000000703,
+      "name": "lift_tail_right",
+      "out": 2.699996557606246,
+      "depth": 0.5705280453520271,
+      "floor_z": 6.7580469614688115,
+      "underside_gap_m": 6.5080469614688115,
+      "ground_contacts": 0
+    },
+    {
+      "time": 18.000000000000703,
+      "name": "lift_tail_left",
+      "out": 2.6999965576062457,
+      "depth": 0.5705280453520271,
+      "floor_z": 6.7580469614688115,
+      "underside_gap_m": 6.5080469614688115,
+      "ground_contacts": 0
+    },
+    {
+      "time": 19.000000000000504,
+      "name": "lift_front_right",
+      "out": 2.6999999990563315,
+      "depth": 1.2669613569448805,
+      "floor_z": 6.061777110982189,
+      "underside_gap_m": 5.811777110982189,
+      "ground_contacts": 0
+    },
+    {
+      "time": 19.000000000000504,
+      "name": "lift_front_left",
+      "out": 2.699999999056331,
+      "depth": 1.2669613569448805,
+      "floor_z": 6.06177711098219,
+      "underside_gap_m": 5.81177711098219,
+      "ground_contacts": 0
+    },
+    {
+      "time": 19.000000000000504,
+      "name": "lift_rear_right",
+      "out": 2.699999999187061,
+      "depth": 1.2669613733569376,
+      "floor_z": 6.058159637364673,
+      "underside_gap_m": 5.808159637364673,
+      "ground_contacts": 0
+    },
+    {
+      "time": 19.000000000000504,
+      "name": "lift_rear_left",
+      "out": 2.699999999187061,
+      "depth": 1.2669613733569378,
+      "floor_z": 6.058159637364673,
+      "underside_gap_m": 5.808159637364673,
+      "ground_contacts": 0
+    },
+    {
+      "time": 19.000000000000504,
+      "name": "lift_tail_right",
+      "out": 2.699999999056393,
+      "depth": 1.2669613506934616,
+      "floor_z": 6.061677100827032,
+      "underside_gap_m": 5.811677100827032,
+      "ground_contacts": 0
+    },
+    {
+      "time": 19.000000000000504,
+      "name": "lift_tail_left",
+      "out": 2.699999999056393,
+      "depth": 1.2669613506934614,
+      "floor_z": 6.061677100827032,
+      "underside_gap_m": 5.811677100827032,
+      "ground_contacts": 0
+    },
+    {
+      "time": 20.000000000000306,
+      "name": "lift_front_right",
+      "out": 2.6999999999959607,
+      "depth": 1.9669949033168304,
+      "floor_z": 5.361812800349629,
+      "underside_gap_m": 5.111812800349629,
+      "ground_contacts": 0
+    },
+    {
+      "time": 20.000000000000306,
+      "name": "lift_front_left",
+      "out": 2.6999999999959607,
+      "depth": 1.9669949033168301,
+      "floor_z": 5.36181280034963,
+      "underside_gap_m": 5.11181280034963,
+      "ground_contacts": 0
+    },
+    {
+      "time": 20.000000000000306,
+      "name": "lift_rear_right",
+      "out": 2.699999999996964,
+      "depth": 1.9669949126376078,
+      "floor_z": 5.358204475886976,
+      "underside_gap_m": 5.108204475886976,
+      "ground_contacts": 0
+    },
+    {
+      "time": 20.000000000000306,
+      "name": "lift_rear_left",
+      "out": 2.699999999996964,
+      "depth": 1.9669949126376078,
+      "floor_z": 5.358204475886975,
+      "underside_gap_m": 5.108204475886975,
+      "ground_contacts": 0
+    },
+    {
+      "time": 20.000000000000306,
+      "name": "lift_tail_right",
+      "out": 2.6999999999959616,
+      "depth": 1.9669949184132447,
+      "floor_z": 5.361711979669965,
+      "underside_gap_m": 5.111711979669965,
+      "ground_contacts": 0
+    },
+    {
+      "time": 20.000000000000306,
+      "name": "lift_tail_left",
+      "out": 2.699999999995962,
+      "depth": 1.9669949184132445,
+      "floor_z": 5.361711979669965,
+      "underside_gap_m": 5.111711979669965,
+      "ground_contacts": 0
+    },
+    {
+      "time": 21.000000000000107,
+      "name": "lift_front_right",
+      "out": 2.6999999999998954,
+      "depth": 2.6669999329375775,
+      "floor_z": 4.661882389750687,
+      "underside_gap_m": 4.411882389750687,
+      "ground_contacts": 0
+    },
+    {
+      "time": 21.000000000000107,
+      "name": "lift_front_left",
+      "out": 2.699999999999896,
+      "depth": 2.6669999329375775,
+      "floor_z": 4.661882389750687,
+      "underside_gap_m": 4.411882389750687,
+      "ground_contacts": 0
+    },
+    {
+      "time": 21.000000000000107,
+      "name": "lift_rear_right",
+      "out": 2.699999999999921,
+      "depth": 2.666999928428014,
+      "floor_z": 4.658283075393759,
+      "underside_gap_m": 4.408283075393759,
+      "ground_contacts": 0
+    },
+    {
+      "time": 21.000000000000107,
+      "name": "lift_rear_left",
+      "out": 2.6999999999999225,
+      "depth": 2.666999928428014,
+      "floor_z": 4.658283075393759,
+      "underside_gap_m": 4.408283075393759,
+      "ground_contacts": 0
+    },
+    {
+      "time": 21.000000000000107,
+      "name": "lift_tail_right",
+      "out": 2.6999999999998967,
+      "depth": 2.6669999358668175,
+      "floor_z": 4.661780859457171,
+      "underside_gap_m": 4.411780859457171,
+      "ground_contacts": 0
+    },
+    {
+      "time": 21.000000000000107,
+      "name": "lift_tail_left",
+      "out": 2.6999999999998967,
+      "depth": 2.666999935866817,
+      "floor_z": 4.661780859457171,
+      "underside_gap_m": 4.411780859457171,
+      "ground_contacts": 0
+    },
+    {
+      "time": 21.999999999999908,
+      "name": "lift_front_right",
+      "out": 2.6999999999999966,
+      "depth": 3.3669999550662473,
+      "floor_z": 3.96195556024849,
+      "underside_gap_m": 3.71195556024849,
+      "ground_contacts": 0
+    },
+    {
+      "time": 21.999999999999908,
+      "name": "lift_front_left",
+      "out": 2.6999999999999953,
+      "depth": 3.3669999550662464,
+      "floor_z": 3.961955560248491,
+      "underside_gap_m": 3.711955560248491,
+      "ground_contacts": 0
+    },
+    {
+      "time": 21.999999999999908,
+      "name": "lift_rear_right",
+      "out": 2.6999999999999944,
+      "depth": 3.3669999498469356,
+      "floor_z": 3.958365065629953,
+      "underside_gap_m": 3.708365065629953,
+      "ground_contacts": 0
+    },
+    {
+      "time": 21.999999999999908,
+      "name": "lift_rear_left",
+      "out": 2.6999999999999935,
+      "depth": 3.366999949846935,
+      "floor_z": 3.958365065629953,
+      "underside_gap_m": 3.708365065629953,
+      "ground_contacts": 0
+    },
+    {
+      "time": 21.999999999999908,
+      "name": "lift_tail_right",
+      "out": 2.699999999999997,
+      "depth": 3.36699995508683,
+      "floor_z": 3.9618533274391834,
+      "underside_gap_m": 3.7118533274391834,
+      "ground_contacts": 0
+    },
+    {
+      "time": 21.999999999999908,
+      "name": "lift_tail_left",
+      "out": 2.699999999999997,
+      "depth": 3.36699995508683,
+      "floor_z": 3.9618533274391834,
+      "underside_gap_m": 3.7118533274391834,
+      "ground_contacts": 0
+    },
+    {
+      "time": 22.99999999999971,
+      "name": "lift_front_right",
+      "out": 2.6999999999999966,
+      "depth": 4.0669999503560765,
+      "floor_z": 3.2620269970728066,
+      "underside_gap_m": 3.0120269970728066,
+      "ground_contacts": 0
+    },
+    {
+      "time": 22.99999999999971,
+      "name": "lift_front_left",
+      "out": 2.6999999999999953,
+      "depth": 4.0669999503560765,
+      "floor_z": 3.2620269970728075,
+      "underside_gap_m": 3.0120269970728075,
+      "ground_contacts": 0
+    },
+    {
+      "time": 22.99999999999971,
+      "name": "lift_rear_right",
+      "out": 2.6999999999999944,
+      "depth": 4.066999945630566,
+      "floor_z": 3.2584451524214932,
+      "underside_gap_m": 3.0084451524214932,
+      "ground_contacts": 0
+    },
+    {
+      "time": 22.99999999999971,
+      "name": "lift_rear_left",
+      "out": 2.6999999999999935,
+      "depth": 4.066999945630566,
+      "floor_z": 3.2584451524214932,
+      "underside_gap_m": 3.0084451524214932,
+      "ground_contacts": 0
+    },
+    {
+      "time": 22.99999999999971,
+      "name": "lift_tail_right",
+      "out": 2.699999999999997,
+      "depth": 4.066999950736534,
+      "floor_z": 3.261924072992244,
+      "underside_gap_m": 3.011924072992244,
+      "ground_contacts": 0
+    },
+    {
+      "time": 22.99999999999971,
+      "name": "lift_tail_left",
+      "out": 2.699999999999997,
+      "depth": 4.066999950736534,
+      "floor_z": 3.261924072992244,
+      "underside_gap_m": 3.011924072992244,
+      "ground_contacts": 0
+    },
+    {
+      "time": 23.99999999999951,
+      "name": "lift_front_right",
+      "out": 2.6999999999999966,
+      "depth": 4.766999952985586,
+      "floor_z": 2.5620967443966496,
+      "underside_gap_m": 2.3120967443966496,
+      "ground_contacts": 0
+    },
+    {
+      "time": 23.99999999999951,
+      "name": "lift_front_left",
+      "out": 2.6999999999999953,
+      "depth": 4.766999952985586,
+      "floor_z": 2.5620967443966505,
+      "underside_gap_m": 2.3120967443966505,
+      "ground_contacts": 0
+    },
+    {
+      "time": 23.99999999999951,
+      "name": "lift_rear_right",
+      "out": 2.6999999999999944,
+      "depth": 4.76699994840295,
+      "floor_z": 2.5585233862692607,
+      "underside_gap_m": 2.3085233862692607,
+      "ground_contacts": 0
+    },
+    {
+      "time": 23.99999999999951,
+      "name": "lift_rear_left",
+      "out": 2.6999999999999935,
+      "depth": 4.76699994840295,
+      "floor_z": 2.5585233862692607,
+      "underside_gap_m": 2.3085233862692607,
+      "ground_contacts": 0
+    },
+    {
+      "time": 23.99999999999951,
+      "name": "lift_tail_right",
+      "out": 2.699999999999997,
+      "depth": 4.766999953464877,
+      "floor_z": 2.5619931458388208,
+      "underside_gap_m": 2.3119931458388208,
+      "ground_contacts": 0
+    },
+    {
+      "time": 23.99999999999951,
+      "name": "lift_tail_left",
+      "out": 2.699999999999997,
+      "depth": 4.766999953464877,
+      "floor_z": 2.561993145838819,
+      "underside_gap_m": 2.311993145838819,
+      "ground_contacts": 0
+    },
+    {
+      "time": 24.99999999999931,
+      "name": "lift_front_right",
+      "out": 2.6999999999999966,
+      "depth": 5.466999954139353,
+      "floor_z": 1.8621648534510364,
+      "underside_gap_m": 1.6121648534510364,
+      "ground_contacts": 0
+    },
+    {
+      "time": 24.99999999999931,
+      "name": "lift_front_left",
+      "out": 2.6999999999999953,
+      "depth": 5.466999954139354,
+      "floor_z": 1.8621648534510369,
+      "underside_gap_m": 1.6121648534510369,
+      "ground_contacts": 0
+    },
+    {
+      "time": 24.99999999999931,
+      "name": "lift_rear_right",
+      "out": 2.6999999999999944,
+      "depth": 5.4669999496438475,
+      "floor_z": 1.858599821409471,
+      "underside_gap_m": 1.608599821409471,
+      "ground_contacts": 0
+    },
+    {
+      "time": 24.99999999999931,
+      "name": "lift_rear_left",
+      "out": 2.6999999999999935,
+      "depth": 5.4669999496438475,
+      "floor_z": 1.8585998214094719,
+      "underside_gap_m": 1.6085998214094719,
+      "ground_contacts": 0
+    },
+    {
+      "time": 24.99999999999931,
+      "name": "lift_tail_right",
+      "out": 2.699999999999997,
+      "depth": 5.466999954600442,
+      "floor_z": 1.8620605967458568,
+      "underside_gap_m": 1.6120605967458568,
+      "ground_contacts": 0
+    },
+    {
+      "time": 24.99999999999931,
+      "name": "lift_tail_left",
+      "out": 2.699999999999997,
+      "depth": 5.466999954600442,
+      "floor_z": 1.8620605967458568,
+      "underside_gap_m": 1.6120605967458568,
+      "ground_contacts": 0
+    },
+    {
+      "time": 25.999999999999112,
+      "name": "lift_front_right",
+      "out": 2.6999999999999966,
+      "depth": 6.166999955127093,
+      "floor_z": 1.1622313586341257,
+      "underside_gap_m": 0.9122313586341257,
+      "ground_contacts": 0
+    },
+    {
+      "time": 25.999999999999112,
+      "name": "lift_front_left",
+      "out": 2.6999999999999953,
+      "depth": 6.166999955127093,
+      "floor_z": 1.1622313586341266,
+      "underside_gap_m": 0.9122313586341266,
+      "ground_contacts": 0
+    },
+    {
+      "time": 25.999999999999112,
+      "name": "lift_rear_right",
+      "out": 2.6999999999999944,
+      "depth": 6.166999950722651,
+      "floor_z": 1.1586744954465436,
+      "underside_gap_m": 0.9086744954465436,
+      "ground_contacts": 0
+    },
+    {
+      "time": 25.999999999999112,
+      "name": "lift_rear_left",
+      "out": 2.6999999999999935,
+      "depth": 6.166999950722651,
+      "floor_z": 1.1586744954465444,
+      "underside_gap_m": 0.9086744954465444,
+      "ground_contacts": 0
+    },
+    {
+      "time": 25.999999999999112,
+      "name": "lift_tail_right",
+      "out": 2.699999999999997,
+      "depth": 6.166999955574134,
+      "floor_z": 1.162126459533591,
+      "underside_gap_m": 0.912126459533591,
+      "ground_contacts": 0
+    },
+    {
+      "time": 25.999999999999112,
+      "name": "lift_tail_left",
+      "out": 2.699999999999997,
+      "depth": 6.166999955574137,
+      "floor_z": 1.1621264595335892,
+      "underside_gap_m": 0.9121264595335892,
+      "ground_contacts": 0
+    },
+    {
+      "time": 26.999999999998913,
+      "name": "lift_front_right",
+      "out": 2.6999999999999966,
+      "depth": 6.866999956116597,
+      "floor_z": 0.46229629513308435,
+      "underside_gap_m": 0.21229629513308435,
+      "ground_contacts": 0
+    },
+    {
+      "time": 26.999999999998913,
+      "name": "lift_front_left",
+      "out": 2.6999999999999953,
+      "depth": 6.866999956116597,
+      "floor_z": 0.46229629513308523,
+      "underside_gap_m": 0.21229629513308523,
+      "ground_contacts": 0
+    },
+    {
+      "time": 26.999999999998913,
+      "name": "lift_rear_right",
+      "out": 2.6999999999999944,
+      "depth": 6.866999951802796,
+      "floor_z": 0.45874744680566515,
+      "underside_gap_m": 0.20874744680566515,
+      "ground_contacts": 0
+    },
+    {
+      "time": 26.999999999998913,
+      "name": "lift_rear_left",
+      "out": 2.6999999999999935,
+      "depth": 6.866999951802796,
+      "floor_z": 0.45874744680566515,
+      "underside_gap_m": 0.20874744680566515,
+      "ground_contacts": 0
+    },
+    {
+      "time": 26.999999999998913,
+      "name": "lift_tail_right",
+      "out": 2.699999999999997,
+      "depth": 6.866999956552973,
+      "floor_z": 0.4621907690085467,
+      "underside_gap_m": 0.21219076900854672,
+      "ground_contacts": 0
+    },
+    {
+      "time": 26.999999999998913,
+      "name": "lift_tail_left",
+      "out": 2.699999999999997,
+      "depth": 6.866999956552974,
+      "floor_z": 0.4621907690085467,
+      "underside_gap_m": 0.21219076900854672,
+      "ground_contacts": 0
+    },
+    {
+      "time": 27.999999999998714,
+      "name": "lift_front_right",
+      "out": 2.6999991495044653,
+      "depth": 7.075355124379895,
+      "floor_z": 0.2504879395480477,
+      "underside_gap_m": 0.0004879395480477111,
+      "ground_contacts": 0
+    },
+    {
+      "time": 27.999999999998714,
+      "name": "lift_front_left",
+      "out": 2.6999999590926156,
+      "depth": 7.075352568955856,
+      "floor_z": 0.2505369444419313,
+      "underside_gap_m": 0.0005369444419313085,
+      "ground_contacts": 0
+    },
+    {
+      "time": 27.999999999998714,
+      "name": "lift_rear_right",
+      "out": 2.6999999853877106,
+      "depth": 7.072129496395995,
+      "floor_z": 0.25022523934202034,
+      "underside_gap_m": 0.00022523934202034468,
+      "ground_contacts": 0
+    },
+    {
+      "time": 27.999999999998714,
+      "name": "lift_rear_left",
+      "out": 2.699999969006202,
+      "depth": 7.07228810331972,
+      "floor_z": 0.25004125468245036,
+      "underside_gap_m": 4.1254682450364566e-05,
+      "ground_contacts": 0
+    },
+    {
+      "time": 27.999999999998714,
+      "name": "lift_tail_right",
+      "out": 2.6999999943081097,
+      "depth": 7.075314215056229,
+      "floor_z": 0.25044688575961815,
+      "underside_gap_m": 0.0004468857596181819,
+      "ground_contacts": 0
+    },
+    {
+      "time": 27.999999999998714,
+      "name": "lift_tail_left",
+      "out": 2.6999999954265705,
+      "depth": 7.075443219543741,
+      "floor_z": 0.25031291921448934,
+      "underside_gap_m": 0.0003129192144893378,
+      "ground_contacts": 2
+    },
+    {
+      "time": 28.999999999998515,
+      "name": "lift_front_right",
+      "out": 2.699999735981965,
+      "depth": 7.075541323128631,
+      "floor_z": 0.25038228463771256,
+      "underside_gap_m": 0.00038228463771255994,
+      "ground_contacts": 0
+    },
+    {
+      "time": 28.999999999998515,
+      "name": "lift_front_left",
+      "out": 2.6999865389628375,
+      "depth": 7.0753453730018965,
+      "floor_z": 0.2505916687839841,
+      "underside_gap_m": 0.0005916687839841173,
+      "ground_contacts": 0
+    },
+    {
+      "time": 28.999999999998515,
+      "name": "lift_rear_right",
+      "out": 2.6999471988554142,
+      "depth": 7.072385087585447,
+      "floor_z": 0.2500019178261764,
+      "underside_gap_m": 1.9178261764229987e-06,
+      "ground_contacts": 2
+    },
+    {
+      "time": 28.999999999998515,
+      "name": "lift_rear_left",
+      "out": 2.6999999514689623,
+      "depth": 7.07236938762556,
+      "floor_z": 0.2500206672176508,
+      "underside_gap_m": 2.0667217650816028e-05,
+      "ground_contacts": 2
+    },
+    {
+      "time": 28.999999999998515,
+      "name": "lift_tail_right",
+      "out": 2.6999998717402947,
+      "depth": 7.075366990451526,
+      "floor_z": 0.250467550003874,
+      "underside_gap_m": 0.0004675500038739955,
+      "ground_contacts": 0
+    },
+    {
+      "time": 28.999999999998515,
+      "name": "lift_tail_left",
+      "out": 2.7000000354840723,
+      "depth": 7.0754560987432855,
+      "floor_z": 0.2503695534473855,
+      "underside_gap_m": 0.00036955344738548446,
+      "ground_contacts": 0
+    },
+    {
+      "time": 29.999999999998316,
+      "name": "lift_front_right",
+      "out": 2.6999921312899757,
+      "depth": 7.075801656519406,
+      "floor_z": 0.2501866156237088,
+      "underside_gap_m": 0.0001866156237088079,
+      "ground_contacts": 2
+    },
+    {
+      "time": 29.999999999998316,
+      "name": "lift_front_left",
+      "out": 2.6999998356335,
+      "depth": 7.075788915623813,
+      "floor_z": 0.2502088762473272,
+      "underside_gap_m": 0.00020887624732718324,
+      "ground_contacts": 2
+    },
+    {
+      "time": 29.999999999998316,
+      "name": "lift_rear_right",
+      "out": 2.699998427739469,
+      "depth": 7.072452010778339,
+      "floor_z": 0.25001830401787695,
+      "underside_gap_m": 1.8304017876918932e-05,
+      "ground_contacts": 2
+    },
+    {
+      "time": 29.999999999998316,
+      "name": "lift_rear_left",
+      "out": 2.6999938491723454,
+      "depth": 7.0722658725897425,
+      "floor_z": 0.250183433166615,
+      "underside_gap_m": 0.0001834331666150102,
+      "ground_contacts": 0
+    },
+    {
+      "time": 29.999999999998316,
+      "name": "lift_tail_right",
+      "out": 2.6999999300803106,
+      "depth": 7.075554659078231,
+      "floor_z": 0.25032101515487126,
+      "underside_gap_m": 0.00032101515487126253,
+      "ground_contacts": 2
+    },
+    {
+      "time": 29.999999999998316,
+      "name": "lift_tail_left",
+      "out": 2.699986652368969,
+      "depth": 7.075519175487402,
+      "floor_z": 0.250382781278117,
+      "underside_gap_m": 0.0003827812781169726,
+      "ground_contacts": 0
+    },
+    {
+      "time": 30.999999999998117,
+      "name": "lift_front_right",
+      "out": 2.699998997829683,
+      "depth": 7.075897950006518,
+      "floor_z": 0.2501457112429279,
+      "underside_gap_m": 0.00014571124292789284,
+      "ground_contacts": 2
+    },
+    {
+      "time": 30.999999999998117,
+      "name": "lift_front_left",
+      "out": 2.699907343388389,
+      "depth": 7.075763861412323,
+      "floor_z": 0.25024787859228803,
+      "underside_gap_m": 0.00024787859228805886,
+      "ground_contacts": 0
+    },
+    {
+      "time": 30.999999999998117,
+      "name": "lift_rear_right",
+      "out": 2.699999957498557,
+      "depth": 7.072518785777804,
+      "floor_z": 0.25001356625679083,
+      "underside_gap_m": 1.3566256790831233e-05,
+      "ground_contacts": 2
+    },
+    {
+      "time": 30.999999999998117,
+      "name": "lift_rear_left",
+      "out": 2.699987440693707,
+      "depth": 7.072386261234713,
+      "floor_z": 0.25012314113168754,
+      "underside_gap_m": 0.0001231411316875708,
+      "ground_contacts": 0
+    },
+    {
+      "time": 30.999999999998117,
+      "name": "lift_tail_right",
+      "out": 2.6999999318382164,
+      "depth": 7.075610423637653,
+      "floor_z": 0.25036758567932416,
+      "underside_gap_m": 0.00036758567932412833,
+      "ground_contacts": 0
+    },
+    {
+      "time": 30.999999999998117,
+      "name": "lift_tail_left",
+      "out": 2.6999992367661223,
+      "depth": 7.0753056424837135,
+      "floor_z": 0.2506443310131229,
+      "underside_gap_m": 0.0006443310131229174,
+      "ground_contacts": 0
+    },
+    {
+      "time": 31.999999999997918,
+      "name": "lift_front_right",
+      "out": 2.699991216522836,
+      "depth": 7.075922838521679,
+      "floor_z": 0.2501992024660409,
+      "underside_gap_m": 0.000199202466040882,
+      "ground_contacts": 2
+    },
+    {
+      "time": 31.999999999997918,
+      "name": "lift_front_left",
+      "out": 2.6999603518615345,
+      "depth": 7.075868411622164,
+      "floor_z": 0.25027755114223027,
+      "underside_gap_m": 0.00027755114223029786,
+      "ground_contacts": 0
+    },
+    {
+      "time": 31.999999999997918,
+      "name": "lift_rear_right",
+      "out": 2.699999732505283,
+      "depth": 7.072587381461169,
+      "floor_z": 0.2499986155151386,
+      "underside_gap_m": -1.3844848613941974e-06,
+      "ground_contacts": 2
+    },
+    {
+      "time": 31.999999999997918,
+      "name": "lift_rear_left",
+      "out": 2.699997596450219,
+      "depth": 7.072357560445449,
+      "floor_z": 0.2502241872849333,
+      "underside_gap_m": 0.000224187284933286,
+      "ground_contacts": 0
+    },
+    {
+      "time": 31.999999999997918,
+      "name": "lift_tail_right",
+      "out": 2.699999995024858,
+      "depth": 7.075725998310551,
+      "floor_z": 0.25026669271944124,
+      "underside_gap_m": 0.0002666927194412694,
+      "ground_contacts": 2
+    },
+    {
+      "time": 31.999999999997918,
+      "name": "lift_tail_left",
+      "out": 2.699998286336819,
+      "depth": 7.075479790138008,
+      "floor_z": 0.25051846681760026,
+      "underside_gap_m": 0.0005184668176002327,
+      "ground_contacts": 0
+    },
+    {
+      "time": 32.99999999999843,
+      "name": "lift_front_right",
+      "out": 2.6999998766481355,
+      "depth": 7.075907295524594,
+      "floor_z": 0.25022832698015735,
+      "underside_gap_m": 0.0002283269801573451,
+      "ground_contacts": 0
+    },
+    {
+      "time": 32.99999999999843,
+      "name": "lift_front_left",
+      "out": 2.699942766009453,
+      "depth": 7.075971603045586,
+      "floor_z": 0.25018138410771584,
+      "underside_gap_m": 0.0001813841077158429,
+      "ground_contacts": 2
+    },
+    {
+      "time": 32.99999999999843,
+      "name": "lift_rear_right",
+      "out": 2.6999999008538027,
+      "depth": 7.072563375845472,
+      "floor_z": 0.25010094415518747,
+      "underside_gap_m": 0.00010094415518746569,
+      "ground_contacts": 0
+    },
+    {
+      "time": 32.99999999999843,
+      "name": "lift_rear_left",
+      "out": 2.6999996157188013,
+      "depth": 7.072674279241761,
+      "floor_z": 0.2499700811332159,
+      "underside_gap_m": -2.99188667841066e-05,
+      "ground_contacts": 2
+    },
+    {
+      "time": 32.99999999999843,
+      "name": "lift_tail_right",
+      "out": 2.6999891369313103,
+      "depth": 7.075715811130516,
+      "floor_z": 0.2503192528122914,
+      "underside_gap_m": 0.00031925281229136515,
+      "ground_contacts": 2
+    },
+    {
+      "time": 32.99999999999843,
+      "name": "lift_tail_left",
+      "out": 2.699999279379074,
+      "depth": 7.075710487582551,
+      "floor_z": 0.2503333759758424,
+      "underside_gap_m": 0.00033337597584234824,
+      "ground_contacts": 2
+    },
+    {
+      "time": 33.99999999999894,
+      "name": "lift_front_right",
+      "out": 2.6999999441581246,
+      "depth": 7.075774396569088,
+      "floor_z": 0.2504466515160218,
+      "underside_gap_m": 0.000446651516021801,
+      "ground_contacts": 0
+    },
+    {
+      "time": 33.99999999999894,
+      "name": "lift_front_left",
+      "out": 2.6999649652175917,
+      "depth": 7.075820703554133,
+      "floor_z": 0.2504290787718918,
+      "underside_gap_m": 0.0004290787718917721,
+      "ground_contacts": 0
+    },
+    {
+      "time": 33.99999999999894,
+      "name": "lift_rear_right",
+      "out": 2.6999931522789082,
+      "depth": 7.072670316256822,
+      "floor_z": 0.25004367946505823,
+      "underside_gap_m": 4.3679465058232836e-05,
+      "ground_contacts": 0
+    },
+    {
+      "time": 33.99999999999894,
+      "name": "lift_rear_left",
+      "out": 2.6999999886805113,
+      "depth": 7.072285959850193,
+      "floor_z": 0.2504149498062486,
+      "underside_gap_m": 0.0004149498062486212,
+      "ground_contacts": 0
+    },
+    {
+      "time": 33.99999999999894,
+      "name": "lift_tail_right",
+      "out": 2.699998760172232,
+      "depth": 7.07578790595295,
+      "floor_z": 0.25036451550720606,
+      "underside_gap_m": 0.00036451550720603687,
+      "ground_contacts": 0
+    },
+    {
+      "time": 33.99999999999894,
+      "name": "lift_tail_left",
+      "out": 2.69999985291788,
+      "depth": 7.075657015763181,
+      "floor_z": 0.2504518406866621,
+      "underside_gap_m": 0.0004518406866620972,
+      "ground_contacts": 0
+    },
+    {
+      "time": 34.99999999999945,
+      "name": "lift_front_right",
+      "out": 2.699999606821009,
+      "depth": 7.07596813297835,
+      "floor_z": 0.25032953657740875,
+      "underside_gap_m": 0.0003295365774087511,
+      "ground_contacts": 0
+    },
+    {
+      "time": 34.99999999999945,
+      "name": "lift_front_left",
+      "out": 2.6999998592525367,
+      "depth": 7.0760265647818485,
+      "floor_z": 0.25024498083277924,
+      "underside_gap_m": 0.00024498083277921245,
+      "ground_contacts": 0
+    },
+    {
+      "time": 34.99999999999945,
+      "name": "lift_rear_right",
+      "out": 2.6999701998565837,
+      "depth": 7.072772630641413,
+      "floor_z": 0.2499960909951875,
+      "underside_gap_m": -3.90900481249401e-06,
+      "ground_contacts": 2
+    },
+    {
+      "time": 34.99999999999945,
+      "name": "lift_rear_left",
+      "out": 2.6999994386300923,
+      "depth": 7.072565421219284,
+      "floor_z": 0.25022113650136696,
+      "underside_gap_m": 0.00022113650136695862,
+      "ground_contacts": 0
+    },
+    {
+      "time": 34.99999999999945,
+      "name": "lift_tail_right",
+      "out": 2.6999981915345375,
+      "depth": 7.0755342066004125,
+      "floor_z": 0.2506457191370829,
+      "underside_gap_m": 0.0006457191370829174,
+      "ground_contacts": 0
+    },
+    {
+      "time": 34.99999999999945,
+      "name": "lift_tail_left",
+      "out": 2.699997221572692,
+      "depth": 7.075693216839584,
+      "floor_z": 0.25044572786125524,
+      "underside_gap_m": 0.00044572786125524066,
+      "ground_contacts": 0
+    },
+    {
+      "time": 35.999999999999964,
+      "name": "lift_front_right",
+      "out": 2.6999914088196344,
+      "depth": 7.075945964515024,
+      "floor_z": 0.25037348105084245,
+      "underside_gap_m": 0.00037348105084247796,
+      "ground_contacts": 0
+    },
+    {
+      "time": 35.999999999999964,
+      "name": "lift_front_left",
+      "out": 2.699995286453924,
+      "depth": 7.07611671995604,
+      "floor_z": 0.2502085486936183,
+      "underside_gap_m": 0.00020854869361827677,
+      "ground_contacts": 2
+    },
+    {
+      "time": 35.999999999999964,
+      "name": "lift_rear_right",
+      "out": 2.6999995715877807,
+      "depth": 7.072874094347286,
+      "floor_z": 0.24996909477591714,
+      "underside_gap_m": -3.0905224082861116e-05,
+      "ground_contacts": 2
+    },
+    {
+      "time": 35.999999999999964,
+      "name": "lift_rear_left",
+      "out": 2.6999992660034544,
+      "depth": 7.072808684458676,
+      "floor_z": 0.2500498840148747,
+      "underside_gap_m": 4.988401487471261e-05,
+      "ground_contacts": 0
+    },
+    {
+      "time": 35.999999999999964,
+      "name": "lift_tail_right",
+      "out": 2.699999809604009,
+      "depth": 7.075892347727373,
+      "floor_z": 0.2503127777178713,
+      "underside_gap_m": 0.0003127777178712765,
+      "ground_contacts": 2
+    },
+    {
+      "time": 35.999999999999964,
+      "name": "lift_tail_left",
+      "out": 2.6999988599244014,
+      "depth": 7.075886507303792,
+      "floor_z": 0.2503229042971544,
+      "underside_gap_m": 0.0003229042971544249,
+      "ground_contacts": 2
+    },
+    {
+      "time": 37.000000000000476,
+      "name": "lift_front_right",
+      "out": 2.6999983413602204,
+      "depth": 7.0758775548422115,
+      "floor_z": 0.2504720189831089,
+      "underside_gap_m": 0.0004720189831089183,
+      "ground_contacts": 0
+    },
+    {
+      "time": 37.000000000000476,
+      "name": "lift_front_left",
+      "out": 2.6999990865980537,
+      "depth": 7.075957440215538,
+      "floor_z": 0.2504320424586168,
+      "underside_gap_m": 0.00043204245861677704,
+      "ground_contacts": 0
+    },
+    {
+      "time": 37.000000000000476,
+      "name": "lift_rear_right",
+      "out": 2.6999986347587757,
+      "depth": 7.072753632316889,
+      "floor_z": 0.2501281841073066,
+      "underside_gap_m": 0.0001281841073065837,
+      "ground_contacts": 0
+    },
+    {
+      "time": 37.000000000000476,
+      "name": "lift_rear_left",
+      "out": 2.6999999290810446,
+      "depth": 7.072800186153004,
+      "floor_z": 0.2500939703925237,
+      "underside_gap_m": 9.397039252365125e-05,
+      "ground_contacts": 0
+    },
+    {
+      "time": 37.000000000000476,
+      "name": "lift_tail_right",
+      "out": 2.699999945755906,
+      "depth": 7.075957637508786,
+      "floor_z": 0.25030783228970876,
+      "underside_gap_m": 0.0003078322897087926,
+      "ground_contacts": 2
+    },
+    {
+      "time": 37.000000000000476,
+      "name": "lift_tail_left",
+      "out": 2.699984503407596,
+      "depth": 7.075591374425454,
+      "floor_z": 0.250642573795119,
+      "underside_gap_m": 0.000642573795118978,
+      "ground_contacts": 0
+    },
+    {
+      "time": 38.00000000000099,
+      "name": "lift_front_right",
+      "out": 2.6999998200264645,
+      "depth": 7.076096521560559,
+      "floor_z": 0.25033116223989194,
+      "underside_gap_m": 0.00033116223989190785,
+      "ground_contacts": 0
+    },
+    {
+      "time": 38.00000000000099,
+      "name": "lift_front_left",
+      "out": 2.6999999391180136,
+      "depth": 7.076252182615075,
+      "floor_z": 0.25017327129996814,
+      "underside_gap_m": 0.00017327129996816404,
+      "ground_contacts": 2
+    },
+    {
+      "time": 38.00000000000099,
+      "name": "lift_rear_right",
+      "out": 2.6999986933525624,
+      "depth": 7.072910340077321,
+      "floor_z": 0.25005557948765994,
+      "underside_gap_m": 5.557948765994025e-05,
+      "ground_contacts": 0
+    },
+    {
+      "time": 38.00000000000099,
+      "name": "lift_rear_left",
+      "out": 2.699995721694346,
+      "depth": 7.07288464221654,
+      "floor_z": 0.24999712845212085,
+      "underside_gap_m": -2.8715478791324633e-06,
+      "ground_contacts": 2
+    },
+    {
+      "time": 38.00000000000099,
+      "name": "lift_tail_right",
+      "out": 2.69999998441173,
+      "depth": 7.0759402344759526,
+      "floor_z": 0.2504110462711774,
+      "underside_gap_m": 0.0004110462711773566,
+      "ground_contacts": 0
+    },
+    {
+      "time": 38.00000000000099,
+      "name": "lift_tail_left",
+      "out": 2.6999969030281474,
+      "depth": 7.075902939702772,
+      "floor_z": 0.25038951343325216,
+      "underside_gap_m": 0.00038951343325216436,
+      "ground_contacts": 0
+    },
+    {
+      "time": 39.0000000000015,
+      "name": "lift_front_right",
+      "out": 2.699973520249075,
+      "depth": 7.075981518782491,
+      "floor_z": 0.25040166213572257,
+      "underside_gap_m": 0.0004016621357225969,
+      "ground_contacts": 0
+    },
+    {
+      "time": 39.0000000000015,
+      "name": "lift_front_left",
+      "out": 2.699989510063249,
+      "depth": 7.0759189312155195,
+      "floor_z": 0.25057797149584515,
+      "underside_gap_m": 0.0005779714958451532,
+      "ground_contacts": 0
+    },
+    {
+      "time": 39.0000000000015,
+      "name": "lift_rear_right",
+      "out": 2.6999993747700217,
+      "depth": 7.072878863784579,
+      "floor_z": 0.2500941270451711,
+      "underside_gap_m": 9.41270451710885e-05,
+      "ground_contacts": 0
+    },
+    {
+      "time": 39.0000000000015,
+      "name": "lift_rear_left",
+      "out": 2.699996854583737,
+      "depth": 7.072907949472774,
+      "floor_z": 0.2500660196871125,
+      "underside_gap_m": 6.601968711253403e-05,
+      "ground_contacts": 0
+    },
+    {
+      "time": 39.0000000000015,
+      "name": "lift_tail_right",
+      "out": 2.699996969131394,
+      "depth": 7.076007513976006,
+      "floor_z": 0.250377023322219,
+      "underside_gap_m": 0.0003770233222190056,
+      "ground_contacts": 0
+    },
+    {
+      "time": 39.0000000000015,
+      "name": "lift_tail_left",
+      "out": 2.6999939848474432,
+      "depth": 7.075885337649083,
+      "floor_z": 0.25045755115141544,
+      "underside_gap_m": 0.0004575511514154085,
+      "ground_contacts": 0
+    },
+    {
+      "time": 40.00000000000201,
+      "name": "lift_front_right",
+      "out": 2.699988848813775,
+      "depth": 7.076278583463022,
+      "floor_z": 0.25025152955285157,
+      "underside_gap_m": 0.00025152955285154266,
+      "ground_contacts": 0
+    },
+    {
+      "time": 40.00000000000201,
+      "name": "lift_front_left",
+      "out": 2.699998380667623,
+      "depth": 7.0763728368341905,
+      "floor_z": 0.2501421386930702,
+      "underside_gap_m": 0.00014213869307025395,
+      "ground_contacts": 2
+    },
+    {
+      "time": 40.00000000000201,
+      "name": "lift_rear_right",
+      "out": 2.699999790959304,
+      "depth": 7.073050453203116,
+      "floor_z": 0.2500127264258217,
+      "underside_gap_m": 1.2726425821674159e-05,
+      "ground_contacts": 2
+    },
+    {
+      "time": 40.00000000000201,
+      "name": "lift_rear_left",
+      "out": 2.699998973714376,
+      "depth": 7.072981757214308,
+      "floor_z": 0.2500583762947125,
+      "underside_gap_m": 5.837629471247552e-05,
+      "ground_contacts": 0
+    },
+    {
+      "time": 40.00000000000201,
+      "name": "lift_tail_right",
+      "out": 2.699950979408986,
+      "depth": 7.076030602732618,
+      "floor_z": 0.2503776849420391,
+      "underside_gap_m": 0.00037768494203910263,
+      "ground_contacts": 0
+    },
+    {
+      "time": 40.00000000000201,
+      "name": "lift_tail_left",
+      "out": 2.699969463224523,
+      "depth": 7.076074696228577,
+      "floor_z": 0.2503378055271427,
+      "underside_gap_m": 0.0003378055271426872,
+      "ground_contacts": 0
+    },
+    {
+      "time": 41.00000000000252,
+      "name": "lift_front_right",
+      "out": 2.699996343163043,
+      "depth": 7.076099970872129,
+      "floor_z": 0.2504667580346024,
+      "underside_gap_m": 0.0004667580346023603,
+      "ground_contacts": 0
+    },
+    {
+      "time": 41.00000000000252,
+      "name": "lift_front_left",
+      "out": 2.699998703182184,
+      "depth": 7.076387742060909,
+      "floor_z": 0.25017466873516886,
+      "underside_gap_m": 0.00017466873516885917,
+      "ground_contacts": 2
+    },
+    {
+      "time": 41.00000000000252,
+      "name": "lift_rear_right",
+      "out": 2.699988689368168,
+      "depth": 7.0728839161866155,
+      "floor_z": 0.25020124636034907,
+      "underside_gap_m": 0.00020124636034907217,
+      "ground_contacts": 0
+    },
+    {
+      "time": 41.00000000000252,
+      "name": "lift_rear_left",
+      "out": 2.6999999861818504,
+      "depth": 7.073050403581514,
+      "floor_z": 0.2500746908202155,
+      "underside_gap_m": 7.469082021546725e-05,
+      "ground_contacts": 0
+    },
+    {
+      "time": 41.00000000000252,
+      "name": "lift_tail_right",
+      "out": 2.6999842695062792,
+      "depth": 7.075994990845228,
+      "floor_z": 0.2503977417759662,
+      "underside_gap_m": 0.00039774177596615945,
+      "ground_contacts": 0
+    },
+    {
+      "time": 41.00000000000252,
+      "name": "lift_tail_left",
+      "out": 2.699991404814223,
+      "depth": 7.076059722793666,
+      "floor_z": 0.2503607483841135,
+      "underside_gap_m": 0.00036074838411345733,
+      "ground_contacts": 0
+    },
+    {
+      "time": 42.000000000003034,
+      "name": "lift_front_right",
+      "out": 2.699999920747073,
+      "depth": 7.076097208903155,
+      "floor_z": 0.2505366401466337,
+      "underside_gap_m": 0.0005366401466337101,
+      "ground_contacts": 0
+    },
+    {
+      "time": 42.000000000003034,
+      "name": "lift_front_left",
+      "out": 2.699999872232383,
+      "depth": 7.076256136468801,
+      "floor_z": 0.25032707048994574,
+      "underside_gap_m": 0.0003270704899457355,
+      "ground_contacts": 0
+    },
+    {
+      "time": 42.000000000003034,
+      "name": "lift_rear_right",
+      "out": 2.6999945366185796,
+      "depth": 7.073124907299476,
+      "floor_z": 0.25004358053485864,
+      "underside_gap_m": 4.358053485867264e-05,
+      "ground_contacts": 0
+    },
+    {
+      "time": 42.000000000003034,
+      "name": "lift_rear_left",
+      "out": 2.6999999416788563,
+      "depth": 7.073207954888134,
+      "floor_z": 0.24998528185787527,
+      "underside_gap_m": -1.471814212473943e-05,
+      "ground_contacts": 2
+    },
+    {
+      "time": 42.000000000003034,
+      "name": "lift_tail_right",
+      "out": 2.69999711898658,
+      "depth": 7.076192558914017,
+      "floor_z": 0.25029599240644207,
+      "underside_gap_m": 0.00029599240644206937,
+      "ground_contacts": 2
+    },
+    {
+      "time": 42.000000000003034,
+      "name": "lift_tail_left",
+      "out": 2.6999903745981415,
+      "depth": 7.076233614095607,
+      "floor_z": 0.2502626582839539,
+      "underside_gap_m": 0.00026265828395388713,
+      "ground_contacts": 2
+    },
+    {
+      "time": 43.000000000003546,
+      "name": "lift_front_right",
+      "out": 2.6999999778345236,
+      "depth": 7.07603283151261,
+      "floor_z": 0.25062904973155503,
+      "underside_gap_m": 0.0006290497315550314,
+      "ground_contacts": 0
+    },
+    {
+      "time": 43.000000000003546,
+      "name": "lift_front_left",
+      "out": 2.699999977914257,
+      "depth": 7.07646237187366,
+      "floor_z": 0.25016879564255656,
+      "underside_gap_m": 0.00016879564255653512,
+      "ground_contacts": 2
+    },
+    {
+      "time": 43.000000000003546,
+      "name": "lift_rear_right",
+      "out": 2.699999861392754,
+      "depth": 7.073161080004638,
+      "floor_z": 0.25005775911639566,
+      "underside_gap_m": 5.775911639566145e-05,
+      "ground_contacts": 0
+    },
+    {
+      "time": 43.000000000003546,
+      "name": "lift_rear_left",
+      "out": 2.699999923507555,
+      "depth": 7.073190108791767,
+      "floor_z": 0.25007171638870096,
+      "underside_gap_m": 7.171638870095975e-05,
+      "ground_contacts": 0
+    },
+    {
+      "time": 43.000000000003546,
+      "name": "lift_tail_right",
+      "out": 2.699999592020896,
+      "depth": 7.07617209557367,
+      "floor_z": 0.25037747866950166,
+      "underside_gap_m": 0.0003774786695016352,
+      "ground_contacts": 0
+    },
+    {
+      "time": 43.000000000003546,
+      "name": "lift_tail_left",
+      "out": 2.69999825954143,
+      "depth": 7.076242208657062,
+      "floor_z": 0.25030739369376254,
+      "underside_gap_m": 0.0003073936937625643,
+      "ground_contacts": 2
+    },
+    {
+      "time": 44.00000000000406,
+      "name": "lift_front_right",
+      "out": 2.6999898007805454,
+      "depth": 7.076431360421582,
+      "floor_z": 0.25023739962200436,
+      "underside_gap_m": 0.00023739962200436393,
+      "ground_contacts": 0
+    },
+    {
+      "time": 44.00000000000406,
+      "name": "lift_front_left",
+      "out": 2.6999665095925027,
+      "depth": 7.076505228810209,
+      "floor_z": 0.250181886899091,
+      "underside_gap_m": 0.00018188689909098832,
+      "ground_contacts": 2
+    },
+    {
+      "time": 44.00000000000406,
+      "name": "lift_rear_right",
+      "out": 2.6999677623659517,
+      "depth": 7.073260159355984,
+      "floor_z": 0.25000168486574276,
+      "underside_gap_m": 1.684865742757058e-06,
+      "ground_contacts": 2
+    },
+    {
+      "time": 44.00000000000406,
+      "name": "lift_rear_left",
+      "out": 2.6999999792021097,
+      "depth": 7.07325210405142,
+      "floor_z": 0.2500257320301022,
+      "underside_gap_m": 2.5732030102199044e-05,
+      "ground_contacts": 2
+    },
+    {
+      "time": 44.00000000000406,
+      "name": "lift_tail_right",
+      "out": 2.699999480854502,
+      "depth": 7.076103937252871,
+      "floor_z": 0.25052911477902573,
+      "underside_gap_m": 0.0005291147790257578,
+      "ground_contacts": 0
+    },
+    {
+      "time": 44.00000000000406,
+      "name": "lift_tail_left",
+      "out": 2.699999936426128,
+      "depth": 7.076263849488843,
+      "floor_z": 0.2503160019857904,
+      "underside_gap_m": 0.0003160019857903762,
+      "ground_contacts": 2
+    },
+    {
+      "time": 45.00000000000457,
+      "name": "lift_front_right",
+      "out": 2.699995354061963,
+      "depth": 7.076471703655505,
+      "floor_z": 0.25030474454462653,
+      "underside_gap_m": 0.000304744544626534,
+      "ground_contacts": 0
+    },
+    {
+      "time": 45.00000000000457,
+      "name": "lift_front_left",
+      "out": 2.6999741805442063,
+      "depth": 7.076247854226803,
+      "floor_z": 0.25049455209028804,
+      "underside_gap_m": 0.0004945520902880363,
+      "ground_contacts": 0
+    },
+    {
+      "time": 45.00000000000457,
+      "name": "lift_rear_right",
+      "out": 2.699988163878515,
+      "depth": 7.073312269202091,
+      "floor_z": 0.25001510119744863,
+      "underside_gap_m": 1.5101197448630366e-05,
+      "ground_contacts": 2
+    },
+    {
+      "time": 45.00000000000457,
+      "name": "lift_rear_left",
+      "out": 2.6999999508134267,
+      "depth": 7.073031884651645,
+      "floor_z": 0.25027276474845805,
+      "underside_gap_m": 0.00027276474845808196,
+      "ground_contacts": 0
+    },
+    {
+      "time": 45.00000000000457,
+      "name": "lift_tail_right",
+      "out": 2.7000000048584103,
+      "depth": 7.076302560657225,
+      "floor_z": 0.25033288944835186,
+      "underside_gap_m": 0.00033288944835183076,
+      "ground_contacts": 0
+    },
+    {
+      "time": 45.00000000000457,
+      "name": "lift_tail_left",
+      "out": 2.6999940731882726,
+      "depth": 7.07630903822961,
+      "floor_z": 0.25028106814347384,
+      "underside_gap_m": 0.0002810681434738671,
+      "ground_contacts": 2
+    },
+    {
+      "time": 46.00000000000508,
+      "name": "lift_front_right",
+      "out": 2.6999995543104136,
+      "depth": 7.076626022801076,
+      "floor_z": 0.2501506419109023,
+      "underside_gap_m": 0.00015064191090230494,
+      "ground_contacts": 2
+    },
+    {
+      "time": 46.00000000000508,
+      "name": "lift_front_left",
+      "out": 2.6999967708561843,
+      "depth": 7.076520062280769,
+      "floor_z": 0.25026634994348906,
+      "underside_gap_m": 0.00026634994348903596,
+      "ground_contacts": 0
+    },
+    {
+      "time": 46.00000000000508,
+      "name": "lift_rear_right",
+      "out": 2.6999974396961024,
+      "depth": 7.0733189239618035,
+      "floor_z": 0.25002471054081876,
+      "underside_gap_m": 2.471054081873425e-05,
+      "ground_contacts": 2
+    },
+    {
+      "time": 46.00000000000508,
+      "name": "lift_rear_left",
+      "out": 2.6999999775021344,
+      "depth": 7.073254067598665,
+      "floor_z": 0.25011381087099915,
+      "underside_gap_m": 0.00011381087099915366,
+      "ground_contacts": 0
+    },
+    {
+      "time": 46.00000000000508,
+      "name": "lift_tail_right",
+      "out": 2.699999239744013,
+      "depth": 7.076234544211707,
+      "floor_z": 0.2504471793029651,
+      "underside_gap_m": 0.00044717930296514496,
+      "ground_contacts": 0
+    },
+    {
+      "time": 46.00000000000508,
+      "name": "lift_tail_left",
+      "out": 2.699998516947422,
+      "depth": 7.076241927700774,
+      "floor_z": 0.25041728463222834,
+      "underside_gap_m": 0.000417284632228343,
+      "ground_contacts": 0
+    },
+    {
+      "time": 47.00000000000559,
+      "name": "lift_front_right",
+      "out": 2.699999962603071,
+      "depth": 7.076492351904711,
+      "floor_z": 0.25035033261093553,
+      "underside_gap_m": 0.0003503326109355054,
+      "ground_contacts": 0
+    },
+    {
+      "time": 47.00000000000559,
+      "name": "lift_front_left",
+      "out": 2.699996705400402,
+      "depth": 7.076653666321722,
+      "floor_z": 0.25017089457572605,
+      "underside_gap_m": 0.0001708945757260827,
+      "ground_contacts": 2
+    },
+    {
+      "time": 47.00000000000559,
+      "name": "lift_rear_right",
+      "out": 2.6999991475537026,
+      "depth": 7.073331639828968,
+      "floor_z": 0.2500539911049436,
+      "underside_gap_m": 5.399110494358483e-05,
+      "ground_contacts": 0
+    },
+    {
+      "time": 47.00000000000559,
+      "name": "lift_rear_left",
+      "out": 2.699999631679117,
+      "depth": 7.073383068482113,
+      "floor_z": 0.2500201539019897,
+      "underside_gap_m": 2.0153901989672374e-05,
+      "ground_contacts": 2
+    },
+    {
+      "time": 47.00000000000559,
+      "name": "lift_tail_right",
+      "out": 2.6999090383532134,
+      "depth": 7.076387678979216,
+      "floor_z": 0.25032032452445674,
+      "underside_gap_m": 0.0003203245244567665,
+      "ground_contacts": 2
+    },
+    {
+      "time": 47.00000000000559,
+      "name": "lift_tail_left",
+      "out": 2.699989612941848,
+      "depth": 7.075962662872748,
+      "floor_z": 0.25073174270453835,
+      "underside_gap_m": 0.000731742704538324,
+      "ground_contacts": 0
+    },
+    {
+      "time": 48.000000000006104,
+      "name": "lift_front_right",
+      "out": 2.7000000000226665,
+      "depth": 6.4972314387128005,
+      "floor_z": 0.8261176059358715,
+      "underside_gap_m": 0.5761176059358715,
+      "ground_contacts": 0
+    },
+    {
+      "time": 48.000000000006104,
+      "name": "lift_front_left",
+      "out": 2.6999999811002846,
+      "depth": 6.497263490712719,
+      "floor_z": 0.8260846365567494,
+      "underside_gap_m": 0.5760846365567494,
+      "ground_contacts": 0
+    },
+    {
+      "time": 48.000000000006104,
+      "name": "lift_rear_right",
+      "out": 2.6999999952113285,
+      "depth": 6.493842403241681,
+      "floor_z": 0.8260856774089195,
+      "underside_gap_m": 0.5760856774089195,
+      "ground_contacts": 0
+    },
+    {
+      "time": 48.000000000006104,
+      "name": "lift_rear_left",
+      "out": 2.700000000003645,
+      "depth": 6.4938343800264935,
+      "floor_z": 0.8260940203588581,
+      "underside_gap_m": 0.5760940203588581,
+      "ground_contacts": 0
+    },
+    {
+      "time": 48.000000000006104,
+      "name": "lift_tail_right",
+      "out": 2.6999999635590943,
+      "depth": 6.497195008711568,
+      "floor_z": 0.8260402428440902,
+      "underside_gap_m": 0.5760402428440902,
+      "ground_contacts": 0
+    },
+    {
+      "time": 48.000000000006104,
+      "name": "lift_tail_left",
+      "out": 2.700000000090382,
+      "depth": 6.4971635508472545,
+      "floor_z": 0.8260723478058378,
+      "underside_gap_m": 0.5760723478058378,
+      "ground_contacts": 0
+    },
+    {
+      "time": 49.000000000006615,
+      "name": "lift_front_right",
+      "out": 2.700000000013149,
+      "depth": 5.800849182675199,
+      "floor_z": 1.5225422692871209,
+      "underside_gap_m": 1.2725422692871209,
+      "ground_contacts": 0
+    },
+    {
+      "time": 49.000000000006615,
+      "name": "lift_front_left",
+      "out": 2.6999999998241715,
+      "depth": 5.8008500726890375,
+      "floor_z": 1.5225413810152415,
+      "underside_gap_m": 1.2725413810152415,
+      "ground_contacts": 0
+    },
+    {
+      "time": 49.000000000006615,
+      "name": "lift_rear_right",
+      "out": 2.6999999999283113,
+      "depth": 5.797426520540897,
+      "floor_z": 1.5225487235614652,
+      "underside_gap_m": 1.2725487235614652,
+      "ground_contacts": 0
+    },
+    {
+      "time": 49.000000000006615,
+      "name": "lift_rear_left",
+      "out": 2.7000000000029103,
+      "depth": 5.797426339201799,
+      "floor_z": 1.522548906901836,
+      "underside_gap_m": 1.272548906901836,
+      "ground_contacts": 0
+    },
+    {
+      "time": 49.000000000006615,
+      "name": "lift_tail_right",
+      "out": 2.699999999772864,
+      "depth": 5.800740719892023,
+      "floor_z": 1.5225395136116402,
+      "underside_gap_m": 1.2725395136116402,
+      "ground_contacts": 0
+    },
+    {
+      "time": 49.000000000006615,
+      "name": "lift_tail_left",
+      "out": 2.7000000000330355,
+      "depth": 5.800740182484742,
+      "floor_z": 1.5225400423952085,
+      "underside_gap_m": 1.2725400423952085,
+      "ground_contacts": 0
+    },
+    {
+      "time": 50.00000000000713,
+      "name": "lift_front_right",
+      "out": 2.699999999975241,
+      "depth": 5.10082710076762,
+      "floor_z": 2.222609892267303,
+      "underside_gap_m": 1.972609892267303,
+      "ground_contacts": 0
+    },
+    {
+      "time": 50.00000000000713,
+      "name": "lift_front_left",
+      "out": 2.6999999999988047,
+      "depth": 5.100827119306891,
+      "floor_z": 2.222609874878818,
+      "underside_gap_m": 1.9726098748788181,
+      "ground_contacts": 0
+    },
+    {
+      "time": 50.00000000000713,
+      "name": "lift_rear_right",
+      "out": 2.6999999999772473,
+      "depth": 5.097403618310272,
+      "floor_z": 2.2226207266877265,
+      "underside_gap_m": 1.9726207266877265,
+      "ground_contacts": 0
+    },
+    {
+      "time": 50.00000000000713,
+      "name": "lift_rear_left",
+      "out": 2.6999999999875435,
+      "depth": 5.097403756369349,
+      "floor_z": 2.2226205877206167,
+      "underside_gap_m": 1.9726205877206167,
+      "ground_contacts": 0
+    },
+    {
+      "time": 50.00000000000713,
+      "name": "lift_tail_right",
+      "out": 2.6999999999339317,
+      "depth": 5.100716219760733,
+      "floor_z": 2.222609590187511,
+      "underside_gap_m": 1.9726095901875111,
+      "ground_contacts": 0
+    },
+    {
+      "time": 50.00000000000713,
+      "name": "lift_tail_left",
+      "out": 2.699999999945653,
+      "depth": 5.100716254199492,
+      "floor_z": 2.222609555726123,
+      "underside_gap_m": 1.9726095557261232,
+      "ground_contacts": 0
+    },
+    {
+      "time": 51.00000000000764,
+      "name": "lift_front_right",
+      "out": 2.6999999999950957,
+      "depth": 4.400822351675793,
+      "floor_z": 2.9226525901129694,
+      "underside_gap_m": 2.6726525901129694,
+      "ground_contacts": 0
+    },
+    {
+      "time": 51.00000000000764,
+      "name": "lift_front_left",
+      "out": 2.6999999999849593,
+      "depth": 4.400822377906722,
+      "floor_z": 2.9226525641334606,
+      "underside_gap_m": 2.6726525641334606,
+      "ground_contacts": 0
+    },
+    {
+      "time": 51.00000000000764,
+      "name": "lift_rear_right",
+      "out": 2.6999999999942816,
+      "depth": 4.39739889764254,
+      "floor_z": 2.922666758472267,
+      "underside_gap_m": 2.672666758472267,
+      "ground_contacts": 0
+    },
+    {
+      "time": 51.00000000000764,
+      "name": "lift_rear_left",
+      "out": 2.699999999999255,
+      "depth": 4.397399037079403,
+      "floor_z": 2.9226666183048193,
+      "underside_gap_m": 2.6726666183048193,
+      "ground_contacts": 0
+    },
+    {
+      "time": 51.00000000000764,
+      "name": "lift_tail_right",
+      "out": 2.6999999999777695,
+      "depth": 4.400711493385677,
+      "floor_z": 2.9226522630177683,
+      "underside_gap_m": 2.6726522630177683,
+      "ground_contacts": 0
+    },
+    {
+      "time": 51.00000000000764,
+      "name": "lift_tail_left",
+      "out": 2.699999999992818,
+      "depth": 4.400711510450142,
+      "floor_z": 2.9226522466006717,
+      "underside_gap_m": 2.6726522466006717,
+      "ground_contacts": 0
+    },
+    {
+      "time": 52.00000000000815,
+      "name": "lift_front_right",
+      "out": 2.6999999999994544,
+      "depth": 3.7008223279936496,
+      "floor_z": 3.622689454043371,
+      "underside_gap_m": 3.372689454043371,
+      "ground_contacts": 0
+    },
+    {
+      "time": 52.00000000000815,
+      "name": "lift_front_left",
+      "out": 2.6999999999992768,
+      "depth": 3.7008223555005793,
+      "floor_z": 3.622689426684524,
+      "underside_gap_m": 3.372689426684524,
+      "ground_contacts": 0
+    },
+    {
+      "time": 52.00000000000815,
+      "name": "lift_rear_right",
+      "out": 2.6999999999988624,
+      "depth": 3.6973988758001104,
+      "floor_z": 3.6227068150332973,
+      "underside_gap_m": 3.3727068150332973,
+      "ground_contacts": 0
+    },
+    {
+      "time": 52.00000000000815,
+      "name": "lift_rear_left",
+      "out": 2.7000000000000237,
+      "depth": 3.6973990149101796,
+      "floor_z": 3.6227066752284878,
+      "underside_gap_m": 3.3727066752284878,
+      "ground_contacts": 0
+    },
+    {
+      "time": 52.00000000000815,
+      "name": "lift_tail_right",
+      "out": 2.6999999999995863,
+      "depth": 3.7007114728114257,
+      "floor_z": 3.6226891065590197,
+      "underside_gap_m": 3.3726891065590197,
+      "ground_contacts": 0
+    },
+    {
+      "time": 52.00000000000815,
+      "name": "lift_tail_left",
+      "out": 2.699999999997761,
+      "depth": 3.7007114886141252,
+      "floor_z": 3.622689091527212,
+      "underside_gap_m": 3.372689091527212,
+      "ground_contacts": 0
+    },
+    {
+      "time": 53.00000000000866,
+      "name": "lift_front_right",
+      "out": 2.6999999999989095,
+      "depth": 3.000822334165216,
+      "floor_z": 4.322725613529884,
+      "underside_gap_m": 4.072725613529884,
+      "ground_contacts": 0
+    },
+    {
+      "time": 53.00000000000866,
+      "name": "lift_front_left",
+      "out": 2.699999999999167,
+      "depth": 3.0008223617020793,
+      "floor_z": 4.322725586141523,
+      "underside_gap_m": 4.072725586141523,
+      "ground_contacts": 0
+    },
+    {
+      "time": 53.00000000000866,
+      "name": "lift_rear_right",
+      "out": 2.699999999999062,
+      "depth": 2.997398881770612,
+      "floor_z": 4.32274599021064,
+      "underside_gap_m": 4.07274599021064,
+      "ground_contacts": 0
+    },
+    {
+      "time": 53.00000000000866,
+      "name": "lift_rear_left",
+      "out": 2.6999999999993984,
+      "depth": 2.9973990208694437,
+      "floor_z": 4.322745850424336,
+      "underside_gap_m": 4.072745850424336,
+      "ground_contacts": 0
+    },
+    {
+      "time": 53.00000000000866,
+      "name": "lift_tail_right",
+      "out": 2.6999999999983046,
+      "depth": 3.0007114788418416,
+      "floor_z": 4.322725191593764,
+      "underside_gap_m": 4.072725191593764,
+      "ground_contacts": 0
+    },
+    {
+      "time": 53.00000000000866,
+      "name": "lift_tail_left",
+      "out": 2.699999999996264,
+      "depth": 3.0007114946280957,
+      "floor_z": 4.322725176576099,
+      "underside_gap_m": 4.072725176576099,
+      "ground_contacts": 0
+    },
+    {
+      "time": 54.00000000000917,
+      "name": "lift_front_right",
+      "out": 2.6999999999995947,
+      "depth": 2.300822332942465,
+      "floor_z": 5.022761078772748,
+      "underside_gap_m": 4.772761078772748,
+      "ground_contacts": 0
+    },
+    {
+      "time": 54.00000000000917,
+      "name": "lift_front_left",
+      "out": 2.6999999999997013,
+      "depth": 2.300822360478721,
+      "floor_z": 5.022761051392218,
+      "underside_gap_m": 4.772761051392218,
+      "ground_contacts": 0
+    },
+    {
+      "time": 54.00000000000917,
+      "name": "lift_rear_right",
+      "out": 2.6999999999987687,
+      "depth": 2.297398880692497,
+      "floor_z": 5.022784296897268,
+      "underside_gap_m": 4.772784296897268,
+      "ground_contacts": 0
+    },
+    {
+      "time": 54.00000000000917,
+      "name": "lift_rear_left",
+      "out": 2.69999999999917,
+      "depth": 2.29739901979139,
+      "floor_z": 5.022784157116024,
+      "underside_gap_m": 4.772784157116024,
+      "ground_contacts": 0
+    },
+    {
+      "time": 54.00000000000917,
+      "name": "lift_tail_right",
+      "out": 2.6999999999981443,
+      "depth": 2.300711477666286,
+      "floor_z": 5.02276052745713,
+      "underside_gap_m": 4.77276052745713,
+      "ground_contacts": 0
+    },
+    {
+      "time": 54.00000000000917,
+      "name": "lift_tail_left",
+      "out": 2.699999999997215,
+      "depth": 2.300711493453684,
+      "floor_z": 5.022760512424619,
+      "underside_gap_m": 4.772760512424619,
+      "ground_contacts": 0
+    },
+    {
+      "time": 55.000000000009685,
+      "name": "lift_front_right",
+      "out": 2.6999999999996533,
+      "depth": 1.6008223335135552,
+      "floor_z": 5.722795849248342,
+      "underside_gap_m": 5.472795849248342,
+      "ground_contacts": 0
+    },
+    {
+      "time": 55.000000000009685,
+      "name": "lift_front_left",
+      "out": 2.699999999999958,
+      "depth": 1.6008223610498744,
+      "floor_z": 5.722795821871923,
+      "underside_gap_m": 5.472795821871923,
+      "ground_contacts": 0
+    },
+    {
+      "time": 55.000000000009685,
+      "name": "lift_rear_right",
+      "out": 2.699999999998666,
+      "depth": 1.5973988818750282,
+      "floor_z": 5.722821740755617,
+      "underside_gap_m": 5.472821740755617,
+      "ground_contacts": 0
+    },
+    {
+      "time": 55.000000000009685,
+      "name": "lift_rear_left",
+      "out": 2.6999999999996698,
+      "depth": 1.5973990209739362,
+      "floor_z": 5.7228216009807324,
+      "underside_gap_m": 5.4728216009807324,
+      "ground_contacts": 0
+    },
+    {
+      "time": 55.000000000009685,
+      "name": "lift_tail_right",
+      "out": 2.699999999999464,
+      "depth": 1.6007114779788478,
+      "floor_z": 5.722795115496588,
+      "underside_gap_m": 5.472795115496588,
+      "ground_contacts": 0
+    },
+    {
+      "time": 55.000000000009685,
+      "name": "lift_tail_left",
+      "out": 2.699999999997169,
+      "depth": 1.6007114937661129,
+      "floor_z": 5.722795100454983,
+      "underside_gap_m": 5.472795100454983,
+      "ground_contacts": 0
+    },
+    {
+      "time": 56.000000000010196,
+      "name": "lift_front_right",
+      "out": 2.6999999999997373,
+      "depth": 0.9008223337468295,
+      "floor_z": 6.422829954496575,
+      "underside_gap_m": 6.172829954496575,
+      "ground_contacts": 0
+    },
+    {
+      "time": 56.000000000010196,
+      "name": "lift_front_left",
+      "out": 2.6999999999998248,
+      "depth": 0.9008223612831481,
+      "floor_z": 6.422829927124063,
+      "underside_gap_m": 6.172829927124063,
+      "ground_contacts": 0
+    },
+    {
+      "time": 56.000000000010196,
+      "name": "lift_rear_right",
+      "out": 2.699999999998593,
+      "depth": 0.8973988842394798,
+      "floor_z": 6.422858384463275,
+      "underside_gap_m": 6.172858384463275,
+      "ground_contacts": 0
+    },
+    {
+      "time": 56.000000000010196,
+      "name": "lift_rear_left",
+      "out": 2.6999999999996724,
+      "depth": 0.8973990233383632,
+      "floor_z": 6.422858244695832,
+      "underside_gap_m": 6.172858244695832,
+      "ground_contacts": 0
+    },
+    {
+      "time": 56.000000000010196,
+      "name": "lift_tail_right",
+      "out": 2.6999999999988633,
+      "depth": 0.900711480555648,
+      "floor_z": 6.422828977533097,
+      "underside_gap_m": 6.172828977533097,
+      "ground_contacts": 0
+    },
+    {
+      "time": 56.000000000010196,
+      "name": "lift_tail_left",
+      "out": 2.6999999999971456,
+      "depth": 0.9007114963430951,
+      "floor_z": 6.422828962484004,
+      "underside_gap_m": 6.172828962484004,
+      "ground_contacts": 0
+    },
+    {
+      "time": 57.00000000001071,
+      "name": "lift_front_right",
+      "out": 2.699999999999826,
+      "depth": 0.20082233423524887,
+      "floor_z": 7.122863402481671,
+      "underside_gap_m": 6.872863402481671,
+      "ground_contacts": 0
+    },
+    {
+      "time": 57.00000000001071,
+      "name": "lift_front_left",
+      "out": 2.6999999999999655,
+      "depth": 0.20082236177156607,
+      "floor_z": 7.122863375112818,
+      "underside_gap_m": 6.872863375112818,
+      "ground_contacts": 0
+    },
+    {
+      "time": 57.00000000001071,
+      "name": "lift_rear_right",
+      "out": 2.699999999998529,
+      "depth": 0.19739888443444595,
+      "floor_z": 7.122894292551075,
+      "underside_gap_m": 6.872894292551075,
+      "ground_contacts": 0
+    },
+    {
+      "time": 57.00000000001071,
+      "name": "lift_rear_left",
+      "out": 2.6999999999993083,
+      "depth": 0.19739902353331695,
+      "floor_z": 7.122894152791193,
+      "underside_gap_m": 6.872894152791193,
+      "ground_contacts": 0
+    },
+    {
+      "time": 57.00000000001071,
+      "name": "lift_tail_right",
+      "out": 2.6999999999980764,
+      "depth": 0.20071148037369463,
+      "floor_z": 7.1228621876207,
+      "underside_gap_m": 6.8728621876207,
+      "ground_contacts": 0
+    },
+    {
+      "time": 57.00000000001071,
+      "name": "lift_tail_left",
+      "out": 2.699999999997113,
+      "depth": 0.2007114961609745,
+      "floor_z": 7.122862172566172,
+      "underside_gap_m": 6.872862172566172,
+      "ground_contacts": 0
+    },
+    {
+      "time": 58.00000000001122,
+      "name": "lift_front_right",
+      "out": 2.390102144932214,
+      "depth": 0.00019458482192408167,
+      "floor_z": 7.326987510882766,
+      "underside_gap_m": 7.076987510882766,
+      "ground_contacts": 0
+    },
+    {
+      "time": 58.00000000001122,
+      "name": "lift_front_left",
+      "out": 2.3901021449348887,
+      "depth": 0.00019458474115044487,
+      "floor_z": 7.326987511196701,
+      "underside_gap_m": 7.076987511196701,
+      "ground_contacts": 0
+    },
+    {
+      "time": 58.00000000001122,
+      "name": "lift_rear_right",
+      "out": 2.387274831841602,
+      "depth": 0.00015877007397520004,
+      "floor_z": 7.323634275785456,
+      "underside_gap_m": 7.073634275785456,
+      "ground_contacts": 0
+    },
+    {
+      "time": 58.00000000001122,
+      "name": "lift_rear_left",
+      "out": 2.3872748318472685,
+      "depth": 0.00015877011415437475,
+      "floor_z": 7.3236342754331725,
+      "underside_gap_m": 7.0736342754331725,
+      "ground_contacts": 0
+    },
+    {
+      "time": 58.00000000001122,
+      "name": "lift_tail_right",
+      "out": 2.390102144935411,
+      "depth": 0.00019479221801351013,
+      "floor_z": 7.326874809203596,
+      "underside_gap_m": 7.076874809203596,
+      "ground_contacts": 0
+    },
+    {
+      "time": 58.00000000001122,
+      "name": "lift_tail_left",
+      "out": 2.3901021449317477,
+      "depth": 0.00019479216721016523,
+      "floor_z": 7.326874810006428,
+      "underside_gap_m": 7.076874810006428,
+      "ground_contacts": 0
+    },
+    {
+      "time": 59.00000000001173,
+      "name": "lift_front_right",
+      "out": 1.8392608378892559,
+      "depth": 1.6270472259772771e-06,
+      "floor_z": 7.3272509864823965,
+      "underside_gap_m": 7.0772509864823965,
+      "ground_contacts": 0
+    },
+    {
+      "time": 59.00000000001173,
+      "name": "lift_front_left",
+      "out": 1.8392608378895225,
+      "depth": 1.626339933275757e-06,
+      "floor_z": 7.327250987352462,
+      "underside_gap_m": 7.077250987352462,
+      "ground_contacts": 0
+    },
+    {
+      "time": 59.00000000001173,
+      "name": "lift_rear_right",
+      "out": 1.8365103668854295,
+      "depth": 1.4590005594695023e-06,
+      "floor_z": 7.3238632600634554,
+      "underside_gap_m": 7.0738632600634554,
+      "ground_contacts": 0
+    },
+    {
+      "time": 59.00000000001173,
+      "name": "lift_rear_left",
+      "out": 1.8365103668888476,
+      "depth": 1.4584814446441911e-06,
+      "floor_z": 7.323863259969818,
+      "underside_gap_m": 7.073863259969818,
+      "ground_contacts": 0
+    },
+    {
+      "time": 59.00000000001173,
+      "name": "lift_tail_right",
+      "out": 1.8392608378921775,
+      "depth": 1.8408057464784935e-06,
+      "floor_z": 7.327138293474064,
+      "underside_gap_m": 7.077138293474064,
+      "ground_contacts": 0
+    },
+    {
+      "time": 59.00000000001173,
+      "name": "lift_tail_left",
+      "out": 1.8392608378866013,
+      "depth": 1.8436325374664288e-06,
+      "floor_z": 7.327138291338987,
+      "underside_gap_m": 7.077138291338987,
+      "ground_contacts": 0
+    },
+    {
+      "time": 60.00000000001224,
+      "name": "lift_front_right",
+      "out": 1.2892500761710086,
+      "depth": 5.557065149306535e-08,
+      "floor_z": 7.327282232577864,
+      "underside_gap_m": 7.077282232577864,
+      "ground_contacts": 0
+    },
+    {
+      "time": 60.00000000001224,
+      "name": "lift_front_left",
+      "out": 1.2892500761709174,
+      "depth": 5.557432224846165e-08,
+      "floor_z": 7.327282232734676,
+      "underside_gap_m": 7.077282232734676,
+      "ground_contacts": 0
+    },
+    {
+      "time": 60.00000000001224,
+      "name": "lift_rear_right",
+      "out": 1.2865000742709152,
+      "depth": 6.114052543403178e-08,
+      "floor_z": 7.323896544509735,
+      "underside_gap_m": 7.073896544509735,
+      "ground_contacts": 0
+    },
+    {
+      "time": 60.00000000001224,
+      "name": "lift_rear_left",
+      "out": 1.2865000742742416,
+      "depth": 6.114318094429362e-08,
+      "floor_z": 7.32389654392508,
+      "underside_gap_m": 7.07389654392508,
+      "ground_contacts": 0
+    },
+    {
+      "time": 60.00000000001224,
+      "name": "lift_tail_right",
+      "out": 1.2892500761738726,
+      "depth": 6.167135528815731e-08,
+      "floor_z": 7.327169496159202,
+      "underside_gap_m": 7.077169496159202,
+      "ground_contacts": 0
+    },
+    {
+      "time": 60.00000000001224,
+      "name": "lift_tail_left",
+      "out": 1.2892500761680543,
+      "depth": 6.165496573205803e-08,
+      "floor_z": 7.327169496831664,
+      "underside_gap_m": 7.077169496831664,
+      "ground_contacts": 0
+    },
+    {
+      "time": 61.000000000012754,
+      "name": "lift_front_right",
+      "out": 0.7392500003655317,
+      "depth": 1.997214356932197e-08,
+      "floor_z": 7.3273131398241365,
+      "underside_gap_m": 7.0773131398241365,
+      "ground_contacts": 0
+    },
+    {
+      "time": 61.000000000012754,
+      "name": "lift_front_left",
+      "out": 0.7392500003652992,
+      "depth": 1.9972129771557527e-08,
+      "floor_z": 7.32731313998187,
+      "underside_gap_m": 7.07731313998187,
+      "ground_contacts": 0
+    },
+    {
+      "time": 61.000000000012754,
+      "name": "lift_rear_right",
+      "out": 0.7365000003616622,
+      "depth": 4.585814050201359e-08,
+      "floor_z": 7.323929591946874,
+      "underside_gap_m": 7.073929591946874,
+      "ground_contacts": 0
+    },
+    {
+      "time": 61.000000000012754,
+      "name": "lift_rear_left",
+      "out": 0.7365000003650395,
+      "depth": 4.585388349889186e-08,
+      "floor_z": 7.323929591398882,
+      "underside_gap_m": 7.073929591398882,
+      "ground_contacts": 0
+    },
+    {
+      "time": 61.000000000012754,
+      "name": "lift_tail_right",
+      "out": 0.7392500003683642,
+      "depth": 2.113896454671931e-08,
+      "floor_z": 7.327200203148442,
+      "underside_gap_m": 7.077200203148442,
+      "ground_contacts": 0
+    },
+    {
+      "time": 61.000000000012754,
+      "name": "lift_tail_left",
+      "out": 0.7392500003624664,
+      "depth": 2.1138935814659848e-08,
+      "floor_z": 7.327200203771302,
+      "underside_gap_m": 7.077200203771302,
+      "ground_contacts": 0
+    },
+    {
+      "time": 62.000000000013266,
+      "name": "lift_front_right",
+      "out": 0.18925000000112077,
+      "depth": 5.837908401774207e-10,
+      "floor_z": 7.327343553154324,
+      "underside_gap_m": 7.077343553154324,
+      "ground_contacts": 0
+    },
+    {
+      "time": 62.000000000013266,
+      "name": "lift_front_left",
+      "out": 0.18925000000075853,
+      "depth": 5.840240174982061e-10,
+      "floor_z": 7.327343553307521,
+      "underside_gap_m": 7.077343553307521,
+      "ground_contacts": 0
+    },
+    {
+      "time": 62.000000000013266,
+      "name": "lift_rear_right",
+      "out": 0.18649999999924916,
+      "depth": -8.874314845935012e-10,
+      "floor_z": 7.323962147709263,
+      "underside_gap_m": 7.073962147709263,
+      "ground_contacts": 0
+    },
+    {
+      "time": 62.000000000013266,
+      "name": "lift_rear_left",
+      "out": 0.18650000000272285,
+      "depth": -8.878199012585705e-10,
+      "floor_z": 7.323962147183395,
+      "underside_gap_m": 7.073962147183395,
+      "ground_contacts": 0
+    },
+    {
+      "time": 62.000000000013266,
+      "name": "lift_tail_right",
+      "out": 0.18925000000390374,
+      "depth": 6.540811650227909e-10,
+      "floor_z": 7.327230402357439,
+      "underside_gap_m": 7.077230402357439,
+      "ground_contacts": 0
+    },
+    {
+      "time": 62.000000000013266,
+      "name": "lift_tail_left",
+      "out": 0.18924999999797548,
+      "depth": 6.540713339733916e-10,
+      "floor_z": 7.327230402950801,
+      "underside_gap_m": 7.077230402950801,
+      "ground_contacts": 0
+    },
+    {
+      "time": 63.00000000001378,
+      "name": "lift_front_right",
+      "out": 5.2455534546213166e-05,
+      "depth": -3.6380830280575443e-10,
+      "floor_z": 7.327373357996768,
+      "underside_gap_m": 7.077373357996768,
+      "ground_contacts": 0
+    },
+    {
+      "time": 63.00000000001378,
+      "name": "lift_front_left",
+      "out": 5.245553409014339e-05,
+      "depth": -3.6380837687056494e-10,
+      "floor_z": 7.327373358149972,
+      "underside_gap_m": 7.077373358149972,
+      "ground_contacts": 0
+    },
+    {
+      "time": 63.00000000001378,
+      "name": "lift_rear_right",
+      "out": 4.719602191595318e-05,
+      "depth": -3.794777847824123e-10,
+      "floor_z": 7.32399404191383,
+      "underside_gap_m": 7.07399404191383,
+      "ground_contacts": 0
+    },
+    {
+      "time": 63.00000000001378,
+      "name": "lift_rear_left",
+      "out": 4.719602548472797e-05,
+      "depth": -3.79477682548993e-10,
+      "floor_z": 7.323994041399238,
+      "underside_gap_m": 7.073994041399238,
+      "ground_contacts": 0
+    },
+    {
+      "time": 63.00000000001378,
+      "name": "lift_tail_right",
+      "out": 5.245553727423243e-05,
+      "depth": -3.7730369481129973e-10,
+      "floor_z": 7.327259970000182,
+      "underside_gap_m": 7.077259970000182,
+      "ground_contacts": 0
+    },
+    {
+      "time": 63.00000000001378,
+      "name": "lift_tail_left",
+      "out": 5.245553124353369e-05,
+      "depth": -3.7730371017198544e-10,
+      "floor_z": 7.327259970580177,
+      "underside_gap_m": 7.077259970580177,
+      "ground_contacts": 0
+    },
+    {
+      "time": 64.00000000001428,
+      "name": "lift_front_right",
+      "out": 6.819947938762213e-08,
+      "depth": -3.52705992541719e-10,
+      "floor_z": 7.3274026080456665,
+      "underside_gap_m": 7.0774026080456665,
+      "ground_contacts": 0
+    },
+    {
+      "time": 64.00000000001428,
+      "name": "lift_front_left",
+      "out": 6.819797388430579e-08,
+      "depth": -3.527059472206578e-10,
+      "floor_z": 7.327402608200532,
+      "underside_gap_m": 7.077402608200532,
+      "ground_contacts": 0
+    },
+    {
+      "time": 64.00000000001428,
+      "name": "lift_rear_right",
+      "out": 8.634134147859587e-08,
+      "depth": -3.272032797179904e-10,
+      "floor_z": 7.3240253766492,
+      "underside_gap_m": 7.0740253766492,
+      "ground_contacts": 0
+    },
+    {
+      "time": 64.00000000001428,
+      "name": "lift_rear_left",
+      "out": 8.630851506034984e-08,
+      "depth": -3.272030730340463e-10,
+      "floor_z": 7.324025376137414,
+      "underside_gap_m": 7.074025376137414,
+      "ground_contacts": 0
+    },
+    {
+      "time": 64.00000000001428,
+      "name": "lift_tail_right",
+      "out": 6.820805701561516e-08,
+      "depth": -3.467616068673144e-10,
+      "floor_z": 7.3272889711452605,
+      "underside_gap_m": 7.0772889711452605,
+      "ground_contacts": 0
+    },
+    {
+      "time": 64.00000000001428,
+      "name": "lift_tail_left",
+      "out": 6.818683155118076e-08,
+      "depth": -3.467613768527445e-10,
+      "floor_z": 7.327288971720214,
+      "underside_gap_m": 7.077288971720214,
+      "ground_contacts": 0
+    },
+    {
+      "time": 65.00000000001337,
+      "name": "lift_front_right",
+      "out": 1.7125427167113454e-09,
+      "depth": -3.448999688317658e-10,
+      "floor_z": 7.327431318360275,
+      "underside_gap_m": 7.077431318360275,
+      "ground_contacts": 0
+    },
+    {
+      "time": 65.00000000001337,
+      "name": "lift_front_left",
+      "out": 1.71523516703462e-09,
+      "depth": -3.4489991549094147e-10,
+      "floor_z": 7.327431318516763,
+      "underside_gap_m": 7.077431318516763,
+      "ground_contacts": 0
+    },
+    {
+      "time": 65.00000000001337,
+      "name": "lift_rear_right",
+      "out": 2.3156874161140477e-09,
+      "depth": -3.2484254694334106e-10,
+      "floor_z": 7.324056206362342,
+      "underside_gap_m": 7.074056206362342,
+      "ground_contacts": 0
+    },
+    {
+      "time": 65.00000000001337,
+      "name": "lift_rear_left",
+      "out": 2.2990539083476324e-09,
+      "depth": -3.248433680674166e-10,
+      "floor_z": 7.324056205853,
+      "underside_gap_m": 7.074056205853,
+      "ground_contacts": 0
+    },
+    {
+      "time": 65.00000000001337,
+      "name": "lift_tail_right",
+      "out": 1.7046867671753725e-09,
+      "depth": -3.399204428643379e-10,
+      "floor_z": 7.327317440163378,
+      "underside_gap_m": 7.077317440163378,
+      "ground_contacts": 0
+    },
+    {
+      "time": 65.00000000001337,
+      "name": "lift_tail_left",
+      "out": 1.589609739723595e-09,
+      "depth": -3.3992275968049124e-10,
+      "floor_z": 7.327317440733393,
+      "underside_gap_m": 7.077317440733393,
+      "ground_contacts": 0
+    },
+    {
+      "time": 66.00000000001246,
+      "name": "lift_front_right",
+      "out": 7.539078275979186e-12,
+      "depth": -3.3885907489779405e-10,
+      "floor_z": 7.32745949782834,
+      "underside_gap_m": 7.07745949782834,
+      "ground_contacts": 0
+    },
+    {
+      "time": 66.00000000001246,
+      "name": "lift_front_left",
+      "out": 9.896884267943088e-12,
+      "depth": -3.388592794339881e-10,
+      "floor_z": 7.327459497986345,
+      "underside_gap_m": 7.077459497986345,
+      "ground_contacts": 0
+    },
+    {
+      "time": 66.00000000001246,
+      "name": "lift_rear_right",
+      "out": 2.2675561355112536e-11,
+      "depth": -3.202490328960951e-10,
+      "floor_z": 7.324086535113783,
+      "underside_gap_m": 7.074086535113783,
+      "ground_contacts": 0
+    },
+    {
+      "time": 66.00000000001246,
+      "name": "lift_rear_left",
+      "out": 1.1648276840247019e-11,
+      "depth": -3.2024937655783386e-10,
+      "floor_z": 7.3240865346070585,
+      "underside_gap_m": 7.0740865346070585,
+      "ground_contacts": 0
+    },
+    {
+      "time": 66.00000000001246,
+      "name": "lift_tail_right",
+      "out": 8.869731729466564e-13,
+      "depth": -3.3442885537752623e-10,
+      "floor_z": 7.327345384894784,
+      "underside_gap_m": 7.077345384894784,
+      "ground_contacts": 0
+    },
+    {
+      "time": 66.00000000001246,
+      "name": "lift_tail_left",
+      "out": 1.7966044088067032e-11,
+      "depth": -3.3442942555480087e-10,
+      "floor_z": 7.3273453854598545,
+      "underside_gap_m": 7.0773453854598545,
+      "ground_contacts": 0
+    },
+    {
+      "time": 67.00000000001155,
+      "name": "lift_front_right",
+      "out": 9.957466750272505e-13,
+      "depth": -3.326025268824554e-10,
+      "floor_z": 7.327487156239994,
+      "underside_gap_m": 7.077487156239994,
+      "ground_contacts": 0
+    },
+    {
+      "time": 67.00000000001155,
+      "name": "lift_front_left",
+      "out": 7.85969937404323e-14,
+      "depth": -3.3260258931375047e-10,
+      "floor_z": 7.3274871563994015,
+      "underside_gap_m": 7.0774871563994015,
+      "ground_contacts": 0
+    },
+    {
+      "time": 67.00000000001155,
+      "name": "lift_rear_right",
+      "out": 2.898401071853464e-12,
+      "depth": -3.1499989298372544e-10,
+      "floor_z": 7.324116371325435,
+      "underside_gap_m": 7.074116371325435,
+      "ground_contacts": 0
+    },
+    {
+      "time": 67.00000000001155,
+      "name": "lift_rear_left",
+      "out": 1.7847513735326151e-12,
+      "depth": -3.149997942994914e-10,
+      "floor_z": 7.324116370821491,
+      "underside_gap_m": 7.074116370821491,
+      "ground_contacts": 0
+    },
+    {
+      "time": 67.00000000001155,
+      "name": "lift_tail_right",
+      "out": 2.761101880899596e-12,
+      "depth": -3.282614138964185e-10,
+      "floor_z": 7.3273728151520645,
+      "underside_gap_m": 7.0773728151520645,
+      "ground_contacts": 0
+    },
+    {
+      "time": 67.00000000001155,
+      "name": "lift_tail_left",
+      "out": 3.1504013492739494e-12,
+      "depth": -3.282613639765864e-10,
+      "floor_z": 7.327372815712218,
+      "underside_gap_m": 7.077372815712218,
+      "ground_contacts": 0
+    },
+    {
+      "time": 68.00000000001064,
+      "name": "lift_front_right",
+      "out": 4.653832321000246e-13,
+      "depth": -3.2643325111980215e-10,
+      "floor_z": 7.327514303269572,
+      "underside_gap_m": 7.077514303269572,
+      "ground_contacts": 0
+    },
+    {
+      "time": 68.00000000001064,
+      "name": "lift_front_left",
+      "out": 1.19002259876709e-13,
+      "depth": -3.2643333759487163e-10,
+      "floor_z": 7.327514303430279,
+      "underside_gap_m": 7.077514303430279,
+      "ground_contacts": 0
+    },
+    {
+      "time": 68.00000000001064,
+      "name": "lift_rear_right",
+      "out": 1.1873718390140189e-12,
+      "depth": -3.098290905228396e-10,
+      "floor_z": 7.3241457230904485,
+      "underside_gap_m": 7.0741457230904485,
+      "ground_contacts": 0
+    },
+    {
+      "time": 68.00000000001064,
+      "name": "lift_rear_left",
+      "out": 2.0710477052969456e-12,
+      "depth": -3.098290753974847e-10,
+      "floor_z": 7.3241457225894235,
+      "underside_gap_m": 7.0741457225894235,
+      "ground_contacts": 0
+    },
+    {
+      "time": 68.00000000001064,
+      "name": "lift_tail_right",
+      "out": 2.9775754181401234e-12,
+      "depth": -3.2219084662840243e-10,
+      "floor_z": 7.327399740479478,
+      "underside_gap_m": 7.077399740479478,
+      "ground_contacts": 0
+    },
+    {
+      "time": 68.00000000001064,
+      "name": "lift_tail_left",
+      "out": 9.006050623303037e-13,
+      "depth": -3.221909843052451e-10,
+      "floor_z": 7.327399741034731,
+      "underside_gap_m": 7.077399741034731,
+      "ground_contacts": 0
+    },
+    {
+      "time": 69.00000000000973,
+      "name": "lift_front_right",
+      "out": 4.989896028423741e-13,
+      "depth": -3.2038275892327427e-10,
+      "floor_z": 7.327540948393509,
+      "underside_gap_m": 7.077540948393509,
+      "ground_contacts": 0
+    },
+    {
+      "time": 69.00000000000973,
+      "name": "lift_front_left",
+      "out": 1.546760800911054e-13,
+      "depth": -3.2038283026317064e-10,
+      "floor_z": 7.327540948555416,
+      "underside_gap_m": 7.077540948555416,
+      "ground_contacts": 0
+    },
+    {
+      "time": 69.00000000000973,
+      "name": "lift_rear_right",
+      "out": 1.3827412619431592e-12,
+      "depth": -3.047529794527478e-10,
+      "floor_z": 7.32417459834371,
+      "underside_gap_m": 7.07417459834371,
+      "ground_contacts": 0
+    },
+    {
+      "time": 69.00000000000973,
+      "name": "lift_rear_left",
+      "out": 2.113632446504669e-12,
+      "depth": -3.0475289891004293e-10,
+      "floor_z": 7.324174597845735,
+      "underside_gap_m": 7.074174597845735,
+      "ground_contacts": 0
+    },
+    {
+      "time": 69.00000000000973,
+      "name": "lift_tail_right",
+      "out": 2.977787925366439e-12,
+      "depth": -3.1624696324178826e-10,
+      "floor_z": 7.327426170191284,
+      "underside_gap_m": 7.077426170191284,
+      "ground_contacts": 0
+    },
+    {
+      "time": 69.00000000000973,
+      "name": "lift_tail_left",
+      "out": 1.273012862085865e-13,
+      "depth": -3.162469646081314e-10,
+      "floor_z": 7.327426170741652,
+      "underside_gap_m": 7.077426170741652,
+      "ground_contacts": 0
+    },
+    {
+      "time": 70.00000000000882,
+      "name": "lift_front_right",
+      "out": 5.351744140430387e-13,
+      "depth": -3.144451361929049e-10,
+      "floor_z": 7.327567100913201,
+      "underside_gap_m": 7.077567100913201,
+      "ground_contacts": 0
+    },
+    {
+      "time": 70.00000000000882,
+      "name": "lift_front_left",
+      "out": 3.276136300081771e-13,
+      "depth": -3.144451602211876e-10,
+      "floor_z": 7.327567101076217,
+      "underside_gap_m": 7.077567101076217,
+      "ground_contacts": 0
+    },
+    {
+      "time": 70.00000000000882,
+      "name": "lift_rear_right",
+      "out": 8.767046326115701e-13,
+      "depth": -2.9976146400278623e-10,
+      "floor_z": 7.324203004890971,
+      "underside_gap_m": 7.074203004890971,
+      "ground_contacts": 0
+    },
+    {
+      "time": 70.00000000000882,
+      "name": "lift_rear_left",
+      "out": 2.149897632532393e-12,
+      "depth": -2.997613217549433e-10,
+      "floor_z": 7.324203004396163,
+      "underside_gap_m": 7.074203004396163,
+      "ground_contacts": 0
+    },
+    {
+      "time": 70.00000000000882,
+      "name": "lift_tail_right",
+      "out": 2.9741855128020604e-12,
+      "depth": -3.1041344122591004e-10,
+      "floor_z": 7.32745211342981,
+      "underside_gap_m": 7.07745211342981,
+      "ground_contacts": 0
+    },
+    {
+      "time": 70.00000000000882,
+      "name": "lift_tail_left",
+      "out": 1.1177192217393321e-12,
+      "depth": -3.104133903760173e-10,
+      "floor_z": 7.327452113975313,
+      "underside_gap_m": 7.077452113975313,
+      "ground_contacts": 0
+    },
+    {
+      "time": 71.00000000000792,
+      "name": "lift_front_right",
+      "out": 5.691749513428077e-13,
+      "depth": -3.0861619233770583e-10,
+      "floor_z": 7.327592769958569,
+      "underside_gap_m": 7.077592769958569,
+      "ground_contacts": 0
+    },
+    {
+      "time": 71.00000000000792,
+      "name": "lift_front_left",
+      "out": 3.9036259685852995e-13,
+      "depth": -3.08616246413898e-10,
+      "floor_z": 7.327592770122609,
+      "underside_gap_m": 7.077592770122609,
+      "ground_contacts": 0
+    },
+    {
+      "time": 71.00000000000792,
+      "name": "lift_rear_right",
+      "out": 6.239433774661822e-13,
+      "depth": -2.948510069902831e-10,
+      "floor_z": 7.32423095040993,
+      "underside_gap_m": 7.07423095040993,
+      "ground_contacts": 0
+    },
+    {
+      "time": 71.00000000000792,
+      "name": "lift_rear_left",
+      "out": 2.1826143405655853e-12,
+      "depth": -2.9485094358488933e-10,
+      "floor_z": 7.3242309499183955,
+      "underside_gap_m": 7.0742309499183955,
+      "ground_contacts": 0
+    },
+    {
+      "time": 71.00000000000792,
+      "name": "lift_tail_right",
+      "out": 2.9691499643224216e-12,
+      "depth": -3.046858969377946e-10,
+      "floor_z": 7.327477579169954,
+      "underside_gap_m": 7.077477579169954,
+      "ground_contacts": 0
+    },
+    {
+      "time": 71.00000000000792,
+      "name": "lift_tail_left",
+      "out": 1.9089477564634497e-12,
+      "depth": -3.04685868431672e-10,
+      "floor_z": 7.327477579710617,
+      "underside_gap_m": 7.077477579710617,
+      "ground_contacts": 0
+    },
+    {
+      "time": 72.000000000007,
+      "name": "lift_front_right",
+      "out": 6.012693620137383e-13,
+      "depth": -3.028955568809962e-10,
+      "floor_z": 7.32761796449076,
+      "underside_gap_m": 7.07761796449076,
+      "ground_contacts": 0
+    },
+    {
+      "time": 72.000000000007,
+      "name": "lift_front_left",
+      "out": 1.5146311940766735e-13,
+      "depth": -3.0289563466403837e-10,
+      "floor_z": 7.327617964655745,
+      "underside_gap_m": 7.077617964655745,
+      "ground_contacts": 0
+    },
+    {
+      "time": 72.000000000007,
+      "name": "lift_rear_right",
+      "out": 1.400420675839226e-12,
+      "depth": -2.900218540525034e-10,
+      "floor_z": 7.324258442451801,
+      "underside_gap_m": 7.074258442451801,
+      "ground_contacts": 0
+    },
+    {
+      "time": 72.000000000007,
+      "name": "lift_rear_left",
+      "out": 2.2114918059714945e-12,
+      "depth": -2.9002187387142814e-10,
+      "floor_z": 7.324258441963638,
+      "underside_gap_m": 7.074258441963638,
+      "ground_contacts": 0
+    },
+    {
+      "time": 72.000000000007,
+      "name": "lift_tail_right",
+      "out": 2.963310833092062e-12,
+      "depth": -2.990640591430608e-10,
+      "floor_z": 7.32750257622165,
+      "underside_gap_m": 7.07750257622165,
+      "ground_contacts": 0
+    },
+    {
+      "time": 72.000000000007,
+      "name": "lift_tail_left",
+      "out": 1.5877475705970523e-12,
+      "depth": -2.9906414670826e-10,
+      "floor_z": 7.327502576757502,
+      "underside_gap_m": 7.077502576757502,
+      "ground_contacts": 0
+    },
+    {
+      "time": 73.0000000000061,
+      "name": "lift_front_right",
+      "out": 6.313677200554415e-13,
+      "depth": -2.9728115262775995e-10,
+      "floor_z": 7.327642693305155,
+      "underside_gap_m": 7.077642693305155,
+      "ground_contacts": 0
+    },
+    {
+      "time": 73.0000000000061,
+      "name": "lift_front_left",
+      "out": 2.3613227862730333e-13,
+      "depth": -2.9728116718588913e-10,
+      "floor_z": 7.327642693471008,
+      "underside_gap_m": 7.077642693471008,
+      "ground_contacts": 0
+    },
+    {
+      "time": 73.0000000000061,
+      "name": "lift_rear_right",
+      "out": 1.3357810252394593e-12,
+      "depth": -2.85272667435475e-10,
+      "floor_z": 7.324285488443431,
+      "underside_gap_m": 7.074285488443431,
+      "ground_contacts": 0
+    },
+    {
+      "time": 73.0000000000061,
+      "name": "lift_rear_left",
+      "out": 2.2370847029593767e-12,
+      "depth": -2.852725907977061e-10,
+      "floor_z": 7.324285487958727,
+      "underside_gap_m": 7.074285487958727,
+      "ground_contacts": 0
+    },
+    {
+      "time": 73.0000000000061,
+      "name": "lift_tail_right",
+      "out": 2.9568756815672314e-12,
+      "depth": -2.935461068791947e-10,
+      "floor_z": 7.327527113232843,
+      "underside_gap_m": 7.077527113232843,
+      "ground_contacts": 0
+    },
+    {
+      "time": 73.0000000000061,
+      "name": "lift_tail_left",
+      "out": 2.831889323847203e-13,
+      "depth": -2.9354607658790484e-10,
+      "floor_z": 7.327527113763913,
+      "underside_gap_m": 7.077527113763913,
+      "ground_contacts": 0
+    },
+    {
+      "time": 74.00000000000519,
+      "name": "lift_front_right",
+      "out": 6.597536087076508e-13,
+      "depth": -2.947599877933545e-10,
+      "floor_z": 7.327666964550494,
+      "underside_gap_m": 7.077666964550494,
+      "ground_contacts": 0
+    },
+    {
+      "time": 74.00000000000519,
+      "name": "lift_front_left",
+      "out": 4.771156969194063e-13,
+      "depth": -2.947599727752359e-10,
+      "floor_z": 7.327666964717139,
+      "underside_gap_m": 7.077666964717139,
+      "ground_contacts": 0
+    },
+    {
+      "time": 74.00000000000519,
+      "name": "lift_rear_right",
+      "out": 5.998881858914834e-14,
+      "depth": -2.642670023834578e-10,
+      "floor_z": 7.324312098490367,
+      "underside_gap_m": 7.074312098490367,
+      "ground_contacts": 0
+    },
+    {
+      "time": 74.00000000000519,
+      "name": "lift_rear_left",
+      "out": 2.2599126569884973e-12,
+      "depth": -2.6426668972977576e-10,
+      "floor_z": 7.324312098009153,
+      "underside_gap_m": 7.074312098009153,
+      "ground_contacts": 0
+    },
+    {
+      "time": 74.00000000000519,
+      "name": "lift_tail_right",
+      "out": 2.9494777979681056e-12,
+      "depth": -2.5901332499922694e-10,
+      "floor_z": 7.327551203287546,
+      "underside_gap_m": 7.077551203287546,
+      "ground_contacts": 0
+    },
+    {
+      "time": 74.00000000000519,
+      "name": "lift_tail_left",
+      "out": 1.2329545183346902e-12,
+      "depth": -2.5901285143415365e-10,
+      "floor_z": 7.327551203813365,
+      "underside_gap_m": 7.077551203813365,
+      "ground_contacts": 0
+    }
+  ],
+  "scope": "Actual MuJoCo finite-force mechanism cycle; stationary unloaded carrier. No learned robot policy or loaded boarding certification."
+}

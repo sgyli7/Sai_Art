@@ -1,0 +1,1067 @@
+[
+  {
+    "name": "cabin_door_right_1_-0.4_11.6",
+    "kind": "door",
+    "body": "cabin_door_right_1",
+    "start": [
+      18.75,
+      -4.15,
+      11.6
+    ],
+    "end": [
+      18.75,
+      -3.1,
+      11.6
+    ]
+  },
+  {
+    "name": "cabin_door_right_1_-0.4_12.1",
+    "kind": "door",
+    "body": "cabin_door_right_1",
+    "start": [
+      18.75,
+      -4.15,
+      12.1
+    ],
+    "end": [
+      18.75,
+      -3.1,
+      12.1
+    ]
+  },
+  {
+    "name": "cabin_door_right_1_-0.4_13.65",
+    "kind": "door",
+    "body": "cabin_door_right_1",
+    "start": [
+      18.75,
+      -4.15,
+      13.65
+    ],
+    "end": [
+      18.75,
+      -3.1,
+      13.65
+    ]
+  },
+  {
+    "name": "cabin_door_right_1_0.0_11.6",
+    "kind": "door",
+    "body": "cabin_door_right_1",
+    "start": [
+      19.15,
+      -4.15,
+      11.6
+    ],
+    "end": [
+      19.15,
+      -3.1,
+      11.6
+    ]
+  },
+  {
+    "name": "cabin_door_right_1_0.0_12.1",
+    "kind": "door",
+    "body": "cabin_door_right_1",
+    "start": [
+      19.15,
+      -4.15,
+      12.1
+    ],
+    "end": [
+      19.15,
+      -3.1,
+      12.1
+    ]
+  },
+  {
+    "name": "cabin_door_right_1_0.0_13.65",
+    "kind": "door",
+    "body": "cabin_door_right_1",
+    "start": [
+      19.15,
+      -4.15,
+      13.65
+    ],
+    "end": [
+      19.15,
+      -3.1,
+      13.65
+    ]
+  },
+  {
+    "name": "cabin_door_right_1_0.4_11.6",
+    "kind": "door",
+    "body": "cabin_door_right_1",
+    "start": [
+      19.549999999999997,
+      -4.15,
+      11.6
+    ],
+    "end": [
+      19.549999999999997,
+      -3.1,
+      11.6
+    ]
+  },
+  {
+    "name": "cabin_door_right_1_0.4_12.1",
+    "kind": "door",
+    "body": "cabin_door_right_1",
+    "start": [
+      19.549999999999997,
+      -4.15,
+      12.1
+    ],
+    "end": [
+      19.549999999999997,
+      -3.1,
+      12.1
+    ]
+  },
+  {
+    "name": "cabin_door_right_1_0.4_13.65",
+    "kind": "door",
+    "body": "cabin_door_right_1",
+    "start": [
+      19.549999999999997,
+      -4.15,
+      13.65
+    ],
+    "end": [
+      19.549999999999997,
+      -3.1,
+      13.65
+    ]
+  },
+  {
+    "name": "cabin_door_right_2_-0.4_11.6",
+    "kind": "door",
+    "body": "cabin_door_right_2",
+    "start": [
+      22.75,
+      -4.15,
+      11.6
+    ],
+    "end": [
+      22.75,
+      -3.1,
+      11.6
+    ]
+  },
+  {
+    "name": "cabin_door_right_2_-0.4_12.1",
+    "kind": "door",
+    "body": "cabin_door_right_2",
+    "start": [
+      22.75,
+      -4.15,
+      12.1
+    ],
+    "end": [
+      22.75,
+      -3.1,
+      12.1
+    ]
+  },
+  {
+    "name": "cabin_door_right_2_-0.4_13.65",
+    "kind": "door",
+    "body": "cabin_door_right_2",
+    "start": [
+      22.75,
+      -4.15,
+      13.65
+    ],
+    "end": [
+      22.75,
+      -3.1,
+      13.65
+    ]
+  },
+  {
+    "name": "cabin_door_right_2_0.0_11.6",
+    "kind": "door",
+    "body": "cabin_door_right_2",
+    "start": [
+      23.15,
+      -4.15,
+      11.6
+    ],
+    "end": [
+      23.15,
+      -3.1,
+      11.6
+    ]
+  },
+  {
+    "name": "cabin_door_right_2_0.0_12.1",
+    "kind": "door",
+    "body": "cabin_door_right_2",
+    "start": [
+      23.15,
+      -4.15,
+      12.1
+    ],
+    "end": [
+      23.15,
+      -3.1,
+      12.1
+    ]
+  },
+  {
+    "name": "cabin_door_right_2_0.0_13.65",
+    "kind": "door",
+    "body": "cabin_door_right_2",
+    "start": [
+      23.15,
+      -4.15,
+      13.65
+    ],
+    "end": [
+      23.15,
+      -3.1,
+      13.65
+    ]
+  },
+  {
+    "name": "cabin_door_right_2_0.4_11.6",
+    "kind": "door",
+    "body": "cabin_door_right_2",
+    "start": [
+      23.549999999999997,
+      -4.15,
+      11.6
+    ],
+    "end": [
+      23.549999999999997,
+      -3.1,
+      11.6
+    ]
+  },
+  {
+    "name": "cabin_door_right_2_0.4_12.1",
+    "kind": "door",
+    "body": "cabin_door_right_2",
+    "start": [
+      23.549999999999997,
+      -4.15,
+      12.1
+    ],
+    "end": [
+      23.549999999999997,
+      -3.1,
+      12.1
+    ]
+  },
+  {
+    "name": "cabin_door_right_2_0.4_13.65",
+    "kind": "door",
+    "body": "cabin_door_right_2",
+    "start": [
+      23.549999999999997,
+      -4.15,
+      13.65
+    ],
+    "end": [
+      23.549999999999997,
+      -3.1,
+      13.65
+    ]
+  },
+  {
+    "name": "cabin_door_right_3_-0.4_11.6",
+    "kind": "door",
+    "body": "cabin_door_right_3",
+    "start": [
+      24.650000000000002,
+      -4.15,
+      11.6
+    ],
+    "end": [
+      24.650000000000002,
+      -3.1,
+      11.6
+    ]
+  },
+  {
+    "name": "cabin_door_right_3_-0.4_12.1",
+    "kind": "door",
+    "body": "cabin_door_right_3",
+    "start": [
+      24.650000000000002,
+      -4.15,
+      12.1
+    ],
+    "end": [
+      24.650000000000002,
+      -3.1,
+      12.1
+    ]
+  },
+  {
+    "name": "cabin_door_right_3_-0.4_13.65",
+    "kind": "door",
+    "body": "cabin_door_right_3",
+    "start": [
+      24.650000000000002,
+      -4.15,
+      13.65
+    ],
+    "end": [
+      24.650000000000002,
+      -3.1,
+      13.65
+    ]
+  },
+  {
+    "name": "cabin_door_right_3_0.0_11.6",
+    "kind": "door",
+    "body": "cabin_door_right_3",
+    "start": [
+      25.05,
+      -4.15,
+      11.6
+    ],
+    "end": [
+      25.05,
+      -3.1,
+      11.6
+    ]
+  },
+  {
+    "name": "cabin_door_right_3_0.0_12.1",
+    "kind": "door",
+    "body": "cabin_door_right_3",
+    "start": [
+      25.05,
+      -4.15,
+      12.1
+    ],
+    "end": [
+      25.05,
+      -3.1,
+      12.1
+    ]
+  },
+  {
+    "name": "cabin_door_right_3_0.0_13.65",
+    "kind": "door",
+    "body": "cabin_door_right_3",
+    "start": [
+      25.05,
+      -4.15,
+      13.65
+    ],
+    "end": [
+      25.05,
+      -3.1,
+      13.65
+    ]
+  },
+  {
+    "name": "cabin_door_right_3_0.4_11.6",
+    "kind": "door",
+    "body": "cabin_door_right_3",
+    "start": [
+      25.45,
+      -4.15,
+      11.6
+    ],
+    "end": [
+      25.45,
+      -3.1,
+      11.6
+    ]
+  },
+  {
+    "name": "cabin_door_right_3_0.4_12.1",
+    "kind": "door",
+    "body": "cabin_door_right_3",
+    "start": [
+      25.45,
+      -4.15,
+      12.1
+    ],
+    "end": [
+      25.45,
+      -3.1,
+      12.1
+    ]
+  },
+  {
+    "name": "cabin_door_right_3_0.4_13.65",
+    "kind": "door",
+    "body": "cabin_door_right_3",
+    "start": [
+      25.45,
+      -4.15,
+      13.65
+    ],
+    "end": [
+      25.45,
+      -3.1,
+      13.65
+    ]
+  },
+  {
+    "name": "cabin_door_left_1_-0.4_11.6",
+    "kind": "door",
+    "body": "cabin_door_left_1",
+    "start": [
+      18.75,
+      4.15,
+      11.6
+    ],
+    "end": [
+      18.75,
+      3.1,
+      11.6
+    ]
+  },
+  {
+    "name": "cabin_door_left_1_-0.4_12.1",
+    "kind": "door",
+    "body": "cabin_door_left_1",
+    "start": [
+      18.75,
+      4.15,
+      12.1
+    ],
+    "end": [
+      18.75,
+      3.1,
+      12.1
+    ]
+  },
+  {
+    "name": "cabin_door_left_1_-0.4_13.65",
+    "kind": "door",
+    "body": "cabin_door_left_1",
+    "start": [
+      18.75,
+      4.15,
+      13.65
+    ],
+    "end": [
+      18.75,
+      3.1,
+      13.65
+    ]
+  },
+  {
+    "name": "cabin_door_left_1_0.0_11.6",
+    "kind": "door",
+    "body": "cabin_door_left_1",
+    "start": [
+      19.15,
+      4.15,
+      11.6
+    ],
+    "end": [
+      19.15,
+      3.1,
+      11.6
+    ]
+  },
+  {
+    "name": "cabin_door_left_1_0.0_12.1",
+    "kind": "door",
+    "body": "cabin_door_left_1",
+    "start": [
+      19.15,
+      4.15,
+      12.1
+    ],
+    "end": [
+      19.15,
+      3.1,
+      12.1
+    ]
+  },
+  {
+    "name": "cabin_door_left_1_0.0_13.65",
+    "kind": "door",
+    "body": "cabin_door_left_1",
+    "start": [
+      19.15,
+      4.15,
+      13.65
+    ],
+    "end": [
+      19.15,
+      3.1,
+      13.65
+    ]
+  },
+  {
+    "name": "cabin_door_left_1_0.4_11.6",
+    "kind": "door",
+    "body": "cabin_door_left_1",
+    "start": [
+      19.549999999999997,
+      4.15,
+      11.6
+    ],
+    "end": [
+      19.549999999999997,
+      3.1,
+      11.6
+    ]
+  },
+  {
+    "name": "cabin_door_left_1_0.4_12.1",
+    "kind": "door",
+    "body": "cabin_door_left_1",
+    "start": [
+      19.549999999999997,
+      4.15,
+      12.1
+    ],
+    "end": [
+      19.549999999999997,
+      3.1,
+      12.1
+    ]
+  },
+  {
+    "name": "cabin_door_left_1_0.4_13.65",
+    "kind": "door",
+    "body": "cabin_door_left_1",
+    "start": [
+      19.549999999999997,
+      4.15,
+      13.65
+    ],
+    "end": [
+      19.549999999999997,
+      3.1,
+      13.65
+    ]
+  },
+  {
+    "name": "cabin_door_left_2_-0.4_11.6",
+    "kind": "door",
+    "body": "cabin_door_left_2",
+    "start": [
+      22.75,
+      4.15,
+      11.6
+    ],
+    "end": [
+      22.75,
+      3.1,
+      11.6
+    ]
+  },
+  {
+    "name": "cabin_door_left_2_-0.4_12.1",
+    "kind": "door",
+    "body": "cabin_door_left_2",
+    "start": [
+      22.75,
+      4.15,
+      12.1
+    ],
+    "end": [
+      22.75,
+      3.1,
+      12.1
+    ]
+  },
+  {
+    "name": "cabin_door_left_2_-0.4_13.65",
+    "kind": "door",
+    "body": "cabin_door_left_2",
+    "start": [
+      22.75,
+      4.15,
+      13.65
+    ],
+    "end": [
+      22.75,
+      3.1,
+      13.65
+    ]
+  },
+  {
+    "name": "cabin_door_left_2_0.0_11.6",
+    "kind": "door",
+    "body": "cabin_door_left_2",
+    "start": [
+      23.15,
+      4.15,
+      11.6
+    ],
+    "end": [
+      23.15,
+      3.1,
+      11.6
+    ]
+  },
+  {
+    "name": "cabin_door_left_2_0.0_12.1",
+    "kind": "door",
+    "body": "cabin_door_left_2",
+    "start": [
+      23.15,
+      4.15,
+      12.1
+    ],
+    "end": [
+      23.15,
+      3.1,
+      12.1
+    ]
+  },
+  {
+    "name": "cabin_door_left_2_0.0_13.65",
+    "kind": "door",
+    "body": "cabin_door_left_2",
+    "start": [
+      23.15,
+      4.15,
+      13.65
+    ],
+    "end": [
+      23.15,
+      3.1,
+      13.65
+    ]
+  },
+  {
+    "name": "cabin_door_left_2_0.4_11.6",
+    "kind": "door",
+    "body": "cabin_door_left_2",
+    "start": [
+      23.549999999999997,
+      4.15,
+      11.6
+    ],
+    "end": [
+      23.549999999999997,
+      3.1,
+      11.6
+    ]
+  },
+  {
+    "name": "cabin_door_left_2_0.4_12.1",
+    "kind": "door",
+    "body": "cabin_door_left_2",
+    "start": [
+      23.549999999999997,
+      4.15,
+      12.1
+    ],
+    "end": [
+      23.549999999999997,
+      3.1,
+      12.1
+    ]
+  },
+  {
+    "name": "cabin_door_left_2_0.4_13.65",
+    "kind": "door",
+    "body": "cabin_door_left_2",
+    "start": [
+      23.549999999999997,
+      4.15,
+      13.65
+    ],
+    "end": [
+      23.549999999999997,
+      3.1,
+      13.65
+    ]
+  },
+  {
+    "name": "cabin_door_left_3_-0.4_11.6",
+    "kind": "door",
+    "body": "cabin_door_left_3",
+    "start": [
+      24.650000000000002,
+      4.15,
+      11.6
+    ],
+    "end": [
+      24.650000000000002,
+      3.1,
+      11.6
+    ]
+  },
+  {
+    "name": "cabin_door_left_3_-0.4_12.1",
+    "kind": "door",
+    "body": "cabin_door_left_3",
+    "start": [
+      24.650000000000002,
+      4.15,
+      12.1
+    ],
+    "end": [
+      24.650000000000002,
+      3.1,
+      12.1
+    ]
+  },
+  {
+    "name": "cabin_door_left_3_-0.4_13.65",
+    "kind": "door",
+    "body": "cabin_door_left_3",
+    "start": [
+      24.650000000000002,
+      4.15,
+      13.65
+    ],
+    "end": [
+      24.650000000000002,
+      3.1,
+      13.65
+    ]
+  },
+  {
+    "name": "cabin_door_left_3_0.0_11.6",
+    "kind": "door",
+    "body": "cabin_door_left_3",
+    "start": [
+      25.05,
+      4.15,
+      11.6
+    ],
+    "end": [
+      25.05,
+      3.1,
+      11.6
+    ]
+  },
+  {
+    "name": "cabin_door_left_3_0.0_12.1",
+    "kind": "door",
+    "body": "cabin_door_left_3",
+    "start": [
+      25.05,
+      4.15,
+      12.1
+    ],
+    "end": [
+      25.05,
+      3.1,
+      12.1
+    ]
+  },
+  {
+    "name": "cabin_door_left_3_0.0_13.65",
+    "kind": "door",
+    "body": "cabin_door_left_3",
+    "start": [
+      25.05,
+      4.15,
+      13.65
+    ],
+    "end": [
+      25.05,
+      3.1,
+      13.65
+    ]
+  },
+  {
+    "name": "cabin_door_left_3_0.4_11.6",
+    "kind": "door",
+    "body": "cabin_door_left_3",
+    "start": [
+      25.45,
+      4.15,
+      11.6
+    ],
+    "end": [
+      25.45,
+      3.1,
+      11.6
+    ]
+  },
+  {
+    "name": "cabin_door_left_3_0.4_12.1",
+    "kind": "door",
+    "body": "cabin_door_left_3",
+    "start": [
+      25.45,
+      4.15,
+      12.1
+    ],
+    "end": [
+      25.45,
+      3.1,
+      12.1
+    ]
+  },
+  {
+    "name": "cabin_door_left_3_0.4_13.65",
+    "kind": "door",
+    "body": "cabin_door_left_3",
+    "start": [
+      25.45,
+      4.15,
+      13.65
+    ],
+    "end": [
+      25.45,
+      3.1,
+      13.65
+    ]
+  },
+  {
+    "name": "wall_-1_20.5",
+    "kind": "wall",
+    "body": "front",
+    "start": [
+      20.5,
+      -3.9,
+      11.85
+    ],
+    "end": [
+      20.5,
+      -3.1,
+      11.85
+    ]
+  },
+  {
+    "name": "wall_-1_22.0",
+    "kind": "wall",
+    "body": "front",
+    "start": [
+      22.0,
+      -3.9,
+      11.85
+    ],
+    "end": [
+      22.0,
+      -3.1,
+      11.85
+    ]
+  },
+  {
+    "name": "wall_-1_26.1",
+    "kind": "wall",
+    "body": "front",
+    "start": [
+      26.1,
+      -3.9,
+      11.85
+    ],
+    "end": [
+      26.1,
+      -3.1,
+      11.85
+    ]
+  },
+  {
+    "name": "wall_1_20.5",
+    "kind": "wall",
+    "body": "front",
+    "start": [
+      20.5,
+      3.9,
+      11.85
+    ],
+    "end": [
+      20.5,
+      3.1,
+      11.85
+    ]
+  },
+  {
+    "name": "wall_1_22.0",
+    "kind": "wall",
+    "body": "front",
+    "start": [
+      22.0,
+      3.9,
+      11.85
+    ],
+    "end": [
+      22.0,
+      3.1,
+      11.85
+    ]
+  },
+  {
+    "name": "wall_1_26.1",
+    "kind": "wall",
+    "body": "front",
+    "start": [
+      26.1,
+      3.9,
+      11.85
+    ],
+    "end": [
+      26.1,
+      3.1,
+      11.85
+    ]
+  },
+  {
+    "name": "7216_bridge_square_window",
+    "kind": "window",
+    "body": "front",
+    "start": [
+      26.85,
+      -3.4170000002235152,
+      13.65
+    ],
+    "end": [
+      26.85,
+      -3.6570000002235155,
+      13.65
+    ]
+  },
+  {
+    "name": "7218_bridge_square_window",
+    "kind": "window",
+    "body": "front",
+    "start": [
+      29.3,
+      -3.6570000002235155,
+      13.65
+    ],
+    "end": [
+      29.3,
+      -3.4170000002235152,
+      13.65
+    ]
+  },
+  {
+    "name": "7219_bridge_side_glass",
+    "kind": "window",
+    "body": "front",
+    "start": [
+      31.350000381469727,
+      -3.655000000447038,
+      13.65
+    ],
+    "end": [
+      31.350000381469727,
+      -3.415000000447038,
+      13.65
+    ]
+  },
+  {
+    "name": "7220_bridge_corner_glass",
+    "kind": "window",
+    "body": "front",
+    "start": [
+      33.037090328404155,
+      -3.314124087397423,
+      13.649999999999991
+    ],
+    "end": [
+      32.96290967104314,
+      -3.0858759109019953,
+      13.649999999999991
+    ]
+  },
+  {
+    "name": "7393_bridge_square_window",
+    "kind": "window",
+    "body": "front",
+    "start": [
+      26.85,
+      3.416999999776482,
+      13.65
+    ],
+    "end": [
+      26.85,
+      3.6569999997764824,
+      13.65
+    ]
+  },
+  {
+    "name": "7395_bridge_square_window",
+    "kind": "window",
+    "body": "front",
+    "start": [
+      29.3,
+      3.6569999997764824,
+      13.65
+    ],
+    "end": [
+      29.3,
+      3.416999999776482,
+      13.65
+    ]
+  },
+  {
+    "name": "7396_bridge_side_glass",
+    "kind": "window",
+    "body": "front",
+    "start": [
+      31.350000381469727,
+      3.6549999995529645,
+      13.65
+    ],
+    "end": [
+      31.350000381469727,
+      3.4149999995529643,
+      13.65
+    ]
+  },
+  {
+    "name": "7397_bridge_corner_glass",
+    "kind": "window",
+    "body": "front",
+    "start": [
+      32.96290967159584,
+      3.0858759126025768,
+      13.649999999999991
+    ],
+    "end": [
+      33.03709032895685,
+      3.3141240890980046,
+      13.649999999999991
+    ]
+  },
+  {
+    "name": "7516_bridge_windscreen",
+    "kind": "window",
+    "body": "front",
+    "start": [
+      33.90500000044704,
+      -1.8400000000000023,
+      13.649999999999991
+    ],
+    "end": [
+      34.145000000447034,
+      -1.8400000000000023,
+      13.649999999999991
+    ]
+  },
+  {
+    "name": "7520_bridge_windscreen",
+    "kind": "window",
+    "body": "front",
+    "start": [
+      33.90500000044704,
+      0.0,
+      13.649999999999991
+    ],
+    "end": [
+      34.145000000447034,
+      0.0,
+      13.649999999999991
+    ]
+  },
+  {
+    "name": "7524_bridge_windscreen",
+    "kind": "window",
+    "body": "front",
+    "start": [
+      33.90500000044704,
+      1.8400000000000012,
+      13.649999999999991
+    ],
+    "end": [
+      34.145000000447034,
+      1.8400000000000012,
+      13.649999999999991
+    ]
+  }
+]

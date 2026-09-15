@@ -1,0 +1,11 @@
+{
+  "seed": 73031,
+  "tile_px": 512,
+  "variants_per_family": 4,
+  "families": ["edge_chips", "stencil_loss", "runoff", "access_scuffs"],
+  "maximum_paint_loss_coverage": 0.12,
+  "edge_band_fraction": 0.06,
+  "logo": "SAINIVERSE",
+  "font": "/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf",
+  "notes": "Authored panel-space edge/usage proxies, not baked mesh curvature or AO. Seed changes stroke silhouettes only inside permitted regions. No global speckle layer."
+}

@@ -1,0 +1,837 @@
+{
+  "changes": [
+    {
+      "name": "0000_front_deck",
+      "change": "downward boxed-platform depth",
+      "old_depth": 0.5999999046325684,
+      "new_depth": 0.9999999046325684
+    },
+    {
+      "name": "0001_front_side_fascia",
+      "change": "downward boxed-platform depth",
+      "old_depth": 0.9499999999999993,
+      "new_depth": 1.4499999999999993
+    },
+    {
+      "name": "0052_front_side_fascia",
+      "change": "downward boxed-platform depth",
+      "old_depth": 0.9499999999999993,
+      "new_depth": 1.4499999999999993
+    },
+    {
+      "name": "3575_rear_deck",
+      "change": "downward boxed-platform depth",
+      "old_depth": 0.5999999046325684,
+      "new_depth": 0.9999999046325684
+    },
+    {
+      "name": "3576_rear_side_fascia",
+      "change": "downward boxed-platform depth",
+      "old_depth": 0.9499999999999993,
+      "new_depth": 1.4499999999999993
+    },
+    {
+      "name": "3627_rear_side_fascia",
+      "change": "downward boxed-platform depth",
+      "old_depth": 0.9499999999999993,
+      "new_depth": 1.4499999999999993
+    },
+    {
+      "name": "20027_rear_deck",
+      "change": "downward boxed-platform depth",
+      "old_depth": 0.5999999046325684,
+      "new_depth": 0.9999999046325684
+    },
+    {
+      "name": "20028_rear_side_fascia",
+      "change": "downward boxed-platform depth",
+      "old_depth": 0.9499999999999993,
+      "new_depth": 1.4499999999999993
+    },
+    {
+      "name": "20079_rear_side_fascia",
+      "change": "downward boxed-platform depth",
+      "old_depth": 0.9499999999999993,
+      "new_depth": 1.4499999999999993
+    },
+    {
+      "name": "9923_service_ladder_rail",
+      "change": "ladder moved +1.04m along pedestal face"
+    },
+    {
+      "name": "9924_service_ladder_rail",
+      "change": "ladder moved +1.04m along pedestal face"
+    },
+    {
+      "name": "9925_service_ladder_rung",
+      "change": "ladder moved +1.04m along pedestal face"
+    },
+    {
+      "name": "9926_service_ladder_rung",
+      "change": "ladder moved +1.04m along pedestal face"
+    },
+    {
+      "name": "9927_service_ladder_rung",
+      "change": "ladder moved +1.04m along pedestal face"
+    },
+    {
+      "name": "9928_service_ladder_rung",
+      "change": "ladder moved +1.04m along pedestal face"
+    },
+    {
+      "name": "9929_service_ladder_rung",
+      "change": "ladder moved +1.04m along pedestal face"
+    },
+    {
+      "name": "9930_service_ladder_rung",
+      "change": "ladder moved +1.04m along pedestal face"
+    },
+    {
+      "name": "9931_service_ladder_rung",
+      "change": "ladder moved +1.04m along pedestal face"
+    },
+    {
+      "name": "9932_service_ladder_rung",
+      "change": "ladder moved +1.04m along pedestal face"
+    },
+    {
+      "name": "9933_service_ladder_rung",
+      "change": "ladder moved +1.04m along pedestal face"
+    },
+    {
+      "name": "9934_service_ladder_rung",
+      "change": "ladder moved +1.04m along pedestal face"
+    },
+    {
+      "name": "10062_service_ladder_rail",
+      "change": "ladder moved +1.04m along pedestal face"
+    },
+    {
+      "name": "10063_service_ladder_rail",
+      "change": "ladder moved +1.04m along pedestal face"
+    },
+    {
+      "name": "10064_service_ladder_rung",
+      "change": "ladder moved +1.04m along pedestal face"
+    },
+    {
+      "name": "10065_service_ladder_rung",
+      "change": "ladder moved +1.04m along pedestal face"
+    },
+    {
+      "name": "10066_service_ladder_rung",
+      "change": "ladder moved +1.04m along pedestal face"
+    },
+    {
+      "name": "10067_service_ladder_rung",
+      "change": "ladder moved +1.04m along pedestal face"
+    },
+    {
+      "name": "10068_service_ladder_rung",
+      "change": "ladder moved +1.04m along pedestal face"
+    },
+    {
+      "name": "10069_service_ladder_rung",
+      "change": "ladder moved +1.04m along pedestal face"
+    },
+    {
+      "name": "10070_service_ladder_rung",
+      "change": "ladder moved +1.04m along pedestal face"
+    },
+    {
+      "name": "10071_service_ladder_rung",
+      "change": "ladder moved +1.04m along pedestal face"
+    },
+    {
+      "name": "10072_service_ladder_rung",
+      "change": "ladder moved +1.04m along pedestal face"
+    },
+    {
+      "name": "10073_service_ladder_rung",
+      "change": "ladder moved +1.04m along pedestal face"
+    },
+    {
+      "name": "12125_service_ladder_rail",
+      "change": "ladder moved +1.04m along pedestal face"
+    },
+    {
+      "name": "12126_service_ladder_rail",
+      "change": "ladder moved +1.04m along pedestal face"
+    },
+    {
+      "name": "12127_service_ladder_rung",
+      "change": "ladder moved +1.04m along pedestal face"
+    },
+    {
+      "name": "12128_service_ladder_rung",
+      "change": "ladder moved +1.04m along pedestal face"
+    },
+    {
+      "name": "12129_service_ladder_rung",
+      "change": "ladder moved +1.04m along pedestal face"
+    },
+    {
+      "name": "12130_service_ladder_rung",
+      "change": "ladder moved +1.04m along pedestal face"
+    },
+    {
+      "name": "12131_service_ladder_rung",
+      "change": "ladder moved +1.04m along pedestal face"
+    },
+    {
+      "name": "12132_service_ladder_rung",
+      "change": "ladder moved +1.04m along pedestal face"
+    },
+    {
+      "name": "12133_service_ladder_rung",
+      "change": "ladder moved +1.04m along pedestal face"
+    },
+    {
+      "name": "12134_service_ladder_rung",
+      "change": "ladder moved +1.04m along pedestal face"
+    },
+    {
+      "name": "12135_service_ladder_rung",
+      "change": "ladder moved +1.04m along pedestal face"
+    },
+    {
+      "name": "12136_service_ladder_rung",
+      "change": "ladder moved +1.04m along pedestal face"
+    },
+    {
+      "name": "12264_service_ladder_rail",
+      "change": "ladder moved +1.04m along pedestal face"
+    },
+    {
+      "name": "12265_service_ladder_rail",
+      "change": "ladder moved +1.04m along pedestal face"
+    },
+    {
+      "name": "12266_service_ladder_rung",
+      "change": "ladder moved +1.04m along pedestal face"
+    },
+    {
+      "name": "12267_service_ladder_rung",
+      "change": "ladder moved +1.04m along pedestal face"
+    },
+    {
+      "name": "12268_service_ladder_rung",
+      "change": "ladder moved +1.04m along pedestal face"
+    },
+    {
+      "name": "12269_service_ladder_rung",
+      "change": "ladder moved +1.04m along pedestal face"
+    },
+    {
+      "name": "12270_service_ladder_rung",
+      "change": "ladder moved +1.04m along pedestal face"
+    },
+    {
+      "name": "12271_service_ladder_rung",
+      "change": "ladder moved +1.04m along pedestal face"
+    },
+    {
+      "name": "12272_service_ladder_rung",
+      "change": "ladder moved +1.04m along pedestal face"
+    },
+    {
+      "name": "12273_service_ladder_rung",
+      "change": "ladder moved +1.04m along pedestal face"
+    },
+    {
+      "name": "12274_service_ladder_rung",
+      "change": "ladder moved +1.04m along pedestal face"
+    },
+    {
+      "name": "12275_service_ladder_rung",
+      "change": "ladder moved +1.04m along pedestal face"
+    },
+    {
+      "name": "23729_service_ladder_rail",
+      "change": "ladder moved +1.04m along pedestal face"
+    },
+    {
+      "name": "23730_service_ladder_rail",
+      "change": "ladder moved +1.04m along pedestal face"
+    },
+    {
+      "name": "23731_service_ladder_rung",
+      "change": "ladder moved +1.04m along pedestal face"
+    },
+    {
+      "name": "23732_service_ladder_rung",
+      "change": "ladder moved +1.04m along pedestal face"
+    },
+    {
+      "name": "23733_service_ladder_rung",
+      "change": "ladder moved +1.04m along pedestal face"
+    },
+    {
+      "name": "23734_service_ladder_rung",
+      "change": "ladder moved +1.04m along pedestal face"
+    },
+    {
+      "name": "23735_service_ladder_rung",
+      "change": "ladder moved +1.04m along pedestal face"
+    },
+    {
+      "name": "23736_service_ladder_rung",
+      "change": "ladder moved +1.04m along pedestal face"
+    },
+    {
+      "name": "23737_service_ladder_rung",
+      "change": "ladder moved +1.04m along pedestal face"
+    },
+    {
+      "name": "23738_service_ladder_rung",
+      "change": "ladder moved +1.04m along pedestal face"
+    },
+    {
+      "name": "23739_service_ladder_rung",
+      "change": "ladder moved +1.04m along pedestal face"
+    },
+    {
+      "name": "23740_service_ladder_rung",
+      "change": "ladder moved +1.04m along pedestal face"
+    },
+    {
+      "name": "23868_service_ladder_rail",
+      "change": "ladder moved +1.04m along pedestal face"
+    },
+    {
+      "name": "23869_service_ladder_rail",
+      "change": "ladder moved +1.04m along pedestal face"
+    },
+    {
+      "name": "23870_service_ladder_rung",
+      "change": "ladder moved +1.04m along pedestal face"
+    },
+    {
+      "name": "23871_service_ladder_rung",
+      "change": "ladder moved +1.04m along pedestal face"
+    },
+    {
+      "name": "23872_service_ladder_rung",
+      "change": "ladder moved +1.04m along pedestal face"
+    },
+    {
+      "name": "23873_service_ladder_rung",
+      "change": "ladder moved +1.04m along pedestal face"
+    },
+    {
+      "name": "23874_service_ladder_rung",
+      "change": "ladder moved +1.04m along pedestal face"
+    },
+    {
+      "name": "23875_service_ladder_rung",
+      "change": "ladder moved +1.04m along pedestal face"
+    },
+    {
+      "name": "23876_service_ladder_rung",
+      "change": "ladder moved +1.04m along pedestal face"
+    },
+    {
+      "name": "23877_service_ladder_rung",
+      "change": "ladder moved +1.04m along pedestal face"
+    },
+    {
+      "name": "23878_service_ladder_rung",
+      "change": "ladder moved +1.04m along pedestal face"
+    },
+    {
+      "name": "23879_service_ladder_rung",
+      "change": "ladder moved +1.04m along pedestal face"
+    },
+    {
+      "name": "24172_service_ladder_rail",
+      "change": "ladder moved +1.04m along pedestal face"
+    },
+    {
+      "name": "24173_service_ladder_rail",
+      "change": "ladder moved +1.04m along pedestal face"
+    },
+    {
+      "name": "24174_service_ladder_rung",
+      "change": "ladder moved +1.04m along pedestal face"
+    },
+    {
+      "name": "24175_service_ladder_rung",
+      "change": "ladder moved +1.04m along pedestal face"
+    },
+    {
+      "name": "24176_service_ladder_rung",
+      "change": "ladder moved +1.04m along pedestal face"
+    },
+    {
+      "name": "24177_service_ladder_rung",
+      "change": "ladder moved +1.04m along pedestal face"
+    },
+    {
+      "name": "24178_service_ladder_rung",
+      "change": "ladder moved +1.04m along pedestal face"
+    },
+    {
+      "name": "24179_service_ladder_rung",
+      "change": "ladder moved +1.04m along pedestal face"
+    },
+    {
+      "name": "24180_service_ladder_rung",
+      "change": "ladder moved +1.04m along pedestal face"
+    },
+    {
+      "name": "24181_service_ladder_rung",
+      "change": "ladder moved +1.04m along pedestal face"
+    },
+    {
+      "name": "24182_service_ladder_rung",
+      "change": "ladder moved +1.04m along pedestal face"
+    },
+    {
+      "name": "24183_service_ladder_rung",
+      "change": "ladder moved +1.04m along pedestal face"
+    },
+    {
+      "name": "24311_service_ladder_rail",
+      "change": "ladder moved +1.04m along pedestal face"
+    },
+    {
+      "name": "24312_service_ladder_rail",
+      "change": "ladder moved +1.04m along pedestal face"
+    },
+    {
+      "name": "24313_service_ladder_rung",
+      "change": "ladder moved +1.04m along pedestal face"
+    },
+    {
+      "name": "24314_service_ladder_rung",
+      "change": "ladder moved +1.04m along pedestal face"
+    },
+    {
+      "name": "24315_service_ladder_rung",
+      "change": "ladder moved +1.04m along pedestal face"
+    },
+    {
+      "name": "24316_service_ladder_rung",
+      "change": "ladder moved +1.04m along pedestal face"
+    },
+    {
+      "name": "24317_service_ladder_rung",
+      "change": "ladder moved +1.04m along pedestal face"
+    },
+    {
+      "name": "24318_service_ladder_rung",
+      "change": "ladder moved +1.04m along pedestal face"
+    },
+    {
+      "name": "24319_service_ladder_rung",
+      "change": "ladder moved +1.04m along pedestal face"
+    },
+    {
+      "name": "24320_service_ladder_rung",
+      "change": "ladder moved +1.04m along pedestal face"
+    },
+    {
+      "name": "24321_service_ladder_rung",
+      "change": "ladder moved +1.04m along pedestal face"
+    },
+    {
+      "name": "24322_service_ladder_rung",
+      "change": "ladder moved +1.04m along pedestal face"
+    },
+    {
+      "name": "8158_panel_face_pattern",
+      "change": "half-density physical antenna elements to reduce shimmer"
+    }
+  ],
+  "removed": [
+    "0027_front_walk_rail",
+    "0028_front_walk_rail",
+    "0039_front_walk_post",
+    "0040_front_walk_post",
+    "0078_front_walk_rail",
+    "0079_front_walk_rail",
+    "0090_front_walk_post",
+    "0091_front_walk_post",
+    "3602_rear_walk_rail",
+    "3603_rear_walk_rail",
+    "3614_rear_walk_post",
+    "3615_rear_walk_post",
+    "3653_rear_walk_rail",
+    "3654_rear_walk_rail",
+    "3665_rear_walk_post",
+    "3666_rear_walk_post",
+    "20054_rear_walk_rail",
+    "20055_rear_walk_rail",
+    "20066_rear_walk_post",
+    "20067_rear_walk_post",
+    "20105_rear_walk_rail",
+    "20106_rear_walk_rail",
+    "20117_rear_walk_post",
+    "20118_rear_walk_post"
+  ],
+  "added": [
+    "r027_0000_service_louver",
+    "r027_0001_service_louver",
+    "r027_0002_service_louver",
+    "r027_0003_service_louver",
+    "r027_0004_service_louver",
+    "r027_0005_service_louver",
+    "r027_0006_service_louver",
+    "r027_0007_service_louver",
+    "r027_0008_service_louver",
+    "r027_0009_service_louver",
+    "r027_0010_service_louver",
+    "r027_0011_service_louver",
+    "r027_0012_service_louver",
+    "r027_0013_service_louver",
+    "r027_0014_service_louver",
+    "r027_0015_service_louver",
+    "r027_0016_service_louver",
+    "r027_0017_service_louver",
+    "r027_0018_bridge_lower_trim",
+    "r027_0019_bridge_lower_trim",
+    "r027_0020_bridge_lower_trim",
+    "r027_0021_bridge_lower_trim",
+    "r027_0022_bridge_lower_trim",
+    "r027_0023_bridge_lower_trim",
+    "r027_0024_service_louver",
+    "r027_0025_service_louver",
+    "r027_0026_service_louver",
+    "r027_0027_service_louver",
+    "r027_0028_service_louver",
+    "r027_0029_service_louver",
+    "r027_0030_service_louver",
+    "r027_0031_service_louver",
+    "r027_0032_service_louver",
+    "r027_0033_service_louver",
+    "r027_0034_service_louver",
+    "r027_0035_service_louver",
+    "r027_0036_service_louver",
+    "r027_0037_service_louver",
+    "r027_0038_service_louver",
+    "r027_0039_service_louver",
+    "r027_0040_service_louver",
+    "r027_0041_service_louver",
+    "r027_0042_bridge_lower_trim",
+    "r027_0043_bridge_lower_trim",
+    "r027_0044_bridge_lower_trim",
+    "r027_0045_bridge_lower_trim",
+    "r027_0046_bridge_lower_trim",
+    "r027_0047_bridge_lower_trim",
+    "r027_0048_Sainiverse_wordmark",
+    "r027_0049_Sainiverse_wordmark",
+    "r027_0050_Sainiverse_wordmark",
+    "r027_0051_Sainiverse_wordmark",
+    "r027_0052_Sainiverse_wordmark",
+    "r027_0053_Sainiverse_wordmark",
+    "r027_0054_Sainiverse_wordmark",
+    "r027_0055_Sainiverse_wordmark",
+    "r027_0056_lift_mount",
+    "r027_0057_lift_out_slide",
+    "r027_0058_telescopic_guide",
+    "r027_0059_telescopic_guide",
+    "r027_0060_telescopic_guide",
+    "r027_0061_telescopic_guide",
+    "r027_0062_lift_mount",
+    "r027_0063_lift_out_slide",
+    "r027_0064_telescopic_guide",
+    "r027_0065_telescopic_guide",
+    "r027_0066_telescopic_guide",
+    "r027_0067_telescopic_guide",
+    "r027_0068_boarding_floor",
+    "r027_0069_lift_guard_post",
+    "r027_0070_lift_guard_post",
+    "r027_0071_lift_guard_rail",
+    "r027_0072_lift_guard_post",
+    "r027_0073_lift_guard_post",
+    "r027_0074_lift_guard_rail",
+    "r027_0075_lift_edge_warning",
+    "r027_0076_lift_edge_warning",
+    "r027_0077_lift_non_slip",
+    "r027_0078_lift_non_slip",
+    "r027_0079_boarding_bridge",
+    "r027_0080_lift_controls",
+    "r027_0081_lift_call_marker",
+    "r027_0082_lift_mount",
+    "r027_0083_lift_out_slide",
+    "r027_0084_telescopic_guide",
+    "r027_0085_telescopic_guide",
+    "r027_0086_telescopic_guide",
+    "r027_0087_telescopic_guide",
+    "r027_0088_lift_mount",
+    "r027_0089_lift_out_slide",
+    "r027_0090_telescopic_guide",
+    "r027_0091_telescopic_guide",
+    "r027_0092_telescopic_guide",
+    "r027_0093_telescopic_guide",
+    "r027_0094_boarding_floor",
+    "r027_0095_lift_guard_post",
+    "r027_0096_lift_guard_post",
+    "r027_0097_lift_guard_rail",
+    "r027_0098_lift_guard_post",
+    "r027_0099_lift_guard_post",
+    "r027_0100_lift_guard_rail",
+    "r027_0101_lift_edge_warning",
+    "r027_0102_lift_edge_warning",
+    "r027_0103_lift_non_slip",
+    "r027_0104_lift_non_slip",
+    "r027_0105_boarding_bridge",
+    "r027_0106_lift_controls",
+    "r027_0107_lift_call_marker",
+    "r027_0108_lift_mount",
+    "r027_0109_lift_out_slide",
+    "r027_0110_telescopic_guide",
+    "r027_0111_telescopic_guide",
+    "r027_0112_telescopic_guide",
+    "r027_0113_telescopic_guide",
+    "r027_0114_lift_mount",
+    "r027_0115_lift_out_slide",
+    "r027_0116_telescopic_guide",
+    "r027_0117_telescopic_guide",
+    "r027_0118_telescopic_guide",
+    "r027_0119_telescopic_guide",
+    "r027_0120_boarding_floor",
+    "r027_0121_lift_guard_post",
+    "r027_0122_lift_guard_post",
+    "r027_0123_lift_guard_rail",
+    "r027_0124_lift_guard_post",
+    "r027_0125_lift_guard_post",
+    "r027_0126_lift_guard_rail",
+    "r027_0127_lift_edge_warning",
+    "r027_0128_lift_edge_warning",
+    "r027_0129_lift_non_slip",
+    "r027_0130_lift_non_slip",
+    "r027_0131_boarding_bridge",
+    "r027_0132_lift_controls",
+    "r027_0133_lift_call_marker",
+    "r027_0134_lift_mount",
+    "r027_0135_lift_out_slide",
+    "r027_0136_telescopic_guide",
+    "r027_0137_telescopic_guide",
+    "r027_0138_telescopic_guide",
+    "r027_0139_telescopic_guide",
+    "r027_0140_lift_mount",
+    "r027_0141_lift_out_slide",
+    "r027_0142_telescopic_guide",
+    "r027_0143_telescopic_guide",
+    "r027_0144_telescopic_guide",
+    "r027_0145_telescopic_guide",
+    "r027_0146_boarding_floor",
+    "r027_0147_lift_guard_post",
+    "r027_0148_lift_guard_post",
+    "r027_0149_lift_guard_rail",
+    "r027_0150_lift_guard_post",
+    "r027_0151_lift_guard_post",
+    "r027_0152_lift_guard_rail",
+    "r027_0153_lift_edge_warning",
+    "r027_0154_lift_edge_warning",
+    "r027_0155_lift_non_slip",
+    "r027_0156_lift_non_slip",
+    "r027_0157_boarding_bridge",
+    "r027_0158_lift_controls",
+    "r027_0159_lift_call_marker",
+    "r027_0160_lift_mount",
+    "r027_0161_lift_out_slide",
+    "r027_0162_telescopic_guide",
+    "r027_0163_telescopic_guide",
+    "r027_0164_telescopic_guide",
+    "r027_0165_telescopic_guide",
+    "r027_0166_lift_mount",
+    "r027_0167_lift_out_slide",
+    "r027_0168_telescopic_guide",
+    "r027_0169_telescopic_guide",
+    "r027_0170_telescopic_guide",
+    "r027_0171_telescopic_guide",
+    "r027_0172_boarding_floor",
+    "r027_0173_lift_guard_post",
+    "r027_0174_lift_guard_post",
+    "r027_0175_lift_guard_rail",
+    "r027_0176_lift_guard_post",
+    "r027_0177_lift_guard_post",
+    "r027_0178_lift_guard_rail",
+    "r027_0179_lift_edge_warning",
+    "r027_0180_lift_edge_warning",
+    "r027_0181_lift_non_slip",
+    "r027_0182_lift_non_slip",
+    "r027_0183_boarding_bridge",
+    "r027_0184_lift_controls",
+    "r027_0185_lift_call_marker",
+    "r027_0186_lift_mount",
+    "r027_0187_lift_out_slide",
+    "r027_0188_telescopic_guide",
+    "r027_0189_telescopic_guide",
+    "r027_0190_telescopic_guide",
+    "r027_0191_telescopic_guide",
+    "r027_0192_lift_mount",
+    "r027_0193_lift_out_slide",
+    "r027_0194_telescopic_guide",
+    "r027_0195_telescopic_guide",
+    "r027_0196_telescopic_guide",
+    "r027_0197_telescopic_guide",
+    "r027_0198_boarding_floor",
+    "r027_0199_lift_guard_post",
+    "r027_0200_lift_guard_post",
+    "r027_0201_lift_guard_rail",
+    "r027_0202_lift_guard_post",
+    "r027_0203_lift_guard_post",
+    "r027_0204_lift_guard_rail",
+    "r027_0205_lift_edge_warning",
+    "r027_0206_lift_edge_warning",
+    "r027_0207_lift_non_slip",
+    "r027_0208_lift_non_slip",
+    "r027_0209_boarding_bridge",
+    "r027_0210_lift_controls",
+    "r027_0211_lift_call_marker",
+    "r027_0212_workbay_roof_guard",
+    "r027_0213_workbay_roof_guard",
+    "r027_0214_workbay_roof_guard",
+    "r027_0215_workbay_roof_guard",
+    "r027_0216_workbay_roof_guard",
+    "r027_0217_workbay_roof_guard",
+    "r027_0218_workbay_roof_guard",
+    "r027_0219_roof_guard_return",
+    "r027_0220_roof_guard_return",
+    "r027_0221_roof_guard_return_post",
+    "r027_0222_roof_guard_return",
+    "r027_0223_roof_guard_return",
+    "r027_0224_roof_guard_return_post",
+    "r027_0225_instrument_ribbon_panel",
+    "r027_0226_instrument_mullion",
+    "r027_0227_instrument_ribbon_panel",
+    "r027_0228_instrument_mullion",
+    "r027_0229_instrument_ribbon_panel",
+    "r027_0230_instrument_mullion",
+    "r027_0231_instrument_ribbon_panel",
+    "r027_0232_instrument_mullion",
+    "r027_0233_instrument_ribbon_panel",
+    "r027_0234_instrument_mullion",
+    "r027_0235_instrument_ribbon_panel",
+    "r027_0236_instrument_mullion",
+    "r027_0237_instrument_ribbon_panel",
+    "r027_0238_instrument_mullion",
+    "r027_0239_instrument_ribbon_panel",
+    "r027_0240_instrument_mullion",
+    "r027_0241_instrument_ribbon_panel",
+    "r027_0242_instrument_mullion",
+    "r027_0243_instrument_ribbon_sill",
+    "r027_0244_instrument_ribbon_sill",
+    "r027_0245_instrument_pier",
+    "r027_0246_instrument_pier",
+    "r027_0247_aft_connection_diagonal",
+    "r027_0248_aft_connection_diagonal",
+    "r027_0249_aft_connection_diagonal",
+    "r027_0250_aft_connection_diagonal",
+    "r027_0251_aft_connection_diagonal",
+    "r027_0252_aft_connection_diagonal",
+    "r027_0253_workbay_access_leaf",
+    "r027_0254_workbay_door_trim",
+    "r027_0255_workbay_door_trim",
+    "r027_0256_workbay_door_jamb",
+    "r027_0257_workbay_door_jamb",
+    "r027_0258_workbay_door_handle",
+    "r027_0259_workbay_access_leaf",
+    "r027_0260_workbay_door_trim",
+    "r027_0261_workbay_door_trim",
+    "r027_0262_workbay_door_jamb",
+    "r027_0263_workbay_door_jamb",
+    "r027_0264_workbay_door_handle",
+    "r027_0265_workbay_panel_joint",
+    "r027_0266_workbay_panel_joint",
+    "r027_0267_workbay_panel_joint",
+    "r027_0268_workbay_roof_guard",
+    "r027_0269_workbay_roof_guard",
+    "r027_0270_workbay_roof_guard",
+    "r027_0271_workbay_roof_guard",
+    "r027_0272_workbay_roof_guard",
+    "r027_0273_workbay_roof_guard",
+    "r027_0274_workbay_roof_guard",
+    "r027_0275_roof_guard_return",
+    "r027_0276_roof_guard_return",
+    "r027_0277_roof_guard_return_post",
+    "r027_0278_roof_guard_return",
+    "r027_0279_roof_guard_return",
+    "r027_0280_roof_guard_return_post",
+    "r027_0281_instrument_ribbon_panel",
+    "r027_0282_instrument_mullion",
+    "r027_0283_instrument_ribbon_panel",
+    "r027_0284_instrument_mullion",
+    "r027_0285_instrument_ribbon_panel",
+    "r027_0286_instrument_mullion",
+    "r027_0287_instrument_ribbon_panel",
+    "r027_0288_instrument_mullion",
+    "r027_0289_instrument_ribbon_panel",
+    "r027_0290_instrument_mullion",
+    "r027_0291_instrument_ribbon_panel",
+    "r027_0292_instrument_mullion",
+    "r027_0293_instrument_ribbon_panel",
+    "r027_0294_instrument_mullion",
+    "r027_0295_instrument_ribbon_panel",
+    "r027_0296_instrument_mullion",
+    "r027_0297_instrument_ribbon_panel",
+    "r027_0298_instrument_mullion",
+    "r027_0299_instrument_ribbon_sill",
+    "r027_0300_instrument_ribbon_sill",
+    "r027_0301_instrument_pier",
+    "r027_0302_instrument_pier",
+    "r027_0303_bent_service_duct",
+    "r027_0304_instrument_duct_branch",
+    "r027_0305_duct_service_seam",
+    "r027_0306_duct_service_seam",
+    "r027_0307_duct_service_seam",
+    "r027_0308_aft_connection_diagonal",
+    "r027_0309_aft_connection_diagonal",
+    "r027_0310_aft_connection_diagonal",
+    "r027_0311_aft_connection_diagonal",
+    "r027_0312_aft_connection_diagonal",
+    "r027_0313_aft_connection_diagonal",
+    "r027_0314_instrument_gallery_floor",
+    "r027_0315_end_guard_join",
+    "r027_0316_end_guard_join",
+    "r027_0317_end_guard_join",
+    "r027_0318_end_guard_join",
+    "r027_0319_end_guard_join",
+    "r027_0320_end_guard_join",
+    "r027_0321_end_guard_join",
+    "r027_0322_end_guard_join",
+    "r027_0323_workbay_foundation",
+    "r027_0324_forehouse_sill",
+    "r027_0325_antenna_socket",
+    "r027_0326_antenna_footplate",
+    "r027_0327_antenna_mount_bolt",
+    "r027_0328_antenna_mount_bolt",
+    "r027_0329_antenna_mount_bolt",
+    "r027_0330_antenna_mount_bolt",
+    "r027_0331_antenna_socket",
+    "r027_0332_antenna_footplate",
+    "r027_0333_antenna_mount_bolt",
+    "r027_0334_antenna_mount_bolt",
+    "r027_0335_antenna_mount_bolt",
+    "r027_0336_antenna_mount_bolt",
+    "r027_0337_cooling_case_coupling",
+    "r027_0338_cooling_roof_collar",
+    "r027_0339_cooling_case_coupling",
+    "r027_0340_cooling_roof_collar",
+    "r027_0341_mechanical_house_identity_ribbon",
+    "r027_0342_status_lens_mount",
+    "r027_0343_status_bezel",
+    "r027_0344_status_lens",
+    "r027_0345_status_bezel",
+    "r027_0346_status_lens",
+    "r027_0347_status_bezel",
+    "r027_0348_status_lens",
+    "r027_0349_mechanical_house_identity_ribbon",
+    "r027_0350_status_lens_mount",
+    "r027_0351_status_bezel",
+    "r027_0352_status_lens",
+    "r027_0353_status_bezel",
+    "r027_0354_status_lens",
+    "r027_0355_status_bezel",
+    "r027_0356_status_lens"
+  ],
+  "parts": 21894,
+  "groups": 51,
+  "lifts": 6,
+  "render_meshes": 273,
+  "triangles": 1340240,
+  "glb_bytes": 58150968
+}

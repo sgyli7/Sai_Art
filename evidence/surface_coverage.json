@@ -1,0 +1,37 @@
+{
+  "scope": "Authored triangle surface area, including hidden faces; transparent surfaces remain in denominator. Actual GLB UV2/runtime binding audited separately. Not percentage covered in dirt.",
+  "sections": {
+    "all": {
+      "area_m2": 54192.969764715235,
+      "textured_area_m2": 54093.990745701296,
+      "parts": 21894,
+      "textured_parts": 21545,
+      "coverage": 0.9981735819342681
+    },
+    "interior": {
+      "area_m2": 652.1587797622232,
+      "textured_area_m2": 647.9584597622235,
+      "parts": 559,
+      "textured_parts": 551,
+      "coverage": 0.9935593598823723
+    },
+    "exterior": {
+      "area_m2": 53540.810984952404,
+      "textured_area_m2": 53446.03228593847,
+      "parts": 21335,
+      "textured_parts": 20994,
+      "coverage": 0.99822978589098
+    }
+  },
+  "family_area_m2": {
+    "floor": 7065.625634593115,
+    "paint": 20607.70986877488,
+    "steel": 18783.45436095146,
+    "rubber": 5567.947817379043,
+    "cargo": 1809.2384639999996,
+    "worktop": 10.518400000000002,
+    "wall": 6.709999999999988,
+    "console": 32.189599999999956,
+    "ceiling": 210.59659999999985
+  }
+}

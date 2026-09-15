@@ -1,0 +1,20 @@
+{
+  "seconds": 179.999999999909,
+  "wall": 181.502671,
+  "failed": false,
+  "peak_kmh": 100.000057983398,
+  "median_fps": 94.13093613215983,
+  "p95_frame_ms": 16.495949999999997,
+  "p99_frame_ms": 20.21685,
+  "mean_fps": 86.67703322176109,
+  "resolution": [
+    1920,
+    1080
+  ],
+  "gpu": "NVIDIA GB10",
+  "native_path": true,
+  "wheel_binding": 3.24444226862397e-05,
+  "idler_binding": 4.57918868050911e-05,
+  "state_texture_match": true,
+  "frames": 15342
+}
