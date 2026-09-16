@@ -1,12 +1,13 @@
-"""Record four real native scenarios and encode 150 captured frames each."""
+"""Record five real native scenarios and encode 150 captured frames each."""
 from pathlib import Path
 import subprocess,sys,os,json,shutil,argparse
 O=Path(__file__).resolve().parents[1]
-p=argparse.ArgumentParser();p.add_argument('--game',type=Path,required=True);a=p.parse_args()
+p=argparse.ArgumentParser();p.add_argument('--game',type=Path,required=True);p.add_argument('--only',nargs='*');a=p.parse_args()
 ffmpeg=os.environ.get('FFMPEG_BIN',shutil.which('ffmpeg') or 'ffmpeg');media=O/'media';media.mkdir(exist_ok=True)
-for mode,seconds,terrain,name in [('worksite',43,'flat','worksite'),('cabin_patrol',24,'flat','cabin_patrol'),('sai_board',115,'flat','sai_boarding'),('hill_turn',55,'hills','hills')]:
- out=O/'reports'/('release_'+mode)
- subprocess.run([sys.executable,str(O/'source/launch.py'),'--game',str(a.game),'--mode',mode,'--seconds',str(seconds),'--terrain',terrain,'--pv','--clean-capture','--capture','--output',str(out)],check=True)
+for mode,seconds,terrain,name in [('parked',43,'flat','cockpit_tour'),('cabin_patrol',24,'flat','cabin_patrol'),('worksite',43,'flat','worksite'),('sai_board',115,'flat','sai_boarding'),('hill_turn',55,'hills','hills')]:
+ if a.only and name not in a.only:continue
+ out=O/'reports'/('release_r032_'+name)
+ subprocess.run([sys.executable,str(O/'source/launch.py'),'--game',str(a.game),'--mode',mode,'--seconds',str(seconds),'--terrain',terrain,'--view','cabin_tour' if name=='cockpit_tour' else 'whole','--pv','--clean-capture','--capture','--output',str(out)],check=True)
  assert len(list(out.glob('run_pv_*.png')))==150,(mode,'missing frames')
  log=(out/'run.log').read_text();assert 'SCRIPT ERROR' not in log and 'ERROR:' not in log,mode
  if mode in ['worksite','cabin_patrol']:

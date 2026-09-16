@@ -12,6 +12,14 @@ from PIL import Image,ImageDraw,ImageFont,ImageFilter
 FAMILIES=['paint','steel','rubber','floor','wall','worktop','console','ceiling']
 def family(p):
     n=p['name'];mat=p['material'];cat=p.get('interior_category','')
+    if 'company_sticker' in p or 'native_uv' in p:return None
+    if p.get('interior_finish'):
+        if 'cockpit_tile' in p:return None
+        if cat=='ceiling':return 'ceiling'
+        if cat=='wall':return 'wall'
+        if cat=='console':return 'console'
+        if cat=='workbench':return 'worktop'
+    if n.startswith('r027_') and '_r032_' in n and (cat=='seat' or mat.startswith('cabin_')):return None
     if mat in ['glass','cabin_glass','cabin_light','cabin_screen'] or any(s in n for s in ['wordmark','warning','paint_','insignia']):return None
     if cat:
         if cat=='floor':return 'floor'
@@ -30,6 +38,7 @@ def assign(a):
         kind=family(p)
         if kind is None:continue
         variant=zlib.crc32(p['name'].encode())%2
+        if kind=='wall' and not any(s in p['name'] for s in ['storage','locker_door','backboard']):variant=0
         p['surface_texture']={'family':kind,'tile':5 if kind=='cargo' else FAMILIES.index(kind)*2+(0 if kind=='rubber' else variant),'all_faces':True}
 
 def atlas(out):
@@ -73,24 +82,41 @@ def atlas(out):
                     for x in range(12+(y//24%2)*9,512,24):
                         d.line((x,y,x+6,y-5),fill=(169,169,169),width=2)
             elif kind in ['wall','ceiling']:
-                for x in [5,250,506]:d.line((x,4,x,507),fill=(84,84,84),width=2);d.line((x+3,4,x+3,507),fill=(178,178,178),width=1)
-                for y in [5,506]:d.line((5,y,506,y),fill=(95,95,95),width=2)
-                for x in [20,265]:
-                    d.text((x,20),'SERVICE  /  '+str(10+v),font=font,fill=(83,83,83))
-                    if kind=='ceiling':
-                        for y in range(80,146,9):d.line((x,y,x+65,y),fill=(99,99,99),width=3)
+                # 1.2 x 2.4 m removable bulkhead panels; quiet broad brush work,
+                # actual perimeter seals, captive screws, lower scuff band.
+                d.rectangle((4,4,507,507),outline=(78,78,78),width=3)
+                d.line((9,500,9,9,500,9),fill=(183,183,183),width=2)
+                d.line((13,496,499,496,499,13),fill=(112,112,112),width=2)
+                for x in [21,490]:
+                    for y in [24,254,486]:
+                        d.ellipse((x-4,y-2,x+4,y+2),fill=(95,95,95));d.line((x-2,y,x+2,y),fill=(183,183,183),width=1)
+                if kind=='wall':
+                    d.line((16,433,495,433),fill=(116,116,116),width=2)
+                    for j in range(8):
+                        x=int(rng.integers(27,475));y=int(rng.integers(442,484));d.line((x,y,x+int(rng.integers(4,18)),y-1),fill=(166,166,166),width=1)
+                    if v==1:
+                        d.rounded_rectangle((75,72,437,207),radius=9,outline=(106,106,106),width=2)
+                        d.line((81,77,431,77),fill=(177,177,177),width=1)
+                        for x in [89,423]:
+                            for y in [84,196]:d.ellipse((x-3,y-2,x+3,y+2),fill=(90,90,90))
+                        d.line((110,130,325,130),fill=(118,118,118),width=1)
+                else:
+                    d.rounded_rectangle((126,165,386,324),radius=6,outline=(113,113,113),width=2)
+                    for y in range(180,307,12):
+                        d.line((145,y,367,y),fill=(96,96,96),width=3);d.line((145,y+3,367,y+3),fill=(174,174,174),width=1)
             elif kind=='worktop':
                 d.rectangle((7,7,504,504),outline=(87,87,87),width=3)
                 for x in range(24,488,16):d.line((x,485,x,475 if x%64 else 465),fill=(74,74,74),width=2)
                 for _ in range(14):
                     x,y=rng.integers(90,420,2);d.line((int(x),int(y),int(x+22),int(y-7)),fill=(179,179,179),width=1)
             else:
-                d.rectangle((8,8,503,503),outline=(78,78,78),width=2)
-                d.text((25,30),'SAINIVERSE  /  CONTROL',font=font,fill=(192,192,192))
-                for y in [80,190,300]:
-                    d.line((24,y,480,y),fill=(86,86,86),width=2)
-                    for x in range(32,445,56):
-                        d.rectangle((x,y+19,x+27,y+46),outline=(80,80,80),width=2);d.text((x,y+54),str((x//56)+v),font=font,fill=(188,188,188))
+                # Enclosure finish only: no fake repeated switches or gauges.
+                d.rectangle((8,8,503,503),outline=(105,105,105),width=2)
+                d.line((12,14,12,495,495,495),fill=(166,166,166),width=1)
+                for x in [24,487]:
+                    for y in [24,487]:
+                        d.ellipse((x-4,y-4,x+4,y+4),fill=(99,99,99));d.line((x-2,y,x+2,y),fill=(176,176,176),width=1)
+                for y in range(416,456,8):d.line((43,y,136,y),fill=(115,115,115),width=2)
             # Padding prevents adjacent-family bleed at ordinary mip levels.
             im=im.resize((496,496));tile=Image.new('RGB',(512,512),(143,143,143));tile.paste(im,(8,8))
             index=k*2+v;sheet.paste(tile,((index%4)*512,(index//4)*512))
@@ -108,11 +134,15 @@ def uv(mesh,part):
     for k,ij in enumerate([[1,2],[0,2],[0,1]]):
         active=axis==k;q=(v[active][:,ij]-lo[ij])/span[ij]
         out[active,0]=(meta['tile']%2 if meta['family']=='floor' else meta['tile'])+.02+q[:,0]*.96;out[active,1]=.02+(1-q[:,1])*.96
+        if meta['family'] in ['wall','ceiling']:
+            # Only store a stable tile ID. Imported half-precision UVs cannot
+            # safely encode metres / 4096 beside a large integer tile index.
+            # The runtime projects physical local positions for these families.
+            out[active]=[meta['tile']+.5,.5]
         if meta['family']=='floor' and k==(1 if part['material']=='ramp_steel' else 2):
             top=active if part['material']=='ramp_steel' else active & (mesh.vertex_normals[:,2]>.65)
             j=2 if part['material']=='ramp_steel' else 1
-            out[top,0]=meta['tile']+.00001+(v[top,0]-lo[0])/4096.
-            out[top,1]=span[j]-(v[top,j]-lo[j])
+            out[top]=[meta['tile']+.5,.5]
     return out.astype(np.float32)
 
 def report(a,path):

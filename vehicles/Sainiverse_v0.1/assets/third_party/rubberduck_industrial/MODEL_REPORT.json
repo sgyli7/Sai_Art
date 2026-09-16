@@ -1,0 +1,50 @@
+{
+  "control_terminal": {
+    "triangles": 152,
+    "vertices": 218,
+    "bounds_y_up": [
+      [
+        -1.501713,
+        -0.152677,
+        -0.909513
+      ],
+      [
+        1.501713,
+        6.142553,
+        2.349252
+      ]
+    ],
+    "materials": 1,
+    "normal_map_embedded": true,
+    "glb_bytes": 240048,
+    "glb_sha256": "135070bb2aca32d299ad05ecd7c9633ed059a9a618fef89e36530e2cbe38e87f",
+    "texture_size": [
+      1024,
+      1024
+    ]
+  },
+  "tank_control_panel": {
+    "triangles": 322,
+    "vertices": 318,
+    "bounds_y_up": [
+      [
+        -1.923347,
+        -0.072766,
+        -1.998455
+      ],
+      [
+        0.832933,
+        3.406863,
+        -0.887837
+      ]
+    ],
+    "materials": 1,
+    "normal_map_embedded": true,
+    "glb_bytes": 176788,
+    "glb_sha256": "c42bf3ffcaefc445c45743182c0cbddf43f1e0525e71fc57ae9a32d67d5bc250",
+    "texture_size": [
+      1024,
+      1024
+    ]
+  }
+}

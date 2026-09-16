@@ -8,14 +8,14 @@ from shapely.geometry import MultiPoint
 
 def mesh(p):return tm.Trimesh(vertices=p['vertices'],faces=p['faces'],process=False)
 def replace(p,m):p.update(vertices=m.vertices.tolist(),faces=m.faces.tolist())
-def rounded_box(bounds,r):
+def rounded_box(bounds,r,segments=4):
     lo,hi=np.array(bounds);pts=[]
     for sx in [-1,1]:
       for sy in [-1,1]:
        for sz in [-1,1]:
         center=(lo+hi)/2+np.array([sx,sy,sz])*((hi-lo)/2-r)
-        for phi in np.linspace(0,math.pi/2,4):
-         for theta in np.linspace(0,math.pi/2,4):
+        for phi in np.linspace(0,math.pi/2,segments):
+         for theta in np.linspace(0,math.pi/2,segments):
           pts.append(center+r*np.array([sx*math.cos(phi)*math.cos(theta),sy*math.cos(phi)*math.sin(theta),sz*math.sin(phi)]))
     return tm.convex.convex_hull(pts)
 def refine(a,box,rod,add,role,out):

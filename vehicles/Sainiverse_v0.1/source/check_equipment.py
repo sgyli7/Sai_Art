@@ -6,7 +6,11 @@ from suspension_physics import Env
 from equipment_mujoco import Equipment
 ap=argparse.ArgumentParser();ap.add_argument('--seconds',type=float,default=85);args=ap.parse_args()
 p=json.loads((O/'physics/parameters.json').read_text());e=Env('flat',False,True,O/'physics/suspended.xml',p)
-c=Equipment(e.m,e.d,p['equipment'],True);e.mechanism_control=c;start=time.monotonic()
+c=Equipment(e.m,e.d,p['equipment'],True);start=time.monotonic()
+from cockpit_mujoco import Cockpit
+cockpit=Cockpit(e.m,e.d,p["cockpit"])
+def controls(dt):c(dt);cockpit(dt)
+e.mechanism_control=controls
 # Hold the existing boarding lift/ramp mechanisms through finite actuators.
 from math import sin
 for step in range(round(args.seconds/.005)):

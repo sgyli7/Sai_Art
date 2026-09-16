@@ -15,6 +15,10 @@ uniform sampler2D surface_normal:hint_normal,filter_linear_mipmap_anisotropic,re
 uniform float indicator_on=-1.;
 uniform sampler2D equipment_labels:source_color,filter_linear_mipmap_anisotropic,repeat_disable;
 uniform int label_id=0;
+uniform bool use_live_gauges=false;
+uniform sampler2D live_gauges:source_color,filter_linear,repeat_disable;
+uniform sampler2D external_albedo:source_color,filter_linear_mipmap_anisotropic,repeat_disable;
+uniform sampler2D external_normal:hint_normal,filter_linear_mipmap_anisotropic,repeat_disable;
 uniform float tile_m=4.;
 uniform int surface_kind=0;
 uniform float hatch_strength=0.;
@@ -34,7 +38,11 @@ void fragment(){
  if(surface_kind!=3 && UV2.x>=0.){
   float index=floor(UV2.x);vec2 cell=vec2(mod(index,4.),floor(index/4.));
   vec2 local_uv=vec2(fract(UV2.x),UV2.y);
-  if(index>=6. && index<8.){local_uv=fract(vec2((fract(UV2.x)-.00001)*4096.,UV2.y)/vec2(8.,4.));local_uv=.016+local_uv*.968;}
+  vec2 metre_uv=an.z>=max(an.x,an.y)?source_p.xy:(an.y>an.x?source_p.xz:source_p.yz);
+  if(an.z<max(an.x,an.y)){metre_uv.x*=an.y>an.x?-sign(source_n.y):sign(source_n.x);}
+  metre_uv.y=-metre_uv.y;
+  if(index>=6. && index<8.){local_uv=.016+fract(metre_uv/vec2(8.,4.))*.968;}
+  if((index>=8. && index<10.) || index>=14.){local_uv=.016+fract(metre_uv/(index>=14.?vec2(2.08,2.95):vec2(1.2,2.4)))*.968;}
   vec2 uv2=(cell+local_uv)*.25;
   float coating=texture(surface_atlas,uv2).r;
   ALBEDO*=clamp(coating/.56,.45,1.40);
@@ -69,7 +77,7 @@ void fragment(){
    }
   }
   if(surface_kind==10 && all(greaterThanEqual(uv,vec2(0.))) && all(lessThanEqual(uv,vec2(1.)))){
-   vec4 label=texture(equipment_labels,(uv+vec2(float(label_id%4),float(label_id/4)))*.25);ALBEDO=mix(ALBEDO,label.rgb,label.a);
+   vec4 label=use_live_gauges?texture(live_gauges,uv):(label_id==16?vec4(.04,.07,.08,1.):texture(equipment_labels,(uv+vec2(float(label_id%4),float(label_id/4)))*.25));ALBEDO=mix(ALBEDO,label.rgb,label.a);
   }
   if(surface_kind==7){
    if(dot(body_pigment.rgb,vec3(.2126,.7152,.0722))>.25){ALBEDO=vec3(.028,.032,.035);}
@@ -91,6 +99,22 @@ void fragment(){
   NORMAL=normalize(mat3(t*scale,b*scale,NORMAL)*vec3(detail.xy*normal_strength,detail.z));
   }
  }
+ if(surface_kind==11){
+  ALBEDO=texture(external_albedo,UV).rgb;
+  vec3 detail=texture(external_normal,UV).xyz*2.-1.;
+  vec3 dp1=dFdx(VERTEX),dp2=dFdy(VERTEX);vec2 du1=dFdx(UV),du2=dFdy(UV);
+  vec3 t=cross(dp2,NORMAL)*du1.x+cross(NORMAL,dp1)*du2.x;
+  vec3 b=cross(dp2,NORMAL)*du1.y+cross(NORMAL,dp1)*du2.y;
+  float ns=inversesqrt(max(max(dot(t,t),dot(b,b)),.000001));
+  NORMAL=normalize(mat3(t*ns,b*ns,NORMAL)*vec3(detail.xy*.65,detail.z));ROUGHNESS=.82;
+ }
+ if(surface_kind==12){
+  // Sub-millimetre textile weave fades out analytically before it aliases.
+  vec2 f=p*700.;float fade=1.-smoothstep(.2,1.,max(fwidth(f.x),fwidth(f.y)));
+  float weave=sin(f.x*6.283)*sin(f.y*6.283);ALBEDO*=1.+weave*.035*fade;ROUGHNESS=.97;
+ }
+ if(surface_kind==13){ROUGHNESS=.38;}
+ if(use_live_gauges){EMISSION=ALBEDO*.14;}
  if(indicator_on>=0.){ALBEDO=pigment.rgb*mix(.20,1.,indicator_on);EMISSION=pigment.rgb*indicator_on*.45;}
  if(surface_kind==3){
   vec2 q=ground_p.xz;float height_tone=clamp(ground_p.y*.035,-.10,.20);

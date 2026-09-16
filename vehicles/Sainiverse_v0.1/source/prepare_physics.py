@@ -73,6 +73,10 @@ for item in assembly.get('mechanical_mass_additions',[]):
 from equipment_physics import compile as compile_equipment
 compile_equipment(assembly['equipment_actuation'],assembly,s,b,root)
 params['equipment']=s['contact']['equipment']
+from habitable_physics import compile as compile_habitable
+compile_habitable(assembly,s,b,params,root,O)
+from cockpit_controls import compile as compile_cockpit
+compile_cockpit(assembly,s,b,params,root,O)
 s['config']['total_mass_kg']=sum(x['mass'] for x in s['bodies']);s['contact']['total_mass_kg']=s['config']['total_mass_kg'];params['total_mass_kg']=s['config']['total_mass_kg'];params['boarding_lifts']=lifts
 s['contact']['boarding_controller']=dict(force_cap_N=60000,kp=80000,kd=14000,slide_speed_m_s=.55,vertical_speed_m_s=.7,park_speed_max_m_s=.08,ground_platform_height_m=.245)
 params['boarding_controller']=s['contact']['boarding_controller']

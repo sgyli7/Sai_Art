@@ -1,0 +1,686 @@
+[
+  {
+    "name": "r027_2555_company_horizontal_dark",
+    "art": "horizontal_dark",
+    "body": "front",
+    "zone": "interior",
+    "center_source_m": [
+      20.85,
+      -3.285,
+      13.33
+    ],
+    "width_m": 0.94,
+    "height_m": 0.41077235772357723,
+    "normal": [
+      0.0,
+      1.0,
+      -0.0
+    ]
+  },
+  {
+    "name": "r027_2556_company_field_strip",
+    "art": "field_strip",
+    "body": "front",
+    "zone": "interior",
+    "center_source_m": [
+      27.8,
+      -1.947,
+      11.78
+    ],
+    "width_m": 1.22,
+    "height_m": 0.24891687657430733,
+    "normal": [
+      0.0,
+      1.0,
+      -0.0
+    ]
+  },
+  {
+    "name": "r027_2557_company_compact_light",
+    "art": "compact_light",
+    "body": "front",
+    "zone": "interior",
+    "center_source_m": [
+      30.093,
+      -1.58,
+      12.43
+    ],
+    "width_m": 0.26,
+    "height_m": 0.28,
+    "normal": [
+      -1.0,
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "name": "r027_2558_company_worn_medium",
+    "art": "worn_medium",
+    "body": "front",
+    "zone": "interior",
+    "center_source_m": [
+      7.4,
+      -7.747,
+      9.65
+    ],
+    "width_m": 1.1,
+    "height_m": 1.17966573816156,
+    "normal": [
+      0.0,
+      1.0,
+      -0.0
+    ]
+  },
+  {
+    "name": "r027_2559_company_field_id",
+    "art": "field_id",
+    "body": "front",
+    "zone": "interior",
+    "center_source_m": [
+      12.323,
+      -4.3,
+      9.34
+    ],
+    "width_m": 0.26,
+    "height_m": 0.5344444444444444,
+    "normal": [
+      -1.0,
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "name": "r027_2560_company_worn_banner",
+    "art": "worn_banner",
+    "body": "front",
+    "zone": "interior",
+    "center_source_m": [
+      14.8,
+      -1.087,
+      12.84
+    ],
+    "width_m": 0.88,
+    "height_m": 0.18333333333333335,
+    "normal": [
+      0.0,
+      1.0,
+      -0.0
+    ]
+  },
+  {
+    "name": "r027_2561_company_horizontal_dark",
+    "art": "horizontal_dark",
+    "body": "front",
+    "zone": "interior",
+    "center_source_m": [
+      16.759,
+      -2.1,
+      12.5
+    ],
+    "width_m": 1.05,
+    "height_m": 0.4588414634146342,
+    "normal": [
+      1.0,
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "name": "r027_2562_company_horizontal_light",
+    "art": "horizontal_light",
+    "body": "front",
+    "zone": "exterior",
+    "center_source_m": [
+      31.45,
+      -3.556,
+      11.72
+    ],
+    "width_m": 1.25,
+    "height_m": 0.546239837398374,
+    "normal": [
+      0.0,
+      -1.0,
+      0.0
+    ]
+  },
+  {
+    "name": "r027_2563_company_horizontal_dark",
+    "art": "horizontal_dark",
+    "body": "front",
+    "zone": "interior",
+    "center_source_m": [
+      20.85,
+      3.285,
+      13.33
+    ],
+    "width_m": 0.94,
+    "height_m": 0.41077235772357723,
+    "normal": [
+      0.0,
+      -1.0,
+      0.0
+    ]
+  },
+  {
+    "name": "r027_2564_company_field_strip",
+    "art": "field_strip",
+    "body": "front",
+    "zone": "interior",
+    "center_source_m": [
+      27.8,
+      1.947,
+      11.78
+    ],
+    "width_m": 1.22,
+    "height_m": 0.24891687657430733,
+    "normal": [
+      0.0,
+      -1.0,
+      0.0
+    ]
+  },
+  {
+    "name": "r027_2565_company_compact_light",
+    "art": "compact_light",
+    "body": "front",
+    "zone": "interior",
+    "center_source_m": [
+      30.093,
+      1.58,
+      12.43
+    ],
+    "width_m": 0.26,
+    "height_m": 0.28,
+    "normal": [
+      -1.0,
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "name": "r027_2566_company_field_hex",
+    "art": "field_hex",
+    "body": "front",
+    "zone": "interior",
+    "center_source_m": [
+      7.4,
+      7.747,
+      9.65
+    ],
+    "width_m": 1.1,
+    "height_m": 1.0473684210526317,
+    "normal": [
+      0.0,
+      -1.0,
+      0.0
+    ]
+  },
+  {
+    "name": "r027_2567_company_field_id",
+    "art": "field_id",
+    "body": "front",
+    "zone": "interior",
+    "center_source_m": [
+      12.323,
+      4.3,
+      9.34
+    ],
+    "width_m": 0.26,
+    "height_m": 0.5344444444444444,
+    "normal": [
+      -1.0,
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "name": "r027_2568_company_worn_banner",
+    "art": "worn_banner",
+    "body": "front",
+    "zone": "interior",
+    "center_source_m": [
+      14.8,
+      1.087,
+      12.84
+    ],
+    "width_m": 0.88,
+    "height_m": 0.18333333333333335,
+    "normal": [
+      0.0,
+      -1.0,
+      0.0
+    ]
+  },
+  {
+    "name": "r027_2569_company_field_id",
+    "art": "field_id",
+    "body": "front",
+    "zone": "interior",
+    "center_source_m": [
+      16.759,
+      2.1,
+      12.5
+    ],
+    "width_m": 0.27,
+    "height_m": 0.555,
+    "normal": [
+      1.0,
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "name": "r027_2570_company_horizontal_light",
+    "art": "horizontal_light",
+    "body": "front",
+    "zone": "exterior",
+    "center_source_m": [
+      31.45,
+      3.556,
+      11.72
+    ],
+    "width_m": 1.25,
+    "height_m": 0.546239837398374,
+    "normal": [
+      0.0,
+      1.0,
+      -0.0
+    ]
+  },
+  {
+    "name": "r027_2571_company_worn_stripe",
+    "art": "worn_stripe",
+    "body": "front",
+    "zone": "exterior",
+    "center_source_m": [
+      7.2,
+      -13.137,
+      6.08
+    ],
+    "width_m": 2.05,
+    "height_m": 0.42511520737327185,
+    "normal": [
+      0.0,
+      -1.0,
+      0.0
+    ]
+  },
+  {
+    "name": "r027_2572_company_worn_stripe",
+    "art": "worn_stripe",
+    "body": "front",
+    "zone": "exterior",
+    "center_source_m": [
+      7.2,
+      13.137,
+      6.08
+    ],
+    "width_m": 2.05,
+    "height_m": 0.42511520737327185,
+    "normal": [
+      0.0,
+      1.0,
+      -0.0
+    ]
+  },
+  {
+    "name": "r027_2573_company_field_strip",
+    "art": "field_strip",
+    "body": "rear",
+    "zone": "exterior",
+    "center_source_m": [
+      -34.8,
+      -13.137,
+      6.08
+    ],
+    "width_m": 2.05,
+    "height_m": 0.41826196473551636,
+    "normal": [
+      0.0,
+      -1.0,
+      0.0
+    ]
+  },
+  {
+    "name": "r027_2574_company_field_strip",
+    "art": "field_strip",
+    "body": "rear",
+    "zone": "exterior",
+    "center_source_m": [
+      -34.8,
+      13.137,
+      6.08
+    ],
+    "width_m": 2.05,
+    "height_m": 0.41826196473551636,
+    "normal": [
+      0.0,
+      1.0,
+      -0.0
+    ]
+  },
+  {
+    "name": "r027_2575_company_worn_banner",
+    "art": "worn_banner",
+    "body": "tail",
+    "zone": "exterior",
+    "center_source_m": [
+      -76.8,
+      -13.137,
+      6.08
+    ],
+    "width_m": 2.05,
+    "height_m": 0.4270833333333333,
+    "normal": [
+      0.0,
+      -1.0,
+      0.0
+    ]
+  },
+  {
+    "name": "r027_2576_company_worn_banner",
+    "art": "worn_banner",
+    "body": "tail",
+    "zone": "exterior",
+    "center_source_m": [
+      -76.8,
+      13.137,
+      6.08
+    ],
+    "width_m": 2.05,
+    "height_m": 0.4270833333333333,
+    "normal": [
+      0.0,
+      1.0,
+      -0.0
+    ]
+  },
+  {
+    "name": "r027_2577_company_field_id",
+    "art": "field_id",
+    "body": "rear",
+    "zone": "exterior",
+    "center_source_m": [
+      -56.900000000000006,
+      -12.781999999999998,
+      9.25
+    ],
+    "width_m": 0.36,
+    "height_m": 0.7399999999999999,
+    "normal": [
+      0.0,
+      -1.0,
+      0.0
+    ]
+  },
+  {
+    "name": "r027_2578_company_worn_vertical",
+    "art": "worn_vertical",
+    "body": "rear",
+    "zone": "exterior",
+    "center_source_m": [
+      -56.900000000000006,
+      -9.312,
+      9.25
+    ],
+    "width_m": 0.36,
+    "height_m": 0.44756756756756755,
+    "normal": [
+      0.0,
+      -1.0,
+      0.0
+    ]
+  },
+  {
+    "name": "r027_2579_company_field_id",
+    "art": "field_id",
+    "body": "rear",
+    "zone": "exterior",
+    "center_source_m": [
+      -27.500000000000004,
+      -12.781999999999998,
+      9.25
+    ],
+    "width_m": 0.36,
+    "height_m": 0.7399999999999999,
+    "normal": [
+      0.0,
+      -1.0,
+      0.0
+    ]
+  },
+  {
+    "name": "r027_2580_company_worn_vertical",
+    "art": "worn_vertical",
+    "body": "rear",
+    "zone": "exterior",
+    "center_source_m": [
+      -27.500000000000004,
+      -9.312,
+      9.25
+    ],
+    "width_m": 0.36,
+    "height_m": 0.44756756756756755,
+    "normal": [
+      0.0,
+      -1.0,
+      0.0
+    ]
+  },
+  {
+    "name": "r027_2581_company_field_id",
+    "art": "field_id",
+    "body": "rear",
+    "zone": "exterior",
+    "center_source_m": [
+      -56.900000000000006,
+      12.781999999999998,
+      9.25
+    ],
+    "width_m": 0.36,
+    "height_m": 0.7399999999999999,
+    "normal": [
+      0.0,
+      1.0,
+      -0.0
+    ]
+  },
+  {
+    "name": "r027_2582_company_worn_vertical",
+    "art": "worn_vertical",
+    "body": "rear",
+    "zone": "exterior",
+    "center_source_m": [
+      -56.900000000000006,
+      9.312,
+      9.25
+    ],
+    "width_m": 0.36,
+    "height_m": 0.44756756756756755,
+    "normal": [
+      0.0,
+      1.0,
+      -0.0
+    ]
+  },
+  {
+    "name": "r027_2583_company_field_id",
+    "art": "field_id",
+    "body": "rear",
+    "zone": "exterior",
+    "center_source_m": [
+      -27.500000000000004,
+      12.781999999999998,
+      9.25
+    ],
+    "width_m": 0.36,
+    "height_m": 0.7399999999999999,
+    "normal": [
+      0.0,
+      1.0,
+      -0.0
+    ]
+  },
+  {
+    "name": "r027_2584_company_worn_vertical",
+    "art": "worn_vertical",
+    "body": "rear",
+    "zone": "exterior",
+    "center_source_m": [
+      -27.500000000000004,
+      9.312,
+      9.25
+    ],
+    "width_m": 0.36,
+    "height_m": 0.44756756756756755,
+    "normal": [
+      0.0,
+      1.0,
+      -0.0
+    ]
+  },
+  {
+    "name": "r027_2585_company_field_id",
+    "art": "field_id",
+    "body": "tail",
+    "zone": "exterior",
+    "center_source_m": [
+      -98.9,
+      -12.781999999999998,
+      9.25
+    ],
+    "width_m": 0.36,
+    "height_m": 0.7399999999999999,
+    "normal": [
+      0.0,
+      -1.0,
+      0.0
+    ]
+  },
+  {
+    "name": "r027_2586_company_worn_vertical",
+    "art": "worn_vertical",
+    "body": "tail",
+    "zone": "exterior",
+    "center_source_m": [
+      -98.9,
+      -9.312,
+      9.25
+    ],
+    "width_m": 0.36,
+    "height_m": 0.44756756756756755,
+    "normal": [
+      0.0,
+      -1.0,
+      0.0
+    ]
+  },
+  {
+    "name": "r027_2587_company_field_id",
+    "art": "field_id",
+    "body": "tail",
+    "zone": "exterior",
+    "center_source_m": [
+      -69.5,
+      -12.781999999999998,
+      9.25
+    ],
+    "width_m": 0.36,
+    "height_m": 0.7399999999999999,
+    "normal": [
+      0.0,
+      -1.0,
+      0.0
+    ]
+  },
+  {
+    "name": "r027_2588_company_worn_vertical",
+    "art": "worn_vertical",
+    "body": "tail",
+    "zone": "exterior",
+    "center_source_m": [
+      -69.5,
+      -9.312,
+      9.25
+    ],
+    "width_m": 0.36,
+    "height_m": 0.44756756756756755,
+    "normal": [
+      0.0,
+      -1.0,
+      0.0
+    ]
+  },
+  {
+    "name": "r027_2589_company_field_id",
+    "art": "field_id",
+    "body": "tail",
+    "zone": "exterior",
+    "center_source_m": [
+      -98.9,
+      12.781999999999998,
+      9.25
+    ],
+    "width_m": 0.36,
+    "height_m": 0.7399999999999999,
+    "normal": [
+      0.0,
+      1.0,
+      -0.0
+    ]
+  },
+  {
+    "name": "r027_2590_company_worn_vertical",
+    "art": "worn_vertical",
+    "body": "tail",
+    "zone": "exterior",
+    "center_source_m": [
+      -98.9,
+      9.312,
+      9.25
+    ],
+    "width_m": 0.36,
+    "height_m": 0.44756756756756755,
+    "normal": [
+      0.0,
+      1.0,
+      -0.0
+    ]
+  },
+  {
+    "name": "r027_2591_company_field_id",
+    "art": "field_id",
+    "body": "tail",
+    "zone": "exterior",
+    "center_source_m": [
+      -69.5,
+      12.781999999999998,
+      9.25
+    ],
+    "width_m": 0.36,
+    "height_m": 0.7399999999999999,
+    "normal": [
+      0.0,
+      1.0,
+      -0.0
+    ]
+  },
+  {
+    "name": "r027_2592_company_worn_vertical",
+    "art": "worn_vertical",
+    "body": "tail",
+    "zone": "exterior",
+    "center_source_m": [
+      -69.5,
+      9.312,
+      9.25
+    ],
+    "width_m": 0.36,
+    "height_m": 0.44756756756756755,
+    "normal": [
+      0.0,
+      1.0,
+      -0.0
+    ]
+  }
+]

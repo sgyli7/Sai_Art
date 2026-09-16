@@ -44,6 +44,8 @@ def build(out):
     for i in range(9):sheet.paste(draw_label(i,(512,512)),(i%4*512,i//4*512))
     for i,n in enumerate(['aigle','rescue_units_01','offroad_warden_01'],start=9):
         im=Image.open(out.parent/'user_stickers'/f'{n}.png').convert('RGBA');sheet.paste(im.resize((512,512)),(i%4*512,i//4*512))
+    from cockpit_art import plates
+    for i,im in enumerate(plates(),12):sheet.paste(im,(i%4*512,i//4*512))
     sheet.save(out/'equipment_labels.png')
     covers=Image.new('RGBA',(1024,576))
     # Each wall retains a clear reading zone; silhouettes differ within the same strip.
@@ -54,6 +56,7 @@ def build(out):
     (out/'equipment_labels.json').write_text(json.dumps([dict(id=i,title=t,subtitle=s,symbol=k) for i,(t,s,k) in enumerate(LABELS)],indent=2))
 def assign(a):
     for p in a['parts']:
+        if p.get('company_replaces_service_logo'):continue
         n=p['name'];i=None;axis=1
         if n.endswith('fore_service_door_leaf'):i=2
         elif n.endswith('roof_machine_case'):i=3
@@ -62,10 +65,15 @@ def assign(a):
         elif 'workbench_backboard' in n:i=11
         elif n.endswith('lift_controls'):i=4
         elif 'container_' in n and '_closed_front_panel' in n:i=6;axis=0
+        if 'cockpit_tile' in p:
+            i=p['cockpit_tile'];axis=p['cockpit_axis']
         if i is None:continue
-        v=np.array(p['vertices']);lo=v.min(0);hi=v.max(0);ij=[0,2] if axis==1 else [1,2];span=hi[ij]-lo[ij]
+        v=np.array(p['vertices']);lo=v.min(0);hi=v.max(0);ij=[0,2] if axis==1 else [1,2] if axis==0 else [0,1];span=hi[ij]-lo[ij]
         width=min(float(span[0])*.70,float(span[1])*1.6,2.2);height=width if i>=9 else width*192/512
         if i>=9:width=min(width,float(span[1])*.45,1.2);height=width
         center=(lo[ij]+hi[ij])*.5;center[1]+=span[1]*.16
+        if 'cockpit_tile' in p:
+            from cockpit_art import ASPECTS
+            t=p['cockpit_transform'];width=min(t['width'],t['height']*ASPECTS[i]);height=width/ASPECTS[i];center=np.zeros(2)
         base=p['material'];mat=f'decal_{i}_{base}';a['colors'][mat]=a['colors'][base];p['material']=mat
-        p['art_uv']={'usage':'decal','label_id':i,'axes':[axis],'rect_center':center.tolist(),'rect_size':[width,height],'bounds':[lo.tolist(),hi.tolist()]}
+        p['art_uv']={'cockpit_transform':p.get('cockpit_transform'),'usage':'decal','label_id':i,'axes':[axis],'rect_center':center.tolist(),'rect_size':[width,height],'bounds':[lo.tolist(),hi.tolist()]}

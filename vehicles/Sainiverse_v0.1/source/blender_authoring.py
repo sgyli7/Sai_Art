@@ -1,7 +1,7 @@
 """Editable full assembly plus clearly identified mechanical inspection views."""
 import bpy,gzip,json,math,sys
 from pathlib import Path
-from mathutils import Vector
+from mathutils import Vector, Matrix
 OUT=Path(__file__).resolve().parents[1]
 sys.path.insert(0,str(OUT/'source'))
 from blender_surface import apply as surface_nodes
@@ -95,7 +95,16 @@ for name,h in a['colors'].items():
         for test in [band_math('GREATER_THAN',band_math('ABSOLUTE',pos.outputs['Y']),12.65),band_math('GREATER_THAN',pos.outputs['Z'],-1.20),band_math('LESS_THAN',pos.outputs['Z'],-1.00)]:band=band_math('MULTIPLY',band,test)
         paint=nodes.new('ShaderNodeMixRGB');links.new(band,paint.inputs[0]);links.new(mix.outputs[0],paint.inputs[1]);paint.inputs[2].default_value=(.48,.008,.02,1.)
         links.new(paint.outputs[0],shader.inputs['Base Color'])
-    if name not in ['cabin_glass','glass','cabin_light','cabin_screen']:surface_nodes(mat,shader,surface_image,surface_normal,label_image)
+    if name not in ['cabin_glass','glass','cabin_light','cabin_screen'] and not name.startswith('decal_16_'):surface_nodes(mat,shader,surface_image,surface_normal,label_image)
+    if name=='vendor_control_terminal':
+        nodes=mat.node_tree.nodes;links=mat.node_tree.links
+        tex=nodes.new('ShaderNodeTexImage');tex.image=packed('assets/third_party/rubberduck_industrial/control_terminal_diff.jpg','sRGB');links.new(tex.outputs['Color'],shader.inputs['Base Color'])
+        normal=nodes.new('ShaderNodeTexImage');normal.image=packed('assets/third_party/rubberduck_industrial/control_terminal_norm.jpg')
+        convert=nodes.new('ShaderNodeNormalMap');convert.inputs['Strength'].default_value=.65;links.new(normal.outputs['Color'],convert.inputs['Color']);links.new(convert.outputs[0],shader.inputs['Normal'])
+    if name=='company_decal':
+        nodes=mat.node_tree.nodes;links=mat.node_tree.links
+        uv=nodes.new('ShaderNodeUVMap');uv.uv_map='MaterialUV'
+        tex=nodes.new('ShaderNodeTexImage');tex.image=packed('assets/company/company_atlas.png','sRGB');links.new(uv.outputs[0],tex.inputs[0]);links.new(tex.outputs['Color'],shader.inputs['Base Color']);links.new(tex.outputs['Alpha'],shader.inputs['Alpha']);mat.blend_method='CLIP';mat.alpha_threshold=.5
     mats[name]=mat
 parents={};world_origins={};wheel_parents={}
 for name,pivot in a['groups'].items():
@@ -112,6 +121,9 @@ for p in a['parts']:
         owner+=f'_wheel_{side}_{index}'
     if p.get('physical_body','').find('_idler_')>=0:owner=p['physical_body']
     mesh=bpy.data.meshes.new(p['name']);mesh.from_pydata([Vector(v)-world_origins[owner] for v in p['vertices']],[],p['faces']);mesh.materials.append(mats[('wear_'+p['material']) if p.get('art_uv',{}).get('usage')=='wear' else p['material']]);mesh.update()
+    if 'native_uv' in p:
+        uv=mesh.uv_layers.new(name='MaterialUV')
+        for loop in mesh.loops:uv.data[loop.index].uv=p['native_uv'][loop.vertex_index]
     if 'art_uv' in p or p['material']=='deck_steel':
         uv=mesh.uv_layers.new(name='MaterialUV');meta=p.get('art_uv');lo=Vector(meta['bounds'][0]) if meta else None;hi=Vector(meta['bounds'][1]) if meta else None
         for face in mesh.polygons:
@@ -120,6 +132,8 @@ for p in a['parts']:
                 v=Vector(p['vertices'][mesh.loops[loop_index].vertex_index])
                 if meta and meta.get('usage')=='decal':
                     if axis in meta['axes']:
+                        t=meta.get('cockpit_transform')
+                        if t:v=Matrix.Rotation(-t['angle'],3,'Y')@(v-Vector(t['center']))
                         coord=[(v[ij[j]]-meta['rect_center'][j])/meta['rect_size'][j]+.5 for j in range(2)]
                         if (axis==1 and face.normal.y>0) or (axis==0 and face.normal.x<0):coord[0]=1-coord[0]
                     else:coord=[-10.,-10.]
@@ -139,10 +153,11 @@ for p in a['parts']:
             if meta:
                 v=vsource[mesh.loops[li].vertex_index];q=[(v[i]-lo[i])/span[i] for i in ij]
                 coord=[meta['tile']+.00001+(v[ij[0]]-lo[ij[0]])/4096,span[ij[1]]-(v[ij[1]]-lo[ij[1]])] if meta['family']=='floor' and ((axis==1 and p['material']=='ramp_steel') or (axis==2 and face.normal.z>.65 and p['material']!='ramp_steel')) else [(meta['tile']%2 if meta['family']=='floor' else meta['tile'])+.02+q[0]*.96,.02+(1-q[1])*.96]
+                if meta['family'] in ['wall','ceiling']:coord=[meta['tile']+.00001+(v[ij[0]]-lo[ij[0]])/4096,span[ij[1]]-(v[ij[1]]-lo[ij[1]])]
             else:coord=[-1.,-1.]
             layer.data[li].uv=coord
     obj=bpy.data.objects.new(p['name'],mesh);bpy.context.collection.objects.link(obj);obj.parent=parents[owner];obj['physical_body']=owner;obj['motion_kind']=motion['kind'];obj['source_group']=p['group'];obj['interior_category']=p.get('interior_category','');obj['source_name']=p['name']
-    if any(t in p['name'] for t in ['barrel','piston','gland','clamp']):
+    if any(t in p['name'] for t in ['barrel','piston','gland','clamp']) or ('_r032_' in p['name'] and 'native_uv' not in p):
         mesh.use_auto_smooth=True;mesh.auto_smooth_angle=math.radians(40)
         for face in mesh.polygons:face.use_smooth=True
 
@@ -156,8 +171,11 @@ for lift in json.loads((OUT/'source/lifts.json').read_text()):
     child=parents[lift['ramp']['name']];world=child.location.copy();child.parent=parents[lift['groups'][-1]];child.location=world-Vector(lift['pivot'])
 for joint in a.get('equipment_actuation',{}).get('joints',[]):
     child=parents[joint['body']];world=Vector(a['groups'][joint['body']]);child.parent=parents[joint['parent']];child.location=world-Vector(a['groups'][joint['parent']])
+for control in a.get('cockpit_controls',{}).get('controls',[]):
+    child=parents[control['name']];child.parent=parents['front'];child.location=Vector(control['pivot_source_m'])-Vector(a['groups']['front'])
+    for key in ['axis_source','limits','grasp_local_m','approach_normal_source','effort_cap','label','action']:child[key]=control[key]
 scene=bpy.context.scene;scene.unit_settings.system='METRIC';scene.unit_settings.scale_length=1
-scene['skin']='黑色';scene['vehicle_name']='Sainiverse_v0.1';scene['art_revision']='r031';scene['scope']='Editable authored model. Godot enamel/ink shader lives in assets. Physical validation is in reports; no learned robot policy.'
+scene['skin']='黑色';scene['vehicle_name']='Sainiverse_v0.1';scene['art_revision']='r032';scene['scope']='Editable authored model. Godot enamel/ink shader lives in assets. Physical validation is in reports; no learned robot policy.'
 text=bpy.data.texts.new('READ ME — Sainiverse_v0.1');text.write('Source SI +X forward +Y left +Z up. Separate body groups and per-part materials. See README.md for driving and validation. Reference-derived conceptual geometry, not a CAD manufacturing qualification.')
 for screen in bpy.data.screens:
  for area in screen.areas:

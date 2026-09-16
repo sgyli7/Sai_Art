@@ -2,15 +2,17 @@
 import math,json
 import numpy as np
 import trimesh as tm
+from PIL import Image
 from full_surface import uv as surface_uv
 
 def export(a,path):
     colors=dict(a['colors']);colors['vertex_palette']='FFFFFF';scene=tm.Scene()
-    roles=[k for k in a['colors'] if not k.startswith(('rig_','art_','wear_','warn_','logo_','decal_','status_')) and k not in ['cabin_glass','cabin_light','deck_steel']]
+    roles=[k for k in a['colors'] if not k.startswith(('rig_','art_','wear_','warn_','logo_','decal_','status_','vendor_','cabin_','company_')) and k not in ['cabin_glass','cabin_light','deck_steel']]
     indices={name:i for i,name in enumerate(roles)}
     assert len(roles)<256
     (path.parent/'palette_roles.json').write_text(json.dumps(roles))
     materials={k:tm.visual.material.PBRMaterial(name=k,baseColorFactor=[*bytes.fromhex(v),255],metallicFactor=.45 if k in ['steel','silver','track'] else .08,roughnessFactor=.5 if k!='glass' else .18) for k,v in colors.items()}
+    if 'company_decal' in materials:materials['company_decal']=tm.visual.material.PBRMaterial(name='company_decal',baseColorTexture=Image.open(path.parent/'company/company_atlas.png'),alphaMode='MASK',alphaCutoff=.5,metallicFactor=0,roughnessFactor=.86)
     grouped={}
     for p in a['parts']:
         material='vertex_palette' if '_bogie_' not in p['group'] and p['material'] in indices else p['material']
@@ -22,7 +24,11 @@ def export(a,path):
             if not parts:continue
             meshes=[];uv=[];uv2=[];vertex_colors=[]
             for p in parts:
-                m=tm.Trimesh(vertices=p['vertices'],faces=p['faces'],process=False);m=tm.graph.smooth_shade(m,angle=math.radians(40),facet_minarea=None)
+                m=tm.Trimesh(vertices=p['vertices'],faces=p['faces'],process=False)
+                if 'native_uv' not in p:
+                    m.remove_unreferenced_vertices()
+                    if p.get('surface_texture',{}).get('family') in ['wall','ceiling']:m.unmerge_vertices()
+                    else:m=tm.graph.smooth_shade(m,angle=math.radians(40),facet_minarea=None)
                 motion=p['motion'];value=[motion['index'],3] if motion['kind']=='wheel_slide' else [motion['index'],2] if motion['kind']=='wheel' else [motion['phase'],1] if motion['kind']=='belt' else [0,0]
                 coords=np.tile(value,(len(m.vertices),1)).astype(float)
                 if motion['kind']=='static' and '_bogie_' not in group:coords[:]=[-1.,-1.]
@@ -32,13 +38,18 @@ def export(a,path):
                     for k in meta['axes']:
                         active=axis==k;ij=[0,2] if k==1 else [1,2] if k==0 else [0,1]
                         if meta.get('usage')=='decal':
-                            q=(m.vertices[active][:,ij]-np.array(meta['rect_center']))/np.array(meta['rect_size'])+.5;q[:,1]=1-q[:,1]
+                            points=m.vertices[active]
+                            t=meta.get('cockpit_transform')
+                            if t:
+                                rot=tm.transformations.rotation_matrix(t['angle'],[0,1,0])[:3,:3];points=(points-np.array(t['center']))@rot
+                            q=(points[:,ij]-np.array(meta['rect_center']))/np.array(meta['rect_size'])+.5;q[:,1]=1-q[:,1]
                             flip=(m.vertex_normals[active,k]>0) if k==1 else (m.vertex_normals[active,k]<0) if k==0 else np.zeros(len(q),dtype=bool)
                             q[flip,0]=1-q[flip,0];coords[active]=q;continue
                         q=(m.vertices[active][:,ij]-lo[ij])/span[ij];q=np.clip(q,.002,.998);q[:,1]=1-q[:,1]
                         if meta.get('flip_u'):q[:,0]=1-q[:,0]
                         tile=int(meta['tile']);grid=meta.get('grid',2);coords[active]=(q+np.array([tile%grid,tile//grid]))/grid
-                uv.append(coords);uv2.append(surface_uv(m,p));meshes.append(m)
+                if 'native_uv' in p:coords=np.array(p['native_uv'])
+                uv.append(coords);uv2.append(np.full((len(m.vertices),2),-1.) if 'native_uv' in p else surface_uv(m,p));meshes.append(m)
                 if material=="vertex_palette":
                     rgb=np.array(list(bytes.fromhex(colors[p['material']])))/255.
                     linear=np.where(rgb<=.04045,rgb/12.92,((rgb+.055)/1.055)**2.4)

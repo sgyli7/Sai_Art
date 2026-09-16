@@ -19,15 +19,15 @@ def materialize():
     return CACHE
 p=argparse.ArgumentParser(description=__doc__)
 p.add_argument('--game',type=Path,default=Path(os.environ['SAI_GODOT_PROJECT']) if 'SAI_GODOT_PROJECT' in os.environ else None,help='Existing Robot_Godot_Sim2Sim checkout')
-p.add_argument('--action',choices=['drive','mujoco','equipment-mujoco','record-pvs','unpack-blend','prepare'],default='drive')
+p.add_argument('--action',choices=['drive','mujoco','equipment-mujoco','cockpit-mujoco','record-pvs','unpack-blend','prepare'],default='drive')
 a,rest=p.parse_known_args();cache=materialize()
 if a.action=='unpack-blend':
     out=ROOT/'Sainiverse_v0.1.blend'
     with gzip.open(SOURCE/'source/Sainiverse_v0.1.blend.gz','rb') as src,out.open('wb') as dst:shutil.copyfileobj(src,dst)
     print(out);raise SystemExit()
 if a.action=='prepare':print(cache);raise SystemExit()
-if a.action in ['mujoco','equipment-mujoco']:
-    script='check_mujoco.py' if a.action=='mujoco' else 'check_equipment.py'
+if a.action in ['mujoco','equipment-mujoco','cockpit-mujoco']:
+    script={'mujoco':'check_mujoco.py','equipment-mujoco':'check_equipment.py','cockpit-mujoco':'check_cockpit_mujoco.py'}[a.action]
     raise SystemExit(subprocess.call([sys.executable,str(cache/'source'/script),*rest]))
 if a.game is None:p.error('--game is required; point it at your existing Robot_Godot_Sim2Sim checkout')
 game=a.game.expanduser().resolve()

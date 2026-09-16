@@ -1,41 +1,106 @@
-# Sainiverse_v0.1 — verified mechanism snapshot, 2026-09-16
+# Sainiverse_v0.1 — r032 review evidence, 2026-09-17
 
-Display/export name: Sainiverse_v0.1. Black, desert, white and blue are themes. Historical report names and stable internal body IDs remain for traceability.
+Current visuals and measurements supersede r031. Five themes are black, white,
+blue, yellow and desert. The supplied Sai company emblem is separate from the
+vehicle's English display name.
 
-The model has 21,991 authored parts, 91 moving visual groups, 280 batched meshes and 1,356,382 triangles. Native Jolt uses 223 bodies and 214 joints; MuJoCo includes 224 bodies counting world, 268 DOFs and 82 actuators. Visual geometry, collision proxies and provisional mass/inertia are separate.
+## Model, identity and interiors
 
-## Structure
+23,228 authored parts, 104 visual body groups, 323 batched meshes and 1,511,302
+triangles. The native model uses 236 bodies and 227 joints; MuJoCo includes world
+as body 237, with 281 DOFs and 95 actuators. Total provisional mass is
+15,639,253.536 kg. Visual meshes and contact proxies remain separate.
 
-The deck/fascia/lower chord is a joined skin with shader-painted red waistline, eliminating 24 overlapping coplanar face pairs (now zero). Grey steel remains on walking surfaces; sides use the main theme pigment. Cabin footings, columns, haunches and longitudinal/cross girders establish a connected support path. Underdeck distribution, motors, reducers and shafts have distinct roles. Both cooling elbows are connected watertight meshes. Equipment-room windows and selected support families are mirrored.
+Three original user-supplied company sheets are retained with hashes. Their
+reproducible crop pipeline produces 23 RGBA variants and one padded atlas;
+38 body-bound placements use original aspect ratios. Eight obsolete raised
+wordmarks were removed. Source masks, individual PNGs and placement coordinates
+are included in assets/company/.
 
-The sampled boarding clearance audit covers six lifts × 36 poses, including guards and dynamic ramps: zero fixed-hull intersections. Intended guides/hinges are excluded. This is a sampled geometry test, not an exhaustive interference or strength certificate.
+Cockpit and lounge shell inward faces now use independent lining; the actual
+visible lounge floor and ceiling were reassigned rather than covered by a
+coincident mesh. Walls, ceiling inspection panels, metal enclosures and walking
+surfaces have different finishes. Metric body-local projection fixed the native
+panel-seam distortion observed with fractional packed UVs. Upholstery and hard
+frames use separate colours in every theme. New native close-ups and GIFs show
+these surfaces in the actual runtime.
 
-## Boarding
+The wheel is a single connected 96-section circular rim (maximum chord sagitta
+0.126 mm); both front gauge/console intersection volumes are zero. 17 finite-effort
+physical controls map to driving, brake/range/park, crane axes/selection/work,
+receiver axes, lift selection/motion/all-lifts and doors. Native 195 s control
+scenario records all controls, 10 physical button events, and all-six-lift
+extension/retraction. The MuJoCo bench tests all 17 coordinates and a passive
+0.5 kg contact probe pressing the WORK button. No trained robot-arm policy is claimed.
 
-Each lift uses four serial prismatic stages (60 kN finite actuator cap) and a dynamic 2 m folding ramp (3 kNm cap). A fixed 270 mm bridge closes the deck transfer gap. Parked/level/terrain checks and stow-before-drive interlocks operate in native runtime. Native 78 s cycle returns all six mechanisms; a 500 kg witness stays supported. MuJoCo 75 s cycle also returns all six mechanisms with finite states.
+The user's MSFS close-up quality bar remains a visual review criterion. These
+measurements do not establish commercial flight-simulator artwork parity.
 
-Sai runs its existing native ONNX locomotion/impedance controller at 2 kHz physics / 50 Hz policy. The carrier settles dynamically for 10 s, then is a stationary fixture; selected lift/ramp and Sai stay dynamic. Ground → ramp → lift → deck completes at 99.1145 s, with four supported wheels and upright ≈1 at end. This does not validate hull response to the boarding robot and is not a newly trained end-to-end mission policy.
+## Structure and lifts
 
-Walking MicroDuck uses its existing ONNX controller at 200 Hz physics / 50 Hz policy on the cabin floor. The final 14 s robot run ends without a fall. Roller MicroDuck patrols the real deck for 33 s without a recorded fall; lane-heading feedback and a route endpoint clear of the stairs constrain the route. Pose placement is initialization only.
+Cabin floor closure, enclosed lounge/stair connection, fewer exterior doors and
+symmetric windows address the earlier room defects. Wipers and the false blue
+pedestal glass were removed. Underframe trusses, crossheads, motor/reducer,
+distribution and protected services have distinct roles and provisional mass.
 
-## Cranes and receiver
+The lift/deck boarding bridge has zero detected coplanar overlap. Sampled boarding
+clearance checks cover six lifts × 36 poses (126 Boolean pairs). Fixed rail
+cassettes and moving arms retain 2.05 m overlap at full outward extension;
+vertical guide overlap is 1.45 m and the drawn cylinder rod engagement is 0.50 m.
+These are geometric checks, not strength certificates.
 
-Eight cranes have independent slew, luff, extension and dynamic free hooks. Cylinder forces act at physical eyes (2 MN cap); skins follow measured endpoints. A massless unilateral elastic cable uses 300 kN/m stiffness, 20 kNs/m damping and 500 kN tension cap. Receiver yaw and upper-bearing fold use finite joint torque and a convex collision proxy. Native and MuJoCo 85 s unloaded cycles deploy and return near zero. External payload pickup, load ratings and SnowRunner-equivalent cargo handling are not qualified.
+The final native 78 s cycle deploys and returns all six lifts with the complete
+carrier dynamic. Minimum platform tops are 0.2498–0.2501 m, matching the 0.25 m
+platform thickness at ground contact. Final horizontal/vertical errors are below
+0.4 mm. A 500 kg witness remains supported; its post-settle floor gap ranges from
+−0.203 mm to +10.04 mm during the cycle. Peak transient servo error is 0.127 m.
+The MuJoCo 75 s six-lift cycle also completes with finite state.
 
-Equipment masses are provisional thin-wall estimates, min(solid volume, surface area × wall thickness): 30 mm steel / 20 mm receiver aluminium, with small pins solid. Removed equipment mass/inertia is deaggregated from its parent hull; total mass is 15,481,233.60 kg. No stress, fatigue or hardware validation is claimed.
+## Performance
 
-## Driving, performance and media
+Exact primitive conversion replaces 140 rectangular convexes with equivalent
+boxes; two adjacent box pairs are merged. There are 471 interior contact shapes.
+No door/window openings or furniture contacts were removed for performance.
 
-Final native hills run is 55 s, peak 16.47 km/h, measured hitch yaw peak 8.09°. Rounded uphill/downhill terrain plus uneven cross-slope relief uses real compliant contact. It does not model deformable snow/mud or certify ride comfort.
+The final 100 s flat-drive run reaches 100.0008 km/h, with simulation/wall ratio
+0.9802. At 1920×1080, Forward+, 4×MSAA, Godot 4.7.2 / NVIDIA GB10, no capture,
+frames after 10 s give median **65.75 FPS**, p95 **37.70 ms**, p99 **46.14 ms**.
+This is lower than the old r031 performance; that older value is not reused.
+Force control runs at 200 Hz, with joint diagnostics at 10 Hz. These are
+scene/machine-specific simulation measurements, not a manufactured speed rating.
 
-Final 100 s flat test: peak 100.0009 km/h, simulation/wall ratio 0.984. At 1920×1080, Forward+, 4×MSAA on NVIDIA GB10 / Godot 4.7.2, measured median 81.71 FPS, p95 frame time 18.71 ms, p99 20.62 ms. No screenshot capture. Force control stays at 200 Hz; joint diagnostic sampling is 10 Hz. An earlier 23 FPS regression was rejected and fixed by per-body pigment batching, cached controller calculations and native gravity. These results are specific to the tested machine, scene and view.
+## Media and robot routes
 
-Four GIFs use 150 real rendered frames each, about 10 s at 15 fps: hills/turning, Sai boarding, cabin walking and parked crane/receiver/deck patrol. Sai's last clip is selected from actual exit completion, not a fixed timing assumption. Worksite inset shares the same live physical world. Captured simulation times are recorded separately; clips may select/compress longer missions.
+Five new GIFs replace the old presentation: cockpit detail tour, walking MicroDuck
+cabin patrol, crane/receiver plus roller MicroDuck worksite, Sai boarding, and
+uneven hills/turning. Each contains 150 native-rendered frames at 15 fps (10 s).
+Captions show simulation time; longer operations are sampled/compressed.
 
-Engine references: https://mujoco.readthedocs.io/en/stable/XMLreference.html ; https://docs.godotengine.org/en/stable/classes/class_generic6dofjoint3d.html . These explain engine mechanisms, not hardware ratings.
+MicroDuck uses existing native ONNX controllers: 200 Hz physics / 50 Hz policy.
+Sai uses its existing 2 kHz physics / 50 Hz policy controller. Its carrier first
+settles dynamically for 10 s and then becomes a stationary fixture; the robot,
+selected lift and ramp remain dynamic. This does not test hull response to the
+boarding robot. The separate witness-payload test above retains a dynamic hull.
+Stair geometry/contact continuity is checked; learned robot stair traversal is
+not demonstrated.
 
-## Evidence and reproducibility
+Cranes use independent slew/luff/extension and dynamic hooks, finite cylinder
+forces and a unilateral elastic cable. The presentation is unloaded mechanism
+operation. External cargo pickup/load ratings and SnowRunner-equivalent handling
+remain unqualified. Hills have real hard-ground relief/contact; deformable
+snow/mud, fatigue and manufacturing certification are outside this evidence.
 
-Current release evidence is under [`../evidence/r031/`](../evidence/r031/), with compressed raw JSON, logs, representative native screenshots and file hashes. Older evidence elsewhere describes historical revisions and is superseded for this release. GIFs are under `evidence/media/`. Robot controller, model and native-extension provenance is in `integration/robots/manifest.json` and its license directory. Linux ARM64 is the verified platform.
+## Reproduction and source
 
-Portable bundle verification: MuJoCo 85 s equipment cycle, native cabin walk 24 s, native worksite 43 s and native Sai boarding 115 s all completed. The initial portable walk test exposed a missing referenced model variant; it was added and the complete dependency manifest rechecked before these successful runs. Sai completed at 98.105 s in the portable replay. Binary GLB audit confirms 280 meshes / 1,356,382 triangles and finite UVs. Original third-party license line endings are preserved.
+Current raw JSON (gzip), logs, representative frames and hashes are under
+[evidence/r032](../evidence/r032/); current GIFs are under evidence/media/.
+Historical evidence remains labelled r031. The final media_checks.json records
+frame durations, robot outcomes and hills measurements; portable_checks.json
+records the packaged replay. Editable packed Blender, named-body GLB, MJCF,
+source generation scripts and five palette JSON files are included.
+
+The maintenance terminal's CC0 provenance is retained in
+vehicles/Sainiverse_v0.1/assets/third_party/rubberduck_industrial/PROVENANCE.md.
+User-provided company art is not relabelled CC0. Robot dependencies keep their
+original source/licence records in integration/robots/. Linux ARM64 is verified;
+other platforms require rebuilding the supplied native extensions.

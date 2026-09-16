@@ -80,10 +80,10 @@ func step(dt:float,time:float)->void:
 			else:
 				yaw_goal=float(targets[c.slew]);luff_goal=float(targets[c.luff]);extend_goal=float(targets[c.extend]);rope_goal=float(paid[c.name])
 				if i==selected:
-					yaw_goal+=float(int(Input.is_physical_key_pressed(KEY_KP_4))-int(Input.is_physical_key_pressed(KEY_KP_6)))*.12*dt
-					luff_goal+=float(int(Input.is_physical_key_pressed(KEY_KP_8))-int(Input.is_physical_key_pressed(KEY_KP_2)))*.07*dt
-					extend_goal+=float(int(Input.is_physical_key_pressed(KEY_KP_ADD))-int(Input.is_physical_key_pressed(KEY_KP_SUBTRACT)))*.3*dt
-					rope_goal+=float(int(Input.is_physical_key_pressed(KEY_PAGEDOWN))-int(Input.is_physical_key_pressed(KEY_PAGEUP)))*.45*dt
+					yaw_goal+=host.cockpit.axis("crane_slew")*.12*dt
+					luff_goal+=host.cockpit.axis("crane_luff")*.07*dt
+					extend_goal+=host.cockpit.axis("crane_extend")*.3*dt
+					rope_goal+=host.cockpit.axis("crane_winch")*.45*dt
 		servo(c.slew,clampf(yaw_goal,-PI/3,PI/3),.055,8000000.,2400000.,2500000.,dt)
 		# Cylinder force acts at its two real eye locations. A finite force cap
 		# limits attainable boom torque at the current lever arm.
@@ -108,8 +108,8 @@ func step(dt:float,time:float)->void:
 	var panel_yaw:float=.28*sin(maxf(time-15.,0.)*.06) if auto_work and working else float(targets[panel.slew]) if working else 0.
 	var panel_fold:float=-.65*(.5-.5*cos(minf(maxf(time-15.,0.)*.09,PI))) if auto_work and working else float(targets[panel.fold]) if working else 0.
 	if working and not auto_work:
-		panel_yaw+=float(int(Input.is_physical_key_pressed(KEY_Z))-int(Input.is_physical_key_pressed(KEY_X)))*.08*dt
-		panel_fold+=float(int(Input.is_physical_key_pressed(KEY_R))-int(Input.is_physical_key_pressed(KEY_F)))*.08*dt
+		panel_yaw+=host.cockpit.axis("panel_slew")*.08*dt
+		panel_fold+=host.cockpit.axis("panel_fold")*.08*dt
 	servo(panel.slew,clampf(panel_yaw,-PI/3,PI/3),.05,16000000.,5000000.,5000000.,dt)
 	servo(panel.fold,clampf(panel_fold,-1.2,.1),.055,16000000.,4000000.,12000000.,dt,[panel.fold])
 	if sample_clock<=0.:samples.append({"time":time,"name":"receiver","slew_rad":coordinate(panel.slew).x,"fold_rad":coordinate(panel.fold).x})

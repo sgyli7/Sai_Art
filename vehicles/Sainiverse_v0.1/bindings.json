@@ -264,30 +264,6 @@
         12.84
       ]
     },
-    "cabin_door_right_2": {
-      "pivot_source_m": [
-        22.459999999999997,
-        -3.7,
-        12.84
-      ],
-      "neutral_body_position_source_m": [
-        22.459999999999997,
-        -3.7,
-        12.84
-      ]
-    },
-    "cabin_door_right_3": {
-      "pivot_source_m": [
-        24.36,
-        -3.7,
-        12.84
-      ],
-      "neutral_body_position_source_m": [
-        24.36,
-        -3.7,
-        12.84
-      ]
-    },
     "cabin_door_left_1": {
       "pivot_source_m": [
         18.459999999999997,
@@ -296,30 +272,6 @@
       ],
       "neutral_body_position_source_m": [
         18.459999999999997,
-        3.7,
-        12.84
-      ]
-    },
-    "cabin_door_left_2": {
-      "pivot_source_m": [
-        22.459999999999997,
-        3.7,
-        12.84
-      ],
-      "neutral_body_position_source_m": [
-        22.459999999999997,
-        3.7,
-        12.84
-      ]
-    },
-    "cabin_door_left_3": {
-      "pivot_source_m": [
-        24.36,
-        3.7,
-        12.84
-      ],
-      "neutral_body_position_source_m": [
-        24.36,
         3.7,
         12.84
       ]
@@ -1091,6 +1043,210 @@
         0.0,
         20.55
       ]
+    },
+    "cockpit_steer": {
+      "pivot_source_m": [
+        31.48,
+        -1.58,
+        12.34
+      ],
+      "neutral_body_position_source_m": [
+        31.48,
+        -1.58,
+        12.34
+      ]
+    },
+    "cockpit_throttle": {
+      "pivot_source_m": [
+        31.2,
+        -0.21,
+        12.48
+      ],
+      "neutral_body_position_source_m": [
+        31.2,
+        -0.21,
+        12.48
+      ]
+    },
+    "cockpit_brake": {
+      "pivot_source_m": [
+        31.2,
+        0.21,
+        12.48
+      ],
+      "neutral_body_position_source_m": [
+        31.2,
+        0.21,
+        12.48
+      ]
+    },
+    "cockpit_high_range": {
+      "pivot_source_m": [
+        31.84,
+        -0.2,
+        12.49
+      ],
+      "neutral_body_position_source_m": [
+        31.84,
+        -0.2,
+        12.49
+      ]
+    },
+    "cockpit_emergency": {
+      "pivot_source_m": [
+        31.84,
+        0.2,
+        12.49
+      ],
+      "neutral_body_position_source_m": [
+        31.84,
+        0.2,
+        12.49
+      ]
+    },
+    "cockpit_crane_slew": {
+      "pivot_source_m": [
+        26.77,
+        2.46,
+        12.29
+      ],
+      "neutral_body_position_source_m": [
+        26.77,
+        2.46,
+        12.29
+      ]
+    },
+    "cockpit_crane_luff": {
+      "pivot_source_m": [
+        27.43,
+        2.46,
+        12.29
+      ],
+      "neutral_body_position_source_m": [
+        27.43,
+        2.46,
+        12.29
+      ]
+    },
+    "cockpit_crane_extend": {
+      "pivot_source_m": [
+        28.09,
+        2.46,
+        12.29
+      ],
+      "neutral_body_position_source_m": [
+        28.09,
+        2.46,
+        12.29
+      ]
+    },
+    "cockpit_crane_winch": {
+      "pivot_source_m": [
+        28.75,
+        2.46,
+        12.29
+      ],
+      "neutral_body_position_source_m": [
+        28.75,
+        2.46,
+        12.29
+      ]
+    },
+    "cockpit_crane_select": {
+      "pivot_source_m": [
+        26.68,
+        2.04,
+        12.28
+      ],
+      "neutral_body_position_source_m": [
+        26.68,
+        2.04,
+        12.28
+      ]
+    },
+    "cockpit_work": {
+      "pivot_source_m": [
+        27.25,
+        2.04,
+        12.28
+      ],
+      "neutral_body_position_source_m": [
+        27.25,
+        2.04,
+        12.28
+      ]
+    },
+    "cockpit_panel_slew": {
+      "pivot_source_m": [
+        27.15,
+        -2.56,
+        12.29
+      ],
+      "neutral_body_position_source_m": [
+        27.15,
+        -2.56,
+        12.29
+      ]
+    },
+    "cockpit_panel_fold": {
+      "pivot_source_m": [
+        28.369999999999997,
+        -2.56,
+        12.29
+      ],
+      "neutral_body_position_source_m": [
+        28.369999999999997,
+        -2.56,
+        12.29
+      ]
+    },
+    "cockpit_lift_select": {
+      "pivot_source_m": [
+        26.7,
+        -2.04,
+        12.28
+      ],
+      "neutral_body_position_source_m": [
+        26.7,
+        -2.04,
+        12.28
+      ]
+    },
+    "cockpit_lift": {
+      "pivot_source_m": [
+        27.3,
+        -2.04,
+        12.28
+      ],
+      "neutral_body_position_source_m": [
+        27.3,
+        -2.04,
+        12.28
+      ]
+    },
+    "cockpit_lifts_all": {
+      "pivot_source_m": [
+        27.87,
+        -2.04,
+        12.28
+      ],
+      "neutral_body_position_source_m": [
+        27.87,
+        -2.04,
+        12.28
+      ]
+    },
+    "cockpit_doors": {
+      "pivot_source_m": [
+        28.44,
+        -2.04,
+        12.28
+      ],
+      "neutral_body_position_source_m": [
+        28.44,
+        -2.04,
+        12.28
+      ]
     }
   },
   "gear": {
@@ -1250,13 +1406,13 @@
   "tensioned_tracks": true,
   "path_extension": "@SAI_ROOT@/support/native/leviathan_track_path.gdextension",
   "state_texture": true,
-  "expected_meshes": 280,
+  "expected_meshes": 323,
   "native_project_settings": {
     "physics/jolt_physics_3d/simulation/body_pair_contact_cache_enabled": false
   },
   "interior_manifest": "@SAI_ROOT@/source/interior.json",
   "interior_contacts": "@SAI_ROOT@/physics/interior_contacts.json",
   "style": "@SAI_ROOT@/style.json",
-  "expected_groups": 91,
+  "expected_groups": 104,
   "access_manifest": "@SAI_ROOT@/source/access.json"
 }

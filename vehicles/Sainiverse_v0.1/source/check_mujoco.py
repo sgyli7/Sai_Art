@@ -7,7 +7,10 @@ from suspension_physics import Env
 p=json.loads((O/'physics/parameters.json').read_text())
 e=Env('flat',False,True,O/'physics/suspended.xml',p);m,d=e.m,e.d
 from equipment_mujoco import Equipment
-e.mechanism_control=Equipment(m,d,p["equipment"])
+from cockpit_mujoco import Cockpit
+equipment=Equipment(m,d,p["equipment"]);cockpit=Cockpit(m,d,p["cockpit"])
+def controls(dt):equipment(dt);cockpit(dt)
+e.mechanism_control=controls
 lifts=p['boarding_lifts'];target={n:0. for l in lifts for n in l['groups']};rows=[];start=time.monotonic();peak=0.
 for step in range(15000):
  t=float(d.time);want=12<=t<47

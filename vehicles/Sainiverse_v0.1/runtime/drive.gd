@@ -28,6 +28,7 @@ var patrol_camera:Camera3D
 var controller_usec:=0
 var controller_steps:=0
 var equipment=null
+var cockpit=null
 var patrol=null
 var sai_passenger=null
 var parked_boarding_fixture:=false
@@ -40,8 +41,6 @@ func _build()->void:
 	requested_drive_speed=float(options.get("speed",0.))
 	super._build()
 	equipment=load(HERE+"/runtime/equipment_control.gd").new();equipment.configure(self,spec.contact.equipment)
-	if OS.get_environment("SAINIVERSE_PROFILE_HIDE_RIG")=="1":
-		for item in equipment.rig.bodies:visual.groups[item.name].visible=false
 	equipment.auto_work=str(options.get("mode","")) in ["worksite","equipment_cycle"]
 	lift_data=spec.contact.boarding_lifts
 	for lift in lift_data:
@@ -105,10 +104,12 @@ func _build()->void:
 		stage.add_child(witness);witness.global_position=bodies[lift_data[0].groups[3]].global_position+Vector3.UP*.475
 		var shape:=BoxShape3D.new();shape.size=Vector3(.9,.6,.9);var col:=CollisionShape3D.new();col.shape=shape;witness.add_child(col)
 		var mesh:=MeshInstance3D.new();var cube:=BoxMesh.new();cube.size=shape.size;mesh.mesh=cube;var mat:=StandardMaterial3D.new();mat.albedo_color=Color("D5AD3D");mesh.material_override=mat;witness.add_child(mesh)
+	cockpit=load(HERE+"/runtime/cockpit_control.gd").new();cockpit.configure(self,spec.contact.cockpit)
 	_camera()
 
 func handle_input(event:InputEvent)->void:
 	if not camera_ready or not manual:return
+	cockpit.input(event)
 	if event is InputEventMouseButton:
 		if event.button_index==MOUSE_BUTTON_RIGHT:mouse_drag=event.pressed
 		if event.pressed and event.button_index==MOUSE_BUTTON_WHEEL_UP:orbit_radius=maxf(4.,orbit_radius*.88)
@@ -122,18 +123,7 @@ func handle_input(event:InputEvent)->void:
 			KEY_TAB:
 				cam_mode=(cam_mode+1)%6;orbit_radius=135. if cam_mode==0 else 42. if cam_mode==1 else 13.
 				if cam_mode==4:free_position=camera.global_position
-			KEY_C:
-				if bodies.front.linear_velocity.length()<.1:equipment.working=not equipment.working
-			KEY_N:equipment.selected=(equipment.selected+1)%equipment.rig.cranes.size()
-			KEY_G:selected_lift=(selected_lift+1)%lift_data.size()
-			KEY_L:
-				if absf(bodies.front.linear_velocity.dot(bodies.front.global_basis.x))<.08:
-					var goal:bool=not bool(lift_commands[lift_data[selected_lift].name])
-					if event.shift_pressed:
-						for lift in lift_data:lift_commands[lift.name]=goal
-					else:lift_commands[lift_data[selected_lift].name]=goal
 			KEY_T:switch_theme()
-			KEY_O:doors_open=not doors_open
 			KEY_F12:_capture("manual_"+str(Time.get_ticks_msec()))
 
 func coordinate(name:String)->Vector2:
@@ -224,7 +214,7 @@ func _physics_process(dt:float)->bool:
 	if patrol==null and elapsed>=10. and str(options.get("mode","")) in ["cabin_patrol","deck_patrol","worksite"]:
 		patrol=load(HERE+"/runtime/microduck_patrol.gd").new();patrol.carrier=self
 		patrol.mode_name="walk" if str(options.mode)=="cabin_patrol" else "roller"
-		patrol.spawn_source=Vector3(29.,0.,11.354) if str(options.mode)=="cabin_patrol" else Vector3(-12.,-11.5,7.454)
+		patrol.spawn_source=Vector3(25.,0.,11.354) if str(options.mode)=="cabin_patrol" else Vector3(-12.,-11.5,7.454)
 		stage.add_child(patrol)
 		if str(options.mode)=="worksite":
 			var layer:=CanvasLayer.new();stage.add_child(layer)
@@ -241,6 +231,7 @@ func _physics_process(dt:float)->bool:
 		for name in bodies:
 			if not moving.has(name):bodies[name].freeze=true
 		sai_passenger=load(HERE+"/runtime/sai_boarding.gd").new();sai_passenger.carrier=self;stage.add_child(sai_passenger)
+	if not parked_boarding_fixture:cockpit.step(dt)
 	_lifts(dt)
 	_ramps(dt)
 	if not parked_boarding_fixture:equipment.step(dt,elapsed)
@@ -248,17 +239,8 @@ func _physics_process(dt:float)->bool:
 	if count%maxi(20,Engine.physics_ticks_per_second/10)==0:
 		for role in indicator_materials:
 			indicator_materials[role].set_shader_parameter("indicator_on",1. if role=="status_power" or (role=="status_motion" and bodies.front.linear_velocity.length()>.1) or (role=="status_lift" and drive_interlock) else 0.)
-	if manual:
-		var throttle:=0.
-		if cam_mode!=4:
-			if Input.is_physical_key_pressed(KEY_W):throttle=27.777778 if Input.is_physical_key_pressed(KEY_SHIFT) else 12.
-			if Input.is_physical_key_pressed(KEY_S):throttle=-5.
-			if Input.is_physical_key_pressed(KEY_SPACE):throttle=0.
-		var turn:=0.
-		if cam_mode!=4:
-			if Input.is_physical_key_pressed(KEY_A):turn=1.
-			if Input.is_physical_key_pressed(KEY_D):turn=-1.
-		options.speed=0. if drive_interlock else throttle;options.curvature=turn*.012
+	if manual or str(options.get("mode",""))=="cockpit_test":
+		options.speed=0. if drive_interlock else cockpit.drive_speed();options.curvature=cockpit.axis("steer")*.012
 
 	elif str(options.get("mode",""))=="lift_cycle":options.speed=3. if elapsed>14 and elapsed<46 else 0.
 	else:options.speed=requested_drive_speed
@@ -289,7 +271,7 @@ func _camera()->void:
 		var target:Vector3=patrol._base.global_position+Vector3.UP*.10
 		camera.projection=Camera3D.PROJECTION_PERSPECTIVE;camera.fov=48.;camera.near=.015
 		camera.global_position=target+Vector3(-1.15,.55,1.10);camera.look_at(target,Vector3.UP);return
-	if str(options.view) in ["interior","workshop","controls"]:super._camera();return
+	if str(options.view) in ["cabin_tour","interior","workshop","controls","seat_detail","instrument_detail","engineer_detail","lounge","stairs","cockpit_rear","lift_detail","lift_root","pedestal","underbody_detail"]:super._camera();return
 	if str(options.get("pv","false"))=="true":
 		var t:float=elapsed-32.;var front:RigidBody3D=bodies.front
 		var target:Vector3=(front.global_position+bodies.tail.global_position)*.5+Vector3.UP*4.
@@ -304,7 +286,7 @@ func _camera()->void:
 	camera.projection=Camera3D.PROJECTION_PERSPECTIVE;camera.near=.08;camera.far=3500.;camera.fov=48.
 	var front:RigidBody3D=bodies.front
 	if cam_mode==2:
-		camera.global_position=front.global_transform*local_source([32.3,0,12.65]);camera.look_at(front.global_transform*local_source([45.,0,12.65]),front.global_basis.y)
+		camera.global_position=front.global_transform*local_source([30.8,-1.58,12.9]);camera.look_at(front.global_transform*local_source([45.,0,12.65]),front.global_basis.y)
 	elif cam_mode==4:
 		camera.global_position=free_position;camera.rotation=Vector3(-orbit_pitch,orbit_yaw,0)
 	else:
@@ -349,6 +331,8 @@ func _write_visual_report()->void:
 	if equipment!=null:
 		var proof:=FileAccess.open(str(options.output_root)+"/equipment.json",FileAccess.WRITE)
 		proof.store_string(JSON.stringify({"mean_controller_ms":float(controller_usec)/maxi(1,controller_steps)/1000.,"mean_skin_ms":float(equipment.total_skin_usec)/maxi(1,equipment.skin_frames)/1000.,"mean_step_ms":float(equipment.total_step_usec)/maxi(1,equipment.total_steps)/1000.,"samples":equipment.samples,"maximum_cable_force_N":equipment.maximum_cable_force,"scope":"Finite cylinder forces, joint torques and unilateral elastic cable; hooks are dynamic free bodies. No external lifted cargo validation or hardware qualification."},"  "));proof.close()
+	if cockpit!=null:
+		var proof:=FileAccess.open(str(options.output_root)+"/cockpit_controls.json",FileAccess.WRITE);proof.store_string(JSON.stringify({"events":cockpit.events,"samples":cockpit.rows,"scope":"Actual finite-effort control joints; commands read joint position. Manipulator contact surfaces included; no trained robot manipulation."},"  "));proof.close()
 	if sai_passenger!=null:
 		var proof:=FileAccess.open(str(options.output_root)+"/sai_boarding.json",FileAccess.WRITE)
 		proof.store_string(JSON.stringify({"samples":sai_passenger.mission_samples,"completed":sai_passenger.completed,"failure":sai_passenger.failure,"physics_hz":2000,"policy_hz":50,"parked_carrier_fixture":parked_boarding_fixture,"scope":"Scripted boarding mission using existing learned locomotion and native impedance; real contacts and finite-force lift/ramp."},"  "));proof.close()

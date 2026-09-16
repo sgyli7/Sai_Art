@@ -44,6 +44,7 @@ var maximum_local_anchor_residual:=0.0
 var maximum_anchor_measurement_disagreement:=0.0
 var peak_speed:=0.0
 var start_usec:int
+var force_links:Array=[]
 var hull_names:Array=[]
 var hitch_names:Array=[]
 var options:Dictionary={"terrain":"flat","speed":0.0,"curvature":0.0,"seconds":30.0,"brake_at":-1.0,"start_x":0.0,"rebase_distance":-1.0,"output":"godot_flat_settle.json","rigid":false,
@@ -110,6 +111,9 @@ func _build()->void:
 				joint.set_param_x(Generic6DOFJoint3D.PARAM_ANGULAR_SPRING_EQUILIBRIUM_POINT,-float(item.springref))
 		stage.add_child(joint);joint.node_a=parent.get_path();joint.node_b=body.get_path();joint.exclude_nodes_from_collision=not bool(item.get("access",false))
 		links.append({"spec":item,"body":body,"parent":parent,"axis":axis,"a":anchor-parent.position,"b":anchor-body.position})
+	for link in links:
+		var item:Dictionary=link.spec
+		if float(item.stiffness)<=0. and not bool(item.get("lift",false)) and not bool(item.get("equipment",false)) and not bool(item.get("cockpit",false)):force_links.append(link)
 	for item in spec.contact.contacts:contacts.append({"body":bodies[item.body],"local":vec(item.local),"radius":float(item.radius),
 		"stiffness":float(item.get("contact_stiffness",spec.contact.contact_stiffness)),"damping":float(item.get("contact_damping",spec.contact.contact_damping)),"nominal":float(item.get("nominal_load_N",spec.contact.nominal_contact_load))})
 	if spec.contact.has("hydraulics"):
@@ -206,9 +210,9 @@ func _physics_process(dt:float)->bool:
 			coordinates.append(q);rates.append(dq);link.control_state=[axis,pa,pb,q,dq]
 		track_tension.step(coordinates,rates,dt)
 	var audit_tick:bool=count%20==19
-	for link in links:
+	for link in (links if audit_tick else force_links):
 		var body:RigidBody3D=link.body;var parent:RigidBody3D=link.parent;var item:Dictionary=link.spec
-		var diagnostic_only:bool=float(item.stiffness)>0. or bool(item.get("lift",false)) or bool(item.get("equipment",false))
+		var diagnostic_only:bool=float(item.stiffness)>0. or bool(item.get("lift",false)) or bool(item.get("equipment",false)) or bool(item.get("cockpit",false))
 		if diagnostic_only and not audit_tick:continue
 		var cached:bool=link.has("control_state")
 		var axis:Vector3=link.control_state[0] if cached else parent.global_basis*link.axis
@@ -233,7 +237,7 @@ func _physics_process(dt:float)->bool:
 			if link_residual>float(anchor_peaks.get(item.name,{}).get("residual_m",-1.)):
 				anchor_peaks[item.name]={"residual_m":link_residual,"time_s":elapsed,"front_position":origin.source_position(bodies.front.global_position),"coordinate":q}
 			qvalues[item.name]=q
-		if bool(item.get("lift",false)) or bool(item.get("equipment",false)):continue
+		if bool(item.get("lift",false)) or bool(item.get("equipment",false)) or bool(item.get("cockpit",false)):continue
 		if access_indices.has(item.name):
 			var effort:float=float(access.torques[access_indices[item.name]])+float(access.latch_torques[access_indices[item.name]]);efforts[item.name]=effort
 			body.apply_torque(axis*effort);parent.apply_torque(-axis*effort)

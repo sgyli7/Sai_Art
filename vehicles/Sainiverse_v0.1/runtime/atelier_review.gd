@@ -74,6 +74,11 @@ func _paint(node:Node)->void:
 			var old=node.get_active_material(index)
 			var role:String=str(node.name).get_slice("__",1)
 			if role=="cabin_glass" or role=="cabin_light":continue
+			if role=="company_decal":
+				if not normal_textures.has("company"):
+					var img:=Image.load_from_file(asset_dir+"company/company_atlas.png");img.generate_mipmaps();normal_textures.company=ImageTexture.create_from_image(img)
+				var mat:=ShaderMaterial.new();mat.shader=load(asset_dir+"company.gdshader");mat.set_shader_parameter("company_atlas",normal_textures.company);node.set_surface_override_material(index,mat)
+				continue
 			var color:Color=Color(style.palette[role]) if style.palette.has(role) else Color("969b95")
 			if style.palette.has(role) and old is StandardMaterial3D:
 				var original:Color=old.albedo_color if old is StandardMaterial3D else old.get_shader_parameter("paint")
@@ -89,10 +94,23 @@ func _paint(node:Node)->void:
 			else:
 				if not style.palette.has(role) and old is StandardMaterial3D:
 					color=old.albedo_color
-				node.set_surface_override_material(index,_enamel(color,true,10 if role.begins_with("decal_") else 6 if role.begins_with("warn_") else 7 if role.begins_with("logo_") else 8 if role.begins_with("wear_") else 5 if role=="art_workbay_wall" else 4 if role.begins_with("art_") else 1 if role=="deck_steel" else 0))
+				node.set_surface_override_material(index,_enamel(color,true,11 if role.begins_with("vendor_") else 10 if role.begins_with("decal_") else 6 if role.begins_with("warn_") else 7 if role.begins_with("logo_") else 8 if role.begins_with("wear_") else 5 if role=="art_workbay_wall" else 4 if role.begins_with("art_") else 1 if role=="deck_steel" else 0))
+			if role=="vendor_control_terminal":
+				for item in [["external_albedo","diff"],["external_normal","norm"]]:
+					var key:String="vendor_"+item[1]
+					if not normal_textures.has(key):
+						var img:=Image.load_from_file(asset_dir+"third_party/rubberduck_industrial/control_terminal_"+item[1]+".jpg");img.generate_mipmaps();normal_textures[key]=ImageTexture.create_from_image(img)
+					node.get_active_material(index).set_shader_parameter(item[0],normal_textures[key])
+			if role in ["cabin_upholstery","cabin_bolster","cabin_lounge"]:
+				node.get_active_material(index).set_shader_parameter("surface_kind",12)
+			if role=="cabin_metal":
+				node.get_active_material(index).set_shader_parameter("surface_kind",13)
 			if role=="vertex_palette":
 				node.get_active_material(index).set_shader_parameter("palette_indexed",true);node.get_active_material(index).set_shader_parameter("palette_map",palette_texture)
-			if role.begins_with("decal_"):node.get_active_material(index).set_shader_parameter("label_id",int(role.get_slice("_",1)))
+			if role.begins_with("decal_"):
+				var tile:=int(role.get_slice("_",1));node.get_active_material(index).set_shader_parameter("label_id",tile)
+				if tile in [12,13,16] and normal_textures.has("live"+str(tile)):
+					node.get_active_material(index).set_shader_parameter("use_live_gauges",true);node.get_active_material(index).set_shader_parameter("live_gauges",normal_textures["live"+str(tile)])
 			if role.begins_with("status_"):
 				var status=node.get_active_material(index);status.set_shader_parameter("indicator_on",1. if role=="status_power" else 0.);indicator_materials[role]=status
 			painted_surfaces+=1
@@ -108,8 +126,8 @@ func _write_visual_report()->void:
 	file.store_string(JSON.stringify({"painted_surfaces":painted_surfaces,"animated_ink_passes":animated_ink_passes,"matching_live_ink_states":matching_ink,"audited_original_pigments":audited_pigments,"maximum_original_pigment_error":pigment_max_error,"style":style,"scope":"Same actual dynamic geometry with enamel/ink shading. No physics or pose modification."},"  "));file.close()
 
 func switch_theme()->void:
-	var ids=["black","desert","white","blue"]
-	theme_id=ids[(ids.find(theme_id)+1)%4]
+	var ids=["black","desert","white","blue","yellow"]
+	theme_id=ids[(ids.find(theme_id)+1)%ids.size()]
 	var theme:Dictionary=JSON.parse_string(FileAccess.get_file_as_string(str(visual.config.style).get_base_dir()+"/themes/"+theme_id+".json"))
 	style.palette=theme.palette
 	var roles:Array=JSON.parse_string(FileAccess.get_file_as_string(asset_dir+"palette_roles.json"))

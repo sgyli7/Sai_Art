@@ -1,0 +1,102 @@
+[
+  {
+    "file": "Models/GLB format/computer-system.glb",
+    "triangles": 176,
+    "vertices": 306,
+    "geometries": 1,
+    "bounds": [
+      [
+        -0.44999998807907104,
+        0.0,
+        -0.37244442105293274
+      ],
+      [
+        0.44999998807907104,
+        0.6000000238418579,
+        0.32244443893432617
+      ]
+    ],
+    "bytes": 17552,
+    "sha256": "87666d5211fdce8830d1abf55fab16bc21d67714d78f9525f1399c33c4cb54bb"
+  },
+  {
+    "file": "Models/GLB format/computer.glb",
+    "triangles": 140,
+    "vertices": 242,
+    "geometries": 1,
+    "bounds": [
+      [
+        -0.20000000298023224,
+        0.0,
+        -0.17499999701976776
+      ],
+      [
+        0.20000000298023224,
+        0.6608729362487793,
+        0.26314112544059753
+      ]
+    ],
+    "bytes": 13804,
+    "sha256": "dede29d81fd122c484af3e0dbf566f34893ed0f3c80182586feb19b23c33c0b7"
+  },
+  {
+    "file": "Models/GLB format/computer-wide.glb",
+    "triangles": 174,
+    "vertices": 298,
+    "geometries": 1,
+    "bounds": [
+      [
+        -0.40000003576278687,
+        0.0,
+        -0.23661395907402039
+      ],
+      [
+        0.4000000059604645,
+        0.49684643745422363,
+        0.2965650260448456
+      ]
+    ],
+    "bytes": 17136,
+    "sha256": "62420ce928f288f91ce85e2245e80e6c9efbee9b6e91b7ea9b83d0289fa647c4"
+  },
+  {
+    "file": "Models/GLB format/chair-armrest-headrest.glb",
+    "triangles": 142,
+    "vertices": 252,
+    "geometries": 1,
+    "bounds": [
+      [
+        -0.25,
+        0.0,
+        -0.17499999701976776
+      ],
+      [
+        0.25,
+        0.7000000476837158,
+        0.17500001192092896
+      ]
+    ],
+    "bytes": 14308,
+    "sha256": "5f177776c26aac0cad6f90a128332e190f23958159ea6f62f78cdac54e4acd84"
+  },
+  {
+    "file": "Models/GLB format/chair-cushion-headrest.glb",
+    "triangles": 118,
+    "vertices": 200,
+    "geometries": 1,
+    "bounds": [
+      [
+        -0.15000000596046448,
+        0.0,
+        -0.17499999701976776
+      ],
+      [
+        0.15000000596046448,
+        0.7000000476837158,
+        0.17500001192092896
+      ]
+    ],
+    "bytes": 11764,
+    "sha256": "c0e6cdad402a48112bf125e0742b88b09522517783663bf5ea9a705debdff5a8"
+  }
+]

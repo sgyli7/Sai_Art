@@ -150,8 +150,14 @@ from mechanical_revision import apply as mechanical_revision
 mechanical_revision(a,add,box,rod,role,O)
 from equipment_rig import author as author_equipment
 author_equipment(a,add,rod,O)
+from habitable_revision import author as author_habitable
+author_habitable(a,add,box,rod,role,O)
 from finish import classify,write as write_finishes
 from art_finish import apply as art_finish
+from cockpit_controls import author as author_controls
+author_controls(a,add,O)
+from interior_identity import author as author_identity
+author_identity(a,add,O)
 classify(a)
 art_selection=art_finish(a)
 from service_labels import build as build_labels,assign as assign_labels
@@ -167,6 +173,7 @@ style=json.loads((O/'baseline/atelier/style.json').read_text());style['palette']
 for p in (O/'baseline/atelier/assets').glob('*.gdshader'):shutil.copy2(p,O/'assets'/p.name)
 for name in ['sai_scale_figure.glb','microduck_scale_figure.glb']:assert (O/'assets'/name).exists()
 for name in ['interior.json','access.json','access_probes.json']:shutil.copy2(A/'source'/name,O/'source'/name)
+room=json.loads((O/'source/interior.json').read_text());room['screens']=a['habitable_revision']['screens'];room['doors']=[d for d in room['doors'] if d['name'] not in a['habitable_revision']['obsolete_door_groups']];room['stair_route']=a['habitable_revision']['stair_route'];(O/'source/interior.json').write_text(json.dumps(room,indent=2))
 (O/'reports/build.json').write_text(json.dumps(dict(changes=changes,removed=removed,added=added,parts=len(a['parts']),groups=len(a['groups']),lifts=6,**result),indent=2)+'\n')
 print(json.dumps(dict(parts=len(a['parts']),groups=len(a['groups']),**result)),flush=True)
 
