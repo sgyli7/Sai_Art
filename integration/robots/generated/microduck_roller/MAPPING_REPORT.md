@@ -1,0 +1,171 @@
+# MJCF → Godot mapping report
+
+- MJCF: `/home/ethan/Projects/microduck_rl/src/mjlab_microduck/robot/microduck/scene_rollers.xml`
+- bodies: 20  joints: 19  actuators: 14
+- gravity (MuJoCo): [0.0, 0.0, -9.81]
+- XML timestep: 0.002
+
+## Mapping
+- {'joint': 'left_hip_yaw', 'action': 'armature=0.0018 added as diag(A nn^T) on child inertia, principals floored to max/10 (Jolt has no rotor slot)'}
+- {'joint': 'left_hip_yaw', 'action': 'frictionloss=0.0048 applied as smooth Coulomb τ -= μ·tanh(qd/0.05) in the Python-driven PD (Jolt hinge friction not bound)'}
+- {'joint': 'left_hip_roll', 'action': 'armature=0.0018 added as diag(A nn^T) on child inertia, principals floored to max/10 (Jolt has no rotor slot)'}
+- {'joint': 'left_hip_roll', 'action': 'frictionloss=0.0048 applied as smooth Coulomb τ -= μ·tanh(qd/0.05) in the Python-driven PD (Jolt hinge friction not bound)'}
+- {'joint': 'left_hip_pitch', 'action': 'armature=0.0018 added as diag(A nn^T) on child inertia, principals floored to max/10 (Jolt has no rotor slot)'}
+- {'joint': 'left_hip_pitch', 'action': 'frictionloss=0.0048 applied as smooth Coulomb τ -= μ·tanh(qd/0.05) in the Python-driven PD (Jolt hinge friction not bound)'}
+- {'joint': 'left_knee', 'action': 'armature=0.0018 added as diag(A nn^T) on child inertia, principals floored to max/10 (Jolt has no rotor slot)'}
+- {'joint': 'left_knee', 'action': 'frictionloss=0.0048 applied as smooth Coulomb τ -= μ·tanh(qd/0.05) in the Python-driven PD (Jolt hinge friction not bound)'}
+- {'joint': 'left_ankle', 'action': 'armature=0.0018 added as diag(A nn^T) on child inertia, principals floored to max/10 (Jolt has no rotor slot)'}
+- {'joint': 'left_ankle', 'action': 'frictionloss=0.0048 applied as smooth Coulomb τ -= μ·tanh(qd/0.05) in the Python-driven PD (Jolt hinge friction not bound)'}
+- {'joint': 'passive_LF_wheel', 'action': 'armature=0.0001 added as diag(A nn^T) on child inertia, principals floored to max/10 (Jolt has no rotor slot)'}
+- {'joint': 'passive_LR_wheel', 'action': 'armature=0.0001 added as diag(A nn^T) on child inertia, principals floored to max/10 (Jolt has no rotor slot)'}
+- {'joint': 'neck_pitch', 'action': 'armature=0.0018 added as diag(A nn^T) on child inertia, principals floored to max/10 (Jolt has no rotor slot)'}
+- {'joint': 'neck_pitch', 'action': 'frictionloss=0.0048 applied as smooth Coulomb τ -= μ·tanh(qd/0.05) in the Python-driven PD (Jolt hinge friction not bound)'}
+- {'joint': 'head_pitch', 'action': 'armature=0.0018 added as diag(A nn^T) on child inertia, principals floored to max/10 (Jolt has no rotor slot)'}
+- {'joint': 'head_pitch', 'action': 'frictionloss=0.0048 applied as smooth Coulomb τ -= μ·tanh(qd/0.05) in the Python-driven PD (Jolt hinge friction not bound)'}
+- {'joint': 'head_yaw', 'action': 'armature=0.0018 added as diag(A nn^T) on child inertia, principals floored to max/10 (Jolt has no rotor slot)'}
+- {'joint': 'head_yaw', 'action': 'frictionloss=0.0048 applied as smooth Coulomb τ -= μ·tanh(qd/0.05) in the Python-driven PD (Jolt hinge friction not bound)'}
+- {'joint': 'head_roll', 'action': 'armature=0.0018 added as diag(A nn^T) on child inertia, principals floored to max/10 (Jolt has no rotor slot)'}
+- {'joint': 'head_roll', 'action': 'frictionloss=0.0048 applied as smooth Coulomb τ -= μ·tanh(qd/0.05) in the Python-driven PD (Jolt hinge friction not bound)'}
+- {'joint': 'right_hip_yaw', 'action': 'armature=0.0018 added as diag(A nn^T) on child inertia, principals floored to max/10 (Jolt has no rotor slot)'}
+- {'joint': 'right_hip_yaw', 'action': 'frictionloss=0.0048 applied as smooth Coulomb τ -= μ·tanh(qd/0.05) in the Python-driven PD (Jolt hinge friction not bound)'}
+- {'joint': 'right_hip_roll', 'action': 'armature=0.0018 added as diag(A nn^T) on child inertia, principals floored to max/10 (Jolt has no rotor slot)'}
+- {'joint': 'right_hip_roll', 'action': 'frictionloss=0.0048 applied as smooth Coulomb τ -= μ·tanh(qd/0.05) in the Python-driven PD (Jolt hinge friction not bound)'}
+- {'joint': 'right_hip_pitch', 'action': 'armature=0.0018 added as diag(A nn^T) on child inertia, principals floored to max/10 (Jolt has no rotor slot)'}
+- {'joint': 'right_hip_pitch', 'action': 'frictionloss=0.0048 applied as smooth Coulomb τ -= μ·tanh(qd/0.05) in the Python-driven PD (Jolt hinge friction not bound)'}
+- {'joint': 'right_knee', 'action': 'armature=0.0018 added as diag(A nn^T) on child inertia, principals floored to max/10 (Jolt has no rotor slot)'}
+- {'joint': 'right_knee', 'action': 'frictionloss=0.0048 applied as smooth Coulomb τ -= μ·tanh(qd/0.05) in the Python-driven PD (Jolt hinge friction not bound)'}
+- {'joint': 'right_ankle', 'action': 'armature=0.0018 added as diag(A nn^T) on child inertia, principals floored to max/10 (Jolt has no rotor slot)'}
+- {'joint': 'right_ankle', 'action': 'frictionloss=0.0048 applied as smooth Coulomb τ -= μ·tanh(qd/0.05) in the Python-driven PD (Jolt hinge friction not bound)'}
+- {'joint': 'passive_RF_wheel', 'action': 'armature=0.0001 added as diag(A nn^T) on child inertia, principals floored to max/10 (Jolt has no rotor slot)'}
+- {'joint': 'passive_RR_wheel', 'action': 'armature=0.0001 added as diag(A nn^T) on child inertia, principals floored to max/10 (Jolt has no rotor slot)'}
+- {'geom': 'floor', 'action': 'skip_plane_in_robot_scene (floor is in main.tscn)'}
+- {'geom': 'unnamed_1', 'action': 'visual OBJ meshes/unnamed_1_1.obj'}
+- {'geom': 'unnamed_2', 'action': 'visual OBJ meshes/unnamed_2_2.obj'}
+- {'geom': 'unnamed_3', 'action': 'visual OBJ meshes/unnamed_3_3.obj'}
+- {'geom': 'unnamed_4', 'action': 'visual OBJ meshes/unnamed_4_4.obj'}
+- {'geom': 'unnamed_5', 'action': 'visual OBJ meshes/unnamed_5_5.obj'}
+- {'geom': 'unnamed_6', 'action': 'visual OBJ meshes/unnamed_6_6.obj'}
+- {'geom': 'unnamed_7', 'action': 'ConvexPolygonShape3D nvert=6384 nhull=128 mesh=power_support (cap 128)'}
+- {'geom': 'unnamed_8', 'action': 'visual OBJ meshes/unnamed_8_8.obj'}
+- {'geom': 'unnamed_9', 'action': 'ConvexPolygonShape3D nvert=10487 nhull=128 mesh=np_f970 (cap 128)'}
+- {'geom': 'unnamed_10', 'action': 'visual OBJ meshes/unnamed_10_10.obj'}
+- {'geom': 'unnamed_11', 'action': 'visual OBJ meshes/unnamed_11_11.obj'}
+- {'geom': 'unnamed_12', 'action': 'visual OBJ meshes/unnamed_12_12.obj'}
+- {'geom': 'unnamed_13', 'action': 'visual OBJ meshes/unnamed_13_13.obj'}
+- {'geom': 'unnamed_14', 'action': 'visual OBJ meshes/unnamed_14_14.obj'}
+- {'geom': 'unnamed_15', 'action': 'visual OBJ meshes/unnamed_15_15.obj'}
+- {'geom': 'unnamed_16', 'action': 'visual OBJ meshes/unnamed_16_16.obj'}
+- {'geom': 'unnamed_17', 'action': 'visual OBJ meshes/unnamed_17_17.obj'}
+- {'geom': 'unnamed_18', 'action': 'visual OBJ meshes/unnamed_18_18.obj'}
+- {'geom': 'unnamed_19', 'action': 'ConvexPolygonShape3D nvert=10471 nhull=128 mesh=hip_l (cap 128)'}
+- {'geom': 'unnamed_20', 'action': 'visual OBJ meshes/unnamed_20_20.obj'}
+- {'geom': 'unnamed_21', 'action': 'visual OBJ meshes/unnamed_21_21.obj'}
+- {'geom': 'unnamed_22', 'action': 'visual OBJ meshes/unnamed_22_22.obj'}
+- {'geom': 'unnamed_23', 'action': 'visual OBJ meshes/unnamed_23_23.obj'}
+- {'geom': 'unnamed_24', 'action': 'visual OBJ meshes/unnamed_24_24.obj'}
+- {'geom': 'unnamed_25', 'action': 'visual OBJ meshes/unnamed_25_25.obj'}
+- {'geom': 'unnamed_26', 'action': 'ConvexPolygonShape3D nvert=7374 nhull=128 mesh=leg (cap 128)'}
+- {'geom': 'unnamed_27', 'action': 'visual OBJ meshes/unnamed_27_27.obj'}
+- {'geom': 'unnamed_28', 'action': 'visual OBJ meshes/unnamed_28_28.obj'}
+- {'geom': 'unnamed_29', 'action': 'visual OBJ meshes/unnamed_29_29.obj'}
+- {'geom': 'unnamed_30', 'action': 'visual OBJ meshes/unnamed_30_30.obj'}
+- {'geom': 'unnamed_31', 'action': 'visual OBJ meshes/unnamed_31_31.obj'}
+- {'geom': 'unnamed_32', 'action': 'tire SphereShape3D r=0.0150 (Jolt cylinder-vs-box scrubs; visual is tire mesh)'}
+- {'geom': 'unnamed_33', 'action': 'visual OBJ meshes/unnamed_33_33.obj'}
+- {'geom': 'unnamed_34', 'action': 'visual OBJ meshes/unnamed_34_34.obj'}
+- {'geom': 'unnamed_35', 'action': 'visual OBJ meshes/unnamed_35_35.obj'}
+- {'geom': 'unnamed_36', 'action': 'tire SphereShape3D r=0.0150 (Jolt cylinder-vs-box scrubs; visual is tire mesh)'}
+- {'geom': 'unnamed_37', 'action': 'visual OBJ meshes/unnamed_37_37.obj'}
+- {'geom': 'unnamed_38', 'action': 'visual OBJ meshes/unnamed_38_38.obj'}
+- {'geom': 'unnamed_39', 'action': 'visual OBJ meshes/unnamed_39_39.obj'}
+- {'geom': 'unnamed_40', 'action': 'visual OBJ meshes/unnamed_40_40.obj'}
+- {'geom': 'unnamed_41', 'action': 'visual OBJ meshes/unnamed_41_41.obj'}
+- {'geom': 'unnamed_42', 'action': 'visual OBJ meshes/unnamed_42_42.obj'}
+- {'geom': 'unnamed_43', 'action': 'visual OBJ meshes/unnamed_43_43.obj'}
+- {'geom': 'unnamed_44', 'action': 'visual OBJ meshes/unnamed_44_44.obj'}
+- {'geom': 'unnamed_45', 'action': 'visual OBJ meshes/unnamed_45_45.obj'}
+- {'geom': 'unnamed_46', 'action': 'visual OBJ meshes/unnamed_46_46.obj'}
+- {'geom': 'unnamed_47', 'action': 'visual OBJ meshes/unnamed_47_47.obj'}
+- {'geom': 'unnamed_48', 'action': 'visual OBJ meshes/unnamed_48_48.obj'}
+- {'geom': 'unnamed_49', 'action': 'visual OBJ meshes/unnamed_49_49.obj'}
+- {'geom': 'unnamed_50', 'action': 'visual OBJ meshes/unnamed_50_50.obj'}
+- {'geom': 'unnamed_51', 'action': 'visual OBJ meshes/unnamed_51_51.obj'}
+- {'geom': 'unnamed_52', 'action': 'visual OBJ meshes/unnamed_52_52.obj'}
+- {'geom': 'unnamed_53', 'action': 'ConvexPolygonShape3D nvert=8062 nhull=512 mesh=top_head_shell (cap 512)'}
+- {'geom': 'unnamed_54', 'action': 'visual OBJ meshes/unnamed_54_54.obj'}
+- {'geom': 'unnamed_55', 'action': 'visual OBJ meshes/unnamed_55_55.obj'}
+- {'geom': 'unnamed_56', 'action': 'visual OBJ meshes/unnamed_56_56.obj'}
+- {'geom': 'unnamed_57', 'action': 'visual OBJ meshes/unnamed_57_57.obj'}
+- {'geom': 'unnamed_58', 'action': 'visual OBJ meshes/unnamed_58_58.obj'}
+- {'geom': 'unnamed_59', 'action': 'visual OBJ meshes/unnamed_59_59.obj'}
+- {'geom': 'unnamed_60', 'action': 'ConvexPolygonShape3D nvert=4949 nhull=512 mesh=jaw (cap 512)'}
+- {'geom': 'unnamed_61', 'action': 'visual OBJ meshes/unnamed_61_61.obj'}
+- {'geom': 'unnamed_62', 'action': 'ConvexPolygonShape3D nvert=10477 nhull=512 mesh=bottom_head_shell (cap 512)'}
+- {'geom': 'unnamed_63', 'action': 'visual OBJ meshes/unnamed_63_63.obj'}
+- {'geom': 'unnamed_64', 'action': 'visual OBJ meshes/unnamed_64_64.obj'}
+- {'geom': 'unnamed_65', 'action': 'visual OBJ meshes/unnamed_65_65.obj'}
+- {'geom': 'unnamed_66', 'action': 'visual OBJ meshes/unnamed_66_66.obj'}
+- {'geom': 'unnamed_67', 'action': 'visual OBJ meshes/unnamed_67_67.obj'}
+- {'geom': 'unnamed_68', 'action': 'visual OBJ meshes/unnamed_68_68.obj'}
+- {'geom': 'unnamed_69', 'action': 'visual OBJ meshes/unnamed_69_69.obj'}
+- {'geom': 'unnamed_70', 'action': 'visual OBJ meshes/unnamed_70_70.obj'}
+- {'geom': 'unnamed_71', 'action': 'ConvexPolygonShape3D nvert=10471 nhull=128 mesh=hip_l (cap 128)'}
+- {'geom': 'unnamed_72', 'action': 'visual OBJ meshes/unnamed_72_72.obj'}
+- {'geom': 'unnamed_73', 'action': 'visual OBJ meshes/unnamed_73_73.obj'}
+- {'geom': 'unnamed_74', 'action': 'visual OBJ meshes/unnamed_74_74.obj'}
+- {'geom': 'unnamed_75', 'action': 'visual OBJ meshes/unnamed_75_75.obj'}
+- {'geom': 'unnamed_76', 'action': 'visual OBJ meshes/unnamed_76_76.obj'}
+- {'geom': 'unnamed_77', 'action': 'visual OBJ meshes/unnamed_77_77.obj'}
+- {'geom': 'unnamed_78', 'action': 'visual OBJ meshes/unnamed_78_78.obj'}
+- {'geom': 'unnamed_79', 'action': 'visual OBJ meshes/unnamed_79_79.obj'}
+- {'geom': 'unnamed_80', 'action': 'ConvexPolygonShape3D nvert=7374 nhull=128 mesh=leg (cap 128)'}
+- {'geom': 'unnamed_81', 'action': 'visual OBJ meshes/unnamed_81_81.obj'}
+- {'geom': 'unnamed_82', 'action': 'visual OBJ meshes/unnamed_82_82.obj'}
+- {'geom': 'unnamed_83', 'action': 'visual OBJ meshes/unnamed_83_83.obj'}
+- {'geom': 'unnamed_84', 'action': 'visual OBJ meshes/unnamed_84_84.obj'}
+- {'geom': 'unnamed_85', 'action': 'tire SphereShape3D r=0.0150 (Jolt cylinder-vs-box scrubs; visual is tire mesh)'}
+- {'geom': 'unnamed_86', 'action': 'visual OBJ meshes/unnamed_86_86.obj'}
+- {'geom': 'unnamed_87', 'action': 'visual OBJ meshes/unnamed_87_87.obj'}
+- {'geom': 'unnamed_88', 'action': 'visual OBJ meshes/unnamed_88_88.obj'}
+- {'geom': 'unnamed_89', 'action': 'tire SphereShape3D r=0.0150 (Jolt cylinder-vs-box scrubs; visual is tire mesh)'}
+- {'body': 'trunk_base', 'action': 'RigidBody3D mass=0.199224 inertia=(0.000145932,0.000140799,9.85265e-05) layer=3 mask=3'}
+- {'body': 'yaw2roll', 'action': 'RigidBody3D mass=0.0230406 inertia=(4.1964e-06,3.41989e-06,2.32413e-06) layer=1 mask=1'}
+- {'body': 'hip_l', 'action': 'RigidBody3D mass=0.00618934 inertia=(1.15976e-06,1.15753e-06,3.52458e-07) layer=1 mask=1'}
+- {'body': 'upper_leg_left', 'action': 'RigidBody3D mass=0.0482067 inertia=(1.98453e-05,1.9108e-05,8.11799e-06) layer=1 mask=1'}
+- {'body': 'leg', 'action': 'RigidBody3D mass=0.0215844 inertia=(5.25056e-06,4.58054e-06,1.91378e-06) layer=1 mask=1'}
+- {'body': 'ankle_l_v1', 'action': 'RigidBody3D mass=0.02087 inertia=(9.70868e-06,8.21708e-06,4.83304e-06) layer=1 mask=1'}
+- {'body': 'tire', 'action': 'RigidBody3D mass=0.00447401 inertia=(5.3687e-07,2.8556e-07,2.8556e-07) layer=1 mask=1'}
+- {'body': 'tire_2', 'action': 'RigidBody3D mass=0.00447401 inertia=(5.3687e-07,2.8556e-07,2.8556e-07) layer=1 mask=1'}
+- {'body': 'neck', 'action': 'RigidBody3D mass=0.0368414 inertia=(1.72925e-05,1.63707e-05,3.12694e-06) layer=1 mask=1'}
+- {'body': 'neck_pitch', 'action': 'RigidBody3D mass=0.00572 inertia=(1.09186e-06,9.66855e-07,5.12111e-07) layer=1 mask=1'}
+- {'body': 'yaw_roll_motion', 'action': 'RigidBody3D mass=0.0486 inertia=(9.65512e-06,8.11788e-06,6.8878e-06) layer=1 mask=1'}
+- {'body': 'jaw_soft', 'action': 'RigidBody3D mass=0.188766 inertia=(0.000321068,0.000254266,0.000149461) layer=1 mask=1'}
+- {'body': 'bearing_roll', 'action': 'RigidBody3D mass=0.0230406 inertia=(4.1964e-06,3.41989e-06,2.32413e-06) layer=1 mask=1'}
+- {'body': 'hip_l_2', 'action': 'RigidBody3D mass=0.00618934 inertia=(1.15976e-06,1.15753e-06,3.52458e-07) layer=1 mask=1'}
+- {'body': 'upper_leg_right', 'action': 'RigidBody3D mass=0.0482067 inertia=(1.98453e-05,1.9108e-05,8.11799e-06) layer=1 mask=1'}
+- {'body': 'leg_2', 'action': 'RigidBody3D mass=0.0215844 inertia=(5.25056e-06,4.58054e-06,1.91378e-06) layer=1 mask=1'}
+- {'body': 'ankle_r_v1', 'action': 'RigidBody3D mass=0.0208701 inertia=(9.71926e-06,8.21082e-06,4.83671e-06) layer=1 mask=1'}
+- {'body': 'tire_3', 'action': 'RigidBody3D mass=0.00447401 inertia=(5.3687e-07,2.8556e-07,2.8556e-07) layer=1 mask=1'}
+- {'body': 'tire_4', 'action': 'RigidBody3D mass=0.00447401 inertia=(5.3687e-07,2.8556e-07,2.8556e-07) layer=1 mask=1'}
+- {'joint': 'trunk_base_freejoint', 'action': 'skip type=free'}
+- {'joint': 'left_hip_yaw', 'action': 'HingeJoint3D trunk_base->yaw2roll limit=[-0.4363,0.5236] damping=0.053'}
+- {'joint': 'left_hip_roll', 'action': 'HingeJoint3D yaw2roll->hip_l limit=[-0.384,0.384] damping=0.053'}
+- {'joint': 'left_hip_pitch', 'action': 'HingeJoint3D hip_l->upper_leg_left limit=[-1.571,1.571] damping=0.053'}
+- {'joint': 'left_knee', 'action': 'HingeJoint3D upper_leg_left->leg limit=[-1.571,1.571] damping=0.053'}
+- {'joint': 'left_ankle', 'action': 'HingeJoint3D leg->ankle_l_v1 limit=[-1.571,1.571] damping=0.053'}
+- {'joint': 'passive_LF_wheel', 'action': 'HingeJoint3D ankle_l_v1->tire limit=[-3.142,3.142] damping=0.0'}
+- {'joint': 'passive_LR_wheel', 'action': 'HingeJoint3D ankle_l_v1->tire_2 limit=[-3.142,3.142] damping=0.0'}
+- {'joint': 'neck_pitch', 'action': 'HingeJoint3D trunk_base->neck limit=[-1.571,1.047] damping=0.053'}
+- {'joint': 'head_pitch', 'action': 'HingeJoint3D neck->neck_pitch limit=[-1.571,1.571] damping=0.053'}
+- {'joint': 'head_yaw', 'action': 'HingeJoint3D neck_pitch->yaw_roll_motion limit=[-2.967,2.967] damping=0.053'}
+- {'joint': 'head_roll', 'action': 'HingeJoint3D yaw_roll_motion->jaw_soft limit=[-0.4363,0.4363] damping=0.053'}
+- {'joint': 'right_hip_yaw', 'action': 'HingeJoint3D trunk_base->bearing_roll limit=[-0.5236,0.4363] damping=0.053'}
+- {'joint': 'right_hip_roll', 'action': 'HingeJoint3D bearing_roll->hip_l_2 limit=[-0.384,0.384] damping=0.053'}
+- {'joint': 'right_hip_pitch', 'action': 'HingeJoint3D hip_l_2->upper_leg_right limit=[-1.571,1.571] damping=0.053'}
+- {'joint': 'right_knee', 'action': 'HingeJoint3D upper_leg_right->leg_2 limit=[-1.571,1.571] damping=0.053'}
+- {'joint': 'right_ankle', 'action': 'HingeJoint3D leg_2->ankle_r_v1 limit=[-1.571,1.571] damping=0.053'}
+- {'joint': 'passive_RF_wheel', 'action': 'HingeJoint3D ankle_r_v1->tire_3 limit=[-3.142,3.142] damping=0.0'}
+- {'joint': 'passive_RR_wheel', 'action': 'HingeJoint3D ankle_r_v1->tire_4 limit=[-3.142,3.142] damping=0.0'}
+
+## Unmapped (recorded, not faked)
+- (none)

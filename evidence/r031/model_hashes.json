@@ -1,0 +1,9 @@
+{
+  "assets/Sainiverse_v0.1.glb": "9665227d7437684f7e663cf73719fc6e49e86a4ca1ed4133d87aee439d02c32f",
+  "source/Sainiverse_v0.1.blend": "df81bf02e5594812aa03075b5c02c682dfd9c28f2c066f1c407bff6d7238c126",
+  "source/assembly.json.gz": "473c76ad6dd0878d78fa85e1317d0e77a3c8d6ebb83c62a4d8b5d2726827e079",
+  "physics/suspended.xml": "0198f0c018bb242094a7df296413a16b418d481cd1a8d4c68662ac2b912e4d7a",
+  "physics/native_spec.json": "f4cb7aa24a1e80da0b70bf339c8610628e7390953fe7cbea1912fbbbc4ee6622",
+  "runtime/suspension_native.gd": "604c50740b6da69cd555db901cdd46df50193b07cf41d28ec3efbb5842c56eae",
+  "runtime/equipment_control.gd": "52f23b54119f72ce07263ce3ae29283c7946bba67680c78f35f013b1ccb8af8b"
+}

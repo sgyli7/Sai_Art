@@ -1,0 +1,38 @@
+{
+  "Sainiverse_v0.1_cabin_patrol.gif": {
+    "frames": 150,
+    "seconds": 10.0,
+    "size": [
+      960,
+      540
+    ],
+    "bytes": 14763817
+  },
+  "Sainiverse_v0.1_worksite.gif": {
+    "frames": 150,
+    "seconds": 10.0,
+    "size": [
+      960,
+      540
+    ],
+    "bytes": 4137617
+  },
+  "Sainiverse_v0.1_sai_boarding.gif": {
+    "frames": 150,
+    "seconds": 10.0,
+    "size": [
+      960,
+      540
+    ],
+    "bytes": 36272715
+  },
+  "Sainiverse_v0.1_hills.gif": {
+    "frames": 150,
+    "seconds": 10.0,
+    "size": [
+      960,
+      540
+    ],
+    "bytes": 18297600
+  }
+}

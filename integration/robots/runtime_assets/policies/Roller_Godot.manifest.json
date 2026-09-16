@@ -1,0 +1,58 @@
+{
+  "action_scale": 1.0,
+  "sim2sim": {
+    "use_stand_policy": false,
+    "twist_limits": {
+      "vmax_x": 0.3,
+      "vmin_x": -0.3,
+      "vmax_y": 0.2,
+      "vmin_y": -0.2,
+      "vmax_ang": 1.5,
+      "switch_threshold": 0.05,
+      "switch_on": 0.1,
+      "switch_off": 0.03,
+      "accel": 12.0,
+      "decel": 20.0
+    },
+    "control": {
+      "dt": 0.005,
+      "decimation": 4
+    }
+  },
+  "research": {
+    "skill": "roller",
+    "source": "/home/ethan/Projects/MicroDuck/sim2sim/results/research_20260910/baseline/roller.onnx",
+    "sha256": "cf05651d2708a2f9364212e86b866c97a70ace8131c492500105e8f28bf99afd",
+    "status": "experimental_candidate",
+    "role": "retained_factory"
+  },
+  "schema_version": 2,
+  "model_api": 1,
+  "obs_len": 61,
+  "action_len": 14,
+  "robot": {
+    "model": "microduck",
+    "hw_rev": 1,
+    "servos": "xl330",
+    "control_hz": 50
+  },
+  "name": "roller_godot",
+  "slot": "roller",
+  "kind": "perpetual",
+  "entry_pose": "standing",
+  "description": "Experimental candidate: retained_factory",
+  "command": {
+    "encoding": "roller_throttle_heading_error",
+    "meaning": "positive push, zero coast, negative brake; command[2]=relative heading error"
+  },
+  "training": {
+    "source": "/home/ethan/Projects/MicroDuck/sim2sim/results/research_20260910/baseline/roller.onnx",
+    "checkpoint": null,
+    "role": "retained_factory"
+  },
+  "eval": {
+    "bundle": "../bundle.json",
+    "summary": "../holdout/summary.json",
+    "relative_to": "manifest_directory"
+  }
+}

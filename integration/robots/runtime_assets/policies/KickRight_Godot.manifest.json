@@ -1,0 +1,64 @@
+{
+  "action_scale": 1.0,
+  "sim2sim": {
+    "use_stand_policy": true,
+    "twist_limits": {
+      "vmax_x": 0.3,
+      "vmin_x": -0.3,
+      "vmax_y": 0.2,
+      "vmin_y": -0.2,
+      "vmax_ang": 1.5,
+      "switch_threshold": 0.05,
+      "switch_on": 0.1,
+      "switch_off": 0.03,
+      "accel": 12.0,
+      "decel": 20.0
+    },
+    "control": {
+      "dt": 0.005,
+      "decimation": 4
+    }
+  },
+  "research": {
+    "skill": "kick_right",
+    "source": "/home/ethan/Projects/MicroDuck/sim2sim/results/research_20260910/runs/kr06_phase_support/final.onnx",
+    "sha256": "103c2018cedb778e38801e092061490407835d7efad22660bb9bc2d57f90c8fe",
+    "status": "experimental_candidate",
+    "role": "learned_phase_and_relative_heading_residual_on_adapted_right"
+  },
+  "schema_version": 2,
+  "model_api": 1,
+  "obs_len": 61,
+  "action_len": 14,
+  "robot": {
+    "model": "microduck",
+    "hw_rev": 1,
+    "servos": "xl330",
+    "control_hz": 50
+  },
+  "name": "kick_right_godot",
+  "slot": "kick_right",
+  "kind": "one_shot",
+  "entry_pose": "standing",
+  "description": "Experimental candidate: learned_phase_and_relative_heading_residual_on_adapted_right",
+  "command": {
+    "encoding": "one_shot_time",
+    "period_s": 5.0,
+    "meaning": "obs[48]=elapsed_seconds/5; obs[49:51]=declared relative-heading sine/cosine; remaining command entries zero",
+    "heading": "lateral_axis_sin_cos, relative to orientation at skill entry"
+  },
+  "training": {
+    "source": "/home/ethan/Projects/MicroDuck/sim2sim/results/research_20260910/runs/kr06_phase_support/final.onnx",
+    "checkpoint": "/home/ethan/Projects/MicroDuck/sim2sim/results/research_20260910/runs/kr06_phase_support/final_00043.pt",
+    "role": "learned_phase_and_relative_heading_residual_on_adapted_right"
+  },
+  "eval": {
+    "bundle": "../bundle.json",
+    "summary": "../holdout/summary.json",
+    "relative_to": "manifest_directory"
+  },
+  "runtime_requires": [
+    "one_shot_time",
+    "lateral_axis_sin_cos"
+  ]
+}

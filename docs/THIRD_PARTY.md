@@ -14,7 +14,7 @@ Downloaded at the user's request from these mod.io file endpoints:
 - https://g-306.modapi.io/v1/games/306/mods/3403239/files/4424174/download
 - https://g-306.modapi.io/v1/games/306/mods/2186838/files/5656732/download
 
-Only the selected GEOTECH, SPECIALIZED TRANSPORT and KEMCO industrial assets from the first archive are included. Original author credits and inspection details are retained in `vehicles/Sainiverse_001/docs/USER_STICKER_PACKS.md`. No cartoon animal artwork, full mod archive or other mod content is bundled. The second archive's problematic decoding was rejected. No broad cross-project redistribution license was found in the inspected readme; the selected assets remain separately identified user-provided third-party material in this private review.
+Only the selected GEOTECH, SPECIALIZED TRANSPORT and KEMCO industrial assets from the first archive are included. Original author credits and inspection details are retained in `vehicles/Sainiverse_v0.1/docs/USER_STICKER_PACKS.md`. No cartoon animal artwork, full mod archive or other mod content is bundled. The second archive's problematic decoding was rejected. No broad cross-project redistribution license was found in the inspected readme; the selected assets remain separately identified user-provided third-party material in this private review.
 
 ## Original labels / algorithms
 

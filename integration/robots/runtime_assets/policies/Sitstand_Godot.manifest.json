@@ -1,0 +1,58 @@
+{
+  "action_scale": 1.0,
+  "sim2sim": {
+    "use_stand_policy": true,
+    "twist_limits": {
+      "vmax_x": 0.3,
+      "vmin_x": -0.3,
+      "vmax_y": 0.2,
+      "vmin_y": -0.2,
+      "vmax_ang": 1.5,
+      "switch_threshold": 0.05,
+      "switch_on": 0.1,
+      "switch_off": 0.03,
+      "accel": 12.0,
+      "decel": 20.0
+    },
+    "control": {
+      "dt": 0.005,
+      "decimation": 4
+    }
+  },
+  "research": {
+    "skill": "sitstand",
+    "source": "/home/ethan/Projects/MicroDuck/sim2sim/results/research_20260910/baseline/Sitstand_Godot.onnx",
+    "sha256": "e031f1a4afad2b64a01db37d8e0d3795b66ebe77087241574a6287fc705720f0",
+    "status": "experimental_candidate",
+    "role": "retained_previous"
+  },
+  "schema_version": 2,
+  "model_api": 1,
+  "obs_len": 61,
+  "action_len": 14,
+  "robot": {
+    "model": "microduck",
+    "hw_rev": 1,
+    "servos": "xl330",
+    "control_hz": 50
+  },
+  "name": "sitstand_godot",
+  "slot": "sitstand",
+  "kind": "one_shot",
+  "entry_pose": "standing",
+  "description": "Experimental candidate: retained_previous",
+  "command": {
+    "encoding": "sit_flag",
+    "meaning": "command[0]=1 sit; 0 stand"
+  },
+  "training": {
+    "source": "/home/ethan/Projects/MicroDuck/sim2sim/results/research_20260910/baseline/Sitstand_Godot.onnx",
+    "checkpoint": null,
+    "role": "retained_previous"
+  },
+  "eval": {
+    "bundle": "../bundle.json",
+    "summary": "../holdout/summary.json",
+    "relative_to": "manifest_directory"
+  }
+}

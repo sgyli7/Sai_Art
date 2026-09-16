@@ -1,0 +1,356 @@
+[
+  {
+    "name": "lift_front_right",
+    "hull": "front",
+    "side": -1,
+    "pivot": [
+      0.0,
+      -13.3,
+      7.325
+    ],
+    "groups": [
+      "lift_front_right_out",
+      "lift_front_right_stage1",
+      "lift_front_right_stage2",
+      "lift_front_right_stage3"
+    ],
+    "stroke_out": 2.7,
+    "stroke_stage": 2.4499999999999997,
+    "platform_size": [
+      3.2,
+      2.2,
+      0.25
+    ],
+    "masses": [
+      450,
+      180,
+      150,
+      600
+    ],
+    "payload_assumption_kg": 500,
+    "ramp": {
+      "name": "lift_front_right_ramp",
+      "pivot": [
+        0.0,
+        -14.4,
+        7.45
+      ],
+      "axis": [
+        1,
+        0,
+        0
+      ],
+      "mass_kg": 120.0,
+      "size_m": [
+        2.0,
+        0.04,
+        2.0
+      ],
+      "com_source_m": [
+        0,
+        0,
+        1.0
+      ],
+      "range_rad": [
+        0.0,
+        1.76
+      ],
+      "torque_cap_Nm": 3000.0
+    }
+  },
+  {
+    "name": "lift_front_left",
+    "hull": "front",
+    "side": 1,
+    "pivot": [
+      0.0,
+      13.3,
+      7.325
+    ],
+    "groups": [
+      "lift_front_left_out",
+      "lift_front_left_stage1",
+      "lift_front_left_stage2",
+      "lift_front_left_stage3"
+    ],
+    "stroke_out": 2.7,
+    "stroke_stage": 2.4499999999999997,
+    "platform_size": [
+      3.2,
+      2.2,
+      0.25
+    ],
+    "masses": [
+      450,
+      180,
+      150,
+      600
+    ],
+    "payload_assumption_kg": 500,
+    "ramp": {
+      "name": "lift_front_left_ramp",
+      "pivot": [
+        0.0,
+        14.4,
+        7.45
+      ],
+      "axis": [
+        -1,
+        0,
+        0
+      ],
+      "mass_kg": 120.0,
+      "size_m": [
+        2.0,
+        0.04,
+        2.0
+      ],
+      "com_source_m": [
+        0,
+        0,
+        1.0
+      ],
+      "range_rad": [
+        0.0,
+        1.76
+      ],
+      "torque_cap_Nm": 3000.0
+    }
+  },
+  {
+    "name": "lift_rear_right",
+    "hull": "rear",
+    "side": -1,
+    "pivot": [
+      -42.0,
+      -13.3,
+      7.325
+    ],
+    "groups": [
+      "lift_rear_right_out",
+      "lift_rear_right_stage1",
+      "lift_rear_right_stage2",
+      "lift_rear_right_stage3"
+    ],
+    "stroke_out": 2.7,
+    "stroke_stage": 2.4499999999999997,
+    "platform_size": [
+      3.2,
+      2.2,
+      0.25
+    ],
+    "masses": [
+      450,
+      180,
+      150,
+      600
+    ],
+    "payload_assumption_kg": 500,
+    "ramp": {
+      "name": "lift_rear_right_ramp",
+      "pivot": [
+        -42.0,
+        -14.4,
+        7.45
+      ],
+      "axis": [
+        1,
+        0,
+        0
+      ],
+      "mass_kg": 120.0,
+      "size_m": [
+        2.0,
+        0.04,
+        2.0
+      ],
+      "com_source_m": [
+        0,
+        0,
+        1.0
+      ],
+      "range_rad": [
+        0.0,
+        1.76
+      ],
+      "torque_cap_Nm": 3000.0
+    }
+  },
+  {
+    "name": "lift_rear_left",
+    "hull": "rear",
+    "side": 1,
+    "pivot": [
+      -42.0,
+      13.3,
+      7.325
+    ],
+    "groups": [
+      "lift_rear_left_out",
+      "lift_rear_left_stage1",
+      "lift_rear_left_stage2",
+      "lift_rear_left_stage3"
+    ],
+    "stroke_out": 2.7,
+    "stroke_stage": 2.4499999999999997,
+    "platform_size": [
+      3.2,
+      2.2,
+      0.25
+    ],
+    "masses": [
+      450,
+      180,
+      150,
+      600
+    ],
+    "payload_assumption_kg": 500,
+    "ramp": {
+      "name": "lift_rear_left_ramp",
+      "pivot": [
+        -42.0,
+        14.4,
+        7.45
+      ],
+      "axis": [
+        -1,
+        0,
+        0
+      ],
+      "mass_kg": 120.0,
+      "size_m": [
+        2.0,
+        0.04,
+        2.0
+      ],
+      "com_source_m": [
+        0,
+        0,
+        1.0
+      ],
+      "range_rad": [
+        0.0,
+        1.76
+      ],
+      "torque_cap_Nm": 3000.0
+    }
+  },
+  {
+    "name": "lift_tail_right",
+    "hull": "tail",
+    "side": -1,
+    "pivot": [
+      -84.0,
+      -13.3,
+      7.325
+    ],
+    "groups": [
+      "lift_tail_right_out",
+      "lift_tail_right_stage1",
+      "lift_tail_right_stage2",
+      "lift_tail_right_stage3"
+    ],
+    "stroke_out": 2.7,
+    "stroke_stage": 2.4499999999999997,
+    "platform_size": [
+      3.2,
+      2.2,
+      0.25
+    ],
+    "masses": [
+      450,
+      180,
+      150,
+      600
+    ],
+    "payload_assumption_kg": 500,
+    "ramp": {
+      "name": "lift_tail_right_ramp",
+      "pivot": [
+        -84.0,
+        -14.4,
+        7.45
+      ],
+      "axis": [
+        1,
+        0,
+        0
+      ],
+      "mass_kg": 120.0,
+      "size_m": [
+        2.0,
+        0.04,
+        2.0
+      ],
+      "com_source_m": [
+        0,
+        0,
+        1.0
+      ],
+      "range_rad": [
+        0.0,
+        1.76
+      ],
+      "torque_cap_Nm": 3000.0
+    }
+  },
+  {
+    "name": "lift_tail_left",
+    "hull": "tail",
+    "side": 1,
+    "pivot": [
+      -84.0,
+      13.3,
+      7.325
+    ],
+    "groups": [
+      "lift_tail_left_out",
+      "lift_tail_left_stage1",
+      "lift_tail_left_stage2",
+      "lift_tail_left_stage3"
+    ],
+    "stroke_out": 2.7,
+    "stroke_stage": 2.4499999999999997,
+    "platform_size": [
+      3.2,
+      2.2,
+      0.25
+    ],
+    "masses": [
+      450,
+      180,
+      150,
+      600
+    ],
+    "payload_assumption_kg": 500,
+    "ramp": {
+      "name": "lift_tail_left_ramp",
+      "pivot": [
+        -84.0,
+        14.4,
+        7.45
+      ],
+      "axis": [
+        -1,
+        0,
+        0
+      ],
+      "mass_kg": 120.0,
+      "size_m": [
+        2.0,
+        0.04,
+        2.0
+      ],
+      "com_source_m": [
+        0,
+        0,
+        1.0
+      ],
+      "range_rad": [
+        0.0,
+        1.76
+      ],
+      "torque_cap_Nm": 3000.0
+    }
+  }
+]

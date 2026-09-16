@@ -1,0 +1,21 @@
+{
+  "gpu": "NVIDIA GB10",
+  "godot": "4.7.2-stable (official)",
+  "resolution": [
+    1920,
+    1080
+  ],
+  "physics_hz": 200,
+  "msaa": 4,
+  "rendering_method": "forward_plus",
+  "frames": 7710,
+  "median_fps": 81.71269815329302,
+  "p95_frame_ms": 18.713,
+  "p99_frame_ms": 20.618,
+  "peak_speed_kmh": 100.000902557373,
+  "seconds": 100.004999999982,
+  "wall_seconds": 101.618317,
+  "simulation_wall_ratio": 0.9841237579242923,
+  "failed": false,
+  "capture_enabled": false
+}

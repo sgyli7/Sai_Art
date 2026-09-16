@@ -1,0 +1,72 @@
+{
+  "action_scale": 1.0,
+  "sim2sim": {
+    "use_stand_policy": true,
+    "twist_limits": {
+      "vmax_x": 0.3,
+      "vmin_x": -0.3,
+      "vmax_y": 0.2,
+      "vmin_y": -0.2,
+      "vmax_ang": 1.5,
+      "switch_threshold": 0.05,
+      "switch_on": 0.1,
+      "switch_off": 0.03,
+      "accel": 12.0,
+      "decel": 20.0
+    },
+    "control": {
+      "dt": 0.005,
+      "decimation": 4
+    }
+  },
+  "research": {
+    "skill": "kick_left",
+    "source": "/home/ethan/Projects/MicroDuck/sim2sim/results/research_20260910/runs/k10_quality_larger_residual/iteration_00081.onnx",
+    "sha256": "43c564c9d5d6ab692dfd034cc614420bcb91680e111dd2fa60f9ac0cf3b08ca9",
+    "status": "experimental_candidate",
+    "role": "learned_residual"
+  },
+  "schema_version": 2,
+  "model_api": 1,
+  "obs_len": 61,
+  "action_len": 14,
+  "robot": {
+    "model": "microduck",
+    "hw_rev": 1,
+    "servos": "xl330",
+    "control_hz": 50
+  },
+  "name": "kick_left_godot",
+  "slot": "kick_left",
+  "kind": "one_shot",
+  "entry_pose": "standing",
+  "description": "Experimental candidate: learned_residual",
+  "command": {
+    "encoding": "constant",
+    "value": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  "training": {
+    "source": "/home/ethan/Projects/MicroDuck/sim2sim/results/research_20260910/runs/k10_quality_larger_residual/iteration_00081.onnx",
+    "checkpoint": "/home/ethan/Projects/MicroDuck/sim2sim/results/research_20260910/runs/k10_quality_larger_residual/iteration_00081.pt",
+    "role": "learned_residual"
+  },
+  "eval": {
+    "bundle": "../bundle.json",
+    "summary": "../holdout/summary.json",
+    "relative_to": "manifest_directory"
+  }
+}
