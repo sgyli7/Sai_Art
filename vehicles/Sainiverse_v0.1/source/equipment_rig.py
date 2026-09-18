@@ -28,25 +28,36 @@ def author(a,add,rod,O):
    d=hook-pin;d[2]=0;d/=np.linalg.norm(d);v=np.array([d[1],-d[0],0.]);prefix=f'{hull}_crane{index}'
    yaw=prefix+'_slew';luff=prefix+'_luff';ext=prefix+'_extend';hang=prefix+'_hook'
    base=pin+[0,0,-1.68]
-   body(yaw,base,hull,hull,[0,0,1],[-math.pi/3,math.pi/3]);body(luff,pin,hull,yaw,v,[0.,math.radians(35)])
-   body(ext,pin,hull,luff,d,[-.9,1.8],'slide');body(hang,hook,hull,None)
+   body(yaw,base,hull,hull,[0,0,1],[-math.radians(170),math.radians(170)]);body(luff,pin,hull,yaw,v,[0.,math.radians(35)])
+   stage1=prefix+'_stage1';stage2=prefix+'_stage2'
+   body(stage1,pin,hull,luff,d,[0.,4.30],'slide');body(stage2,pin,hull,stage1,d,[0.,4.00],'slide');body(ext,pin,hull,stage2,d,[0.,3.80],'slide')
+   old_hook=hook.copy();old_tip=float(np.dot(hook-pin,d));tip_u=7.08
+   hook=pin+d*tip_u+[0,0,.34-1.3-.32]
+   shift_hook=hook-old_hook;shift_tip=d*(tip_u-old_tip)
+   body(hang,hook,hull,None)
    def cp(u,w,z):return pin+d*u+v*w+np.array([0,0,z-pin[2]])
    cylinder_a=cp(1.,0,14.85);cylinder_b=cp(3.4,0,17.08)
    to_remove=[]
    for p in upper:
     n=p['name'].split('_',1)[-1];c=center(p);u=np.dot(c-pin,d)
-    if n in ['winch_rope','crane_cylinder_barrel','crane_cylinder_rod','crane_hydraulic_pin']:
+    if n in ['winch_rope','crane_cylinder_barrel','crane_cylinder_rod','crane_hydraulic_pin','crane_root_cheek','crane_root_top','crane_root_bottom','crane_boom','crane_inner_top','crane_inner_bottom','crane_slide_pad']:
      to_remove.append(p);continue
     if n=='crane_cylinder_upper_ear':
      p['vertices']=(np.array(p['vertices'])-.65*d).tolist();g=luff
-    elif n.startswith('hook') or n=='hook':g=hang
-    elif n in ['crane_boom','crane_inner_top','crane_inner_bottom','crane_tip_cheek']:g=ext
-    elif n in ['crane_rope_sheave','crane_sheave_flange'] and u>6.:g=ext
+    elif n.startswith('hook') or n=='hook':
+     p['vertices']=(np.array(p['vertices'])+shift_hook).tolist();g=hang
+    elif n=='crane_tip_cheek':
+     p['vertices']=(np.array(p['vertices'])+shift_tip).tolist();g=ext
+    elif n in ['crane_rope_sheave','crane_sheave_flange'] and u>6.:
+     p['vertices']=(np.array(p['vertices'])+shift_tip).tolist();g=ext
     elif n=='crane_slide_pad':g=ext if u>6 else luff
     elif n in ['crane_turning_head','crane_pivot_fork','crane_main_pin','crane_main_pin_cap','crane_cylinder_base_ear']:g=yaw
     else:g=luff
     bind(p,g)
    a['parts']=[p for p in a['parts'] if p not in to_remove]
+   from telescopic_boom import author as author_boom
+   yellow=next(p['material'] for p in upper if p['name'].endswith('_crane_turning_head'))
+   sections=author_boom(pin,d,v,[luff,stage1,stage2,ext],add,rod,yellow)
    # Hydraulic skins are defined once, then only oriented/translated to real
    # eye positions. Their allocated mass remains on the luff body.
    vector=cylinder_b-cylinder_a;L=np.linalg.norm(vector);direction=vector/L
@@ -63,7 +74,7 @@ def author(a,add,rod,O):
     rod('crane_root_rope',winch,root,.026,'steel',luff)
     span(prefix+f'_feed{side}',root,tip,.026,'899292',ext,endpoint(luff,root),endpoint(ext,tip))
     span(prefix+f'_fall{side}',top,bottom,.026,'899292',ext,endpoint(ext,top),endpoint(hang,bottom))
-   rig['cranes'].append({'name':prefix,'hull':hull,'slew':yaw,'luff':luff,'extend':ext,'hook':hang,'direction':d.tolist(),'luff_axis':v.tolist(),'cylinder_a':endpoint(yaw,cylinder_a),'cylinder_b':endpoint(luff,cylinder_b),'tip':endpoint(ext,anchor),'hook_attach':endpoint(hang,hook+[0,0,.32]),'paid_length_m':float(np.linalg.norm(anchor-hook-[0,0,.32])),'rope_stiffness_N_m':300000.,'rope_damping_N_s_m':20000.,'rope_force_cap_N':500000.,'cylinder_force_cap_N':2000000.})
+   rig['cranes'].append({'name':prefix,'hull':hull,'slew':yaw,'luff':luff,'extend':ext,'stages':[stage1,stage2,ext],'stage_strokes_m':[4.30,4.00,3.80],'sections':sections,'extension_range_m':[0.,12.10],'hook':hang,'direction':d.tolist(),'luff_axis':v.tolist(),'cylinder_a':endpoint(yaw,cylinder_a),'cylinder_b':endpoint(luff,cylinder_b),'tip':endpoint(ext,anchor),'hook_attach':endpoint(hang,hook+[0,0,.32]),'paid_length_m':float(np.linalg.norm(anchor-hook-[0,0,.32])),'rope_stiffness_N_m':300000.,'rope_damping_N_s_m':20000.,'rope_force_cap_N':500000.,'cylinder_force_cap_N':2000000.})
  # Receiver yaw and upper bearing fold. Lower support/cylinder geometry stays
  # on the yaw cradle; only the actual shell and shaft rotate at the upper hinge.
  pivot=np.array([-1.,0.,15.75]);hinge=np.array([3.6,0.,20.55]);yaw='receiver_slew';fold='receiver_fold'

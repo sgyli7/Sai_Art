@@ -43,6 +43,8 @@ def export(a,path):
                             if t:
                                 rot=tm.transformations.rotation_matrix(t['angle'],[0,1,0])[:3,:3];points=(points-np.array(t['center']))@rot
                             q=(points[:,ij]-np.array(meta['rect_center']))/np.array(meta['rect_size'])+.5;q[:,1]=1-q[:,1]
+                            if t and t.get('rotate_uv_180'):q=1-q
+                            if t and t.get('rotate_uv_90'):q=np.column_stack([q[:,1],1-q[:,0]])
                             flip=(m.vertex_normals[active,k]>0) if k==1 else (m.vertex_normals[active,k]<0) if k==0 else np.zeros(len(q),dtype=bool)
                             q[flip,0]=1-q[flip,0];coords[active]=q;continue
                         q=(m.vertices[active][:,ij]-lo[ij])/span[ij];q=np.clip(q,.002,.998);q[:,1]=1-q[:,1]

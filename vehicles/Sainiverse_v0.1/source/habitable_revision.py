@@ -141,7 +141,7 @@ def author(a,add,box,rod,role,O):
    outer=boxmesh([x,side*3.50,13.65],[1.26,.08,1.24]);inner=boxmesh([x,side*3.5,13.65],[1.10,.3,1.08]);put('bridge_new_window_frame',tm.boolean.difference([outer,inner],engine='manifold'),'edge')
    bx('bridge_new_window_glass',[x,side*3.51,13.65],[1.12,.025,1.10],'cabin_glass',True)
  # Open a real aft bulkhead doorway into the enclosed stair connector.
- m=tm.boolean.difference([m,boxmesh([16.1,0,12.52],[1.3,2.0,2.40])],engine='manifold');replace(shell,m)
+ m=tm.boolean.difference([m,boxmesh([16.5,0,12.57],[2.0,2.20,2.50])],engine='manifold');replace(shell,m)
  # Extend sole plate to the inside of the actual end and corner shell. No daylight slit.
  fp=next(p for p in a['parts'] if p['name'].endswith('_continuous_floor'))
  poly=Polygon([(16.05,-3.42),(32.02,-3.42),(34.02,-2.77),(34.02,2.77),(32.02,3.42),(16.05,3.42)])
@@ -265,13 +265,21 @@ def author(a,add,box,rod,role,O):
   rail('internal_stair_handrail',[5.70,side*.93,8.48],[13.55,side*.93,12.40],.032)
   for i in [0,5,10,15,19]:
    x=5.8+(i+.5)*.38;z=7.55+(i+1)*.19;rail('internal_stair_post',[x,side*.93,z],[x,side*.93,z+1.0],.025)
- bx('enclosed_connector_floor',[14.85,0,11.275],[3.1,2.20,.15],'cabin_floor',True,'floor')
- for side in [-1,1]:bx('enclosed_connector_wall',[14.90,side*1.18,12.57],[3.1,.16,2.60],ivory,True,'wall')
- bx('stairhouse_roof',[13.18,0,13.91],[6.50,2.52,.16],ivory,True,'ceiling')
- for side in [-1,1]:bx('stairhouse_coaming',[11.68,side*1.18,13.38],[3.35,.16,1.06],ivory,True,'wall')
+ bx('enclosed_connector_floor',[14.675,0,11.275],[2.75,2.20,.15],'cabin_floor',True,'floor')
+ for side in [-1,1]:
+  # Painted pressure/weather skin follows the active exterior livery.  A
+  # separate inset lining carries the occupied-space finish on the inside.
+  bx('enclosed_connector_wall',[15.20,side*1.18,12.57],[3.70,.16,2.60],ivory,True,'wall')
+  bx('enclosed_connector_inner_lining',[15.17,side*1.085,12.57],[3.60,.02,2.50],'cabin_lining',cat='wall')
+ bx('stairhouse_roof',[13.49,0,13.91],[7.12,2.52,.16],ivory,True,'ceiling')
+ bx('stairhouse_ceiling_lining',[13.46,0,13.815],[6.94,2.14,.02],'cabin_lining',cat='ceiling')
+ for side in [-1,1]:
+  bx('stairhouse_coaming',[11.68,side*1.18,13.38],[3.35,.16,1.06],ivory,True,'wall')
+  bx('stairhouse_coaming_inner_lining',[11.68,side*1.085,13.38],[3.23,.02,.96],'cabin_lining',cat='wall')
  bx('stairhouse_coaming_end',[9.96,0,13.38],[.12,2.52,1.06],ivory,True,'wall')
+ bx('stairhouse_coaming_end_inner_lining',[10.03,0,13.38],[.02,2.34,.96],'cabin_lining',cat='wall')
  # Aft doorway stays an open passage; frame radii echo watertight ship bulkheads.
- for x in [14.15,16.17]:
+ for x in [14.15,17.08]:
   for side in [-1,1]:bx('passage_jamb',[x,side*1.06,12.53],[.16,.12,2.36],steel,True,'wall')
   bx('passage_header',[x,0,13.72],[.16,2.24,.12],steel,True,'wall')
   for side in [-1,1]:rail('passage_grab',[x+.10,side*1.10,12.25],[x+.10,side*1.10,12.95],.023)

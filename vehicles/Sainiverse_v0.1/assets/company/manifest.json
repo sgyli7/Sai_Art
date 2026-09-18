@@ -1325,6 +1325,102 @@
         0.710205078125
       ],
       "aspect": 0.32882882882882886
+    },
+    {
+      "name": "fleet_0",
+      "source": "original procedural fleet label using supplied compact mark",
+      "method": "deterministic vector/text layout",
+      "size": [
+        1024,
+        384
+      ],
+      "uv_rect": [
+        0.7578125,
+        0.6611328125,
+        0.9921875,
+        0.705078125
+      ],
+      "aspect": 2.6666666666666665
+    },
+    {
+      "name": "fleet_1",
+      "source": "original procedural fleet label using supplied compact mark",
+      "method": "deterministic vector/text layout",
+      "size": [
+        1024,
+        384
+      ],
+      "uv_rect": [
+        0.0078125,
+        0.7861328125,
+        0.2421875,
+        0.830078125
+      ],
+      "aspect": 2.6666666666666665
+    },
+    {
+      "name": "fleet_2",
+      "source": "original procedural fleet label using supplied compact mark",
+      "method": "deterministic vector/text layout",
+      "size": [
+        1024,
+        384
+      ],
+      "uv_rect": [
+        0.2578125,
+        0.7861328125,
+        0.4921875,
+        0.830078125
+      ],
+      "aspect": 2.6666666666666665
+    },
+    {
+      "name": "fleet_3",
+      "source": "original procedural fleet label using supplied compact mark",
+      "method": "deterministic vector/text layout",
+      "size": [
+        1024,
+        384
+      ],
+      "uv_rect": [
+        0.5078125,
+        0.7861328125,
+        0.7421875,
+        0.830078125
+      ],
+      "aspect": 2.6666666666666665
+    },
+    {
+      "name": "fleet_4",
+      "source": "original procedural fleet label using supplied compact mark",
+      "method": "deterministic vector/text layout",
+      "size": [
+        1024,
+        384
+      ],
+      "uv_rect": [
+        0.7578125,
+        0.7861328125,
+        0.9921875,
+        0.830078125
+      ],
+      "aspect": 2.6666666666666665
+    },
+    {
+      "name": "fleet_5",
+      "source": "original procedural fleet label using supplied compact mark",
+      "method": "deterministic vector/text layout",
+      "size": [
+        1024,
+        384
+      ],
+      "uv_rect": [
+        0.0078125,
+        0.9111328125,
+        0.2421875,
+        0.955078125
+      ],
+      "aspect": 2.6666666666666665
     }
   ]
 }

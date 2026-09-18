@@ -20,7 +20,7 @@ def compile(a,s,b,params,root,O):
    if any(node.get(k) in obsolete for k in ['joint','joint1','joint2','body1','body2']):container.remove(node)
  access=s['contact']['access'];access['doors']=[q for q in access['doors'] if q['name'] not in obsolete];params['access']=access
  c=s['contact']['interior'];old=c['shapes'];shapes=[]
- aftcut=boxmesh([16.1,0,12.52],[1.3,2,2.4])
+ aftcut=boxmesh([16.5,0,12.57],[2.0,2.20,2.50])
  for q in old:
   n=q['name']
   if n.startswith('wall_piece_'):

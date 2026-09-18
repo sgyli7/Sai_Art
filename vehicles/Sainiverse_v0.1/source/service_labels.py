@@ -50,8 +50,8 @@ def build(out):
     covers=Image.new('RGBA',(1024,576))
     # Each wall retains a clear reading zone; silhouettes differ within the same strip.
     for row,i in enumerate([0,2,1,3]):
+        if row==0:continue # A full-resolution native company decal owns this panel.
         lab=draw_label(i);lab.thumbnail((680,138));covers.paste(lab,(int((1024-lab.width)/2),row*144+3))
-    covers.paste(Image.open(out.parent/'user_stickers/aigle.png').convert('RGBA').resize((1024,144)),(0,0))
     covers.save(out/'service_stickers.png')
     (out/'equipment_labels.json').write_text(json.dumps([dict(id=i,title=t,subtitle=s,symbol=k) for i,(t,s,k) in enumerate(LABELS)],indent=2))
 def assign(a):
@@ -64,7 +64,7 @@ def assign(a):
         elif n.endswith('bridge_door_leaf'):i=7
         elif 'workbench_backboard' in n:i=11
         elif n.endswith('lift_controls'):i=4
-        elif 'container_' in n and '_closed_front_panel' in n:i=6;axis=0
+        elif 'container_' in n and '_closed_front_panel' in n:continue # Native fleet decal owns this face.
         if 'cockpit_tile' in p:
             i=p['cockpit_tile'];axis=p['cockpit_axis']
         if i is None:continue

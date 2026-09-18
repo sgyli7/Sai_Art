@@ -57,13 +57,28 @@ def build():
             mask=mask.resize(im.size,Image.Resampling.LANCZOS).filter(ImageFilter.MinFilter(3))
             out=im.copy();out.putalpha(mask);bounds=mask.getbbox();out=out.crop(bounds);out.save(ROOT/f'{name}.png')
             items.append(dict(name=name,source=src,polygon=points,crop=list(bounds),method='traced die-cut silhouette, antialiased alpha',size=list(out.size)))
-    atlas=Image.new('RGBA',(2048,4096));preview=Image.new('RGB',(2048,4096),(61,69,73));draw=ImageDraw.Draw(preview)
+    # Original fleet labels use the supplied identity and consistent stencil rules.
+    for i,title in enumerate(['FIELD POWER','SCIENCE / LAB','THERMAL STORE','HABITAT KIT','FIELD SPARES','DRIVE SERVICE']):
+        im=Image.new('RGBA',(1024,384));d=ImageDraw.Draw(im);ink=(211,210,195,255)
+        d.rounded_rectangle((5,5,1019,379),radius=18,outline=ink,width=5)
+        logo=Image.open(ROOT/'compact_light.png');logo.thumbnail((160,205));im.paste(logo,(32,55),logo)
+        d.text((220,48),title,font=ImageFont.truetype('/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf',54),fill=ink)
+        d.text((224,128),f'SAI / F{i+1:02d}     MODULAR SYSTEM',font=ImageFont.truetype('/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf',27),fill=ink)
+        d.line((224,186,966,186),fill=ink,width=3)
+        d.text((224,218),'LOCK 4 CORNERS / LIFT FROM ABOVE',font=ImageFont.truetype('/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf',24),fill=ink)
+        for x in range(224,960,46):d.rectangle((x,298,x+21,307),fill=(204,165,70,255))
+        rng=np.random.default_rng(831+i)
+        for _ in range(24):
+            x=int(rng.integers(15,1004));y=int(rng.choice([7,377]));d.line((x,y,x+int(rng.integers(3,17)),y),fill=(0,0,0,0),width=3)
+        name=f'fleet_{i}';im.save(ROOT/f'{name}.png');items.append(dict(name=name,source='original procedural fleet label using supplied compact mark',method='deterministic vector/text layout',size=list(im.size)))
+    height=512*((len(items)+3)//4)
+    atlas=Image.new('RGBA',(2048,height));preview=Image.new('RGB',(2048,height),(61,69,73));draw=ImageDraw.Draw(preview)
     for i,item in enumerate(items):
         im=Image.open(ROOT/(item['name']+'.png'));im.thumbnail((480,444),Image.Resampling.LANCZOS)
         x=(i%4)*512+(512-im.width)//2;y=(i//4)*512+(476-im.height)//2
         atlas.paste(im,(x,y));preview.paste(im,(x,y),im)
         draw.text(((i%4)*512+16,(i//4)*512+479),item['name'],fill=(237,233,214),font=ImageFont.truetype('/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf',19))
-        item['uv_rect']=[x/2048,y/4096,(x+im.width)/2048,(y+im.height)/4096]
+        item['uv_rect']=[x/2048,y/height,(x+im.width)/2048,(y+im.height)/height]
         item['aspect']=item['size'][0]/item['size'][1]
     atlas.save(ROOT/'company_atlas.png');preview.crop((0,0,2048,512*((len(items)+3)//4))).resize((1024,256*((len(items)+3)//4))).save(ROOT/'contact_sheet.png')
     manifest=dict(provenance='User-supplied company identity artwork, 2026-09-17; source boards preserved unchanged. Cropping/alpha extraction only.',sources={p.name:hashlib.sha256(p.read_bytes()).hexdigest() for p in (ROOT/'source').glob('*.png')},items=items)

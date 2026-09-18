@@ -1,6 +1,24 @@
 [
   {
-    "name": "r027_2555_company_horizontal_dark",
+    "name": "r027_2761_company_compact_light",
+    "art": "compact_light",
+    "body": "front",
+    "zone": "exterior",
+    "center_source_m": [
+      -5.55,
+      -10.51,
+      10.6
+    ],
+    "width_m": 1.0,
+    "height_m": 1.0769230769230769,
+    "normal": [
+      0.0,
+      -1.0,
+      0.0
+    ]
+  },
+  {
+    "name": "r027_2762_company_horizontal_dark",
     "art": "horizontal_dark",
     "body": "front",
     "zone": "interior",
@@ -18,7 +36,7 @@
     ]
   },
   {
-    "name": "r027_2556_company_field_strip",
+    "name": "r027_2763_company_field_strip",
     "art": "field_strip",
     "body": "front",
     "zone": "interior",
@@ -36,7 +54,7 @@
     ]
   },
   {
-    "name": "r027_2557_company_compact_light",
+    "name": "r027_2764_company_compact_light",
     "art": "compact_light",
     "body": "front",
     "zone": "interior",
@@ -54,7 +72,7 @@
     ]
   },
   {
-    "name": "r027_2558_company_worn_medium",
+    "name": "r027_2765_company_worn_medium",
     "art": "worn_medium",
     "body": "front",
     "zone": "interior",
@@ -72,7 +90,7 @@
     ]
   },
   {
-    "name": "r027_2559_company_field_id",
+    "name": "r027_2766_company_field_id",
     "art": "field_id",
     "body": "front",
     "zone": "interior",
@@ -90,7 +108,7 @@
     ]
   },
   {
-    "name": "r027_2560_company_worn_banner",
+    "name": "r027_2767_company_worn_banner",
     "art": "worn_banner",
     "body": "front",
     "zone": "interior",
@@ -108,7 +126,7 @@
     ]
   },
   {
-    "name": "r027_2561_company_horizontal_dark",
+    "name": "r027_2768_company_horizontal_dark",
     "art": "horizontal_dark",
     "body": "front",
     "zone": "interior",
@@ -126,7 +144,7 @@
     ]
   },
   {
-    "name": "r027_2562_company_horizontal_light",
+    "name": "r027_2769_company_horizontal_light",
     "art": "horizontal_light",
     "body": "front",
     "zone": "exterior",
@@ -144,7 +162,25 @@
     ]
   },
   {
-    "name": "r027_2563_company_horizontal_dark",
+    "name": "r027_2770_company_compact_light",
+    "art": "compact_light",
+    "body": "front",
+    "zone": "exterior",
+    "center_source_m": [
+      -5.55,
+      10.51,
+      10.6
+    ],
+    "width_m": 1.0,
+    "height_m": 1.0769230769230769,
+    "normal": [
+      0.0,
+      1.0,
+      -0.0
+    ]
+  },
+  {
+    "name": "r027_2771_company_horizontal_dark",
     "art": "horizontal_dark",
     "body": "front",
     "zone": "interior",
@@ -162,7 +198,7 @@
     ]
   },
   {
-    "name": "r027_2564_company_field_strip",
+    "name": "r027_2772_company_field_strip",
     "art": "field_strip",
     "body": "front",
     "zone": "interior",
@@ -180,7 +216,7 @@
     ]
   },
   {
-    "name": "r027_2565_company_compact_light",
+    "name": "r027_2773_company_compact_light",
     "art": "compact_light",
     "body": "front",
     "zone": "interior",
@@ -198,7 +234,7 @@
     ]
   },
   {
-    "name": "r027_2566_company_field_hex",
+    "name": "r027_2774_company_field_hex",
     "art": "field_hex",
     "body": "front",
     "zone": "interior",
@@ -216,7 +252,7 @@
     ]
   },
   {
-    "name": "r027_2567_company_field_id",
+    "name": "r027_2775_company_field_id",
     "art": "field_id",
     "body": "front",
     "zone": "interior",
@@ -234,7 +270,7 @@
     ]
   },
   {
-    "name": "r027_2568_company_worn_banner",
+    "name": "r027_2776_company_worn_banner",
     "art": "worn_banner",
     "body": "front",
     "zone": "interior",
@@ -252,7 +288,7 @@
     ]
   },
   {
-    "name": "r027_2569_company_field_id",
+    "name": "r027_2777_company_field_id",
     "art": "field_id",
     "body": "front",
     "zone": "interior",
@@ -270,7 +306,7 @@
     ]
   },
   {
-    "name": "r027_2570_company_horizontal_light",
+    "name": "r027_2778_company_horizontal_light",
     "art": "horizontal_light",
     "body": "front",
     "zone": "exterior",
@@ -288,7 +324,7 @@
     ]
   },
   {
-    "name": "r027_2571_company_worn_stripe",
+    "name": "r027_2779_company_worn_stripe",
     "art": "worn_stripe",
     "body": "front",
     "zone": "exterior",
@@ -306,7 +342,7 @@
     ]
   },
   {
-    "name": "r027_2572_company_worn_stripe",
+    "name": "r027_2780_company_worn_stripe",
     "art": "worn_stripe",
     "body": "front",
     "zone": "exterior",
@@ -324,7 +360,7 @@
     ]
   },
   {
-    "name": "r027_2573_company_field_strip",
+    "name": "r027_2781_company_field_strip",
     "art": "field_strip",
     "body": "rear",
     "zone": "exterior",
@@ -342,7 +378,7 @@
     ]
   },
   {
-    "name": "r027_2574_company_field_strip",
+    "name": "r027_2782_company_field_strip",
     "art": "field_strip",
     "body": "rear",
     "zone": "exterior",
@@ -360,7 +396,7 @@
     ]
   },
   {
-    "name": "r027_2575_company_worn_banner",
+    "name": "r027_2783_company_worn_banner",
     "art": "worn_banner",
     "body": "tail",
     "zone": "exterior",
@@ -378,7 +414,7 @@
     ]
   },
   {
-    "name": "r027_2576_company_worn_banner",
+    "name": "r027_2784_company_worn_banner",
     "art": "worn_banner",
     "body": "tail",
     "zone": "exterior",
@@ -396,7 +432,7 @@
     ]
   },
   {
-    "name": "r027_2577_company_field_id",
+    "name": "r027_2785_company_field_id",
     "art": "field_id",
     "body": "rear",
     "zone": "exterior",
@@ -414,7 +450,7 @@
     ]
   },
   {
-    "name": "r027_2578_company_worn_vertical",
+    "name": "r027_2786_company_worn_vertical",
     "art": "worn_vertical",
     "body": "rear",
     "zone": "exterior",
@@ -432,7 +468,7 @@
     ]
   },
   {
-    "name": "r027_2579_company_field_id",
+    "name": "r027_2787_company_field_id",
     "art": "field_id",
     "body": "rear",
     "zone": "exterior",
@@ -450,7 +486,7 @@
     ]
   },
   {
-    "name": "r027_2580_company_worn_vertical",
+    "name": "r027_2788_company_worn_vertical",
     "art": "worn_vertical",
     "body": "rear",
     "zone": "exterior",
@@ -468,7 +504,7 @@
     ]
   },
   {
-    "name": "r027_2581_company_field_id",
+    "name": "r027_2789_company_field_id",
     "art": "field_id",
     "body": "rear",
     "zone": "exterior",
@@ -486,7 +522,7 @@
     ]
   },
   {
-    "name": "r027_2582_company_worn_vertical",
+    "name": "r027_2790_company_worn_vertical",
     "art": "worn_vertical",
     "body": "rear",
     "zone": "exterior",
@@ -504,7 +540,7 @@
     ]
   },
   {
-    "name": "r027_2583_company_field_id",
+    "name": "r027_2791_company_field_id",
     "art": "field_id",
     "body": "rear",
     "zone": "exterior",
@@ -522,7 +558,7 @@
     ]
   },
   {
-    "name": "r027_2584_company_worn_vertical",
+    "name": "r027_2792_company_worn_vertical",
     "art": "worn_vertical",
     "body": "rear",
     "zone": "exterior",
@@ -540,7 +576,7 @@
     ]
   },
   {
-    "name": "r027_2585_company_field_id",
+    "name": "r027_2793_company_field_id",
     "art": "field_id",
     "body": "tail",
     "zone": "exterior",
@@ -558,7 +594,7 @@
     ]
   },
   {
-    "name": "r027_2586_company_worn_vertical",
+    "name": "r027_2794_company_worn_vertical",
     "art": "worn_vertical",
     "body": "tail",
     "zone": "exterior",
@@ -576,7 +612,7 @@
     ]
   },
   {
-    "name": "r027_2587_company_field_id",
+    "name": "r027_2795_company_field_id",
     "art": "field_id",
     "body": "tail",
     "zone": "exterior",
@@ -594,7 +630,7 @@
     ]
   },
   {
-    "name": "r027_2588_company_worn_vertical",
+    "name": "r027_2796_company_worn_vertical",
     "art": "worn_vertical",
     "body": "tail",
     "zone": "exterior",
@@ -612,7 +648,7 @@
     ]
   },
   {
-    "name": "r027_2589_company_field_id",
+    "name": "r027_2797_company_field_id",
     "art": "field_id",
     "body": "tail",
     "zone": "exterior",
@@ -630,7 +666,7 @@
     ]
   },
   {
-    "name": "r027_2590_company_worn_vertical",
+    "name": "r027_2798_company_worn_vertical",
     "art": "worn_vertical",
     "body": "tail",
     "zone": "exterior",
@@ -648,7 +684,7 @@
     ]
   },
   {
-    "name": "r027_2591_company_field_id",
+    "name": "r027_2799_company_field_id",
     "art": "field_id",
     "body": "tail",
     "zone": "exterior",
@@ -666,7 +702,7 @@
     ]
   },
   {
-    "name": "r027_2592_company_worn_vertical",
+    "name": "r027_2800_company_worn_vertical",
     "art": "worn_vertical",
     "body": "tail",
     "zone": "exterior",
@@ -677,6 +713,3030 @@
     ],
     "width_m": 0.36,
     "height_m": 0.44756756756756755,
+    "normal": [
+      0.0,
+      1.0,
+      -0.0
+    ]
+  },
+  {
+    "name": "r027_2801_company_fleet_0",
+    "art": "fleet_0",
+    "body": "rear",
+    "zone": "cargo",
+    "center_source_m": [
+      -55.92500000357627,
+      -6.47,
+      9.015500000000001
+    ],
+    "width_m": 1.55,
+    "height_m": 0.58125,
+    "normal": [
+      -1.0,
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "name": "r027_2802_company_fleet_0",
+    "art": "fleet_0",
+    "body": "rear",
+    "zone": "cargo",
+    "center_source_m": [
+      -49.84899999642373,
+      -6.47,
+      9.015500000000001
+    ],
+    "width_m": 1.55,
+    "height_m": 0.58125,
+    "normal": [
+      1.0,
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "name": "r027_2803_company_worn_banner",
+    "art": "worn_banner",
+    "body": "rear",
+    "zone": "cargo",
+    "center_source_m": [
+      -52.887,
+      -7.698000003576279,
+      8.8655
+    ],
+    "width_m": 1.75,
+    "height_m": 0.36458333333333337,
+    "normal": [
+      0.0,
+      -1.0,
+      0.0
+    ]
+  },
+  {
+    "name": "r027_2804_company_fleet_1",
+    "art": "fleet_1",
+    "body": "rear",
+    "zone": "cargo",
+    "center_source_m": [
+      -55.92500000357627,
+      -6.47,
+      11.6065
+    ],
+    "width_m": 1.55,
+    "height_m": 0.58125,
+    "normal": [
+      -1.0,
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "name": "r027_2805_company_fleet_1",
+    "art": "fleet_1",
+    "body": "rear",
+    "zone": "cargo",
+    "center_source_m": [
+      -49.84899999642373,
+      -6.47,
+      11.6065
+    ],
+    "width_m": 1.55,
+    "height_m": 0.58125,
+    "normal": [
+      1.0,
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "name": "r027_2806_company_field_strip",
+    "art": "field_strip",
+    "body": "rear",
+    "zone": "cargo",
+    "center_source_m": [
+      -52.887,
+      -7.698000003576279,
+      11.4565
+    ],
+    "width_m": 1.75,
+    "height_m": 0.3570528967254408,
+    "normal": [
+      0.0,
+      -1.0,
+      0.0
+    ]
+  },
+  {
+    "name": "r027_2807_company_fleet_2",
+    "art": "fleet_2",
+    "body": "rear",
+    "zone": "cargo",
+    "center_source_m": [
+      -55.92500000357627,
+      -6.47,
+      14.197500000000002
+    ],
+    "width_m": 1.55,
+    "height_m": 0.58125,
+    "normal": [
+      -1.0,
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "name": "r027_2808_company_fleet_2",
+    "art": "fleet_2",
+    "body": "rear",
+    "zone": "cargo",
+    "center_source_m": [
+      -49.84899999642373,
+      -6.47,
+      14.197500000000002
+    ],
+    "width_m": 1.55,
+    "height_m": 0.58125,
+    "normal": [
+      1.0,
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "name": "r027_2809_company_worn_banner",
+    "art": "worn_banner",
+    "body": "rear",
+    "zone": "cargo",
+    "center_source_m": [
+      -52.887,
+      -7.698000003576279,
+      14.047500000000001
+    ],
+    "width_m": 1.75,
+    "height_m": 0.36458333333333337,
+    "normal": [
+      0.0,
+      -1.0,
+      0.0
+    ]
+  },
+  {
+    "name": "r027_2810_company_fleet_1",
+    "art": "fleet_1",
+    "body": "rear",
+    "zone": "cargo",
+    "center_source_m": [
+      -55.92500000357627,
+      -3.882,
+      9.015500000000001
+    ],
+    "width_m": 1.55,
+    "height_m": 0.58125,
+    "normal": [
+      -1.0,
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "name": "r027_2811_company_fleet_1",
+    "art": "fleet_1",
+    "body": "rear",
+    "zone": "cargo",
+    "center_source_m": [
+      -49.84899999642373,
+      -3.882,
+      9.015500000000001
+    ],
+    "width_m": 1.55,
+    "height_m": 0.58125,
+    "normal": [
+      1.0,
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "name": "r027_2812_company_fleet_2",
+    "art": "fleet_2",
+    "body": "rear",
+    "zone": "cargo",
+    "center_source_m": [
+      -55.92500000357627,
+      -3.882,
+      11.6065
+    ],
+    "width_m": 1.55,
+    "height_m": 0.58125,
+    "normal": [
+      -1.0,
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "name": "r027_2813_company_fleet_2",
+    "art": "fleet_2",
+    "body": "rear",
+    "zone": "cargo",
+    "center_source_m": [
+      -49.84899999642373,
+      -3.882,
+      11.6065
+    ],
+    "width_m": 1.55,
+    "height_m": 0.58125,
+    "normal": [
+      1.0,
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "name": "r027_2814_company_fleet_3",
+    "art": "fleet_3",
+    "body": "rear",
+    "zone": "cargo",
+    "center_source_m": [
+      -55.92500000357627,
+      -3.882,
+      14.197500000000002
+    ],
+    "width_m": 1.55,
+    "height_m": 0.58125,
+    "normal": [
+      -1.0,
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "name": "r027_2815_company_fleet_3",
+    "art": "fleet_3",
+    "body": "rear",
+    "zone": "cargo",
+    "center_source_m": [
+      -49.84899999642373,
+      -3.882,
+      14.197500000000002
+    ],
+    "width_m": 1.55,
+    "height_m": 0.58125,
+    "normal": [
+      1.0,
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "name": "r027_2816_company_fleet_2",
+    "art": "fleet_2",
+    "body": "rear",
+    "zone": "cargo",
+    "center_source_m": [
+      -55.92500000357627,
+      -1.294,
+      9.015500000000001
+    ],
+    "width_m": 1.55,
+    "height_m": 0.58125,
+    "normal": [
+      -1.0,
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "name": "r027_2817_company_fleet_2",
+    "art": "fleet_2",
+    "body": "rear",
+    "zone": "cargo",
+    "center_source_m": [
+      -49.84899999642373,
+      -1.294,
+      9.015500000000001
+    ],
+    "width_m": 1.55,
+    "height_m": 0.58125,
+    "normal": [
+      1.0,
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "name": "r027_2818_company_fleet_3",
+    "art": "fleet_3",
+    "body": "rear",
+    "zone": "cargo",
+    "center_source_m": [
+      -55.92500000357627,
+      -1.294,
+      11.6065
+    ],
+    "width_m": 1.55,
+    "height_m": 0.58125,
+    "normal": [
+      -1.0,
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "name": "r027_2819_company_fleet_3",
+    "art": "fleet_3",
+    "body": "rear",
+    "zone": "cargo",
+    "center_source_m": [
+      -49.84899999642373,
+      -1.294,
+      11.6065
+    ],
+    "width_m": 1.55,
+    "height_m": 0.58125,
+    "normal": [
+      1.0,
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "name": "r027_2820_company_fleet_4",
+    "art": "fleet_4",
+    "body": "cargo_rear_b0_r2_t2",
+    "zone": "cargo",
+    "center_source_m": [
+      -55.92500000357627,
+      -1.294,
+      14.197500000000002
+    ],
+    "width_m": 1.55,
+    "height_m": 0.58125,
+    "normal": [
+      -1.0,
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "name": "r027_2821_company_fleet_4",
+    "art": "fleet_4",
+    "body": "cargo_rear_b0_r2_t2",
+    "zone": "cargo",
+    "center_source_m": [
+      -49.84899999642373,
+      -1.294,
+      14.197500000000002
+    ],
+    "width_m": 1.55,
+    "height_m": 0.58125,
+    "normal": [
+      1.0,
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "name": "r027_2822_company_fleet_3",
+    "art": "fleet_3",
+    "body": "rear",
+    "zone": "cargo",
+    "center_source_m": [
+      -55.92500000357627,
+      1.294,
+      9.015500000000001
+    ],
+    "width_m": 1.55,
+    "height_m": 0.58125,
+    "normal": [
+      -1.0,
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "name": "r027_2823_company_fleet_3",
+    "art": "fleet_3",
+    "body": "rear",
+    "zone": "cargo",
+    "center_source_m": [
+      -49.84899999642373,
+      1.294,
+      9.015500000000001
+    ],
+    "width_m": 1.55,
+    "height_m": 0.58125,
+    "normal": [
+      1.0,
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "name": "r027_2824_company_fleet_4",
+    "art": "fleet_4",
+    "body": "rear",
+    "zone": "cargo",
+    "center_source_m": [
+      -55.92500000357627,
+      1.294,
+      11.6065
+    ],
+    "width_m": 1.55,
+    "height_m": 0.58125,
+    "normal": [
+      -1.0,
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "name": "r027_2825_company_fleet_4",
+    "art": "fleet_4",
+    "body": "rear",
+    "zone": "cargo",
+    "center_source_m": [
+      -49.84899999642373,
+      1.294,
+      11.6065
+    ],
+    "width_m": 1.55,
+    "height_m": 0.58125,
+    "normal": [
+      1.0,
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "name": "r027_2826_company_fleet_5",
+    "art": "fleet_5",
+    "body": "rear",
+    "zone": "cargo",
+    "center_source_m": [
+      -55.92500000357627,
+      1.294,
+      14.197500000000002
+    ],
+    "width_m": 1.55,
+    "height_m": 0.58125,
+    "normal": [
+      -1.0,
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "name": "r027_2827_company_fleet_5",
+    "art": "fleet_5",
+    "body": "rear",
+    "zone": "cargo",
+    "center_source_m": [
+      -49.84899999642373,
+      1.294,
+      14.197500000000002
+    ],
+    "width_m": 1.55,
+    "height_m": 0.58125,
+    "normal": [
+      1.0,
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "name": "r027_2828_company_fleet_4",
+    "art": "fleet_4",
+    "body": "rear",
+    "zone": "cargo",
+    "center_source_m": [
+      -55.92500000357627,
+      3.882,
+      9.015500000000001
+    ],
+    "width_m": 1.55,
+    "height_m": 0.58125,
+    "normal": [
+      -1.0,
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "name": "r027_2829_company_fleet_4",
+    "art": "fleet_4",
+    "body": "rear",
+    "zone": "cargo",
+    "center_source_m": [
+      -49.84899999642373,
+      3.882,
+      9.015500000000001
+    ],
+    "width_m": 1.55,
+    "height_m": 0.58125,
+    "normal": [
+      1.0,
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "name": "r027_2830_company_fleet_5",
+    "art": "fleet_5",
+    "body": "rear",
+    "zone": "cargo",
+    "center_source_m": [
+      -55.92500000357627,
+      3.882,
+      11.6065
+    ],
+    "width_m": 1.55,
+    "height_m": 0.58125,
+    "normal": [
+      -1.0,
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "name": "r027_2831_company_fleet_5",
+    "art": "fleet_5",
+    "body": "rear",
+    "zone": "cargo",
+    "center_source_m": [
+      -49.84899999642373,
+      3.882,
+      11.6065
+    ],
+    "width_m": 1.55,
+    "height_m": 0.58125,
+    "normal": [
+      1.0,
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "name": "r027_2832_company_fleet_0",
+    "art": "fleet_0",
+    "body": "rear",
+    "zone": "cargo",
+    "center_source_m": [
+      -55.92500000357627,
+      3.882,
+      14.197500000000002
+    ],
+    "width_m": 1.55,
+    "height_m": 0.58125,
+    "normal": [
+      -1.0,
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "name": "r027_2833_company_fleet_0",
+    "art": "fleet_0",
+    "body": "rear",
+    "zone": "cargo",
+    "center_source_m": [
+      -49.84899999642373,
+      3.882,
+      14.197500000000002
+    ],
+    "width_m": 1.55,
+    "height_m": 0.58125,
+    "normal": [
+      1.0,
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "name": "r027_2834_company_fleet_5",
+    "art": "fleet_5",
+    "body": "rear",
+    "zone": "cargo",
+    "center_source_m": [
+      -55.92500000357627,
+      6.47,
+      9.015500000000001
+    ],
+    "width_m": 1.55,
+    "height_m": 0.58125,
+    "normal": [
+      -1.0,
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "name": "r027_2835_company_fleet_5",
+    "art": "fleet_5",
+    "body": "rear",
+    "zone": "cargo",
+    "center_source_m": [
+      -49.84899999642373,
+      6.47,
+      9.015500000000001
+    ],
+    "width_m": 1.55,
+    "height_m": 0.58125,
+    "normal": [
+      1.0,
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "name": "r027_2836_company_field_strip",
+    "art": "field_strip",
+    "body": "rear",
+    "zone": "cargo",
+    "center_source_m": [
+      -52.887,
+      7.698000003576279,
+      8.8655
+    ],
+    "width_m": 1.75,
+    "height_m": 0.3570528967254408,
+    "normal": [
+      0.0,
+      1.0,
+      -0.0
+    ]
+  },
+  {
+    "name": "r027_2837_company_fleet_0",
+    "art": "fleet_0",
+    "body": "rear",
+    "zone": "cargo",
+    "center_source_m": [
+      -55.92500000357627,
+      6.47,
+      11.6065
+    ],
+    "width_m": 1.55,
+    "height_m": 0.58125,
+    "normal": [
+      -1.0,
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "name": "r027_2838_company_fleet_0",
+    "art": "fleet_0",
+    "body": "rear",
+    "zone": "cargo",
+    "center_source_m": [
+      -49.84899999642373,
+      6.47,
+      11.6065
+    ],
+    "width_m": 1.55,
+    "height_m": 0.58125,
+    "normal": [
+      1.0,
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "name": "r027_2839_company_worn_banner",
+    "art": "worn_banner",
+    "body": "rear",
+    "zone": "cargo",
+    "center_source_m": [
+      -52.887,
+      7.698000003576279,
+      11.4565
+    ],
+    "width_m": 1.75,
+    "height_m": 0.36458333333333337,
+    "normal": [
+      0.0,
+      1.0,
+      -0.0
+    ]
+  },
+  {
+    "name": "r027_2840_company_fleet_1",
+    "art": "fleet_1",
+    "body": "rear",
+    "zone": "cargo",
+    "center_source_m": [
+      -55.92500000357627,
+      6.47,
+      14.197500000000002
+    ],
+    "width_m": 1.55,
+    "height_m": 0.58125,
+    "normal": [
+      -1.0,
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "name": "r027_2841_company_fleet_1",
+    "art": "fleet_1",
+    "body": "rear",
+    "zone": "cargo",
+    "center_source_m": [
+      -49.84899999642373,
+      6.47,
+      14.197500000000002
+    ],
+    "width_m": 1.55,
+    "height_m": 0.58125,
+    "normal": [
+      1.0,
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "name": "r027_2842_company_field_strip",
+    "art": "field_strip",
+    "body": "rear",
+    "zone": "cargo",
+    "center_source_m": [
+      -52.887,
+      7.698000003576279,
+      14.047500000000001
+    ],
+    "width_m": 1.75,
+    "height_m": 0.3570528967254408,
+    "normal": [
+      0.0,
+      1.0,
+      -0.0
+    ]
+  },
+  {
+    "name": "r027_2843_company_fleet_2",
+    "art": "fleet_2",
+    "body": "rear",
+    "zone": "cargo",
+    "center_source_m": [
+      -48.66700000357629,
+      -6.47,
+      9.015500000000001
+    ],
+    "width_m": 1.55,
+    "height_m": 0.58125,
+    "normal": [
+      -1.0,
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "name": "r027_2844_company_fleet_2",
+    "art": "fleet_2",
+    "body": "rear",
+    "zone": "cargo",
+    "center_source_m": [
+      -42.59099999642372,
+      -6.47,
+      9.015500000000001
+    ],
+    "width_m": 1.55,
+    "height_m": 0.58125,
+    "normal": [
+      1.0,
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "name": "r027_2845_company_worn_banner",
+    "art": "worn_banner",
+    "body": "rear",
+    "zone": "cargo",
+    "center_source_m": [
+      -45.629000000000005,
+      -7.698000003576279,
+      8.8655
+    ],
+    "width_m": 1.75,
+    "height_m": 0.36458333333333337,
+    "normal": [
+      0.0,
+      -1.0,
+      0.0
+    ]
+  },
+  {
+    "name": "r027_2846_company_fleet_3",
+    "art": "fleet_3",
+    "body": "rear",
+    "zone": "cargo",
+    "center_source_m": [
+      -48.66700000357629,
+      -6.47,
+      11.6065
+    ],
+    "width_m": 1.55,
+    "height_m": 0.58125,
+    "normal": [
+      -1.0,
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "name": "r027_2847_company_fleet_3",
+    "art": "fleet_3",
+    "body": "rear",
+    "zone": "cargo",
+    "center_source_m": [
+      -42.59099999642372,
+      -6.47,
+      11.6065
+    ],
+    "width_m": 1.55,
+    "height_m": 0.58125,
+    "normal": [
+      1.0,
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "name": "r027_2848_company_field_strip",
+    "art": "field_strip",
+    "body": "rear",
+    "zone": "cargo",
+    "center_source_m": [
+      -45.629000000000005,
+      -7.698000003576279,
+      11.4565
+    ],
+    "width_m": 1.75,
+    "height_m": 0.3570528967254408,
+    "normal": [
+      0.0,
+      -1.0,
+      0.0
+    ]
+  },
+  {
+    "name": "r027_2849_company_fleet_4",
+    "art": "fleet_4",
+    "body": "rear",
+    "zone": "cargo",
+    "center_source_m": [
+      -48.66700000357629,
+      -6.47,
+      14.197500000000002
+    ],
+    "width_m": 1.55,
+    "height_m": 0.58125,
+    "normal": [
+      -1.0,
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "name": "r027_2850_company_fleet_4",
+    "art": "fleet_4",
+    "body": "rear",
+    "zone": "cargo",
+    "center_source_m": [
+      -42.59099999642372,
+      -6.47,
+      14.197500000000002
+    ],
+    "width_m": 1.55,
+    "height_m": 0.58125,
+    "normal": [
+      1.0,
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "name": "r027_2851_company_worn_banner",
+    "art": "worn_banner",
+    "body": "rear",
+    "zone": "cargo",
+    "center_source_m": [
+      -45.629000000000005,
+      -7.698000003576279,
+      14.047500000000001
+    ],
+    "width_m": 1.75,
+    "height_m": 0.36458333333333337,
+    "normal": [
+      0.0,
+      -1.0,
+      0.0
+    ]
+  },
+  {
+    "name": "r027_2852_company_fleet_3",
+    "art": "fleet_3",
+    "body": "rear",
+    "zone": "cargo",
+    "center_source_m": [
+      -48.66700000357629,
+      -3.882,
+      9.015500000000001
+    ],
+    "width_m": 1.55,
+    "height_m": 0.58125,
+    "normal": [
+      -1.0,
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "name": "r027_2853_company_fleet_3",
+    "art": "fleet_3",
+    "body": "rear",
+    "zone": "cargo",
+    "center_source_m": [
+      -42.59099999642372,
+      -3.882,
+      9.015500000000001
+    ],
+    "width_m": 1.55,
+    "height_m": 0.58125,
+    "normal": [
+      1.0,
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "name": "r027_2854_company_fleet_4",
+    "art": "fleet_4",
+    "body": "rear",
+    "zone": "cargo",
+    "center_source_m": [
+      -48.66700000357629,
+      -3.882,
+      11.6065
+    ],
+    "width_m": 1.55,
+    "height_m": 0.58125,
+    "normal": [
+      -1.0,
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "name": "r027_2855_company_fleet_4",
+    "art": "fleet_4",
+    "body": "rear",
+    "zone": "cargo",
+    "center_source_m": [
+      -42.59099999642372,
+      -3.882,
+      11.6065
+    ],
+    "width_m": 1.55,
+    "height_m": 0.58125,
+    "normal": [
+      1.0,
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "name": "r027_2856_company_fleet_5",
+    "art": "fleet_5",
+    "body": "rear",
+    "zone": "cargo",
+    "center_source_m": [
+      -48.66700000357629,
+      -3.882,
+      14.197500000000002
+    ],
+    "width_m": 1.55,
+    "height_m": 0.58125,
+    "normal": [
+      -1.0,
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "name": "r027_2857_company_fleet_5",
+    "art": "fleet_5",
+    "body": "rear",
+    "zone": "cargo",
+    "center_source_m": [
+      -42.59099999642372,
+      -3.882,
+      14.197500000000002
+    ],
+    "width_m": 1.55,
+    "height_m": 0.58125,
+    "normal": [
+      1.0,
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "name": "r027_2858_company_fleet_4",
+    "art": "fleet_4",
+    "body": "rear",
+    "zone": "cargo",
+    "center_source_m": [
+      -48.66700000357629,
+      -1.294,
+      9.015500000000001
+    ],
+    "width_m": 1.55,
+    "height_m": 0.58125,
+    "normal": [
+      -1.0,
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "name": "r027_2859_company_fleet_4",
+    "art": "fleet_4",
+    "body": "rear",
+    "zone": "cargo",
+    "center_source_m": [
+      -42.59099999642372,
+      -1.294,
+      9.015500000000001
+    ],
+    "width_m": 1.55,
+    "height_m": 0.58125,
+    "normal": [
+      1.0,
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "name": "r027_2860_company_fleet_5",
+    "art": "fleet_5",
+    "body": "rear",
+    "zone": "cargo",
+    "center_source_m": [
+      -48.66700000357629,
+      -1.294,
+      11.6065
+    ],
+    "width_m": 1.55,
+    "height_m": 0.58125,
+    "normal": [
+      -1.0,
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "name": "r027_2861_company_fleet_5",
+    "art": "fleet_5",
+    "body": "rear",
+    "zone": "cargo",
+    "center_source_m": [
+      -42.59099999642372,
+      -1.294,
+      11.6065
+    ],
+    "width_m": 1.55,
+    "height_m": 0.58125,
+    "normal": [
+      1.0,
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "name": "r027_2862_company_fleet_0",
+    "art": "fleet_0",
+    "body": "rear",
+    "zone": "cargo",
+    "center_source_m": [
+      -48.66700000357629,
+      -1.294,
+      14.197500000000002
+    ],
+    "width_m": 1.55,
+    "height_m": 0.58125,
+    "normal": [
+      -1.0,
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "name": "r027_2863_company_fleet_0",
+    "art": "fleet_0",
+    "body": "rear",
+    "zone": "cargo",
+    "center_source_m": [
+      -42.59099999642372,
+      -1.294,
+      14.197500000000002
+    ],
+    "width_m": 1.55,
+    "height_m": 0.58125,
+    "normal": [
+      1.0,
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "name": "r027_2864_company_fleet_5",
+    "art": "fleet_5",
+    "body": "rear",
+    "zone": "cargo",
+    "center_source_m": [
+      -48.66700000357629,
+      1.294,
+      9.015500000000001
+    ],
+    "width_m": 1.55,
+    "height_m": 0.58125,
+    "normal": [
+      -1.0,
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "name": "r027_2865_company_fleet_5",
+    "art": "fleet_5",
+    "body": "rear",
+    "zone": "cargo",
+    "center_source_m": [
+      -42.59099999642372,
+      1.294,
+      9.015500000000001
+    ],
+    "width_m": 1.55,
+    "height_m": 0.58125,
+    "normal": [
+      1.0,
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "name": "r027_2866_company_fleet_0",
+    "art": "fleet_0",
+    "body": "rear",
+    "zone": "cargo",
+    "center_source_m": [
+      -48.66700000357629,
+      1.294,
+      11.6065
+    ],
+    "width_m": 1.55,
+    "height_m": 0.58125,
+    "normal": [
+      -1.0,
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "name": "r027_2867_company_fleet_0",
+    "art": "fleet_0",
+    "body": "rear",
+    "zone": "cargo",
+    "center_source_m": [
+      -42.59099999642372,
+      1.294,
+      11.6065
+    ],
+    "width_m": 1.55,
+    "height_m": 0.58125,
+    "normal": [
+      1.0,
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "name": "r027_2868_company_fleet_1",
+    "art": "fleet_1",
+    "body": "rear",
+    "zone": "cargo",
+    "center_source_m": [
+      -48.66700000357629,
+      1.294,
+      14.197500000000002
+    ],
+    "width_m": 1.55,
+    "height_m": 0.58125,
+    "normal": [
+      -1.0,
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "name": "r027_2869_company_fleet_1",
+    "art": "fleet_1",
+    "body": "rear",
+    "zone": "cargo",
+    "center_source_m": [
+      -42.59099999642372,
+      1.294,
+      14.197500000000002
+    ],
+    "width_m": 1.55,
+    "height_m": 0.58125,
+    "normal": [
+      1.0,
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "name": "r027_2870_company_fleet_0",
+    "art": "fleet_0",
+    "body": "rear",
+    "zone": "cargo",
+    "center_source_m": [
+      -48.66700000357629,
+      3.882,
+      9.015500000000001
+    ],
+    "width_m": 1.55,
+    "height_m": 0.58125,
+    "normal": [
+      -1.0,
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "name": "r027_2871_company_fleet_0",
+    "art": "fleet_0",
+    "body": "rear",
+    "zone": "cargo",
+    "center_source_m": [
+      -42.59099999642372,
+      3.882,
+      9.015500000000001
+    ],
+    "width_m": 1.55,
+    "height_m": 0.58125,
+    "normal": [
+      1.0,
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "name": "r027_2872_company_fleet_1",
+    "art": "fleet_1",
+    "body": "rear",
+    "zone": "cargo",
+    "center_source_m": [
+      -48.66700000357629,
+      3.882,
+      11.6065
+    ],
+    "width_m": 1.55,
+    "height_m": 0.58125,
+    "normal": [
+      -1.0,
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "name": "r027_2873_company_fleet_1",
+    "art": "fleet_1",
+    "body": "rear",
+    "zone": "cargo",
+    "center_source_m": [
+      -42.59099999642372,
+      3.882,
+      11.6065
+    ],
+    "width_m": 1.55,
+    "height_m": 0.58125,
+    "normal": [
+      1.0,
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "name": "r027_2874_company_fleet_2",
+    "art": "fleet_2",
+    "body": "rear",
+    "zone": "cargo",
+    "center_source_m": [
+      -48.66700000357629,
+      3.882,
+      14.197500000000002
+    ],
+    "width_m": 1.55,
+    "height_m": 0.58125,
+    "normal": [
+      -1.0,
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "name": "r027_2875_company_fleet_2",
+    "art": "fleet_2",
+    "body": "rear",
+    "zone": "cargo",
+    "center_source_m": [
+      -42.59099999642372,
+      3.882,
+      14.197500000000002
+    ],
+    "width_m": 1.55,
+    "height_m": 0.58125,
+    "normal": [
+      1.0,
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "name": "r027_2876_company_fleet_1",
+    "art": "fleet_1",
+    "body": "rear",
+    "zone": "cargo",
+    "center_source_m": [
+      -48.66700000357629,
+      6.47,
+      9.015500000000001
+    ],
+    "width_m": 1.55,
+    "height_m": 0.58125,
+    "normal": [
+      -1.0,
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "name": "r027_2877_company_fleet_1",
+    "art": "fleet_1",
+    "body": "rear",
+    "zone": "cargo",
+    "center_source_m": [
+      -42.59099999642372,
+      6.47,
+      9.015500000000001
+    ],
+    "width_m": 1.55,
+    "height_m": 0.58125,
+    "normal": [
+      1.0,
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "name": "r027_2878_company_field_strip",
+    "art": "field_strip",
+    "body": "rear",
+    "zone": "cargo",
+    "center_source_m": [
+      -45.629000000000005,
+      7.698000003576279,
+      8.8655
+    ],
+    "width_m": 1.75,
+    "height_m": 0.3570528967254408,
+    "normal": [
+      0.0,
+      1.0,
+      -0.0
+    ]
+  },
+  {
+    "name": "r027_2879_company_fleet_2",
+    "art": "fleet_2",
+    "body": "rear",
+    "zone": "cargo",
+    "center_source_m": [
+      -48.66700000357629,
+      6.47,
+      11.6065
+    ],
+    "width_m": 1.55,
+    "height_m": 0.58125,
+    "normal": [
+      -1.0,
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "name": "r027_2880_company_fleet_2",
+    "art": "fleet_2",
+    "body": "rear",
+    "zone": "cargo",
+    "center_source_m": [
+      -42.59099999642372,
+      6.47,
+      11.6065
+    ],
+    "width_m": 1.55,
+    "height_m": 0.58125,
+    "normal": [
+      1.0,
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "name": "r027_2881_company_worn_banner",
+    "art": "worn_banner",
+    "body": "rear",
+    "zone": "cargo",
+    "center_source_m": [
+      -45.629000000000005,
+      7.698000003576279,
+      11.4565
+    ],
+    "width_m": 1.75,
+    "height_m": 0.36458333333333337,
+    "normal": [
+      0.0,
+      1.0,
+      -0.0
+    ]
+  },
+  {
+    "name": "r027_2882_company_fleet_3",
+    "art": "fleet_3",
+    "body": "rear",
+    "zone": "cargo",
+    "center_source_m": [
+      -48.66700000357629,
+      6.47,
+      14.197500000000002
+    ],
+    "width_m": 1.55,
+    "height_m": 0.58125,
+    "normal": [
+      -1.0,
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "name": "r027_2883_company_fleet_3",
+    "art": "fleet_3",
+    "body": "rear",
+    "zone": "cargo",
+    "center_source_m": [
+      -42.59099999642372,
+      6.47,
+      14.197500000000002
+    ],
+    "width_m": 1.55,
+    "height_m": 0.58125,
+    "normal": [
+      1.0,
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "name": "r027_2884_company_field_strip",
+    "art": "field_strip",
+    "body": "rear",
+    "zone": "cargo",
+    "center_source_m": [
+      -45.629000000000005,
+      7.698000003576279,
+      14.047500000000001
+    ],
+    "width_m": 1.75,
+    "height_m": 0.3570528967254408,
+    "normal": [
+      0.0,
+      1.0,
+      -0.0
+    ]
+  },
+  {
+    "name": "r027_2885_company_fleet_4",
+    "art": "fleet_4",
+    "body": "rear",
+    "zone": "cargo",
+    "center_source_m": [
+      -41.40900000357628,
+      -6.47,
+      9.015500000000001
+    ],
+    "width_m": 1.55,
+    "height_m": 0.58125,
+    "normal": [
+      -1.0,
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "name": "r027_2886_company_fleet_4",
+    "art": "fleet_4",
+    "body": "rear",
+    "zone": "cargo",
+    "center_source_m": [
+      -35.33299999642371,
+      -6.47,
+      9.015500000000001
+    ],
+    "width_m": 1.55,
+    "height_m": 0.58125,
+    "normal": [
+      1.0,
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "name": "r027_2887_company_worn_banner",
+    "art": "worn_banner",
+    "body": "rear",
+    "zone": "cargo",
+    "center_source_m": [
+      -38.370999999999995,
+      -7.698000003576279,
+      8.8655
+    ],
+    "width_m": 1.75,
+    "height_m": 0.36458333333333337,
+    "normal": [
+      0.0,
+      -1.0,
+      0.0
+    ]
+  },
+  {
+    "name": "r027_2888_company_fleet_5",
+    "art": "fleet_5",
+    "body": "rear",
+    "zone": "cargo",
+    "center_source_m": [
+      -41.40900000357628,
+      -6.47,
+      11.6065
+    ],
+    "width_m": 1.55,
+    "height_m": 0.58125,
+    "normal": [
+      -1.0,
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "name": "r027_2889_company_fleet_5",
+    "art": "fleet_5",
+    "body": "rear",
+    "zone": "cargo",
+    "center_source_m": [
+      -35.33299999642371,
+      -6.47,
+      11.6065
+    ],
+    "width_m": 1.55,
+    "height_m": 0.58125,
+    "normal": [
+      1.0,
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "name": "r027_2890_company_field_strip",
+    "art": "field_strip",
+    "body": "rear",
+    "zone": "cargo",
+    "center_source_m": [
+      -38.370999999999995,
+      -7.698000003576279,
+      11.4565
+    ],
+    "width_m": 1.75,
+    "height_m": 0.3570528967254408,
+    "normal": [
+      0.0,
+      -1.0,
+      0.0
+    ]
+  },
+  {
+    "name": "r027_2891_company_fleet_0",
+    "art": "fleet_0",
+    "body": "rear",
+    "zone": "cargo",
+    "center_source_m": [
+      -41.40900000357628,
+      -6.47,
+      14.197500000000002
+    ],
+    "width_m": 1.55,
+    "height_m": 0.58125,
+    "normal": [
+      -1.0,
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "name": "r027_2892_company_fleet_0",
+    "art": "fleet_0",
+    "body": "rear",
+    "zone": "cargo",
+    "center_source_m": [
+      -35.33299999642371,
+      -6.47,
+      14.197500000000002
+    ],
+    "width_m": 1.55,
+    "height_m": 0.58125,
+    "normal": [
+      1.0,
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "name": "r027_2893_company_worn_banner",
+    "art": "worn_banner",
+    "body": "rear",
+    "zone": "cargo",
+    "center_source_m": [
+      -38.370999999999995,
+      -7.698000003576279,
+      14.047500000000001
+    ],
+    "width_m": 1.75,
+    "height_m": 0.36458333333333337,
+    "normal": [
+      0.0,
+      -1.0,
+      0.0
+    ]
+  },
+  {
+    "name": "r027_2894_company_fleet_5",
+    "art": "fleet_5",
+    "body": "rear",
+    "zone": "cargo",
+    "center_source_m": [
+      -41.40900000357628,
+      -3.882,
+      9.015500000000001
+    ],
+    "width_m": 1.55,
+    "height_m": 0.58125,
+    "normal": [
+      -1.0,
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "name": "r027_2895_company_fleet_5",
+    "art": "fleet_5",
+    "body": "rear",
+    "zone": "cargo",
+    "center_source_m": [
+      -35.33299999642371,
+      -3.882,
+      9.015500000000001
+    ],
+    "width_m": 1.55,
+    "height_m": 0.58125,
+    "normal": [
+      1.0,
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "name": "r027_2896_company_fleet_0",
+    "art": "fleet_0",
+    "body": "rear",
+    "zone": "cargo",
+    "center_source_m": [
+      -41.40900000357628,
+      -3.882,
+      11.6065
+    ],
+    "width_m": 1.55,
+    "height_m": 0.58125,
+    "normal": [
+      -1.0,
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "name": "r027_2897_company_fleet_0",
+    "art": "fleet_0",
+    "body": "rear",
+    "zone": "cargo",
+    "center_source_m": [
+      -35.33299999642371,
+      -3.882,
+      11.6065
+    ],
+    "width_m": 1.55,
+    "height_m": 0.58125,
+    "normal": [
+      1.0,
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "name": "r027_2898_company_fleet_1",
+    "art": "fleet_1",
+    "body": "rear",
+    "zone": "cargo",
+    "center_source_m": [
+      -41.40900000357628,
+      -3.882,
+      14.197500000000002
+    ],
+    "width_m": 1.55,
+    "height_m": 0.58125,
+    "normal": [
+      -1.0,
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "name": "r027_2899_company_fleet_1",
+    "art": "fleet_1",
+    "body": "rear",
+    "zone": "cargo",
+    "center_source_m": [
+      -35.33299999642371,
+      -3.882,
+      14.197500000000002
+    ],
+    "width_m": 1.55,
+    "height_m": 0.58125,
+    "normal": [
+      1.0,
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "name": "r027_2900_company_fleet_0",
+    "art": "fleet_0",
+    "body": "rear",
+    "zone": "cargo",
+    "center_source_m": [
+      -41.40900000357628,
+      -1.294,
+      9.015500000000001
+    ],
+    "width_m": 1.55,
+    "height_m": 0.58125,
+    "normal": [
+      -1.0,
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "name": "r027_2901_company_fleet_0",
+    "art": "fleet_0",
+    "body": "rear",
+    "zone": "cargo",
+    "center_source_m": [
+      -35.33299999642371,
+      -1.294,
+      9.015500000000001
+    ],
+    "width_m": 1.55,
+    "height_m": 0.58125,
+    "normal": [
+      1.0,
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "name": "r027_2902_company_fleet_1",
+    "art": "fleet_1",
+    "body": "rear",
+    "zone": "cargo",
+    "center_source_m": [
+      -41.40900000357628,
+      -1.294,
+      11.6065
+    ],
+    "width_m": 1.55,
+    "height_m": 0.58125,
+    "normal": [
+      -1.0,
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "name": "r027_2903_company_fleet_1",
+    "art": "fleet_1",
+    "body": "rear",
+    "zone": "cargo",
+    "center_source_m": [
+      -35.33299999642371,
+      -1.294,
+      11.6065
+    ],
+    "width_m": 1.55,
+    "height_m": 0.58125,
+    "normal": [
+      1.0,
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "name": "r027_2904_company_fleet_2",
+    "art": "fleet_2",
+    "body": "rear",
+    "zone": "cargo",
+    "center_source_m": [
+      -41.40900000357628,
+      -1.294,
+      14.197500000000002
+    ],
+    "width_m": 1.55,
+    "height_m": 0.58125,
+    "normal": [
+      -1.0,
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "name": "r027_2905_company_fleet_2",
+    "art": "fleet_2",
+    "body": "rear",
+    "zone": "cargo",
+    "center_source_m": [
+      -35.33299999642371,
+      -1.294,
+      14.197500000000002
+    ],
+    "width_m": 1.55,
+    "height_m": 0.58125,
+    "normal": [
+      1.0,
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "name": "r027_2906_company_fleet_1",
+    "art": "fleet_1",
+    "body": "rear",
+    "zone": "cargo",
+    "center_source_m": [
+      -41.40900000357628,
+      1.294,
+      9.015500000000001
+    ],
+    "width_m": 1.55,
+    "height_m": 0.58125,
+    "normal": [
+      -1.0,
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "name": "r027_2907_company_fleet_1",
+    "art": "fleet_1",
+    "body": "rear",
+    "zone": "cargo",
+    "center_source_m": [
+      -35.33299999642371,
+      1.294,
+      9.015500000000001
+    ],
+    "width_m": 1.55,
+    "height_m": 0.58125,
+    "normal": [
+      1.0,
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "name": "r027_2908_company_fleet_2",
+    "art": "fleet_2",
+    "body": "rear",
+    "zone": "cargo",
+    "center_source_m": [
+      -41.40900000357628,
+      1.294,
+      11.6065
+    ],
+    "width_m": 1.55,
+    "height_m": 0.58125,
+    "normal": [
+      -1.0,
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "name": "r027_2909_company_fleet_2",
+    "art": "fleet_2",
+    "body": "rear",
+    "zone": "cargo",
+    "center_source_m": [
+      -35.33299999642371,
+      1.294,
+      11.6065
+    ],
+    "width_m": 1.55,
+    "height_m": 0.58125,
+    "normal": [
+      1.0,
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "name": "r027_2910_company_fleet_3",
+    "art": "fleet_3",
+    "body": "rear",
+    "zone": "cargo",
+    "center_source_m": [
+      -41.40900000357628,
+      1.294,
+      14.197500000000002
+    ],
+    "width_m": 1.55,
+    "height_m": 0.58125,
+    "normal": [
+      -1.0,
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "name": "r027_2911_company_fleet_3",
+    "art": "fleet_3",
+    "body": "rear",
+    "zone": "cargo",
+    "center_source_m": [
+      -35.33299999642371,
+      1.294,
+      14.197500000000002
+    ],
+    "width_m": 1.55,
+    "height_m": 0.58125,
+    "normal": [
+      1.0,
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "name": "r027_2912_company_fleet_2",
+    "art": "fleet_2",
+    "body": "rear",
+    "zone": "cargo",
+    "center_source_m": [
+      -41.40900000357628,
+      3.882,
+      9.015500000000001
+    ],
+    "width_m": 1.55,
+    "height_m": 0.58125,
+    "normal": [
+      -1.0,
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "name": "r027_2913_company_fleet_2",
+    "art": "fleet_2",
+    "body": "rear",
+    "zone": "cargo",
+    "center_source_m": [
+      -35.33299999642371,
+      3.882,
+      9.015500000000001
+    ],
+    "width_m": 1.55,
+    "height_m": 0.58125,
+    "normal": [
+      1.0,
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "name": "r027_2914_company_fleet_3",
+    "art": "fleet_3",
+    "body": "rear",
+    "zone": "cargo",
+    "center_source_m": [
+      -41.40900000357628,
+      3.882,
+      11.6065
+    ],
+    "width_m": 1.55,
+    "height_m": 0.58125,
+    "normal": [
+      -1.0,
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "name": "r027_2915_company_fleet_3",
+    "art": "fleet_3",
+    "body": "rear",
+    "zone": "cargo",
+    "center_source_m": [
+      -35.33299999642371,
+      3.882,
+      11.6065
+    ],
+    "width_m": 1.55,
+    "height_m": 0.58125,
+    "normal": [
+      1.0,
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "name": "r027_2916_company_fleet_4",
+    "art": "fleet_4",
+    "body": "rear",
+    "zone": "cargo",
+    "center_source_m": [
+      -41.40900000357628,
+      3.882,
+      14.197500000000002
+    ],
+    "width_m": 1.55,
+    "height_m": 0.58125,
+    "normal": [
+      -1.0,
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "name": "r027_2917_company_fleet_4",
+    "art": "fleet_4",
+    "body": "rear",
+    "zone": "cargo",
+    "center_source_m": [
+      -35.33299999642371,
+      3.882,
+      14.197500000000002
+    ],
+    "width_m": 1.55,
+    "height_m": 0.58125,
+    "normal": [
+      1.0,
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "name": "r027_2918_company_fleet_3",
+    "art": "fleet_3",
+    "body": "rear",
+    "zone": "cargo",
+    "center_source_m": [
+      -41.40900000357628,
+      6.47,
+      9.015500000000001
+    ],
+    "width_m": 1.55,
+    "height_m": 0.58125,
+    "normal": [
+      -1.0,
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "name": "r027_2919_company_fleet_3",
+    "art": "fleet_3",
+    "body": "rear",
+    "zone": "cargo",
+    "center_source_m": [
+      -35.33299999642371,
+      6.47,
+      9.015500000000001
+    ],
+    "width_m": 1.55,
+    "height_m": 0.58125,
+    "normal": [
+      1.0,
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "name": "r027_2920_company_field_strip",
+    "art": "field_strip",
+    "body": "rear",
+    "zone": "cargo",
+    "center_source_m": [
+      -38.370999999999995,
+      7.698000003576279,
+      8.8655
+    ],
+    "width_m": 1.75,
+    "height_m": 0.3570528967254408,
+    "normal": [
+      0.0,
+      1.0,
+      -0.0
+    ]
+  },
+  {
+    "name": "r027_2921_company_fleet_4",
+    "art": "fleet_4",
+    "body": "rear",
+    "zone": "cargo",
+    "center_source_m": [
+      -41.40900000357628,
+      6.47,
+      11.6065
+    ],
+    "width_m": 1.55,
+    "height_m": 0.58125,
+    "normal": [
+      -1.0,
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "name": "r027_2922_company_fleet_4",
+    "art": "fleet_4",
+    "body": "rear",
+    "zone": "cargo",
+    "center_source_m": [
+      -35.33299999642371,
+      6.47,
+      11.6065
+    ],
+    "width_m": 1.55,
+    "height_m": 0.58125,
+    "normal": [
+      1.0,
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "name": "r027_2923_company_worn_banner",
+    "art": "worn_banner",
+    "body": "rear",
+    "zone": "cargo",
+    "center_source_m": [
+      -38.370999999999995,
+      7.698000003576279,
+      11.4565
+    ],
+    "width_m": 1.75,
+    "height_m": 0.36458333333333337,
+    "normal": [
+      0.0,
+      1.0,
+      -0.0
+    ]
+  },
+  {
+    "name": "r027_2924_company_fleet_5",
+    "art": "fleet_5",
+    "body": "rear",
+    "zone": "cargo",
+    "center_source_m": [
+      -41.40900000357628,
+      6.47,
+      14.197500000000002
+    ],
+    "width_m": 1.55,
+    "height_m": 0.58125,
+    "normal": [
+      -1.0,
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "name": "r027_2925_company_fleet_5",
+    "art": "fleet_5",
+    "body": "rear",
+    "zone": "cargo",
+    "center_source_m": [
+      -35.33299999642371,
+      6.47,
+      14.197500000000002
+    ],
+    "width_m": 1.55,
+    "height_m": 0.58125,
+    "normal": [
+      1.0,
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "name": "r027_2926_company_field_strip",
+    "art": "field_strip",
+    "body": "rear",
+    "zone": "cargo",
+    "center_source_m": [
+      -38.370999999999995,
+      7.698000003576279,
+      14.047500000000001
+    ],
+    "width_m": 1.75,
+    "height_m": 0.3570528967254408,
+    "normal": [
+      0.0,
+      1.0,
+      -0.0
+    ]
+  },
+  {
+    "name": "r027_2927_company_fleet_0",
+    "art": "fleet_0",
+    "body": "rear",
+    "zone": "cargo",
+    "center_source_m": [
+      -34.15100000357627,
+      -6.47,
+      9.015500000000001
+    ],
+    "width_m": 1.55,
+    "height_m": 0.58125,
+    "normal": [
+      -1.0,
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "name": "r027_2928_company_fleet_0",
+    "art": "fleet_0",
+    "body": "rear",
+    "zone": "cargo",
+    "center_source_m": [
+      -28.074999996423728,
+      -6.47,
+      9.015500000000001
+    ],
+    "width_m": 1.55,
+    "height_m": 0.58125,
+    "normal": [
+      1.0,
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "name": "r027_2929_company_worn_banner",
+    "art": "worn_banner",
+    "body": "rear",
+    "zone": "cargo",
+    "center_source_m": [
+      -31.113,
+      -7.698000003576279,
+      8.8655
+    ],
+    "width_m": 1.75,
+    "height_m": 0.36458333333333337,
+    "normal": [
+      0.0,
+      -1.0,
+      0.0
+    ]
+  },
+  {
+    "name": "r027_2930_company_fleet_1",
+    "art": "fleet_1",
+    "body": "rear",
+    "zone": "cargo",
+    "center_source_m": [
+      -34.15100000357627,
+      -6.47,
+      11.6065
+    ],
+    "width_m": 1.55,
+    "height_m": 0.58125,
+    "normal": [
+      -1.0,
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "name": "r027_2931_company_fleet_1",
+    "art": "fleet_1",
+    "body": "rear",
+    "zone": "cargo",
+    "center_source_m": [
+      -28.074999996423728,
+      -6.47,
+      11.6065
+    ],
+    "width_m": 1.55,
+    "height_m": 0.58125,
+    "normal": [
+      1.0,
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "name": "r027_2932_company_field_strip",
+    "art": "field_strip",
+    "body": "rear",
+    "zone": "cargo",
+    "center_source_m": [
+      -31.113,
+      -7.698000003576279,
+      11.4565
+    ],
+    "width_m": 1.75,
+    "height_m": 0.3570528967254408,
+    "normal": [
+      0.0,
+      -1.0,
+      0.0
+    ]
+  },
+  {
+    "name": "r027_2933_company_fleet_2",
+    "art": "fleet_2",
+    "body": "rear",
+    "zone": "cargo",
+    "center_source_m": [
+      -34.15100000357627,
+      -6.47,
+      14.197500000000002
+    ],
+    "width_m": 1.55,
+    "height_m": 0.58125,
+    "normal": [
+      -1.0,
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "name": "r027_2934_company_fleet_2",
+    "art": "fleet_2",
+    "body": "rear",
+    "zone": "cargo",
+    "center_source_m": [
+      -28.074999996423728,
+      -6.47,
+      14.197500000000002
+    ],
+    "width_m": 1.55,
+    "height_m": 0.58125,
+    "normal": [
+      1.0,
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "name": "r027_2935_company_worn_banner",
+    "art": "worn_banner",
+    "body": "rear",
+    "zone": "cargo",
+    "center_source_m": [
+      -31.113,
+      -7.698000003576279,
+      14.047500000000001
+    ],
+    "width_m": 1.75,
+    "height_m": 0.36458333333333337,
+    "normal": [
+      0.0,
+      -1.0,
+      0.0
+    ]
+  },
+  {
+    "name": "r027_2936_company_fleet_1",
+    "art": "fleet_1",
+    "body": "rear",
+    "zone": "cargo",
+    "center_source_m": [
+      -34.15100000357627,
+      -3.882,
+      9.015500000000001
+    ],
+    "width_m": 1.55,
+    "height_m": 0.58125,
+    "normal": [
+      -1.0,
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "name": "r027_2937_company_fleet_1",
+    "art": "fleet_1",
+    "body": "rear",
+    "zone": "cargo",
+    "center_source_m": [
+      -28.074999996423728,
+      -3.882,
+      9.015500000000001
+    ],
+    "width_m": 1.55,
+    "height_m": 0.58125,
+    "normal": [
+      1.0,
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "name": "r027_2938_company_fleet_2",
+    "art": "fleet_2",
+    "body": "rear",
+    "zone": "cargo",
+    "center_source_m": [
+      -34.15100000357627,
+      -3.882,
+      11.6065
+    ],
+    "width_m": 1.55,
+    "height_m": 0.58125,
+    "normal": [
+      -1.0,
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "name": "r027_2939_company_fleet_2",
+    "art": "fleet_2",
+    "body": "rear",
+    "zone": "cargo",
+    "center_source_m": [
+      -28.074999996423728,
+      -3.882,
+      11.6065
+    ],
+    "width_m": 1.55,
+    "height_m": 0.58125,
+    "normal": [
+      1.0,
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "name": "r027_2940_company_fleet_3",
+    "art": "fleet_3",
+    "body": "rear",
+    "zone": "cargo",
+    "center_source_m": [
+      -34.15100000357627,
+      -3.882,
+      14.197500000000002
+    ],
+    "width_m": 1.55,
+    "height_m": 0.58125,
+    "normal": [
+      -1.0,
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "name": "r027_2941_company_fleet_3",
+    "art": "fleet_3",
+    "body": "rear",
+    "zone": "cargo",
+    "center_source_m": [
+      -28.074999996423728,
+      -3.882,
+      14.197500000000002
+    ],
+    "width_m": 1.55,
+    "height_m": 0.58125,
+    "normal": [
+      1.0,
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "name": "r027_2942_company_fleet_2",
+    "art": "fleet_2",
+    "body": "rear",
+    "zone": "cargo",
+    "center_source_m": [
+      -34.15100000357627,
+      -1.294,
+      9.015500000000001
+    ],
+    "width_m": 1.55,
+    "height_m": 0.58125,
+    "normal": [
+      -1.0,
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "name": "r027_2943_company_fleet_2",
+    "art": "fleet_2",
+    "body": "rear",
+    "zone": "cargo",
+    "center_source_m": [
+      -28.074999996423728,
+      -1.294,
+      9.015500000000001
+    ],
+    "width_m": 1.55,
+    "height_m": 0.58125,
+    "normal": [
+      1.0,
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "name": "r027_2944_company_fleet_3",
+    "art": "fleet_3",
+    "body": "rear",
+    "zone": "cargo",
+    "center_source_m": [
+      -34.15100000357627,
+      -1.294,
+      11.6065
+    ],
+    "width_m": 1.55,
+    "height_m": 0.58125,
+    "normal": [
+      -1.0,
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "name": "r027_2945_company_fleet_3",
+    "art": "fleet_3",
+    "body": "rear",
+    "zone": "cargo",
+    "center_source_m": [
+      -28.074999996423728,
+      -1.294,
+      11.6065
+    ],
+    "width_m": 1.55,
+    "height_m": 0.58125,
+    "normal": [
+      1.0,
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "name": "r027_2946_company_fleet_4",
+    "art": "fleet_4",
+    "body": "rear",
+    "zone": "cargo",
+    "center_source_m": [
+      -34.15100000357627,
+      -1.294,
+      14.197500000000002
+    ],
+    "width_m": 1.55,
+    "height_m": 0.58125,
+    "normal": [
+      -1.0,
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "name": "r027_2947_company_fleet_4",
+    "art": "fleet_4",
+    "body": "rear",
+    "zone": "cargo",
+    "center_source_m": [
+      -28.074999996423728,
+      -1.294,
+      14.197500000000002
+    ],
+    "width_m": 1.55,
+    "height_m": 0.58125,
+    "normal": [
+      1.0,
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "name": "r027_2948_company_fleet_3",
+    "art": "fleet_3",
+    "body": "rear",
+    "zone": "cargo",
+    "center_source_m": [
+      -34.15100000357627,
+      1.294,
+      9.015500000000001
+    ],
+    "width_m": 1.55,
+    "height_m": 0.58125,
+    "normal": [
+      -1.0,
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "name": "r027_2949_company_fleet_3",
+    "art": "fleet_3",
+    "body": "rear",
+    "zone": "cargo",
+    "center_source_m": [
+      -28.074999996423728,
+      1.294,
+      9.015500000000001
+    ],
+    "width_m": 1.55,
+    "height_m": 0.58125,
+    "normal": [
+      1.0,
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "name": "r027_2950_company_fleet_4",
+    "art": "fleet_4",
+    "body": "rear",
+    "zone": "cargo",
+    "center_source_m": [
+      -34.15100000357627,
+      1.294,
+      11.6065
+    ],
+    "width_m": 1.55,
+    "height_m": 0.58125,
+    "normal": [
+      -1.0,
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "name": "r027_2951_company_fleet_4",
+    "art": "fleet_4",
+    "body": "rear",
+    "zone": "cargo",
+    "center_source_m": [
+      -28.074999996423728,
+      1.294,
+      11.6065
+    ],
+    "width_m": 1.55,
+    "height_m": 0.58125,
+    "normal": [
+      1.0,
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "name": "r027_2952_company_fleet_5",
+    "art": "fleet_5",
+    "body": "rear",
+    "zone": "cargo",
+    "center_source_m": [
+      -34.15100000357627,
+      1.294,
+      14.197500000000002
+    ],
+    "width_m": 1.55,
+    "height_m": 0.58125,
+    "normal": [
+      -1.0,
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "name": "r027_2953_company_fleet_5",
+    "art": "fleet_5",
+    "body": "rear",
+    "zone": "cargo",
+    "center_source_m": [
+      -28.074999996423728,
+      1.294,
+      14.197500000000002
+    ],
+    "width_m": 1.55,
+    "height_m": 0.58125,
+    "normal": [
+      1.0,
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "name": "r027_2954_company_fleet_4",
+    "art": "fleet_4",
+    "body": "rear",
+    "zone": "cargo",
+    "center_source_m": [
+      -34.15100000357627,
+      3.882,
+      9.015500000000001
+    ],
+    "width_m": 1.55,
+    "height_m": 0.58125,
+    "normal": [
+      -1.0,
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "name": "r027_2955_company_fleet_4",
+    "art": "fleet_4",
+    "body": "rear",
+    "zone": "cargo",
+    "center_source_m": [
+      -28.074999996423728,
+      3.882,
+      9.015500000000001
+    ],
+    "width_m": 1.55,
+    "height_m": 0.58125,
+    "normal": [
+      1.0,
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "name": "r027_2956_company_fleet_5",
+    "art": "fleet_5",
+    "body": "rear",
+    "zone": "cargo",
+    "center_source_m": [
+      -34.15100000357627,
+      3.882,
+      11.6065
+    ],
+    "width_m": 1.55,
+    "height_m": 0.58125,
+    "normal": [
+      -1.0,
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "name": "r027_2957_company_fleet_5",
+    "art": "fleet_5",
+    "body": "rear",
+    "zone": "cargo",
+    "center_source_m": [
+      -28.074999996423728,
+      3.882,
+      11.6065
+    ],
+    "width_m": 1.55,
+    "height_m": 0.58125,
+    "normal": [
+      1.0,
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "name": "r027_2958_company_fleet_0",
+    "art": "fleet_0",
+    "body": "rear",
+    "zone": "cargo",
+    "center_source_m": [
+      -34.15100000357627,
+      3.882,
+      14.197500000000002
+    ],
+    "width_m": 1.55,
+    "height_m": 0.58125,
+    "normal": [
+      -1.0,
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "name": "r027_2959_company_fleet_0",
+    "art": "fleet_0",
+    "body": "rear",
+    "zone": "cargo",
+    "center_source_m": [
+      -28.074999996423728,
+      3.882,
+      14.197500000000002
+    ],
+    "width_m": 1.55,
+    "height_m": 0.58125,
+    "normal": [
+      1.0,
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "name": "r027_2960_company_fleet_5",
+    "art": "fleet_5",
+    "body": "rear",
+    "zone": "cargo",
+    "center_source_m": [
+      -34.15100000357627,
+      6.47,
+      9.015500000000001
+    ],
+    "width_m": 1.55,
+    "height_m": 0.58125,
+    "normal": [
+      -1.0,
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "name": "r027_2961_company_fleet_5",
+    "art": "fleet_5",
+    "body": "rear",
+    "zone": "cargo",
+    "center_source_m": [
+      -28.074999996423728,
+      6.47,
+      9.015500000000001
+    ],
+    "width_m": 1.55,
+    "height_m": 0.58125,
+    "normal": [
+      1.0,
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "name": "r027_2962_company_field_strip",
+    "art": "field_strip",
+    "body": "rear",
+    "zone": "cargo",
+    "center_source_m": [
+      -31.113,
+      7.698000003576279,
+      8.8655
+    ],
+    "width_m": 1.75,
+    "height_m": 0.3570528967254408,
+    "normal": [
+      0.0,
+      1.0,
+      -0.0
+    ]
+  },
+  {
+    "name": "r027_2963_company_fleet_0",
+    "art": "fleet_0",
+    "body": "rear",
+    "zone": "cargo",
+    "center_source_m": [
+      -34.15100000357627,
+      6.47,
+      11.6065
+    ],
+    "width_m": 1.55,
+    "height_m": 0.58125,
+    "normal": [
+      -1.0,
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "name": "r027_2964_company_fleet_0",
+    "art": "fleet_0",
+    "body": "rear",
+    "zone": "cargo",
+    "center_source_m": [
+      -28.074999996423728,
+      6.47,
+      11.6065
+    ],
+    "width_m": 1.55,
+    "height_m": 0.58125,
+    "normal": [
+      1.0,
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "name": "r027_2965_company_worn_banner",
+    "art": "worn_banner",
+    "body": "rear",
+    "zone": "cargo",
+    "center_source_m": [
+      -31.113,
+      7.698000003576279,
+      11.4565
+    ],
+    "width_m": 1.75,
+    "height_m": 0.36458333333333337,
+    "normal": [
+      0.0,
+      1.0,
+      -0.0
+    ]
+  },
+  {
+    "name": "r027_2966_company_fleet_1",
+    "art": "fleet_1",
+    "body": "rear",
+    "zone": "cargo",
+    "center_source_m": [
+      -34.15100000357627,
+      6.47,
+      14.197500000000002
+    ],
+    "width_m": 1.55,
+    "height_m": 0.58125,
+    "normal": [
+      -1.0,
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "name": "r027_2967_company_fleet_1",
+    "art": "fleet_1",
+    "body": "rear",
+    "zone": "cargo",
+    "center_source_m": [
+      -28.074999996423728,
+      6.47,
+      14.197500000000002
+    ],
+    "width_m": 1.55,
+    "height_m": 0.58125,
+    "normal": [
+      1.0,
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "name": "r027_2968_company_field_strip",
+    "art": "field_strip",
+    "body": "rear",
+    "zone": "cargo",
+    "center_source_m": [
+      -31.113,
+      7.698000003576279,
+      14.047500000000001
+    ],
+    "width_m": 1.75,
+    "height_m": 0.3570528967254408,
     "normal": [
       0.0,
       1.0,

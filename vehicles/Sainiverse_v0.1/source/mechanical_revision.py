@@ -54,14 +54,14 @@ def apply(a,add,box,rod,role,O):
  a['parts']=[p for p in a['parts'] if p not in pipes]
  for side in [-1,1]:
   if side==1:
-   mirrored=cooling_pipe.copy();mirrored.apply_scale([1,-1,1]);add('continuous_cooling_elbow',mirrored,role('778686'),'front');continue
+   mirrored=cooling_pipe.copy();mirrored.apply_scale([1,-1,1]);add('continuous_cooling_elbow',mirrored,'ivory','front');continue
   y=side*1.4;points=[[7.8,y,13.36],[7.8,y,13.91]]
   # Centreline tangent quarter circle, 0.29 m bend radius.
   for t in np.linspace(math.pi,math.pi/2,7):points.append([8.09+.29*math.cos(t),y,13.91+.29*math.sin(t)])
   points.append([8.80,y,14.20]);pieces=[cyl(p,q,.18,20) for p,q in zip(points,points[1:]) if np.linalg.norm(np.array(q)-p)>1e-6]
   for p in points[1:-1]:
    b=tm.creation.icosphere(subdivisions=2,radius=.18);b.apply_translation(p);pieces.append(b)
-  pipe=tm.boolean.union(pieces,engine='manifold');add('continuous_cooling_elbow',pipe,role('778686'),'front');assert pipe.is_watertight;cooling_pipe=pipe.copy()
+  pipe=tm.boolean.union(pieces,engine='manifold');add('continuous_cooling_elbow',pipe,'ivory','front');assert pipe.is_watertight;cooling_pipe=pipe.copy()
  # Remove opaque little port blocks. Actual openings + glazing at equipment-room sides.
  a['parts']=[p for p in a['parts'] if not p['name'].endswith('_fore_service_small_port')]
  shell=next(p for p in a['parts'] if p['name'].endswith('_fore_service_shell'));m=mesh(shell)

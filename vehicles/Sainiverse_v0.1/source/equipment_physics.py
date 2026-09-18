@@ -29,6 +29,11 @@ def compile(rig,a,s,b,root):
    node=E.SubElement(root.find('worldbody'),'body',name=name,pos=fmt(pos));E.SubElement(node,'freejoint',name=name+'_free')
   E.SubElement(node,'inertial',mass=str(item['mass']),pos=fmt(item['com']),diaginertia=fmt(item['inertia']))
   points=np.concatenate([p['vertices'] for p in a['parts'] if p['group']==name and not p['material'].startswith('rig_')]);lo=points.min(0)-pivot;hi=points.max(0)-pivot
+  if item.get('cargo'):
+   lo,hi=np.array(item['collision_bounds'])-pivot
+   equality=root.find('equality')
+   if equality is None:equality=E.SubElement(root,'equality')
+   E.SubElement(equality,'weld',name=name+'_deck_lock',body1=item['hull'],body2=name,active='true')
   if name=='receiver_fold':
    vertices=(points-pivot)[ConvexHull(points).vertices]
    item['collision_convex']=vertices.tolist()
@@ -38,13 +43,20 @@ def compile(rig,a,s,b,root):
    E.SubElement(node,'geom',name=name+'_contact',type='mesh',mesh='receiver_fold_contact_mesh',mass='0',contype='64',conaffinity='9',friction='.7 .005 .0001')
    continue
   item['collision_box']={'center':((lo+hi)/2).tolist(),'size':(hi-lo).tolist()}
-  E.SubElement(node,'geom',name=name+'_contact',type='box',pos=fmt((lo+hi)/2),size=fmt((hi-lo)/2),mass='0',contype='64',conaffinity='9',friction='.7 .005 .0001')
- # Conservative loaded-cargo envelopes leave side and end walkways clear.
+  E.SubElement(node,'geom',name=name+'_contact',type='box',pos=fmt((lo+hi)/2),size=fmt((hi-lo)/2),mass='0',contype='256' if item.get('cargo') else '64',conaffinity='73' if item.get('cargo') else '265',friction='.7 .005 .0001')
+ # Individual stack-column envelopes leave the handled top-tier opening clear.
  rig['cargo_colliders']=[]
  for hull,tag in [('rear','container_'),('tail','sealed_reservoir')]:
   ps=[p for p in a['parts'] if p['group']==hull and tag in p['name']]
   if not ps:continue
-  v=np.concatenate([p['vertices'] for p in ps]);lo=v.min(0);hi=v.max(0);center=(lo+hi)/2-np.array(b['groups'][hull]['neutral_body_position_source_m'])
-  box={'hull':hull,'center':center.tolist(),'size':(hi-lo).tolist()};rig['cargo_colliders'].append(box)
-  E.SubElement(root.find(f'.//body[@name="{hull}"]'),'geom',name=hull+'_cargo_envelope',type='box',pos=fmt(center),size=fmt((hi-lo)/2),mass='0',contype='8',conaffinity='64')
+  import re
+  stacks={}
+  for p in ps:
+   match=re.search(r'container_b(\d+)_r(\d+)_',p['name'])
+   key='_'.join(match.groups()) if match else 'reservoir'
+   stacks.setdefault(key,[]).append(p)
+  for key,parts in stacks.items():
+   v=np.concatenate([p['vertices'] for p in parts]);lo=v.min(0);hi=v.max(0);center=(lo+hi)/2-np.array(b['groups'][hull]['neutral_body_position_source_m'])
+   box={'hull':hull,'center':center.tolist(),'size':(hi-lo).tolist()};rig['cargo_colliders'].append(box)
+   E.SubElement(root.find(f'.//body[@name="{hull}"]'),'geom',name=hull+'_cargo_envelope_'+key,type='box',pos=fmt(center),size=fmt((hi-lo)/2),mass='0',contype='8',conaffinity='320')
  s['contact']['equipment']=rig

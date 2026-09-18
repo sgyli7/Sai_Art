@@ -642,7 +642,7 @@
   ],
   "contacts": [
     {
-      "name": "r027_1407_r032_bridge_new_window_glass",
+      "name": "r027_1548_r032_bridge_new_window_glass",
       "body": "front",
       "type": "convex",
       "vertices_source_m": [
@@ -689,7 +689,7 @@
       ]
     },
     {
-      "name": "r027_1409_r032_bridge_new_window_glass",
+      "name": "r027_1550_r032_bridge_new_window_glass",
       "body": "front",
       "type": "convex",
       "vertices_source_m": [
@@ -736,7 +736,7 @@
       ]
     },
     {
-      "name": "r027_1411_r032_bridge_new_window_glass",
+      "name": "r027_1552_r032_bridge_new_window_glass",
       "body": "front",
       "type": "convex",
       "vertices_source_m": [
@@ -783,7 +783,7 @@
       ]
     },
     {
-      "name": "r027_1413_r032_bridge_new_window_glass",
+      "name": "r027_1554_r032_bridge_new_window_glass",
       "body": "front",
       "type": "convex",
       "vertices_source_m": [
@@ -897,7 +897,7 @@
       ]
     },
     {
-      "name": "r027_1414_r032_entry_threshold",
+      "name": "r027_1555_r032_entry_threshold",
       "body": "front",
       "type": "convex",
       "vertices_source_m": [
@@ -944,7 +944,7 @@
       ]
     },
     {
-      "name": "r027_1415_r032_entry_threshold",
+      "name": "r027_1556_r032_entry_threshold",
       "body": "front",
       "type": "convex",
       "vertices_source_m": [
@@ -991,7 +991,7 @@
       ]
     },
     {
-      "name": "r027_1418_r032_pilot_console_pedestal",
+      "name": "r027_1559_r032_pilot_console_pedestal",
       "body": "front",
       "type": "convex",
       "vertices_source_m": [
@@ -1058,7 +1058,7 @@
       ]
     },
     {
-      "name": "r027_1509_r032_pilot_seat_plinth",
+      "name": "r027_1650_r032_pilot_seat_plinth",
       "body": "front",
       "type": "convex",
       "vertices_source_m": [
@@ -1105,7 +1105,7 @@
       ]
     },
     {
-      "name": "r027_1510_r032_pilot_seat_cushion",
+      "name": "r027_1651_r032_pilot_seat_cushion",
       "body": "front",
       "type": "convex",
       "vertices_source_m": [
@@ -3392,7 +3392,7 @@
       ]
     },
     {
-      "name": "r027_1511_r032_pilot_seat_back",
+      "name": "r027_1652_r032_pilot_seat_back",
       "body": "front",
       "type": "convex",
       "vertices_source_m": [
@@ -5679,7 +5679,7 @@
       ]
     },
     {
-      "name": "r027_1549_r032_pilot_console_pedestal",
+      "name": "r027_1690_r032_pilot_console_pedestal",
       "body": "front",
       "type": "convex",
       "vertices_source_m": [
@@ -5746,7 +5746,7 @@
       ]
     },
     {
-      "name": "r027_1640_r032_pilot_seat_plinth",
+      "name": "r027_1781_r032_pilot_seat_plinth",
       "body": "front",
       "type": "convex",
       "vertices_source_m": [
@@ -5793,7 +5793,7 @@
       ]
     },
     {
-      "name": "r027_1641_r032_pilot_seat_cushion",
+      "name": "r027_1782_r032_pilot_seat_cushion",
       "body": "front",
       "type": "convex",
       "vertices_source_m": [
@@ -8080,7 +8080,7 @@
       ]
     },
     {
-      "name": "r027_1642_r032_pilot_seat_back",
+      "name": "r027_1783_r032_pilot_seat_back",
       "body": "front",
       "type": "convex",
       "vertices_source_m": [
@@ -10367,7 +10367,7 @@
       ]
     },
     {
-      "name": "r027_1680_r032_center_pedestal",
+      "name": "r027_1821_r032_center_pedestal",
       "body": "front",
       "type": "convex",
       "vertices_source_m": [
@@ -10414,7 +10414,7 @@
       ]
     },
     {
-      "name": "r027_1695_r032_engineer_console",
+      "name": "r027_1836_r032_engineer_console",
       "body": "front",
       "type": "convex",
       "vertices_source_m": [
@@ -10461,7 +10461,7 @@
       ]
     },
     {
-      "name": "r027_1786_r032_engineer_seat_floor_plate",
+      "name": "r027_1927_r032_engineer_seat_floor_plate",
       "body": "front",
       "type": "convex",
       "vertices_source_m": [
@@ -10508,7 +10508,7 @@
       ]
     },
     {
-      "name": "r027_1787_r032_engineer_seat_suspension",
+      "name": "r027_1928_r032_engineer_seat_suspension",
       "body": "front",
       "type": "convex",
       "vertices_source_m": [
@@ -10845,7 +10845,7 @@
       ]
     },
     {
-      "name": "r027_1788_r032_engineer_seat_rod",
+      "name": "r027_1929_r032_engineer_seat_rod",
       "body": "front",
       "type": "convex",
       "vertices_source_m": [
@@ -11182,7 +11182,7 @@
       ]
     },
     {
-      "name": "r027_1794_r032_engineer_seat",
+      "name": "r027_1935_r032_engineer_seat",
       "body": "front",
       "type": "convex",
       "vertices_source_m": [
@@ -13469,7 +13469,7 @@
       ]
     },
     {
-      "name": "r027_1795_r032_engineer_seat_back",
+      "name": "r027_1936_r032_engineer_seat_back",
       "body": "front",
       "type": "convex",
       "vertices_source_m": [
@@ -15756,7 +15756,7 @@
       ]
     },
     {
-      "name": "r027_1807_r032_workbench_top",
+      "name": "r027_1948_r032_workbench_top",
       "body": "front",
       "type": "convex",
       "vertices_source_m": [
@@ -15803,7 +15803,7 @@
       ]
     },
     {
-      "name": "r027_1808_r032_desk_pedestal",
+      "name": "r027_1949_r032_desk_pedestal",
       "body": "front",
       "type": "convex",
       "vertices_source_m": [
@@ -15850,7 +15850,7 @@
       ]
     },
     {
-      "name": "r027_1809_r032_desk_pedestal",
+      "name": "r027_1950_r032_desk_pedestal",
       "body": "front",
       "type": "convex",
       "vertices_source_m": [
@@ -15897,7 +15897,7 @@
       ]
     },
     {
-      "name": "r027_1823_r032_engineer_console",
+      "name": "r027_1964_r032_engineer_console",
       "body": "front",
       "type": "convex",
       "vertices_source_m": [
@@ -15944,7 +15944,7 @@
       ]
     },
     {
-      "name": "r027_1914_r032_engineer_seat_floor_plate",
+      "name": "r027_2055_r032_engineer_seat_floor_plate",
       "body": "front",
       "type": "convex",
       "vertices_source_m": [
@@ -15991,7 +15991,7 @@
       ]
     },
     {
-      "name": "r027_1915_r032_engineer_seat_suspension",
+      "name": "r027_2056_r032_engineer_seat_suspension",
       "body": "front",
       "type": "convex",
       "vertices_source_m": [
@@ -16328,7 +16328,7 @@
       ]
     },
     {
-      "name": "r027_1916_r032_engineer_seat_rod",
+      "name": "r027_2057_r032_engineer_seat_rod",
       "body": "front",
       "type": "convex",
       "vertices_source_m": [
@@ -16665,7 +16665,7 @@
       ]
     },
     {
-      "name": "r027_1922_r032_engineer_seat",
+      "name": "r027_2063_r032_engineer_seat",
       "body": "front",
       "type": "convex",
       "vertices_source_m": [
@@ -18952,7 +18952,7 @@
       ]
     },
     {
-      "name": "r027_1923_r032_engineer_seat_back",
+      "name": "r027_2064_r032_engineer_seat_back",
       "body": "front",
       "type": "convex",
       "vertices_source_m": [
@@ -21239,7 +21239,7 @@
       ]
     },
     {
-      "name": "r027_1935_r032_workbench_top",
+      "name": "r027_2076_r032_workbench_top",
       "body": "front",
       "type": "convex",
       "vertices_source_m": [
@@ -21286,7 +21286,7 @@
       ]
     },
     {
-      "name": "r027_1936_r032_desk_pedestal",
+      "name": "r027_2077_r032_desk_pedestal",
       "body": "front",
       "type": "convex",
       "vertices_source_m": [
@@ -21333,7 +21333,7 @@
       ]
     },
     {
-      "name": "r027_1937_r032_desk_pedestal",
+      "name": "r027_2078_r032_desk_pedestal",
       "body": "front",
       "type": "convex",
       "vertices_source_m": [
@@ -21380,7 +21380,7 @@
       ]
     },
     {
-      "name": "r027_1961_r032_lounge_floor",
+      "name": "r027_2102_r032_lounge_floor",
       "body": "front",
       "type": "convex",
       "vertices_source_m": [
@@ -21427,7 +21427,7 @@
       ]
     },
     {
-      "name": "r027_1962_r032_internal_stair_tread",
+      "name": "r027_2103_r032_internal_stair_tread",
       "body": "front",
       "type": "convex",
       "vertices_source_m": [
@@ -21474,7 +21474,7 @@
       ]
     },
     {
-      "name": "r027_1963_r032_internal_stair_riser",
+      "name": "r027_2104_r032_internal_stair_riser",
       "body": "front",
       "type": "convex",
       "vertices_source_m": [
@@ -21521,7 +21521,7 @@
       ]
     },
     {
-      "name": "r027_1964_r032_internal_stair_tread",
+      "name": "r027_2105_r032_internal_stair_tread",
       "body": "front",
       "type": "convex",
       "vertices_source_m": [
@@ -21568,7 +21568,7 @@
       ]
     },
     {
-      "name": "r027_1965_r032_internal_stair_riser",
+      "name": "r027_2106_r032_internal_stair_riser",
       "body": "front",
       "type": "convex",
       "vertices_source_m": [
@@ -21615,7 +21615,7 @@
       ]
     },
     {
-      "name": "r027_1966_r032_internal_stair_tread",
+      "name": "r027_2107_r032_internal_stair_tread",
       "body": "front",
       "type": "convex",
       "vertices_source_m": [
@@ -21662,7 +21662,7 @@
       ]
     },
     {
-      "name": "r027_1967_r032_internal_stair_riser",
+      "name": "r027_2108_r032_internal_stair_riser",
       "body": "front",
       "type": "convex",
       "vertices_source_m": [
@@ -21709,7 +21709,7 @@
       ]
     },
     {
-      "name": "r027_1968_r032_internal_stair_tread",
+      "name": "r027_2109_r032_internal_stair_tread",
       "body": "front",
       "type": "convex",
       "vertices_source_m": [
@@ -21756,7 +21756,7 @@
       ]
     },
     {
-      "name": "r027_1969_r032_internal_stair_riser",
+      "name": "r027_2110_r032_internal_stair_riser",
       "body": "front",
       "type": "convex",
       "vertices_source_m": [
@@ -21803,7 +21803,7 @@
       ]
     },
     {
-      "name": "r027_1970_r032_internal_stair_tread",
+      "name": "r027_2111_r032_internal_stair_tread",
       "body": "front",
       "type": "convex",
       "vertices_source_m": [
@@ -21850,7 +21850,7 @@
       ]
     },
     {
-      "name": "r027_1971_r032_internal_stair_riser",
+      "name": "r027_2112_r032_internal_stair_riser",
       "body": "front",
       "type": "convex",
       "vertices_source_m": [
@@ -21897,7 +21897,7 @@
       ]
     },
     {
-      "name": "r027_1972_r032_internal_stair_tread",
+      "name": "r027_2113_r032_internal_stair_tread",
       "body": "front",
       "type": "convex",
       "vertices_source_m": [
@@ -21944,7 +21944,7 @@
       ]
     },
     {
-      "name": "r027_1973_r032_internal_stair_riser",
+      "name": "r027_2114_r032_internal_stair_riser",
       "body": "front",
       "type": "convex",
       "vertices_source_m": [
@@ -21991,7 +21991,7 @@
       ]
     },
     {
-      "name": "r027_1974_r032_internal_stair_tread",
+      "name": "r027_2115_r032_internal_stair_tread",
       "body": "front",
       "type": "convex",
       "vertices_source_m": [
@@ -22038,7 +22038,7 @@
       ]
     },
     {
-      "name": "r027_1975_r032_internal_stair_riser",
+      "name": "r027_2116_r032_internal_stair_riser",
       "body": "front",
       "type": "convex",
       "vertices_source_m": [
@@ -22085,7 +22085,7 @@
       ]
     },
     {
-      "name": "r027_1976_r032_internal_stair_tread",
+      "name": "r027_2117_r032_internal_stair_tread",
       "body": "front",
       "type": "convex",
       "vertices_source_m": [
@@ -22132,7 +22132,7 @@
       ]
     },
     {
-      "name": "r027_1977_r032_internal_stair_riser",
+      "name": "r027_2118_r032_internal_stair_riser",
       "body": "front",
       "type": "convex",
       "vertices_source_m": [
@@ -22179,7 +22179,7 @@
       ]
     },
     {
-      "name": "r027_1978_r032_internal_stair_tread",
+      "name": "r027_2119_r032_internal_stair_tread",
       "body": "front",
       "type": "convex",
       "vertices_source_m": [
@@ -22226,7 +22226,7 @@
       ]
     },
     {
-      "name": "r027_1979_r032_internal_stair_riser",
+      "name": "r027_2120_r032_internal_stair_riser",
       "body": "front",
       "type": "convex",
       "vertices_source_m": [
@@ -22273,7 +22273,7 @@
       ]
     },
     {
-      "name": "r027_1980_r032_internal_stair_tread",
+      "name": "r027_2121_r032_internal_stair_tread",
       "body": "front",
       "type": "convex",
       "vertices_source_m": [
@@ -22320,7 +22320,7 @@
       ]
     },
     {
-      "name": "r027_1981_r032_internal_stair_riser",
+      "name": "r027_2122_r032_internal_stair_riser",
       "body": "front",
       "type": "convex",
       "vertices_source_m": [
@@ -22367,7 +22367,7 @@
       ]
     },
     {
-      "name": "r027_1982_r032_internal_stair_tread",
+      "name": "r027_2123_r032_internal_stair_tread",
       "body": "front",
       "type": "convex",
       "vertices_source_m": [
@@ -22414,7 +22414,7 @@
       ]
     },
     {
-      "name": "r027_1983_r032_internal_stair_riser",
+      "name": "r027_2124_r032_internal_stair_riser",
       "body": "front",
       "type": "convex",
       "vertices_source_m": [
@@ -22461,7 +22461,7 @@
       ]
     },
     {
-      "name": "r027_1984_r032_internal_stair_tread",
+      "name": "r027_2125_r032_internal_stair_tread",
       "body": "front",
       "type": "convex",
       "vertices_source_m": [
@@ -22508,7 +22508,7 @@
       ]
     },
     {
-      "name": "r027_1985_r032_internal_stair_riser",
+      "name": "r027_2126_r032_internal_stair_riser",
       "body": "front",
       "type": "convex",
       "vertices_source_m": [
@@ -22555,7 +22555,7 @@
       ]
     },
     {
-      "name": "r027_1986_r032_internal_stair_tread",
+      "name": "r027_2127_r032_internal_stair_tread",
       "body": "front",
       "type": "convex",
       "vertices_source_m": [
@@ -22602,7 +22602,7 @@
       ]
     },
     {
-      "name": "r027_1987_r032_internal_stair_riser",
+      "name": "r027_2128_r032_internal_stair_riser",
       "body": "front",
       "type": "convex",
       "vertices_source_m": [
@@ -22649,7 +22649,7 @@
       ]
     },
     {
-      "name": "r027_1988_r032_internal_stair_tread",
+      "name": "r027_2129_r032_internal_stair_tread",
       "body": "front",
       "type": "convex",
       "vertices_source_m": [
@@ -22696,7 +22696,7 @@
       ]
     },
     {
-      "name": "r027_1989_r032_internal_stair_riser",
+      "name": "r027_2130_r032_internal_stair_riser",
       "body": "front",
       "type": "convex",
       "vertices_source_m": [
@@ -22743,7 +22743,7 @@
       ]
     },
     {
-      "name": "r027_1990_r032_internal_stair_tread",
+      "name": "r027_2131_r032_internal_stair_tread",
       "body": "front",
       "type": "convex",
       "vertices_source_m": [
@@ -22790,7 +22790,7 @@
       ]
     },
     {
-      "name": "r027_1991_r032_internal_stair_riser",
+      "name": "r027_2132_r032_internal_stair_riser",
       "body": "front",
       "type": "convex",
       "vertices_source_m": [
@@ -22837,7 +22837,7 @@
       ]
     },
     {
-      "name": "r027_1992_r032_internal_stair_tread",
+      "name": "r027_2133_r032_internal_stair_tread",
       "body": "front",
       "type": "convex",
       "vertices_source_m": [
@@ -22884,7 +22884,7 @@
       ]
     },
     {
-      "name": "r027_1993_r032_internal_stair_riser",
+      "name": "r027_2134_r032_internal_stair_riser",
       "body": "front",
       "type": "convex",
       "vertices_source_m": [
@@ -22931,7 +22931,7 @@
       ]
     },
     {
-      "name": "r027_1994_r032_internal_stair_tread",
+      "name": "r027_2135_r032_internal_stair_tread",
       "body": "front",
       "type": "convex",
       "vertices_source_m": [
@@ -22978,7 +22978,7 @@
       ]
     },
     {
-      "name": "r027_1995_r032_internal_stair_riser",
+      "name": "r027_2136_r032_internal_stair_riser",
       "body": "front",
       "type": "convex",
       "vertices_source_m": [
@@ -23025,7 +23025,7 @@
       ]
     },
     {
-      "name": "r027_1996_r032_internal_stair_tread",
+      "name": "r027_2137_r032_internal_stair_tread",
       "body": "front",
       "type": "convex",
       "vertices_source_m": [
@@ -23072,7 +23072,7 @@
       ]
     },
     {
-      "name": "r027_1997_r032_internal_stair_riser",
+      "name": "r027_2138_r032_internal_stair_riser",
       "body": "front",
       "type": "convex",
       "vertices_source_m": [
@@ -23119,7 +23119,7 @@
       ]
     },
     {
-      "name": "r027_1998_r032_internal_stair_tread",
+      "name": "r027_2139_r032_internal_stair_tread",
       "body": "front",
       "type": "convex",
       "vertices_source_m": [
@@ -23166,7 +23166,7 @@
       ]
     },
     {
-      "name": "r027_1999_r032_internal_stair_riser",
+      "name": "r027_2140_r032_internal_stair_riser",
       "body": "front",
       "type": "convex",
       "vertices_source_m": [
@@ -23213,7 +23213,7 @@
       ]
     },
     {
-      "name": "r027_2000_r032_internal_stair_tread",
+      "name": "r027_2141_r032_internal_stair_tread",
       "body": "front",
       "type": "convex",
       "vertices_source_m": [
@@ -23260,7 +23260,7 @@
       ]
     },
     {
-      "name": "r027_2001_r032_internal_stair_riser",
+      "name": "r027_2142_r032_internal_stair_riser",
       "body": "front",
       "type": "convex",
       "vertices_source_m": [
@@ -23307,54 +23307,54 @@
       ]
     },
     {
-      "name": "r027_2016_r032_enclosed_connector_floor",
+      "name": "r027_2157_r032_enclosed_connector_floor",
       "body": "front",
       "type": "convex",
       "vertices_source_m": [
         [
-          13.299999999999999,
+          13.3,
           -1.1,
           11.200000000000001
         ],
         [
-          13.299999999999999,
-          -1.1,
-          11.35
-        ],
-        [
-          13.299999999999999,
-          1.1,
-          11.200000000000001
-        ],
-        [
-          13.299999999999999,
-          1.1,
-          11.35
-        ],
-        [
-          16.4,
-          -1.1,
-          11.200000000000001
-        ],
-        [
-          16.4,
+          13.3,
           -1.1,
           11.35
         ],
         [
-          16.4,
+          13.3,
           1.1,
           11.200000000000001
         ],
         [
-          16.4,
+          13.3,
+          1.1,
+          11.35
+        ],
+        [
+          16.05,
+          -1.1,
+          11.200000000000001
+        ],
+        [
+          16.05,
+          -1.1,
+          11.35
+        ],
+        [
+          16.05,
+          1.1,
+          11.200000000000001
+        ],
+        [
+          16.05,
           1.1,
           11.35
         ]
       ]
     },
     {
-      "name": "r027_2017_r032_enclosed_connector_wall",
+      "name": "r027_2158_r032_enclosed_connector_wall",
       "body": "front",
       "type": "convex",
       "vertices_source_m": [
@@ -23379,29 +23379,29 @@
           13.870000000000001
         ],
         [
-          16.45,
+          17.05,
           -1.26,
           11.27
         ],
         [
-          16.45,
+          17.05,
           -1.26,
           13.870000000000001
         ],
         [
-          16.45,
+          17.05,
           -1.0999999999999999,
           11.27
         ],
         [
-          16.45,
+          17.05,
           -1.0999999999999999,
           13.870000000000001
         ]
       ]
     },
     {
-      "name": "r027_2018_r032_enclosed_connector_wall",
+      "name": "r027_2160_r032_enclosed_connector_wall",
       "body": "front",
       "type": "convex",
       "vertices_source_m": [
@@ -23426,29 +23426,29 @@
           13.870000000000001
         ],
         [
-          16.45,
+          17.05,
           1.0999999999999999,
           11.27
         ],
         [
-          16.45,
+          17.05,
           1.0999999999999999,
           13.870000000000001
         ],
         [
-          16.45,
+          17.05,
           1.26,
           11.27
         ],
         [
-          16.45,
+          17.05,
           1.26,
           13.870000000000001
         ]
       ]
     },
     {
-      "name": "r027_2019_r032_stairhouse_roof",
+      "name": "r027_2162_r032_stairhouse_roof",
       "body": "front",
       "type": "convex",
       "vertices_source_m": [
@@ -23473,29 +23473,29 @@
           13.99
         ],
         [
-          16.43,
+          17.05,
           -1.26,
           13.83
         ],
         [
-          16.43,
+          17.05,
           -1.26,
           13.99
         ],
         [
-          16.43,
+          17.05,
           1.26,
           13.83
         ],
         [
-          16.43,
+          17.05,
           1.26,
           13.99
         ]
       ]
     },
     {
-      "name": "r027_2020_r032_stairhouse_coaming",
+      "name": "r027_2164_r032_stairhouse_coaming",
       "body": "front",
       "type": "convex",
       "vertices_source_m": [
@@ -23542,7 +23542,7 @@
       ]
     },
     {
-      "name": "r027_2021_r032_stairhouse_coaming",
+      "name": "r027_2166_r032_stairhouse_coaming",
       "body": "front",
       "type": "convex",
       "vertices_source_m": [
@@ -23589,7 +23589,7 @@
       ]
     },
     {
-      "name": "r027_2022_r032_stairhouse_coaming_end",
+      "name": "r027_2168_r032_stairhouse_coaming_end",
       "body": "front",
       "type": "convex",
       "vertices_source_m": [
@@ -23636,7 +23636,7 @@
       ]
     },
     {
-      "name": "r027_2023_r032_passage_jamb",
+      "name": "r027_2170_r032_passage_jamb",
       "body": "front",
       "type": "convex",
       "vertices_source_m": [
@@ -23683,7 +23683,7 @@
       ]
     },
     {
-      "name": "r027_2024_r032_passage_jamb",
+      "name": "r027_2171_r032_passage_jamb",
       "body": "front",
       "type": "convex",
       "vertices_source_m": [
@@ -23730,7 +23730,7 @@
       ]
     },
     {
-      "name": "r027_2025_r032_passage_header",
+      "name": "r027_2172_r032_passage_header",
       "body": "front",
       "type": "convex",
       "vertices_source_m": [
@@ -23777,148 +23777,148 @@
       ]
     },
     {
-      "name": "r027_2028_r032_passage_jamb",
+      "name": "r027_2175_r032_passage_jamb",
       "body": "front",
       "type": "convex",
       "vertices_source_m": [
         [
-          16.090000000000003,
+          17.0,
           -1.12,
           11.35
         ],
         [
-          16.090000000000003,
+          17.0,
           -1.12,
           13.709999999999999
         ],
         [
-          16.090000000000003,
+          17.0,
           -1.0,
           11.35
         ],
         [
-          16.090000000000003,
+          17.0,
           -1.0,
           13.709999999999999
         ],
         [
-          16.25,
+          17.159999999999997,
           -1.12,
           11.35
         ],
         [
-          16.25,
+          17.159999999999997,
           -1.12,
           13.709999999999999
         ],
         [
-          16.25,
+          17.159999999999997,
           -1.0,
           11.35
         ],
         [
-          16.25,
+          17.159999999999997,
           -1.0,
           13.709999999999999
         ]
       ]
     },
     {
-      "name": "r027_2029_r032_passage_jamb",
+      "name": "r027_2176_r032_passage_jamb",
       "body": "front",
       "type": "convex",
       "vertices_source_m": [
         [
-          16.090000000000003,
+          17.0,
           1.0,
           11.35
         ],
         [
-          16.090000000000003,
-          1.0,
-          13.709999999999999
-        ],
-        [
-          16.090000000000003,
-          1.12,
-          11.35
-        ],
-        [
-          16.090000000000003,
-          1.12,
-          13.709999999999999
-        ],
-        [
-          16.25,
-          1.0,
-          11.35
-        ],
-        [
-          16.25,
+          17.0,
           1.0,
           13.709999999999999
         ],
         [
-          16.25,
+          17.0,
           1.12,
           11.35
         ],
         [
-          16.25,
+          17.0,
+          1.12,
+          13.709999999999999
+        ],
+        [
+          17.159999999999997,
+          1.0,
+          11.35
+        ],
+        [
+          17.159999999999997,
+          1.0,
+          13.709999999999999
+        ],
+        [
+          17.159999999999997,
+          1.12,
+          11.35
+        ],
+        [
+          17.159999999999997,
           1.12,
           13.709999999999999
         ]
       ]
     },
     {
-      "name": "r027_2030_r032_passage_header",
+      "name": "r027_2177_r032_passage_header",
       "body": "front",
       "type": "convex",
       "vertices_source_m": [
         [
-          16.090000000000003,
+          17.0,
           -1.12,
           13.66
         ],
         [
-          16.090000000000003,
-          -1.12,
-          13.780000000000001
-        ],
-        [
-          16.090000000000003,
-          1.12,
-          13.66
-        ],
-        [
-          16.090000000000003,
-          1.12,
-          13.780000000000001
-        ],
-        [
-          16.25,
-          -1.12,
-          13.66
-        ],
-        [
-          16.25,
+          17.0,
           -1.12,
           13.780000000000001
         ],
         [
-          16.25,
+          17.0,
           1.12,
           13.66
         ],
         [
-          16.25,
+          17.0,
+          1.12,
+          13.780000000000001
+        ],
+        [
+          17.159999999999997,
+          -1.12,
+          13.66
+        ],
+        [
+          17.159999999999997,
+          -1.12,
+          13.780000000000001
+        ],
+        [
+          17.159999999999997,
+          1.12,
+          13.66
+        ],
+        [
+          17.159999999999997,
           1.12,
           13.780000000000001
         ]
       ]
     },
     {
-      "name": "r027_2033_r032_lounge_bench_base",
+      "name": "r027_2180_r032_lounge_bench_base",
       "body": "front",
       "type": "convex",
       "vertices_source_m": [
@@ -23965,7 +23965,7 @@
       ]
     },
     {
-      "name": "r027_2034_r032_lounge_bench_cushion",
+      "name": "r027_2181_r032_lounge_bench_cushion",
       "body": "front",
       "type": "convex",
       "vertices_source_m": [
@@ -26252,7 +26252,7 @@
       ]
     },
     {
-      "name": "r027_2035_r032_lounge_bench_back",
+      "name": "r027_2182_r032_lounge_bench_back",
       "body": "front",
       "type": "convex",
       "vertices_source_m": [
@@ -26299,7 +26299,7 @@
       ]
     },
     {
-      "name": "r027_2036_r032_lounge_table",
+      "name": "r027_2183_r032_lounge_table",
       "body": "front",
       "type": "convex",
       "vertices_source_m": [
@@ -26346,7 +26346,7 @@
       ]
     },
     {
-      "name": "r027_2037_r032_lounge_table_leg",
+      "name": "r027_2184_r032_lounge_table_leg",
       "body": "front",
       "type": "convex",
       "vertices_source_m": [
@@ -26393,7 +26393,7 @@
       ]
     },
     {
-      "name": "r027_2038_r032_lounge_table_leg",
+      "name": "r027_2185_r032_lounge_table_leg",
       "body": "front",
       "type": "convex",
       "vertices_source_m": [
@@ -26440,7 +26440,7 @@
       ]
     },
     {
-      "name": "r027_2039_r032_lounge_storage",
+      "name": "r027_2186_r032_lounge_storage",
       "body": "front",
       "type": "convex",
       "vertices_source_m": [
@@ -26487,7 +26487,7 @@
       ]
     },
     {
-      "name": "r027_2053_r032_lounge_bench_base",
+      "name": "r027_2200_r032_lounge_bench_base",
       "body": "front",
       "type": "convex",
       "vertices_source_m": [
@@ -26534,7 +26534,7 @@
       ]
     },
     {
-      "name": "r027_2054_r032_lounge_bench_cushion",
+      "name": "r027_2201_r032_lounge_bench_cushion",
       "body": "front",
       "type": "convex",
       "vertices_source_m": [
@@ -28821,7 +28821,7 @@
       ]
     },
     {
-      "name": "r027_2055_r032_lounge_bench_back",
+      "name": "r027_2202_r032_lounge_bench_back",
       "body": "front",
       "type": "convex",
       "vertices_source_m": [
@@ -28868,7 +28868,7 @@
       ]
     },
     {
-      "name": "r027_2056_r032_lounge_table",
+      "name": "r027_2203_r032_lounge_table",
       "body": "front",
       "type": "convex",
       "vertices_source_m": [
@@ -28915,7 +28915,7 @@
       ]
     },
     {
-      "name": "r027_2057_r032_lounge_table_leg",
+      "name": "r027_2204_r032_lounge_table_leg",
       "body": "front",
       "type": "convex",
       "vertices_source_m": [
@@ -28962,7 +28962,7 @@
       ]
     },
     {
-      "name": "r027_2058_r032_lounge_table_leg",
+      "name": "r027_2205_r032_lounge_table_leg",
       "body": "front",
       "type": "convex",
       "vertices_source_m": [
@@ -29009,7 +29009,7 @@
       ]
     },
     {
-      "name": "r027_2059_r032_lounge_storage",
+      "name": "r027_2206_r032_lounge_storage",
       "body": "front",
       "type": "convex",
       "vertices_source_m": [
@@ -29056,7 +29056,7 @@
       ]
     },
     {
-      "name": "r027_2073_r032_maintenance_terminal",
+      "name": "r027_2220_r032_maintenance_terminal",
       "body": "front",
       "type": "convex",
       "vertices_source_m": [

@@ -40,12 +40,18 @@ func _count_meshes(node:Node)->int:
 	for child in node.get_children():total+=_count_meshes(child)
 	return total
 func _camera()->void:
-	if not room_ready or not str(options.view) in ["cabin_tour","interior","workshop","controls","seat_detail","instrument_detail","engineer_detail","lounge","stairs","cockpit_rear","lift_detail","lift_root","pedestal","underbody_detail"]:super._camera();return
+	if not room_ready or not str(options.view) in ["accept_passage","accept_joint","accept_services","accept_yokes","accept_workbay","accept_cargo","cabin_tour","interior","workshop","controls","seat_detail","instrument_detail","engineer_detail","lounge","stairs","cockpit_rear","lift_detail","lift_root","pedestal","underbody_detail"]:super._camera();return
 	var from:Array=[24.6,0,13.20];var target:Array=[33.3,0,12.60]
 	if str(options.view)=="cabin_tour":
 		var t:float=smoothstep(0.,10.,elapsed-32.)
 		from=[lerpf(24.6,30.6,t),-.1,lerpf(13.20,12.95,t)];target=[33.1,lerpf(0.,-1.2,t),12.60]
 	match str(options.view):
+		"accept_passage":from=[18.3,0,12.65];target=[10.6,0,12.0]
+		"accept_joint":from=[20.5,-8.5,15.6];target=[14.8,-.6,13.25]
+		"accept_services":from=[27.8,-.25,13.55];target=[27.8,-2.55,12.20]
+		"accept_yokes":from=[29.6,0,13.25];target=[32.0,0,12.45]
+		"accept_workbay":from=[1.,-24.,13.0];target=[0.,-7.5,10.0]
+		"accept_cargo":from=[-65.,-4.,24.];target=[-48.,0.,14.0]
 		"workshop":from=[25.,.2,12.95];target=[22.3,2.5,12.2]
 		"controls":from=[30.6,-1.58,12.90];target=[33.2,-.8,12.50]
 		"seat_detail":from=[31.6,-.6,12.85];target=[30.5,-1.58,12.10]

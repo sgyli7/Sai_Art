@@ -14,6 +14,9 @@ var rows:Array=[]
 var dragged:=""
 var range_latched:=0.
 var test_actions:Dictionary={}
+var ui_axes:Dictionary={}
+var ui_selected_crane:=-1
+var ui_selected_lift:=-1
 
 func configure(h:SceneTree,d:Dictionary)->void:
 	host=h;data=d
@@ -27,9 +30,11 @@ func configure(h:SceneTree,d:Dictionary)->void:
 			for p in vertices:points.append(host.vec(p))
 			shape.points=points;var col:=CollisionShape3D.new();col.shape=shape;body.add_child(col)
 	for item in data.labels:
-		if item.id=="steer":continue
+		if str(item.id).begins_with("steer"):continue
 		var label:=Label3D.new();label.text=item.text;label.font_size=24;label.pixel_size=.0009;label.outline_size=0;label.shaded=true;label.modulate=Color("c9cbbb");label.visibility_range_end=30.
 		host.bodies.front.add_child(label);label.position=host.local_source(item.position_source_m);label.rotation.x=-PI/2
+		if item.station=="services":label.rotation.y=PI
+		elif item.station=="pilot":label.rotation.y=-PI/2
 		if item.id=="steer":label.rotation=Vector3(0,-PI/2,0);label.position+=Vector3(-.08,.32,0)
 	for kind in [12,13,16]:
 		var viewport:=SubViewport.new();viewport.size=Vector2i(768,768) if kind==16 else Vector2i(4096,2048);viewport.transparent_bg=false;viewport.disable_3d=true;viewport.render_target_update_mode=SubViewport.UPDATE_ALWAYS;host.stage.add_child(viewport)
@@ -54,11 +59,12 @@ func set_physical_mode(enabled:bool)->void:physical_mode=enabled;dragged=""
 func input(event:InputEvent)->void:
 	if event is InputEventKey and event.pressed and not event.echo:
 		match event.physical_keycode:
-			KEY_G:select_next("lift_select",6,2.50)
-			KEY_N:select_next("crane_select",8,2.45)
+			KEY_G:ui_selected_lift=-1;select_next("lift_select",6,2.50)
+			KEY_N:ui_selected_crane=-1;select_next("crane_select",8,2.45)
 			KEY_L:pulse("lifts_all" if event.shift_pressed else "lift")
 			KEY_O:pulse("doors")
 			KEY_C:pulse("work")
+			KEY_H:pulse("cargo")
 			KEY_B:pulse("emergency")
 	if event is InputEventMouseButton and event.button_index==MOUSE_BUTTON_LEFT:
 		if not event.pressed:dragged="";return
@@ -81,6 +87,7 @@ func _press(id:String)->void:
 	match id:
 		"emergency":parking=not parking
 		"doors":host.doors_open=not host.doors_open
+		"cargo":accepted=host.cargo.request()
 		"work":
 			accepted=host.bodies.front.linear_velocity.length()<.1
 			if accepted:host.equipment.working=not host.equipment.working
@@ -94,10 +101,12 @@ func _press(id:String)->void:
 	events.append({"time":host.elapsed,"control":id,"accepted":accepted,"source":"physical_joint_threshold"})
 
 func _test(time:float)->void:
-	for item in [[5.,"doors"],[7.,"doors"],[9.,"work"],[20.,"work"],[26.,"emergency"],[29.,"emergency"],[35.,"lift"],[74.,"lift"],[112.,"lifts_all"],[151.,"lifts_all"]]:
+	for item in [[5.,"doors"],[6.,"cargo"],[7.,"doors"],[9.,"work"],[20.,"work"],[26.,"emergency"],[29.,"emergency"],[35.,"lift"],[74.,"lift"],[112.,"lifts_all"],[151.,"lifts_all"]]:
 		var key:=str(item[0])+str(item[1])
 		if time>=float(item[0]) and not test_actions.has(key):test_actions[key]=true;pulse(str(item[1]))
-	for id in ["crane_slew","crane_luff","crane_extend","crane_winch","panel_slew","panel_fold"]:targets[id]=.22 if time>11. and time<16. else 0.
+	for id in ["crane_slew","crane_luff","crane_extend","panel_slew","panel_fold"]:targets[id]=.22 if time>11. and time<16. else 0.
+	# Exercise a visibly useful paid-length range in the physical winch handle.
+	targets.crane_winch=.30 if time>11. and time<23. else 0.
 	targets.crane_select=.7 if time>2. else 0.;targets.lift_select=1.0 if time>2. else 0.;targets.high_range=.65 if time>22. and time<30. else 0.
 	targets.throttle=.12 if time>24. and time<27. else 0.;targets.steer=.25 if time>24. and time<27. else 0.;targets.brake=.5 if time>27. and time<29. else 0.
 
@@ -109,27 +118,37 @@ func step(dt:float)->void:
 		var keys={"steer":[KEY_A,KEY_D],"throttle":[KEY_W,KEY_S],"crane_slew":[KEY_KP_4,KEY_KP_6],"crane_luff":[KEY_KP_8,KEY_KP_2],"crane_extend":[KEY_KP_ADD,KEY_KP_SUBTRACT],"crane_winch":[KEY_PAGEDOWN,KEY_PAGEUP],"panel_slew":[KEY_Z,KEY_X],"panel_fold":[KEY_R,KEY_F]}
 		for id in keys:
 			if dragged==id:continue
-			var level:float=float(int(active and Input.is_physical_key_pressed(keys[id][0]))-int(active and Input.is_physical_key_pressed(keys[id][1])))
+			var keyboard:float=float(int(active and Input.is_physical_key_pressed(keys[id][0]))-int(active and Input.is_physical_key_pressed(keys[id][1])))
+			var ui:float=float(ui_axes.get(id,0.));var level:float=ui if absf(ui)>.001 else keyboard
 			targets[id]=level*(.65 if id=="steer" else .5 if id=="throttle" else .30)
-		if dragged!="brake":targets.brake=.5 if active and Input.is_physical_key_pressed(KEY_SPACE) else 0.
-		targets.high_range=.65 if Input.is_physical_key_pressed(KEY_SHIFT) else range_latched
+		if dragged!="brake":targets.brake=maxf(.5 if active and Input.is_physical_key_pressed(KEY_SPACE) else 0.,float(ui_axes.get("brake",0.))*.5)
+		targets.high_range=.65 if Input.is_physical_key_pressed(KEY_SHIFT) or float(ui_axes.get("high_range",0.))>.5 else range_latched
 	elif not physical_mode:
 		# Automated review modes retain their own commands and show them on handles.
 		targets.throttle=clampf(float(host.options.speed)/27.777778,-1.,1.)*.5;targets.steer=clampf(float(host.options.curvature)/.012,-1.,1.)*.65
+	if not physical_mode:
+		if dragged=="steer_copilot":targets.steer=targets.steer_copilot
+		else:targets.steer_copilot=targets.steer
+	var steering_a:=coordinate("steer");var steering_b:=coordinate("steer_copilot")
 	for c in data.controls:
 		var id:String=c.id;var q:=coordinate(id);var goal:float=float(targets[id]);var lo:float=c.limits[0];var hi:float=c.limits[1]
 		if c.kind=="slide":goal=hi if float(pulses.get(id,-1.))>host.elapsed else 0.
 		if physical_mode:goal=roundf(q.x/hi*(int(c.detents)-1))*hi/(int(c.detents)-1) if int(c.detents)>1 else 0.
 		var link:Dictionary=links[id];var axis_world:Vector3=link.parent.global_basis*link.axis
 		var gravity:float=Vector3.DOWN.dot(axis_world)*float(c.mass_kg)*9.81 if c.kind=="slide" else (link.body.global_basis*host.vec(c.com_local_m)).cross(Vector3.DOWN*float(c.mass_kg)*9.81).dot(axis_world)
-		var effort:float=clampf(float(c.kp)*(goal-q.x)-float(c.kd)*q.y-gravity,-float(c.effort_cap),float(c.effort_cap))
+		var coupling:=0.
+		if id=="steer" or id=="steer_copilot":
+			var other:Vector2=steering_b if id=="steer" else steering_a
+			coupling=28.*(other.x-q.x)+1.2*(other.y-q.y)
+		var effort:float=clampf(float(c.kp)*(goal-q.x)-float(c.kd)*q.y-gravity+coupling,-float(c.effort_cap),float(c.effort_cap))
 		if c.kind=="slide":link.body.apply_central_force(axis_world*effort);link.parent.apply_force(-axis_world*effort,link.body.global_position-link.parent.global_position)
 		else:link.body.apply_torque(axis_world*effort);link.parent.apply_torque(-axis_world*effort)
 		values[id]=clampf(q.x/hi,-1. if lo<0. else 0.,1.)
 		if c.kind=="slide":
 			if q.x>.007 and not down[id]:down[id]=true;_press(id)
 			if q.x<.003:down[id]=false
-		host.selected_lift=clampi(roundi(axis("lift_select")*5),0,5);host.equipment.selected=clampi(roundi(axis("crane_select")*7),0,7)
+		host.selected_lift=ui_selected_lift if ui_selected_lift>=0 else clampi(roundi(axis("lift_select")*5),0,5)
+		host.equipment.selected=ui_selected_crane if ui_selected_crane>=0 else clampi(roundi(axis("crane_select")*7),0,7)
 	if host.count%maxi(20,Engine.physics_ticks_per_second/10)==0:rows.append({"time":host.elapsed,"values":values.duplicate(),"speed_request_m_s":drive_speed(),"parking":parking,"selected_lift":host.selected_lift,"selected_crane":host.equipment.selected,"physical_mode":physical_mode})
 
 func drive_speed()->float:

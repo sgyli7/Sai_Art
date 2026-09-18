@@ -127,7 +127,12 @@ func _write_visual_report()->void:
 
 func switch_theme()->void:
 	var ids=["black","desert","white","blue","yellow"]
-	theme_id=ids[(ids.find(theme_id)+1)%ids.size()]
+	set_theme_id(ids[(ids.find(theme_id)+1)%ids.size()])
+
+func set_theme_id(id:String)->void:
+	var ids=["black","desert","white","blue","yellow"]
+	if not id in ids:return
+	theme_id=id
 	var theme:Dictionary=JSON.parse_string(FileAccess.get_file_as_string(str(visual.config.style).get_base_dir()+"/themes/"+theme_id+".json"))
 	style.palette=theme.palette
 	var roles:Array=JSON.parse_string(FileAccess.get_file_as_string(asset_dir+"palette_roles.json"))

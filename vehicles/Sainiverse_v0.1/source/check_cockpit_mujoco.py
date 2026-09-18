@@ -25,7 +25,8 @@ for x in spec['controls']:c.targets[x['id']]=x['limits'][1]*(.8 if x['kind']=='h
 step(m,d,c,3.)
 errors={x['id']:abs(float(d.qpos[m.joint(x['name']).qposadr[0]])-c.targets[x['id']]) for x in spec['controls']}
 assert max(errors.values())<.006,errors
-assert {e['control'] for e in c.events}=={'doors','work','lift','lifts_all','emergency'}
+assert {e['control'] for e in c.events}=={x['id'] for x in spec['controls'] if x['kind']=='slide'}
+assert not next(e for e in c.events if e['control']=='cargo')['accepted'], 'An isolated control bench has no cargo handler; it must not report a successful attachment.'
 pressed_events=copy.deepcopy(c.events)
 for key in c.targets:c.targets[key]=0.
 step(m,d,c,3.);assert max(abs(v) for v in c.values.values())<.02,c.values
@@ -37,5 +38,12 @@ assert any(e['control']=='work' and e['accepted'] for e in c2.events),c2.events
 assert c2.working and np.linalg.norm(d2.qvel)<.2
 probe_q=float(d2.qpos[m2.joint('cockpit_work').qposadr[0]])
 assert .007<probe_q<.014,probe_q
-out=dict(joints=len(spec['controls']),max_servo_error=max(errors.values()),errors=errors,events=pressed_events,passive_contact_probe=dict(mass_kg=.5,button_travel_m=probe_q,events=c2.events),scope=__doc__)
+# Copilot input must reach the driver's joint through bounded forces alone.
+m3,d3,c3=env(r);c3.physical_mode=True
+d3.qfrc_applied[m3.joint('cockpit_steer_copilot').dofadr[0]]=1.5
+step(m3,d3,c3,3.)
+qa=float(d3.qpos[m3.joint('cockpit_steer').qposadr[0]]);qb=float(d3.qpos[m3.joint('cockpit_steer_copilot').qposadr[0]])
+assert qa>.05 and qb>qa and qb-qa<.03,(qa,qb)
+assert c3.command()['curvature_m_inv']>0
+out=dict(joints=len(spec['controls']),max_servo_error=max(errors.values()),errors=errors,events=pressed_events,passive_contact_probe=dict(mass_kg=.5,button_travel_m=probe_q,events=c2.events),copilot_passive_coupling=dict(external_torque_Nm=1.5,pilot_rad=qa,copilot_rad=qb,command=c3.command()),scope=__doc__)
 (O/'reports/cockpit_mujoco.json').write_text(json.dumps(out,indent=2));print({k:v for k,v in out.items() if k not in ['errors','scope']})

@@ -17,6 +17,7 @@ var selected:=0
 var auto_work:=false
 var sample_clock:=0.
 var maximum_cable_force:=0.
+var override_goals:Dictionary={}
 
 func configure(controller:SceneTree,data:Dictionary)->void:
 	host=controller;rig=data
@@ -26,7 +27,7 @@ func configure(controller:SceneTree,data:Dictionary)->void:
 		targets[spec.name]=0.
 	for crane in rig.cranes:paid[crane.name]=float(crane.paid_length_m)
 	for body in rig.bodies:
-		var rb:RigidBody3D=host.bodies[body.name];rb.collision_layer=64;rb.collision_mask=1|8;rb.angular_damp=.15
+		var rb:RigidBody3D=host.bodies[body.name];rb.collision_layer=64;rb.collision_mask=1|8|256;rb.angular_damp=.15
 		if body.has("collision_convex"):
 			var col:=CollisionShape3D.new();var shape:=ConvexPolygonShape3D.new();var points:=PackedVector3Array()
 			for v in body.collision_convex:points.append(host.vec(v))
@@ -63,6 +64,11 @@ func servo(name:String,goal:float,rate:float,kp:float,kd:float,cap:float,dt:floa
 		link.body.apply_force(axis*effort,anchor-link.body.global_position);link.parent.apply_force(-axis*effort,anchor-link.parent.global_position)
 	else:link.body.apply_torque(axis*effort);link.parent.apply_torque(-axis*effort)
 
+func extension(c:Dictionary,commanded:bool=false)->float:
+	var value:=0.
+	for name in c.stages:value+=float(targets[name]) if commanded else coordinate(name).x
+	return value
+
 func step(dt:float,time:float)->void:
 	var started:int=Time.get_ticks_usec()
 	coordinate_cache.clear()
@@ -78,32 +84,45 @@ func step(dt:float,time:float)->void:
 				luff_goal=.30;extend_goal=.65;rope_goal=maxf(1.3,float(c.paid_length_m)-1.4)
 				if time>23.:yaw_goal=outward*.20*sin(minf((time-23.)*.085,PI*.65))
 			else:
-				yaw_goal=float(targets[c.slew]);luff_goal=float(targets[c.luff]);extend_goal=float(targets[c.extend]);rope_goal=float(paid[c.name])
+				yaw_goal=float(targets[c.slew]);luff_goal=float(targets[c.luff]);extend_goal=extension(c,true);rope_goal=float(paid[c.name])
 				if i==selected:
 					yaw_goal+=host.cockpit.axis("crane_slew")*.12*dt
 					luff_goal+=host.cockpit.axis("crane_luff")*.07*dt
 					extend_goal+=host.cockpit.axis("crane_extend")*.3*dt
 					rope_goal+=host.cockpit.axis("crane_winch")*.45*dt
-		servo(c.slew,clampf(yaw_goal,-PI/3,PI/3),.055,8000000.,2400000.,2500000.,dt)
+		if override_goals.has(c.name):
+			var goal:Dictionary=override_goals[c.name];yaw_goal=goal.yaw;luff_goal=goal.luff;extend_goal=goal.extend;rope_goal=goal.rope
+		servo(c.slew,clampf(yaw_goal,-deg_to_rad(170.),deg_to_rad(170.)),.055,8000000.,2400000.,2500000.,dt)
 		# Cylinder force acts at its two real eye locations. A finite force cap
 		# limits attainable boom torque at the current lever arm.
 		var q:=coordinate(c.luff);luff_goal=clampf(luff_goal,0.,deg_to_rad(35.));targets[c.luff]=move_toward(float(targets[c.luff]),luff_goal,.035*dt)
 		var link:Dictionary=links[c.luff];var axis:Vector3=link.parent.global_basis*link.axis;var pivot:Vector3=link.parent.global_transform*link.a
 		var gravity:=0.
-		for name in [c.luff,c.extend,c.hook]:
+		var lifted_bodies:Array=[c.luff,c.hook]
+		lifted_bodies.append_array(c.stages)
+		var extension_bodies:Array=[]
+		if host.cargo!=null and host.cargo.attached_crane==i:
+			lifted_bodies.append(host.cargo.data.name)
+		for name in lifted_bodies:
 			var body:RigidBody3D=host.bodies[name];gravity+=(host.com(body)-pivot).cross(Vector3.DOWN*body.mass*9.81).dot(axis)
 		var requested:float=14000000.*(float(targets[c.luff])-q.x)-2800000.*q.y-gravity
 		var a:=endpoint(c.cylinder_a);var b:=endpoint(c.cylinder_b);var direction:Vector3=(b-a).normalized();var lever:float=(b-pivot).cross(direction).dot(axis)
 		var force:float=clampf(requested/maxf(lever,.1),-float(c.cylinder_force_cap_N),float(c.cylinder_force_cap_N))
 		host.bodies[c.luff].apply_force(direction*force,b-host.bodies[c.luff].global_position);host.bodies[c.slew].apply_force(-direction*force,a-host.bodies[c.slew].global_position)
-		servo(c.extend,clampf(extend_goal,-.9,1.8),.20,650000.,320000.,600000.,dt,[c.extend,c.hook])
-		paid[c.name]=move_toward(float(paid[c.name]),clampf(rope_goal,1.3,11.),.4*dt)
+		var total_stroke:float=c.extension_range_m[1]
+		for stage_index in c.stages.size():
+			extension_bodies=[c.hook]
+			for following in range(stage_index,c.stages.size()):extension_bodies.append(c.stages[following])
+			if host.cargo!=null and host.cargo.attached_crane==i:extension_bodies.append(host.cargo.data.name)
+			var fraction:float=float(c.stage_strokes_m[stage_index])/total_stroke
+			servo(c.stages[stage_index],clampf(extend_goal,0.,total_stroke)*fraction,.30*fraction,1600000.,320000.,600000.,dt,extension_bodies)
+		paid[c.name]=move_toward(float(paid[c.name]),clampf(rope_goal,1.3,24.),.4*dt)
 		var top:=endpoint(c.tip);var bottom:=endpoint(c.hook_attach);var delta:Vector3=top-bottom;var length:float=delta.length();var rope_dir:Vector3=delta/maxf(length,.001)
 		var velocity:float=(host.point_velocity(host.bodies[c.extend],top)-host.point_velocity(host.bodies[c.hook],bottom)).dot(rope_dir)
 		var tension:float=clampf(float(c.rope_stiffness_N_m)*(length-float(paid[c.name]))+float(c.rope_damping_N_s_m)*velocity,0.,float(c.rope_force_cap_N)) if length>float(paid[c.name]) else 0.
 		host.bodies[c.hook].apply_force(rope_dir*tension,bottom-host.bodies[c.hook].global_position);host.bodies[c.extend].apply_force(-rope_dir*tension,top-host.bodies[c.extend].global_position)
 		maximum_cable_force=maxf(maximum_cable_force,tension)
-		if sample_clock<=0.:samples.append({"time":time,"name":c.name,"slew_rad":coordinate(c.slew).x,"luff_rad":q.x,"extension_m":coordinate(c.extend).x,"paid_length_m":paid[c.name],"cable_length_m":length,"cable_force_N":tension,"cylinder_force_N":force,"hook_source_world":host.source(host.bodies[c.hook].global_position)})
+		if sample_clock<=0.:samples.append({"time":time,"name":c.name,"slew_rad":coordinate(c.slew).x,"luff_rad":q.x,"extension_m":extension(c),"paid_length_m":paid[c.name],"cable_length_m":length,"cable_force_N":tension,"cylinder_force_N":force,"hook_source_world":host.source(host.bodies[c.hook].global_position)})
 	var panel:Dictionary=rig.panel
 	var panel_yaw:float=.28*sin(maxf(time-15.,0.)*.06) if auto_work and working else float(targets[panel.slew]) if working else 0.
 	var panel_fold:float=-.65*(.5-.5*cos(minf(maxf(time-15.,0.)*.09,PI))) if auto_work and working else float(targets[panel.fold]) if working else 0.

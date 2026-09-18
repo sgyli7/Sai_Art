@@ -26,8 +26,10 @@ def author(a,add,O):
     rest['faces']=rm.faces[keep].tolist()
     a['colors']['cabin_floor']='596167'
     # Warm neutral lining belongs to occupied surfaces, regardless of body livery.
+    # Connector/coaming weather skins retain the exterior `ivory` role; their
+    # separately authored inset lining parts already use `cabin_lining`.
     for p in a['parts']:
-        if any(t in p['name'] for t in ['lounge_inner_lining','lounge_end_lining','enclosed_connector_wall','stairhouse_coaming']):p['material']='cabin_lining'
+        if any(t in p['name'] for t in ['lounge_inner_lining','lounge_end_lining']):p['material']='cabin_lining'
         if p.get('interior_category') in ['wall','ceiling','workbench','console']:
             p['interior_finish']=True
 
@@ -42,6 +44,7 @@ def author(a,add,O):
         if zone=='interior':p['interior_category']='marking'
         placements.append(dict(name=name,art=art,body=group,zone=zone,center_source_m=c.tolist(),width_m=width,height_m=height,normal=np.cross(u,up).tolist()))
     for s in [-1,1]:
+        place('compact_light',[-5.55,s*10.51,10.60],[-s,0,0],[0,0,1],1.00,zone='exterior')
         # Inward normal -Y on port wall, +Y on starboard; both read from aisle.
         place('horizontal_dark',[20.85,s*3.285,13.33],[s,0,0],[0,0,1],.94)
         place('field_strip',[27.80,s*1.947,11.78],[s,0,0],[0,0,1],1.22)
@@ -61,5 +64,15 @@ def author(a,add,O):
         c[2]+=.15
         place('field_id' if i%2==0 else 'worn_vertical',c,[-s,0,0],[0,0,1],.36,p['group'],'exterior')
         p['company_replaces_service_logo']=True
+    # Marks follow each authored cargo body and its physical face dimensions.
+    for item in a['equipment_actuation']['cargo_catalog']:
+        c=np.array(item['center']);size=np.array(item['size']);variant=(item['bay']*2+item['row']+item['tier'])%6
+        group='cargo_rear_b0_r2_t2' if item['name']=='container_b0_r2_t2' else 'rear'
+        for s in [-1,1]:
+            p=c.copy();p[0]+=s*(size[0]/2+.009);p[2]+=.15
+            place('fleet_'+str(variant),p,[0,s,0],[0,0,1],min(1.55,size[1]*.7),group,'cargo')
+        if item['row'] in [0,5]:
+            s=-1 if item['row']==0 else 1;p=c.copy();p[1]+=s*(size[1]/2+.009)
+            place('field_strip' if variant%2 else 'worn_banner',p,[-s,0,0],[0,0,1],1.75,group,'cargo')
     (O/'assets/company/placements.json').write_text(json.dumps(placements,indent=2))
     a['company_identity']={'placements':len(placements),'new_triangles':len(placements)*2,'source':'assets/company/manifest.json'}

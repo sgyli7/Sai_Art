@@ -2,7 +2,8 @@
 import numpy as np
 import mujoco
 class Cockpit:
- def __init__(self,m,d,spec):
+ def __init__(self,m,d,spec,cargo_handler=None):
+  self.cargo_handler=cargo_handler
   self.m,self.d,self.spec=m,d,spec;self.targets={c['id']:0. for c in spec['controls']};self.values={};self.pressed={};self.events=[];self.physical_mode=False;self.parking=False;self.working=False;self.doors_open=False;self.lift_requested=[False]*6;self.carrier_speed_m_s=0.
  def __call__(self,dt):
   for c in self.spec['controls']:
@@ -10,13 +11,18 @@ class Cockpit:
    goal=self.targets[id];lo,hi=c['limits']
    if self.physical_mode:goal=round(q/hi*(c['detents']-1))*hi/(c['detents']-1) if c['detents']>1 else 0.
    gravity=np.array([0,0,-9.81*c['mass_kg']]);load=np.dot(gravity,axis) if c['kind']=='slide' else np.dot(np.cross(self.d.xipos[body]-anchor,gravity),axis)
-   self.d.ctrl[self.m.actuator(name).id]=np.clip(c['kp']*(goal-q)-c['kd']*v-load,-c['effort_cap'],c['effort_cap'])
+   coupling=0.
+   if id in ['steer','steer_copilot']:
+    other=self.m.joint('cockpit_'+('steer_copilot' if id=='steer' else 'steer'))
+    coupling=28.*(self.d.qpos[other.qposadr[0]]-q)+1.2*(self.d.qvel[other.dofadr[0]]-v)
+   self.d.ctrl[self.m.actuator(name).id]=np.clip(c['kp']*(goal-q)-c['kd']*v-load+coupling,-c['effort_cap'],c['effort_cap'])
    self.values[id]=float(np.clip(q/hi,-1 if lo<0 else 0,1))
    if c['kind']=='slide':
     if q>.007 and not self.pressed.get(id,False):
      self.pressed[id]=True;accepted=abs(self.carrier_speed_m_s)<.10 if id in ['work','lift','lifts_all'] else True
      if id=='emergency':self.parking=not self.parking
      if id=='doors':self.doors_open=not self.doors_open
+     if id=='cargo':accepted=bool(self.cargo_handler()) if self.cargo_handler is not None else False
      if accepted and id=='work':self.working=not self.working
      if accepted and id in ['lift','lifts_all']:
       selected=round(self.values.get('lift_select',0)*5);goal=not self.lift_requested[selected]

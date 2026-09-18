@@ -12,6 +12,8 @@ func _process(dt:float)->void:
 		queue_redraw();get_viewport().render_target_update_mode=SubViewport.UPDATE_ONCE;return
 	var front:RigidBody3D=host.bodies.front;var up:Vector3=front.global_basis.y
 	if kind==12:
+		# The first display frame may precede the first suspension physics step.
+		if host.track_tension.tensions.is_empty():return
 		var hitch:Array=host.samples[-1].hitch_coordinates if not host.samples.is_empty() else [0.,0.,0.,0.]
 		var tension:float=host.track_tension.tensions.max()/1000.
 		channels=[["SPEED",front.linear_velocity.dot(front.global_basis.x)*3.6,-20.,100.,"km/h"],["PITCH",rad_to_deg(asin(clampf(front.global_basis.x.y,-1.,1.))),-30.,30.,"deg"],["ROLL",rad_to_deg(atan2(front.global_basis.z.y,up.y)),-30.,30.,"deg"],["ARTICULATION",rad_to_deg(float(hitch[1])),-30.,30.,"deg"],["TRACK TENSION",tension,0.,600.,"kN"],["SUSP. PEAK",host.visual.maximum_wheel_stroke_m,0.,.35,"m"],["YAW RATE",rad_to_deg(front.angular_velocity.y),-15.,15.,"deg/s"],["ALLOC. POWER",float(host.samples[-1].allocated_drive_power_W)/1e6 if not host.samples.is_empty() else 0.,0.,200.,"MW"]]
@@ -20,7 +22,7 @@ func _process(dt:float)->void:
 		var c:Dictionary=host.equipment.rig.cranes[host.equipment.selected];var p:Dictionary=host.equipment.rig.panel;var lift:Dictionary=host.lift_data[host.selected_lift]
 		var depth:=0.
 		for i in range(1,4):depth+=host.coordinate(lift.groups[i]).x
-		channels=[["CRANE SLEW",rad_to_deg(host.equipment.coordinate(c.slew).x),-60.,60.,"deg"],["BOOM",rad_to_deg(host.equipment.coordinate(c.luff).x),0.,35.,"deg"],["EXTENSION",host.equipment.coordinate(c.extend).x,-.9,1.8,"m"],["WINCH PAID",host.equipment.paid[c.name],1.3,11.,"m"],["LIFT OUT",host.coordinate(lift.groups[0]).x,0.,2.7,"m"],["LIFT DEPTH",depth,0.,7.35,"m"],["ANTENNA YAW",rad_to_deg(host.equipment.coordinate(p.slew).x),-60.,60.,"deg"],["ANTENNA FOLD",rad_to_deg(host.equipment.coordinate(p.fold).x),-70.,10.,"deg"]]
+		channels=[["CRANE SLEW",rad_to_deg(host.equipment.coordinate(c.slew).x),-170.,170.,"deg"],["BOOM",rad_to_deg(host.equipment.coordinate(c.luff).x),0.,35.,"deg"],["EXTENSION",host.equipment.extension(c),float(c.extension_range_m[0]),float(c.extension_range_m[1]),"m"],["WINCH PAID",host.equipment.paid[c.name],1.3,24.,"m"],["LIFT OUT",host.coordinate(lift.groups[0]).x,0.,2.7,"m"],["LIFT DEPTH",depth,0.,7.35,"m"],["ANTENNA YAW",rad_to_deg(host.equipment.coordinate(p.slew).x),-60.,60.,"deg"],["ANTENNA FOLD",rad_to_deg(host.equipment.coordinate(p.fold).x),-70.,10.,"deg"]]
 	queue_redraw();get_viewport().render_target_update_mode=SubViewport.UPDATE_ONCE
 func _draw()->void:
 	if kind==16:

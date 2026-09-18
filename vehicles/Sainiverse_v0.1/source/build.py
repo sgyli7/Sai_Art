@@ -150,8 +150,12 @@ from mechanical_revision import apply as mechanical_revision
 mechanical_revision(a,add,box,rod,role,O)
 from equipment_rig import author as author_equipment
 author_equipment(a,add,rod,O)
+from cargo_handling import author as author_cargo
+author_cargo(a,box,rod,O)
 from habitable_revision import author as author_habitable
 author_habitable(a,add,box,rod,role,O)
+from acceptance_revision import author as author_acceptance
+author_acceptance(a,add,box,rod,O)
 from finish import classify,write as write_finishes
 from art_finish import apply as art_finish
 from cockpit_controls import author as author_controls

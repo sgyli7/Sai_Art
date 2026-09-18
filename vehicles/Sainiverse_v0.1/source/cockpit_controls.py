@@ -22,21 +22,25 @@ def author(a,add,O):
    put(id+'_bezel',cyl(p-[0,0,.025],p+[0,0,.006],.07,24),'edge')
    put(id+'_knob',cyl(p,p+[0,0,.063],.046,32),'cabin_grip',name);bx(id+'_index',p+[.026,0,.066],[.041,.009,.009],'insignia',name)
    kind='hinge';mass=.35;inertia=[.004]*3;com=[0,0,.025];grasp=[.036,0,.033];cap=1.2;kp=5.;kd=.30;rate=2.
-  elif kind=='wheel':
-   put(id+'_column',cyl(p-[.30,0,0],p,.062,16),'steel')
-   put(id+'_floor_post',cyl([p[0]-.30,p[1],11.36],p-[.30,0,0],.055,16),'steel')
-   bx(id+'_floor_flange',[p[0]-.30,p[1],11.39],[.24,.26,.07],'steel')
-   put(id+'_rim',ring(p,[1,0,0],.235,.024,96,16),'cabin_grip',name)
-   for t in [0,math.pi*2/3,math.pi*4/3]:
-    # Tapered, dished spokes join the hub and inner rim without capped overlaps.
-    e=np.array([0,math.cos(t),math.sin(t)]);cross=np.cross([1,0,0],e)
-    verts=[]
-    for x,r,w in [(-.025,.060,.033),(0,.218,.018)]:
-     for xx,sgn in [(-.006,-1),(-.006,1),(.006,-1),(.006,1)]:verts.append(p+[x+xx,0,0]+e*r+cross*w*sgn)
-    put(id+'_spoke',tm.convex.convex_hull(verts),'cabin_metal',name)
-   put(id+'_hub',revolved(p,[-1,0,0],[(0,-.025),(.065,-.025),(.076,-.010),(.076,.025),(.065,.040),(0,.043),(0,-.025)],64),'cabin_frame',name)
-   put(id+'_hub_inlay',cyl(p-[.043,0,0],p-[.046,0,0],.046,48),'cabin_trim',name)
-   kind='hinge';mass=1.2;inertia=[.07,.04,.04];com=[0,0,0];grasp=[0,-.235,0];cap=3.;kp=10.;kd=1.7;rate=1.7
+  elif kind=='yoke':
+   # Bearing is in front of the pilot. The shaft enters the console, not the seat.
+   put(id+'_column',cyl(p+[.025,0,0],p+[.55,0,0],.047,48),'cabin_metal')
+   put(id+'_bearing',revolved(p+[.52,0,0],[1,0,0],[(0,-.06),(.083,-.06),(.092,-.035),(.092,.045),(.076,.075),(0,.075),(0,-.06)],48),'cabin_frame')
+   put(id+'_floor_post',cyl([p[0]+.48,p[1],11.40],p+[.48,0,-.025],.056,40),'cabin_frame')
+   bx(id+'_floor_flange',[p[0]+.48,p[1],11.385],[.22,.26,.07],'cabin_frame')
+   # A continuous cast double-horn yoke; rounded unions remove capped seams.
+   path=[p+v for v in [[0,-.25,.17],[0,-.25,-.015],[0,-.215,-.075],[0,0,-.075],[0,.215,-.075],[0,.25,-.015],[0,.25,.17]]]
+   pieces=[cyl(v,w,.029,32) for v,w in zip(path,path[1:])]
+   for v in path:
+    ball=tm.creation.icosphere(subdivisions=3,radius=.029);ball.apply_translation(v);pieces.append(ball)
+   put(id+'_horns',tm.boolean.union(pieces,engine='manifold'),'cabin_grip',name)
+   put(id+'_hub',revolved(p,[-1,0,0],[(0,-.018),(.065,-.018),(.074,.002),(.074,.030),(.059,.045),(0,.045),(0,-.018)],64),'cabin_frame',name)
+   put(id+'_hub_inlay',cyl(p-[.046,0,0],p-[.049,0,0],.037,48),'cabin_metal',name)
+   for side in [-1,1]:
+    put(id+'_thumb_bezel',cyl(p+[-.026,side*.25,.126],p+[-.035,side*.25,.126],.018,32),'cabin_metal',name)
+    put(id+'_thumb_switch',cyl(p+[-.036,side*.25,.126],p+[-.039,side*.25,.126],.012,24),'cabin_grip',name)
+   kind='hinge';mass=1.2;inertia=[.07,.04,.04];com=[0,0,0];grasp=[0,-.25,.07];cap=3.;kp=10.;kd=1.7;rate=1.7
+
   else:
    put(id+'_gate',rounded_box([p+[-.11,-.105,-.044],p+[.11,.105,.004]],.018),'cabin_frame')
    # Boot seals the moving shaft; bellows follows its body instead of floating over it.
@@ -49,16 +53,16 @@ def author(a,add,O):
    kind='hinge';mass=.45;inertia=[.012]*3;com=[0,0,.105];grasp=[0,0,.21];cap=1.8;kp=6.;kd=.58;rate=2.
   owned=[p for p in a['parts'] if p['group']==name];points=np.concatenate([p['vertices'] for p in owned])-np.array(pivot)
   # Convex contact per actual component, so a wheel retains its hand opening.
-  contacts=[(mesh(part).convex_hull.vertices-np.array(pivot)).tolist() for part in owned if not part['name'].endswith('_rim')]
-  if id=='steer':
-   # Smooth visual torus uses 16 convex contact arcs, preserving the hand opening.
-   for t in np.linspace(0,2*math.pi,17)[:-1]:
-    pts=[p+np.array([0,.235*math.cos(tt),.235*math.sin(tt)]) for tt in [t,t+math.pi/8]]
-    contacts.append((cyl(pts[0],pts[1],.024,10).vertices-p).tolist())
-  item=dict(id=id,name=name,parent='front',kind=kind,pivot_source_m=pivot,axis_source=axis,limits=limits,label=label,action=action,station=station,detents=detents,mass_kg=mass,com_local_m=com,inertia_diagonal_kg_m2=inertia,effort_cap=cap,kp=kp,kd=kd,rate=rate,contacts_local=contacts,grasp_local_m=grasp,approach_normal_source=[0,0,1] if id!='steer' else [-1,0,0],robot_contact_layer=128,return_mode='detent' if detents else 'spring_center',press_threshold_m=.007 if kind=='slide' else None)
+  contacts=[]
+  for part in owned:
+   if part['name'].endswith('_horns'):
+    contacts.extend((piece.convex_hull.vertices-p).tolist() for piece in pieces)
+   else:contacts.append((mesh(part).convex_hull.vertices-p).tolist())
+  item=dict(id=id,name=name,parent='front',kind=kind,pivot_source_m=pivot,axis_source=axis,limits=limits,label=label,action=action,station=station,detents=detents,mass_kg=mass,com_local_m=com,inertia_diagonal_kg_m2=inertia,effort_cap=cap,kp=kp,kd=kd,rate=rate,contacts_local=contacts,grasp_local_m=grasp,approach_normal_source=[0,0,1] if not id.startswith('steer') else [-1,0,0],robot_contact_layer=128,return_mode='detent' if detents else 'spring_center',press_threshold_m=.007 if kind=='slide' else None)
   controls.append(item)
   labels.append(dict(id=id,text=label,position_source_m=(p+[-.11,0,.008]).tolist(),station=station))
- control('steer','wheel',[31.48,-1.58,12.34],[1,0,0],[-.65,.65],'STEER','signed curvature [-0.012,+0.012] 1/m')
+ control('steer','yoke',[31.48,-1.58,12.34],[1,0,0],[-.65,.65],'STEER','signed curvature [-0.012,+0.012] 1/m')
+ control('steer_copilot','yoke',[31.48,1.58,12.34],[1,0,0],[-.65,.65],'STEER / COPILOT','mechanically coupled steering input')
  control('throttle','lever',[31.20,-.21,12.48],[0,1,0],[-.50,.50],'REVERSE / SPEED','signed speed request; forward 12 or 27.777778 m/s, reverse 5 m/s')
  control('brake','lever',[31.20,.21,12.48],[0,1,0],[0,.50],'BRAKE','proportional reduction of speed request to zero')
  control('high_range','selector',[31.84,-.20,12.49],[0,0,1],[0,.65],'LOW / HIGH','select 12 or 27.777778 m/s forward range',detents=2)
@@ -70,7 +74,8 @@ def author(a,add,O):
  for i,(id,label) in enumerate([('panel_slew','ANTENNA YAW'),('panel_fold','ANTENNA FOLD')]):control(id,'lever',[27.15+i*1.22,-2.56,12.29],[0,1,0],[-.30,.30],label,id+' rate','services')
  control('lift_select','selector',[26.7,-2.04,12.28],[0,0,1],[0,2.50],'LIFT 1-6','select one of six lifts','services',6)
  for i,(id,label,action) in enumerate([('lift','LIFT UP/DOWN','toggle selected lift'),('lifts_all','ALL LIFTS','toggle all lifts'),('doors','CABIN DOORS','toggle both cabin entry doors')]):control(id,'button',[27.3+i*.57,-2.04,12.28],[0,0,-1],[0,.012],label,action,'services')
- a['cockpit_controls']=dict(version=1,controls=controls,labels=labels,coordinate_system='+X forward, +Y left, +Z up; metres/radians',scope='Finite-effort physical controls mapped to current vehicle functions. Robot reach and contact affordances supplied; no trained Sai manipulation policy.')
+ control('cargo','button',[27.82,2.04,12.28],[0,0,-1],[0,.012],'HOOK / RELEASE','proximity hook attach / supported release','crane')
+ a['cockpit_controls']=dict(version=2,steering_coupling=dict(controls=['steer','steer_copilot'],stiffness_Nm_rad=28.,damping_Nm_s_rad=1.2),controls=controls,labels=labels,coordinate_system='+X forward, +Y left, +Z up; metres/radians',scope='Finite-effort physical controls mapped to current vehicle functions. Robot reach and contact affordances supplied; no trained Sai manipulation policy.')
  (O/'source/cockpit_controls.json').write_text(json.dumps(a['cockpit_controls'],indent=2))
 
 def compile(a,s,b,params,root,O):

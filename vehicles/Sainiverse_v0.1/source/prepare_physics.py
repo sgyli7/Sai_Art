@@ -78,7 +78,7 @@ compile_habitable(assembly,s,b,params,root,O)
 from cockpit_controls import compile as compile_cockpit
 compile_cockpit(assembly,s,b,params,root,O)
 s['config']['total_mass_kg']=sum(x['mass'] for x in s['bodies']);s['contact']['total_mass_kg']=s['config']['total_mass_kg'];params['total_mass_kg']=s['config']['total_mass_kg'];params['boarding_lifts']=lifts
-s['contact']['boarding_controller']=dict(force_cap_N=60000,kp=80000,kd=14000,slide_speed_m_s=.55,vertical_speed_m_s=.7,park_speed_max_m_s=.08,ground_platform_height_m=.245)
+s['contact']['boarding_controller']=dict(integration='coupled-mass backward Euler PD; runtime/lift_servo.gd and source/lift_servo.py',force_cap_N=60000,kp=80000,kd=14000,slide_speed_m_s=.55,vertical_speed_m_s=.7,park_speed_max_m_s=.08,ground_platform_height_m=.245)
 params['boarding_controller']=s['contact']['boarding_controller']
 b.update(native_blend=str(O/'source/Sainiverse_v0.1.blend'),glb=str(O/'assets/Sainiverse_v0.1.glb'),expected_groups=build['groups'],expected_meshes=build['render_meshes'],style=str(O/'style.json'),scope='Sainiverse_v0.1 authored skin and native movable robot boarding lifts. Same finite-force suspension and traction; manually controlled candidate. Provisional mass, not hardware qualification.')
 # Keep original interior contacts/figures by source path, with compatible assets

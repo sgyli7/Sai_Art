@@ -135,6 +135,8 @@ for p in a['parts']:
                         t=meta.get('cockpit_transform')
                         if t:v=Matrix.Rotation(-t['angle'],3,'Y')@(v-Vector(t['center']))
                         coord=[(v[ij[j]]-meta['rect_center'][j])/meta['rect_size'][j]+.5 for j in range(2)]
+                        if t and t.get('rotate_uv_180'):coord=[1-x for x in coord]
+                        if t and t.get('rotate_uv_90'):coord=[1-coord[1],coord[0]]
                         if (axis==1 and face.normal.y>0) or (axis==0 and face.normal.x<0):coord[0]=1-coord[0]
                     else:coord=[-10.,-10.]
                 elif meta and axis in meta['axes']:

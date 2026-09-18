@@ -7,6 +7,7 @@ from suspension_physics import Env
 p=json.loads((O/'physics/parameters.json').read_text())
 e=Env('flat',False,True,O/'physics/suspended.xml',p);m,d=e.m,e.d
 from equipment_mujoco import Equipment
+from lift_servo import efforts
 from cockpit_mujoco import Cockpit
 equipment=Equipment(m,d,p["equipment"]);cockpit=Cockpit(m,d,p["cockpit"])
 def controls(dt):equipment(dt);cockpit(dt)
@@ -27,8 +28,10 @@ for step in range(15000):
   for i,n in enumerate(names):
    goal=(lift['stroke_out'] if want or q[1:].sum()>.03 else 0.) if i==0 else depth/3
    rate=.55 if i==0 else .7/3;target[n]+=np.clip(goal-target[n],-rate*.005,rate*.005)
+  forces=efforts(q,dq,[target[n] for n in names],lift['masses'],ramp['mass_kg'],.005)
+  for i,n in enumerate(names):
    gravity=0 if i==0 else -9.81*(sum(lift['masses'][i:])+ramp['mass_kg'])*rot[2,2]
-   d.ctrl[m.actuator(n).id]=np.clip(80000*(target[n]-q[i])-14000*dq[i]+gravity,-60000,60000)
+   d.ctrl[m.actuator(n).id]=np.clip(forces[i]+gravity,-60000,60000)
   if step%200==0:rows.append(dict(time=t,name=lift['name'],out=float(q[0]),depth=float(q[1:].sum()),floor_z=float(d.xpos[m.body(names[-1]).id,2]+.125),underside_gap_m=float(d.xpos[m.body(names[-1]).id,2]-.125),ramp_angle_rad=rq,ramp_target_rad=float(goal),ground_contacts=sum(1 for ct in d.contact if m.geom(names[-1]+"_deck").id in ct.geom)))
  e.substep(0.)
  assert np.isfinite(d.qpos).all() and np.isfinite(d.qvel).all()

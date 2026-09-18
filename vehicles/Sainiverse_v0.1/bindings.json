@@ -660,6 +660,30 @@
         17.38
       ]
     },
+    "rear_crane0_stage1": {
+      "pivot_source_m": [
+        -56.7,
+        -11.0,
+        17.38
+      ],
+      "neutral_body_position_source_m": [
+        -56.7,
+        -11.0,
+        17.38
+      ]
+    },
+    "rear_crane0_stage2": {
+      "pivot_source_m": [
+        -56.7,
+        -11.0,
+        17.38
+      ],
+      "neutral_body_position_source_m": [
+        -56.7,
+        -11.0,
+        17.38
+      ]
+    },
     "rear_crane0_extend": {
       "pivot_source_m": [
         -56.7,
@@ -675,13 +699,13 @@
     "rear_crane0_hook": {
       "pivot_source_m": [
         -56.7,
-        -1.3299999999999954,
-        13.4
+        -3.92,
+        16.099999999999998
       ],
       "neutral_body_position_source_m": [
         -56.7,
-        -1.3299999999999954,
-        13.4
+        -3.92,
+        16.099999999999998
       ]
     },
     "rear_crane1_slew": {
@@ -708,6 +732,30 @@
         17.38
       ]
     },
+    "rear_crane1_stage1": {
+      "pivot_source_m": [
+        -27.299999999999997,
+        -11.0,
+        17.38
+      ],
+      "neutral_body_position_source_m": [
+        -27.299999999999997,
+        -11.0,
+        17.38
+      ]
+    },
+    "rear_crane1_stage2": {
+      "pivot_source_m": [
+        -27.299999999999997,
+        -11.0,
+        17.38
+      ],
+      "neutral_body_position_source_m": [
+        -27.299999999999997,
+        -11.0,
+        17.38
+      ]
+    },
     "rear_crane1_extend": {
       "pivot_source_m": [
         -27.299999999999997,
@@ -723,13 +771,13 @@
     "rear_crane1_hook": {
       "pivot_source_m": [
         -27.299999999999997,
-        -1.3300000000000007,
-        13.4
+        -3.92,
+        16.099999999999998
       ],
       "neutral_body_position_source_m": [
         -27.299999999999997,
-        -1.3300000000000007,
-        13.4
+        -3.92,
+        16.099999999999998
       ]
     },
     "rear_crane2_slew": {
@@ -756,6 +804,30 @@
         17.38
       ]
     },
+    "rear_crane2_stage1": {
+      "pivot_source_m": [
+        -56.7,
+        11.0,
+        17.38
+      ],
+      "neutral_body_position_source_m": [
+        -56.7,
+        11.0,
+        17.38
+      ]
+    },
+    "rear_crane2_stage2": {
+      "pivot_source_m": [
+        -56.7,
+        11.0,
+        17.38
+      ],
+      "neutral_body_position_source_m": [
+        -56.7,
+        11.0,
+        17.38
+      ]
+    },
     "rear_crane2_extend": {
       "pivot_source_m": [
         -56.7,
@@ -771,13 +843,13 @@
     "rear_crane2_hook": {
       "pivot_source_m": [
         -56.7,
-        1.3299999999999954,
-        13.4
+        3.92,
+        16.099999999999998
       ],
       "neutral_body_position_source_m": [
         -56.7,
-        1.3299999999999954,
-        13.4
+        3.92,
+        16.099999999999998
       ]
     },
     "rear_crane3_slew": {
@@ -804,6 +876,30 @@
         17.38
       ]
     },
+    "rear_crane3_stage1": {
+      "pivot_source_m": [
+        -27.299999999999997,
+        11.0,
+        17.38
+      ],
+      "neutral_body_position_source_m": [
+        -27.299999999999997,
+        11.0,
+        17.38
+      ]
+    },
+    "rear_crane3_stage2": {
+      "pivot_source_m": [
+        -27.299999999999997,
+        11.0,
+        17.38
+      ],
+      "neutral_body_position_source_m": [
+        -27.299999999999997,
+        11.0,
+        17.38
+      ]
+    },
     "rear_crane3_extend": {
       "pivot_source_m": [
         -27.299999999999997,
@@ -819,13 +915,13 @@
     "rear_crane3_hook": {
       "pivot_source_m": [
         -27.299999999999997,
-        1.3300000000000007,
-        13.4
+        3.92,
+        16.099999999999998
       ],
       "neutral_body_position_source_m": [
         -27.299999999999997,
-        1.3300000000000007,
-        13.4
+        3.92,
+        16.099999999999998
       ]
     },
     "tail_crane0_slew": {
@@ -852,6 +948,30 @@
         17.38
       ]
     },
+    "tail_crane0_stage1": {
+      "pivot_source_m": [
+        -98.7,
+        -11.0,
+        17.38
+      ],
+      "neutral_body_position_source_m": [
+        -98.7,
+        -11.0,
+        17.38
+      ]
+    },
+    "tail_crane0_stage2": {
+      "pivot_source_m": [
+        -98.7,
+        -11.0,
+        17.38
+      ],
+      "neutral_body_position_source_m": [
+        -98.7,
+        -11.0,
+        17.38
+      ]
+    },
     "tail_crane0_extend": {
       "pivot_source_m": [
         -98.7,
@@ -867,13 +987,13 @@
     "tail_crane0_hook": {
       "pivot_source_m": [
         -98.7,
-        -1.3299999999999954,
-        13.4
+        -3.92,
+        16.099999999999998
       ],
       "neutral_body_position_source_m": [
         -98.7,
-        -1.3299999999999954,
-        13.4
+        -3.92,
+        16.099999999999998
       ]
     },
     "tail_crane1_slew": {
@@ -900,6 +1020,30 @@
         17.38
       ]
     },
+    "tail_crane1_stage1": {
+      "pivot_source_m": [
+        -69.3,
+        -11.0,
+        17.38
+      ],
+      "neutral_body_position_source_m": [
+        -69.3,
+        -11.0,
+        17.38
+      ]
+    },
+    "tail_crane1_stage2": {
+      "pivot_source_m": [
+        -69.3,
+        -11.0,
+        17.38
+      ],
+      "neutral_body_position_source_m": [
+        -69.3,
+        -11.0,
+        17.38
+      ]
+    },
     "tail_crane1_extend": {
       "pivot_source_m": [
         -69.3,
@@ -915,13 +1059,13 @@
     "tail_crane1_hook": {
       "pivot_source_m": [
         -69.3,
-        -1.3300000000000007,
-        13.4
+        -3.92,
+        16.099999999999998
       ],
       "neutral_body_position_source_m": [
         -69.3,
-        -1.3300000000000007,
-        13.4
+        -3.92,
+        16.099999999999998
       ]
     },
     "tail_crane2_slew": {
@@ -948,6 +1092,30 @@
         17.38
       ]
     },
+    "tail_crane2_stage1": {
+      "pivot_source_m": [
+        -98.7,
+        11.0,
+        17.38
+      ],
+      "neutral_body_position_source_m": [
+        -98.7,
+        11.0,
+        17.38
+      ]
+    },
+    "tail_crane2_stage2": {
+      "pivot_source_m": [
+        -98.7,
+        11.0,
+        17.38
+      ],
+      "neutral_body_position_source_m": [
+        -98.7,
+        11.0,
+        17.38
+      ]
+    },
     "tail_crane2_extend": {
       "pivot_source_m": [
         -98.7,
@@ -963,13 +1131,13 @@
     "tail_crane2_hook": {
       "pivot_source_m": [
         -98.7,
-        1.3299999999999954,
-        13.4
+        3.92,
+        16.099999999999998
       ],
       "neutral_body_position_source_m": [
         -98.7,
-        1.3299999999999954,
-        13.4
+        3.92,
+        16.099999999999998
       ]
     },
     "tail_crane3_slew": {
@@ -996,6 +1164,30 @@
         17.38
       ]
     },
+    "tail_crane3_stage1": {
+      "pivot_source_m": [
+        -69.3,
+        11.0,
+        17.38
+      ],
+      "neutral_body_position_source_m": [
+        -69.3,
+        11.0,
+        17.38
+      ]
+    },
+    "tail_crane3_stage2": {
+      "pivot_source_m": [
+        -69.3,
+        11.0,
+        17.38
+      ],
+      "neutral_body_position_source_m": [
+        -69.3,
+        11.0,
+        17.38
+      ]
+    },
     "tail_crane3_extend": {
       "pivot_source_m": [
         -69.3,
@@ -1011,13 +1203,13 @@
     "tail_crane3_hook": {
       "pivot_source_m": [
         -69.3,
-        1.3300000000000007,
-        13.4
+        3.92,
+        16.099999999999998
       ],
       "neutral_body_position_source_m": [
         -69.3,
-        1.3300000000000007,
-        13.4
+        3.92,
+        16.099999999999998
       ]
     },
     "receiver_slew": {
@@ -1044,6 +1236,18 @@
         20.55
       ]
     },
+    "cargo_rear_b0_r2_t2": {
+      "pivot_source_m": [
+        -52.887,
+        -1.294,
+        14.047500000000001
+      ],
+      "neutral_body_position_source_m": [
+        -52.887,
+        -1.294,
+        14.047500000000001
+      ]
+    },
     "cockpit_steer": {
       "pivot_source_m": [
         31.48,
@@ -1053,6 +1257,18 @@
       "neutral_body_position_source_m": [
         31.48,
         -1.58,
+        12.34
+      ]
+    },
+    "cockpit_steer_copilot": {
+      "pivot_source_m": [
+        31.48,
+        1.58,
+        12.34
+      ],
+      "neutral_body_position_source_m": [
+        31.48,
+        1.58,
         12.34
       ]
     },
@@ -1247,6 +1463,18 @@
         -2.04,
         12.28
       ]
+    },
+    "cockpit_cargo": {
+      "pivot_source_m": [
+        27.82,
+        2.04,
+        12.28
+      ],
+      "neutral_body_position_source_m": [
+        27.82,
+        2.04,
+        12.28
+      ]
     }
   },
   "gear": {
@@ -1406,13 +1634,13 @@
   "tensioned_tracks": true,
   "path_extension": "@SAI_ROOT@/support/native/leviathan_track_path.gdextension",
   "state_texture": true,
-  "expected_meshes": 323,
+  "expected_meshes": 342,
   "native_project_settings": {
     "physics/jolt_physics_3d/simulation/body_pair_contact_cache_enabled": false
   },
   "interior_manifest": "@SAI_ROOT@/source/interior.json",
   "interior_contacts": "@SAI_ROOT@/physics/interior_contacts.json",
   "style": "@SAI_ROOT@/style.json",
-  "expected_groups": 104,
+  "expected_groups": 123,
   "access_manifest": "@SAI_ROOT@/source/access.json"
 }

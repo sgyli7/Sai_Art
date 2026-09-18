@@ -1,0 +1,26 @@
+[
+  {
+    "name": "cargo_rear_b0_r2_t2",
+    "hull": "rear",
+    "mass_kg": 8000.0,
+    "source_tag": "container_b0_r2_t2_",
+    "center": [
+      -52.887,
+      -1.294,
+      14.047500000000001
+    ],
+    "size": [
+      6.058000007152543,
+      2.4380000071525574,
+      2.5909999964237223
+    ],
+    "eye_local": [
+      0.0,
+      0.0,
+      2.4454999982118597
+    ],
+    "initially_secured": true,
+    "rigging_visibility": "work_or_attached",
+    "rigging_installation": "Instant installation/removal in work mode; tool handling animation is not simulated."
+  }
+]
