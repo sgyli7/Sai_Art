@@ -1,0 +1,88 @@
+{
+  "date": "2026-09-20",
+  "hardware": "NVIDIA GB10",
+  "godot": "4.7.2-stable",
+  "renderer": "Forward+ 1920x1080 4xMSAA",
+  "evaluation": "After simulation second 3, lowest complete one-second wall-time FPS window; p95 of rendered frame durations.",
+  "checks": [
+    {
+      "name": "drive",
+      "passed": true,
+      "minimum_one_second_fps": 103,
+      "physics_hz_at_end": 60,
+      "result": {
+        "mode": "drive",
+        "distance_m": 32.67431889474387,
+        "lateral_m": 1.4632950215054688,
+        "heading_rad": 0.04739745751463587,
+        "peak_kmh": 17.9907749176025,
+        "yaw_request_rad_s": 0.0501018943901453,
+        "p95_frame_ms": 12.969
+      }
+    },
+    {
+      "name": "microduck",
+      "passed": true,
+      "minimum_one_second_fps": 170,
+      "physics_hz_at_end": 200,
+      "result": {
+        "mode": "microduck",
+        "distance_m": 0.9412899017333984,
+        "p95_frame_ms": 10.469
+      }
+    },
+    {
+      "name": "roller",
+      "passed": true,
+      "minimum_one_second_fps": 156,
+      "physics_hz_at_end": 200,
+      "result": {
+        "mode": "roller",
+        "distance_m": 2.927776336669961,
+        "p95_frame_ms": 10.668
+      }
+    },
+    {
+      "name": "sai",
+      "passed": true,
+      "minimum_one_second_fps": 90,
+      "physics_hz_at_end": 1000,
+      "result": {
+        "mode": "Sai_Agent_001",
+        "completed": true,
+        "minimum_upright": 0.95301616191864,
+        "samples": 5249,
+        "p95_frame_ms": 9.361
+      }
+    },
+    {
+      "name": "sai002",
+      "passed": true,
+      "minimum_one_second_fps": 122,
+      "physics_hz_at_end": 1000,
+      "result": {
+        "mode": "Sai_Agent_002",
+        "completed": true,
+        "minimum_upright": 0.944741189479828,
+        "samples": 5249,
+        "p95_frame_ms": 8.491
+      }
+    },
+    {
+      "name": "switch",
+      "passed": true,
+      "minimum_one_second_fps": 126,
+      "physics_hz_at_end": 60,
+      "result": {
+        "mode": "switch",
+        "distance_m": [
+          0.545,
+          2.534,
+          0.389,
+          0.389
+        ],
+        "p95_frame_ms": 11.249
+      }
+    }
+  ]
+}

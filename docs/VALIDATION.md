@@ -1,5 +1,65 @@
 # Sainiverse_v0.1 — r032 review evidence, 2026-09-17
 
+## Polar game integration, 2026-09-20
+
+The later polar game integration uses 60 Hz vehicle physics for manual driving,
+60 Hz for the parked-carrier lead-in of MicroDuck demos, and 100 Hz for the
+lead-in of Sai boarding demos. Once the carrier is parked and frozen, MicroDuck
+uses its verified 200 Hz physics and Sai uses 1000 Hz; their policies remain at
+50 Hz. This is a game integration profile, not a change to the r032 200 Hz
+qualification drive below. A direct 60 Hz Sai lead-in made Sai 001 fail its
+boarding route, so the successful 100 Hz setting is intentional.
+
+At 1920×1080, Forward+, 4×MSAA, Godot 4.7.2 / NVIDIA GB10, the later rendered
+checks measured the entire interval after simulation second 3, including the
+carrier lead-in. "Minimum FPS" is the lowest complete one-second wall-time
+window, not an average over the whole run:
+
+| Route | Duration | P95 frame time | Minimum one-second FPS | Outcome |
+| --- | ---: | ---: | ---: | --- |
+| Manual carrier W/A replay | 23 s | 12.97 ms | 103 | 32.7 m forward; steering changed heading |
+| Walking MicroDuck cabin patrol | 16 s | 10.47 ms | 170 | 0.94 m, no fall |
+| Roller MicroDuck deck patrol | 16 s | 10.67 ms | 156 | 2.93 m, no fall |
+| Sai 001 full boarding | 115 s | 9.36 ms | 90 | Completed; minimum upright 0.953 |
+| Sai 002 full boarding | 115 s | 8.49 ms | 122 | Completed; minimum upright 0.945 |
+| F5–F9 four-robot switch replay | 44 s | 11.25 ms | 126 | All four robots moved, no falls; returned to carrier |
+
+The manual F5–F9 selection replay in the existing game checkout moved all four
+robots on the snow and returned to the carrier with no falls or controller
+errors. The [compact machine-readable results](../evidence/polar_game_validation_2026-09-20.json)
+record all six checks. These are local machine measurements, not a cross-hardware guarantee. The game checkout's
+`scripts/check_sainiverse_play.py` reproduces the input, route, and frame checks.
+
+The unified launcher was checked at both levels. `run-native.sh --headless
+--scene polar_range --seconds 3` exited successfully after actually launching
+the Sainiverse Godot runtime; its report said `failed:false`. The headless
+`godot/tests/polar_picker_probe.gd` activated the 03 world button and the
+Sainiverse vehicle button and observed exit code 74, which is the launcher's
+Sainiverse handoff.
+
+The current polar media uses native rendering and the same robot physics.
+The four-camera full-vehicle PV in the game repository was captured from the
+manual W/A driving replay over simulation seconds 32–42. All 150 source frames
+were 1280×720; the vehicle stayed entirely in view at each camera cut and the
+44-second native run ended with `failed:false`, 34.9 m of forward travel, and
+an 18.0 km/h peak. The GIF plays the captured frames at 15 FPS without
+interpolation.
+The Sai cockpit vignette runs the unchanged learned standing policy and native
+arm impedance at 50/1000 Hz. A scripted arm target reaches a short grip that is
+part of the existing steering rigid body. In a 24-frame capture, the hand had
+12 sampled contacts, the wheel reached 0.287 rad, minimum chassis upright was
+0.975, and no failure or script error was reported. This shows physical arm
+operation of the control; it is not a learned autonomous manipulation task.
+Walking MicroDuck traversed a 1.67 m span in the cockpit, walking out and back
+with no fall. The GIF camera
+views were checked at early, middle, and late frames for seat/console/platform
+occlusion before encoding. Boarding frames were selected across the approach,
+elevator ride, and exit; the elevator section compresses simulation time in
+playback. No robot motion was synthesized between captured frames.
+
+The original r032 measurements and media below are preserved as historical
+qualification evidence; they used a different robot-demo staging profile.
+
 Current visuals and measurements supersede r031. Five themes are black, white,
 blue, yellow and desert. The supplied Sai company emblem is separate from the
 vehicle's English display name.

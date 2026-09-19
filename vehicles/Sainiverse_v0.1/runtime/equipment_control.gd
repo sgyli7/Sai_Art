@@ -155,5 +155,6 @@ func stowed()->bool:
 	for c in rig.cranes:
 		if absf(float(paid[c.name])-float(c.paid_length_m))>.025:return false
 	for name in targets:
-		if absf(coordinate(name).x)>.025:return false
+		var tolerance:float=.04 if links[name].spec.kind=="slide" else .03
+		if absf(coordinate(name).x)>tolerance:return false
 	return not working

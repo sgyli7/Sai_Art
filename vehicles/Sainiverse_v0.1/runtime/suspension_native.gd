@@ -150,6 +150,10 @@ func height(x:float,y:float)->float:
 			var hill:float=bump(x,85.,65.,5.)*bump(y,0.,110.,1.)
 			var window:float=clampf((x-15.)/12.,0.,1.)*clampf((170.-x)/12.,0.,1.)
 			return hill+window*bump(y,0.,110.,1.)*(.20*sin(TAU*x/12.)+.14*sin(TAU*x/7.+tanh(y/3.)*1.2)+.10*sin(y/6.))
+		"polar":
+			var hill:float=bump(x,85.,75.,1.8)*bump(y,0.,150.,1.)
+			var window:float=clampf((x-10.)/14.,0.,1.)*clampf((180.-x)/14.,0.,1.)
+			return hill+window*bump(y,0.,150.,1.)*(.09*sin(TAU*x/17.)+.06*sin(TAU*x/9.+tanh(y/8.))+.05*sin(y/13.))
 		"alternating":
 			var left:float=.5*(1+tanh(y/2))
 			return left*(bump(x,30,2,.35)+bump(x,70,2,.3))+(1-left)*(bump(x,45,2,.35)+bump(x,85,2,.3))
