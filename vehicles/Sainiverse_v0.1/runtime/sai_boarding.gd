@@ -1,6 +1,8 @@
 extends "res://hub/sai.gd"
 ## Mission sequencing around the unchanged native locomotion / impedance controller.
 var carrier:SceneTree
+var robot_id:="Sai_Agent_001"
+var manual_control:=false
 var phase:="wait_ground"
 var mission_samples:Array=[]
 var stable_since:=-1.
@@ -11,17 +13,23 @@ var phase_times:Dictionary={}
 
 func _ready()->void:
 	settings={"task":"drive","skill":""};task="drive";visuals=DisplayServer.get_name()!="headless"
-	specification=JSON.parse_string(FileAccess.get_file_as_string("res://sai_agent/robot.json"))
+	var model_path:="res://sai_robots/Sai_Agent_002/robot.json" if robot_id=="Sai_Agent_002" else "res://sai_agent/robot.json"
+	specification=JSON.parse_string(FileAccess.get_file_as_string(model_path))
+	if specification==null or str(specification.get("robot_id",""))!=robot_id:failure="Sai model identity mismatch: "+robot_id;push_error(failure);return
 	robot=load("res://sai/compliant_robot.gd").new();add_child(robot);robot.setup(specification,visuals,0.)
 	var initial:=Basis(Vector3.UP,PI/2.)
+	var spawn:=Vector3(0.,0.,20.2)
+	if manual_control:
+		spawn.z=100.2
+		spawn.y=carrier.height(spawn.x+carrier.origin.offset_x,-spawn.z-carrier.origin.offset_z)
 	for body in robot.bodies.values():
-		body.position=initial*body.position+Vector3(0.,0.,20.2);body.basis=initial*body.basis
+		body.position=initial*body.position+spawn;body.basis=initial*body.basis
 		body.collision_layer=16;body.collision_mask=1|8|32
 	native_controller=load("res://sai/native_controller.gd").new()
 	if native_controller.last_error!="":failure=native_controller.last_error;push_error(failure);return
 	if visuals:
 		var paint=load("res://hub/sai_materials.gd").new();paint.scene=self;paint._make_materials();paint._paint_robot();paint.free()
-	print("SAINIVERSE_SAI_READY physics_hz=",Engine.physics_ticks_per_second," policy_hz=50")
+	print("SAINIVERSE_SAI_READY robot=",robot_id," physics_hz=",Engine.physics_ticks_per_second," policy_hz=50")
 
 func height_scan()->Array:
 	var base:RigidBody3D=robot.bodies.chassis;var direction:Vector3=base.global_basis*Vector3.RIGHT
@@ -48,6 +56,8 @@ func exchange(state:Dictionary)->Dictionary:
 	return native_controller.command(state)
 
 func movement_command()->Array:
+	if manual_control:
+		return [Input.get_axis("sainiverse_reverse","sainiverse_forward")*.14,Input.get_axis("sainiverse_right","sainiverse_left")*.45,0.]
 	var lift:Dictionary=carrier.lift_data[0];var platform:RigidBody3D=carrier.bodies[lift.groups[3]]
 	var base:RigidBody3D=robot.bodies.chassis;var local:Vector3=platform.to_local(base.global_position)
 	var t:float=carrier.elapsed;var down:bool=carrier.coordinate(lift.groups[0]).x>2.65 and platform.global_position.y<.15
@@ -76,7 +86,7 @@ func _physics_process(_delta:float)->void:
 		if phase!=logged_phase:
 			print("SAI_BOARDING_PHASE ",phase," t=",carrier.elapsed);logged_phase=phase;phase_times[phase]=carrier.elapsed
 			if carrier.elapsed>11.:carrier._capture("sai_"+phase)
-		state.robot_id="Sai_Agent_001";state.command=movement_command();state.terrain_heights=height_scan();state.physics_owner="Godot/Jolt"
+		state.robot_id=robot_id;state.command=movement_command();state.terrain_heights=height_scan();state.physics_owner="Godot/Jolt"
 		command=exchange(state)
 		var base:RigidBody3D=robot.bodies.chassis
 		if base.global_basis.y.y<.60:failure="Robot tilt exceeded boarding limit";phase="failed"

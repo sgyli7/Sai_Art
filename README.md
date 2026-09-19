@@ -43,6 +43,7 @@ python3 -m venv .venv
 Godot 不在 PATH 时设置 `GODOT_BIN`。首次启动会将演示所需机器人资源装入现有工程的 review runtime，并进行导入；不会创建新的游戏项目。展开后的绝对路径放在忽略的 `.runtime/` 目录。
 
 - W/S 驾驶，A/D 转向，Shift+W 请求高速，空格制动。
+- 极地场景停车后按 F5/F6/F7/F8，在车旁雪地切换普通 MicroDuck、轮滑版、Sai 001、Sai 002；F9 返回母车。机器人沿用 W/S、A/D，右键与滚轮可调整跟随视角。时间流速滑条默认 1.0×，可选 0.1×～3.0×。Sai 002 模型从 `SAI_ROBOTS_ROOT` 指向的 Sai_Rotbots 检出目录读取，默认使用 `/home/ethan/Projects/RobotDesign/delivery/Sai_Rotbots`。
 - Tab 切换视角；右键环视、滚轮缩放；自由视角 WASD、Q/E。
 - G 选择升降台，L 升降，Shift+L 全部；升降台和作业机构未收妥时禁止行驶。
 - C 作业/收起，N 选择吊机；小键盘 4/6 回转、8/2 俯仰、+/− 伸缩；PageUp/PageDown 卷扬。
@@ -51,10 +52,12 @@ Godot 不在 PATH 时设置 `GODOT_BIN`。首次启动会将演示所需机器�
 ```bash
 # 手动崎岖地形试车
 .venv/bin/python run.py --game /path/to/main --terrain hills
-# 复现四个任务
+# 复现母车及机器人任务
 .venv/bin/python run.py --game /path/to/main --mode hill_turn --terrain hills --seconds 55
 .venv/bin/python run.py --game /path/to/main --mode sai_board --seconds 115
+.venv/bin/python run.py --game /path/to/main --mode sai_board_002 --seconds 115
 .venv/bin/python run.py --game /path/to/main --mode cabin_patrol --seconds 24
+.venv/bin/python run.py --game /path/to/main --mode deck_patrol --seconds 24
 .venv/bin/python run.py --game /path/to/main --mode worksite --seconds 43
 # MuJoCo 机构检查与解压 Blender 源文件
 .venv/bin/python run.py --action mujoco

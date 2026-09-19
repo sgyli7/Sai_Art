@@ -35,10 +35,28 @@ def sync_current_robots(game, runtime):
         for src in files:
             if not src.is_file() or src.is_symlink() or src.suffix in ('.import','.uid'):continue
             selected[src.relative_to(base)]=src
+    family_root=Path(os.environ.get('SAI_ROBOTS_ROOT','/home/ethan/Projects/RobotDesign/delivery/Sai_Rotbots'))
+    sai002=family_root/'robots/Sai_Agent_002/models/full'
+    if not (sai002/'robot.json').is_file():
+        raise RuntimeError('Sai 002 model is missing; set SAI_ROBOTS_ROOT to the Sai_Rotbots release checkout')
+    for src in [sai002/'robot.json',*(sai002/'assets').glob('*.glb')]:
+        selected[Path('sai_robots/Sai_Agent_002')/src.relative_to(sai002)]=src
     for rel,src in selected.items():
         dst=runtime/rel
-        if dst.is_file() and src.stat().st_size==dst.stat().st_size and hashlib.sha256(src.read_bytes()).digest()==hashlib.sha256(dst.read_bytes()).digest():continue
-        dst.parent.mkdir(parents=True,exist_ok=True);shutil.copy2(src,dst);changed=True
+        data=src.read_bytes()
+        if rel==Path('robot.gd'):
+            old=b'\tapply_cargo(s)\n'
+            if data.count(old)!=1:raise RuntimeError('Sai robot adapter changed; inspect its cargo actuation before loading Sai 002')
+            data=data.replace(old,b'\tif drives.size() >= 25:apply_cargo(s)\n')
+        elif rel==Path('sai/native_controller.gd'):
+            old=b'state.get("robot_id") != "Sai_Agent_001"'
+            if data.count(old)!=1:raise RuntimeError('Sai controller identity contract changed')
+            data=data.replace(old,b'state.get("robot_id") not in ["Sai_Agent_001","Sai_Agent_002"]')
+        elif rel==Path('sai_robots/Sai_Agent_002/robot.json'):
+            if b'res://sai_agent/assets/' not in data:raise RuntimeError('Sai 002 asset paths changed')
+            data=data.replace(b'res://sai_agent/assets/',b'res://sai_robots/Sai_Agent_002/assets/')
+        if dst.is_file() and dst.read_bytes()==data:continue
+        dst.parent.mkdir(parents=True,exist_ok=True);dst.write_bytes(data);changed=True
     return changed
 p=argparse.ArgumentParser(description=__doc__)
 p.add_argument('--game',type=Path,default=Path(os.environ['SAI_GODOT_PROJECT']) if 'SAI_GODOT_PROJECT' in os.environ else None,help='Existing Robot_Godot_Sim2Sim checkout')
