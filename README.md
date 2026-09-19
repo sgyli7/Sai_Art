@@ -4,6 +4,8 @@
 
 ## 极地游戏场景 · 2026-09-20
 
+四机位、每镜头都能看到完整车身的[极地雪原全车 PV](https://github.com/sgyli7/Sai_Lab/blob/main/Godot_Sim2Sim/docs/media/sainiverse-polar-panorama.gif)放在游戏仓库首页；录制用 `--view polar_panorama`，镜头始终从车体外拍摄。
+
 以下 GIF 均从交付的 Godot/Jolt 极地雪原场景录制，使用实际机器人关节、升降台和驾驶舱碰撞。镜头在舱内和升降平台内部，避开座椅、柜体与护板遮挡。登船片段按阶段选帧，升降过程做了时间压缩；画面没有插帧或合成机器人动作。
 
 **Sai 001 乘升降台登船**

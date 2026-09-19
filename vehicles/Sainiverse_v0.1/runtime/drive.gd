@@ -444,6 +444,16 @@ func _camera()->void:
 	if str(options.get("pv","false"))=="true":
 		var t:float=elapsed-32.;var front:RigidBody3D=bodies.front
 		var target:Vector3=(front.global_position+bodies.tail.global_position)*.5+Vector3.UP*4.
+		if str(options.view)=="polar_panorama":
+			# Four unobstructed, full-vehicle views; keep the camera outside the
+			# carrier even while the driving replay changes its heading.
+			var shots:=[Vector3(0.,48.,145.),Vector3(95.,54.,105.),Vector3(0.,52.,-145.),Vector3(-95.,58.,-105.)]
+			var shot:int=clampi(int(floor(maxf(t,0.)/2.5)),0,shots.size()-1)
+			camera.projection=Camera3D.PROJECTION_PERSPECTIVE;camera.fov=50.;camera.near=.08;camera.far=3500.
+			camera.global_position=target+front.global_basis*shots[shot]
+			camera.look_at(target,Vector3.UP)
+			world_surface.position=Vector3(-origin.offset_x,0,-origin.offset_z)
+			return
 		var offset:=Vector3(96,47,114)
 		if str(options.get("mode",""))=="worksite":
 			target+=Vector3(7,3,0);offset=Vector3(35,55,145)

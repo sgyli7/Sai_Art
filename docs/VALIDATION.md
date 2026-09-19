@@ -38,6 +38,12 @@ Sainiverse vehicle button and observed exit code 74, which is the launcher's
 Sainiverse handoff.
 
 The current polar media uses native rendering and the same robot physics.
+The four-camera full-vehicle PV in the game repository was captured from the
+manual W/A driving replay over simulation seconds 32–42. All 150 source frames
+were 1280×720; the vehicle stayed entirely in view at each camera cut and the
+44-second native run ended with `failed:false`, 34.9 m of forward travel, and
+an 18.0 km/h peak. The GIF plays the captured frames at 15 FPS without
+interpolation.
 The Sai cockpit vignette runs the unchanged learned standing policy and native
 arm impedance at 50/1000 Hz. A scripted arm target reaches a short grip that is
 part of the existing steering rigid body. In a 24-frame capture, the hand had
