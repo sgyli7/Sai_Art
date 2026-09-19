@@ -37,21 +37,53 @@ var operation_ui=null
 var patrol=null
 var sai_passenger=null
 var parked_boarding_fixture:=false
+var parked_patrol_fixture:=false
+var active_robot_kind:="vehicle"
+var robot_switch_busy:=false
+var robot_switch_message:=""
+var robot_switch_history:Array=[]
+var switch_probe_sequence:PackedStringArray=PackedStringArray()
+var last_switch_probe_index:=-1
+var switch_probe_forward:=false
+var saved_vehicle_orbit:Array=[]
 var ramp_links:Dictionary={}
 var ramp_targets:Dictionary={}
 var ramp_samples:Array=[]
 
 func _build()->void:
 	manual=str(options.get("mode","manual")) in ["manual","ui_test","lift_preview_cycle"]
+	if str(options.get("mode",""))=="sai_cockpit":options.seconds=minf(float(options.seconds),14.45)
 	requested_drive_speed=float(options.get("speed",0.))
+	if OS.has_environment("SAINIVERSE_SWITCH_PROBE") and OS.get_environment("SAINIVERSE_SWITCH_PROBE")!="":switch_probe_sequence=OS.get_environment("SAINIVERSE_SWITCH_PROBE").split(",")
 	super._build()
+	# The 60 Hz interactive solver produces sub-millimetre door motion with
+	# short angular-rate spikes; a latched, closed door remains safe to drive.
+	if manual and access!=null:access.drive_closed_rate_limit_rad_s=.12
+	for binding in [["sainiverse_forward",KEY_W],["sainiverse_reverse",KEY_S],["sainiverse_left",KEY_A],["sainiverse_right",KEY_D]]:
+		if InputMap.has_action(binding[0]):continue
+		InputMap.add_action(binding[0]);var event:=InputEventKey.new();event.physical_keycode=binding[1]
+		InputMap.action_add_event(binding[0],event)
+	if str(options.get("terrain",""))=="polar" and DisplayServer.get_name()!="headless":
+		for child in stage.get_children():
+			if child is WorldEnvironment:
+				var sky:=Sky.new();var sky_material:=ShaderMaterial.new();sky_material.shader=load(HERE+"/assets/polar_sky.gdshader")
+				sky.sky_material=sky_material;child.environment.sky=sky;child.environment.background_mode=Environment.BG_SKY
+				child.environment.ambient_light_energy=.34
+			elif child is DirectionalLight3D:child.light_energy=.72
+		for child in world_surface.get_children():
+			if child is MeshInstance3D:
+				var snow:=ShaderMaterial.new();snow.shader=load(HERE+"/assets/polar_snow.gdshader")
+				child.material_override=snow;child.cast_shadow=GeometryInstance3D.SHADOW_CASTING_SETTING_OFF
 	# The full 200 Hz qualification loop costs more than its 5 ms budget on the
-	# complete rendered vehicle. In interactive modes that creates a catch-up
-	# spiral: one render frame performs many overdue physics ticks and drops to
-	# single-digit FPS. Keep 200 Hz for qualification modes, but use a stable
-	# 100 Hz preview loop for human driving and mouse UI operation.
-	if manual:
-		Engine.physics_ticks_per_second=100
+	# complete rendered vehicle. Use 60 Hz while humans drive or MicroDuck
+	# waits for its parked carrier; the Sai boarding fixture has its own staging
+	# rate. Switch to the robot's verified rate after freezing the carrier.
+	# Qualification modes keep 200 Hz.
+	var robot_staging:bool=str(options.get("mode","")) in ["cabin_patrol","cockpit_patrol","deck_patrol","sai_board","sai_board_002","sai_cockpit"]
+	var boarding_staging:bool=str(options.get("mode","")) in ["sai_board","sai_board_002","sai_cockpit"]
+	if manual or robot_staging:
+		var preferred_hz:int=100 if boarding_staging else int(OS.get_environment("SAINIVERSE_INTERACTIVE_HZ")) if manual and OS.has_environment("SAINIVERSE_INTERACTIVE_HZ") else 60
+		Engine.physics_ticks_per_second=clampi(preferred_hz,60,200)
 		Engine.max_physics_steps_per_frame=12
 	equipment=load(HERE+"/runtime/equipment_control.gd").new();equipment.configure(self,spec.contact.equipment)
 	equipment.auto_work=str(options.get("mode","")) in ["worksite","equipment_cycle"]
@@ -120,22 +152,84 @@ func _build()->void:
 
 func handle_input(event:InputEvent)->void:
 	if not camera_ready or not manual:return
+	if not switch_probe_sequence.is_empty() or OS.get_environment("SAINIVERSE_DRIVE_PROBE")=="1":
+		stage.get_viewport().set_input_as_handled()
+		return
 	if event is InputEventMouse and operation_ui!=null and operation_ui.captures_point(event.position):return
-	cockpit.input(event)
+	if event is InputEventKey and event.pressed and not event.echo and event.physical_keycode in [KEY_F5,KEY_F6,KEY_F7,KEY_F8,KEY_F9]:
+		select_robot_mode({KEY_F5:"microduck",KEY_F6:"roller",KEY_F7:"sai001",KEY_F8:"sai002",KEY_F9:"vehicle"}[event.physical_keycode])
+		stage.get_viewport().set_input_as_handled()
+		return
+	if active_robot_kind=="vehicle":cockpit.input(event)
 	if event is InputEventMouseButton:
 		if event.button_index==MOUSE_BUTTON_RIGHT:mouse_drag=event.pressed
 		if event.pressed and event.button_index==MOUSE_BUTTON_WHEEL_UP:orbit_radius=maxf(4.,orbit_radius*.88)
 		if event.pressed and event.button_index==MOUSE_BUTTON_WHEEL_DOWN:orbit_radius=minf(600.,orbit_radius/ .88)
 	if event is InputEventMouseMotion and mouse_drag:
 		orbit_yaw-=event.relative.x*.004;orbit_pitch=clampf(orbit_pitch+event.relative.y*.003,-1.35,1.35)
+	if active_robot_kind!="vehicle" and event is InputEventMouse and (mouse_drag or event is InputEventMouseButton):stage.get_viewport().set_input_as_handled()
 	if event is InputEventKey and event.pressed and not event.echo:
 		match event.physical_keycode:
 			KEY_ESCAPE:
 				options.seconds=elapsed+.02;manual=false;options.speed=0.
 			KEY_TAB:
-				set_camera_mode((cam_mode+1)%camera_names.size())
+				if active_robot_kind=="vehicle":set_camera_mode((cam_mode+1)%camera_names.size())
 			KEY_T:switch_theme()
 			KEY_F12:_capture("manual_"+str(Time.get_ticks_msec()))
+
+func select_robot_mode(kind:String)->void:
+	if kind not in ["vehicle","microduck","roller","sai001","sai002"] or robot_switch_busy:return
+	if kind==active_robot_kind:return
+	if kind!="vehicle" and bodies.front.linear_velocity.length()>.10:
+		robot_switch_message="请先停车，再切换机器人";return
+	robot_switch_busy=true;robot_switch_message="正在切换机器人…"
+	call_deferred("_switch_robot_mode",kind)
+
+func _selected_robot_position()->Vector3:
+	if patrol!=null and patrol._base!=null:return patrol._base.global_position
+	if sai_passenger!=null and sai_passenger.robot!=null:return sai_passenger.robot.bodies.chassis.global_position
+	return Vector3.ZERO
+
+func _probe_forward(pressed:bool)->void:
+	if switch_probe_forward==pressed:return
+	switch_probe_forward=pressed
+	var event:=InputEventKey.new();event.physical_keycode=KEY_W;event.keycode=KEY_W;event.pressed=pressed
+	Input.parse_input_event(event)
+
+func _switch_robot_mode(kind:String)->void:
+	if active_robot_kind=="vehicle" and kind!="vehicle":
+		saved_vehicle_orbit=[orbit_radius,orbit_yaw,orbit_pitch]
+		orbit_radius=6.;orbit_yaw=.98;orbit_pitch=.28
+	elif kind=="vehicle" and saved_vehicle_orbit.size()==3:
+		orbit_radius=saved_vehicle_orbit[0];orbit_yaw=saved_vehicle_orbit[1];orbit_pitch=saved_vehicle_orbit[2]
+	if robot_switch_history.size()>0 and active_robot_kind!="vehicle":
+		var previous:Dictionary=robot_switch_history[robot_switch_history.size()-1]
+		if previous.has("start_world"):
+			var point:=_selected_robot_position()
+			var start:Array=previous.start_world
+			previous["distance_m"]=Vector2(point.x-float(start[0]),point.z-float(start[2])).length()
+			previous["end_world"]=[point.x,point.y,point.z]
+		if patrol!=null:previous["first_fall"]=patrol.session.first_fall
+		if sai_passenger!=null:previous["failure"]=sai_passenger.failure
+	if patrol!=null:patrol.queue_free();patrol=null
+	if sai_passenger!=null:sai_passenger.queue_free();sai_passenger=null
+	await process_frame
+	for name in bodies:bodies[name].freeze=kind!="vehicle"
+	parked_patrol_fixture=kind!="vehicle"
+	parked_boarding_fixture=false
+	Engine.physics_ticks_per_second=60 if kind=="vehicle" else 200 if kind in ["microduck","roller"] else 1000
+	Engine.max_physics_steps_per_frame=12 if kind=="vehicle" else 16 if kind in ["microduck","roller"] else 256
+	for axis in ["throttle","steer","brake"]:cockpit.ui_axes[axis]=0.
+	if kind in ["microduck","roller"]:
+		patrol=load(HERE+"/runtime/microduck_patrol.gd").new();patrol.carrier=self;patrol.manual_input=true
+		patrol.mode_name="walk" if kind=="microduck" else "roller"
+		patrol.spawn_world=Vector3(3.,height(3.+origin.offset_x,-103.-origin.offset_z),103.)
+		stage.add_child(patrol)
+	elif kind in ["sai001","sai002"]:
+		sai_passenger=load(HERE+"/runtime/sai_boarding.gd").new();sai_passenger.carrier=self;sai_passenger.manual_control=true
+		sai_passenger.robot_id="Sai_Agent_002" if kind=="sai002" else "Sai_Agent_001"
+		stage.add_child(sai_passenger)
+	active_robot_kind=kind;robot_switch_history.append({"time":elapsed,"robot":kind,"physics_hz":Engine.physics_ticks_per_second});robot_switch_busy=false;robot_switch_message=""
 
 func set_camera_mode(index:int)->void:
 	cam_mode=clampi(index,0,camera_names.size()-1)
@@ -234,10 +328,32 @@ func _lifts(dt:float)->void:
 func _physics_process(dt:float)->bool:
 	var controller_start:int=Time.get_ticks_usec()
 	if not camera_ready:return super._physics_process(dt)
-	if patrol==null and elapsed>=10. and str(options.get("mode","")) in ["cabin_patrol","deck_patrol","worksite"]:
+	if manual and OS.get_environment("SAINIVERSE_DRIVE_PROBE")=="1":
+		if elapsed>=11. and elapsed<19.:Input.action_press("sainiverse_forward")
+		else:Input.action_release("sainiverse_forward")
+		if elapsed>=16. and elapsed<19.:Input.action_press("sainiverse_left")
+		else:Input.action_release("sainiverse_left")
+	if manual and not switch_probe_sequence.is_empty() and elapsed>=11.:
+		var probe_index:=int((elapsed-11.)/6.)
+		var probe_kind:String=switch_probe_sequence[probe_index] if probe_index<switch_probe_sequence.size() else ""
+		_probe_forward(probe_index<4 and active_robot_kind==probe_kind and elapsed-11.-6.*probe_index>=1. and elapsed-11.-6.*probe_index<4.)
+		if probe_index<switch_probe_sequence.size() and probe_index!=last_switch_probe_index and not robot_switch_busy:
+			select_robot_mode(switch_probe_sequence[probe_index])
+			if robot_switch_busy:last_switch_probe_index=probe_index
+	if not switch_probe_sequence.is_empty() and robot_switch_history.size()>0 and active_robot_kind!="vehicle":
+		var current:Dictionary=robot_switch_history[robot_switch_history.size()-1]
+		if not current.has("start_world"):
+			var point:=_selected_robot_position()
+			if point!=Vector3.ZERO:current["start_world"]=[point.x,point.y,point.z]
+	if patrol==null and elapsed>=10. and str(options.get("mode","")) in ["cabin_patrol","cockpit_patrol","deck_patrol","worksite"]:
+		if str(options.get("mode","")) in ["cabin_patrol","cockpit_patrol","deck_patrol"]:
+			for name in bodies:bodies[name].freeze=true
+			parked_patrol_fixture=true
+			Engine.physics_ticks_per_second=200
+			Engine.max_physics_steps_per_frame=16
 		patrol=load(HERE+"/runtime/microduck_patrol.gd").new();patrol.carrier=self
-		patrol.mode_name="walk" if str(options.mode)=="cabin_patrol" else "roller"
-		patrol.spawn_source=Vector3(25.,0.,11.354) if str(options.mode)=="cabin_patrol" else Vector3(-12.,-11.5,7.454)
+		patrol.mode_name="walk" if str(options.mode) in ["cabin_patrol","cockpit_patrol"] else "roller"
+		patrol.spawn_source=Vector3(25.,0.,11.354) if str(options.mode)=="cabin_patrol" else Vector3(29.4,0.,11.354) if str(options.mode)=="cockpit_patrol" else Vector3(-12.,-11.5,7.454)
 		stage.add_child(patrol)
 		if str(options.mode)=="worksite":
 			var layer:=CanvasLayer.new();stage.add_child(layer)
@@ -245,16 +361,29 @@ func _physics_process(dt:float)->bool:
 			var viewport:=SubViewport.new();viewport.size=Vector2i(384,216);viewport.world_3d=stage.get_world_3d();viewport.render_target_update_mode=SubViewport.UPDATE_ALWAYS;container.add_child(viewport)
 			patrol_camera=Camera3D.new();patrol_camera.near=.015;patrol_camera.fov=48.;viewport.add_child(patrol_camera);patrol_camera.current=true
 			var label:=Label.new();label.text="LIVE / MicroDuck deck patrol";label.position=Vector2(872,76);layer.add_child(label)
-	if sai_passenger==null and elapsed>=10. and str(options.get("mode",""))=="sai_board":
-		Engine.physics_ticks_per_second=2000;Engine.max_physics_steps_per_frame=256
+	if parked_patrol_fixture:
+		elapsed+=dt;count+=1
+		if elapsed>=float(options.seconds):
+			_write_visual_report()
+			var report:=FileAccess.open(str(options.output_root)+"/run.json",FileAccess.WRITE)
+			report.store_string(JSON.stringify({"seconds":elapsed,"wall_seconds":(Time.get_ticks_usec()-start_usec)/1e6,"parked_carrier_fixture":true,"robot_controller_hz":50,"physics_hz":Engine.physics_ticks_per_second,"mode":str(options.mode),"selected_robot":active_robot_kind},"  "));report.close();quit()
+		return false
+	if sai_passenger==null and elapsed>=10. and str(options.get("mode","")) in ["sai_board","sai_board_002","sai_cockpit"]:
+		Engine.physics_ticks_per_second=1000 if OS.get_environment("SAINIVERSE_USE_GAME_ROBOTS")=="1" else 2000
+		Engine.max_physics_steps_per_frame=256
 		parked_boarding_fixture=true
 		# Stationary carrier fixture: freeze after the full suspension has settled.
 		# The selected lift/ramp and every robot body continue physical integration.
-		var moving:Array=lift_data[0].groups.duplicate();moving.append(lift_data[0].ramp.name)
+		var moving:Array=["cockpit_steer","cockpit_steer_copilot"] if str(options.get("mode",""))=="sai_cockpit" else lift_data[0].groups.duplicate()
+		if str(options.get("mode",""))!="sai_cockpit":moving.append(lift_data[0].ramp.name)
 		for name in bodies:
 			if not moving.has(name):bodies[name].freeze=true
-		sai_passenger=load(HERE+"/runtime/sai_boarding.gd").new();sai_passenger.carrier=self;stage.add_child(sai_passenger)
-	if not parked_boarding_fixture:cockpit.step(dt)
+		sai_passenger=load(HERE+"/runtime/sai_boarding.gd").new();sai_passenger.carrier=self
+		sai_passenger.robot_id="Sai_Agent_002" if str(options.mode)=="sai_board_002" else "Sai_Agent_001"
+		sai_passenger.cockpit_demo=str(options.get("mode",""))=="sai_cockpit"
+		if sai_passenger.cockpit_demo:cockpit.set_physical_mode(true)
+		stage.add_child(sai_passenger)
+	if not parked_boarding_fixture or str(options.get("mode",""))=="sai_cockpit":cockpit.step(dt)
 	_lifts(dt)
 	_ramps(dt)
 	if not parked_boarding_fixture:
@@ -276,11 +405,16 @@ func _physics_process(dt:float)->bool:
 		if elapsed>=float(options.seconds):
 			_write_visual_report()
 			var file:=FileAccess.open(str(options.output_root)+"/run.json",FileAccess.WRITE)
-			file.store_string(JSON.stringify({"seconds":elapsed,"wall_seconds":(Time.get_ticks_usec()-start_usec)/1e6,"parked_carrier_fixture":true,"dynamic_selected_lift_ramp_bodies":5,"robot_controller_hz":50,"physics_hz":2000,"scope":"Carrier settled dynamically for 10 seconds, then held fixed for stationary boarding. Lift, ramp and Sai remain dynamic with actual collisions and finite actuator forces. Does not measure hull response to boarding load."},"  "));file.close();quit()
+			file.store_string(JSON.stringify({"seconds":elapsed,"wall_seconds":(Time.get_ticks_usec()-start_usec)/1e6,"parked_carrier_fixture":true,"dynamic_selected_lift_ramp_bodies":0 if str(options.get("mode",""))=="sai_cockpit" else 5,"robot_controller_hz":50,"physics_hz":Engine.physics_ticks_per_second,"scope":"Stationary cockpit manipulation with dynamic steering joints and Sai articulation." if str(options.get("mode",""))=="sai_cockpit" else "Carrier settled dynamically for 10 seconds, then held fixed for stationary boarding. Lift, ramp and Sai remain dynamic with actual collisions and finite actuator forces. Does not measure hull response to boarding load."},"  "));file.close();quit()
 		return false
 	var result:bool=super._physics_process(dt)
 	controller_steps+=1;controller_usec+=Time.get_ticks_usec()-controller_start
 	return result
+
+func _manual_robot_camera(target:Vector3)->void:
+	camera.projection=Camera3D.PROJECTION_PERSPECTIVE;camera.near=.015;camera.far=3500.;camera.fov=48.
+	var offset:=Vector3(cos(orbit_pitch)*cos(orbit_yaw),sin(orbit_pitch),cos(orbit_pitch)*sin(orbit_yaw))*orbit_radius
+	camera.global_position=target+offset;camera.look_at(target,Vector3.UP)
 
 func _camera()->void:
 	if camera_ready and cargo!=null and str(options.get("mode",""))=="cargo_cycle":
@@ -288,20 +422,38 @@ func _camera()->void:
 	if not camera_ready:super._camera();return
 	if sai_passenger!=null and sai_passenger.robot!=null:
 		var target:Vector3=sai_passenger.robot.bodies.chassis.global_position+Vector3.UP*.2
+		if sai_passenger.cockpit_demo:
+			var grip:Vector3=bodies.cockpit_steer.global_transform*vec([-0.13,-0.20,-0.11])
+			camera.projection=Camera3D.PROJECTION_PERSPECTIVE;camera.near=.015;camera.fov=60.
+			camera.global_position=bodies.front.global_transform*local_source([30.55,-2.35,13.2])
+			camera.look_at(target.lerp(grip,.55),Vector3.UP)
+			return
+		if sai_passenger.manual_control:
+			_manual_robot_camera(target);return
 		camera.projection=Camera3D.PROJECTION_PERSPECTIVE;camera.near=.015;camera.fov=48.
-		if sai_passenger.phase=="ride":
-			target=bodies[lift_data[0].groups[3]].global_position+Vector3.UP*.5
-			camera.global_position=target+Vector3(11.,6.,12.)
+		if sai_passenger.phase in ["ride","exit","complete"]:
+			camera.global_position=target+Vector3(.70,1.30,.55)
 		else:camera.global_position=target+Vector3(2.,1.2,2.0)
 		camera.look_at(target,Vector3.UP);return
 	if patrol!=null and patrol._base!=null and str(options.get("mode",""))!="worksite":
 		var target:Vector3=patrol._base.global_position+Vector3.UP*.10
+		if patrol.manual_input:_manual_robot_camera(target);return
 		camera.projection=Camera3D.PROJECTION_PERSPECTIVE;camera.fov=48.;camera.near=.015
 		camera.global_position=target+Vector3(-1.15,.55,1.10);camera.look_at(target,Vector3.UP);return
 	if str(options.view) in ["accept_passage","accept_joint","accept_services","accept_yokes","accept_workbay","accept_cargo","cabin_tour","interior","workshop","controls","seat_detail","instrument_detail","engineer_detail","lounge","stairs","cockpit_rear","lift_detail","lift_root","pedestal","underbody_detail"]:super._camera();return
 	if str(options.get("pv","false"))=="true":
 		var t:float=elapsed-32.;var front:RigidBody3D=bodies.front
 		var target:Vector3=(front.global_position+bodies.tail.global_position)*.5+Vector3.UP*4.
+		if str(options.view)=="polar_panorama":
+			# Four unobstructed, full-vehicle views; keep the camera outside the
+			# carrier even while the driving replay changes its heading.
+			var shots:=[Vector3(0.,48.,145.),Vector3(95.,54.,105.),Vector3(0.,52.,-145.),Vector3(-95.,58.,-105.)]
+			var shot:int=clampi(int(floor(maxf(t,0.)/2.5)),0,shots.size()-1)
+			camera.projection=Camera3D.PROJECTION_PERSPECTIVE;camera.fov=50.;camera.near=.08;camera.far=3500.
+			camera.global_position=target+front.global_basis*shots[shot]
+			camera.look_at(target,Vector3.UP)
+			world_surface.position=Vector3(-origin.offset_x,0,-origin.offset_z)
+			return
 		var offset:=Vector3(96,47,114)
 		if str(options.get("mode",""))=="worksite":
 			target+=Vector3(7,3,0);offset=Vector3(35,55,145)
@@ -337,7 +489,8 @@ func _process(dt:float)->bool:
 		patrol_camera.global_position=p+Vector3(-1.15,.65,1.1);patrol_camera.look_at(p,Vector3.UP)
 	if pv_caption!=null:
 		var phase:String=str(options.get("mode","review"))
-		if sai_passenger!=null:phase="SAI BOARDING / "+sai_passenger.phase.to_upper()
+		if phase=="cockpit_patrol":phase="MICRODUCK / COCKPIT PATROL"
+		if sai_passenger!=null:phase="SAI ARM / PHYSICAL STEERING" if sai_passenger.cockpit_demo else "SAI BOARDING / "+sai_passenger.phase.to_upper()
 		pv_caption.text="Sainiverse_v0.1  |  "+phase+"\nSimulation  %.1f s"%elapsed
 	if camera_ready:
 		if cam_mode==4:
@@ -370,8 +523,11 @@ func _write_visual_report()->void:
 	if operation_ui!=null:
 		var proof:=FileAccess.open(str(options.output_root)+"/operation_ui.json",FileAccess.WRITE);proof.store_string(JSON.stringify(operation_ui.report(),"  "));proof.close()
 	if sai_passenger!=null:
-		var proof:=FileAccess.open(str(options.output_root)+"/sai_boarding.json",FileAccess.WRITE)
-		proof.store_string(JSON.stringify({"samples":sai_passenger.mission_samples,"completed":sai_passenger.completed,"failure":sai_passenger.failure,"physics_hz":2000,"policy_hz":50,"parked_carrier_fixture":parked_boarding_fixture,"scope":"Scripted boarding mission using existing learned locomotion and native impedance; real contacts and finite-force lift/ramp."},"  "));proof.close()
+		var report_name:String="sai_cockpit.json" if sai_passenger.cockpit_demo else "sai_boarding.json"
+		var proof:=FileAccess.open(str(options.output_root)+"/"+report_name,FileAccess.WRITE)
+		proof.store_string(JSON.stringify({"robot_id":sai_passenger.robot_id,"samples":sai_passenger.cockpit_samples if sai_passenger.cockpit_demo else sai_passenger.mission_samples,"completed":sai_passenger.completed,"failure":sai_passenger.failure,"physics_hz":Engine.physics_ticks_per_second,"policy_hz":50,"parked_carrier_fixture":parked_boarding_fixture,"scope":"Stationary carrier; existing Sai arm impedance and physical steering contact." if sai_passenger.cockpit_demo else "Scripted boarding mission using existing learned locomotion and native impedance; real contacts and finite-force lift/ramp."},"  "));proof.close()
+	var switches:=FileAccess.open(str(options.output_root)+"/robot_switches.json",FileAccess.WRITE)
+	switches.store_string(JSON.stringify({"history":robot_switch_history,"active_robot":active_robot_kind},"  "));switches.close()
 	if patrol!=null:
 		var proof:=FileAccess.open(str(options.output_root)+"/robot_patrol.json",FileAccess.WRITE)
 		proof.store_string(JSON.stringify({"mode":patrol.mode_name,"samples":patrol.evidence,"first_fall":patrol.session.first_fall,"error":patrol.session.error,"controller":"Existing native ONNX 50 Hz / Jolt 200 Hz","scope":"Actual policy torque actuation and carrier rigid-body contact; initialization is the only pose placement."},"  "));proof.close()

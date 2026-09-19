@@ -9,7 +9,6 @@ var captures:Dictionary={}
 var capture_running:=false
 var pv_frames:=0
 var pv_capture_times:Array=[]
-var exit_frame_buffer:Array=[]
 var world_surface:Node3D
 var final_written:=false
 
@@ -78,34 +77,19 @@ func _process(_dt:float)->bool:
 			"gpu_ms":RenderingServer.viewport_get_measured_render_time_gpu(root.get_viewport_rid()),"render_cpu_ms":RenderingServer.viewport_get_measured_render_time_cpu(root.get_viewport_rid()),"render_setup_ms":RenderingServer.get_frame_setup_time_cpu(),
 			"draw_calls":Performance.get_monitor(Performance.RENDER_TOTAL_DRAW_CALLS_IN_FRAME),"primitives":Performance.get_monitor(Performance.RENDER_TOTAL_PRIMITIVES_IN_FRAME)})
 	last_frame_usec=now
-	var capture_time:float=11.+float(pv_frames)/15. if str(options.get("mode","")) in ["cabin_patrol","deck_patrol"] else 32.+float(pv_frames)/15.
+	var mode:String=str(options.get("mode",""))
+	var capture_time:float=12.8+float(pv_frames)/15. if mode=="sai_cockpit" else 11.+float(pv_frames)/15. if mode in ["cabin_patrol","cockpit_patrol","deck_patrol"] else 32.+float(pv_frames)/15.
 	if str(options.get("mode",""))=="sai_board":
 		var phases:Dictionary=get("sai_passenger").phase_times if get("sai_passenger")!=null else {}
-		capture_time=float(phases.get("approach",INF))+9.+float(pv_frames)/15. if pv_frames<45 else float(phases.get("approach",INF))+31.+float(pv_frames-45)/15. if pv_frames<75 else float(phases.get("ride",INF))+8.+float(pv_frames-75)/15. if pv_frames<105 else float(phases.get("exit",INF))+18.+float(pv_frames-105)/15.
-	if str(options.get("mode",""))=="sai_board" and pv_frames>=105:
-		capture_time=INF
-		var passenger=get("sai_passenger")
-		if str(options.get("pv","false"))=="true" and pv_frames==105 and passenger!=null and passenger.phase in ["exit","complete"] and not capture_running:_buffer_exit_frame()
-	if str(options.get("pv","false"))=="true" and elapsed>=capture_time and pv_frames<150 and not capture_running:
+		capture_time=float(phases.get("approach",INF))+9.+float(pv_frames)/15. if pv_frames<40 else float(phases.get("approach",INF))+31.+float(pv_frames-40)/15. if pv_frames<70 else float(phases.get("ride",INF))+2.+float(pv_frames-70)*.32 if pv_frames<120 else float(phases.get("exit",INF))+1.+float(pv_frames-120)*.55
+	var frame_limit:int=24 if mode=="sai_cockpit" else 150
+	if str(options.get("pv","false"))=="true" and elapsed>=capture_time and pv_frames<frame_limit and not capture_running:
 		_capture("pv_%04d"%pv_frames);pv_frames+=1
 	if str(options.get("capture","false"))=="true":
 		for when in ([9.,24.,40.,72.] if str(options.get("mode",""))=="lift_cycle" else [9.,14.,20.,24.]):
 			if elapsed>=when and not captures.has(str(when)):
 				captures[str(when)]=true;_capture(str(when))
 	return false
-
-func _buffer_exit_frame()->void:
-	capture_running=true
-	await RenderingServer.frame_post_draw
-	exit_frame_buffer.append({"image":root.get_texture().get_image(),"time":elapsed})
-	if exit_frame_buffer.size()>45:exit_frame_buffer.pop_front()
-	if get("sai_passenger").completed and exit_frame_buffer.size()==45:
-		for frame in exit_frame_buffer:
-			var label:String="pv_%04d"%pv_frames
-			frame.image.save_png(str(options.output_root)+"/"+str(options.output).get_basename()+"_"+label+".png")
-			pv_capture_times.append({"frame":label,"simulation_s":frame.time});pv_frames+=1
-		exit_frame_buffer.clear()
-	last_frame_usec=Time.get_ticks_usec();capture_running=false
 
 func _capture(label:String)->void:
 	capture_running=true

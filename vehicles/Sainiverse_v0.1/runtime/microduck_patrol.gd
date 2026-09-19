@@ -3,13 +3,21 @@ extends "res://standalone/driver.gd"
 ## Only initialization places bodies. Every subsequent pose is Jolt-integrated.
 var carrier: SceneTree
 var mode_name := "walk"
+var manual_input := false
 var spawn_source := Vector3(22.,0.,11.354)
+var spawn_world := Vector3(3.,0.,23.)
 var evidence: Array = []
 
 func _ready() -> void:
 	var host:=Node3D.new();host.name="RobotHost";add_child(host)
 	var world:=Node3D.new();world.name="World";add_child(world)
-	get_tree().set_meta("microduck_session",{"mode":mode_name,"steps":0,"rows":[],"replay":{"segments":[{"at":0.,"held":[]},{"at":1.,"held":["fwd"]},{"at":32. if str(carrier.options.get("mode",""))=="worksite" else 10.,"held":[]}]},"trace_path":"","seconds":0.,"segment":-1,"resets":0,"switches":0,"first_fall":null,"started_usec":Time.get_ticks_usec(),"seed":915000,"error":"","events":[],"profiles":{}})
+	var replay:Dictionary={}
+	if not manual_input:
+		if str(carrier.options.get("mode",""))=="cockpit_patrol":
+			replay={"segments":[{"at":0.,"held":[]},{"at":1.,"held":["fwd"]},{"at":7.,"held":[]},{"at":8.,"held":["back"]},{"at":14.,"held":[]}]}
+		else:
+			replay={"segments":[{"at":0.,"held":[]},{"at":1.,"held":["fwd"]},{"at":32. if str(carrier.options.get("mode",""))=="worksite" else 10.,"held":[]}]}
+	get_tree().set_meta("microduck_session",{"mode":mode_name,"steps":0,"rows":[],"replay":replay,"trace_path":"","seconds":0.,"segment":-1,"resets":0,"switches":0,"first_fall":null,"started_usec":Time.get_ticks_usec(),"seed":915000,"error":"","events":[],"profiles":{}})
 	super._ready()
 	if mode_name=="roller":
 		brain.limits.vmax_x=.35;motion.settings.heading_hold=true
@@ -23,7 +31,7 @@ func _follow_camera(_delta:float) -> void:pass
 func _handle(command:Variant) -> void:
 	if command is Dictionary and command.get("cmd","")=="reset":
 		command=command.duplicate(true)
-		var offset:Vector3=carrier.bodies.front.global_transform*carrier.local_source([spawn_source.x,spawn_source.y,spawn_source.z])
+		var offset:Vector3=spawn_world if manual_input else carrier.bodies.front.global_transform*carrier.local_source([spawn_source.x,spawn_source.y,spawn_source.z])
 		var source_offset:Vector3=_g2m(offset)
 		for pose in command.get("bodies",[]):
 			for i in range(3):pose.pos[i]+=source_offset[i]
@@ -32,6 +40,7 @@ func _handle(command:Variant) -> void:
 func _ground_height_at(body_pos:Array) -> float:
 	var body:RigidBody3D=carrier.bodies.front
 	var point:Vector3=_m2g(Vector3(body_pos[0],body_pos[1],body_pos[2]))
+	if manual_input:return carrier.height(point.x+carrier.origin.offset_x,-point.z-carrier.origin.offset_z)
 	var local:Vector3=body.to_local(point)
 	local.y=spawn_source.z-10.
 	return (body.global_transform*local).y

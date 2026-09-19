@@ -16,6 +16,7 @@ var lift_status:Label
 var throttle:HSlider
 var steering:HSlider
 var brake:HSlider
+var time_scale_slider:HSlider
 var high_range:CheckButton
 var panel_collapsed:=false
 var ui_test_phase:=-1
@@ -30,7 +31,7 @@ const YELLOW=Color("D8A92E")
 const RED=Color("C52232")
 
 func configure(h:SceneTree)->void:
-	host=h;layer=20;font=SystemFont.new();font.font_names=PackedStringArray(["Noto Sans CJK SC","Noto Sans CJK JP"])
+	host=h;layer=20;Engine.time_scale=1.;font=SystemFont.new();font.font_names=PackedStringArray(["Noto Sans CJK SC","Noto Sans CJK JP"])
 	_build_ui();visible=str(host.options.get("clean_capture","false"))!="true"
 
 func _style(color:Color,radius:=6,border:=0)->StyleBoxFlat:
@@ -58,7 +59,7 @@ func _build_ui()->void:
 	status=_label("SYSTEM ONLINE",14,MUTED);status.autowrap_mode=TextServer.AUTOWRAP_WORD_SMART;outer.add_child(status)
 	scroll=ScrollContainer.new();scroll.custom_minimum_size=Vector2(370,0);scroll.horizontal_scroll_mode=ScrollContainer.SCROLL_MODE_DISABLED;outer.add_child(scroll)
 	body=VBoxContainer.new();body.size_flags_horizontal=Control.SIZE_EXPAND_FILL;body.add_theme_constant_override("separation",6);scroll.add_child(body)
-	_build_drive();_build_crane();_build_lifts();_build_receiver();_build_view();_build_services();_build_help()
+	_build_drive();_build_robots();_build_crane();_build_lifts();_build_receiver();_build_view();_build_services();_build_help()
 
 func _section(id:String,title:String,open:=false)->VBoxContainer:
 	var card:=VBoxContainer.new();card.add_theme_constant_override("separation",6);body.add_child(card)
@@ -96,6 +97,12 @@ func _build_drive()->void:
 	for item in [["驻车制动","emergency"],["作业模式","work"]]:
 		var b:=_button(item[0]);b.size_flags_horizontal=Control.SIZE_EXPAND_FILL;b.pressed.connect(_pulse.bind(str(item[1])));controls[str(item[1])]=b;r.add_child(b)
 
+func _build_robots()->void:
+	var c:=_section("robots","驾驶对象 ROBOTS",false)
+	for item in [["F9 · Sainiverse","vehicle"],["F5 · MicroDuck","microduck"],["F6 · MD 轮滑","roller"],["F7 · Sai 001","sai001"],["F8 · Sai 002","sai002"]]:
+		var button:=_button(item[0]);button.pressed.connect(host.select_robot_mode.bind(item[1]));c.add_child(button)
+	c.add_child(_label("停车后切换；机器人控制器使用各自已验证的物理频率。",12,MUTED))
+
 func _build_crane()->void:
 	var c:=_section("crane","吊机 CRANE",false)
 	var select:=OptionButton.new();select.add_theme_font_override("font",font);select.custom_minimum_size.y=36
@@ -125,6 +132,8 @@ func _build_receiver()->void:
 
 func _build_view()->void:
 	var c:=_section("view","视角与外观 VIEW",false);var views:=OptionButton.new();views.add_theme_font_override("font",font)
+	time_scale_slider=_slider_row(c,"时间流速 0.1×～3.0×（默认 1.0×）",.1,3.,.1)
+	time_scale_slider.value=1.;time_scale_slider.value_changed.connect(func(v):Engine.time_scale=clampf(v,.1,3.))
 	for i in host.camera_names.size():views.add_item(host.camera_names[i],i)
 	views.item_selected.connect(_select_view);views.select(host.cam_mode);controls["view_select"]=views;c.add_child(views)
 	var themes:=OptionButton.new();themes.add_theme_font_override("font",font)
@@ -139,7 +148,7 @@ func _build_services()->void:
 
 func _build_help()->void:
 	var c:=_section("help","帮助 HELP",false)
-	var help:=_label("鼠标：展开分组、选择设备、拖动驾驶滑杆；吊机按钮需按住。\n右键拖动环视 · 滚轮缩放 · Tab 切换视角。\n键盘控制仍可用，UI 与驾驶舱实体控制共用同一套关节。",12,MUTED);help.autowrap_mode=TextServer.AUTOWRAP_WORD_SMART;c.add_child(help)
+	var help:=_label("鼠标：展开分组、选择设备、拖动驾驶滑杆；吊机按钮需按住。\nF5/F6/F7/F8 切换机器人，F9 返回母车；停车后切换。\nW/S 前后行驶，A/D 转向；右键环视 · 滚轮缩放 · Tab 切换视角。",12,MUTED);help.autowrap_mode=TextServer.AUTOWRAP_WORD_SMART;c.add_child(help)
 
 func captures_point(point:Vector2)->bool:return visible and root_panel.get_global_rect().has_point(point)
 
@@ -155,7 +164,7 @@ func _select_lift(index:int)->void:
 func _select_view(index:int)->void:host.set_camera_mode(index);_record("camera",index)
 func _select_theme(index:int)->void:
 	var ids=["black","desert","white","blue","yellow"];host.set_theme_id(ids[index]);_record("theme",ids[index])
-func _quit()->void:host.options.seconds=host.elapsed+.02;host.manual=false;host.options.speed=0.;_record("quit",true)
+func _quit()->void:host.options.seconds=host.elapsed+.02;host.manual=false;host.options.speed=0.;Engine.time_scale=1.;_record("quit",true)
 
 func refresh()->void:
 	if host==null or not host.camera_ready:return
@@ -165,7 +174,9 @@ func refresh()->void:
 	var desired:=body.get_combined_minimum_size().y
 	scroll.custom_minimum_size.y=minf(desired,clampf(get_viewport().get_visible_rect().size.y-150.,360.,760.))
 	var speed:float=host.bodies.front.linear_velocity.dot(host.bodies.front.global_basis.x)*3.6
-	status.text="%5.1f km/h   %s   %.0f FPS\n%s"%[speed,host.camera_names[host.cam_mode],Engine.get_frames_per_second(),"联锁：设备未收起" if host.drive_interlock else "可驾驶 · 当前主题 "+host.theme_id]
+	var robot_label:String={"vehicle":"Sainiverse","microduck":"MicroDuck","roller":"MD 轮滑","sai001":"Sai 001","sai002":"Sai 002"}.get(host.active_robot_kind,"Sainiverse")
+	var state_text:String=host.robot_switch_message if host.robot_switch_message!="" else "联锁：车门未锁妥" if host.active_robot_kind=="vehicle" and host.access!=null and not host.access.drive_permitted else "联锁：设备未收起" if host.active_robot_kind=="vehicle" and host.drive_interlock else "当前控制："+robot_label
+	status.text="%5.1f km/h   %s   %.0f FPS · %.1f×\n%s"%[speed,host.camera_names[host.cam_mode],Engine.get_frames_per_second(),Engine.time_scale,state_text]
 	if crane_status!=null:
 		var c:Dictionary=host.equipment.rig.cranes[host.equipment.selected]
 		crane_status.text="Crane %d/8 · %s\n回转 %+.1f°  俯仰 %.1f°\n伸长 %.2f m  吊绳 %.2f m%s"%[host.equipment.selected+1,"作业已启用" if host.equipment.working else "请先启用作业模式",rad_to_deg(host.equipment.coordinate(c.slew).x),rad_to_deg(host.equipment.coordinate(c.luff).x),host.equipment.extension(c),host.equipment.paid[c.name]," · 已挂载" if host.cargo.attached_crane==host.equipment.selected else ""]

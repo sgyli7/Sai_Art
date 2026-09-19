@@ -13,6 +13,7 @@ var angles:Array=[]
 var rates:Array=[]
 var power:=0.0
 var drive_permitted:=false
+var drive_closed_rate_limit_rad_s:=.02
 func configure(config:Dictionary)->void:
 	c=config
 	for door in c.doors:names.append(door.name)
@@ -38,6 +39,6 @@ func step(q:Array,dq:Array,speed:float,dt:float)->void:
 		latch_torques[i]=clampf(-float(c.latch_stiffness_Nm_rad)*float(q[i])-float(c.latch_damping_Nms_rad)*float(dq[i]),-float(c.latch_torque_limit_Nm),float(c.latch_torque_limit_Nm)) if latched[i] else 0.
 		if latched[i]:torque=0.
 		torques[i]=torque;power+=maxf(torque*float(dq[i]),0.)
-		drive_permitted=drive_permitted and latched[i] and not requests[i] and not obstructed[i] and absf(float(q[i]))<.015 and absf(float(dq[i]))<.02
+		drive_permitted=drive_permitted and latched[i] and not requests[i] and not obstructed[i] and absf(float(q[i]))<.015 and absf(float(dq[i]))<drive_closed_rate_limit_rad_s
 func state()->Dictionary:
 	return {"angles_rad":angles.duplicate(),"angular_rates_rad_s":rates.duplicate(),"targets_rad":targets.duplicate(),"torques_Nm":torques.duplicate(),"obstructed":obstructed.duplicate(),"power_W":power,"drive_permitted":drive_permitted,"latched":latched.duplicate(),"latch_torques_Nm":latch_torques.duplicate()}
