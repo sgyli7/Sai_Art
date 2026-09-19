@@ -11,7 +11,12 @@ var evidence: Array = []
 func _ready() -> void:
 	var host:=Node3D.new();host.name="RobotHost";add_child(host)
 	var world:=Node3D.new();world.name="World";add_child(world)
-	var replay:Dictionary={} if manual_input else {"segments":[{"at":0.,"held":[]},{"at":1.,"held":["fwd"]},{"at":32. if str(carrier.options.get("mode",""))=="worksite" else 10.,"held":[]}]}
+	var replay:Dictionary={}
+	if not manual_input:
+		if str(carrier.options.get("mode",""))=="cockpit_patrol":
+			replay={"segments":[{"at":0.,"held":[]},{"at":1.,"held":["fwd"]},{"at":7.,"held":[]},{"at":8.,"held":["back"]},{"at":14.,"held":[]}]}
+		else:
+			replay={"segments":[{"at":0.,"held":[]},{"at":1.,"held":["fwd"]},{"at":32. if str(carrier.options.get("mode",""))=="worksite" else 10.,"held":[]}]}
 	get_tree().set_meta("microduck_session",{"mode":mode_name,"steps":0,"rows":[],"replay":replay,"trace_path":"","seconds":0.,"segment":-1,"resets":0,"switches":0,"first_fall":null,"started_usec":Time.get_ticks_usec(),"seed":915000,"error":"","events":[],"profiles":{}})
 	super._ready()
 	if mode_name=="roller":

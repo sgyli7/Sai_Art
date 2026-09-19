@@ -2,7 +2,27 @@
 
 私有设计审阅版：可编辑车体、五套主题、MuJoCo 模型和 Godot/Jolt 可驾驶版本。沿用现有 Robot_Godot_Sim2Sim 工程，英文显示名统一为 **Sainiverse_v0.1**。
 
-## 实际仿真演示
+## 极地游戏场景 · 2026-09-20
+
+以下 GIF 均从交付的 Godot/Jolt 极地雪原场景录制，使用实际机器人关节、升降台和驾驶舱碰撞。镜头在舱内和升降平台内部，避开座椅、柜体与护板遮挡。登船片段按阶段选帧，升降过程做了时间压缩；画面没有插帧或合成机器人动作。
+
+**Sai 001 乘升降台登船**
+
+![Sai 001 从雪地登上 Sainiverse](evidence/media/Sainiverse_v0.1_polar_sai_boarding.gif)
+
+**Sai 001 用机械臂操作驾驶舱方向舵**
+
+![Sai 001 机械臂推动实体方向舵](evidence/media/Sainiverse_v0.1_polar_sai_steering.gif)
+
+这个短片使用已有 Sai 机械臂阻抗控制和脚本指定的末端目标。黄色短柄固定在原有方向舵刚体上；记录验证机械手实际接触它、方向舵关节转动。它不是训练出的自主驾驶舱操作策略。
+
+**普通 MicroDuck 在驾驶舱巡视**
+
+![MicroDuck 在 Sainiverse 驾驶舱巡视](evidence/media/Sainiverse_v0.1_polar_microduck_cockpit.gif)
+
+统一游戏入口选择“03 · 极地雪原”再选择“Sainiverse v0.1”即可进入；原有 001 仍在同一车型选择框。四种机器人切换、登船路线、帧率和镜头验证见[验证记录](docs/VALIDATION.md#polar-game-integration-2026-09-20)。
+
+## r032 实际仿真演示
 
 以下均来自实际物理仿真。每段约 10 秒；画面标注原始仿真时间。
 
@@ -44,6 +64,7 @@ Godot 不在 PATH 时设置 `GODOT_BIN`。首次启动会将演示所需机器�
 
 - W/S 驾驶，A/D 转向，Shift+W 请求高速，空格制动。
 - 极地场景停车后按 F5/F6/F7/F8，在车旁雪地切换普通 MicroDuck、轮滑版、Sai 001、Sai 002；F9 返回母车。机器人沿用 W/S、A/D，右键与滚轮可调整跟随视角。时间流速滑条默认 1.0×，可选 0.1×～3.0×。Sai 002 模型从 `SAI_ROBOTS_ROOT` 指向的 Sai_Rotbots 检出目录读取，默认使用 `/home/ethan/Projects/RobotDesign/delivery/Sai_Rotbots`。
+- 交互驾驶使用 60 Hz。演示的停车准备阶段分别使用 MicroDuck 60 Hz、Sai 100 Hz；机器人出生后恢复 MicroDuck 200 Hz、Sai 1000 Hz，策略运行 50 Hz。完整路线与帧率数据见[验证记录](docs/VALIDATION.md#polar-game-integration-2026-09-20)。
 - Tab 切换视角；右键环视、滚轮缩放；自由视角 WASD、Q/E。
 - G 选择升降台，L 升降，Shift+L 全部；升降台和作业机构未收妥时禁止行驶。
 - C 作业/收起，N 选择吊机；小键盘 4/6 回转、8/2 俯仰、+/− 伸缩；PageUp/PageDown 卷扬。

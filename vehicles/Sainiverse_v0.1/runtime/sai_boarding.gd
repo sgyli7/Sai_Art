@@ -3,6 +3,9 @@ extends "res://hub/sai.gd"
 var carrier:SceneTree
 var robot_id:="Sai_Agent_001"
 var manual_control:=false
+var cockpit_demo:=false
+var arm_solver=null
+var cockpit_samples:Array=[]
 var phase:="wait_ground"
 var mission_samples:Array=[]
 var stable_since:=-1.
@@ -17,16 +20,19 @@ func _ready()->void:
 	specification=JSON.parse_string(FileAccess.get_file_as_string(model_path))
 	if specification==null or str(specification.get("robot_id",""))!=robot_id:failure="Sai model identity mismatch: "+robot_id;push_error(failure);return
 	robot=load("res://sai/compliant_robot.gd").new();add_child(robot);robot.setup(specification,visuals,0.)
-	var initial:=Basis(Vector3.UP,PI/2.)
-	var spawn:=Vector3(0.,0.,20.2)
-	if manual_control:
+	var initial:=Basis.IDENTITY if cockpit_demo else Basis(Vector3.UP,PI/2.)
+	var spawn:Vector3=carrier.bodies.front.global_transform*carrier.local_source([30.90,-1.58,12.25]) if cockpit_demo else Vector3(0.,0.,20.2)
+	if manual_control and not cockpit_demo:
 		spawn.z=100.2
 		spawn.y=carrier.height(spawn.x+carrier.origin.offset_x,-spawn.z-carrier.origin.offset_z)
 	for body in robot.bodies.values():
 		body.position=initial*body.position+spawn;body.basis=initial*body.basis
 		body.collision_layer=16;body.collision_mask=1|8|32
+		if cockpit_demo and body.name in ["arm_gripper","arm_moving_jaw"]:
+			body.collision_mask|=128;body.contact_monitor=true;body.max_contacts_reported=8
 	native_controller=load("res://sai/native_controller.gd").new()
 	if native_controller.last_error!="":failure=native_controller.last_error;push_error(failure);return
+	if cockpit_demo:arm_solver=load("res://sai/native_grab_controller.gd").new(native_controller,specification)
 	if visuals:
 		var paint=load("res://hub/sai_materials.gd").new();paint.scene=self;paint._make_materials();paint._paint_robot();paint.free()
 	print("SAINIVERSE_SAI_READY robot=",robot_id," physics_hz=",Engine.physics_ticks_per_second," policy_hz=50")
@@ -53,9 +59,27 @@ func exchange(state:Dictionary)->Dictionary:
 		var wheel:RigidBody3D=robot.bodies[str(leg)+"_wheel"];positions.append(robot.source(wheel.position))
 		if not wheel.get_colliding_bodies().is_empty():supported+=1
 	state.wheel_positions=positions;state.wheels_supported=supported;state.arm_gravity_bias=_arm_gravity_bias();state.merge(_leg_support_state(),true)
-	return native_controller.command(state)
+	var result:Dictionary=native_controller.command(state)
+	if cockpit_demo and arm_solver!=null:
+		var control:Dictionary=carrier.spec.contact.cockpit.controls[0]
+		var angle:float=.22*sin((carrier.elapsed-12.)*1.3) if carrier.elapsed>12. else 0.
+		var parent:RigidBody3D=carrier.bodies.front
+		var pivot:Vector3=parent.global_transform*carrier.local_source(control.pivot_source_m)
+		var offset:Vector3=carrier.vec([carrier.cockpit.ROBOT_STEER_GRIP_SOURCE.x,carrier.cockpit.ROBOT_STEER_GRIP_SOURCE.y,carrier.cockpit.ROBOT_STEER_GRIP_SOURCE.z])
+		var target:Vector3=pivot+parent.global_basis*Basis(Vector3.RIGHT,angle)*offset
+		var home:Array=specification.arm_home_source_deg.duplicate()
+		result.target_arm=arm_solver._ik(Vector3(target.x,-target.z,target.y),state,home)
+		result.arm_bias=state.arm_gravity_bias
+		result.grip_cap=1.4
+		var hand:RigidBody3D=robot.bodies.arm_gripper
+		var tool:Vector3=hand.global_transform*robot.gv(specification.tool_local_m)
+		var touch:bool=hand.get_colliding_bodies().has(carrier.bodies[control.name]) or robot.bodies.arm_moving_jaw.get_colliding_bodies().has(carrier.bodies[control.name])
+		if robot.tick%maxi(1,Engine.physics_ticks_per_second/10)==0:
+			cockpit_samples.append({"time":carrier.elapsed,"steer_rad":carrier.cockpit.coordinate("steer").x,"target_rad":angle,"tool_error_m":tool.distance_to(target),"tool_world_m":[tool.x,tool.y,tool.z],"target_world_m":[target.x,target.y,target.z],"base_world_m":[robot.bodies.chassis.global_position.x,robot.bodies.chassis.global_position.y,robot.bodies.chassis.global_position.z],"hand_contact":touch,"upright":robot.bodies.chassis.global_basis.y.y})
+	return result
 
 func movement_command()->Array:
+	if cockpit_demo:return [0.,0.,0.]
 	if manual_control:
 		return [Input.get_axis("sainiverse_reverse","sainiverse_forward")*.14,Input.get_axis("sainiverse_right","sainiverse_left")*.45,0.]
 	var lift:Dictionary=carrier.lift_data[0];var platform:RigidBody3D=carrier.bodies[lift.groups[3]]
