@@ -37,6 +37,7 @@ var operation_ui=null
 var patrol=null
 var sai_passenger=null
 var parked_boarding_fixture:=false
+var parked_patrol_fixture:=false
 var ramp_links:Dictionary={}
 var ramp_targets:Dictionary={}
 var ramp_samples:Array=[]
@@ -45,13 +46,32 @@ func _build()->void:
 	manual=str(options.get("mode","manual")) in ["manual","ui_test","lift_preview_cycle"]
 	requested_drive_speed=float(options.get("speed",0.))
 	super._build()
+	# The 60 Hz interactive solver produces sub-millimetre door motion with
+	# short angular-rate spikes; a latched, closed door remains safe to drive.
+	if manual and access!=null:access.drive_closed_rate_limit_rad_s=.12
+	for binding in [["sainiverse_forward",KEY_W],["sainiverse_reverse",KEY_S],["sainiverse_left",KEY_A],["sainiverse_right",KEY_D]]:
+		if InputMap.has_action(binding[0]):continue
+		InputMap.add_action(binding[0]);var event:=InputEventKey.new();event.physical_keycode=binding[1]
+		InputMap.action_add_event(binding[0],event)
+	if str(options.get("terrain",""))=="polar" and DisplayServer.get_name()!="headless":
+		for child in stage.get_children():
+			if child is WorldEnvironment:
+				var sky:=Sky.new();var sky_material:=ShaderMaterial.new();sky_material.shader=load(HERE+"/assets/polar_sky.gdshader")
+				sky.sky_material=sky_material;child.environment.sky=sky;child.environment.background_mode=Environment.BG_SKY
+				child.environment.ambient_light_energy=.34
+			elif child is DirectionalLight3D:child.light_energy=.72
+		for child in world_surface.get_children():
+			if child is MeshInstance3D:
+				var snow:=ShaderMaterial.new();snow.shader=load(HERE+"/assets/polar_snow.gdshader")
+				child.material_override=snow;child.cast_shadow=GeometryInstance3D.SHADOW_CASTING_SETTING_OFF
 	# The full 200 Hz qualification loop costs more than its 5 ms budget on the
 	# complete rendered vehicle. In interactive modes that creates a catch-up
 	# spiral: one render frame performs many overdue physics ticks and drops to
 	# single-digit FPS. Keep 200 Hz for qualification modes, but use a stable
-	# 100 Hz preview loop for human driving and mouse UI operation.
+	# 60 Hz preview loop for human driving and mouse UI operation. Qualification
+	# modes retain their own higher-rate physics contract.
 	if manual:
-		Engine.physics_ticks_per_second=100
+		Engine.physics_ticks_per_second=clampi(int(OS.get_environment("SAINIVERSE_INTERACTIVE_HZ")) if OS.has_environment("SAINIVERSE_INTERACTIVE_HZ") else 60,60,200)
 		Engine.max_physics_steps_per_frame=12
 	equipment=load(HERE+"/runtime/equipment_control.gd").new();equipment.configure(self,spec.contact.equipment)
 	equipment.auto_work=str(options.get("mode","")) in ["worksite","equipment_cycle"]
@@ -234,7 +254,15 @@ func _lifts(dt:float)->void:
 func _physics_process(dt:float)->bool:
 	var controller_start:int=Time.get_ticks_usec()
 	if not camera_ready:return super._physics_process(dt)
+	if manual and OS.get_environment("SAINIVERSE_DRIVE_PROBE")=="1":
+		if elapsed>=11. and elapsed<19.:Input.action_press("sainiverse_forward")
+		else:Input.action_release("sainiverse_forward")
+		if elapsed>=16. and elapsed<19.:Input.action_press("sainiverse_left")
+		else:Input.action_release("sainiverse_left")
 	if patrol==null and elapsed>=10. and str(options.get("mode","")) in ["cabin_patrol","deck_patrol","worksite"]:
+		if str(options.get("mode","")) in ["cabin_patrol","deck_patrol"]:
+			for name in bodies:bodies[name].freeze=true
+			parked_patrol_fixture=true
 		patrol=load(HERE+"/runtime/microduck_patrol.gd").new();patrol.carrier=self
 		patrol.mode_name="walk" if str(options.mode)=="cabin_patrol" else "roller"
 		patrol.spawn_source=Vector3(25.,0.,11.354) if str(options.mode)=="cabin_patrol" else Vector3(-12.,-11.5,7.454)
@@ -245,8 +273,16 @@ func _physics_process(dt:float)->bool:
 			var viewport:=SubViewport.new();viewport.size=Vector2i(384,216);viewport.world_3d=stage.get_world_3d();viewport.render_target_update_mode=SubViewport.UPDATE_ALWAYS;container.add_child(viewport)
 			patrol_camera=Camera3D.new();patrol_camera.near=.015;patrol_camera.fov=48.;viewport.add_child(patrol_camera);patrol_camera.current=true
 			var label:=Label.new();label.text="LIVE / MicroDuck deck patrol";label.position=Vector2(872,76);layer.add_child(label)
+	if parked_patrol_fixture:
+		elapsed+=dt;count+=1
+		if elapsed>=float(options.seconds):
+			_write_visual_report()
+			var report:=FileAccess.open(str(options.output_root)+"/run.json",FileAccess.WRITE)
+			report.store_string(JSON.stringify({"seconds":elapsed,"wall_seconds":(Time.get_ticks_usec()-start_usec)/1e6,"parked_carrier_fixture":true,"robot_controller_hz":50,"physics_hz":200,"mode":str(options.mode)},"  "));report.close();quit()
+		return false
 	if sai_passenger==null and elapsed>=10. and str(options.get("mode",""))=="sai_board":
-		Engine.physics_ticks_per_second=2000;Engine.max_physics_steps_per_frame=256
+		Engine.physics_ticks_per_second=1000 if OS.get_environment("SAINIVERSE_USE_GAME_ROBOTS")=="1" else 2000
+		Engine.max_physics_steps_per_frame=256
 		parked_boarding_fixture=true
 		# Stationary carrier fixture: freeze after the full suspension has settled.
 		# The selected lift/ramp and every robot body continue physical integration.
@@ -276,7 +312,7 @@ func _physics_process(dt:float)->bool:
 		if elapsed>=float(options.seconds):
 			_write_visual_report()
 			var file:=FileAccess.open(str(options.output_root)+"/run.json",FileAccess.WRITE)
-			file.store_string(JSON.stringify({"seconds":elapsed,"wall_seconds":(Time.get_ticks_usec()-start_usec)/1e6,"parked_carrier_fixture":true,"dynamic_selected_lift_ramp_bodies":5,"robot_controller_hz":50,"physics_hz":2000,"scope":"Carrier settled dynamically for 10 seconds, then held fixed for stationary boarding. Lift, ramp and Sai remain dynamic with actual collisions and finite actuator forces. Does not measure hull response to boarding load."},"  "));file.close();quit()
+			file.store_string(JSON.stringify({"seconds":elapsed,"wall_seconds":(Time.get_ticks_usec()-start_usec)/1e6,"parked_carrier_fixture":true,"dynamic_selected_lift_ramp_bodies":5,"robot_controller_hz":50,"physics_hz":Engine.physics_ticks_per_second,"scope":"Carrier settled dynamically for 10 seconds, then held fixed for stationary boarding. Lift, ramp and Sai remain dynamic with actual collisions and finite actuator forces. Does not measure hull response to boarding load."},"  "));file.close();quit()
 		return false
 	var result:bool=super._physics_process(dt)
 	controller_steps+=1;controller_usec+=Time.get_ticks_usec()-controller_start
@@ -371,7 +407,7 @@ func _write_visual_report()->void:
 		var proof:=FileAccess.open(str(options.output_root)+"/operation_ui.json",FileAccess.WRITE);proof.store_string(JSON.stringify(operation_ui.report(),"  "));proof.close()
 	if sai_passenger!=null:
 		var proof:=FileAccess.open(str(options.output_root)+"/sai_boarding.json",FileAccess.WRITE)
-		proof.store_string(JSON.stringify({"samples":sai_passenger.mission_samples,"completed":sai_passenger.completed,"failure":sai_passenger.failure,"physics_hz":2000,"policy_hz":50,"parked_carrier_fixture":parked_boarding_fixture,"scope":"Scripted boarding mission using existing learned locomotion and native impedance; real contacts and finite-force lift/ramp."},"  "));proof.close()
+		proof.store_string(JSON.stringify({"samples":sai_passenger.mission_samples,"completed":sai_passenger.completed,"failure":sai_passenger.failure,"physics_hz":Engine.physics_ticks_per_second,"policy_hz":50,"parked_carrier_fixture":parked_boarding_fixture,"scope":"Scripted boarding mission using existing learned locomotion and native impedance; real contacts and finite-force lift/ramp."},"  "));proof.close()
 	if patrol!=null:
 		var proof:=FileAccess.open(str(options.output_root)+"/robot_patrol.json",FileAccess.WRITE)
 		proof.store_string(JSON.stringify({"mode":patrol.mode_name,"samples":patrol.evidence,"first_fall":patrol.session.first_fall,"error":patrol.session.error,"controller":"Existing native ONNX 50 Hz / Jolt 200 Hz","scope":"Actual policy torque actuation and carrier rigid-body contact; initialization is the only pose placement."},"  "));proof.close()

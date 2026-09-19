@@ -16,6 +16,7 @@ var lift_status:Label
 var throttle:HSlider
 var steering:HSlider
 var brake:HSlider
+var time_scale_slider:HSlider
 var high_range:CheckButton
 var panel_collapsed:=false
 var ui_test_phase:=-1
@@ -30,7 +31,7 @@ const YELLOW=Color("D8A92E")
 const RED=Color("C52232")
 
 func configure(h:SceneTree)->void:
-	host=h;layer=20;font=SystemFont.new();font.font_names=PackedStringArray(["Noto Sans CJK SC","Noto Sans CJK JP"])
+	host=h;layer=20;Engine.time_scale=1.;font=SystemFont.new();font.font_names=PackedStringArray(["Noto Sans CJK SC","Noto Sans CJK JP"])
 	_build_ui();visible=str(host.options.get("clean_capture","false"))!="true"
 
 func _style(color:Color,radius:=6,border:=0)->StyleBoxFlat:
@@ -125,6 +126,8 @@ func _build_receiver()->void:
 
 func _build_view()->void:
 	var c:=_section("view","视角与外观 VIEW",false);var views:=OptionButton.new();views.add_theme_font_override("font",font)
+	time_scale_slider=_slider_row(c,"时间流速 0.1×～3.0×（默认 1.0×）",.1,3.,.1)
+	time_scale_slider.value=1.;time_scale_slider.value_changed.connect(func(v):Engine.time_scale=clampf(v,.1,3.))
 	for i in host.camera_names.size():views.add_item(host.camera_names[i],i)
 	views.item_selected.connect(_select_view);views.select(host.cam_mode);controls["view_select"]=views;c.add_child(views)
 	var themes:=OptionButton.new();themes.add_theme_font_override("font",font)
@@ -155,7 +158,7 @@ func _select_lift(index:int)->void:
 func _select_view(index:int)->void:host.set_camera_mode(index);_record("camera",index)
 func _select_theme(index:int)->void:
 	var ids=["black","desert","white","blue","yellow"];host.set_theme_id(ids[index]);_record("theme",ids[index])
-func _quit()->void:host.options.seconds=host.elapsed+.02;host.manual=false;host.options.speed=0.;_record("quit",true)
+func _quit()->void:host.options.seconds=host.elapsed+.02;host.manual=false;host.options.speed=0.;Engine.time_scale=1.;_record("quit",true)
 
 func refresh()->void:
 	if host==null or not host.camera_ready:return
@@ -165,7 +168,7 @@ func refresh()->void:
 	var desired:=body.get_combined_minimum_size().y
 	scroll.custom_minimum_size.y=minf(desired,clampf(get_viewport().get_visible_rect().size.y-150.,360.,760.))
 	var speed:float=host.bodies.front.linear_velocity.dot(host.bodies.front.global_basis.x)*3.6
-	status.text="%5.1f km/h   %s   %.0f FPS\n%s"%[speed,host.camera_names[host.cam_mode],Engine.get_frames_per_second(),"联锁：设备未收起" if host.drive_interlock else "可驾驶 · 当前主题 "+host.theme_id]
+	status.text="%5.1f km/h   %s   %.0f FPS · %.1f×\n%s"%[speed,host.camera_names[host.cam_mode],Engine.get_frames_per_second(),Engine.time_scale,"联锁：车门未锁妥" if host.access!=null and not host.access.drive_permitted else "联锁：设备未收起" if host.drive_interlock else "可驾驶 · 当前主题 "+host.theme_id]
 	if crane_status!=null:
 		var c:Dictionary=host.equipment.rig.cranes[host.equipment.selected]
 		crane_status.text="Crane %d/8 · %s\n回转 %+.1f°  俯仰 %.1f°\n伸长 %.2f m  吊绳 %.2f m%s"%[host.equipment.selected+1,"作业已启用" if host.equipment.working else "请先启用作业模式",rad_to_deg(host.equipment.coordinate(c.slew).x),rad_to_deg(host.equipment.coordinate(c.luff).x),host.equipment.extension(c),host.equipment.paid[c.name]," · 已挂载" if host.cargo.attached_crane==host.equipment.selected else ""]

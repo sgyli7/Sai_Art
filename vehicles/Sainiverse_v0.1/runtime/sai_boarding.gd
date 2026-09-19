@@ -72,7 +72,7 @@ func movement_command()->Array:
 func _physics_process(_delta:float)->void:
 	if robot==null or native_controller==null or failure!="":return
 	var state:Dictionary=robot.state()
-	if robot.tick%40==0:
+	if robot.tick%maxi(1,Engine.physics_ticks_per_second/50)==0:
 		if phase!=logged_phase:
 			print("SAI_BOARDING_PHASE ",phase," t=",carrier.elapsed);logged_phase=phase;phase_times[phase]=carrier.elapsed
 			if carrier.elapsed>11.:carrier._capture("sai_"+phase)

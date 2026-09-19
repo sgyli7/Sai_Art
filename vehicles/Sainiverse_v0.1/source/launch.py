@@ -12,8 +12,7 @@ key='jolt_physics_3d/simulation/body_pair_contact_cache_enabled'
 if key+'=' not in modified:modified=modified.replace('[physics]','[physics]\n'+key+'=false')
 else:modified=re.sub('^'+re.escape(key)+'=.*$',key+'=false',modified,flags=re.M)
 if a.prepare_only:print(runtime);raise SystemExit()
-terrain='flat' if a.terrain=='polar' else a.terrain
-if a.terrain=='polar':raise SystemExit('本入口提供 flat/rough/ramp/ditch 试车场；polar 尚未接入。')
+terrain=a.terrain
 cmd=[os.environ.get('GODOT_BIN','godot'),'--path',str(runtime),'--script',str(O/'runtime/drive.gd')]
 if a.headless:cmd+=['--headless','--fixed-fps','200']
 if a.pv:cmd+=['--fixed-fps','15','--resolution','1280x720']
