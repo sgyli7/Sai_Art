@@ -3,6 +3,9 @@ extends "res://hub/sai.gd"
 var carrier:SceneTree
 var robot_id:="Sai_Agent_001"
 var manual_control:=false
+var manual_spawn_valid:=false
+var manual_spawn_world:=Vector3.ZERO
+var manual_spawn_basis:=Basis.IDENTITY
 var cockpit_demo:=false
 var arm_solver=null
 var cockpit_samples:Array=[]
@@ -20,9 +23,9 @@ func _ready()->void:
 	specification=JSON.parse_string(FileAccess.get_file_as_string(model_path))
 	if specification==null or str(specification.get("robot_id",""))!=robot_id:failure="Sai model identity mismatch: "+robot_id;push_error(failure);return
 	robot=load("res://sai/compliant_robot.gd").new();add_child(robot);robot.setup(specification,visuals,0.)
-	var initial:=Basis.IDENTITY if cockpit_demo else Basis(Vector3.UP,PI/2.)
-	var spawn:Vector3=carrier.bodies.front.global_transform*carrier.local_source([30.90,-1.58,12.25]) if cockpit_demo else Vector3(0.,0.,20.2)
-	if manual_control and not cockpit_demo:
+	var initial:=manual_spawn_basis if manual_spawn_valid else Basis.IDENTITY if cockpit_demo else Basis(Vector3.UP,PI/2.)
+	var spawn:Vector3=manual_spawn_world if manual_spawn_valid else carrier.bodies.front.global_transform*carrier.local_source([30.90,-1.58,12.25]) if cockpit_demo else Vector3(0.,0.,20.2)
+	if manual_control and not cockpit_demo and not manual_spawn_valid:
 		spawn.z=100.2
 		spawn.y=carrier.height(spawn.x+carrier.origin.offset_x,-spawn.z-carrier.origin.offset_z)
 	for body in robot.bodies.values():

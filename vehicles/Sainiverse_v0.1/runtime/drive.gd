@@ -41,7 +41,12 @@ var parked_patrol_fixture:=false
 var active_robot_kind:="vehicle"
 var robot_switch_busy:=false
 var robot_switch_message:=""
+var robot_switch_message_until:=0.0
 var robot_switch_history:Array=[]
+var quick_travel_history:Array=[]
+var active_quick_location:=0
+var travel_probe_sequence:PackedStringArray=PackedStringArray()
+var last_travel_probe_index:=-1
 var switch_probe_sequence:PackedStringArray=PackedStringArray()
 var last_switch_probe_index:=-1
 var switch_probe_forward:=false
@@ -49,12 +54,14 @@ var saved_vehicle_orbit:Array=[]
 var ramp_links:Dictionary={}
 var ramp_targets:Dictionary={}
 var ramp_samples:Array=[]
+const QUICK_LOCATION_NAMES:Dictionary={1:"车旁雪地",2:"甲板",3:"驾驶舱"}
 
 func _build()->void:
 	manual=str(options.get("mode","manual")) in ["manual","ui_test","lift_preview_cycle"]
 	if str(options.get("mode",""))=="sai_cockpit":options.seconds=minf(float(options.seconds),14.45)
 	requested_drive_speed=float(options.get("speed",0.))
 	if OS.has_environment("SAINIVERSE_SWITCH_PROBE") and OS.get_environment("SAINIVERSE_SWITCH_PROBE")!="":switch_probe_sequence=OS.get_environment("SAINIVERSE_SWITCH_PROBE").split(",")
+	if OS.has_environment("SAINIVERSE_TRAVEL_PROBE") and OS.get_environment("SAINIVERSE_TRAVEL_PROBE")!="":travel_probe_sequence=OS.get_environment("SAINIVERSE_TRAVEL_PROBE").split(",")
 	super._build()
 	# The 60 Hz interactive solver produces sub-millimetre door motion with
 	# short angular-rate spikes; a latched, closed door remains safe to drive.
@@ -160,6 +167,10 @@ func handle_input(event:InputEvent)->void:
 		select_robot_mode({KEY_F5:"microduck",KEY_F6:"roller",KEY_F7:"sai001",KEY_F8:"sai002",KEY_F9:"vehicle"}[event.physical_keycode])
 		stage.get_viewport().set_input_as_handled()
 		return
+	if event is InputEventKey and event.pressed and not event.echo and event.physical_keycode in [KEY_F1,KEY_F2,KEY_F3]:
+		quick_travel({KEY_F1:1,KEY_F2:2,KEY_F3:3}[event.physical_keycode])
+		stage.get_viewport().set_input_as_handled()
+		return
 	if active_robot_kind=="vehicle":cockpit.input(event)
 	if event is InputEventMouseButton:
 		if event.button_index==MOUSE_BUTTON_RIGHT:mouse_drag=event.pressed
@@ -185,6 +196,50 @@ func select_robot_mode(kind:String)->void:
 	robot_switch_busy=true;robot_switch_message="正在切换机器人…"
 	call_deferred("_switch_robot_mode",kind)
 
+func _quick_destination(index:int,kind:String)->Dictionary:
+	if index==1:
+		var ground:=Vector3(3.,0.,103.)
+		ground.y=height(ground.x+origin.offset_x,-ground.z-origin.offset_z)
+		return {"world":ground,"source":Vector3.ZERO,"carrier_surface":false,"basis":Basis(Vector3.UP,PI/2.)}
+	var source:Vector3=Vector3(-12.,-11.5,7.454) if index==2 else Vector3(30.90,-1.58,12.25) if kind in ["sai001","sai002"] else Vector3(25.,0.,11.354)
+	return {"world":bodies.front.global_transform*local_source([source.x,source.y,source.z]),
+		"source":source,"carrier_surface":true,"basis":Basis.IDENTITY if index==3 else Basis(Vector3.UP,PI/2.)}
+
+func quick_travel(index:int)->void:
+	if not QUICK_LOCATION_NAMES.has(index) or robot_switch_busy:return
+	if active_robot_kind=="vehicle":
+		robot_switch_message="请先切换到机器人，再使用 F1–F3 快速移动"
+		robot_switch_message_until=elapsed+2.
+		return
+	var destination:=_quick_destination(index,active_robot_kind)
+	active_quick_location=index
+	if operation_ui!=null:operation_ui._release_robot_keys()
+	robot_switch_message="快速移动："+QUICK_LOCATION_NAMES[index]
+	robot_switch_message_until=elapsed+2.
+	var point:Vector3=destination.world
+	quick_travel_history.append({"time":elapsed,"robot":active_robot_kind,"station":index,
+		"name":QUICK_LOCATION_NAMES[index],"target_world":[point.x,point.y,point.z]})
+	if active_robot_kind in ["microduck","roller"] and patrol!=null:
+		patrol.spawn_world=destination.world
+		patrol.spawn_source=destination.source
+		patrol.manual_ground_on_carrier=destination.carrier_surface
+		patrol._add_tap("reset")
+	elif active_robot_kind in ["sai001","sai002"] and sai_passenger!=null:
+		robot_switch_busy=true
+		call_deferred("_respawn_sai_at",active_robot_kind,destination)
+
+func _respawn_sai_at(kind:String,destination:Dictionary)->void:
+	if sai_passenger!=null:sai_passenger.queue_free();sai_passenger=null
+	await process_frame
+	sai_passenger=load(HERE+"/runtime/sai_boarding.gd").new()
+	sai_passenger.carrier=self;sai_passenger.manual_control=true
+	sai_passenger.robot_id="Sai_Agent_002" if kind=="sai002" else "Sai_Agent_001"
+	sai_passenger.manual_spawn_valid=true
+	sai_passenger.manual_spawn_world=destination.world
+	sai_passenger.manual_spawn_basis=destination.basis
+	stage.add_child(sai_passenger)
+	robot_switch_busy=false
+
 func _selected_robot_position()->Vector3:
 	if patrol!=null and patrol._base!=null:return patrol._base.global_position
 	if sai_passenger!=null and sai_passenger.robot!=null:return sai_passenger.robot.bodies.chassis.global_position
@@ -197,6 +252,7 @@ func _probe_forward(pressed:bool)->void:
 	Input.parse_input_event(event)
 
 func _switch_robot_mode(kind:String)->void:
+	active_quick_location=0
 	if active_robot_kind=="vehicle" and kind!="vehicle":
 		saved_vehicle_orbit=[orbit_radius,orbit_yaw,orbit_pitch]
 		orbit_radius=6.;orbit_yaw=.98;orbit_pitch=.28
@@ -336,10 +392,24 @@ func _physics_process(dt:float)->bool:
 	if manual and not switch_probe_sequence.is_empty() and elapsed>=11.:
 		var probe_index:=int((elapsed-11.)/6.)
 		var probe_kind:String=switch_probe_sequence[probe_index] if probe_index<switch_probe_sequence.size() else ""
-		_probe_forward(probe_index<4 and active_robot_kind==probe_kind and elapsed-11.-6.*probe_index>=1. and elapsed-11.-6.*probe_index<4.)
+		_probe_forward(travel_probe_sequence.is_empty() and probe_index<4 and active_robot_kind==probe_kind and elapsed-11.-6.*probe_index>=1. and elapsed-11.-6.*probe_index<4.)
 		if probe_index<switch_probe_sequence.size() and probe_index!=last_switch_probe_index and not robot_switch_busy:
 			select_robot_mode(switch_probe_sequence[probe_index])
 			if robot_switch_busy:last_switch_probe_index=probe_index
+	if manual and not travel_probe_sequence.is_empty() and active_robot_kind!="vehicle" and elapsed>=13.:
+		var travel_index:=int((elapsed-13.)/4.)
+		if travel_index<travel_probe_sequence.size() and travel_index!=last_travel_probe_index and not robot_switch_busy:
+			quick_travel(int(travel_probe_sequence[travel_index]))
+			last_travel_probe_index=travel_index
+	if not quick_travel_history.is_empty():
+		var travel:Dictionary=quick_travel_history[-1]
+		if not travel.has("arrived_world") and elapsed-float(travel.time)>=.5 and not robot_switch_busy:
+			var point:=_selected_robot_position()
+			travel["arrived_world"]=[point.x,point.y,point.z]
+			var target:Array=travel.target_world
+			travel["error_m"]=point.distance_to(Vector3(float(target[0]),float(target[1]),float(target[2])))
+			if patrol!=null:travel["first_fall"]=patrol.session.first_fall
+			if sai_passenger!=null:travel["failure"]=sai_passenger.failure
 	if not switch_probe_sequence.is_empty() and robot_switch_history.size()>0 and active_robot_kind!="vehicle":
 		var current:Dictionary=robot_switch_history[robot_switch_history.size()-1]
 		if not current.has("start_world"):
@@ -413,8 +483,18 @@ func _physics_process(dt:float)->bool:
 
 func _manual_robot_camera(target:Vector3)->void:
 	camera.projection=Camera3D.PROJECTION_PERSPECTIVE;camera.near=.015;camera.far=3500.;camera.fov=48.
+	if active_quick_location==3:
+		camera.global_position=target+bodies.front.global_basis*Vector3(-.9,.85,.95)
+		camera.look_at(target,Vector3.UP)
+		return
 	var offset:=Vector3(cos(orbit_pitch)*cos(orbit_yaw),sin(orbit_pitch),cos(orbit_pitch)*sin(orbit_yaw))*orbit_radius
-	camera.global_position=target+offset;camera.look_at(target,Vector3.UP)
+	var position:=target+offset
+	# Keep the follow camera on the robot's side of a cabin wall or deck rail.
+	var ray:=PhysicsRayQueryParameters3D.create(target,position,8)
+	var hit:=stage.get_world_3d().direct_space_state.intersect_ray(ray)
+	if not hit.is_empty():
+		position=target+offset.normalized()*maxf(.45,target.distance_to(hit.position)-.18)
+	camera.global_position=position;camera.look_at(target,Vector3.UP)
 
 func _camera()->void:
 	if camera_ready and cargo!=null and str(options.get("mode",""))=="cargo_cycle":
@@ -481,6 +561,8 @@ func _camera()->void:
 	world_surface.position=Vector3(-origin.offset_x,0,-origin.offset_z)
 
 func _process(dt:float)->bool:
+	if robot_switch_message_until>0. and elapsed>=robot_switch_message_until:
+		robot_switch_message="";robot_switch_message_until=0.
 	if elapsed>=3.:
 		if acceptance_frame_start_usec==0:acceptance_frame_start_usec=Time.get_ticks_usec()
 		acceptance_rendered_frames+=1
@@ -527,7 +609,7 @@ func _write_visual_report()->void:
 		var proof:=FileAccess.open(str(options.output_root)+"/"+report_name,FileAccess.WRITE)
 		proof.store_string(JSON.stringify({"robot_id":sai_passenger.robot_id,"samples":sai_passenger.cockpit_samples if sai_passenger.cockpit_demo else sai_passenger.mission_samples,"completed":sai_passenger.completed,"failure":sai_passenger.failure,"physics_hz":Engine.physics_ticks_per_second,"policy_hz":50,"parked_carrier_fixture":parked_boarding_fixture,"scope":"Stationary carrier; existing Sai arm impedance and physical steering contact." if sai_passenger.cockpit_demo else "Scripted boarding mission using existing learned locomotion and native impedance; real contacts and finite-force lift/ramp."},"  "));proof.close()
 	var switches:=FileAccess.open(str(options.output_root)+"/robot_switches.json",FileAccess.WRITE)
-	switches.store_string(JSON.stringify({"history":robot_switch_history,"active_robot":active_robot_kind},"  "));switches.close()
+	switches.store_string(JSON.stringify({"history":robot_switch_history,"active_robot":active_robot_kind,"quick_travel":quick_travel_history},"  "));switches.close()
 	if patrol!=null:
 		var proof:=FileAccess.open(str(options.output_root)+"/robot_patrol.json",FileAccess.WRITE)
 		proof.store_string(JSON.stringify({"mode":patrol.mode_name,"samples":patrol.evidence,"first_fall":patrol.session.first_fall,"error":patrol.session.error,"controller":"Existing native ONNX 50 Hz / Jolt 200 Hz","scope":"Actual policy torque actuation and carrier rigid-body contact; initialization is the only pose placement."},"  "));proof.close()
