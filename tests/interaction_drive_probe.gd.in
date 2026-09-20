@@ -134,21 +134,21 @@ func _run_probe()->void:
 	cockpit=FakeCockpit.new()
 	OS.set_environment("SAINIVERSE_REMOTE_MD_PREVIEW","")
 	if _manual_md_remote_preview("microduck") or _manual_md_remote_preview("roller"):
-		printerr("FAIL: default manual MD used the remote preview worker")
+		printerr("FAIL: headless manual MD used the desktop remote worker")
 		quit(1);return
 	await _switch_robot_mode("microduck")
 	if Engine.physics_ticks_per_second!=200 or Engine.max_physics_steps_per_frame!=16 or not bodies.front.freeze or not parked_patrol_fixture or physics_interpolation:
-		printerr("FAIL: default F5 MicroDuck is not the parked 200 Hz patrol fixture")
+		printerr("FAIL: headless F5 MicroDuck is not the parked 200 Hz patrol fixture")
 		quit(1);return
 	if cockpit.ui_axes.throttle!=0. or not str(last_md_script).ends_with("microduck_patrol.gd"):
-		printerr("FAIL: default F5 did not instantiate microduck_patrol.gd")
+		printerr("FAIL: headless F5 did not instantiate microduck_patrol.gd")
 		quit(1);return
 	if inspected_md==null or inspected_md.has_method("set_destination") or inspected_md.get_script()==null or not str(inspected_md.get_script().resource_path).ends_with("microduck_patrol.gd"):
-		printerr("FAIL: default manual MD instance is not microduck_patrol.gd")
+		printerr("FAIL: headless manual MD instance is not microduck_patrol.gd")
 		quit(1);return
 	await _switch_robot_mode("roller")
 	if Engine.physics_ticks_per_second!=200 or not bodies.front.freeze or not parked_patrol_fixture or not str(last_md_script).ends_with("microduck_patrol.gd"):
-		printerr("FAIL: default F6 roller is not the collidable patrol fixture")
+		printerr("FAIL: headless F6 roller is not the collidable patrol fixture")
 		quit(1);return
 	OS.set_environment("SAINIVERSE_REMOTE_MD_PREVIEW","1")
 	if _manual_md_remote_preview("sai001") or _manual_md_remote_preview("vehicle"):
@@ -167,5 +167,5 @@ func _run_probe()->void:
 		quit(1);return
 	OS.set_environment("SAINIVERSE_REMOTE_MD_PREVIEW","")
 	if inspected_md!=null:inspected_md.free();inspected_md=null
-	print("PASS: default manual MD uses patrol; remote preview is opt-in")
+	print("PASS: headless manual MD uses patrol; desktop remote path is opt-in for tests")
 	quit(0)
