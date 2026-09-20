@@ -65,10 +65,11 @@ func exchange(state:Dictionary)->Dictionary:
 	var result:Dictionary=native_controller.command(state)
 	if cockpit_demo and arm_solver!=null:
 		var control:Dictionary=carrier.spec.contact.cockpit.controls[0]
-		var angle:float=.22*sin((carrier.elapsed-12.)*1.3) if carrier.elapsed>12. else 0.
+		var angle:float=.06*sin((carrier.elapsed-12.)*1.3) if carrier.elapsed>12. else 0.
 		var parent:RigidBody3D=carrier.bodies.front
 		var pivot:Vector3=parent.global_transform*carrier.local_source(control.pivot_source_m)
-		var offset:Vector3=carrier.vec([carrier.cockpit.ROBOT_STEER_GRIP_SOURCE.x,carrier.cockpit.ROBOT_STEER_GRIP_SOURCE.y,carrier.cockpit.ROBOT_STEER_GRIP_SOURCE.z])
+		# Aim at the lower spoke's existing collision proxy, without adding a grip.
+		var offset:Vector3=carrier.vec([-.028,-.215,-.075])
 		var target:Vector3=pivot+parent.global_basis*Basis(Vector3.RIGHT,angle)*offset
 		var home:Array=specification.arm_home_source_deg.duplicate()
 		result.target_arm=arm_solver._ik(Vector3(target.x,-target.z,target.y),state,home)

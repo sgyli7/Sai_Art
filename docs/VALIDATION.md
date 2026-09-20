@@ -56,12 +56,15 @@ were 1280×720; the vehicle stayed entirely in view at each camera cut and the
 44-second native run ended with `failed:false`, 34.9 m of forward travel, and
 an 18.0 km/h peak. The GIF plays the captured frames at 15 FPS without
 interpolation.
-The Sai cockpit vignette runs the unchanged learned standing policy and native
-arm impedance at 50/1000 Hz. A scripted arm target reaches a short grip that is
-part of the existing steering rigid body. In a 24-frame capture, the hand had
-12 sampled contacts, the wheel reached 0.287 rad, minimum chassis upright was
-0.975, and no failure or script error was reported. This shows physical arm
-operation of the control; it is not a learned autonomous manipulation task.
+The revised Sai cockpit vignette runs the unchanged learned standing policy and
+native arm impedance at 50/1000 Hz. The added yellow grip and its collision
+shape were removed. A scripted arm target reaches the original lower steering
+spoke; no Sainiverse model geometry or body count changed. In a 24-frame
+capture, the hand had 3 sampled contacts, the wheel moved up to 0.115 rad,
+minimum chassis upright was 0.973, and no failure or script error was reported.
+The [new contact record](../evidence/polar_sai_cockpit_control_2026-09-20.json)
+replaces the earlier grip-assisted claim. This is a controlled contact vignette,
+not a learned autonomous manipulation task.
 Walking MicroDuck traversed a 1.67 m span in the cockpit, walking out and back
 with no fall. The GIF camera
 views were checked at early, middle, and late frames for seat/console/platform

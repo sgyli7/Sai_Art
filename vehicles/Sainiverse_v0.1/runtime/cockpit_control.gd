@@ -1,6 +1,5 @@
 extends RefCounted
 ## Physical joint coordinates are the command source. Keyboard/mouse only drive the handles.
-const ROBOT_STEER_GRIP_SOURCE:=Vector3(-.13,-.20,-.11)
 var host:SceneTree
 var data:Dictionary
 var links:Dictionary={}
@@ -30,16 +29,6 @@ func configure(h:SceneTree,d:Dictionary)->void:
 			var shape:=ConvexPolygonShape3D.new();var points:=PackedVector3Array()
 			for p in vertices:points.append(host.vec(p))
 			shape.points=points;var col:=CollisionShape3D.new();col.shape=shape;body.add_child(col)
-		if c.id=="steer":
-			# A short rigid grip on the existing steering body lets a small Sai arm
-			# operate its real hinge from the pilot seat; it adds no independent motor.
-			var start:Vector3=host.vec(c.grasp_local_m)
-			var end:Vector3=host.vec([ROBOT_STEER_GRIP_SOURCE.x,ROBOT_STEER_GRIP_SOURCE.y,ROBOT_STEER_GRIP_SOURCE.z])
-			var span:Vector3=end-start
-			var capsule:=CapsuleShape3D.new();capsule.radius=.028;capsule.height=span.length()+.056
-			var grip_collision:=CollisionShape3D.new();grip_collision.shape=capsule;grip_collision.position=(start+end)*.5;grip_collision.basis=Basis(Quaternion(Vector3.UP,span.normalized()));body.add_child(grip_collision)
-			var grip_mesh:=MeshInstance3D.new();var shape_mesh:=CapsuleMesh.new();shape_mesh.radius=.028;shape_mesh.height=capsule.height;grip_mesh.mesh=shape_mesh;grip_mesh.position=grip_collision.position;grip_mesh.basis=grip_collision.basis
-			var grip_material:=StandardMaterial3D.new();grip_material.albedo_color=Color("d2aa3f");grip_material.metallic=.7;grip_material.roughness=.34;grip_mesh.material_override=grip_material;body.add_child(grip_mesh)
 	for item in data.labels:
 		if str(item.id).begins_with("steer"):continue
 		var label:=Label3D.new();label.text=item.text;label.font_size=24;label.pixel_size=.0009;label.outline_size=0;label.shaded=true;label.modulate=Color("c9cbbb");label.visibility_range_end=30.
@@ -151,9 +140,8 @@ func step(dt:float)->void:
 		var coupling:=0.
 		if id=="steer" or id=="steer_copilot":
 			var other:Vector2=steering_b if id=="steer" else steering_a
-			coupling=(4. if physical_mode else 28.)*(other.x-q.x)+1.2*(other.y-q.y)
-		var stiffness:float=.75 if physical_mode and id in ["steer","steer_copilot"] else float(c.kp)
-		var effort:float=clampf(stiffness*(goal-q.x)-float(c.kd)*q.y-gravity+coupling,-float(c.effort_cap),float(c.effort_cap))
+			coupling=28.*(other.x-q.x)+1.2*(other.y-q.y)
+		var effort:float=clampf(float(c.kp)*(goal-q.x)-float(c.kd)*q.y-gravity+coupling,-float(c.effort_cap),float(c.effort_cap))
 		if c.kind=="slide":link.body.apply_central_force(axis_world*effort);link.parent.apply_force(-axis_world*effort,link.body.global_position-link.parent.global_position)
 		else:link.body.apply_torque(axis_world*effort);link.parent.apply_torque(-axis_world*effort)
 		values[id]=clampf(q.x/hi,-1. if lo<0. else 0.,1.)

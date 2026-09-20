@@ -78,7 +78,7 @@ func _process(_dt:float)->bool:
 			"draw_calls":Performance.get_monitor(Performance.RENDER_TOTAL_DRAW_CALLS_IN_FRAME),"primitives":Performance.get_monitor(Performance.RENDER_TOTAL_PRIMITIVES_IN_FRAME)})
 	last_frame_usec=now
 	var mode:String=str(options.get("mode",""))
-	var capture_time:float=12.8+float(pv_frames)/15. if mode=="sai_cockpit" else 11.+float(pv_frames)/15. if mode in ["cabin_patrol","cockpit_patrol","deck_patrol"] else 32.+float(pv_frames)/15.
+	var capture_time:float=12.4+float(pv_frames)/15. if mode=="sai_cockpit" else 11.+float(pv_frames)/15. if mode in ["cabin_patrol","cockpit_patrol","deck_patrol"] else 32.+float(pv_frames)/15.
 	if str(options.get("mode",""))=="sai_board":
 		var phases:Dictionary=get("sai_passenger").phase_times if get("sai_passenger")!=null else {}
 		capture_time=float(phases.get("approach",INF))+9.+float(pv_frames)/15. if pv_frames<40 else float(phases.get("approach",INF))+31.+float(pv_frames-40)/15. if pv_frames<70 else float(phases.get("ride",INF))+2.+float(pv_frames-70)*.32 if pv_frames<120 else float(phases.get("exit",INF))+1.+float(pv_frames-120)*.55
