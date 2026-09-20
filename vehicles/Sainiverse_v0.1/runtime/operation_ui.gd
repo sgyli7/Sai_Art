@@ -76,9 +76,6 @@ func _section(id:String,title:String,open:=false)->VBoxContainer:
 
 func _toggle_section(id:String,title:String)->void:
 	var opening:bool=not sections[id].visible
-	for key in sections:
-		sections[key].visible=false
-		section_headers[key].text="▸ "+str(section_headers[key].get_meta("title",key))
 	sections[id].visible=opening
 	section_headers[id].text=("▾ " if opening else "▸ ")+title
 
@@ -107,7 +104,7 @@ func _build_robots()->void:
 	var c:=_section("robots","驾驶对象 ROBOTS",false)
 	for item in [["F9 · Sainiverse","vehicle"],["F5 · MicroDuck","microduck"],["F6 · MD 轮滑","roller"],["F7 · Sai 001","sai001"],["F8 · Sai 002","sai002"]]:
 		var button:=_button(item[0]);button.pressed.connect(host.select_robot_mode.bind(item[1]));c.add_child(button)
-	c.add_child(_label("停车后切换；机器人控制器使用各自已验证的物理频率。",12,MUTED))
+	c.add_child(_label("MicroDuck 可与母车同时操控；Sai 机器人切换前需停车。",12,MUTED))
 
 func _robot_key(code:int,pressed:bool)->void:
 	if pressed and host.active_robot_kind=="vehicle":return
@@ -132,7 +129,7 @@ func _robot_tap(action:String)->void:
 
 func _build_robot_controls()->void:
 	var c:=_section("robot_controls","机器人操控 ROBOT",false)
-	c.add_child(_label("按住方向键持续移动；松开即停止。",12,MUTED))
+	c.add_child(_label("按住 W/S/A/D 移动与转向；松开即停止。",12,MUTED))
 	var row:=_row();c.add_child(row)
 	_robot_hold(row,"前进 W",KEY_W);_robot_hold(row,"后退 S",KEY_S)
 	row=_row();c.add_child(row)
@@ -152,14 +149,18 @@ func _refresh_mode_layout()->void:
 	_release_robot_keys()
 	displayed_robot_kind=kind
 	var vehicle:bool=kind=="vehicle"
+	var remote_md:bool=kind in ["microduck","roller"] and host.patrol!=null and host.patrol.has_method("set_destination")
 	for id in ["drive","crane","lifts","receiver","services"]:
-		sections[id].get_parent().visible=vehicle
+		sections[id].get_parent().visible=vehicle or (remote_md and id=="drive")
 	sections["robot_controls"].get_parent().visible=not vehicle
 	sections["robot_controls"].visible=not vehicle
 	section_headers["robot_controls"].text=("▾ " if not vehicle else "▸ ")+"机器人操控 ROBOT"
 	for id in ["drive","crane","lifts","receiver","services"]:
 		sections[id].visible=false
 		section_headers[id].text="▸ "+str(section_headers[id].get_meta("title",id))
+	if remote_md:
+		sections["drive"].visible=true
+		section_headers["drive"].text="▾ "+str(section_headers["drive"].get_meta("title","drive"))
 	var md:bool=kind=="microduck"
 	var roller:bool=kind=="roller"
 	for action in robot_skill_buttons:
@@ -170,11 +171,11 @@ func _refresh_mode_layout()->void:
 		mode_hint.text="W/S 驾驶 · A/D 转向 · 空格制动；F5–F8 切换机器人。"
 		help.text="鼠标：展开分组、选择设备、拖动驾驶滑杆；吊机按钮需按住。\nF5/F6/F7/F8 切换机器人，F9 返回母车；停车后切换。\nW/S 前后行驶，A/D 转向；右键环视 · 滚轮缩放 · Tab 切换视角。"
 	elif md:
-		mode_hint.text="MicroDuck：W/S 移动 · A/D 转向 · 1 捡地 · 2 坐下 · 3/4 踢球 · 5 前滚。F1–F3 快速移动，F9 返回母车。"
-		help.text="MicroDuck：W/S 前后，A/D 转向，Q/E 平移，空格待机；1 捡地、2 坐下、3/4 踢球、5 前滚、7 站立、0 复位。\nF1 车旁雪地 · F2 甲板 · F3 驾驶舱；F9 返回 Sainiverse。"
+		mode_hint.text="MicroDuck：W/S 移动 · A/D 转向；母车：↑/↓ 行驶 · ←/→ 转向 · Ctrl 制动。"
+		help.text="MicroDuck：W/S 前后，A/D 转向，Q/E 平移；1 捡地、2 坐下、3/4 踢球、5 前滚、7 站立、0 复位。\n母车：方向键行驶和转向，Ctrl 制动；F1 车旁雪地 · F2 甲板 · F3 驾驶舱。"
 	elif roller:
-		mode_hint.text="MD 轮滑：W/S 滑行与制动 · A/D 转向 · 2 下蹲滑行。F1–F3 快速移动，F9 返回母车。"
-		help.text="MD 轮滑：W/S 滑行与制动，A/D 转向，空格待机；2 下蹲滑行、7 站立、0 复位。\nF1 车旁雪地 · F2 甲板 · F3 驾驶舱；F9 返回 Sainiverse。"
+		mode_hint.text="MD 轮滑：W/S 滑行 · A/D 转向；母车：↑/↓ 行驶 · ←/→ 转向 · Ctrl 制动。"
+		help.text="MD 轮滑：W/S 滑行与制动，A/D 转向；2 下蹲滑行、7 站立、0 复位。\n母车：方向键行驶和转向，Ctrl 制动；F1 车旁雪地 · F2 甲板 · F3 驾驶舱。"
 	else:
 		mode_hint.text="%s：W/S 前后移动 · A/D 转向。F1–F3 快速移动，F9 返回母车。"%["Sai 002" if kind=="sai002" else "Sai 001"]
 		help.text="Sai Robot：W/S 前后移动，A/D 转向；F1 车旁雪地 · F2 甲板 · F3 驾驶舱；F9 返回 Sainiverse。"

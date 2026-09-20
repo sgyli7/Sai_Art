@@ -114,15 +114,21 @@ func step(dt:float)->void:
 	var is_test:bool=str(host.options.get("mode",""))=="cockpit_test"
 	if is_test:_test(host.elapsed)
 	elif host.manual and not physical_mode:
-		# Robot-switch replay owns the keyboard while the carrier is parked.
+		# When MicroDuck owns WASD, the carrier uses the arrow keys.
 		var active:bool=host.cam_mode!=4 and host.switch_probe_sequence.is_empty()
+		var robot_selected:bool=host.active_robot_kind in ["microduck","roller"] and host.patrol!=null and host.patrol.has_method("set_destination")
 		var keys={"steer":[KEY_A,KEY_D],"throttle":[KEY_W,KEY_S],"crane_slew":[KEY_KP_4,KEY_KP_6],"crane_luff":[KEY_KP_8,KEY_KP_2],"crane_extend":[KEY_KP_ADD,KEY_KP_SUBTRACT],"crane_winch":[KEY_PAGEDOWN,KEY_PAGEUP],"panel_slew":[KEY_Z,KEY_X],"panel_fold":[KEY_R,KEY_F]}
 		for id in keys:
 			if dragged==id:continue
-			var keyboard:float=float(int(active and Input.is_action_pressed("sainiverse_left"))-int(active and Input.is_action_pressed("sainiverse_right"))) if id=="steer" else float(int(active and Input.is_action_pressed("sainiverse_forward"))-int(active and Input.is_action_pressed("sainiverse_reverse"))) if id=="throttle" else float(int(active and Input.is_physical_key_pressed(keys[id][0]))-int(active and Input.is_physical_key_pressed(keys[id][1])))
+			var keyboard:=0.
+			if id=="steer":
+				keyboard=float(int(active and Input.is_physical_key_pressed(KEY_LEFT))-int(active and Input.is_physical_key_pressed(KEY_RIGHT))) if robot_selected else float(int(active and Input.is_action_pressed("sainiverse_left"))-int(active and Input.is_action_pressed("sainiverse_right")))
+			elif id=="throttle":
+				keyboard=float(int(active and Input.is_physical_key_pressed(KEY_UP))-int(active and Input.is_physical_key_pressed(KEY_DOWN))) if robot_selected else float(int(active and Input.is_action_pressed("sainiverse_forward"))-int(active and Input.is_action_pressed("sainiverse_reverse")))
+			else:keyboard=float(int(active and Input.is_physical_key_pressed(keys[id][0]))-int(active and Input.is_physical_key_pressed(keys[id][1])))
 			var ui:float=float(ui_axes.get(id,0.));var level:float=ui if absf(ui)>.001 else keyboard
 			targets[id]=level*(.65 if id=="steer" else .5 if id=="throttle" else .30)
-		if dragged!="brake":targets.brake=maxf(.5 if active and Input.is_physical_key_pressed(KEY_SPACE) else 0.,float(ui_axes.get("brake",0.))*.5)
+		if dragged!="brake":targets.brake=maxf(.5 if active and Input.is_physical_key_pressed(KEY_CTRL if robot_selected else KEY_SPACE) else 0.,float(ui_axes.get("brake",0.))*.5)
 		targets.high_range=.65 if Input.is_physical_key_pressed(KEY_SHIFT) or float(ui_axes.get("high_range",0.))>.5 else range_latched
 	elif not physical_mode:
 		# Automated review modes retain their own commands and show them on handles.
