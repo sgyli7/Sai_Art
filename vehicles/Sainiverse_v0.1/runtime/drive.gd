@@ -231,6 +231,17 @@ func handle_input(event:InputEvent)->void:
 			KEY_T:switch_theme()
 			KEY_F12:_capture("manual_"+str(Time.get_ticks_msec()))
 
+func _manual_md_remote_preview(kind:String)->bool:
+	return manual and OS.get_environment("SAINIVERSE_REMOTE_MD_PREVIEW")=="1" and kind in ["microduck","roller"]
+
+func _manual_md_script(kind:String)->String:
+	return HERE+("/runtime/microduck_remote.gd" if _manual_md_remote_preview(kind) else "/runtime/microduck_patrol.gd")
+
+func _make_manual_md(kind:String)->Node:
+	var node=load(_manual_md_script(kind)).new();node.carrier=self;node.manual_input=true
+	node.mode_name="walk" if kind=="microduck" else "roller"
+	return node
+
 func select_robot_mode(kind:String)->void:
 	if kind not in ["vehicle","microduck","roller","sai001","sai002"] or robot_switch_busy:return
 	if kind==active_robot_kind:return
@@ -335,7 +346,7 @@ func _switch_robot_mode(kind:String)->void:
 	if patrol!=null:patrol.queue_free();patrol=null
 	if sai_passenger!=null:sai_passenger.queue_free();sai_passenger=null
 	await process_frame
-	var remote_md:bool=manual and DisplayServer.get_name()!="headless" and kind in ["microduck","roller"]
+	var remote_md:bool=_manual_md_remote_preview(kind)
 	physics_interpolation=remote_md
 	for name in bodies:bodies[name].freeze=kind!="vehicle" and not remote_md
 	parked_patrol_fixture=kind!="vehicle" and not remote_md
@@ -345,8 +356,7 @@ func _switch_robot_mode(kind:String)->void:
 	if not remote_md:
 		for axis in ["throttle","steer","brake"]:cockpit.ui_axes[axis]=0.
 	if kind in ["microduck","roller"]:
-		patrol=load(HERE+("/runtime/microduck_remote.gd" if remote_md else "/runtime/microduck_patrol.gd")).new();patrol.carrier=self;patrol.manual_input=true
-		patrol.mode_name="walk" if kind=="microduck" else "roller"
+		patrol=_make_manual_md(kind)
 		patrol.spawn_world=ground_destination.world
 		stage.add_child(patrol)
 	elif kind in ["sai001","sai002"]:

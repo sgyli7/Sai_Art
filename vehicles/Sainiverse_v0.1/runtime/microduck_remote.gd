@@ -28,6 +28,11 @@ var pose_snap_pending:=true
 var camera_snap_pending:=true
 var last_evidence_step:=-1
 
+func apply_visual_style(robot_root:Node,robot_scene:String)->void:
+	var style_script:=load("res://visuals/microduck/style.gd")
+	if style_script==null or robot_root==null:return
+	style_script.new().apply_robot(robot_root,robot_scene)
+
 func _strip_physics(node:Node)->void:
 	for child in node.get_children():
 		if child is Joint3D or child is CollisionShape3D:child.free()
@@ -47,6 +52,7 @@ func _ready()->void:
 			child.collision_mask=0
 			body_nodes[str(child.name)]=child
 	add_child(avatar)
+	apply_visual_style(avatar,str(robot.scene))
 	_base=body_nodes.get(str(robot.base_body))
 	if _base==null:_base=body_nodes.get("trunk_base")
 	world_anchor=spawn_world

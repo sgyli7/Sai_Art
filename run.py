@@ -42,6 +42,8 @@ def sync_current_robots(game, runtime):
     for src in [sai002/'robot.json',*(sai002/'assets').glob('*.glb')]:
         selected[Path('sai_robots/Sai_Agent_002')/src.relative_to(sai002)]=src
     for rel,src in selected.items():
+        if rel==Path('visuals/microduck/style.gd'):
+            continue  # This release supplies the avatar-only styling API.
         dst=runtime/rel
         data=src.read_bytes()
         if rel==Path('robot.gd'):
@@ -98,6 +100,15 @@ if not worker_target.is_file() or worker_target.read_bytes()!=worker_source.read
     changed=True
 if os.environ.get('SAINIVERSE_USE_GAME_ROBOTS','')=='1':
     changed=sync_current_robots(game,runtime) or changed
+# The release's avatar-only style API must be present even when the game's
+# older prepared robot snapshot supplies the rest of the visual resources.
+style_source=robot_source/'visuals/microduck/style.gd'
+style_target=runtime/'visuals/microduck/style.gd'
+if style_target.is_symlink():style_target.unlink()
+if not style_target.is_file() or style_target.read_bytes()!=style_source.read_bytes():
+    style_target.parent.mkdir(parents=True,exist_ok=True)
+    shutil.copy2(style_source,style_target)
+    changed=True
 if changed:
     godot=os.environ.get('GODOT_BIN','godot')
     subprocess.run([godot,'--headless','--editor','--path',str(runtime),'--import'],check=True)
