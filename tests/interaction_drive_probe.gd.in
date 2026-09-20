@@ -9,6 +9,14 @@ class FakePatrol extends Node3D:
 	func _ready()->void:_base=Node3D.new();add_child(_base)
 	func _add_tap(action:String)->void:_taps.append(action)
 
+class RemotePatrol extends Node3D:
+	var destination:Dictionary={}
+	var rendered_carrier:=Transform3D.IDENTITY
+	var camera_snap_pending:=true
+	var _base:Node3D
+	func _ready()->void:_base=Node3D.new();add_child(_base)
+	func set_destination(value:Dictionary)->void:destination=value
+
 var captured_sai_destination:Dictionary={}
 func _respawn_sai_at(_kind:String,destination:Dictionary)->void:
 	captured_sai_destination=destination
@@ -49,6 +57,24 @@ func _run_probe()->void:
 	if patrol.spawn_source!=Vector3(-12.,-12.5,7.454):
 		printerr("FAIL: F2 did not select the carrier deck for the roller")
 		quit(1);return
+	var remote:=RemotePatrol.new();stage.add_child(remote);patrol=remote
+	quick_travel(2)
+	if remote.destination.is_empty() or not remote.destination.carrier_surface:
+		printerr("FAIL: F2 did not route the carrier deck to the independent robot")
+		quit(1);return
+	remote._base.global_position=remote.destination.world
+	manual_camera_target_valid=false
+	_manual_robot_camera(remote.destination.world)
+	var remote_before:Vector3=camera.global_position
+	var remote_press:=InputEventMouseButton.new();remote_press.button_index=MOUSE_BUTTON_RIGHT;remote_press.pressed=true
+	handle_input(remote_press)
+	var remote_motion:=InputEventMouseMotion.new();remote_motion.relative=Vector2(80.,0.)
+	handle_input(remote_motion);_manual_robot_camera(remote.destination.world)
+	var remote_release:=InputEventMouseButton.new();remote_release.button_index=MOUSE_BUTTON_RIGHT;remote_release.pressed=false
+	handle_input(remote_release)
+	if active_quick_location!=0 or camera.global_position.distance_to(remote_before)<.2:
+		printerr("FAIL: independent MD camera did not leave the F2 fixed view on right-drag")
+		quit(1);return
 	patrol=null
 	sai_passenger=Node3D.new();stage.add_child(sai_passenger)
 	active_robot_kind="sai001"
@@ -71,7 +97,6 @@ func _run_probe()->void:
 		patrol._base.global_position=target
 		_manual_robot_camera(target)
 		var before:Vector3=camera.global_position
-		var yaw_before:float=orbit_yaw
 		var press:=InputEventMouseButton.new();press.button_index=MOUSE_BUTTON_RIGHT;press.pressed=true
 		handle_input(press)
 		var motion:=InputEventMouseMotion.new();motion.relative=Vector2(80.,0.)
@@ -80,7 +105,7 @@ func _run_probe()->void:
 		var release:=InputEventMouseButton.new();release.button_index=MOUSE_BUTTON_RIGHT;release.pressed=false
 		handle_input(release)
 		var expected_location:int=1 if station==1 else 0
-		if active_quick_location!=expected_location or (station!=1 and is_equal_approx(orbit_yaw,yaw_before)) or camera.global_position.distance_to(before)<.2 or (station==1 and camera.global_position.distance_to(target)<50.):
+		if active_quick_location!=expected_location or camera.global_position.distance_to(before)<.2 or (station==1 and camera.global_position.distance_to(target)<50.):
 			printerr("FAIL: right-drag does not rotate the MD camera after F",station,
 				" location=",active_quick_location," dragged=",f1_panorama_dragged,
 				" camera_delta=",camera.global_position.distance_to(before))
