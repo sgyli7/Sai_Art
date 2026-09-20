@@ -56,6 +56,7 @@ var remote_probe_samples:Array=[]
 var camera_motion_samples:Array=[]
 var manual_camera_target:=Vector3.ZERO
 var manual_camera_target_valid:=false
+var manual_camera_last_usec:=0
 var saved_vehicle_orbit:Array=[]
 var ramp_links:Dictionary={}
 var ramp_targets:Dictionary={}
@@ -280,6 +281,7 @@ func _switch_robot_mode(kind:String)->void:
 	active_quick_location=0
 	var ground_destination:Dictionary=_quick_destination(1,kind) if kind!="vehicle" else {}
 	manual_camera_target_valid=false
+	manual_camera_last_usec=0
 	if active_robot_kind=="vehicle" and kind!="vehicle":
 		saved_vehicle_orbit=[orbit_radius,orbit_yaw,orbit_pitch]
 		orbit_radius=6.;orbit_yaw=.98;orbit_pitch=.28
@@ -531,14 +533,20 @@ func _physics_process(dt:float)->bool:
 	return result
 
 func _manual_robot_camera(target:Vector3)->void:
-	if patrol!=null and patrol.has_method("set_destination"):
+	var remote_view:bool=patrol!=null and patrol.has_method("set_destination")
+	var carrier_basis:Basis=patrol.rendered_carrier.basis if remote_view else bodies.front.global_basis
+	if remote_view:
+		# This SceneTree owns the camera, so Camera3D.get_process_delta_time() is
+		# not the render interval here. Measure successive camera updates instead.
+		var now_usec:int=Time.get_ticks_usec()
+		var render_dt:float=clampf(float(now_usec-manual_camera_last_usec)/1000000.,0.,.1) if manual_camera_last_usec>0 else 0.
+		manual_camera_last_usec=now_usec
 		if not manual_camera_target_valid or patrol.camera_snap_pending:
 			manual_camera_target=target
 			manual_camera_target_valid=true
 			patrol.camera_snap_pending=false
 		else:
-			var dt:float=clampf(camera.get_process_delta_time(),0.,.1)
-			manual_camera_target=manual_camera_target.lerp(target,1.-exp(-12.*dt))
+			manual_camera_target=manual_camera_target.lerp(target,1.-exp(-12.*render_dt))
 		target=manual_camera_target
 	camera.projection=Camera3D.PROJECTION_PERSPECTIVE;camera.near=.015;camera.far=3500.;camera.fov=48.
 	if active_quick_location==1:
@@ -553,18 +561,21 @@ func _manual_robot_camera(target:Vector3)->void:
 		if moved or Input.is_action_pressed("sainiverse_forward") or Input.is_action_pressed("sainiverse_reverse") or Input.is_action_pressed("sainiverse_left") or Input.is_action_pressed("sainiverse_right"):
 			active_quick_location=0
 		else:
-			var whole:Vector3=(bodies.front.global_position+bodies.tail.global_position)*.5+Vector3.UP*4.
+			var front_position:Vector3=patrol.rendered_carrier.origin if remote_view else bodies.front.global_position
+			var tail_position:Vector3=bodies.tail.get_global_transform_interpolated().origin if remote_view else bodies.tail.global_position
+			var whole:Vector3=(front_position+tail_position)*.5+Vector3.UP*4.
 			camera.fov=50.;camera.near=.08
-			camera.global_position=whole+bodies.front.global_basis*Vector3(95.,54.,105.)
+			camera.global_position=whole+carrier_basis*Vector3(95.,54.,105.)
 			camera.look_at(whole,Vector3.UP)
+			_record_camera_motion(whole)
 			return
 	if active_quick_location==2:
 		# Stay over the walking lane, below the roof and inside the outer guardrail.
-		camera.global_position=target+bodies.front.global_basis*Vector3(2.,.85,-.25)
+		camera.global_position=target+carrier_basis*Vector3(2.,.85,-.25)
 		camera.look_at(target,Vector3.UP)
+		_record_camera_motion(target)
 		return
 	if active_quick_location==3:
-		var carrier_basis:Basis=patrol.rendered_carrier.basis if patrol!=null and patrol.has_method("set_destination") else bodies.front.global_basis
 		camera.global_position=target+carrier_basis*Vector3(-.9,.85,.95)
 		camera.look_at(target,Vector3.UP)
 		_record_camera_motion(target)
