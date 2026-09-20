@@ -1,5 +1,48 @@
 # Sainiverse_v0.1 — r032 review evidence, 2026-09-17
 
+## Walkable collision repair and snow arrival, 2026-09-20
+
+The exterior bridge rail shown in the bug report had visible bars but no
+robot-height guard collision. The same audit found omitted lower landings,
+exterior stair treads, instrument gallery flooring, and side walkplate support.
+The authored-model generator in `source/walkable_contacts.py` adds 81 contact
+shapes to the existing front, rear, and tail hulls in both Godot/Jolt and
+MuJoCo. It preserves each hull's existing material, and does not add rigid
+bodies, alter mass, or change the visible model.
+Walkplate guards and floor strips are split at the six lift openings; the
+boarding and cross-module routes remain open.
+Regenerate with `python3 vehicles/Sainiverse_v0.1/source/walkable_contacts.py`.
+
+`python3 tests/check_walkable_contacts.py --game /path/to/Godot_Sim2Sim`
+checks 114 authored floor/guard locations against the assembled Godot scene and
+drives a 20 kg physical crossing probe into the exterior bridge guard. All 115
+checks pass. The contact generator is byte-for-byte idempotent, and its 81
+Godot shapes match 81 MuJoCo geoms. MuJoCo 3.13 compiles both the baseline and
+changed model with 256 bodies, 305 DOFs, and the same 15,639,254.896 kg mass;
+only geom count changes, from 791 to 872. `python3 tests/check_interactions.py`
+checks the F1–F3 routing and UI controls.
+
+F1 now lands at world X=0, Z=25.5, outside the front boarding lift (whose
+visible boarding floor is centered near X=0, Z=13.3). A normal MicroDuck F1
+transfer arrived 0.120 m from the requested snow point, without a fall. Its
+initial rendered camera includes the entire vehicle without clipping; moving
+returns to the normal robot-follow camera. The game repository stores that
+1920×1080 frame as `docs/media/sainiverse-f1-near-lift.png`.
+
+An unmodified `origin/main` driving run on the same workstation gave 17.266 ms
+P95 rendered frame time and a minimum one-second rate of 91 FPS. Two changed
+build runs gave 17.137/17.271 ms and 108/107 FPS respectively. The old test's
+16.67 ms P95 cutoff also rejects the unmodified baseline despite sustained
+play above 60 FPS. The game acceptance threshold remains unchanged. Later
+robot runs share this workstation with concurrent training/rendering jobs;
+route completion is recorded separately from a clean performance verdict.
+On the final contact build, walking MicroDuck covered 0.959 m in the cabin and
+roller MicroDuck covered 2.988 m on deck, both with carrier support and no
+falls. Sai 001 and Sai 002 both completed the full elevator boarding route,
+with minimum upright values 0.948/0.952 and four supported wheels. These
+functional runs do not establish a clean isolated FPS number while the other
+GPU/CPU jobs are active.
+
 ## Polar game integration, 2026-09-20
 
 The later polar game integration uses 60 Hz vehicle physics for manual driving,
