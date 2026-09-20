@@ -90,6 +90,12 @@ if not marker.exists() or marker.read_text()!=snapshot:
         if src.is_dir():shutil.copytree(src,dst,dirs_exist_ok=True)
         else:shutil.copy2(src,dst)
     changed=True
+worker_source=robot_source/'standalone/carrier_worker.gd'
+worker_target=runtime/'standalone/carrier_worker.gd'
+if not worker_target.is_file() or worker_target.read_bytes()!=worker_source.read_bytes():
+    worker_target.parent.mkdir(parents=True,exist_ok=True)
+    shutil.copy2(worker_source,worker_target)
+    changed=True
 if os.environ.get('SAINIVERSE_USE_GAME_ROBOTS','')=='1':
     changed=sync_current_robots(game,runtime) or changed
 if changed:
