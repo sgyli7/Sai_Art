@@ -4,7 +4,9 @@ class FakePatrol extends Node3D:
 	var spawn_world:=Vector3.ZERO
 	var spawn_source:=Vector3.ZERO
 	var manual_ground_on_carrier:=false
+	var _base:Node3D
 	var _taps:Array=[]
+	func _ready()->void:_base=Node3D.new();add_child(_base)
 	func _add_tap(action:String)->void:_taps.append(action)
 
 var captured_sai_destination:Dictionary={}
@@ -59,5 +61,35 @@ func _run_probe()->void:
 	if camera.global_position.distance_to(Vector3(3.,4.,5.))>2.:
 		printerr("FAIL: cockpit camera leaves the robot behind the cabin wall")
 		quit(1);return
-	print("PASS: F1–F3 route MicroDuck, roller, and Sai through safe respawns")
+	sai_passenger=null
+	patrol=FakePatrol.new();stage.add_child(patrol)
+	active_robot_kind="microduck"
+	robot_switch_busy=false
+	for station in [1,2,3]:
+		quick_travel(station)
+		var target:Vector3=_quick_destination(station,"microduck").world
+		patrol._base.global_position=target
+		_manual_robot_camera(target)
+		var before:Vector3=camera.global_position
+		var yaw_before:float=orbit_yaw
+		var press:=InputEventMouseButton.new();press.button_index=MOUSE_BUTTON_RIGHT;press.pressed=true
+		handle_input(press)
+		var motion:=InputEventMouseMotion.new();motion.relative=Vector2(80.,0.)
+		handle_input(motion)
+		_manual_robot_camera(target)
+		var release:=InputEventMouseButton.new();release.button_index=MOUSE_BUTTON_RIGHT;release.pressed=false
+		handle_input(release)
+		var expected_location:int=1 if station==1 else 0
+		if active_quick_location!=expected_location or (station!=1 and is_equal_approx(orbit_yaw,yaw_before)) or camera.global_position.distance_to(before)<.2 or (station==1 and camera.global_position.distance_to(target)<50.):
+			printerr("FAIL: right-drag does not rotate the MD camera after F",station,
+				" location=",active_quick_location," dragged=",f1_panorama_dragged,
+				" camera_delta=",camera.global_position.distance_to(before))
+			quit(1);return
+		var before_zoom:Vector3=camera.global_position
+		var zoom:=InputEventMouseButton.new();zoom.button_index=MOUSE_BUTTON_WHEEL_UP;zoom.pressed=true
+		handle_input(zoom);_manual_robot_camera(target)
+		if camera.global_position.distance_to(before_zoom)<.05:
+			printerr("FAIL: mouse wheel does not zoom the MD camera after F",station)
+			quit(1);return
+	print("PASS: F1–F3 respawns and MD right-drag/zoom camera controls")
 	quit(0)
