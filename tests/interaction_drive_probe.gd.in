@@ -7,6 +7,10 @@ class FakePatrol extends Node3D:
 	var _taps:Array=[]
 	func _add_tap(action:String)->void:_taps.append(action)
 
+class RemotePatrol extends Node3D:
+	var destination:Dictionary={}
+	func set_destination(value:Dictionary)->void:destination=value
+
 var captured_sai_destination:Dictionary={}
 func _respawn_sai_at(_kind:String,destination:Dictionary)->void:
 	captured_sai_destination=destination
@@ -46,6 +50,11 @@ func _run_probe()->void:
 	quick_travel(2)
 	if patrol.spawn_source!=Vector3(-12.,-12.5,7.454):
 		printerr("FAIL: F2 did not select the carrier deck for the roller")
+		quit(1);return
+	var remote:=RemotePatrol.new();stage.add_child(remote);patrol=remote
+	quick_travel(2)
+	if remote.destination.is_empty() or not remote.destination.carrier_surface:
+		printerr("FAIL: F2 did not route the carrier deck to the independent robot")
 		quit(1);return
 	patrol=null
 	sai_passenger=Node3D.new();stage.add_child(sai_passenger)
