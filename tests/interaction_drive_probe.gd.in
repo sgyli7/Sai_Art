@@ -1,0 +1,51 @@
+extends "@DRIVE_SCRIPT@"
+
+class FakePatrol extends Node3D:
+	var spawn_world:=Vector3.ZERO
+	var spawn_source:=Vector3.ZERO
+	var manual_ground_on_carrier:=false
+	var _taps:Array=[]
+	func _add_tap(action:String)->void:_taps.append(action)
+
+var captured_sai_destination:Dictionary={}
+func _respawn_sai_at(_kind:String,destination:Dictionary)->void:
+	captured_sai_destination=destination
+
+func _initialize()->void:call_deferred("_run_probe")
+func _physics_process(_dt:float)->bool:return false
+
+func _run_probe()->void:
+	stage=Node3D.new();root.add_child(stage)
+	bodies={"front":RigidBody3D.new()};stage.add_child(bodies.front)
+	spec={"contact":{"interior":{"datum_source_m":[0.,0.,0.]}}}
+	patrol=FakePatrol.new();stage.add_child(patrol)
+	active_robot_kind="microduck";manual=true;camera_ready=true
+	for key in [KEY_F1,KEY_F2,KEY_F3]:
+		var event:=InputEventKey.new();event.physical_keycode=key;event.keycode=key;event.pressed=true
+		handle_input(event)
+		if patrol._taps.size()!=[KEY_F1,KEY_F2,KEY_F3].find(key)+1:
+			printerr("FAIL: quick-travel key did not reset the active MicroDuck")
+			quit(1);return
+	if patrol.spawn_source!=Vector3(25.,0.,11.354) or not patrol.manual_ground_on_carrier:
+		printerr("FAIL: F3 did not select the carrier cockpit spawn")
+		quit(1);return
+	active_robot_kind="roller"
+	quick_travel(2)
+	if patrol.spawn_source!=Vector3(-12.,-11.5,7.454):
+		printerr("FAIL: F2 did not select the carrier deck for the roller")
+		quit(1);return
+	patrol=null
+	sai_passenger=Node3D.new();stage.add_child(sai_passenger)
+	active_robot_kind="sai001"
+	quick_travel(3)
+	await process_frame
+	if captured_sai_destination.is_empty() or not captured_sai_destination.carrier_surface:
+		printerr("FAIL: F3 did not respawn Sai in the cockpit")
+		quit(1);return
+	camera=Camera3D.new();stage.add_child(camera)
+	_manual_robot_camera(Vector3(3.,4.,5.))
+	if camera.global_position.distance_to(Vector3(3.,4.,5.))>2.:
+		printerr("FAIL: cockpit camera leaves the robot behind the cabin wall")
+		quit(1);return
+	print("PASS: F1–F3 route MicroDuck, roller, and Sai through safe respawns")
+	quit(0)

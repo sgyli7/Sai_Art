@@ -65,7 +65,7 @@ python3 -m venv .venv
 Godot 不在 PATH 时设置 `GODOT_BIN`。首次启动会将演示所需机器人资源装入现有工程的 review runtime，并进行导入；不会创建新的游戏项目。展开后的绝对路径放在忽略的 `.runtime/` 目录。
 
 - W/S 驾驶，A/D 转向，Shift+W 请求高速，空格制动。
-- 极地场景停车后按 F5/F6/F7/F8，在车旁雪地切换普通 MicroDuck、轮滑版、Sai 001、Sai 002；F9 返回母车。机器人沿用 W/S、A/D，右键与滚轮可调整跟随视角。时间流速滑条默认 1.0×，可选 0.1×～3.0×。Sai 002 模型从 `SAI_ROBOTS_ROOT` 指向的 Sai_Rotbots 检出目录读取，默认使用 `/home/ethan/Projects/RobotDesign/delivery/Sai_Rotbots`。
+- 极地场景停车后按 F5/F6/F7/F8，在车旁雪地切换普通 MicroDuck、轮滑版、Sai 001、Sai 002；F9 返回母车。选中机器人后，F1 快速移动到车旁雪地、F2 到甲板、F3 到驾驶舱。左侧面板随控制对象切换移动按钮、MicroDuck 技能和相应按键提示。机器人沿用 W/S、A/D，右键与滚轮可调整跟随视角。时间流速滑条默认 1.0×，可选 0.1×～3.0×。Sai 002 模型从 `SAI_ROBOTS_ROOT` 指向的 Sai_Rotbots 检出目录读取，默认使用 `/home/ethan/Projects/RobotDesign/delivery/Sai_Rotbots`。
 - 交互驾驶使用 60 Hz。演示的停车准备阶段分别使用 MicroDuck 60 Hz、Sai 100 Hz；机器人出生后恢复 MicroDuck 200 Hz、Sai 1000 Hz，策略运行 50 Hz。完整路线与帧率数据见[验证记录](docs/VALIDATION.md#polar-game-integration-2026-09-20)。
 - Tab 切换视角；右键环视、滚轮缩放；自由视角 WASD、Q/E。
 - G 选择升降台，L 升降，Shift+L 全部；升降台和作业机构未收妥时禁止行驶。
