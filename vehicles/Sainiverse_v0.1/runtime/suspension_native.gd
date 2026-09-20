@@ -134,6 +134,10 @@ func _build()->void:
 	if spec.contact.has("interior"):
 		var room=load("@SAI_ROOT@/support/godot/interior_contacts.gd")
 		room.attach(bodies[spec.contact.interior.body],spec.contact.interior)
+	if spec.contact.has("walkable"):
+		var walkable=load("@SAI_ROOT@/support/godot/interior_contacts.gd")
+		for group in spec.contact.walkable.groups:
+			walkable.attach(bodies[group.body],group)
 	if spec.contact.has("access"):
 		access=load("@SAI_ROOT@/support/godot/cabin_access.gd").new();access.configure(spec.contact.access)
 		var room=load("@SAI_ROOT@/support/godot/interior_contacts.gd")

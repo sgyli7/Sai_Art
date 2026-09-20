@@ -26,6 +26,9 @@ func _run_probe()->void:
 		if patrol._taps.size()!=[KEY_F1,KEY_F2,KEY_F3].find(key)+1:
 			printerr("FAIL: quick-travel key did not reset the active MicroDuck")
 			quit(1);return
+		if key==KEY_F1 and (absf(patrol.spawn_world.x)>.001 or absf(patrol.spawn_world.z-25.5)>.001 or patrol.manual_ground_on_carrier):
+			printerr("FAIL: F1 snow spawn is not beside the front boarding lift")
+			quit(1);return
 	if patrol.spawn_source!=Vector3(25.,0.,11.354) or not patrol.manual_ground_on_carrier:
 		printerr("FAIL: F3 did not select the carrier cockpit spawn")
 		quit(1);return
