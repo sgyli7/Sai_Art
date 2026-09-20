@@ -12,11 +12,11 @@
 
 ![Sai 001 从雪地登上 Sainiverse](evidence/media/Sainiverse_v0.1_polar_sai_boarding.gif)
 
-**Sai 001 用机械臂操作驾驶舱方向舵**
+**Sai 001 用机械臂接触原有驾驶舱控制器**
 
-![Sai 001 机械臂推动实体方向舵](evidence/media/Sainiverse_v0.1_polar_sai_steering.gif)
+![Sai 001 机械臂触碰原有方向舵辐条](evidence/media/Sainiverse_v0.1_polar_sai_cockpit_control.gif)
 
-这个短片使用已有 Sai 机械臂阻抗控制和脚本指定的末端目标。黄色短柄固定在原有方向舵刚体上；记录验证机械手实际接触它、方向舵关节转动。它不是训练出的自主驾驶舱操作策略。
+黄色附加握柄及碰撞体已移除，Sainiverse 原有车体与驾驶舱结构未改。这个短片使用已有 Sai 机械臂阻抗控制和脚本指定的末端目标，机械手接触原有方向舵下方辐条并使关节轻微转动；它不是训练出的自主驾驶舱操作策略。[接触记录](evidence/polar_sai_cockpit_control_2026-09-20.json)随片交付。
 
 **普通 MicroDuck 在驾驶舱巡视**
 
