@@ -189,6 +189,9 @@ func _release_quick_robot_camera()->void:
 		orbit_pitch=asin(clampf(view_offset.y/view_offset.length(),-1.,1.))
 	active_quick_location=0
 
+func _remote_interactive()->bool:
+	return active_robot_kind in ["microduck","roller"] and patrol!=null and patrol.has_method("set_destination")
+
 func handle_input(event:InputEvent)->void:
 	if not camera_ready or not manual:return
 	if not switch_probe_sequence.is_empty() or OS.get_environment("SAINIVERSE_DRIVE_PROBE")=="1":
@@ -203,6 +206,9 @@ func handle_input(event:InputEvent)->void:
 		quick_travel({KEY_F1:1,KEY_F2:2,KEY_F3:3}[event.physical_keycode])
 		stage.get_viewport().set_input_as_handled()
 		return
+	if event is InputEventKey and _remote_interactive() and event.physical_keycode in [KEY_UP,KEY_DOWN,KEY_LEFT,KEY_RIGHT,KEY_W,KEY_A,KEY_S,KEY_D,KEY_Q,KEY_E,KEY_CTRL]:
+		stage.get_viewport().gui_release_focus()
+		stage.get_viewport().set_input_as_handled()
 	if active_robot_kind=="vehicle":cockpit.input(event)
 	if event is InputEventMouseButton:
 		if event.button_index==MOUSE_BUTTON_RIGHT:mouse_drag=event.pressed
@@ -232,7 +238,10 @@ func handle_input(event:InputEvent)->void:
 			KEY_F12:_capture("manual_"+str(Time.get_ticks_msec()))
 
 func _manual_md_remote_preview(kind:String)->bool:
-	return manual and OS.get_environment("SAINIVERSE_REMOTE_MD_PREVIEW")=="1" and kind in ["microduck","roller"]
+	# Desktop manual play keeps the carrier at its native 60 Hz while the robot
+	# runs in its 200 Hz worker. Headless qualification modes retain their
+	# existing integrated patrol unless a remote probe is explicitly requested.
+	return manual and kind in ["microduck","roller"] and (DisplayServer.get_name()!="headless" or OS.get_environment("SAINIVERSE_REMOTE_MD_PREVIEW")=="1" or OS.get_environment("SAINIVERSE_REMOTE_PROBE")=="1")
 
 func _manual_md_script(kind:String)->String:
 	return HERE+("/runtime/microduck_remote.gd" if _manual_md_remote_preview(kind) else "/runtime/microduck_patrol.gd")
@@ -313,15 +322,21 @@ func _probe_forward(pressed:bool)->void:
 func _remote_probe_key(code:int,pressed:bool)->void:
 	if bool(remote_probe_keys.get(code,false))==pressed:return
 	remote_probe_keys[code]=pressed
-	var event:=InputEventKey.new();event.physical_keycode=code;event.keycode=code;event.pressed=pressed
+	var event:=InputEventKey.new();event.physical_keycode=code;event.keycode=code;event.pressed=pressed;event.echo=false
 	Input.parse_input_event(event)
+	Input.flush_buffered_events()
 
 func _remote_probe_sample()->void:
-	if patrol==null or patrol._base==null:return
 	var front:RigidBody3D=bodies.front
-	var facing:Vector3=front.global_basis.inverse()*patrol._base.global_basis.x
-	var local:Vector3=front.to_local(patrol._base.global_position)
-	remote_probe_samples.append({"time":elapsed,"car_x_m":front.global_position.x,"car_speed_m_s":front.linear_velocity.length(),"car_frozen":front.freeze,"up":Input.is_physical_key_pressed(KEY_UP),"left":Input.is_physical_key_pressed(KEY_A),"right":Input.is_physical_key_pressed(KEY_D),"robot_local":[local.x,local.y,local.z],"robot_yaw_rad":atan2(-facing.z,facing.x),"robot_fall":patrol.session.first_fall,"worker_steps":patrol.received_steps})
+	var sample:Dictionary={"time":elapsed,"car_x_m":front.global_position.x,"car_speed_m_s":front.linear_velocity.length(),"car_frozen":front.freeze,"up":Input.is_physical_key_pressed(KEY_UP),"car_left":Input.is_physical_key_pressed(KEY_LEFT),"car_right":Input.is_physical_key_pressed(KEY_RIGHT),"left":Input.is_physical_key_pressed(KEY_A),"right":Input.is_physical_key_pressed(KEY_D),"active_robot":active_robot_kind,"throttle":cockpit.axis("throttle") if cockpit!=null else 0.,"steer":cockpit.axis("steer") if cockpit!=null else 0.}
+	if patrol!=null and patrol._base!=null:
+		var facing:Vector3=front.global_basis.inverse()*patrol._base.global_basis.x
+		var local:Vector3=front.to_local(patrol._base.global_position)
+		sample["robot_local"]=[local.x,local.y,local.z]
+		sample["robot_yaw_rad"]=atan2(-facing.z,facing.x)
+		sample["robot_fall"]=patrol.session.first_fall
+		sample["worker_steps"]=patrol.received_steps
+	remote_probe_samples.append(sample)
 
 func _switch_robot_mode(kind:String)->void:
 	active_quick_location=0
@@ -476,11 +491,18 @@ func _physics_process(dt:float)->bool:
 			select_robot_mode(probe_kind);remote_probe_stage=1
 		if elapsed>=13. and remote_probe_stage==1 and not robot_switch_busy and active_robot_kind==probe_kind:
 			quick_travel(2);remote_probe_stage=2
-		if elapsed>=16. and remote_probe_stage==2:
-			_remote_probe_key(KEY_UP,elapsed<26.)
+		if remote_probe_stage==2 and elapsed>=16. and elapsed<26.:
+			_remote_probe_key(KEY_UP,true)
+			_remote_probe_key(KEY_LEFT,elapsed>=17. and elapsed<20.)
+			_remote_probe_key(KEY_RIGHT,elapsed>=21. and elapsed<24.)
 			_remote_probe_key(KEY_A,elapsed>=17. and elapsed<20.)
 			_remote_probe_key(KEY_D,elapsed>=21. and elapsed<24.)
-			if count%maxi(1,Engine.physics_ticks_per_second/5)==0:_remote_probe_sample()
+		elif remote_probe_stage==2 and elapsed>=26.:
+			_remote_probe_key(KEY_UP,false);_remote_probe_key(KEY_LEFT,false);_remote_probe_key(KEY_RIGHT,false);_remote_probe_key(KEY_A,false);_remote_probe_key(KEY_D,false);remote_probe_stage=3
+		if elapsed>=27. and remote_probe_stage==3 and not robot_switch_busy:
+			_remote_probe_key(KEY_F9,true);remote_probe_stage=4
+		if elapsed>=27.2 and remote_probe_stage==4:
+			_remote_probe_key(KEY_F9,false);remote_probe_stage=5
 	if manual and OS.get_environment("SAINIVERSE_DRIVE_PROBE")=="1":
 		if elapsed>=11. and elapsed<19.:Input.action_press("sainiverse_forward")
 		else:Input.action_release("sainiverse_forward")
@@ -551,6 +573,7 @@ func _physics_process(dt:float)->bool:
 		if sai_passenger.cockpit_demo:cockpit.set_physical_mode(true)
 		stage.add_child(sai_passenger)
 	if not parked_boarding_fixture or str(options.get("mode",""))=="sai_cockpit":cockpit.step(dt)
+	if manual and OS.get_environment("SAINIVERSE_REMOTE_PROBE")=="1" and remote_probe_stage>=2 and count%maxi(1,Engine.physics_ticks_per_second/5)==0:_remote_probe_sample()
 	_lifts(dt)
 	_ramps(dt)
 	if not parked_boarding_fixture:
