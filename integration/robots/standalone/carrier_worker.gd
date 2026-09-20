@@ -10,6 +10,11 @@ class Pacer extends Node:
 		if wait_usec>0:OS.delay_usec(wait_usec)
 		else:next_usec=Time.get_ticks_usec()
 
+class Watchdog extends Node:
+	var parent_pid:=0
+	func _process(_delta:float)->void:
+		if parent_pid>0 and not FileAccess.file_exists("/proc/%d/stat"%parent_pid):get_tree().quit()
+
 class Bridge extends Node:
 	var driver:Node3D
 	var inbound:=PacketPeerUDP.new()
@@ -47,10 +52,12 @@ func _start()->void:
 	Engine.physics_ticks_per_second=200
 	var receive_port:=0
 	var send_port:=0
+	var parent_pid:=0
 	var roller:=false
 	for arg in OS.get_cmdline_user_args():
 		if arg.begins_with("--receive-port="):receive_port=int(arg.trim_prefix("--receive-port="))
 		elif arg.begins_with("--send-port="):send_port=int(arg.trim_prefix("--send-port="))
+		elif arg.begins_with("--parent-pid="):parent_pid=int(arg.trim_prefix("--parent-pid="))
 		elif arg=="--roller":roller=true
 	if receive_port<1024 or send_port<1024:
 		push_error("MicroDuck worker requires local IPC ports")
@@ -67,3 +74,5 @@ func _start()->void:
 		driver.motion.settings.heading_hold=true
 	var bridge:=Bridge.new();bridge.configure(driver,receive_port,send_port);root.add_child(bridge)
 	root.add_child(Pacer.new())
+	if parent_pid>0:
+		var watchdog:=Watchdog.new();watchdog.parent_pid=parent_pid;root.add_child(watchdog)
