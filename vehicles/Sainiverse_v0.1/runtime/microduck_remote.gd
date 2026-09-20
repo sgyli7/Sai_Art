@@ -65,7 +65,7 @@ func _ready()->void:
 		session.error="MicroDuck 本地通信端口不可用"
 		return
 	send.set_dest_address("127.0.0.1",receive_port+1)
-	var arguments:=PackedStringArray(["--headless","--fixed-fps","200","--path",ProjectSettings.globalize_path("res://"),"--script","res://standalone/carrier_worker.gd","--","--receive-port="+str(receive_port+1),"--send-port="+str(receive_port)])
+	var arguments:=PackedStringArray(["--headless","--fixed-fps","200","--path",ProjectSettings.globalize_path("res://"),"--script","res://standalone/carrier_worker.gd","--","--receive-port="+str(receive_port+1),"--send-port="+str(receive_port),"--parent-pid="+str(OS.get_process_id())])
 	if mode_name=="roller":arguments.append("--roller")
 	worker_pid=OS.create_process(OS.get_executable_path(),arguments)
 	if worker_pid<=0:session.error="MicroDuck 200 Hz 进程启动失败"
