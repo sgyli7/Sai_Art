@@ -4,6 +4,7 @@ extends "res://standalone/driver.gd"
 var carrier: SceneTree
 var mode_name := "walk"
 var manual_input := false
+var manual_ground_on_carrier := false
 var spawn_source := Vector3(22.,0.,11.354)
 var spawn_world := Vector3(3.,0.,23.)
 var evidence: Array = []
@@ -40,7 +41,7 @@ func _handle(command:Variant) -> void:
 func _ground_height_at(body_pos:Array) -> float:
 	var body:RigidBody3D=carrier.bodies.front
 	var point:Vector3=_m2g(Vector3(body_pos[0],body_pos[1],body_pos[2]))
-	if manual_input:return carrier.height(point.x+carrier.origin.offset_x,-point.z-carrier.origin.offset_z)
+	if manual_input and not manual_ground_on_carrier:return carrier.height(point.x+carrier.origin.offset_x,-point.z-carrier.origin.offset_z)
 	var local:Vector3=body.to_local(point)
 	local.y=spawn_source.z-10.
 	return (body.global_transform*local).y

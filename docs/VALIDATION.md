@@ -30,6 +30,18 @@ errors. The [compact machine-readable results](../evidence/polar_game_validation
 record all six checks. These are local machine measurements, not a cross-hardware guarantee. The game checkout's
 `scripts/check_sainiverse_play.py` reproduces the input, route, and frame checks.
 
+The interactive follow-up exercised F1/F2/F3 after selecting each of the four
+robots in isolated checkouts. Half a second after each travel request, the
+measured distance from the requested spawn was 0.116 m for walking MicroDuck,
+0.121 m for roller MicroDuck, and 0.023–0.216 m for Sai 001/002. The MicroDuck
+sessions reported no fall and the Sai sessions no failure. A further F3→F1
+return worked for walking MicroDuck and Sai 001. Rendered 1920×1080 captures
+of the F3 MicroDuck and Sai 001 views showed each robot visible in the cockpit
+with the robot controls on the left. `python3 tests/check_interactions.py`
+exercises the actual Godot scripts for panel input, per-robot hints, and travel
+routing. These checks cover spawn placement and visible controls; they do not
+measure long autonomous travel after relocation.
+
 The unified launcher was checked at both levels. `run-native.sh --headless
 --scene polar_range --seconds 3` exited successfully after actually launching
 the Sainiverse Godot runtime; its report said `failed:false`. The headless

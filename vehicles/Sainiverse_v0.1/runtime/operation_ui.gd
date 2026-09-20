@@ -7,9 +7,13 @@ var root_panel:PanelContainer
 var body:VBoxContainer
 var scroll:ScrollContainer
 var status:Label
+var mode_hint:Label
 var sections:Dictionary={}
 var section_headers:Dictionary={}
 var controls:Dictionary={}
+var robot_skill_buttons:Dictionary={}
+var robot_held_keys:Dictionary={}
+var displayed_robot_kind:=""
 var events:Array=[]
 var crane_status:Label
 var lift_status:Label
@@ -57,9 +61,11 @@ func _build_ui()->void:
 	var collapse:=_button("SAINIVERSE_v0.1  ▾");collapse.size_flags_horizontal=Control.SIZE_EXPAND_FILL;collapse.alignment=HORIZONTAL_ALIGNMENT_LEFT;collapse.pressed.connect(func():panel_collapsed=not panel_collapsed;scroll.visible=not panel_collapsed;collapse.text="SAINIVERSE_v0.1  "+("▸" if panel_collapsed else "▾"));header.add_child(collapse)
 	var quit:=_button("退出");quit.custom_minimum_size.x=58;quit.pressed.connect(_quit);header.add_child(quit)
 	status=_label("SYSTEM ONLINE",14,MUTED);status.autowrap_mode=TextServer.AUTOWRAP_WORD_SMART;outer.add_child(status)
+	mode_hint=_label("",12,YELLOW);mode_hint.autowrap_mode=TextServer.AUTOWRAP_WORD_SMART;outer.add_child(mode_hint)
 	scroll=ScrollContainer.new();scroll.custom_minimum_size=Vector2(370,0);scroll.horizontal_scroll_mode=ScrollContainer.SCROLL_MODE_DISABLED;outer.add_child(scroll)
 	body=VBoxContainer.new();body.size_flags_horizontal=Control.SIZE_EXPAND_FILL;body.add_theme_constant_override("separation",6);scroll.add_child(body)
-	_build_drive();_build_robots();_build_crane();_build_lifts();_build_receiver();_build_view();_build_services();_build_help()
+	_build_drive();_build_robots();_build_robot_controls();_build_crane();_build_lifts();_build_receiver();_build_view();_build_services();_build_help()
+	_refresh_mode_layout()
 
 func _section(id:String,title:String,open:=false)->VBoxContainer:
 	var card:=VBoxContainer.new();card.add_theme_constant_override("separation",6);body.add_child(card)
@@ -102,6 +108,76 @@ func _build_robots()->void:
 	for item in [["F9 · Sainiverse","vehicle"],["F5 · MicroDuck","microduck"],["F6 · MD 轮滑","roller"],["F7 · Sai 001","sai001"],["F8 · Sai 002","sai002"]]:
 		var button:=_button(item[0]);button.pressed.connect(host.select_robot_mode.bind(item[1]));c.add_child(button)
 	c.add_child(_label("停车后切换；机器人控制器使用各自已验证的物理频率。",12,MUTED))
+
+func _robot_key(code:int,pressed:bool)->void:
+	if pressed and host.active_robot_kind=="vehicle":return
+	if robot_held_keys.has(code)==pressed:return
+	if pressed:robot_held_keys[code]=true
+	else:robot_held_keys.erase(code)
+	var event:=InputEventKey.new();event.physical_keycode=code;event.keycode=code;event.pressed=pressed
+	Input.parse_input_event(event)
+
+func _release_robot_keys()->void:
+	for code in robot_held_keys.keys():_robot_key(int(code),false)
+
+func _robot_hold(parent:Control,title:String,code:int)->void:
+	var button:=_button(title);button.size_flags_horizontal=Control.SIZE_EXPAND_FILL;parent.add_child(button)
+	button.button_down.connect(_robot_key.bind(code,true))
+	button.button_up.connect(_robot_key.bind(code,false))
+	button.mouse_exited.connect(func():_robot_key(code,false))
+
+func _robot_tap(action:String)->void:
+	if host.active_robot_kind in ["microduck","roller"] and host.patrol!=null:
+		host.patrol._add_tap(action)
+
+func _build_robot_controls()->void:
+	var c:=_section("robot_controls","机器人操控 ROBOT",false)
+	c.add_child(_label("按住方向键持续移动；松开即停止。",12,MUTED))
+	var row:=_row();c.add_child(row)
+	_robot_hold(row,"前进 W",KEY_W);_robot_hold(row,"后退 S",KEY_S)
+	row=_row();c.add_child(row)
+	_robot_hold(row,"左转 A",KEY_A);_robot_hold(row,"右转 D",KEY_D)
+	for item in [["stand","站立 7"],["pick","捡地 1"],["sit","坐下 2"],["kick_left","左踢 3"],["kick_right","右踢 4"],["roulade","前滚 5"],["reset","复位 0"]]:
+		var button:=_button(item[1]);button.pressed.connect(_robot_tap.bind(str(item[0])));robot_skill_buttons[str(item[0])]=button;c.add_child(button)
+	c.add_child(_label("快速移动：F1 车旁雪地 · F2 甲板 · F3 驾驶舱",12,YELLOW))
+	row=_row();c.add_child(row)
+	for item in [[1,"F1 雪地"],[2,"F2 甲板"],[3,"F3 驾驶舱"]]:
+		var button:=_button(item[1]);button.size_flags_horizontal=Control.SIZE_EXPAND_FILL
+		button.pressed.connect(host.quick_travel.bind(int(item[0])));row.add_child(button)
+	var home:=_button("F9 · 返回 Sainiverse");home.pressed.connect(host.select_robot_mode.bind("vehicle"));c.add_child(home)
+
+func _refresh_mode_layout()->void:
+	var kind:String=host.active_robot_kind
+	if kind==displayed_robot_kind:return
+	_release_robot_keys()
+	displayed_robot_kind=kind
+	var vehicle:bool=kind=="vehicle"
+	for id in ["drive","crane","lifts","receiver","services"]:
+		sections[id].get_parent().visible=vehicle
+	sections["robot_controls"].get_parent().visible=not vehicle
+	sections["robot_controls"].visible=not vehicle
+	section_headers["robot_controls"].text=("▾ " if not vehicle else "▸ ")+"机器人操控 ROBOT"
+	for id in ["drive","crane","lifts","receiver","services"]:
+		sections[id].visible=false
+		section_headers[id].text="▸ "+str(section_headers[id].get_meta("title",id))
+	var md:bool=kind=="microduck"
+	var roller:bool=kind=="roller"
+	for action in robot_skill_buttons:
+		robot_skill_buttons[action].visible=(md or roller) and (action in ["stand","sit","reset"] or md)
+	robot_skill_buttons["sit"].text="下蹲滑行 2" if roller else "坐下 2"
+	var help:Label=sections["help"].get_child(0)
+	if vehicle:
+		mode_hint.text="W/S 驾驶 · A/D 转向 · 空格制动；F5–F8 切换机器人。"
+		help.text="鼠标：展开分组、选择设备、拖动驾驶滑杆；吊机按钮需按住。\nF5/F6/F7/F8 切换机器人，F9 返回母车；停车后切换。\nW/S 前后行驶，A/D 转向；右键环视 · 滚轮缩放 · Tab 切换视角。"
+	elif md:
+		mode_hint.text="MicroDuck：W/S 移动 · A/D 转向 · 1 捡地 · 2 坐下 · 3/4 踢球 · 5 前滚。F1–F3 快速移动，F9 返回母车。"
+		help.text="MicroDuck：W/S 前后，A/D 转向，Q/E 平移，空格待机；1 捡地、2 坐下、3/4 踢球、5 前滚、7 站立、0 复位。\nF1 车旁雪地 · F2 甲板 · F3 驾驶舱；F9 返回 Sainiverse。"
+	elif roller:
+		mode_hint.text="MD 轮滑：W/S 滑行与制动 · A/D 转向 · 2 下蹲滑行。F1–F3 快速移动，F9 返回母车。"
+		help.text="MD 轮滑：W/S 滑行与制动，A/D 转向，空格待机；2 下蹲滑行、7 站立、0 复位。\nF1 车旁雪地 · F2 甲板 · F3 驾驶舱；F9 返回 Sainiverse。"
+	else:
+		mode_hint.text="%s：W/S 前后移动 · A/D 转向。F1–F3 快速移动，F9 返回母车。"%["Sai 002" if kind=="sai002" else "Sai 001"]
+		help.text="Sai Robot：W/S 前后移动，A/D 转向；F1 车旁雪地 · F2 甲板 · F3 驾驶舱；F9 返回 Sainiverse。"
 
 func _build_crane()->void:
 	var c:=_section("crane","吊机 CRANE",false)
@@ -168,6 +244,7 @@ func _quit()->void:host.options.seconds=host.elapsed+.02;host.manual=false;host.
 
 func refresh()->void:
 	if host==null or not host.camera_ready:return
+	_refresh_mode_layout()
 	if str(host.options.get("mode",""))=="ui_test":_exercise_routes()
 	# Stay compact while sections are folded, then cap the open menu to the
 	# viewport so every control remains reachable by scrolling at 720p.
