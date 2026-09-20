@@ -8,10 +8,30 @@ const PALETTE := {
 }
 var materials: Dictionary = {}
 var parts: Dictionary = {}
+var _robot: Node = null
 
 func apply(server: Node) -> void:
 	if DisplayServer.get_name() == "headless":
 		return
+	_setup_materials()
+	# Exact compiled-scene identities avoid applying old mesh IDs to a new robot.
+	parts = _catalog_parts(server._robot_scene)
+	if server._robot != null:
+		_paint(server._robot, server)
+	_tone_environment(server)
+	_tone_floor(server)
+	server.set_meta("microduck_visual_style", true)
+
+func apply_robot(robot: Node, robot_scene: String) -> void:
+	# Avatar-only paint. Does not retone the host carrier scene.
+	_setup_materials()
+	parts = _catalog_parts(robot_scene)
+	_robot = robot
+	if robot != null:
+		_paint(robot, self)
+		robot.set_meta("microduck_visual_style", true)
+
+func _setup_materials() -> void:
 	var enamel: Shader = load("res://visuals/microduck/enamel.gdshader")
 	var ink: Shader = load("res://visuals/microduck/ink.gdshader")
 	for key in PALETTE:
@@ -25,21 +45,56 @@ func apply(server: Node) -> void:
 			outline.set_shader_parameter("line_pixels", 0.60)
 			mat.next_pass = outline
 		materials[key] = mat
-	# Exact compiled-scene identities avoid applying old mesh IDs to a new robot.
-	var catalog: Dictionary = JSON.parse_string(FileAccess.get_file_as_string("res://visuals/microduck/robot_parts.json"))
-	parts = catalog.get(FileAccess.get_sha256(server._robot_scene), {})
-	if server._robot != null:
-		_paint(server._robot, server)
-	_tone_environment(server)
-	_tone_floor(server)
-	server.set_meta("microduck_visual_style", true)
 
-func _paint(node: Node, server: Node) -> void:
+func _catalog_parts(robot_scene: String) -> Dictionary:
+	var parsed: Variant = JSON.parse_string(FileAccess.get_file_as_string("res://visuals/microduck/robot_parts.json"))
+	if parsed is Dictionary:
+		return parsed.get(FileAccess.get_sha256(robot_scene), {})
+	return {}
+
+func _mesh_id(mi: MeshInstance3D) -> int:
+	var tokens := str(mi.name).split("_")
+	if tokens.size() > 0 and tokens[-1].is_valid_int():
+		return int(tokens[-1])
+	return -1
+
+func _paint_role_for_node(mi: MeshInstance3D) -> String:
+	var id := _mesh_id(mi)
+	if id == 57:
+		return "trim"
+	if id in [50, 59]:
+		return "shell"
+	if id in [51, 52, 53]:
+		return "accent"
+	if id in [43, 44, 45, 46, 47, 48, 54, 55, 60, 61]:
+		return "mech"
+	if id in [28, 30, 31, 32, 77, 78, 80, 81]:
+		return "accent" if id % 2 == 1 else "trim"
+	var p := mi.get_parent()
+	var pname := ""
+	while p != null and p != _robot:
+		pname = str(p.name).to_lower()
+		if p is RigidBody3D:
+			break
+		p = p.get_parent()
+	if pname == "jaw_soft":
+		return "shell"
+	if pname in ["neck", "neck_pitch"]:
+		return "mech"
+	if pname in ["yaw_roll_motion", "yaw2roll", "bearing_roll"]:
+		return "shell"
+	if pname in ["ankle_left", "ankle_right"]:
+		return "accent"
+	if pname in ["trunk_base", "hip_l", "hip_l_2", "upper_leg_left", "upper_leg_right", "leg", "leg_2"]:
+		return "shell"
+	return "shell"
+
+func _paint(node: Node, painter: Object) -> void:
 	if node is MeshInstance3D and str(node.name).begins_with("vis_"):
 		var mesh_instance := node as MeshInstance3D
-		var role: String = server._paint_role_for_node(mesh_instance)
+		var role: String = painter._paint_role_for_node(mesh_instance)
 		var key: String = {"shell":"graphite", "trim":"yellow", "accent":"purple", "mech":"rubber"}.get(role, "graphite")
-		var part: String = parts.get(str(server._mesh_id(mesh_instance)), "")
+		var part: String = parts.get(str(painter._mesh_id(mesh_instance)), "")
 		if not part.is_empty():
 			key = "graphite"
 			if part in ["jaw", "soft_mouth_top"]:
@@ -61,7 +116,7 @@ func _paint(node: Node, server: Node) -> void:
 			for surface in range(mesh_instance.mesh.get_surface_count()):
 				mesh_instance.set_surface_override_material(surface, mat)
 	for child in node.get_children():
-		_paint(child, server)
+		_paint(child, painter)
 
 func _tone_environment(server: Node) -> void:
 	var world_environment := server.get_node_or_null("WorldEnvironment") as WorldEnvironment
