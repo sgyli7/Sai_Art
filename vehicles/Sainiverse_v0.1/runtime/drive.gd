@@ -203,7 +203,7 @@ func _quick_destination(index:int,kind:String)->Dictionary:
 		var ground:=Vector3(0.,0.,25.5)
 		ground.y=height(ground.x+origin.offset_x,-ground.z-origin.offset_z)
 		return {"world":ground,"source":Vector3.ZERO,"carrier_surface":false,"basis":Basis(Vector3.UP,PI/2.)}
-	var source:Vector3=Vector3(-12.,-11.5,7.454) if index==2 else Vector3(30.90,-1.58,12.25) if kind in ["sai001","sai002"] else Vector3(25.,0.,11.354)
+	var source:Vector3=Vector3(-12.,-12.5,7.454) if index==2 else Vector3(30.90,-1.58,12.25) if kind in ["sai001","sai002"] else Vector3(25.,0.,11.354)
 	return {"world":bodies.front.global_transform*local_source([source.x,source.y,source.z]),
 		"source":source,"carrier_surface":true,"basis":Basis.IDENTITY if index==3 else Basis(Vector3.UP,PI/2.)}
 
@@ -425,7 +425,7 @@ func _physics_process(dt:float)->bool:
 			Engine.max_physics_steps_per_frame=16
 		patrol=load(HERE+"/runtime/microduck_patrol.gd").new();patrol.carrier=self
 		patrol.mode_name="walk" if str(options.mode) in ["cabin_patrol","cockpit_patrol"] else "roller"
-		patrol.spawn_source=Vector3(25.,0.,11.354) if str(options.mode)=="cabin_patrol" else Vector3(29.4,0.,11.354) if str(options.mode)=="cockpit_patrol" else Vector3(-12.,-11.5,7.454)
+		patrol.spawn_source=Vector3(25.,0.,11.354) if str(options.mode)=="cabin_patrol" else Vector3(29.4,0.,11.354) if str(options.mode)=="cockpit_patrol" else Vector3(-12.,-12.5,7.454)
 		stage.add_child(patrol)
 		if str(options.mode)=="worksite":
 			var layer:=CanvasLayer.new();stage.add_child(layer)
@@ -488,8 +488,12 @@ func _manual_robot_camera(target:Vector3)->void:
 	if active_quick_location==1:
 		var moved:bool=false
 		if not quick_travel_history.is_empty():
-			var start:Array=quick_travel_history[-1].target_world
-			moved=target.distance_to(Vector3(float(start[0]),float(start[1]),float(start[2])))>1.5
+			var travel:Dictionary=quick_travel_history[-1]
+			var start:Array=travel.target_world
+			var distance:float=target.distance_to(Vector3(float(start[0]),float(start[1]),float(start[2])))
+			# A reset can take several frames. The old location is not player movement.
+			if distance<.6:travel["f1_arrived"]=true
+			moved=bool(travel.get("f1_arrived",false)) and distance>1.5
 		if moved or Input.is_action_pressed("sainiverse_forward") or Input.is_action_pressed("sainiverse_reverse") or Input.is_action_pressed("sainiverse_left") or Input.is_action_pressed("sainiverse_right"):
 			active_quick_location=0
 		else:
@@ -498,6 +502,11 @@ func _manual_robot_camera(target:Vector3)->void:
 			camera.global_position=whole+bodies.front.global_basis*Vector3(95.,54.,105.)
 			camera.look_at(whole,Vector3.UP)
 			return
+	if active_quick_location==2:
+		# Stay over the walking lane, below the roof and inside the outer guardrail.
+		camera.global_position=target+bodies.front.global_basis*Vector3(2.,.85,-.25)
+		camera.look_at(target,Vector3.UP)
+		return
 	if active_quick_location==3:
 		camera.global_position=target+bodies.front.global_basis*Vector3(-.9,.85,.95)
 		camera.look_at(target,Vector3.UP)
