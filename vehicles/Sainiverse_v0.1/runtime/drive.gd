@@ -58,7 +58,7 @@ const QUICK_LOCATION_NAMES:Dictionary={1:"车旁雪地",2:"甲板",3:"驾驶舱"
 
 func _build()->void:
 	manual=str(options.get("mode","manual")) in ["manual","ui_test","lift_preview_cycle"]
-	if str(options.get("mode",""))=="sai_cockpit":options.seconds=minf(float(options.seconds),14.45)
+	if str(options.get("mode",""))=="sai_cockpit":options.seconds=minf(float(options.seconds),13.97)
 	requested_drive_speed=float(options.get("speed",0.))
 	if OS.has_environment("SAINIVERSE_SWITCH_PROBE") and OS.get_environment("SAINIVERSE_SWITCH_PROBE")!="":switch_probe_sequence=OS.get_environment("SAINIVERSE_SWITCH_PROBE").split(",")
 	if OS.has_environment("SAINIVERSE_TRAVEL_PROBE") and OS.get_environment("SAINIVERSE_TRAVEL_PROBE")!="":travel_probe_sequence=OS.get_environment("SAINIVERSE_TRAVEL_PROBE").split(",")
@@ -503,7 +503,7 @@ func _camera()->void:
 	if sai_passenger!=null and sai_passenger.robot!=null:
 		var target:Vector3=sai_passenger.robot.bodies.chassis.global_position+Vector3.UP*.2
 		if sai_passenger.cockpit_demo:
-			var grip:Vector3=bodies.cockpit_steer.global_transform*vec([-0.13,-0.20,-0.11])
+			var grip:Vector3=bodies.cockpit_steer.global_transform*vec([-.028,-.215,-.075])
 			camera.projection=Camera3D.PROJECTION_PERSPECTIVE;camera.near=.015;camera.fov=60.
 			camera.global_position=bodies.front.global_transform*local_source([30.55,-2.35,13.2])
 			camera.look_at(target.lerp(grip,.55),Vector3.UP)
@@ -572,7 +572,7 @@ func _process(dt:float)->bool:
 	if pv_caption!=null:
 		var phase:String=str(options.get("mode","review"))
 		if phase=="cockpit_patrol":phase="MICRODUCK / COCKPIT PATROL"
-		if sai_passenger!=null:phase="SAI ARM / PHYSICAL STEERING" if sai_passenger.cockpit_demo else "SAI BOARDING / "+sai_passenger.phase.to_upper()
+		if sai_passenger!=null:phase="SAI ARM / ORIGINAL COCKPIT CONTROL" if sai_passenger.cockpit_demo else "SAI BOARDING / "+sai_passenger.phase.to_upper()
 		pv_caption.text="Sainiverse_v0.1  |  "+phase+"\nSimulation  %.1f s"%elapsed
 	if camera_ready:
 		if cam_mode==4:
