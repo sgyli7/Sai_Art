@@ -2,6 +2,7 @@ extends SceneTree
 class FakePatrol extends Node:
 	var taps:Array=[]
 	func _add_tap(action:String)->void:taps.append(action)
+	func set_destination(_destination:Dictionary)->void:pass
 
 var options := {"clean_capture":false,"mode":"manual"}
 var equipment := {"rig":{"cranes":[{"hull":"rear"}]}}
@@ -44,11 +45,15 @@ func _run()->void:
 	ui.refresh()
 	var vehicle_card:Control=ui.sections["drive"].get_parent()
 	var help:Label=ui.sections["help"].get_child(0)
-	if vehicle_card.visible:
-		printerr("FAIL: vehicle drive controls remain visible while MicroDuck is active")
+	if not vehicle_card.visible or not ui.sections["drive"].visible:
+		printerr("FAIL: vehicle drive controls are hidden while MicroDuck is active")
 		quit(1);return
-	if not help.text.contains("捡地"):
-		printerr("FAIL: MicroDuck control hints are absent")
+	if not help.text.contains("捡地") or not help.text.contains("方向键"):
+		printerr("FAIL: simultaneous MicroDuck and carrier control hints are absent")
+		quit(1);return
+	ui._toggle_section("robots","驾驶对象 ROBOTS")
+	if not ui.sections["drive"].visible or not ui.sections["robot_controls"].visible:
+		printerr("FAIL: opening another section hides simultaneous controls")
 		quit(1);return
 	var forward:=_find_button(ui.sections["robot_controls"],"前进 W")
 	if forward==null:
@@ -73,7 +78,7 @@ func _run()->void:
 		printerr("FAIL: MicroDuck skill button did not reach its controller")
 		quit(1);return
 	active_robot_kind="roller";ui.refresh()
-	if not help.text.contains("下蹲滑行") or vehicle_card.visible:
+	if not help.text.contains("下蹲滑行") or not vehicle_card.visible:
 		printerr("FAIL: roller-specific controls are absent")
 		quit(1);return
 	active_robot_kind="sai001";ui.refresh()
