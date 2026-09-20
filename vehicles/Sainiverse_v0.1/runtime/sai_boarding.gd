@@ -113,7 +113,7 @@ func _physics_process(_delta:float)->void:
 	if robot.tick%maxi(1,Engine.physics_ticks_per_second/50)==0:
 		if phase!=logged_phase:
 			print("SAI_BOARDING_PHASE ",phase," t=",carrier.elapsed);logged_phase=phase;phase_times[phase]=carrier.elapsed
-			if carrier.elapsed>11.:carrier._capture("sai_"+phase)
+			if carrier.elapsed>11. and str(carrier.options.get("capture","false"))=="true":carrier._capture("sai_"+phase)
 		state.robot_id=robot_id;state.command=movement_command();state.terrain_heights=height_scan();state.physics_owner="Godot/Jolt"
 		command=exchange(state)
 		var base:RigidBody3D=robot.bodies.chassis

@@ -4,8 +4,9 @@ static func vec(a:Array)->Vector3:return Vector3(a[0],a[2],-a[1])
 static func attach(body:CollisionObject3D,config:Dictionary)->int:
 	var datum:Vector3=vec(config.datum_source_m)
 	body.collision_layer=int(config.layer);body.collision_mask=int(config.mask)
-	var material:=PhysicsMaterial.new();material.friction=float(config.get("friction_coefficient",.8));material.bounce=0.
-	body.set("physics_material_override",material)
+	if not bool(config.get("preserve_body_material",false)):
+		var material:=PhysicsMaterial.new();material.friction=float(config.get("friction_coefficient",.8));material.bounce=0.
+		body.set("physics_material_override",material)
 	for item in config.shapes:
 		var node:=CollisionShape3D.new();node.name="contact_"+str(item.name)
 		if item.type=="box":
