@@ -198,7 +198,9 @@ func select_robot_mode(kind:String)->void:
 
 func _quick_destination(index:int,kind:String)->Dictionary:
 	if index==1:
-		var ground:=Vector3(3.,0.,103.)
+		# Near the front boarding lift; the first camera view still frames the
+		# complete 130 m carrier before returning to robot follow on movement.
+		var ground:=Vector3(0.,0.,25.5)
 		ground.y=height(ground.x+origin.offset_x,-ground.z-origin.offset_z)
 		return {"world":ground,"source":Vector3.ZERO,"carrier_surface":false,"basis":Basis(Vector3.UP,PI/2.)}
 	var source:Vector3=Vector3(-12.,-11.5,7.454) if index==2 else Vector3(30.90,-1.58,12.25) if kind in ["sai001","sai002"] else Vector3(25.,0.,11.354)
@@ -483,6 +485,19 @@ func _physics_process(dt:float)->bool:
 
 func _manual_robot_camera(target:Vector3)->void:
 	camera.projection=Camera3D.PROJECTION_PERSPECTIVE;camera.near=.015;camera.far=3500.;camera.fov=48.
+	if active_quick_location==1:
+		var moved:bool=false
+		if not quick_travel_history.is_empty():
+			var start:Array=quick_travel_history[-1].target_world
+			moved=target.distance_to(Vector3(float(start[0]),float(start[1]),float(start[2])))>1.5
+		if moved or Input.is_action_pressed("sainiverse_forward") or Input.is_action_pressed("sainiverse_reverse") or Input.is_action_pressed("sainiverse_left") or Input.is_action_pressed("sainiverse_right"):
+			active_quick_location=0
+		else:
+			var whole:Vector3=(bodies.front.global_position+bodies.tail.global_position)*.5+Vector3.UP*4.
+			camera.fov=50.;camera.near=.08
+			camera.global_position=whole+bodies.front.global_basis*Vector3(95.,54.,105.)
+			camera.look_at(whole,Vector3.UP)
+			return
 	if active_quick_location==3:
 		camera.global_position=target+bodies.front.global_basis*Vector3(-.9,.85,.95)
 		camera.look_at(target,Vector3.UP)

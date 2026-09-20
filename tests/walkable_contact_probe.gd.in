@@ -1,0 +1,48 @@
+extends "@DRIVE_SCRIPT@"
+
+func _build()->void:
+	super._build()
+	for body in bodies.values():body.freeze=true
+	call_deferred("_check_contacts")
+
+func _check_contacts()->void:
+	await physics_frame
+	var checks:Dictionary=JSON.parse_string(FileAccess.get_file_as_string(str(options.checks)))
+	var failures:Array=[]
+	var tested:=0
+	var front_material:PhysicsMaterial=bodies.front.physics_material_override
+	if front_material==null or absf(front_material.friction-.8)>.0001:
+		failures.append({"name":"front_material","reason":"carrier_friction_changed"})
+	for name in ["rear","tail"]:
+		if bodies[name].physics_material_override!=null:
+			failures.append({"name":name+"_material","reason":"carrier_friction_changed"})
+	for item in checks.cases:
+		var body:RigidBody3D=bodies[str(item.body)]
+		var datum:Array=checks.datums[str(item.body)]
+		var start:Vector3=body.global_transform*(vec(item.start)-vec(datum))
+		var finish:Vector3=body.global_transform*(vec(item.finish)-vec(datum))
+		var query:=PhysicsRayQueryParameters3D.create(start,finish,8)
+		var hit:Dictionary=stage.get_world_3d().direct_space_state.intersect_ray(query)
+		tested+=1
+		if hit.is_empty():
+			failures.append({"name":item.name,"reason":"no_collision"})
+			continue
+		var expected:Vector3=body.global_transform*(vec(item.expected)-vec(datum))
+		if hit.position.distance_to(expected)>float(item.tolerance):
+			failures.append({"name":item.name,"reason":"wrong_surface","error_m":hit.position.distance_to(expected),"collider":str(hit.collider.name)})
+	if bool(checks.get("dynamic",false)):
+		var front:RigidBody3D=bodies.front
+		var datum:Array=checks.datums.front
+		var walker:=RigidBody3D.new();walker.name="RailCrossingProbe";walker.mass=20.
+		walker.gravity_scale=0.;walker.linear_damp=0.;walker.collision_layer=16;walker.collision_mask=8
+		var collider:=CollisionShape3D.new();var sphere:=SphereShape3D.new();sphere.radius=.22
+		collider.shape=sphere;walker.add_child(collider);stage.add_child(walker)
+		walker.global_position=front.global_transform*(vec([22.3,-4.60,11.70])-vec(datum))
+		await physics_frame
+		walker.linear_velocity=front.global_basis*Vector3(0.,0.,4.)
+		for frame in range(50):await physics_frame
+		var crossing_y:float=-front.to_local(walker.global_position).z
+		tested+=1
+		if crossing_y< -4.95:failures.append({"name":"bridge_outer_rail_dynamic","reason":"walker_crossed_guard","source_y_m":crossing_y})
+	print("WALKABLE_CONTACT_PROBE ",JSON.stringify({"tested":tested,"failed":failures.size(),"failures":failures}))
+	quit(0 if failures.is_empty() else 1)
