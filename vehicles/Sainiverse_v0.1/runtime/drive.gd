@@ -45,6 +45,10 @@ var robot_switch_message_until:=0.0
 var robot_switch_history:Array=[]
 var quick_travel_history:Array=[]
 var active_quick_location:=0
+var f1_panorama_dragged:=false
+var f1_panorama_yaw:=0.
+var f1_panorama_pitch:=0.
+var f1_panorama_radius:=0.
 var travel_probe_sequence:PackedStringArray=PackedStringArray()
 var last_travel_probe_index:=-1
 var switch_probe_sequence:PackedStringArray=PackedStringArray()
@@ -166,6 +170,25 @@ func _build()->void:
 	world_surface.physics_interpolation_mode=Node.PHYSICS_INTERPOLATION_MODE_OFF
 	_camera()
 
+func _enable_f1_panorama_orbit()->void:
+	if f1_panorama_dragged:return
+	var initial:=Vector3(95.,54.,105.)
+	f1_panorama_yaw=atan2(initial.z,initial.x)
+	f1_panorama_pitch=asin(initial.y/initial.length())
+	f1_panorama_radius=initial.length()
+	f1_panorama_dragged=true
+
+func _release_quick_robot_camera()->void:
+	if active_quick_location not in [2,3]:return
+	var remote_view:bool=patrol!=null and patrol.has_method("set_destination")
+	var robot_target:Vector3=manual_camera_target if remote_view and manual_camera_target_valid else _selected_robot_position()+Vector3.UP*(.2 if active_robot_kind in ["sai001","sai002"] else .1)
+	var view_offset:Vector3=camera.global_position-robot_target
+	if view_offset.length()>.2:
+		orbit_radius=clampf(view_offset.length(),.75,12.)
+		orbit_yaw=atan2(view_offset.z,view_offset.x)
+		orbit_pitch=asin(clampf(view_offset.y/view_offset.length(),-1.,1.))
+	active_quick_location=0
+
 func handle_input(event:InputEvent)->void:
 	if not camera_ready or not manual:return
 	if not switch_probe_sequence.is_empty() or OS.get_environment("SAINIVERSE_DRIVE_PROBE")=="1":
@@ -183,10 +206,21 @@ func handle_input(event:InputEvent)->void:
 	if active_robot_kind=="vehicle":cockpit.input(event)
 	if event is InputEventMouseButton:
 		if event.button_index==MOUSE_BUTTON_RIGHT:mouse_drag=event.pressed
-		if event.pressed and event.button_index==MOUSE_BUTTON_WHEEL_UP:orbit_radius=maxf(4.,orbit_radius*.88)
-		if event.pressed and event.button_index==MOUSE_BUTTON_WHEEL_DOWN:orbit_radius=minf(600.,orbit_radius/ .88)
+		if event.pressed and event.button_index in [MOUSE_BUTTON_WHEEL_UP,MOUSE_BUTTON_WHEEL_DOWN]:
+			if active_robot_kind!="vehicle":
+				if active_quick_location==1:_enable_f1_panorama_orbit()
+				else:_release_quick_robot_camera()
+			var factor:float=.88 if event.button_index==MOUSE_BUTTON_WHEEL_UP else 1./.88
+			if active_quick_location==1:f1_panorama_radius=clampf(f1_panorama_radius*factor,50.,350.)
+			else:orbit_radius=clampf(orbit_radius*factor,4. if active_robot_kind=="vehicle" else .75,600.)
 	if event is InputEventMouseMotion and mouse_drag:
-		orbit_yaw-=event.relative.x*.004;orbit_pitch=clampf(orbit_pitch+event.relative.y*.003,-1.35,1.35)
+		if active_robot_kind!="vehicle" and active_quick_location==1:
+			_enable_f1_panorama_orbit()
+			f1_panorama_yaw-=event.relative.x*.004
+			f1_panorama_pitch=clampf(f1_panorama_pitch+event.relative.y*.003,-1.35,1.35)
+		else:
+			if active_robot_kind!="vehicle":_release_quick_robot_camera()
+			orbit_yaw-=event.relative.x*.004;orbit_pitch=clampf(orbit_pitch+event.relative.y*.003,-1.35,1.35)
 	if active_robot_kind!="vehicle" and event is InputEventMouse and (mouse_drag or event is InputEventMouseButton):stage.get_viewport().set_input_as_handled()
 	if event is InputEventKey and event.pressed and not event.echo:
 		match event.physical_keycode:
@@ -224,6 +258,7 @@ func quick_travel(index:int)->void:
 		return
 	var destination:=_quick_destination(index,active_robot_kind)
 	active_quick_location=index
+	f1_panorama_dragged=false
 	if operation_ui!=null:operation_ui._release_robot_keys()
 	robot_switch_message="快速移动："+QUICK_LOCATION_NAMES[index]
 	robot_switch_message_until=elapsed+2.
@@ -279,6 +314,7 @@ func _remote_probe_sample()->void:
 
 func _switch_robot_mode(kind:String)->void:
 	active_quick_location=0
+	f1_panorama_dragged=false
 	var ground_destination:Dictionary=_quick_destination(1,kind) if kind!="vehicle" else {}
 	manual_camera_target_valid=false
 	manual_camera_last_usec=0
@@ -565,7 +601,10 @@ func _manual_robot_camera(target:Vector3)->void:
 			var tail_position:Vector3=bodies.tail.get_global_transform_interpolated().origin if remote_view else bodies.tail.global_position
 			var whole:Vector3=(front_position+tail_position)*.5+Vector3.UP*4.
 			camera.fov=50.;camera.near=.08
-			camera.global_position=whole+carrier_basis*Vector3(95.,54.,105.)
+			var panorama_offset:=Vector3(95.,54.,105.)
+			if f1_panorama_dragged:
+				panorama_offset=Vector3(cos(f1_panorama_pitch)*cos(f1_panorama_yaw),sin(f1_panorama_pitch),cos(f1_panorama_pitch)*sin(f1_panorama_yaw))*f1_panorama_radius
+			camera.global_position=whole+carrier_basis*panorama_offset
 			camera.look_at(whole,Vector3.UP)
 			_record_camera_motion(whole)
 			return
