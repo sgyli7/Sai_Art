@@ -3,7 +3,9 @@ extends "@DRIVE_SCRIPT@"
 class FakePatrol extends Node3D:
 	var spawn_world:=Vector3.ZERO
 	var spawn_source:=Vector3.ZERO
+	var manual_input:=false
 	var manual_ground_on_carrier:=false
+	var session:Dictionary={"first_fall":null,"error":""}
 	var _base:Node3D
 	var _taps:Array=[]
 	func _ready()->void:_base=Node3D.new();add_child(_base)
@@ -16,6 +18,18 @@ class RemotePatrol extends Node3D:
 	var _base:Node3D
 	func _ready()->void:_base=Node3D.new();add_child(_base)
 	func set_destination(value:Dictionary)->void:destination=value
+
+class FakeCockpit:
+	var ui_axes:={"throttle":1.,"steer":1.,"brake":1.}
+
+var last_md_script:=""
+var inspected_md:Node=null
+func _make_manual_md(kind:String)->Node:
+	last_md_script=_manual_md_script(kind)
+	if inspected_md!=null:inspected_md.free();inspected_md=null
+	inspected_md=load(last_md_script).new()
+	var fake:=FakePatrol.new();fake.manual_input=true
+	return fake
 
 var captured_sai_destination:Dictionary={}
 func _respawn_sai_at(_kind:String,destination:Dictionary)->void:
@@ -117,4 +131,41 @@ func _run_probe()->void:
 			printerr("FAIL: mouse wheel does not zoom the MD camera after F",station)
 			quit(1);return
 	print("PASS: F1–F3 respawns and MD right-drag/zoom camera controls")
+	cockpit=FakeCockpit.new()
+	OS.set_environment("SAINIVERSE_REMOTE_MD_PREVIEW","")
+	if _manual_md_remote_preview("microduck") or _manual_md_remote_preview("roller"):
+		printerr("FAIL: default manual MD used the remote preview worker")
+		quit(1);return
+	await _switch_robot_mode("microduck")
+	if Engine.physics_ticks_per_second!=200 or Engine.max_physics_steps_per_frame!=16 or not bodies.front.freeze or not parked_patrol_fixture or physics_interpolation:
+		printerr("FAIL: default F5 MicroDuck is not the parked 200 Hz patrol fixture")
+		quit(1);return
+	if cockpit.ui_axes.throttle!=0. or not str(last_md_script).ends_with("microduck_patrol.gd"):
+		printerr("FAIL: default F5 did not instantiate microduck_patrol.gd")
+		quit(1);return
+	if inspected_md==null or inspected_md.has_method("set_destination") or inspected_md.get_script()==null or not str(inspected_md.get_script().resource_path).ends_with("microduck_patrol.gd"):
+		printerr("FAIL: default manual MD instance is not microduck_patrol.gd")
+		quit(1);return
+	await _switch_robot_mode("roller")
+	if Engine.physics_ticks_per_second!=200 or not bodies.front.freeze or not parked_patrol_fixture or not str(last_md_script).ends_with("microduck_patrol.gd"):
+		printerr("FAIL: default F6 roller is not the collidable patrol fixture")
+		quit(1);return
+	OS.set_environment("SAINIVERSE_REMOTE_MD_PREVIEW","1")
+	if _manual_md_remote_preview("sai001") or _manual_md_remote_preview("vehicle"):
+		printerr("FAIL: remote MD preview leaked onto a non-MicroDuck mode")
+		quit(1);return
+	cockpit.ui_axes={"throttle":1.,"steer":1.,"brake":1.}
+	await _switch_robot_mode("microduck")
+	if Engine.physics_ticks_per_second!=60 or Engine.max_physics_steps_per_frame!=12 or bodies.front.freeze or parked_patrol_fixture or not physics_interpolation:
+		printerr("FAIL: SAINIVERSE_REMOTE_MD_PREVIEW did not restore the remote MD runtime")
+		quit(1);return
+	if cockpit.ui_axes.throttle!=1. or not str(last_md_script).ends_with("microduck_remote.gd"):
+		printerr("FAIL: remote MD preview did not instantiate microduck_remote.gd")
+		quit(1);return
+	if inspected_md==null or not inspected_md.has_method("set_destination") or not inspected_md.has_method("apply_visual_style") or inspected_md.get_script()==null or not str(inspected_md.get_script().resource_path).ends_with("microduck_remote.gd"):
+		printerr("FAIL: remote MD preview instance is not microduck_remote.gd")
+		quit(1);return
+	OS.set_environment("SAINIVERSE_REMOTE_MD_PREVIEW","")
+	if inspected_md!=null:inspected_md.free();inspected_md=null
+	print("PASS: default manual MD uses patrol; remote preview is opt-in")
 	quit(0)
