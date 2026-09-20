@@ -16,7 +16,12 @@ func _physics_process(_dt:float)->bool:return false
 
 func _run_probe()->void:
 	stage=Node3D.new();root.add_child(stage)
-	bodies={"front":RigidBody3D.new()};stage.add_child(bodies.front)
+	bodies={"front":RigidBody3D.new(),"tail":RigidBody3D.new()}
+	for body in bodies.values():stage.add_child(body)
+	bodies.tail.position=Vector3(-84.,0.,0.)
+	camera=Camera3D.new();stage.add_child(camera)
+	for action in ["sainiverse_forward","sainiverse_reverse","sainiverse_left","sainiverse_right"]:
+		if not InputMap.has_action(action):InputMap.add_action(action)
 	spec={"contact":{"interior":{"datum_source_m":[0.,0.,0.]}}}
 	patrol=FakePatrol.new();stage.add_child(patrol)
 	active_robot_kind="microduck";manual=true;camera_ready=true
@@ -29,12 +34,17 @@ func _run_probe()->void:
 		if key==KEY_F1 and (absf(patrol.spawn_world.x)>.001 or absf(patrol.spawn_world.z-25.5)>.001 or patrol.manual_ground_on_carrier):
 			printerr("FAIL: F1 snow spawn is not beside the front boarding lift")
 			quit(1);return
+		if key==KEY_F1:
+			_manual_robot_camera(Vector3(3.,0.,103.)) # Old robot pose before reset completes.
+			if active_quick_location!=1 or camera.global_position.y<20.:
+				printerr("FAIL: F1 whole-car camera ended before the robot arrived")
+				quit(1);return
 	if patrol.spawn_source!=Vector3(25.,0.,11.354) or not patrol.manual_ground_on_carrier:
 		printerr("FAIL: F3 did not select the carrier cockpit spawn")
 		quit(1);return
 	active_robot_kind="roller"
 	quick_travel(2)
-	if patrol.spawn_source!=Vector3(-12.,-11.5,7.454):
+	if patrol.spawn_source!=Vector3(-12.,-12.5,7.454):
 		printerr("FAIL: F2 did not select the carrier deck for the roller")
 		quit(1);return
 	patrol=null
@@ -45,7 +55,6 @@ func _run_probe()->void:
 	if captured_sai_destination.is_empty() or not captured_sai_destination.carrier_surface:
 		printerr("FAIL: F3 did not respawn Sai in the cockpit")
 		quit(1);return
-	camera=Camera3D.new();stage.add_child(camera)
 	_manual_robot_camera(Vector3(3.,4.,5.))
 	if camera.global_position.distance_to(Vector3(3.,4.,5.))>2.:
 		printerr("FAIL: cockpit camera leaves the robot behind the cabin wall")
