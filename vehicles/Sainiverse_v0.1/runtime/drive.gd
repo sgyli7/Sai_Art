@@ -255,6 +255,7 @@ func _probe_forward(pressed:bool)->void:
 
 func _switch_robot_mode(kind:String)->void:
 	active_quick_location=0
+	var ground_destination:Dictionary=_quick_destination(1,kind) if kind!="vehicle" else {}
 	if active_robot_kind=="vehicle" and kind!="vehicle":
 		saved_vehicle_orbit=[orbit_radius,orbit_yaw,orbit_pitch]
 		orbit_radius=6.;orbit_yaw=.98;orbit_pitch=.28
@@ -281,12 +282,20 @@ func _switch_robot_mode(kind:String)->void:
 	if kind in ["microduck","roller"]:
 		patrol=load(HERE+"/runtime/microduck_patrol.gd").new();patrol.carrier=self;patrol.manual_input=true
 		patrol.mode_name="walk" if kind=="microduck" else "roller"
-		patrol.spawn_world=Vector3(3.,height(3.+origin.offset_x,-103.-origin.offset_z),103.)
+		patrol.spawn_world=ground_destination.world
 		stage.add_child(patrol)
 	elif kind in ["sai001","sai002"]:
 		sai_passenger=load(HERE+"/runtime/sai_boarding.gd").new();sai_passenger.carrier=self;sai_passenger.manual_control=true
 		sai_passenger.robot_id="Sai_Agent_002" if kind=="sai002" else "Sai_Agent_001"
+		sai_passenger.manual_spawn_valid=true
+		sai_passenger.manual_spawn_world=ground_destination.world
+		sai_passenger.manual_spawn_basis=ground_destination.basis
 		stage.add_child(sai_passenger)
+	if not ground_destination.is_empty():
+		active_quick_location=1
+		var point:Vector3=ground_destination.world
+		quick_travel_history.append({"time":elapsed,"robot":kind,"station":1,"name":QUICK_LOCATION_NAMES[1],
+			"initial_spawn":true,"target_world":[point.x,point.y,point.z]})
 	active_robot_kind=kind;robot_switch_history.append({"time":elapsed,"robot":kind,"physics_hz":Engine.physics_ticks_per_second});robot_switch_busy=false;robot_switch_message=""
 
 func set_camera_mode(index:int)->void:

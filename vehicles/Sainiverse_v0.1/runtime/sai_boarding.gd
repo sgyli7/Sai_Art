@@ -26,7 +26,7 @@ func _ready()->void:
 	var initial:=manual_spawn_basis if manual_spawn_valid else Basis.IDENTITY if cockpit_demo else Basis(Vector3.UP,PI/2.)
 	var spawn:Vector3=manual_spawn_world if manual_spawn_valid else carrier.bodies.front.global_transform*carrier.local_source([30.90,-1.58,12.25]) if cockpit_demo else Vector3(0.,0.,20.2)
 	if manual_control and not cockpit_demo and not manual_spawn_valid:
-		spawn.z=100.2
+		spawn.z=25.5
 		spawn.y=carrier.height(spawn.x+carrier.origin.offset_x,-spawn.z-carrier.origin.offset_z)
 	for body in robot.bodies.values():
 		body.position=initial*body.position+spawn;body.basis=initial*body.basis
