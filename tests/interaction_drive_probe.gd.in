@@ -133,23 +133,32 @@ func _run_probe()->void:
 	print("PASS: F1–F3 respawns and MD right-drag/zoom camera controls")
 	cockpit=FakeCockpit.new()
 	OS.set_environment("SAINIVERSE_REMOTE_MD_PREVIEW","")
-	if _manual_md_remote_preview("microduck") or _manual_md_remote_preview("roller"):
-		printerr("FAIL: default manual MD used the remote preview worker")
+	OS.set_environment("SAINIVERSE_REMOTE_PROBE","1")
+	if not _manual_md_remote_preview("microduck") or not _manual_md_remote_preview("roller"):
+		printerr("FAIL: manual MD probe did not select the independent robot")
 		quit(1);return
 	await _switch_robot_mode("microduck")
-	if Engine.physics_ticks_per_second!=200 or Engine.max_physics_steps_per_frame!=16 or not bodies.front.freeze or not parked_patrol_fixture or physics_interpolation:
-		printerr("FAIL: default F5 MicroDuck is not the parked 200 Hz patrol fixture")
+	if Engine.physics_ticks_per_second!=60 or Engine.max_physics_steps_per_frame!=12 or bodies.front.freeze or parked_patrol_fixture or not physics_interpolation:
+		printerr("FAIL: F5 MicroDuck freezes or slows the vehicle")
 		quit(1);return
-	if cockpit.ui_axes.throttle!=0. or not str(last_md_script).ends_with("microduck_patrol.gd"):
-		printerr("FAIL: default F5 did not instantiate microduck_patrol.gd")
+	if active_quick_location!=3 or int(quick_travel_history[-1].station)!=3:
+		printerr("FAIL: selected MD did not wake in the cockpit")
 		quit(1);return
-	if inspected_md==null or inspected_md.has_method("set_destination") or inspected_md.get_script()==null or not str(inspected_md.get_script().resource_path).ends_with("microduck_patrol.gd"):
-		printerr("FAIL: default manual MD instance is not microduck_patrol.gd")
+	if cockpit.ui_axes.throttle!=1. or not str(last_md_script).ends_with("microduck_remote.gd"):
+		printerr("FAIL: F5 did not instantiate the independent MicroDuck")
+		quit(1);return
+	if inspected_md==null or not inspected_md.has_method("set_destination") or inspected_md.get_script()==null or not str(inspected_md.get_script().resource_path).ends_with("microduck_remote.gd"):
+		printerr("FAIL: F5 did not create the independent MicroDuck node")
 		quit(1);return
 	await _switch_robot_mode("roller")
-	if Engine.physics_ticks_per_second!=200 or not bodies.front.freeze or not parked_patrol_fixture or not str(last_md_script).ends_with("microduck_patrol.gd"):
-		printerr("FAIL: default F6 roller is not the collidable patrol fixture")
+	if Engine.physics_ticks_per_second!=60 or bodies.front.freeze or parked_patrol_fixture or not str(last_md_script).ends_with("microduck_remote.gd"):
+		printerr("FAIL: F6 roller freezes the vehicle")
 		quit(1);return
+	OS.set_environment("SAINIVERSE_SAI60_POLICY","five-up24-native6060")
+	if not _manual_carrier_live("sai001",false) or not _manual_carrier_live("sai002",false):
+		printerr("FAIL: Sai 60 Hz mode freezes the vehicle")
+		quit(1);return
+	OS.set_environment("SAINIVERSE_SAI60_POLICY","")
 	OS.set_environment("SAINIVERSE_REMOTE_MD_PREVIEW","1")
 	if _manual_md_remote_preview("sai001") or _manual_md_remote_preview("vehicle"):
 		printerr("FAIL: remote MD preview leaked onto a non-MicroDuck mode")
@@ -166,6 +175,7 @@ func _run_probe()->void:
 		printerr("FAIL: remote MD preview instance is not microduck_remote.gd")
 		quit(1);return
 	OS.set_environment("SAINIVERSE_REMOTE_MD_PREVIEW","")
+	OS.set_environment("SAINIVERSE_REMOTE_PROBE","")
 	if inspected_md!=null:inspected_md.free();inspected_md=null
-	print("PASS: default manual MD uses patrol; remote preview is opt-in")
+	print("PASS: F5/F6 keep the vehicle live with independent MD")
 	quit(0)

@@ -114,9 +114,9 @@ func step(dt:float)->void:
 	var is_test:bool=str(host.options.get("mode",""))=="cockpit_test"
 	if is_test:_test(host.elapsed)
 	elif host.manual and not physical_mode:
-		# When MicroDuck owns WASD, the carrier uses the arrow keys.
+		# The selected robot owns WASD; the carrier uses the arrow keys.
 		var active:bool=host.cam_mode!=4 and host.switch_probe_sequence.is_empty()
-		var robot_selected:bool=host.active_robot_kind in ["microduck","roller"] and host.patrol!=null and host.patrol.has_method("set_destination")
+		var robot_selected:bool=host.active_robot_kind!="vehicle"
 		var keys={"steer":[KEY_A,KEY_D],"throttle":[KEY_W,KEY_S],"crane_slew":[KEY_KP_4,KEY_KP_6],"crane_luff":[KEY_KP_8,KEY_KP_2],"crane_extend":[KEY_KP_ADD,KEY_KP_SUBTRACT],"crane_winch":[KEY_PAGEDOWN,KEY_PAGEUP],"panel_slew":[KEY_Z,KEY_X],"panel_fold":[KEY_R,KEY_F]}
 		for id in keys:
 			if dragged==id:continue

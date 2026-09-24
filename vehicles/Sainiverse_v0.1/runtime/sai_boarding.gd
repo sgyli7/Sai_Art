@@ -3,6 +3,8 @@ extends "res://hub/sai.gd"
 var carrier:SceneTree
 var robot_id:="Sai_Agent_001"
 var manual_control:=false
+var visual_only:=false
+var parked_carrier_transform:=Transform3D.IDENTITY
 var manual_spawn_valid:=false
 var manual_spawn_world:=Vector3.ZERO
 var manual_spawn_basis:=Basis.IDENTITY
@@ -54,9 +56,26 @@ func _ready()->void:
 	for body in robot.bodies.values():
 		body.position=initial*body.position+spawn;body.basis=initial*body.basis
 		body.collision_layer=16;body.collision_mask=1|8|32
+		if manual_control and not visual_only:
+			var front:RigidBody3D=carrier.bodies.front
+			body.linear_velocity=front.linear_velocity+front.angular_velocity.cross(body.global_position-front.global_position)
+			body.angular_velocity=front.angular_velocity
 		if cockpit_demo and body.name in ["arm_gripper","arm_moving_jaw"]:
 			body.collision_mask|=128;body.contact_monitor=true;body.max_contacts_reported=8
 	spawn_world_start=robot.bodies.chassis.global_position
+	if visual_only:
+		parked_carrier_transform=carrier.bodies.front.global_transform
+		physics_interpolation_mode=Node.PHYSICS_INTERPOLATION_MODE_OFF
+		for body in robot.bodies.values():
+			body.freeze=true
+			body.collision_layer=0
+			body.collision_mask=0
+		robot.process_mode=Node.PROCESS_MODE_DISABLED
+		set_physics_process(false)
+		if visuals:
+			var parked_paint=load("res://hub/sai_materials.gd").new()
+			parked_paint.scene=self;parked_paint._make_materials();parked_paint._paint_robot();parked_paint.free()
+		return
 	var profile:=""
 	if sai60:
 		profile="res://sai_policy/experimental/"+sai60_skill+".json"
@@ -72,6 +91,10 @@ func _ready()->void:
 		var paint=load("res://hub/sai_materials.gd").new();paint.scene=self;paint._make_materials();paint._paint_robot();paint.free()
 	_record_shared_world()
 	print("SAINIVERSE_SAI_READY robot=",robot_id," physics_hz=",Engine.physics_ticks_per_second," policy_hz=",policy_hz," skill=",sai60_skill," shared_world=",shared_world_ok)
+
+func _process(_delta:float)->void:
+	if visual_only and carrier!=null and carrier.bodies.has("front"):
+		global_transform=carrier.bodies.front.get_global_transform_interpolated()*parked_carrier_transform.affine_inverse()
 
 func _record_shared_world()->void:
 	var robot_space=robot.bodies.chassis.get_world_3d()
@@ -150,7 +173,7 @@ func movement_command()->Array:
 		var axis_yaw:float=Input.get_axis("sainiverse_right","sainiverse_left")
 		last_command_source="Input.get_axis(sainiverse_reverse,sainiverse_forward)*.14"
 		last_input_axes=[axis_fwd,axis_yaw]
-		return [axis_fwd*.14,axis_yaw*.45,0.]
+		return [axis_fwd*.14,axis_yaw*.25,0.]
 	var lift:Dictionary=carrier.lift_data[0];var platform:RigidBody3D=carrier.bodies[lift.groups[3]]
 	var base:RigidBody3D=robot.bodies.chassis;var local:Vector3=platform.to_local(base.global_position)
 	var t:float=carrier.elapsed;var down:bool=carrier.coordinate(lift.groups[0]).x>2.65 and platform.global_position.y<.15
