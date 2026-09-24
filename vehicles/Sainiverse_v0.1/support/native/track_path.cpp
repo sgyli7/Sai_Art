@@ -20,8 +20,34 @@ protected:
         ClassDB::bind_method(D_METHOD("build","wheels","travel","idler"),&LeviathanTrackPath::build);
         ClassDB::bind_method(D_METHOD("envelope","wheels"),&LeviathanTrackPath::envelope);
         ClassDB::bind_method(D_METHOD("contact_geometry","contacts","terrain","offset_x","offset_z","max_factor"),&LeviathanTrackPath::contact_geometry);
+        ClassDB::bind_method(D_METHOD("sample_linear_links","links"),&LeviathanTrackPath::sample_linear_links);
     }
 public:
+    // Read the existing dynamic links in one native call. The returned states
+    // are the same values the GDScript force controller consumes; no pose or
+    // force is changed here.
+    Dictionary sample_linear_links(Array links) const {
+        Array coordinates,rates;
+        for(int i=0;i<links.size();++i){
+            Dictionary link=links[i];
+            Object *parent_object=link["parent"],*body_object=link["body"];
+            RigidBody3D *parent=Object::cast_to<RigidBody3D>(parent_object);
+            RigidBody3D *body=Object::cast_to<RigidBody3D>(body_object);
+            ERR_FAIL_NULL_V(parent,Dictionary());
+            ERR_FAIL_NULL_V(body,Dictionary());
+            const Transform3D pt=parent->get_global_transform(),bt=body->get_global_transform();
+            const Vector3 axis=pt.basis.xform(Vector3(link["axis"]));
+            const Vector3 pa=pt.xform(Vector3(link["a"])),pb=bt.xform(Vector3(link["b"]));
+            const Vector3 parent_com=pt.xform(parent->get_center_of_mass()),body_com=bt.xform(body->get_center_of_mass());
+            const Vector3 parent_velocity=parent->get_linear_velocity()+parent->get_angular_velocity().cross(pa-parent_com);
+            const Vector3 body_velocity=body->get_linear_velocity()+body->get_angular_velocity().cross(pb-body_com);
+            const double q=(pb-pa).dot(axis),dq=(body_velocity-parent_velocity).dot(axis);
+            Array state;state.push_back(axis);state.push_back(pa);state.push_back(pb);state.push_back(q);state.push_back(dq);
+            link["control_state"]=state;
+            coordinates.push_back(q);rates.push_back(dq);
+        }
+        Dictionary out;out["coordinates"]=coordinates;out["rates"]=rates;return out;
+    }
     static double bump(double x,double center,double width,double height){
         constexpr double pi=3.1415926535897932384626433832795;
         return height*0.5*(1.0+std::cos(pi*std::clamp((x-center)/width,-1.0,1.0)));
