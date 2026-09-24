@@ -3,6 +3,8 @@ class FakePatrol extends Node:
 	var taps:Array=[]
 	func _add_tap(action:String)->void:taps.append(action)
 	func set_destination(_destination:Dictionary)->void:pass
+class FakeCockpit extends RefCounted:
+	var ui_axes:Dictionary={}
 
 var options := {"clean_capture":false,"mode":"manual"}
 var equipment := {"rig":{"cranes":[{"hull":"rear"}]}}
@@ -18,6 +20,7 @@ var access = null
 var drive_interlock := false
 var elapsed := 0.0
 var patrol:=FakePatrol.new()
+var cockpit:=FakeCockpit.new()
 var travel_requests:Array=[]
 var switch_requests:Array=[]
 
@@ -84,6 +87,10 @@ func _run()->void:
 	active_robot_kind="sai001";ui.refresh()
 	if not help.text.contains("Sai Robot") or not help.text.contains("方向键") or not vehicle_card.visible or not ui.sections["drive"].visible or pick.visible:
 		printerr("FAIL: Sai Robot and vehicle controls are not visible together")
+		quit(1);return
+	ui.throttle.value=.5;ui.steering.value=-.25
+	if not is_equal_approx(float(cockpit.ui_axes.get("throttle",0.)),.5) or not is_equal_approx(float(cockpit.ui_axes.get("steer",0.)),-.25):
+		printerr("FAIL: Sai Robot mode does not route the visible DRIVE sliders to the carrier")
 		quit(1);return
 	active_robot_kind="sai002";ui.refresh()
 	if not ui.mode_hint.text.contains("Sai 002") or not vehicle_card.visible or not ui.sections["drive"].visible:
