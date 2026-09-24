@@ -149,6 +149,18 @@ func _build()->void:
 		for i in access.names.size():
 			access_indices[access.names[i]]=i
 			room.attach(bodies[access.names[i]],spec.contact.access.doors[i].collision)
+	# Link roles and indices never change while the vehicle runs. Resolve them
+	# once so the force loop does not search dictionaries per joint.
+	for link in links:
+		var item:Dictionary=link.spec
+		link.fast_aux=bool(item.get("lift",false)) or bool(item.get("equipment",false)) or bool(item.get("cockpit",false))
+		link.fast_slide=item.kind=="slide"
+		link.fast_zero_stiffness=float(item.stiffness)==0.
+		link.fast_access_index=int(access_indices.get(item.name,-1))
+		link.fast_hydraulic_index=int(hydraulic_indices.get(item.name,-1))
+		link.fast_track_index=int(track_indices.get(item.name,-1))
+		link.fast_steer_index=steering_names.find(item.name)
+		link.fast_hitch_index=hitch_names.find(item.name)
 
 func bump(x:float,center:float,width:float,height:float)->float:
 	return height*.5*(1+cos(PI*clampf((x-center)/width,-1,1)))
@@ -233,8 +245,6 @@ func _physics_process(dt:float)->bool:
 	var audit_tick:bool=count%20==19
 	for link in (links if audit_tick else force_links):
 		var body:RigidBody3D=link.body;var parent:RigidBody3D=link.parent;var item:Dictionary=link.spec
-		var diagnostic_only:bool=float(item.stiffness)>0. or bool(item.get("lift",false)) or bool(item.get("equipment",false)) or bool(item.get("cockpit",false))
-		if diagnostic_only and not audit_tick:continue
 		var cached:bool=link.has("control_state")
 		var axis:Vector3=link.control_state[0] if cached else parent.global_basis*link.axis
 		var pa:Vector3=link.control_state[1] if cached else parent.global_transform*link.a
@@ -242,7 +252,7 @@ func _physics_process(dt:float)->bool:
 		var q:float;var dq:float;var link_residual:float
 		if cached:
 			q=link.control_state[3];dq=link.control_state[4];link_residual=((pb-pa)-axis*q).length()
-		elif item.kind=="slide":
+		elif link.fast_slide:
 			q=(pb-pa).dot(axis);dq=(point_velocity(body,pb)-point_velocity(parent,pa)).dot(axis)
 			link_residual=((pb-pa)-axis*q).length()
 		else:
@@ -252,31 +262,31 @@ func _physics_process(dt:float)->bool:
 		if audit_tick:
 			residual=maxf(residual,link_residual)
 			var relative_delta:Vector3=(body.global_position-parent.global_position)+(body.global_basis*link.b-parent.global_basis*link.a)
-			var local_residual:float=(relative_delta-axis*relative_delta.dot(axis)).length() if item.kind=="slide" else relative_delta.length()
+			var local_residual:float=(relative_delta-axis*relative_delta.dot(axis)).length() if link.fast_slide else relative_delta.length()
 			maximum_local_anchor_residual=maxf(maximum_local_anchor_residual,local_residual)
 			maximum_anchor_measurement_disagreement=maxf(maximum_anchor_measurement_disagreement,absf(local_residual-link_residual))
 			if link_residual>float(anchor_peaks.get(item.name,{}).get("residual_m",-1.)):
 				anchor_peaks[item.name]={"residual_m":link_residual,"time_s":elapsed,"front_position":origin.source_position(bodies.front.global_position),"coordinate":q}
 			qvalues[item.name]=q
-		if bool(item.get("lift",false)) or bool(item.get("equipment",false)) or bool(item.get("cockpit",false)):continue
-		if access_indices.has(item.name):
-			var effort:float=float(access.torques[access_indices[item.name]])+float(access.latch_torques[access_indices[item.name]]);efforts[item.name]=effort
+		if link.fast_aux:continue
+		if link.fast_access_index>=0:
+			var effort:float=float(access.torques[link.fast_access_index])+float(access.latch_torques[link.fast_access_index]);efforts[item.name]=effort
 			body.apply_torque(axis*effort);parent.apply_torque(-axis*effort)
 			continue
-		if float(item.stiffness)==0:
-			if hydraulic_indices.has(item.name) or track_indices.has(item.name):
-				var force:float=hydraulics.forces[int(hydraulic_indices[item.name])] if hydraulic_indices.has(item.name) else 0.
-				if track_indices.has(item.name):force+=float(track_tension.forces[int(track_indices[item.name])])
+		if link.fast_zero_stiffness:
+			if link.fast_hydraulic_index>=0 or link.fast_track_index>=0:
+				var force:float=hydraulics.forces[link.fast_hydraulic_index] if link.fast_hydraulic_index>=0 else 0.
+				if link.fast_track_index>=0:force+=float(track_tension.forces[link.fast_track_index])
 				efforts[item.name]=force
 				body.apply_force(axis*force,pb-body.global_position);parent.apply_force(-axis*force,pa-parent.global_position)
 				continue
 			var kp:float;var kd:float;var cap:float;var target:=0.0
-			var steer_index:int=steering_names.find(item.name)
+			var steer_index:int=link.fast_steer_index
 			if steer_index>=0:
 				kp=steering.config.bogie_yaw_kp_Nm_rad;kd=steering.config.bogie_yaw_kd_Nms_rad;cap=steering.config.bogie_yaw_torque_limit_Nm
 				target=steering.bogie_yaw[steer_index]
 			else:
-				var index:int=hitch_names.find(item.name);assert(index>=0);index=index%4
+				var index:int=link.fast_hitch_index;assert(index>=0);index=index%4
 				kp=acfg.extension_kp_N_per_m if index==0 else acfg.rotation_kp_Nm_per_rad[index-1]
 				kd=acfg.extension_kd_Ns_per_m if index==0 else acfg.rotation_kd_Nms_per_rad[index-1]
 				cap=acfg.extension_force_limit_N if index==0 else acfg.rotation_torque_limits_Nm[index-1]
@@ -284,7 +294,7 @@ func _physics_process(dt:float)->bool:
 					target=steering.hitch_yaw;kp=steering.config.hitch_yaw_kp_Nm_rad;kd=steering.config.hitch_yaw_kd_Nms_rad
 				if index==1:turning_hitch_max=maxf(turning_hitch_max,absf(q))
 			var effort:float=clampf(kp*(target-q)-kd*dq,-cap,cap);efforts[item.name]=effort
-			if item.kind=="slide":
+			if link.fast_slide:
 				body.apply_force(axis*effort,pb-body.global_position);parent.apply_force(-axis*effort,pa-parent.global_position)
 			else:body.apply_torque(axis*effort);parent.apply_torque(-axis*effort)
 	var points:Array=contacts;var total_load:=0.0;var supported:=0
