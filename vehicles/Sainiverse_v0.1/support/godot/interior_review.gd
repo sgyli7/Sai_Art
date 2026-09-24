@@ -22,7 +22,9 @@ func _build()->void:
 		bodies.front.add_child(lamp);lamp.position=local_source([x,0,14.3])
 	figures=Node3D.new();bodies.front.add_child(figures);figures.name="INSPECTION_home_pose_figures"
 	for name in ["sai","microduck"]:
-		var doc:=GLTFDocument.new();var state:=GLTFState.new();assert(doc.append_from_file(str(visual.config.glb).get_base_dir()+"/"+name+"_scale_figure.glb",state)==OK)
+		var doc:=GLTFDocument.new();var state:=GLTFState.new()
+		var gltf_status:=doc.append_from_file(str(visual.config.glb).get_base_dir()+"/"+name+"_scale_figure.glb",state)
+		assert(gltf_status==OK)
 		var node:Node3D=doc.generate_scene(state);figures.add_child(node)
 		var p:Array=[20.55,1.75,11.35+.220000000417] if name=="sai" else [21.30,1.85,11.35+.117182362199]
 		node.transform=Transform3D(Basis(Vector3.UP,-PI/2)*Basis(Vector3.RIGHT,-PI/2),local_source(p))

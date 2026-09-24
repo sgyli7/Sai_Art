@@ -30,7 +30,8 @@ func configure(native_bodies:Dictionary,bindings_path:String="")->void:
 	if bool(config.get("state_texture",false)):
 		state_texture=ImageTexture.create_from_image(Image.create(36,24,false,Image.FORMAT_RGBAF))
 	var document:=GLTFDocument.new();var state:=GLTFState.new()
-	assert(document.append_from_file(config.glb,state)==OK)
+	var gltf_status:=document.append_from_file(config.glb,state)
+	assert(gltf_status==OK)
 	var asset:Node3D=document.generate_scene(state);add_child(asset)
 	_index(asset)
 	assert(groups.size()==int(config.get("expected_groups",21)) and meshes==int(config.get("expected_meshes",119)))
