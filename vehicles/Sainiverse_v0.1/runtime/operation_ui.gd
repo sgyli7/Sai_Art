@@ -55,14 +55,14 @@ func _row()->HBoxContainer:
 	var r:=HBoxContainer.new();r.add_theme_constant_override("separation",7);return r
 
 func _build_ui()->void:
-	root_panel=PanelContainer.new();root_panel.position=Vector2(20,20);root_panel.custom_minimum_size=Vector2(392,0);root_panel.add_theme_stylebox_override("panel",_style(BG,9,1));add_child(root_panel)
+	root_panel=PanelContainer.new();root_panel.position=Vector2(20,20);root_panel.custom_minimum_size=Vector2(392,0);root_panel.focus_mode=Control.FOCUS_NONE;root_panel.add_theme_stylebox_override("panel",_style(BG,9,1));add_child(root_panel)
 	var outer:=VBoxContainer.new();outer.add_theme_constant_override("separation",7);root_panel.add_child(outer)
 	var header:=_row();outer.add_child(header)
 	var collapse:=_button("SAINIVERSE_v0.1  ▾");collapse.size_flags_horizontal=Control.SIZE_EXPAND_FILL;collapse.alignment=HORIZONTAL_ALIGNMENT_LEFT;collapse.pressed.connect(func():panel_collapsed=not panel_collapsed;scroll.visible=not panel_collapsed;collapse.text="SAINIVERSE_v0.1  "+("▸" if panel_collapsed else "▾"));header.add_child(collapse)
 	var quit:=_button("退出");quit.custom_minimum_size.x=58;quit.pressed.connect(_quit);header.add_child(quit)
 	status=_label("SYSTEM ONLINE",14,MUTED);status.autowrap_mode=TextServer.AUTOWRAP_WORD_SMART;outer.add_child(status)
 	mode_hint=_label("",12,YELLOW);mode_hint.autowrap_mode=TextServer.AUTOWRAP_WORD_SMART;outer.add_child(mode_hint)
-	scroll=ScrollContainer.new();scroll.custom_minimum_size=Vector2(370,0);scroll.horizontal_scroll_mode=ScrollContainer.SCROLL_MODE_DISABLED;outer.add_child(scroll)
+	scroll=ScrollContainer.new();scroll.custom_minimum_size=Vector2(370,0);scroll.focus_mode=Control.FOCUS_NONE;scroll.horizontal_scroll_mode=ScrollContainer.SCROLL_MODE_DISABLED;outer.add_child(scroll)
 	body=VBoxContainer.new();body.size_flags_horizontal=Control.SIZE_EXPAND_FILL;body.add_theme_constant_override("separation",6);scroll.add_child(body)
 	_build_drive();_build_robots();_build_robot_controls();_build_crane();_build_lifts();_build_receiver();_build_view();_build_services();_build_help()
 	_refresh_mode_layout()
@@ -95,7 +95,7 @@ func _build_drive()->void:
 	steering=_slider_row(c,"转向",-1,1,.05);steering.value_changed.connect(func(v):_axis("steer",v))
 	brake=_slider_row(c,"制动",0,1,.05);brake.value_changed.connect(func(v):_axis("brake",v))
 	var center:=_button("方向与油门回中");center.pressed.connect(func():throttle.value=0;steering.value=0);c.add_child(center)
-	high_range=CheckButton.new();high_range.text="高速挡";high_range.add_theme_font_override("font",font);high_range.toggled.connect(func(on):_axis("high_range",1. if on else 0.));c.add_child(high_range)
+	high_range=CheckButton.new();high_range.text="高速挡";high_range.focus_mode=Control.FOCUS_NONE;high_range.add_theme_font_override("font",font);high_range.toggled.connect(func(on):_axis("high_range",1. if on else 0.));c.add_child(high_range)
 	var r:=_row();c.add_child(r)
 	for item in [["驻车制动","emergency"],["作业模式","work"]]:
 		var b:=_button(item[0]);b.size_flags_horizontal=Control.SIZE_EXPAND_FILL;b.pressed.connect(_pulse.bind(str(item[1])));controls[str(item[1])]=b;r.add_child(b)
@@ -111,8 +111,9 @@ func _robot_key(code:int,pressed:bool)->void:
 	if robot_held_keys.has(code)==pressed:return
 	if pressed:robot_held_keys[code]=true
 	else:robot_held_keys.erase(code)
-	var event:=InputEventKey.new();event.physical_keycode=code;event.keycode=code;event.pressed=pressed
+	var event:=InputEventKey.new();event.physical_keycode=code;event.keycode=code;event.pressed=pressed;event.echo=false
 	Input.parse_input_event(event)
+	Input.flush_buffered_events()
 
 func _release_robot_keys()->void:
 	for code in robot_held_keys.keys():_robot_key(int(code),false)
@@ -178,7 +179,7 @@ func _refresh_mode_layout()->void:
 
 func _build_crane()->void:
 	var c:=_section("crane","吊机 CRANE",false)
-	var select:=OptionButton.new();select.add_theme_font_override("font",font);select.custom_minimum_size.y=36
+	var select:=OptionButton.new();select.add_theme_font_override("font",font);select.custom_minimum_size.y=36;select.focus_mode=Control.FOCUS_NONE
 	for i in host.equipment.rig.cranes.size():
 		var crane:Dictionary=host.equipment.rig.cranes[i];select.add_item(("前拖车" if crane.hull=="rear" else "后拖车")+"  Crane "+str(i%4+1),i)
 	select.item_selected.connect(_select_crane);controls["crane_select"]=select;c.add_child(select)
@@ -190,7 +191,7 @@ func _build_crane()->void:
 	var hook:=_button("挂钩 / 落地释放");hook.add_theme_color_override("font_color",YELLOW);hook.pressed.connect(func():_pulse("cargo"));c.add_child(hook)
 
 func _build_lifts()->void:
-	var c:=_section("lifts","升降平台 LIFTS",false);var select:=OptionButton.new();select.add_theme_font_override("font",font);select.custom_minimum_size.y=36
+	var c:=_section("lifts","升降平台 LIFTS",false);var select:=OptionButton.new();select.add_theme_font_override("font",font);select.custom_minimum_size.y=36;select.focus_mode=Control.FOCUS_NONE
 	for i in host.lift_data.size():select.add_item(["主控左","主控右","前拖左","前拖右","后拖左","后拖右"][i],i)
 	select.item_selected.connect(_select_lift);c.add_child(select);lift_status=_label("",12,MUTED);c.add_child(lift_status)
 	var r:=_row();c.add_child(r)
@@ -204,12 +205,12 @@ func _build_receiver()->void:
 	_hold_pair(c,"折叠机构","▼ 折叠","展开 ▲","panel_fold")
 
 func _build_view()->void:
-	var c:=_section("view","视角与外观 VIEW",false);var views:=OptionButton.new();views.add_theme_font_override("font",font)
+	var c:=_section("view","视角与外观 VIEW",false);var views:=OptionButton.new();views.add_theme_font_override("font",font);views.focus_mode=Control.FOCUS_NONE
 	time_scale_slider=_slider_row(c,"时间流速 0.1×～3.0×（默认 1.0×）",.1,3.,.1)
 	time_scale_slider.value=1.;time_scale_slider.value_changed.connect(func(v):Engine.time_scale=clampf(v,.1,3.))
 	for i in host.camera_names.size():views.add_item(host.camera_names[i],i)
 	views.item_selected.connect(_select_view);views.select(host.cam_mode);controls["view_select"]=views;c.add_child(views)
-	var themes:=OptionButton.new();themes.add_theme_font_override("font",font)
+	var themes:=OptionButton.new();themes.add_theme_font_override("font",font);themes.focus_mode=Control.FOCUS_NONE
 	for i in ["black","desert","white","blue","yellow"]:themes.add_item(i.capitalize())
 	themes.select(["black","desert","white","blue","yellow"].find(host.theme_id));themes.item_selected.connect(_select_theme);controls["theme_select"]=themes;c.add_child(themes)
 	var snap:=_button("保存截图");snap.pressed.connect(func():host._capture("ui_"+str(Time.get_ticks_msec())));c.add_child(snap)
