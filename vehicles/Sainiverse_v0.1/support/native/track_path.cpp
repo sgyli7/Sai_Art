@@ -11,12 +11,50 @@
 #include <cmath>
 #include <vector>
 using namespace godot;
-// Pure display geometry. No physics access, force, time decimation or pose writes.
+// Pure track geometry. No physics access, force, time decimation or pose writes.
 class LeviathanTrackPath : public RefCounted {
     GDCLASS(LeviathanTrackPath,RefCounted)
 protected:
-    static void _bind_methods() {ClassDB::bind_method(D_METHOD("build","wheels","travel","idler"),&LeviathanTrackPath::build);}
+    static void _bind_methods() {
+        ClassDB::bind_method(D_METHOD("build","wheels","travel","idler"),&LeviathanTrackPath::build);
+        ClassDB::bind_method(D_METHOD("envelope","wheels"),&LeviathanTrackPath::envelope);
+    }
 public:
+    Dictionary envelope(Array wheels) const {
+        constexpr double tau=6.283185307179586476925286766559;
+        const int count=wheels.size();
+        std::vector<Vector3> w;w.reserve(count);
+        for(int i=0;i<count;++i)w.push_back(wheels[i]);
+        std::vector<double> angles{0.0,tau};angles.reserve(2+count*(count-1));
+        auto mod=[](double x,double m){double r=std::fmod(x,m);return r<0?r+m:r;};
+        for(int i=0;i<count;++i)for(int j=0;j<i;++j){
+            const double dx=double(w[i].x)-double(w[j].x),dz=double(w[i].y)-double(w[j].y);
+            const double distance=std::sqrt(dx*dx+dz*dz);
+            if(distance<=std::abs(double(w[j].z)-double(w[i].z)))continue;
+            const double a=std::atan2(dz,dx),b=std::acos((double(w[j].z)-double(w[i].z))/distance);
+            angles.push_back(mod(a-b,tau));angles.push_back(mod(a+b,tau));
+        }
+        std::sort(angles.begin(),angles.end());
+        std::vector<Vector2> gradient(count,Vector2());
+        double length=0.0;
+        for(size_t k=0;k+1<angles.size();++k){
+            const double a=angles[k],b=angles[k+1];
+            if(b-a<1e-12)continue;
+            const double mid=(a+b)*0.5,nx=std::cos(mid),nz=std::sin(mid);
+            int owner=0;double support=-INFINITY;
+            for(int i=0;i<count;++i){
+                const double value=double(w[i].x)*nx+double(w[i].y)*nz+double(w[i].z);
+                if(value>support){support=value;owner=i;}
+            }
+            const Vector2 integral(std::sin(b)-std::sin(a),std::cos(a)-std::cos(b));
+            gradient[owner]+=integral;
+            length+=double(w[owner].x)*integral.x+double(w[owner].y)*integral.y+double(w[owner].z)*(b-a);
+        }
+        Array result_gradient;
+        for(const Vector2 &value:gradient)result_gradient.push_back(value);
+        Dictionary result;result["length"]=length;result["gradient"]=result_gradient;
+        return result;
+    }
     Dictionary build(Array wheels,Vector3 travel,double idler) const {
         ERR_FAIL_COND_V(wheels.size()!=5,Dictionary());
         constexpr double pi=3.1415926535897932384626433832795,tau=2*pi;

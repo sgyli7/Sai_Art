@@ -18,6 +18,10 @@ var slack_steps:=0
 var dissipated:=0.0
 var step_usec:=0
 var steps:=0
+var path_core=null
+var native_calls:=0
+var maximum_native_length_error_m:=0.0
+var maximum_native_gradient_error:=0.0
 
 func configure(config:Dictionary)->void:
 	c=config
@@ -25,6 +29,20 @@ func configure(config:Dictionary)->void:
 	for w in c.support_circles_x_z_radius_m:base.append(Vector3(w[0],w[1],w[2]))
 
 func envelope(w:Array)->Dictionary:
+	if OS.get_environment("SAINIVERSE_NATIVE_TRACK_ENVELOPE")!="0":
+		if path_core==null and ClassDB.class_exists("LeviathanTrackPath"):path_core=ClassDB.instantiate("LeviathanTrackPath")
+		if path_core!=null and path_core.has_method("envelope"):
+			var native:Dictionary=path_core.envelope(w)
+			native_calls+=1
+			if OS.get_environment("SAINIVERSE_NATIVE_TRACK_PARITY")=="1":
+				var reference:Dictionary=_envelope_gd(w)
+				maximum_native_length_error_m=maxf(maximum_native_length_error_m,absf(float(native.length)-float(reference.length)))
+				for i in reference.gradient.size():
+					maximum_native_gradient_error=maxf(maximum_native_gradient_error,(native.gradient[i] as Vector2).distance_to(reference.gradient[i]))
+			return native
+	return _envelope_gd(w)
+
+func _envelope_gd(w:Array)->Dictionary:
 	var angles:Array=[0.,TAU]
 	for i in w.size():
 		for j in i:
@@ -71,4 +89,4 @@ func step(q:Array,dq:Array,dt:float)->void:
 	step_usec+=Time.get_ticks_usec()-started;steps+=1
 
 func state()->Dictionary:
-	return {"lengths_m":lengths.duplicate(),"tensions_N":tensions.duplicate(),"idler_recoil_forces_N":pushes.duplicate(),"coordinates_m":coordinates.duplicate(true),"max_tension_N":max_tension,"extension_range_m":[min_extension,max_extension],"idler_range_m":[min_idler,max_idler],"max_recoil_force_N":max_push,"slack_bank_steps":slack_steps,"dissipated_J":dissipated,"mean_track_step_ms":float(step_usec)/maxi(steps,1)/1000.}
+	return {"lengths_m":lengths.duplicate(),"tensions_N":tensions.duplicate(),"idler_recoil_forces_N":pushes.duplicate(),"coordinates_m":coordinates.duplicate(true),"max_tension_N":max_tension,"extension_range_m":[min_extension,max_extension],"idler_range_m":[min_idler,max_idler],"max_recoil_force_N":max_push,"slack_bank_steps":slack_steps,"dissipated_J":dissipated,"mean_track_step_ms":float(step_usec)/maxi(steps,1)/1000.,"native_calls":native_calls,"maximum_native_length_error_m":maximum_native_length_error_m,"maximum_native_gradient_error":maximum_native_gradient_error}
