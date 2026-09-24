@@ -45,6 +45,7 @@ var maximum_anchor_measurement_disagreement:=0.0
 var peak_speed:=0.0
 var contact_core=null
 var native_contact_calls:=0
+var native_link_calls:=0
 var start_usec:int
 var force_links:Array=[]
 var hull_names:Array=[]
@@ -206,20 +207,28 @@ func _physics_process(dt:float)->bool:
 	if access!=null:available_power=maxf(0.,available_power-access.power)
 	if hydraulics!=null:
 		var coordinates:Array=[];var rates:Array=[]
-		for link in hydraulic_links:
-			var axis:Vector3=link.parent.global_basis*link.axis
-			var pa:Vector3=link.parent.global_transform*link.a;var pb:Vector3=link.body.global_transform*link.b
-			var q:float=(pb-pa).dot(axis);var dq:float=(point_velocity(link.body,pb)-point_velocity(link.parent,pa)).dot(axis)
-			coordinates.append(q);rates.append(dq);link.control_state=[axis,pa,pb,q,dq]
+		if contact_core!=null and contact_core.has_method("sample_linear_links") and OS.get_environment("SAINIVERSE_LEGACY_LINK_SAMPLING")!="1":
+			var sampled:Dictionary=contact_core.sample_linear_links(hydraulic_links)
+			coordinates=sampled.coordinates;rates=sampled.rates;native_link_calls+=1
+		else:
+			for link in hydraulic_links:
+				var axis:Vector3=link.parent.global_basis*link.axis
+				var pa:Vector3=link.parent.global_transform*link.a;var pb:Vector3=link.body.global_transform*link.b
+				var q:float=(pb-pa).dot(axis);var dq:float=(point_velocity(link.body,pb)-point_velocity(link.parent,pa)).dot(axis)
+				coordinates.append(q);rates.append(dq);link.control_state=[axis,pa,pb,q,dq]
 		hydraulics.step(coordinates,rates,dt);available_power=maxf(0.,available_power-hydraulics.pump_power_W)
 	var qvalues:Dictionary={};var efforts:Dictionary={};var residual:=0.0
 	if track_tension!=null:
 		var coordinates:Array=[];var rates:Array=[]
-		for link in track_links:
-			var axis:Vector3=link.parent.global_basis*link.axis
-			var pa:Vector3=link.parent.global_transform*link.a;var pb:Vector3=link.body.global_transform*link.b
-			var q:float=(pb-pa).dot(axis);var dq:float=(point_velocity(link.body,pb)-point_velocity(link.parent,pa)).dot(axis)
-			coordinates.append(q);rates.append(dq);link.control_state=[axis,pa,pb,q,dq]
+		if contact_core!=null and contact_core.has_method("sample_linear_links") and OS.get_environment("SAINIVERSE_LEGACY_LINK_SAMPLING")!="1":
+			var sampled:Dictionary=contact_core.sample_linear_links(track_links)
+			coordinates=sampled.coordinates;rates=sampled.rates;native_link_calls+=1
+		else:
+			for link in track_links:
+				var axis:Vector3=link.parent.global_basis*link.axis
+				var pa:Vector3=link.parent.global_transform*link.a;var pb:Vector3=link.body.global_transform*link.b
+				var q:float=(pb-pa).dot(axis);var dq:float=(point_velocity(link.body,pb)-point_velocity(link.parent,pa)).dot(axis)
+				coordinates.append(q);rates.append(dq);link.control_state=[axis,pa,pb,q,dq]
 		track_tension.step(coordinates,rates,dt)
 	var audit_tick:bool=count%20==19
 	for link in (links if audit_tick else force_links):
@@ -374,7 +383,7 @@ func _physics_process(dt:float)->bool:
 		for value in accel_squares:rms.append(sqrt(float(value)/maxi(accel_count,1)))
 		var out:Dictionary={"engine":"Godot "+str(Engine.get_version_info().string),"physics_engine":ProjectSettings.get_setting("physics/3d/physics_engine"),
 			"failed":failed,"terrain":options.terrain,"rigid":options.rigid,"seconds":elapsed,"wall_seconds":(Time.get_ticks_usec()-start_usec)/1e6,
-			"dynamic_bodies":bodies.size(),"joints":links.size(),"native_contact_calls":native_contact_calls,"peak_speed_kmh":peak_speed*3.6,"peak_all_step_vertical_accel_m_s2":peak_accel,"samples":samples,
+			"dynamic_bodies":bodies.size(),"joints":links.size(),"native_contact_calls":native_contact_calls,"native_link_calls":native_link_calls,"peak_speed_kmh":peak_speed*3.6,"peak_all_step_vertical_accel_m_s2":peak_accel,"samples":samples,
 			"rms_all_step_vertical_accel_after_settle_m_s2":rms,"total_mass_kg":cfg.total_mass_kg,
 			"peak_acceleration_times_s":peak_times,"max_all_step_lateral_path_error_m":route_max,"joint_anchor_sample_hz":10,"maximum_sampled_joint_anchor_residual_m":maximum_anchor_residual,
 			"joint_anchor_peaks":anchor_peaks,"initial_world_x_m":options.start_x,
