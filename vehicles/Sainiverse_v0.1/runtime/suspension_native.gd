@@ -44,6 +44,7 @@ var maximum_local_anchor_residual:=0.0
 var maximum_anchor_measurement_disagreement:=0.0
 var peak_speed:=0.0
 var contact_core=null
+var native_contact_calls:=0
 var start_usec:int
 var force_links:Array=[]
 var hull_names:Array=[]
@@ -279,10 +280,12 @@ func _physics_process(dt:float)->bool:
 			else:body.apply_torque(axis*effort);parent.apply_torque(-axis*effort)
 	var points:Array=contacts;var total_load:=0.0;var supported:=0
 	var used_native:bool=false
+	if contact_core==null and ClassDB.class_exists("LeviathanTrackPath"):
+		contact_core=ClassDB.instantiate("LeviathanTrackPath")
 	if contact_core!=null and contact_core.has_method("contact_geometry") and OS.get_environment("SAINIVERSE_LEGACY_CONTACT")!="1":
 		var result:Dictionary=contact_core.contact_geometry(contacts,str(options.terrain),origin.offset_x,origin.offset_z,float(cfg.contact_max_nominal_load_factor))
 		if result.has("total_load"):
-			total_load=float(result.total_load);supported=int(result.supported);used_native=true
+			total_load=float(result.total_load);supported=int(result.supported);used_native=true;native_contact_calls+=1
 	if not used_native:
 		for item in contacts:
 			var body:RigidBody3D=item.body;var center:Vector3=body.global_transform*item.local
@@ -371,7 +374,7 @@ func _physics_process(dt:float)->bool:
 		for value in accel_squares:rms.append(sqrt(float(value)/maxi(accel_count,1)))
 		var out:Dictionary={"engine":"Godot "+str(Engine.get_version_info().string),"physics_engine":ProjectSettings.get_setting("physics/3d/physics_engine"),
 			"failed":failed,"terrain":options.terrain,"rigid":options.rigid,"seconds":elapsed,"wall_seconds":(Time.get_ticks_usec()-start_usec)/1e6,
-			"dynamic_bodies":bodies.size(),"joints":links.size(),"peak_speed_kmh":peak_speed*3.6,"peak_all_step_vertical_accel_m_s2":peak_accel,"samples":samples,
+			"dynamic_bodies":bodies.size(),"joints":links.size(),"native_contact_calls":native_contact_calls,"peak_speed_kmh":peak_speed*3.6,"peak_all_step_vertical_accel_m_s2":peak_accel,"samples":samples,
 			"rms_all_step_vertical_accel_after_settle_m_s2":rms,"total_mass_kg":cfg.total_mass_kg,
 			"peak_acceleration_times_s":peak_times,"max_all_step_lateral_path_error_m":route_max,"joint_anchor_sample_hz":10,"maximum_sampled_joint_anchor_residual_m":maximum_anchor_residual,
 			"joint_anchor_peaks":anchor_peaks,"initial_world_x_m":options.start_x,
