@@ -23,7 +23,9 @@ var patrol:=FakePatrol.new()
 var cockpit:=FakeCockpit.new()
 var travel_requests:Array=[]
 var switch_requests:Array=[]
+var sai_enabled:=true
 
+func sai_robots_enabled()->bool:return sai_enabled
 func select_robot_mode(kind:String)->void:switch_requests.append(kind)
 func quick_travel(index:int)->void:travel_requests.append(index)
 func set_camera_mode(_index:int)->void:pass
@@ -99,6 +101,13 @@ func _run()->void:
 	active_robot_kind="vehicle";ui.refresh()
 	if not vehicle_card.visible or not ui.sections["drive"].visible or ui.sections["robot_controls"].get_parent().visible:
 		printerr("FAIL: vehicle controls do not return with Sainiverse")
+		quit(1);return
+	sai_enabled=false
+	var md_only=load("res://operation_ui.gd").new()
+	root.add_child(md_only)
+	md_only.configure(self)
+	if _find_button(md_only,"F7 · Sai 001")!=null or _find_button(md_only,"F8 · Sai 002")!=null or _find_button(md_only,"F5 · MicroDuck")==null:
+		printerr("FAIL: disabled Sai Robot controls are still shown")
 		quit(1);return
 	print("PASS: UI routes robot input, travel, and per-robot hints")
 	quit(0)

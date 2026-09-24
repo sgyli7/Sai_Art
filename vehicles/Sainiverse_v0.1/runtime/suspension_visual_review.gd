@@ -11,8 +11,12 @@ var pv_frames:=0
 var pv_capture_times:Array=[]
 var world_surface:Node3D
 var final_written:=false
+var fast_visual:=false
 
 func _build()->void:
+	# Interactive play favors steady input and camera updates. Review captures
+	# retain the authored ink and shadow treatment.
+	fast_visual=str(options.get("mode",""))=="manual" and OS.get_environment("SAINIVERSE_FULL_VISUALS")!="1"
 	super._build()
 	DisplayServer.window_set_size(Vector2i(1280,720) if str(options.get("pv","false"))=="true" else Vector2i(1920,1080));DisplayServer.window_set_vsync_mode(DisplayServer.VSYNC_DISABLED)
 	root.msaa_3d=Viewport.MSAA_4X
@@ -22,7 +26,7 @@ func _build()->void:
 	settings.background_mode=Environment.BG_COLOR;settings.background_color=Color("8eabbc")
 	settings.ambient_light_source=Environment.AMBIENT_SOURCE_COLOR;settings.ambient_light_color=Color("bed0da");settings.ambient_light_energy=.65
 	settings.tonemap_mode=Environment.TONE_MAPPER_FILMIC;environment.environment=settings;stage.add_child(environment)
-	var sun:=DirectionalLight3D.new();sun.rotation_degrees=Vector3(-48,-35,0);sun.light_energy=1.4;sun.shadow_enabled=true
+	var sun:=DirectionalLight3D.new();sun.rotation_degrees=Vector3(-48,-35,0);sun.light_energy=1.4;sun.shadow_enabled=not fast_visual and OS.get_environment("SAINIVERSE_PERF_NO_SHADOWS")!="1"
 	sun.directional_shadow_max_distance=350;stage.add_child(sun)
 	world_surface=Node3D.new();stage.add_child(world_surface)
 	# A visible copy of the exact analytic hard-ground fixture, not a new collider.

@@ -59,7 +59,7 @@ func _enamel(color:Color,outlined:bool=true,kind:int=0)->ShaderMaterial:
 			var bitmap:=Image.load_from_file(asset_dir+entry[1]);bitmap.generate_mipmaps();normal_textures[entry[0]]=ImageTexture.create_from_image(bitmap)
 		material.set_shader_parameter(entry[0],normal_textures[entry[0]])
 	material.set_shader_parameter("body_pigment",Color(style.palette.ivory));material.set_shader_parameter("pigment",color);material.set_shader_parameter("hatch_strength",float(style.hatch_strength))
-	if outlined:material.next_pass=_ink(false)
+	if outlined and not fast_visual and OS.get_environment("SAINIVERSE_PERF_SKIP_INK")!="1":material.next_pass=_ink(false)
 	return material
 
 func _ink(animated:bool)->ShaderMaterial:
@@ -89,8 +89,9 @@ func _paint(node:Node)->void:
 				var texture=old.get_shader_parameter("track_state");var row=old.get_shader_parameter("state_row")
 				old.shader=load(asset_dir+"track_enamel.gdshader");old.set_shader_parameter("surface_atlas",normal_textures.surface_atlas);old.set_shader_parameter("paint",color)
 				old.set_shader_parameter("hatch_strength",float(style.hatch_strength));old.set_shader_parameter("track_state",texture);old.set_shader_parameter("state_row",row)
-				var ink:=_ink(true);ink.set_shader_parameter("track_state",texture);ink.set_shader_parameter("state_row",row);old.next_pass=ink
-				animated_ink_passes+=1
+				if not fast_visual and OS.get_environment("SAINIVERSE_PERF_SKIP_INK")!="1":
+					var ink:=_ink(true);ink.set_shader_parameter("track_state",texture);ink.set_shader_parameter("state_row",row);old.next_pass=ink
+					animated_ink_passes+=1
 			else:
 				if not style.palette.has(role) and old is StandardMaterial3D:
 					color=old.albedo_color
@@ -121,7 +122,7 @@ func _write_visual_report()->void:
 	var matching_ink:=0
 	for bogie in visual.bogies.values():
 		for material in bogie.materials:
-			if material.next_pass.get_shader_parameter("track_state")==material.get_shader_parameter("track_state") and material.next_pass.get_shader_parameter("state_row")==material.get_shader_parameter("state_row"):matching_ink+=1
+			if material.next_pass!=null and material.next_pass.get_shader_parameter("track_state")==material.get_shader_parameter("track_state") and material.next_pass.get_shader_parameter("state_row")==material.get_shader_parameter("state_row"):matching_ink+=1
 	var file:=FileAccess.open(str(options.output_root)+"/"+str(options.output).get_basename()+"_style.json",FileAccess.WRITE)
 	file.store_string(JSON.stringify({"painted_surfaces":painted_surfaces,"animated_ink_passes":animated_ink_passes,"matching_live_ink_states":matching_ink,"audited_original_pigments":audited_pigments,"maximum_original_pigment_error":pigment_max_error,"style":style,"scope":"Same actual dynamic geometry with enamel/ink shading. No physics or pose modification."},"  "));file.close()
 

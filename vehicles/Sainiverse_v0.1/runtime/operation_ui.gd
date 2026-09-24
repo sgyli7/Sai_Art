@@ -102,7 +102,9 @@ func _build_drive()->void:
 
 func _build_robots()->void:
 	var c:=_section("robots","驾驶对象 ROBOTS",false)
-	for item in [["F9 · Sainiverse","vehicle"],["F5 · MicroDuck","microduck"],["F6 · MD 轮滑","roller"],["F7 · Sai 001","sai001"],["F8 · Sai 002","sai002"]]:
+	var choices:=[["F9 · Sainiverse","vehicle"],["F5 · MicroDuck","microduck"],["F6 · MD 轮滑","roller"]]
+	if host.sai_robots_enabled():choices.append_array([["F7 · Sai 001","sai001"],["F8 · Sai 002","sai002"]])
+	for item in choices:
 		var button:=_button(item[0]);button.pressed.connect(host.select_robot_mode.bind(item[1]));c.add_child(button)
 	c.add_child(_label("车辆始终可控；WASD 控制选中的机器人，方向键控制车辆。",12,MUTED))
 
@@ -165,8 +167,8 @@ func _refresh_mode_layout()->void:
 	robot_skill_buttons["sit"].text="下蹲滑行 2" if roller else "坐下 2"
 	var help:Label=sections["help"].get_child(0)
 	if vehicle:
-		mode_hint.text="W/S 驾驶 · A/D 转向 · 空格制动；F5–F8 切换机器人。"
-		help.text="鼠标：展开分组、选择设备、拖动驾驶滑杆；吊机按钮需按住。\nF5/F6/F7/F8 切换机器人，F9 返回母车；行驶中也可切换。\nW/S 前后行驶，A/D 转向；右键环视 · 滚轮缩放 · Tab 切换视角。"
+		mode_hint.text="W/S 驾驶 · A/D 转向 · 空格制动；F5/F6 切换 MicroDuck。"
+		help.text="鼠标：展开分组、选择设备、拖动驾驶滑杆；吊机按钮需按住。\nF5/F6 切换 MicroDuck，F9 返回母车；行驶中也可切换。\nW/S 前后行驶，A/D 转向；右键环视 · 滚轮缩放 · Tab 切换视角。"
 	elif md:
 		mode_hint.text="MicroDuck：W/S 移动 · A/D 转向；母车：↑/↓ 行驶 · ←/→ 转向 · Ctrl 制动。"
 		help.text="MicroDuck：W/S 前后，A/D 转向，Q/E 平移；1 捡地、2 坐下、3/4 踢球、5 前滚、7 站立、0 复位。\n母车：方向键行驶和转向，Ctrl 制动；F1 车旁雪地 · F2 甲板 · F3 驾驶舱。"
