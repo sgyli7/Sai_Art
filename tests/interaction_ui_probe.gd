@@ -82,15 +82,15 @@ func _run()->void:
 		printerr("FAIL: roller-specific controls are absent")
 		quit(1);return
 	active_robot_kind="sai001";ui.refresh()
-	if not help.text.contains("Sai Robot") or vehicle_card.visible or pick.visible:
-		printerr("FAIL: Sai Robot control hints are absent")
+	if not help.text.contains("Sai Robot") or not help.text.contains("方向键") or not vehicle_card.visible or not ui.sections["drive"].visible or pick.visible:
+		printerr("FAIL: Sai Robot and vehicle controls are not visible together")
 		quit(1);return
 	active_robot_kind="sai002";ui.refresh()
-	if not ui.mode_hint.text.contains("Sai 002") or vehicle_card.visible:
-		printerr("FAIL: Sai 002 control hints are absent")
+	if not ui.mode_hint.text.contains("Sai 002") or not vehicle_card.visible or not ui.sections["drive"].visible:
+		printerr("FAIL: Sai 002 and vehicle controls are not visible together")
 		quit(1);return
 	active_robot_kind="vehicle";ui.refresh()
-	if not vehicle_card.visible or ui.sections["robot_controls"].get_parent().visible:
+	if not vehicle_card.visible or not ui.sections["drive"].visible or ui.sections["robot_controls"].get_parent().visible:
 		printerr("FAIL: vehicle controls do not return with Sainiverse")
 		quit(1);return
 	print("PASS: UI routes robot input, travel, and per-robot hints")

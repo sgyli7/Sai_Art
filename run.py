@@ -60,6 +60,32 @@ def sync_current_robots(game, runtime):
         if dst.is_file() and dst.read_bytes()==data:continue
         dst.parent.mkdir(parents=True,exist_ok=True);dst.write_bytes(data);changed=True
     return changed
+
+def sync_sai60_runtime(runtime):
+    """Install the existing 60 Hz Sai bundle used by the desktop coworld path."""
+    profile_id = os.environ.get('SAINIVERSE_SAI60_POLICY', '')
+    if not profile_id:
+        return False
+    source = ROOT / 'integration/sai60'
+    profile_path = source / 'sai_policy/experimental' / f'{profile_id}.json'
+    if not profile_path.is_file():
+        raise RuntimeError(f'Sai 60 Hz profile is not bundled: {profile_id}')
+    profile = json.loads(profile_path.read_text())
+    policy_path = profile_path.parent / profile['actor']
+    if hashlib.sha256(policy_path.read_bytes()).hexdigest() != profile['onnx_sha256']:
+        raise RuntimeError(f'Sai 60 Hz policy hash mismatch: {profile_id}')
+    changed = False
+    for src in source.rglob('*'):
+        if not src.is_file():
+            continue
+        dst = runtime / src.relative_to(source)
+        data = src.read_bytes()
+        if dst.is_file() and dst.read_bytes() == data:
+            continue
+        dst.parent.mkdir(parents=True, exist_ok=True)
+        dst.write_bytes(data)
+        changed = True
+    return changed
 p=argparse.ArgumentParser(description=__doc__)
 p.add_argument('--game',type=Path,default=Path(os.environ['SAI_GODOT_PROJECT']) if 'SAI_GODOT_PROJECT' in os.environ else None,help='Existing Robot_Godot_Sim2Sim checkout')
 p.add_argument('--action',choices=['drive','mujoco','equipment-mujoco','cockpit-mujoco','record-pvs','unpack-blend','prepare'],default='drive')
@@ -100,6 +126,7 @@ if not worker_target.is_file() or worker_target.read_bytes()!=worker_source.read
     changed=True
 if os.environ.get('SAINIVERSE_USE_GAME_ROBOTS','')=='1':
     changed=sync_current_robots(game,runtime) or changed
+changed=sync_sai60_runtime(runtime) or changed
 # The release's avatar-only style API must be present even when the game's
 # older prepared robot snapshot supplies the rest of the visual resources.
 style_source=robot_source/'visuals/microduck/style.gd'

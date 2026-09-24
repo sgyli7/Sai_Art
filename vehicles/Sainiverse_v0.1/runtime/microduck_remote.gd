@@ -3,6 +3,7 @@ extends Node3D
 var carrier:SceneTree
 var mode_name:="walk"
 var manual_input:=true
+var dormant:=false
 var spawn_world:=Vector3.ZERO
 var spawn_source:=Vector3.ZERO
 var manual_ground_on_carrier:=false
@@ -56,6 +57,9 @@ func _ready()->void:
 	_base=body_nodes.get(str(robot.base_body))
 	if _base==null:_base=body_nodes.get("trunk_base")
 	world_anchor=spawn_world
+	if dormant:
+		set_physics_process(false)
+		return
 	var candidate:int=21000+int(OS.get_process_id()%1000)*2
 	for offset in range(0,200,2):
 		if receive.bind(candidate+offset,"127.0.0.1")==OK:
