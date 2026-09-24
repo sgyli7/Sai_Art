@@ -22,11 +22,31 @@ if a.headless:cmd+=['--headless','--fixed-fps','60' if sai60 else '200']
 if a.pv:cmd+=['--fixed-fps',str(a.pv_fps),'--resolution','1280x720']
 speed=27.777778 if a.mode=='straight' else 7. if a.mode=='turn' else 4.5 if a.mode=='hill_turn' else 8. if a.mode=='traverse' else 0.
 cmd+=['--',f'spec={O}/physics/native_spec.json',f'bindings={O}/bindings.json',f'output_root={out}',f'output=run.json',f'seconds={a.seconds or 86400}',f'speed={speed}',f'curvature={.01 if a.mode=="turn" else 0}',f'terrain={terrain}',f'view={a.view}',f'mode={a.mode}',f'theme={a.theme}',f'pv={str(a.pv).lower()}',f'capture={str(a.capture).lower()}',f'clean_capture={str(a.clean_capture).lower()}']
+# The game and its child robot worker benefit from the fast cores on hybrid
+# CPUs. Affinity applies only to this launch and never changes project physics.
+original_affinity=os.sched_getaffinity(0) if hasattr(os,'sched_getaffinity') else None
+fast_affinity=None
+if original_affinity and os.environ.get('SAINIVERSE_FAST_CORES','1')!='0':
+ rated={}
+ for cpu in original_affinity:
+  try:rated[cpu]=int((Path('/sys/devices/system/cpu')/f'cpu{cpu}/cpufreq/cpuinfo_max_freq').read_text())
+  except (OSError,ValueError):rated={};break
+ if rated:
+  highest=max(rated.values());lowest=min(rated.values())
+  fast={cpu for cpu,frequency in rated.items() if frequency>=highest*.95}
+  if highest>=lowest*1.2 and 4<=len(fast)<len(original_affinity):fast_affinity=fast
 proc=None
 try:
  project.write_text(modified)
  with (out/'run.log').open('w') as log:
-  proc=subprocess.Popen(cmd,stdout=log,stderr=subprocess.STDOUT,env={**os.environ,'DISPLAY':os.getenv('DISPLAY',':1'),'OPENBLAS_NUM_THREADS':'1','OMP_NUM_THREADS':'1'})
+  try:
+   if fast_affinity:
+    try:os.sched_setaffinity(0,fast_affinity)
+    except OSError:fast_affinity=None
+   proc=subprocess.Popen(cmd,stdout=log,stderr=subprocess.STDOUT,env={**os.environ,'DISPLAY':os.getenv('DISPLAY',':1'),'OPENBLAS_NUM_THREADS':'1','OMP_NUM_THREADS':'1'})
+  finally:
+   if fast_affinity:os.sched_setaffinity(0,original_affinity)
+  if fast_affinity:print('Sainiverse CPU affinity:',','.join(map(str,sorted(fast_affinity))),flush=True)
   code=proc.wait()
 finally:
  if proc is not None and proc.poll() is None:proc.terminate();proc.wait()
