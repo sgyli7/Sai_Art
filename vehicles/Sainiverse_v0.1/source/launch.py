@@ -14,6 +14,10 @@ for key,value in physics_defaults:modified,n=re.subn('^'+re.escape(key)+'=.*$',k
 key='jolt_physics_3d/simulation/body_pair_contact_cache_enabled'
 if key+'=' not in modified:modified=modified.replace('[physics]','[physics]\n'+key+'=false')
 else:modified=re.sub('^'+re.escape(key)+'=.*$',key+'=false',modified,flags=re.M)
+if os.environ.get('SAINIVERSE_PHYSICS_THREAD')=='1':
+ key='3d/run_on_separate_thread'
+ if re.search('^'+re.escape(key)+'=',modified,flags=re.M):modified=re.sub('^'+re.escape(key)+'=.*$',key+'=true',modified,flags=re.M)
+ else:modified=modified.replace('[physics]','[physics]\n'+key+'=true',1)
 if a.prepare_only:print(runtime);raise SystemExit()
 terrain=a.terrain
 cmd=[os.environ.get('GODOT_BIN','godot'),'--path',str(runtime),'--script',str(O/'runtime/drive.gd')]
@@ -51,7 +55,7 @@ try:
 finally:
  if proc is not None and proc.poll() is None:proc.terminate();proc.wait()
  project.write_text(text)
- (out/'launch.json').write_text(json.dumps(dict(args=vars(a),command=cmd,project_restored=project.read_text()==text),default=str,indent=2))
+ (out/'launch.json').write_text(json.dumps(dict(args=vars(a),command=cmd,physics_thread_enabled=bool(re.search('^3d/run_on_separate_thread=true$',modified,flags=re.M)),project_restored=project.read_text()==text),default=str,indent=2))
 print(out)
 print((out/'run.log').read_text()[-1800:])
 raise SystemExit(code)
