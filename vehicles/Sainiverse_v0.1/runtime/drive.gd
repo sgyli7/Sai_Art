@@ -64,6 +64,8 @@ var manual_camera_target:=Vector3.ZERO
 var manual_camera_local_target:=Vector3.ZERO
 var manual_camera_target_valid:=false
 var manual_camera_last_usec:=0
+var probe_cabin_camera_local:=Transform3D.IDENTITY
+var probe_cabin_camera_valid:=false
 var saved_vehicle_orbit:Array=[]
 var ramp_links:Dictionary={}
 var ramp_targets:Dictionary={}
@@ -73,6 +75,9 @@ const QUICK_LOCATION_NAMES:Dictionary={1:"车旁雪地",2:"甲板",3:"驾驶舱"
 
 func _sai60_coworld()->bool:
 	return OS.get_environment("SAINIVERSE_SAI60_POLICY")!=""
+
+func sai_robots_enabled()->bool:
+	return OS.get_environment("SAINIVERSE_ENABLE_SAI_ROBOTS")=="1"
 
 func _build()->void:
 	manual=str(options.get("mode","manual")) in ["manual","ui_test","lift_preview_cycle"]
@@ -181,7 +186,9 @@ func _build()->void:
 	_camera()
 
 func _build_parked_robots()->void:
-	for kind in ["microduck","roller","sai001","sai002"]:
+	var kinds:PackedStringArray=PackedStringArray(["microduck","roller"])
+	if sai_robots_enabled():kinds.append_array(PackedStringArray(["sai001","sai002"]))
+	for kind in kinds:
 		var destination:Dictionary=_quick_destination(3,kind)
 		var node
 		if kind in ["microduck","roller"]:
@@ -232,7 +239,7 @@ func handle_input(event:InputEvent)->void:
 		stage.get_viewport().set_input_as_handled()
 		return
 	if event is InputEventMouse and operation_ui!=null and operation_ui.captures_point(event.position):return
-	if event is InputEventKey and event.pressed and not event.echo and event.physical_keycode in [KEY_F5,KEY_F6,KEY_F7,KEY_F8,KEY_F9]:
+	if event is InputEventKey and event.pressed and not event.echo and (event.physical_keycode in [KEY_F5,KEY_F6,KEY_F9] or (sai_robots_enabled() and event.physical_keycode in [KEY_F7,KEY_F8])):
 		select_robot_mode({KEY_F5:"microduck",KEY_F6:"roller",KEY_F7:"sai001",KEY_F8:"sai002",KEY_F9:"vehicle"}[event.physical_keycode])
 		stage.get_viewport().set_input_as_handled()
 		return
@@ -289,6 +296,7 @@ func _make_manual_md(kind:String)->Node:
 
 func select_robot_mode(kind:String)->void:
 	if kind not in ["vehicle","microduck","roller","sai001","sai002"] or robot_switch_busy:return
+	if manual and kind in ["sai001","sai002"] and not sai_robots_enabled():return
 	if kind==active_robot_kind:return
 	robot_switch_busy=true;robot_switch_message="正在切换机器人…"
 	call_deferred("_switch_robot_mode",kind)
@@ -380,6 +388,7 @@ func _switch_robot_mode(kind:String)->void:
 	var ground_destination:Dictionary=_quick_destination(3,kind) if kind!="vehicle" else {}
 	manual_camera_target_valid=false
 	manual_camera_last_usec=0
+	probe_cabin_camera_valid=false
 	if active_robot_kind=="vehicle" and kind!="vehicle":
 		saved_vehicle_orbit=[orbit_radius,orbit_yaw,orbit_pitch]
 		orbit_radius=6.;orbit_yaw=.98;orbit_pitch=.28
@@ -673,7 +682,8 @@ func _physics_process(dt:float)->bool:
 
 func _manual_robot_camera(target:Vector3)->void:
 	var remote_view:bool=patrol!=null and patrol.has_method("set_destination")
-	var carrier_basis:Basis=patrol.rendered_carrier.basis if remote_view else bodies.front.global_basis
+	var carrier_pose:Transform3D=patrol.rendered_carrier if remote_view else bodies.front.get_global_transform_interpolated()
+	var carrier_basis:Basis=carrier_pose.basis
 	if remote_view:
 		# Follow the interpolated carrier in its own frame. Smoothing the world
 		# target also smooths the carrier's travel, so the deck slides under the
@@ -691,6 +701,10 @@ func _manual_robot_camera(target:Vector3)->void:
 		manual_camera_target=patrol.rendered_carrier*manual_camera_local_target
 		target=manual_camera_target
 	camera.projection=Camera3D.PROJECTION_PERSPECTIVE;camera.near=.015;camera.far=3500.;camera.fov=48.
+	if OS.get_environment("SAINIVERSE_CAMERA_PROBE_CABIN")=="1" and probe_cabin_camera_valid:
+		camera.global_transform=carrier_pose*probe_cabin_camera_local
+		_record_camera_motion(target)
+		return
 	if active_quick_location==1:
 		var moved:bool=false
 		if not quick_travel_history.is_empty():
@@ -717,12 +731,15 @@ func _manual_robot_camera(target:Vector3)->void:
 	if active_quick_location==2:
 		# Stay over the walking lane, below the roof and inside the outer guardrail.
 		camera.global_position=target+carrier_basis*Vector3(2.,.85,-.25)
-		camera.look_at(target,Vector3.UP)
+		camera.look_at(target,carrier_basis.y if remote_view else Vector3.UP)
 		_record_camera_motion(target)
 		return
 	if active_quick_location==3:
 		camera.global_position=target+carrier_basis*Vector3(-.9,.85,.95)
-		camera.look_at(target,Vector3.UP)
+		camera.look_at(target,carrier_basis.y if remote_view else Vector3.UP)
+		if OS.get_environment("SAINIVERSE_CAMERA_PROBE_CABIN")=="1":
+			probe_cabin_camera_local=carrier_pose.affine_inverse()*camera.global_transform
+			probe_cabin_camera_valid=true
 		_record_camera_motion(target)
 		return
 	var offset:=Vector3(cos(orbit_pitch)*cos(orbit_yaw),sin(orbit_pitch),cos(orbit_pitch)*sin(orbit_yaw))*orbit_radius
@@ -745,9 +762,13 @@ func _record_camera_motion(target:Vector3)->void:
 		var camera_local:Vector3=inverse*camera.global_position
 		var target_local:Vector3=inverse*target
 		var raw_local:Vector3=inverse*(patrol._base.global_position+Vector3.UP*.1)
+		var up_local:Vector3=inverse.basis*camera.global_basis.y
 		sample["camera_carrier_local"]=[camera_local.x,camera_local.y,camera_local.z]
 		sample["target_carrier_local"]=[target_local.x,target_local.y,target_local.z]
 		sample["raw_robot_carrier_local"]=[raw_local.x,raw_local.y,raw_local.z]
+		sample["camera_up_carrier_local"]=[up_local.x,up_local.y,up_local.z]
+		sample["robot_render_frame"]=patrol.rendered_frame
+		sample["camera_render_frame"]=Engine.get_process_frames()
 	camera_motion_samples.append(sample)
 
 func _camera()->void:
@@ -815,6 +836,7 @@ func _camera()->void:
 	world_surface.position=Vector3(-origin.offset_x,0,-origin.offset_z)
 
 func _process(dt:float)->bool:
+	if patrol!=null and patrol.has_method("update_rendered_pose"):patrol.update_rendered_pose(dt)
 	if robot_switch_message_until>0. and elapsed>=robot_switch_message_until:
 		robot_switch_message="";robot_switch_message_until=0.
 	if elapsed>=3.:

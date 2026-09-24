@@ -24,6 +24,7 @@ var last_packet_usec:=0
 var received_steps:=0
 var started_usec:=0
 var rendered_carrier:=Transform3D.IDENTITY
+var rendered_frame:=-1
 var pose_current:Dictionary={}
 var pose_snap_pending:=true
 var camera_snap_pending:=true
@@ -102,6 +103,14 @@ func _physics_process(_dt:float)->void:
 	pending_taps=[]
 
 func _process(dt:float)->void:
+	update_rendered_pose(dt)
+
+func update_rendered_pose(dt:float)->void:
+	# The SceneTree camera runs independently of Node processing. Ensure the
+	# robot and camera use the same interpolated carrier pose in each frame.
+	var frame:int=Engine.get_process_frames()
+	if rendered_frame==frame:return
+	rendered_frame=frame
 	# Both the 60 Hz carrier and 50 Hz pose stream are interpolated for rendering.
 	# Physics bodies, joints and control timing remain unchanged.
 	rendered_carrier=carrier.bodies.front.get_global_transform_interpolated()
