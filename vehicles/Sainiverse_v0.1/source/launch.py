@@ -7,14 +7,18 @@ runtime=a.game/'results/leviathan003/runtime';project=runtime/'project.godot';as
 lock=open(runtime/'sainiverse.lock','w');fcntl.flock(lock,fcntl.LOCK_EX|fcntl.LOCK_NB)
 out=a.output or O/'reports'/('drive_'+time.strftime('%Y%m%d_%H%M%S'));out=out.resolve();out.mkdir(parents=True,exist_ok=True)
 text=project.read_text();modified=text
-for key,value in [('jolt_physics_3d/simulation/velocity_steps',os.getenv('LEVIATHAN_VELOCITY_STEPS','12')),('jolt_physics_3d/simulation/position_steps','8'),('common/max_physics_steps_per_frame','32')]:modified,n=re.subn('^'+re.escape(key)+'=.*$',key+'='+value,modified,flags=re.M);assert n==1,key
+sai60=bool(os.environ.get('SAINIVERSE_SAI60_POLICY',''))
+physics_defaults=[('jolt_physics_3d/simulation/velocity_steps',os.getenv('LEVIATHAN_VELOCITY_STEPS','12')),('jolt_physics_3d/simulation/position_steps','8'),('common/max_physics_steps_per_frame','32')]
+if sai60:physics_defaults.append(('common/physics_ticks_per_second','60'))
+for key,value in physics_defaults:modified,n=re.subn('^'+re.escape(key)+'=.*$',key+'='+value,modified,flags=re.M);assert n==1,key
 key='jolt_physics_3d/simulation/body_pair_contact_cache_enabled'
 if key+'=' not in modified:modified=modified.replace('[physics]','[physics]\n'+key+'=false')
 else:modified=re.sub('^'+re.escape(key)+'=.*$',key+'=false',modified,flags=re.M)
 if a.prepare_only:print(runtime);raise SystemExit()
 terrain=a.terrain
 cmd=[os.environ.get('GODOT_BIN','godot'),'--path',str(runtime),'--script',str(O/'runtime/drive.gd')]
-if a.headless:cmd+=['--headless','--fixed-fps','200']
+# Acceptance for 60/60 coworld must not use --fixed-fps 200.
+if a.headless:cmd+=['--headless','--fixed-fps','60' if sai60 else '200']
 if a.pv:cmd+=['--fixed-fps',str(a.pv_fps),'--resolution','1280x720']
 speed=27.777778 if a.mode=='straight' else 7. if a.mode=='turn' else 4.5 if a.mode=='hill_turn' else 8. if a.mode=='traverse' else 0.
 cmd+=['--',f'spec={O}/physics/native_spec.json',f'bindings={O}/bindings.json',f'output_root={out}',f'output=run.json',f'seconds={a.seconds or 86400}',f'speed={speed}',f'curvature={.01 if a.mode=="turn" else 0}',f'terrain={terrain}',f'view={a.view}',f'mode={a.mode}',f'theme={a.theme}',f'pv={str(a.pv).lower()}',f'capture={str(a.capture).lower()}',f'clean_capture={str(a.clean_capture).lower()}']
