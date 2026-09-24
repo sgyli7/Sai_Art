@@ -1,5 +1,6 @@
 #include <godot_cpp/godot.hpp>
 #include <godot_cpp/classes/ref_counted.hpp>
+#include <godot_cpp/classes/rigid_body3d.hpp>
 #include <godot_cpp/core/class_db.hpp>
 #include <godot_cpp/variant/array.hpp>
 #include <godot_cpp/variant/dictionary.hpp>
@@ -11,15 +12,58 @@
 #include <cmath>
 #include <vector>
 using namespace godot;
-// Pure track geometry. No physics access, force, time decimation or pose writes.
+// Track geometry and read-only contact sampling. No force, time decimation or pose writes.
 class LeviathanTrackPath : public RefCounted {
     GDCLASS(LeviathanTrackPath,RefCounted)
 protected:
     static void _bind_methods() {
         ClassDB::bind_method(D_METHOD("build","wheels","travel","idler"),&LeviathanTrackPath::build);
         ClassDB::bind_method(D_METHOD("envelope","wheels"),&LeviathanTrackPath::envelope);
+        ClassDB::bind_method(D_METHOD("contact_geometry","contacts","terrain","offset_x","offset_z","max_factor"),&LeviathanTrackPath::contact_geometry);
     }
 public:
+    static double bump(double x,double center,double width,double height){
+        constexpr double pi=3.1415926535897932384626433832795;
+        return height*0.5*(1.0+std::cos(pi*std::clamp((x-center)/width,-1.0,1.0)));
+    }
+    static double ground_height(const String &terrain,double x,double y){
+        if(terrain=="flat")return 0.0;
+        constexpr double tau=6.283185307179586476925286766559;
+        const double hill=bump(x,85.0,75.0,1.8)*bump(y,0.0,150.0,1.0);
+        const double window=std::clamp((x-10.0)/14.0,0.0,1.0)*std::clamp((180.0-x)/14.0,0.0,1.0);
+        return hill+window*bump(y,0.0,150.0,1.0)*(.09*std::sin(tau*x/17.0)+.06*std::sin(tau*x/9.0+std::tanh(y/8.0))+.05*std::sin(y/13.0));
+    }
+    Dictionary contact_geometry(Array contacts,String terrain,double offset_x,double offset_z,double max_factor) const {
+        Dictionary result;
+        if(terrain!="flat"&&terrain!="polar")return result;
+        double total_load=0.0;int supported=0;
+        for(int i=0;i<contacts.size();++i){
+            Dictionary item=contacts[i];Object *object=item["body"];
+            RigidBody3D *body=Object::cast_to<RigidBody3D>(object);
+            ERR_FAIL_NULL_V(body,Dictionary());
+            const Transform3D transform=body->get_global_transform();
+            const Vector3 center=transform.xform(Vector3(item["local"]));
+            const double wx=double(center.x)+offset_x,wy=-double(center.z)-offset_z;
+            const double h=ground_height(terrain,wx,wy);
+            const double dx=(ground_height(terrain,wx+.01,wy)-ground_height(terrain,wx-.01,wy))/.02;
+            const double dy=(ground_height(terrain,wx,wy+.01)-ground_height(terrain,wx,wy-.01))/.02;
+            const Vector3 normal=Vector3(-dx,1.0,dy).normalized();
+            const double radius=item["radius"];
+            const double penetration=radius-(double(center.y)-h)*double(normal.y);
+            const Vector3 point=center-normal*radius;
+            const Vector3 velocity=body->get_linear_velocity()+body->get_angular_velocity().cross(point-transform.xform(body->get_center_of_mass()));
+            const double stiffness=item["stiffness"],damping=item["damping"],nominal=item["nominal"];
+            const double load=penetration>=0.0?std::clamp(stiffness*penetration-damping*double(velocity.dot(normal)),0.0,nominal*max_factor):0.0;
+            const Vector3 axis=transform.basis.get_column(0);
+            const Vector3 forward=(axis-normal*axis.dot(normal)).normalized();
+            const Vector3 lateral=normal.cross(forward);
+            const double speed=velocity.dot(forward);
+            item["point"]=point;item["normal"]=normal;item["forward"]=forward;item["lateral"]=lateral;
+            item["velocity"]=velocity;item["load"]=load;item["speed"]=speed;
+            total_load+=load;if(load>1.0)++supported;
+        }
+        result["total_load"]=total_load;result["supported"]=supported;return result;
+    }
     Dictionary envelope(Array wheels) const {
         constexpr double tau=6.283185307179586476925286766559;
         const int count=wheels.size();

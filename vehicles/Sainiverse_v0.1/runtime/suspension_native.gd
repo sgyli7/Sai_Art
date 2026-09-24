@@ -43,6 +43,7 @@ var anchor_peaks:Dictionary={}
 var maximum_local_anchor_residual:=0.0
 var maximum_anchor_measurement_disagreement:=0.0
 var peak_speed:=0.0
+var contact_core=null
 var start_usec:int
 var force_links:Array=[]
 var hull_names:Array=[]
@@ -116,6 +117,8 @@ func _build()->void:
 		if float(item.stiffness)<=0. and not bool(item.get("lift",false)) and not bool(item.get("equipment",false)) and not bool(item.get("cockpit",false)):force_links.append(link)
 	for item in spec.contact.contacts:contacts.append({"body":bodies[item.body],"local":vec(item.local),"radius":float(item.radius),
 		"stiffness":float(item.get("contact_stiffness",spec.contact.contact_stiffness)),"damping":float(item.get("contact_damping",spec.contact.contact_damping)),"nominal":float(item.get("nominal_load_N",spec.contact.nominal_contact_load))})
+	if ClassDB.class_exists("LeviathanTrackPath"):
+		contact_core=ClassDB.instantiate("LeviathanTrackPath")
 	if spec.contact.has("hydraulics"):
 		hydraulics=Hydraulic.new();hydraulics.configure(spec.contact.hydraulics)
 		for name in hydraulics.names:
@@ -275,21 +278,27 @@ func _physics_process(dt:float)->bool:
 				body.apply_force(axis*effort,pb-body.global_position);parent.apply_force(-axis*effort,pa-parent.global_position)
 			else:body.apply_torque(axis*effort);parent.apply_torque(-axis*effort)
 	var points:Array=contacts;var total_load:=0.0;var supported:=0
-	for item in contacts:
-		var body:RigidBody3D=item.body;var center:Vector3=body.global_transform*item.local
-		var world_x:float=float(center.x)+origin.offset_x;var world_y:float=-float(center.z)-origin.offset_z
-		var h:float=height(world_x,world_y)
-		var dx:float=(height(world_x+.01,world_y)-height(world_x-.01,world_y))/.02
-		var dy:float=(height(world_x,world_y+.01)-height(world_x,world_y-.01))/.02
-		var normal:=Vector3(-dx,1,dy).normalized()
-		var penetration:float=item.radius-(center.y-h)*normal.y
-		var point:Vector3=center-normal*float(item.radius);var velocity:Vector3=point_velocity(body,point)
-		var load:float=clampf(float(item.stiffness)*penetration-float(item.damping)*velocity.dot(normal),0,float(item.nominal)*float(cfg.contact_max_nominal_load_factor)) if penetration>=0 else 0.
-		var forward:Vector3=(body.global_basis.x-normal*body.global_basis.x.dot(normal)).normalized()
-		var lateral:Vector3=normal.cross(forward);var longitudinal_speed:float=velocity.dot(forward)
-		item.point=point;item.normal=normal;item.forward=forward;item.lateral=lateral;item.velocity=velocity;item.load=load;item.speed=longitudinal_speed
-		total_load+=load
-		if load>1:supported+=1
+	var used_native:bool=false
+	if contact_core!=null and contact_core.has_method("contact_geometry") and OS.get_environment("SAINIVERSE_LEGACY_CONTACT")!="1":
+		var result:Dictionary=contact_core.contact_geometry(contacts,str(options.terrain),origin.offset_x,origin.offset_z,float(cfg.contact_max_nominal_load_factor))
+		if result.has("total_load"):
+			total_load=float(result.total_load);supported=int(result.supported);used_native=true
+	if not used_native:
+		for item in contacts:
+			var body:RigidBody3D=item.body;var center:Vector3=body.global_transform*item.local
+			var world_x:float=float(center.x)+origin.offset_x;var world_y:float=-float(center.z)-origin.offset_z
+			var h:float=height(world_x,world_y)
+			var dx:float=(height(world_x+.01,world_y)-height(world_x-.01,world_y))/.02
+			var dy:float=(height(world_x,world_y+.01)-height(world_x,world_y-.01))/.02
+			var normal:=Vector3(-dx,1,dy).normalized()
+			var penetration:float=item.radius-(center.y-h)*normal.y
+			var point:Vector3=center-normal*float(item.radius);var velocity:Vector3=point_velocity(body,point)
+			var load:float=clampf(float(item.stiffness)*penetration-float(item.damping)*velocity.dot(normal),0,float(item.nominal)*float(cfg.contact_max_nominal_load_factor)) if penetration>=0 else 0.
+			var forward:Vector3=(body.global_basis.x-normal*body.global_basis.x.dot(normal)).normalized()
+			var lateral:Vector3=normal.cross(forward);var longitudinal_speed:float=velocity.dot(forward)
+			item.point=point;item.normal=normal;item.forward=forward;item.lateral=lateral;item.velocity=velocity;item.load=load;item.speed=longitudinal_speed
+			total_load+=load
+			if load>1:supported+=1
 	var grade:=0.0;var leverage_mean:=0.0
 	var leader_com:Vector3=com(leader)
 	for p in points:
