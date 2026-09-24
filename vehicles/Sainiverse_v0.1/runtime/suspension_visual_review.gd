@@ -14,9 +14,9 @@ var final_written:=false
 var fast_visual:=false
 
 func _build()->void:
-	# Interactive play favors steady input and camera updates. Review captures
-	# retain the authored ink and shadow treatment.
-	fast_visual=str(options.get("mode",""))=="manual" and OS.get_environment("SAINIVERSE_FULL_VISUALS")!="1"
+	# Preserve the authored ink and shadow treatment in normal play. The
+	# reduced presentation is available only for isolated performance probes.
+	fast_visual=str(options.get("mode",""))=="manual" and OS.get_environment("SAINIVERSE_FAST_VISUALS")=="1" and OS.get_environment("SAINIVERSE_FULL_VISUALS")!="1"
 	super._build()
 	DisplayServer.window_set_size(Vector2i(1280,720) if str(options.get("pv","false"))=="true" else Vector2i(1920,1080));DisplayServer.window_set_vsync_mode(DisplayServer.VSYNC_DISABLED)
 	root.msaa_3d=Viewport.MSAA_4X
