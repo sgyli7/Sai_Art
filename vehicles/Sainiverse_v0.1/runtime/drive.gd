@@ -33,6 +33,8 @@ var equipment=null
 var cockpit=null
 var acceptance_frame_start_usec:int=0
 var acceptance_rendered_frames:int=0
+var acceptance_frame_samples:Array=[]
+var acceptance_last_sample_second:=-1
 var operation_ui=null
 var patrol=null
 var sai_passenger=null
@@ -842,6 +844,10 @@ func _process(dt:float)->bool:
 	if elapsed>=3.:
 		if acceptance_frame_start_usec==0:acceptance_frame_start_usec=Time.get_ticks_usec()
 		acceptance_rendered_frames+=1
+		var sample_second:int=int(elapsed)
+		if sample_second!=acceptance_last_sample_second:
+			acceptance_last_sample_second=sample_second
+			acceptance_frame_samples.append({"simulation_second":sample_second,"frames":acceptance_rendered_frames,"wall_usec":Time.get_ticks_usec(),"physics_hz":Engine.physics_ticks_per_second,"active_robot":active_robot_kind})
 	if patrol_camera!=null and patrol!=null and patrol._base!=null:
 		var p:Vector3=patrol._base.global_position+Vector3.UP*.1
 		patrol_camera.global_position=p+Vector3(-1.15,.65,1.1);patrol_camera.look_at(p,Vector3.UP)
@@ -870,7 +876,7 @@ func _write_visual_report()->void:
 	super._write_visual_report()
 	var frame_seconds:float=(Time.get_ticks_usec()-acceptance_frame_start_usec)/1000000.
 	var frame_report:=FileAccess.open(str(options.output_root)+"/render_throughput.json",FileAccess.WRITE)
-	frame_report.store_string(JSON.stringify({"frames":acceptance_rendered_frames,"wall_seconds":frame_seconds,"average_fps":acceptance_rendered_frames/maxf(frame_seconds,.001),"view":str(options.view),"scope":"Rendered frames per wall second after simulation second 3; screenshot capture overhead included."},"  "));frame_report.close()
+	frame_report.store_string(JSON.stringify({"frames":acceptance_rendered_frames,"wall_seconds":frame_seconds,"average_fps":acceptance_rendered_frames/maxf(frame_seconds,.001),"samples":acceptance_frame_samples,"view":str(options.view),"scope":"Rendered frames per wall second after simulation second 3; screenshot capture overhead included."},"  "));frame_report.close()
 	if cargo!=null:
 		var f:=FileAccess.open(str(options.output_root)+"/cargo_handling.json",FileAccess.WRITE);f.store_string(JSON.stringify(cargo.report(),"  "));f.close()
 	if equipment!=null:
