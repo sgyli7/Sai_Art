@@ -1,1 +1,1 @@
-{"enabled_classes":["RefCounted","OS","FileAccess","WorkerThreadPool","XMLParser"]}
+{"enabled_classes":["RefCounted","RigidBody3D","OS","FileAccess","WorkerThreadPool","XMLParser"]}
