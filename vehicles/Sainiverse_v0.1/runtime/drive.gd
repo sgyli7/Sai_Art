@@ -65,7 +65,11 @@ var saved_vehicle_orbit:Array=[]
 var ramp_links:Dictionary={}
 var ramp_targets:Dictionary={}
 var ramp_samples:Array=[]
+var sai60_physics_hz_samples:Array=[]
 const QUICK_LOCATION_NAMES:Dictionary={1:"车旁雪地",2:"甲板",3:"驾驶舱"}
+
+func _sai60_coworld()->bool:
+	return OS.get_environment("SAINIVERSE_SAI60_POLICY")!=""
 
 func _build()->void:
 	manual=str(options.get("mode","manual")) in ["manual","ui_test","lift_preview_cycle"]
@@ -100,7 +104,8 @@ func _build()->void:
 	var robot_staging:bool=str(options.get("mode","")) in ["cabin_patrol","cockpit_patrol","deck_patrol","sai_board","sai_board_002","sai_cockpit"]
 	var boarding_staging:bool=str(options.get("mode","")) in ["sai_board","sai_board_002","sai_cockpit"]
 	if manual or robot_staging:
-		var preferred_hz:int=100 if boarding_staging else int(OS.get_environment("SAINIVERSE_INTERACTIVE_HZ")) if manual and OS.has_environment("SAINIVERSE_INTERACTIVE_HZ") else 60
+		# 60/60 ONNX coworld path must never stage at 100 Hz then jump to 1000/2000.
+		var preferred_hz:int=60 if _sai60_coworld() else 100 if boarding_staging else int(OS.get_environment("SAINIVERSE_INTERACTIVE_HZ")) if manual and OS.has_environment("SAINIVERSE_INTERACTIVE_HZ") else 60
 		Engine.physics_ticks_per_second=clampi(preferred_hz,60,200)
 		Engine.max_physics_steps_per_frame=12
 	equipment=load(HERE+"/runtime/equipment_control.gd").new();equipment.configure(self,spec.contact.equipment)
@@ -351,8 +356,9 @@ func _switch_robot_mode(kind:String)->void:
 	for name in bodies:bodies[name].freeze=kind!="vehicle" and not remote_md
 	parked_patrol_fixture=kind!="vehicle" and not remote_md
 	parked_boarding_fixture=false
-	Engine.physics_ticks_per_second=60 if kind=="vehicle" or remote_md else 200 if kind in ["microduck","roller"] else 1000
-	Engine.max_physics_steps_per_frame=12 if kind=="vehicle" or remote_md else 16 if kind in ["microduck","roller"] else 256
+	var sai60:bool=_sai60_coworld() and kind in ["sai001","sai002"]
+	Engine.physics_ticks_per_second=60 if kind=="vehicle" or remote_md or sai60 else 200 if kind in ["microduck","roller"] else 1000
+	Engine.max_physics_steps_per_frame=12 if kind=="vehicle" or remote_md or sai60 else 16 if kind in ["microduck","roller"] else 256
 	if not remote_md:
 		for axis in ["throttle","steer","brake"]:cockpit.ui_axes[axis]=0.
 	if kind in ["microduck","roller"]:
@@ -486,6 +492,16 @@ func _physics_process(dt:float)->bool:
 		else:Input.action_release("sainiverse_forward")
 		if elapsed>=16. and elapsed<19.:Input.action_press("sainiverse_left")
 		else:Input.action_release("sainiverse_left")
+	# 60/60 coworld: reuse existing sainiverse_* Input axes (same path as hold-forward).
+	# ~45 s ops-like probe (each active segment ≤8 s): fwd → fwd+left → fwd → stop.
+	# t=11..19 forward; t=19..25 forward+left; t=25..33 forward; t>=33 stop.
+	elif _sai60_coworld() and sai_passenger!=null and sai_passenger.manual_control and OS.get_environment("SAINIVERSE_DRIVE_PROBE")=="1":
+		if elapsed>=11. and elapsed<33.:Input.action_press("sainiverse_forward")
+		else:Input.action_release("sainiverse_forward")
+		if elapsed>=19. and elapsed<25.:Input.action_press("sainiverse_left")
+		else:Input.action_release("sainiverse_left")
+		Input.action_release("sainiverse_right")
+		Input.action_release("sainiverse_reverse")
 	if manual and not switch_probe_sequence.is_empty() and elapsed>=11.:
 		var probe_index:=int((elapsed-11.)/6.)
 		var probe_kind:String=switch_probe_sequence[probe_index] if probe_index<switch_probe_sequence.size() else ""
@@ -536,8 +552,12 @@ func _physics_process(dt:float)->bool:
 			report.store_string(JSON.stringify({"seconds":elapsed,"wall_seconds":(Time.get_ticks_usec()-start_usec)/1e6,"parked_carrier_fixture":true,"robot_controller_hz":50,"physics_hz":Engine.physics_ticks_per_second,"mode":str(options.mode),"selected_robot":active_robot_kind},"  "));report.close();quit()
 		return false
 	if sai_passenger==null and elapsed>=10. and str(options.get("mode","")) in ["sai_board","sai_board_002","sai_cockpit"]:
-		Engine.physics_ticks_per_second=1000 if OS.get_environment("SAINIVERSE_USE_GAME_ROBOTS")=="1" else 2000
-		Engine.max_physics_steps_per_frame=256
+		if _sai60_coworld():
+			Engine.physics_ticks_per_second=60
+			Engine.max_physics_steps_per_frame=12
+		else:
+			Engine.physics_ticks_per_second=1000 if OS.get_environment("SAINIVERSE_USE_GAME_ROBOTS")=="1" else 2000
+			Engine.max_physics_steps_per_frame=256
 		parked_boarding_fixture=true
 		# Stationary carrier fixture: freeze after the full suspension has settled.
 		# The selected lift/ramp and every robot body continue physical integration.
@@ -548,6 +568,10 @@ func _physics_process(dt:float)->bool:
 		sai_passenger=load(HERE+"/runtime/sai_boarding.gd").new();sai_passenger.carrier=self
 		sai_passenger.robot_id="Sai_Agent_002" if str(options.mode)=="sai_board_002" else "Sai_Agent_001"
 		sai_passenger.cockpit_demo=str(options.get("mode",""))=="sai_cockpit"
+		# 60/60: route velocity through existing manual Input axes (DRIVE_PROBE presses
+		# sainiverse_forward); not a separate hardcoded [.14,0,0] propulsion branch.
+		if _sai60_coworld() and not sai_passenger.cockpit_demo:
+			sai_passenger.manual_control=true
 		if sai_passenger.cockpit_demo:cockpit.set_physical_mode(true)
 		stage.add_child(sai_passenger)
 	if not parked_boarding_fixture or str(options.get("mode",""))=="sai_cockpit":cockpit.step(dt)
@@ -569,10 +593,13 @@ func _physics_process(dt:float)->bool:
 	if drive_interlock:options.speed=0.
 	if parked_boarding_fixture:
 		elapsed+=dt;count+=1
+		if _sai60_coworld() and (sai60_physics_hz_samples.is_empty() or int(sai60_physics_hz_samples[-1].physics_hz)!=Engine.physics_ticks_per_second or count%maxi(1,Engine.physics_ticks_per_second/10)==0):
+			sai60_physics_hz_samples.append({"time":elapsed,"physics_hz":Engine.physics_ticks_per_second,"count":count})
 		if elapsed>=float(options.seconds):
 			_write_visual_report()
 			var file:=FileAccess.open(str(options.output_root)+"/run.json",FileAccess.WRITE)
-			file.store_string(JSON.stringify({"seconds":elapsed,"wall_seconds":(Time.get_ticks_usec()-start_usec)/1e6,"parked_carrier_fixture":true,"dynamic_selected_lift_ramp_bodies":0 if str(options.get("mode",""))=="sai_cockpit" else 5,"robot_controller_hz":50,"physics_hz":Engine.physics_ticks_per_second,"scope":"Stationary cockpit manipulation with dynamic steering joints and Sai articulation." if str(options.get("mode",""))=="sai_cockpit" else "Carrier settled dynamically for 10 seconds, then held fixed for stationary boarding. Lift, ramp and Sai remain dynamic with actual collisions and finite actuator forces. Does not measure hull response to boarding load."},"  "));file.close();quit()
+			var policy_hz:int=60 if _sai60_coworld() else 50
+			file.store_string(JSON.stringify({"seconds":elapsed,"wall_seconds":(Time.get_ticks_usec()-start_usec)/1e6,"parked_carrier_fixture":true,"dynamic_selected_lift_ramp_bodies":0 if str(options.get("mode",""))=="sai_cockpit" else 5,"robot_controller_hz":policy_hz,"physics_hz":Engine.physics_ticks_per_second,"sai60_coworld":_sai60_coworld(),"physics_hz_samples":sai60_physics_hz_samples,"scope":"Stationary cockpit manipulation with dynamic steering joints and Sai articulation." if str(options.get("mode",""))=="sai_cockpit" else "Carrier settled dynamically for 10 seconds, then held fixed for stationary boarding. Lift, ramp and Sai remain dynamic with actual collisions and finite actuator forces. Does not measure hull response to boarding load."},"  "));file.close();quit()
 		return false
 	var result:bool=super._physics_process(dt)
 	controller_steps+=1;controller_usec+=Time.get_ticks_usec()-controller_start
@@ -756,7 +783,14 @@ func _write_visual_report()->void:
 	if sai_passenger!=null:
 		var report_name:String="sai_cockpit.json" if sai_passenger.cockpit_demo else "sai_boarding.json"
 		var proof:=FileAccess.open(str(options.output_root)+"/"+report_name,FileAccess.WRITE)
-		proof.store_string(JSON.stringify({"robot_id":sai_passenger.robot_id,"samples":sai_passenger.cockpit_samples if sai_passenger.cockpit_demo else sai_passenger.mission_samples,"completed":sai_passenger.completed,"failure":sai_passenger.failure,"physics_hz":Engine.physics_ticks_per_second,"policy_hz":50,"parked_carrier_fixture":parked_boarding_fixture,"scope":"Stationary carrier; existing Sai arm impedance and physical steering contact." if sai_passenger.cockpit_demo else "Scripted boarding mission using existing learned locomotion and native impedance; real contacts and finite-force lift/ramp."},"  "));proof.close()
+		var policy_hz:int=60 if _sai60_coworld() else 50
+		var coworld:Dictionary={}
+		if _sai60_coworld() and sai_passenger.has_method("coworld_evidence"):
+			coworld=sai_passenger.coworld_evidence()
+		proof.store_string(JSON.stringify({"robot_id":sai_passenger.robot_id,"samples":sai_passenger.cockpit_samples if sai_passenger.cockpit_demo else sai_passenger.mission_samples,"completed":sai_passenger.completed,"failure":sai_passenger.failure,"physics_hz":Engine.physics_ticks_per_second,"policy_hz":policy_hz,"parked_carrier_fixture":parked_boarding_fixture,"sai60_coworld":_sai60_coworld(),"sai60_skill":OS.get_environment("SAINIVERSE_SAI60_POLICY"),"physics_hz_samples":sai60_physics_hz_samples,"coworld":coworld,"scope":"Stationary carrier; existing Sai arm impedance and physical steering contact." if sai_passenger.cockpit_demo else ("60/60 ONNX coworld boarding with dynamic lift/ramp and Sai sharing one physics world." if _sai60_coworld() else "Scripted boarding mission using existing learned locomotion and native impedance; real contacts and finite-force lift/ramp.")},"  "));proof.close()
+		if _sai60_coworld():
+			var summary:=FileAccess.open(str(options.output_root)+"/sai60_coworld_report.json",FileAccess.WRITE)
+			summary.store_string(JSON.stringify({"physics_hz":Engine.physics_ticks_per_second,"policy_hz":policy_hz,"physics_hz_samples":sai60_physics_hz_samples,"wall_seconds":(Time.get_ticks_usec()-start_usec)/1e6,"sim_seconds":elapsed,"coworld":coworld,"failure":sai_passenger.failure,"completed":sai_passenger.completed},"  "));summary.close()
 	var switches:=FileAccess.open(str(options.output_root)+"/robot_switches.json",FileAccess.WRITE)
 	switches.store_string(JSON.stringify({"history":robot_switch_history,"active_robot":active_robot_kind,"quick_travel":quick_travel_history,"remote_probe":remote_probe_samples},"  "));switches.close()
 	if not camera_motion_samples.is_empty():
