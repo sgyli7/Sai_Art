@@ -61,6 +61,7 @@ var remote_probe_keys:Dictionary={}
 var remote_probe_samples:Array=[]
 var camera_motion_samples:Array=[]
 var manual_camera_target:=Vector3.ZERO
+var manual_camera_local_target:=Vector3.ZERO
 var manual_camera_target_valid:=false
 var manual_camera_last_usec:=0
 var saved_vehicle_orbit:Array=[]
@@ -173,6 +174,7 @@ func _build()->void:
 	cargo=load(HERE+"/runtime/cargo_handling.gd").new();cargo.configure(self)
 	cockpit=load(HERE+"/runtime/cockpit_control.gd").new();cockpit.configure(self,spec.contact.cockpit)
 	operation_ui=load(HERE+"/runtime/operation_ui.gd").new();stage.add_child(operation_ui);operation_ui.configure(self)
+	if OS.get_environment("SAINIVERSE_CAMERA_PROBE_HIDE_UI")=="1":operation_ui.visible=false
 	camera.physics_interpolation_mode=Node.PHYSICS_INTERPOLATION_MODE_OFF
 	world_surface.physics_interpolation_mode=Node.PHYSICS_INTERPOLATION_MODE_OFF
 	if manual and DisplayServer.get_name()!="headless":_build_parked_robots()
@@ -225,6 +227,7 @@ func _remote_interactive()->bool:
 
 func handle_input(event:InputEvent)->void:
 	if not camera_ready or not manual:return
+	if OS.get_environment("SAINIVERSE_CAMERA_PROBE_IGNORE_MOUSE")=="1" and event is InputEventMouse:return
 	if not switch_probe_sequence.is_empty() or OS.get_environment("SAINIVERSE_DRIVE_PROBE")=="1":
 		stage.get_viewport().set_input_as_handled()
 		return
@@ -527,7 +530,7 @@ func _physics_process(dt:float)->bool:
 		if elapsed>=11. and remote_probe_stage==0 and not robot_switch_busy:
 			select_robot_mode(probe_kind);remote_probe_stage=1
 		if elapsed>=13. and remote_probe_stage==1 and not robot_switch_busy and active_robot_kind==probe_kind:
-			if probe_kind in ["microduck","roller"] or OS.get_environment("SAINIVERSE_DUAL_PROBE_TRAVEL")=="2":quick_travel(2)
+			if (probe_kind in ["microduck","roller"] and OS.get_environment("SAINIVERSE_DUAL_PROBE_TRAVEL")!="0") or OS.get_environment("SAINIVERSE_DUAL_PROBE_TRAVEL")=="2":quick_travel(2)
 			remote_probe_stage=2
 		if elapsed>=16. and remote_probe_stage==2:
 			var car_probe:bool=OS.get_environment("SAINIVERSE_DUAL_PROBE_CAR")!="0"
@@ -672,17 +675,20 @@ func _manual_robot_camera(target:Vector3)->void:
 	var remote_view:bool=patrol!=null and patrol.has_method("set_destination")
 	var carrier_basis:Basis=patrol.rendered_carrier.basis if remote_view else bodies.front.global_basis
 	if remote_view:
-		# This SceneTree owns the camera, so Camera3D.get_process_delta_time() is
-		# not the render interval here. Measure successive camera updates instead.
+		# Follow the interpolated carrier in its own frame. Smoothing the world
+		# target also smooths the carrier's travel, so the deck slides under the
+		# camera while driving. Only the robot's local motion needs smoothing.
 		var now_usec:int=Time.get_ticks_usec()
 		var render_dt:float=clampf(float(now_usec-manual_camera_last_usec)/1000000.,0.,.1) if manual_camera_last_usec>0 else 0.
 		manual_camera_last_usec=now_usec
+		var local_target:Vector3=patrol.rendered_carrier.affine_inverse()*target
 		if not manual_camera_target_valid or patrol.camera_snap_pending:
-			manual_camera_target=target
+			manual_camera_local_target=local_target
 			manual_camera_target_valid=true
 			patrol.camera_snap_pending=false
 		else:
-			manual_camera_target=manual_camera_target.lerp(target,1.-exp(-12.*render_dt))
+			manual_camera_local_target=manual_camera_local_target.lerp(local_target,1.-exp(-12.*render_dt))
+		manual_camera_target=patrol.rendered_carrier*manual_camera_local_target
 		target=manual_camera_target
 	camera.projection=Camera3D.PROJECTION_PERSPECTIVE;camera.near=.015;camera.far=3500.;camera.fov=48.
 	if active_quick_location==1:
@@ -733,7 +739,16 @@ func _record_camera_motion(target:Vector3)->void:
 	if OS.get_environment("SAINIVERSE_CAMERA_PROBE")!="1" or active_robot_kind not in ["microduck","roller"] or patrol==null:return
 	if camera_motion_samples.size()>25000:return
 	var car_position:Vector3=bodies.front.global_position
-	camera_motion_samples.append({"wall_usec":Time.get_ticks_usec(),"sim_time":elapsed,"camera":[camera.global_position.x,camera.global_position.y,camera.global_position.z],"target":[target.x,target.y,target.z],"car":[car_position.x,car_position.y,car_position.z]})
+	var sample:Dictionary={"wall_usec":Time.get_ticks_usec(),"sim_time":elapsed,"camera":[camera.global_position.x,camera.global_position.y,camera.global_position.z],"target":[target.x,target.y,target.z],"car":[car_position.x,car_position.y,car_position.z],"quick_location":active_quick_location,"mouse_drag":mouse_drag}
+	if patrol.has_method("set_destination"):
+		var inverse:Transform3D=patrol.rendered_carrier.affine_inverse()
+		var camera_local:Vector3=inverse*camera.global_position
+		var target_local:Vector3=inverse*target
+		var raw_local:Vector3=inverse*(patrol._base.global_position+Vector3.UP*.1)
+		sample["camera_carrier_local"]=[camera_local.x,camera_local.y,camera_local.z]
+		sample["target_carrier_local"]=[target_local.x,target_local.y,target_local.z]
+		sample["raw_robot_carrier_local"]=[raw_local.x,raw_local.y,raw_local.z]
+	camera_motion_samples.append(sample)
 
 func _camera()->void:
 	if camera_ready and cargo!=null and str(options.get("mode",""))=="cargo_cycle":
