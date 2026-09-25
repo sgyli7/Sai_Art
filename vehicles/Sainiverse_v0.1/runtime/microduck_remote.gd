@@ -3,6 +3,7 @@ extends Node3D
 var carrier:SceneTree
 var mode_name:="walk"
 var manual_input:=true
+var dormant:=false
 var spawn_world:=Vector3.ZERO
 var spawn_source:=Vector3.ZERO
 var manual_ground_on_carrier:=false
@@ -23,6 +24,7 @@ var last_packet_usec:=0
 var received_steps:=0
 var started_usec:=0
 var rendered_carrier:=Transform3D.IDENTITY
+var rendered_frame:=-1
 var pose_current:Dictionary={}
 var pose_snap_pending:=true
 var camera_snap_pending:=true
@@ -56,6 +58,9 @@ func _ready()->void:
 	_base=body_nodes.get(str(robot.base_body))
 	if _base==null:_base=body_nodes.get("trunk_base")
 	world_anchor=spawn_world
+	if dormant:
+		set_physics_process(false)
+		return
 	var candidate:int=21000+int(OS.get_process_id()%1000)*2
 	for offset in range(0,200,2):
 		if receive.bind(candidate+offset,"127.0.0.1")==OK:
@@ -98,6 +103,14 @@ func _physics_process(_dt:float)->void:
 	pending_taps=[]
 
 func _process(dt:float)->void:
+	update_rendered_pose(dt)
+
+func update_rendered_pose(dt:float)->void:
+	# The SceneTree camera runs independently of Node processing. Ensure the
+	# robot and camera use the same interpolated carrier pose in each frame.
+	var frame:int=Engine.get_process_frames()
+	if rendered_frame==frame:return
+	rendered_frame=frame
 	# Both the 60 Hz carrier and 50 Hz pose stream are interpolated for rendering.
 	# Physics bodies, joints and control timing remain unchanged.
 	rendered_carrier=carrier.bodies.front.get_global_transform_interpolated()

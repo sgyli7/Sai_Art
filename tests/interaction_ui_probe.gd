@@ -3,6 +3,8 @@ class FakePatrol extends Node:
 	var taps:Array=[]
 	func _add_tap(action:String)->void:taps.append(action)
 	func set_destination(_destination:Dictionary)->void:pass
+class FakeCockpit extends RefCounted:
+	var ui_axes:Dictionary={}
 
 var options := {"clean_capture":false,"mode":"manual"}
 var equipment := {"rig":{"cranes":[{"hull":"rear"}]}}
@@ -18,9 +20,12 @@ var access = null
 var drive_interlock := false
 var elapsed := 0.0
 var patrol:=FakePatrol.new()
+var cockpit:=FakeCockpit.new()
 var travel_requests:Array=[]
 var switch_requests:Array=[]
+var sai_enabled:=true
 
+func sai_robots_enabled()->bool:return sai_enabled
 func select_robot_mode(kind:String)->void:switch_requests.append(kind)
 func quick_travel(index:int)->void:travel_requests.append(index)
 func set_camera_mode(_index:int)->void:pass
@@ -82,16 +87,27 @@ func _run()->void:
 		printerr("FAIL: roller-specific controls are absent")
 		quit(1);return
 	active_robot_kind="sai001";ui.refresh()
-	if not help.text.contains("Sai Robot") or vehicle_card.visible or pick.visible:
-		printerr("FAIL: Sai Robot control hints are absent")
+	if not help.text.contains("Sai Robot") or not help.text.contains("方向键") or not vehicle_card.visible or not ui.sections["drive"].visible or pick.visible:
+		printerr("FAIL: Sai Robot and vehicle controls are not visible together")
+		quit(1);return
+	ui.throttle.value=.5;ui.steering.value=-.25
+	if not is_equal_approx(float(cockpit.ui_axes.get("throttle",0.)),.5) or not is_equal_approx(float(cockpit.ui_axes.get("steer",0.)),-.25):
+		printerr("FAIL: Sai Robot mode does not route the visible DRIVE sliders to the carrier")
 		quit(1);return
 	active_robot_kind="sai002";ui.refresh()
-	if not ui.mode_hint.text.contains("Sai 002") or vehicle_card.visible:
-		printerr("FAIL: Sai 002 control hints are absent")
+	if not ui.mode_hint.text.contains("Sai 002") or not vehicle_card.visible or not ui.sections["drive"].visible:
+		printerr("FAIL: Sai 002 and vehicle controls are not visible together")
 		quit(1);return
 	active_robot_kind="vehicle";ui.refresh()
-	if not vehicle_card.visible or ui.sections["robot_controls"].get_parent().visible:
+	if not vehicle_card.visible or not ui.sections["drive"].visible or ui.sections["robot_controls"].get_parent().visible:
 		printerr("FAIL: vehicle controls do not return with Sainiverse")
+		quit(1);return
+	sai_enabled=false
+	var md_only=load("res://operation_ui.gd").new()
+	root.add_child(md_only)
+	md_only.configure(self)
+	if _find_button(md_only,"F7 · Sai 001")!=null or _find_button(md_only,"F8 · Sai 002")!=null or _find_button(md_only,"F5 · MicroDuck")==null:
+		printerr("FAIL: disabled Sai Robot controls are still shown")
 		quit(1);return
 	print("PASS: UI routes robot input, travel, and per-robot hints")
 	quit(0)
