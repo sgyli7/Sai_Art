@@ -171,10 +171,10 @@ func _refresh_mode_layout()->void:
 		help.text="鼠标：展开分组、选择设备、拖动驾驶滑杆；吊机按钮需按住。\nF5/F6 切换 MicroDuck，F9 返回母车；行驶中也可切换。\nW/S 前后行驶，A/D 转向；右键环视 · 滚轮缩放 · Tab 切换视角。"
 	elif md:
 		mode_hint.text="MicroDuck：W/S 移动 · A/D 转向；母车：↑/↓ 行驶 · ←/→ 转向 · Ctrl 制动。"
-		help.text="MicroDuck：W/S 前后，A/D 转向，Q/E 平移；1 捡地、2 坐下、3/4 踢球、5 前滚、7 站立、0 复位。\n母车：方向键行驶和转向，Ctrl 制动；F1 车旁雪地 · F2 甲板 · F3 驾驶舱。"
+		help.text="MicroDuck：W/S 前后，A/D 转向，Q/E 平移；鼠标在游戏画面内移动可环视，右键也可拖动，滚轮缩放。\n1 捡地、2 坐下、3/4 踢球、5 前滚、7 站立、0 复位。母车：方向键行驶和转向，Ctrl 制动；F1 车旁雪地 · F2 甲板 · F3 驾驶舱。"
 	elif roller:
 		mode_hint.text="MD 轮滑：W/S 滑行 · A/D 转向；母车：↑/↓ 行驶 · ←/→ 转向 · Ctrl 制动。"
-		help.text="MD 轮滑：W/S 滑行与制动，A/D 转向；2 下蹲滑行、7 站立、0 复位。\n母车：方向键行驶和转向，Ctrl 制动；F1 车旁雪地 · F2 甲板 · F3 驾驶舱。"
+		help.text="MD 轮滑：W/S 滑行与制动，A/D 转向；鼠标在游戏画面内移动可环视，右键也可拖动，滚轮缩放。\n2 下蹲滑行、7 站立、0 复位。母车：方向键行驶和转向，Ctrl 制动；F1 车旁雪地 · F2 甲板 · F3 驾驶舱。"
 	else:
 		mode_hint.text="%s：W/S 前后 · A/D 转向；母车：方向键行驶和转向 · Ctrl 制动。"%["Sai 002" if kind=="sai002" else "Sai 001"]
 		help.text="Sai Robot：W/S 前后移动，A/D 转向；母车：方向键行驶和转向，Ctrl 制动，左上角驾驶区始终可用；F1 车旁雪地 · F2 甲板 · F3 驾驶舱；F9 返回整车视角。"
