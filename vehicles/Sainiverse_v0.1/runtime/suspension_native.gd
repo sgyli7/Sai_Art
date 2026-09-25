@@ -46,6 +46,7 @@ var peak_speed:=0.0
 var contact_core=null
 var native_contact_calls:=0
 var native_link_calls:=0
+var native_traction_calls:=0
 var start_usec:int
 var force_links:Array=[]
 var hull_names:Array=[]
@@ -321,12 +322,7 @@ func _physics_process(dt:float)->bool:
 			item.point=point;item.normal=normal;item.forward=forward;item.lateral=lateral;item.velocity=velocity;item.load=load;item.speed=longitudinal_speed
 			total_load+=load
 			if load>1:supported+=1
-	var grade:=0.0;var leverage_mean:=0.0
 	var leader_com:Vector3=com(leader)
-	for p in points:
-		p.share=float(p.load)/maxf(total_load,1.);grade+=float(p.share)*p.forward.y*9.81
-		p.leverage=(p.point-leader_com).cross(p.forward).y;leverage_mean+=float(p.leverage)*float(p.share)
-	var propulsion:float=clampf(float(cfg.total_mass_kg)*(accel+grade+float(cfg.rolling_resistance)*9.81*tanh(speed*2)),-float(cfg.friction)*total_load,available_power/maxf(absf(speed),2))
 	var yaw_request:=0.0;var moment:=0.0
 	if maxf(absf(speed),absf(speed_request))>.1:
 		var heading:float=atan2(-leader.global_basis.x.z,leader.global_basis.x.x)
@@ -335,20 +331,29 @@ func _physics_process(dt:float)->bool:
 		yaw_request=clampf(float(cfg.path_heading_gain_per_s)*error,-limit,limit)
 		if steering!=null:yaw_request=steering.state.yaw_rate_request_rad_s
 		moment=clampf(float(spec.steering_inertia)*float(cfg.path_yaw_rate_gain_per_s)*(yaw_request-leader.angular_velocity.y),-float(cfg.path_yaw_moment_limit_Nm),float(cfg.path_yaw_moment_limit_Nm))
-	var denominator:=0.0
-	for p in points:p.leverage-=leverage_mean;denominator+=float(p.share)*float(p.leverage)*float(p.leverage)
-	var power:=0.0
-	for p in points:
-		p.drive=propulsion*float(p.share)+moment*float(p.share)*float(p.leverage)/maxf(denominator,1.)
-		power+=absf(float(p.drive)*float(p.speed))
-	var power_scale:float=minf(1.,available_power/maxf(power,1.))
-	for p in points:
-		var fx:float=float(p.drive)*power_scale-float(cfg.rolling_resistance)*float(p.load)*tanh(float(p.speed)*2)
-		var fy:float=-float(cfg.total_mass_kg)*float(p.share)*float(cfg.lateral_relaxation_per_s)*p.velocity.dot(p.lateral)
-		var tangent:Vector3=p.forward*fx+p.lateral*fy
-		tangent*=minf(1.,float(cfg.friction)*float(p.load)/maxf(tangent.length(),1.))
-		var force:Vector3=p.normal*float(p.load)+tangent
-		p.body.apply_force(force,p.point-p.body.global_position)
+	var power:=0.0;var power_scale:=1.0
+	if contact_core!=null and contact_core.has_method("apply_traction") and OS.get_environment("SAINIVERSE_LEGACY_TRACTION")!="1":
+		var result:Dictionary=contact_core.apply_traction(points,{"total_load":total_load,"leader_com":leader_com,"accel":accel,"speed":speed,"moment":moment,"available_power":available_power,"total_mass":float(cfg.total_mass_kg),"rolling_resistance":float(cfg.rolling_resistance),"friction":float(cfg.friction),"lateral_relaxation":float(cfg.lateral_relaxation_per_s)})
+		power=float(result.power);power_scale=float(result.power_scale);native_traction_calls+=1
+	else:
+		var grade:=0.0;var leverage_mean:=0.0
+		for p in points:
+			p.share=float(p.load)/maxf(total_load,1.);grade+=float(p.share)*p.forward.y*9.81
+			p.leverage=(p.point-leader_com).cross(p.forward).y;leverage_mean+=float(p.leverage)*float(p.share)
+		var propulsion:float=clampf(float(cfg.total_mass_kg)*(accel+grade+float(cfg.rolling_resistance)*9.81*tanh(speed*2)),-float(cfg.friction)*total_load,available_power/maxf(absf(speed),2))
+		var denominator:=0.0
+		for p in points:p.leverage-=leverage_mean;denominator+=float(p.share)*float(p.leverage)*float(p.leverage)
+		for p in points:
+			p.drive=propulsion*float(p.share)+moment*float(p.share)*float(p.leverage)/maxf(denominator,1.)
+			power+=absf(float(p.drive)*float(p.speed))
+		power_scale=minf(1.,available_power/maxf(power,1.))
+		for p in points:
+			var fx:float=float(p.drive)*power_scale-float(cfg.rolling_resistance)*float(p.load)*tanh(float(p.speed)*2)
+			var fy:float=-float(cfg.total_mass_kg)*float(p.share)*float(cfg.lateral_relaxation_per_s)*p.velocity.dot(p.lateral)
+			var tangent:Vector3=p.forward*fx+p.lateral*fy
+			tangent*=minf(1.,float(cfg.friction)*float(p.load)/maxf(tangent.length(),1.))
+			var force:Vector3=p.normal*float(p.load)+tangent
+			p.body.apply_force(force,p.point-p.body.global_position)
 	var imu:Array=[];var accelerations:Array=[];var hulls:Array=[];var positions:Array=[];var upright:Array=[]
 	accelerations.resize(hull_names.size());accelerations.fill(0.)
 	for name in hull_names:
@@ -393,7 +398,7 @@ func _physics_process(dt:float)->bool:
 		for value in accel_squares:rms.append(sqrt(float(value)/maxi(accel_count,1)))
 		var out:Dictionary={"engine":"Godot "+str(Engine.get_version_info().string),"physics_engine":ProjectSettings.get_setting("physics/3d/physics_engine"),
 			"failed":failed,"terrain":options.terrain,"rigid":options.rigid,"seconds":elapsed,"wall_seconds":(Time.get_ticks_usec()-start_usec)/1e6,
-			"dynamic_bodies":bodies.size(),"joints":links.size(),"native_contact_calls":native_contact_calls,"native_link_calls":native_link_calls,"peak_speed_kmh":peak_speed*3.6,"peak_all_step_vertical_accel_m_s2":peak_accel,"samples":samples,
+			"dynamic_bodies":bodies.size(),"joints":links.size(),"native_contact_calls":native_contact_calls,"native_link_calls":native_link_calls,"native_traction_calls":native_traction_calls,"peak_speed_kmh":peak_speed*3.6,"peak_all_step_vertical_accel_m_s2":peak_accel,"samples":samples,
 			"rms_all_step_vertical_accel_after_settle_m_s2":rms,"total_mass_kg":cfg.total_mass_kg,
 			"peak_acceleration_times_s":peak_times,"max_all_step_lateral_path_error_m":route_max,"joint_anchor_sample_hz":10,"maximum_sampled_joint_anchor_residual_m":maximum_anchor_residual,
 			"joint_anchor_peaks":anchor_peaks,"initial_world_x_m":options.start_x,
