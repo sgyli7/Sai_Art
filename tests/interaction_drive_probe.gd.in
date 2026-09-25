@@ -13,11 +13,12 @@ class FakePatrol extends Node3D:
 
 class RemotePatrol extends Node3D:
 	var destination:Dictionary={}
+	var attached_to_carrier:=false
 	var rendered_carrier:=Transform3D.IDENTITY
 	var camera_snap_pending:=true
 	var _base:Node3D
 	func _ready()->void:_base=Node3D.new();add_child(_base)
-	func set_destination(value:Dictionary)->void:destination=value
+	func set_destination(value:Dictionary)->void:destination=value;attached_to_carrier=bool(value.carrier_surface)
 
 class FakeCockpit:
 	var ui_axes:={"throttle":1.,"steer":1.,"brake":1.}
@@ -80,13 +81,24 @@ func _run_probe()->void:
 	manual_camera_target_valid=false
 	_manual_robot_camera(remote.destination.world)
 	var remote_before:Vector3=camera.global_position
+	var free_look:=InputEventMouseMotion.new();free_look.position=Vector2(700.,400.);free_look.relative=Vector2(80.,0.)
+	handle_input(free_look);_manual_robot_camera(remote.destination.world)
+	if active_quick_location!=0 or camera.global_position.distance_to(remote_before)<.1:
+		printerr("FAIL: moving the mouse over the game does not orbit the selected MD location=",active_quick_location," delta=",camera.global_position.distance_to(remote_before)," before=",remote_before," after=",camera.global_position)
+		quit(1);return
+	if camera.global_position.z<maxf(remote.destination.world.z-.26,11.99):
+		printerr("FAIL: orbit camera crossed into the deck cabin wall")
+		quit(1);return
+	quick_travel(2)
+	_manual_robot_camera(remote.destination.world)
+	remote_before=camera.global_position
 	var remote_press:=InputEventMouseButton.new();remote_press.button_index=MOUSE_BUTTON_RIGHT;remote_press.pressed=true
 	handle_input(remote_press)
 	var remote_motion:=InputEventMouseMotion.new();remote_motion.relative=Vector2(80.,0.)
 	handle_input(remote_motion);_manual_robot_camera(remote.destination.world)
 	var remote_release:=InputEventMouseButton.new();remote_release.button_index=MOUSE_BUTTON_RIGHT;remote_release.pressed=false
 	handle_input(remote_release)
-	if active_quick_location!=0 or camera.global_position.distance_to(remote_before)<.2:
+	if active_quick_location!=0 or camera.global_position.distance_to(remote_before)<.1:
 		printerr("FAIL: independent MD camera did not leave the F2 fixed view on right-drag")
 		quit(1);return
 	patrol=null
@@ -130,7 +142,7 @@ func _run_probe()->void:
 		if camera.global_position.distance_to(before_zoom)<.05:
 			printerr("FAIL: mouse wheel does not zoom the MD camera after F",station)
 			quit(1);return
-	print("PASS: F1–F3 respawns and MD right-drag/zoom camera controls")
+	print("PASS: F1–F3 respawns and MD free-look/right-drag/zoom camera controls")
 	cockpit=FakeCockpit.new()
 	OS.set_environment("SAINIVERSE_REMOTE_MD_PREVIEW","")
 	OS.set_environment("SAINIVERSE_REMOTE_PROBE","")

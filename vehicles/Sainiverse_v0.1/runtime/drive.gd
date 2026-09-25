@@ -225,6 +225,7 @@ func _release_quick_robot_camera()->void:
 	var remote_view:bool=patrol!=null and patrol.has_method("set_destination")
 	var robot_target:Vector3=manual_camera_target if remote_view and manual_camera_target_valid else _selected_robot_position()+Vector3.UP*(.2 if active_robot_kind in ["sai001","sai002"] else .1)
 	var view_offset:Vector3=camera.global_position-robot_target
+	if remote_view:view_offset=patrol.rendered_carrier.basis.inverse()*view_offset
 	if view_offset.length()>.2:
 		orbit_radius=clampf(view_offset.length(),.75,12.)
 		orbit_yaw=atan2(view_offset.z,view_offset.x)
@@ -262,7 +263,7 @@ func handle_input(event:InputEvent)->void:
 			var factor:float=.88 if event.button_index==MOUSE_BUTTON_WHEEL_UP else 1./.88
 			if active_quick_location==1:f1_panorama_radius=clampf(f1_panorama_radius*factor,50.,350.)
 			else:orbit_radius=clampf(orbit_radius*factor,4. if active_robot_kind=="vehicle" else .75,600.)
-	if event is InputEventMouseMotion and mouse_drag:
+	if event is InputEventMouseMotion and (mouse_drag or active_robot_kind!="vehicle"):
 		if active_robot_kind!="vehicle" and active_quick_location==1:
 			_enable_f1_panorama_orbit()
 			f1_panorama_yaw-=event.relative.x*.004
@@ -745,13 +746,20 @@ func _manual_robot_camera(target:Vector3)->void:
 		_record_camera_motion(target)
 		return
 	var offset:=Vector3(cos(orbit_pitch)*cos(orbit_yaw),sin(orbit_pitch),cos(orbit_pitch)*sin(orbit_yaw))*orbit_radius
-	var position:=target+offset
+	var position:=target+(carrier_basis*offset if remote_view else offset)
 	# Keep the follow camera on the robot's side of a cabin wall or deck rail.
 	var ray:=PhysicsRayQueryParameters3D.create(target,position,8)
 	var hit:=stage.get_world_3d().direct_space_state.intersect_ray(ray)
 	if not hit.is_empty():
-		position=target+offset.normalized()*maxf(.45,target.distance_to(hit.position)-.18)
-	camera.global_position=position;camera.look_at(target,Vector3.UP)
+		position=target+(position-target).normalized()*maxf(.45,target.distance_to(hit.position)-.18)
+	# The deck cabin wall is visual-only, so the physics ray cannot keep the
+	# orbit camera out of it. Stay on the outer walking-lane side of the robot.
+	if remote_view and patrol.attached_to_carrier and not quick_travel_history.is_empty() and int(quick_travel_history[-1].station)==2:
+		var local_position:Vector3=carrier_pose.affine_inverse()*position
+		var local_target:Vector3=carrier_pose.affine_inverse()*target
+		local_position.z=maxf(local_position.z,maxf(local_target.z-.25,12.))
+		position=carrier_pose*local_position
+	camera.global_position=position;camera.look_at(target,carrier_basis.y if remote_view else Vector3.UP)
 	_record_camera_motion(target)
 
 func _record_camera_motion(target:Vector3)->void:
