@@ -4,7 +4,34 @@ var host:SceneTree
 var kind:=12
 var timer:=0.
 var channels:Array=[]
+var screen_mesh:MeshInstance3D
+
+func _ready()->void:
+	screen_mesh=_find_screen(host.bodies.front)
+
+func _find_screen(node:Node)->MeshInstance3D:
+	if node is MeshInstance3D and str(node.name).contains("__decal_"+str(kind)+"_"):return node
+	for child in node.get_children():
+		var found:=_find_screen(child)
+		if found!=null:return found
+	return null
+
+func _screen_in_camera()->bool:
+	# Keep the dashboard live whenever any part of its screen enters the view.
+	# A missing mesh falls back to normal updates.
+	if screen_mesh==null or screen_mesh.mesh==null or host.camera==null:return true
+	var bounds:AABB=screen_mesh.mesh.get_aabb()
+	var center:Vector3=screen_mesh.global_transform*bounds.get_center()
+	if host.camera.global_position.distance_to(center)<2.:return true
+	if host.camera.is_position_in_frustum(center):return true
+	for corner in 8:
+		if host.camera.is_position_in_frustum(screen_mesh.global_transform*bounds.get_endpoint(corner)):return true
+	return false
+
 func _process(dt:float)->void:
+	if not _screen_in_camera():
+		get_viewport().render_target_update_mode=SubViewport.UPDATE_DISABLED
+		return
 	timer-=dt
 	if timer>0.:return
 	timer=.1 if host.camera.global_position.distance_to(host.bodies.front.global_position)<50. else .5

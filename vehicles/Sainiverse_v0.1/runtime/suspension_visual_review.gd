@@ -11,18 +11,24 @@ var pv_frames:=0
 var pv_capture_times:Array=[]
 var world_surface:Node3D
 var final_written:=false
+var fast_visual:=false
+var profile_frames:=true
 
 func _build()->void:
+	# Preserve the authored ink and shadow treatment in normal play. The
+	# reduced presentation is available only for isolated performance probes.
+	fast_visual=str(options.get("mode",""))=="manual" and OS.get_environment("SAINIVERSE_FAST_VISUALS")=="1" and OS.get_environment("SAINIVERSE_FULL_VISUALS")!="1"
+	profile_frames=str(options.get("mode",""))!="manual" or OS.get_environment("SAINIVERSE_PROFILE_FRAMES")=="1"
 	super._build()
 	DisplayServer.window_set_size(Vector2i(1280,720) if str(options.get("pv","false"))=="true" else Vector2i(1920,1080));DisplayServer.window_set_vsync_mode(DisplayServer.VSYNC_DISABLED)
 	root.msaa_3d=Viewport.MSAA_4X
-	RenderingServer.viewport_set_measure_render_time(root.get_viewport_rid(),true)
+	RenderingServer.viewport_set_measure_render_time(root.get_viewport_rid(),profile_frames)
 	visual=Visual.new();stage.add_child(visual);visual.configure(bodies,str(options.get("bindings","")))
 	var environment:=WorldEnvironment.new();var settings:=Environment.new()
 	settings.background_mode=Environment.BG_COLOR;settings.background_color=Color("8eabbc")
 	settings.ambient_light_source=Environment.AMBIENT_SOURCE_COLOR;settings.ambient_light_color=Color("bed0da");settings.ambient_light_energy=.65
 	settings.tonemap_mode=Environment.TONE_MAPPER_FILMIC;environment.environment=settings;stage.add_child(environment)
-	var sun:=DirectionalLight3D.new();sun.rotation_degrees=Vector3(-48,-35,0);sun.light_energy=1.4;sun.shadow_enabled=true
+	var sun:=DirectionalLight3D.new();sun.rotation_degrees=Vector3(-48,-35,0);sun.light_energy=1.4;sun.shadow_enabled=not fast_visual and OS.get_environment("SAINIVERSE_PERF_NO_SHADOWS")!="1"
 	sun.directional_shadow_max_distance=350;stage.add_child(sun)
 	world_surface=Node3D.new();stage.add_child(world_surface)
 	# A visible copy of the exact analytic hard-ground fixture, not a new collider.
@@ -71,7 +77,7 @@ func _process(_dt:float)->bool:
 	if visual==null:return false
 	visual.update_visual();_camera()
 	var now:int=Time.get_ticks_usec()
-	if elapsed>3. and not capture_running:
+	if profile_frames and elapsed>3. and not capture_running:
 		frames.append({"wall_usec":now-visual_started_usec,"simulation_s":elapsed,"frame_ms":(now-last_frame_usec)/1000.,
 			"process_ms":Performance.get_monitor(Performance.TIME_PROCESS)*1000.,"physics_ms":Performance.get_monitor(Performance.TIME_PHYSICS_PROCESS)*1000.,
 			"gpu_ms":RenderingServer.viewport_get_measured_render_time_gpu(root.get_viewport_rid()),"render_cpu_ms":RenderingServer.viewport_get_measured_render_time_cpu(root.get_viewport_rid()),"render_setup_ms":RenderingServer.get_frame_setup_time_cpu(),

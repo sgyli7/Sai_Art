@@ -43,6 +43,10 @@ var anchor_peaks:Dictionary={}
 var maximum_local_anchor_residual:=0.0
 var maximum_anchor_measurement_disagreement:=0.0
 var peak_speed:=0.0
+var contact_core=null
+var native_contact_calls:=0
+var native_link_calls:=0
+var native_traction_calls:=0
 var start_usec:int
 var force_links:Array=[]
 var hull_names:Array=[]
@@ -116,6 +120,8 @@ func _build()->void:
 		if float(item.stiffness)<=0. and not bool(item.get("lift",false)) and not bool(item.get("equipment",false)) and not bool(item.get("cockpit",false)):force_links.append(link)
 	for item in spec.contact.contacts:contacts.append({"body":bodies[item.body],"local":vec(item.local),"radius":float(item.radius),
 		"stiffness":float(item.get("contact_stiffness",spec.contact.contact_stiffness)),"damping":float(item.get("contact_damping",spec.contact.contact_damping)),"nominal":float(item.get("nominal_load_N",spec.contact.nominal_contact_load))})
+	if ClassDB.class_exists("LeviathanTrackPath"):
+		contact_core=ClassDB.instantiate("LeviathanTrackPath")
 	if spec.contact.has("hydraulics"):
 		hydraulics=Hydraulic.new();hydraulics.configure(spec.contact.hydraulics)
 		for name in hydraulics.names:
@@ -144,6 +150,18 @@ func _build()->void:
 		for i in access.names.size():
 			access_indices[access.names[i]]=i
 			room.attach(bodies[access.names[i]],spec.contact.access.doors[i].collision)
+	# Link roles and indices never change while the vehicle runs. Resolve them
+	# once so the force loop does not search dictionaries per joint.
+	for link in links:
+		var item:Dictionary=link.spec
+		link.fast_aux=bool(item.get("lift",false)) or bool(item.get("equipment",false)) or bool(item.get("cockpit",false))
+		link.fast_slide=item.kind=="slide"
+		link.fast_zero_stiffness=float(item.stiffness)==0.
+		link.fast_access_index=int(access_indices.get(item.name,-1))
+		link.fast_hydraulic_index=int(hydraulic_indices.get(item.name,-1))
+		link.fast_track_index=int(track_indices.get(item.name,-1))
+		link.fast_steer_index=steering_names.find(item.name)
+		link.fast_hitch_index=hitch_names.find(item.name)
 
 func bump(x:float,center:float,width:float,height:float)->float:
 	return height*.5*(1+cos(PI*clampf((x-center)/width,-1,1)))
@@ -202,26 +220,32 @@ func _physics_process(dt:float)->bool:
 	if access!=null:available_power=maxf(0.,available_power-access.power)
 	if hydraulics!=null:
 		var coordinates:Array=[];var rates:Array=[]
-		for link in hydraulic_links:
-			var axis:Vector3=link.parent.global_basis*link.axis
-			var pa:Vector3=link.parent.global_transform*link.a;var pb:Vector3=link.body.global_transform*link.b
-			var q:float=(pb-pa).dot(axis);var dq:float=(point_velocity(link.body,pb)-point_velocity(link.parent,pa)).dot(axis)
-			coordinates.append(q);rates.append(dq);link.control_state=[axis,pa,pb,q,dq]
+		if contact_core!=null and contact_core.has_method("sample_linear_links") and OS.get_environment("SAINIVERSE_LEGACY_LINK_SAMPLING")!="1":
+			var sampled:Dictionary=contact_core.sample_linear_links(hydraulic_links)
+			coordinates=sampled.coordinates;rates=sampled.rates;native_link_calls+=1
+		else:
+			for link in hydraulic_links:
+				var axis:Vector3=link.parent.global_basis*link.axis
+				var pa:Vector3=link.parent.global_transform*link.a;var pb:Vector3=link.body.global_transform*link.b
+				var q:float=(pb-pa).dot(axis);var dq:float=(point_velocity(link.body,pb)-point_velocity(link.parent,pa)).dot(axis)
+				coordinates.append(q);rates.append(dq);link.control_state=[axis,pa,pb,q,dq]
 		hydraulics.step(coordinates,rates,dt);available_power=maxf(0.,available_power-hydraulics.pump_power_W)
 	var qvalues:Dictionary={};var efforts:Dictionary={};var residual:=0.0
 	if track_tension!=null:
 		var coordinates:Array=[];var rates:Array=[]
-		for link in track_links:
-			var axis:Vector3=link.parent.global_basis*link.axis
-			var pa:Vector3=link.parent.global_transform*link.a;var pb:Vector3=link.body.global_transform*link.b
-			var q:float=(pb-pa).dot(axis);var dq:float=(point_velocity(link.body,pb)-point_velocity(link.parent,pa)).dot(axis)
-			coordinates.append(q);rates.append(dq);link.control_state=[axis,pa,pb,q,dq]
+		if contact_core!=null and contact_core.has_method("sample_linear_links") and OS.get_environment("SAINIVERSE_LEGACY_LINK_SAMPLING")!="1":
+			var sampled:Dictionary=contact_core.sample_linear_links(track_links)
+			coordinates=sampled.coordinates;rates=sampled.rates;native_link_calls+=1
+		else:
+			for link in track_links:
+				var axis:Vector3=link.parent.global_basis*link.axis
+				var pa:Vector3=link.parent.global_transform*link.a;var pb:Vector3=link.body.global_transform*link.b
+				var q:float=(pb-pa).dot(axis);var dq:float=(point_velocity(link.body,pb)-point_velocity(link.parent,pa)).dot(axis)
+				coordinates.append(q);rates.append(dq);link.control_state=[axis,pa,pb,q,dq]
 		track_tension.step(coordinates,rates,dt)
 	var audit_tick:bool=count%20==19
 	for link in (links if audit_tick else force_links):
 		var body:RigidBody3D=link.body;var parent:RigidBody3D=link.parent;var item:Dictionary=link.spec
-		var diagnostic_only:bool=float(item.stiffness)>0. or bool(item.get("lift",false)) or bool(item.get("equipment",false)) or bool(item.get("cockpit",false))
-		if diagnostic_only and not audit_tick:continue
 		var cached:bool=link.has("control_state")
 		var axis:Vector3=link.control_state[0] if cached else parent.global_basis*link.axis
 		var pa:Vector3=link.control_state[1] if cached else parent.global_transform*link.a
@@ -229,7 +253,7 @@ func _physics_process(dt:float)->bool:
 		var q:float;var dq:float;var link_residual:float
 		if cached:
 			q=link.control_state[3];dq=link.control_state[4];link_residual=((pb-pa)-axis*q).length()
-		elif item.kind=="slide":
+		elif link.fast_slide:
 			q=(pb-pa).dot(axis);dq=(point_velocity(body,pb)-point_velocity(parent,pa)).dot(axis)
 			link_residual=((pb-pa)-axis*q).length()
 		else:
@@ -239,31 +263,31 @@ func _physics_process(dt:float)->bool:
 		if audit_tick:
 			residual=maxf(residual,link_residual)
 			var relative_delta:Vector3=(body.global_position-parent.global_position)+(body.global_basis*link.b-parent.global_basis*link.a)
-			var local_residual:float=(relative_delta-axis*relative_delta.dot(axis)).length() if item.kind=="slide" else relative_delta.length()
+			var local_residual:float=(relative_delta-axis*relative_delta.dot(axis)).length() if link.fast_slide else relative_delta.length()
 			maximum_local_anchor_residual=maxf(maximum_local_anchor_residual,local_residual)
 			maximum_anchor_measurement_disagreement=maxf(maximum_anchor_measurement_disagreement,absf(local_residual-link_residual))
 			if link_residual>float(anchor_peaks.get(item.name,{}).get("residual_m",-1.)):
 				anchor_peaks[item.name]={"residual_m":link_residual,"time_s":elapsed,"front_position":origin.source_position(bodies.front.global_position),"coordinate":q}
 			qvalues[item.name]=q
-		if bool(item.get("lift",false)) or bool(item.get("equipment",false)) or bool(item.get("cockpit",false)):continue
-		if access_indices.has(item.name):
-			var effort:float=float(access.torques[access_indices[item.name]])+float(access.latch_torques[access_indices[item.name]]);efforts[item.name]=effort
+		if link.fast_aux:continue
+		if link.fast_access_index>=0:
+			var effort:float=float(access.torques[link.fast_access_index])+float(access.latch_torques[link.fast_access_index]);efforts[item.name]=effort
 			body.apply_torque(axis*effort);parent.apply_torque(-axis*effort)
 			continue
-		if float(item.stiffness)==0:
-			if hydraulic_indices.has(item.name) or track_indices.has(item.name):
-				var force:float=hydraulics.forces[int(hydraulic_indices[item.name])] if hydraulic_indices.has(item.name) else 0.
-				if track_indices.has(item.name):force+=float(track_tension.forces[int(track_indices[item.name])])
+		if link.fast_zero_stiffness:
+			if link.fast_hydraulic_index>=0 or link.fast_track_index>=0:
+				var force:float=hydraulics.forces[link.fast_hydraulic_index] if link.fast_hydraulic_index>=0 else 0.
+				if link.fast_track_index>=0:force+=float(track_tension.forces[link.fast_track_index])
 				efforts[item.name]=force
 				body.apply_force(axis*force,pb-body.global_position);parent.apply_force(-axis*force,pa-parent.global_position)
 				continue
 			var kp:float;var kd:float;var cap:float;var target:=0.0
-			var steer_index:int=steering_names.find(item.name)
+			var steer_index:int=link.fast_steer_index
 			if steer_index>=0:
 				kp=steering.config.bogie_yaw_kp_Nm_rad;kd=steering.config.bogie_yaw_kd_Nms_rad;cap=steering.config.bogie_yaw_torque_limit_Nm
 				target=steering.bogie_yaw[steer_index]
 			else:
-				var index:int=hitch_names.find(item.name);assert(index>=0);index=index%4
+				var index:int=link.fast_hitch_index;assert(index>=0);index=index%4
 				kp=acfg.extension_kp_N_per_m if index==0 else acfg.rotation_kp_Nm_per_rad[index-1]
 				kd=acfg.extension_kd_Ns_per_m if index==0 else acfg.rotation_kd_Nms_per_rad[index-1]
 				cap=acfg.extension_force_limit_N if index==0 else acfg.rotation_torque_limits_Nm[index-1]
@@ -271,31 +295,34 @@ func _physics_process(dt:float)->bool:
 					target=steering.hitch_yaw;kp=steering.config.hitch_yaw_kp_Nm_rad;kd=steering.config.hitch_yaw_kd_Nms_rad
 				if index==1:turning_hitch_max=maxf(turning_hitch_max,absf(q))
 			var effort:float=clampf(kp*(target-q)-kd*dq,-cap,cap);efforts[item.name]=effort
-			if item.kind=="slide":
+			if link.fast_slide:
 				body.apply_force(axis*effort,pb-body.global_position);parent.apply_force(-axis*effort,pa-parent.global_position)
 			else:body.apply_torque(axis*effort);parent.apply_torque(-axis*effort)
 	var points:Array=contacts;var total_load:=0.0;var supported:=0
-	for item in contacts:
-		var body:RigidBody3D=item.body;var center:Vector3=body.global_transform*item.local
-		var world_x:float=float(center.x)+origin.offset_x;var world_y:float=-float(center.z)-origin.offset_z
-		var h:float=height(world_x,world_y)
-		var dx:float=(height(world_x+.01,world_y)-height(world_x-.01,world_y))/.02
-		var dy:float=(height(world_x,world_y+.01)-height(world_x,world_y-.01))/.02
-		var normal:=Vector3(-dx,1,dy).normalized()
-		var penetration:float=item.radius-(center.y-h)*normal.y
-		var point:Vector3=center-normal*float(item.radius);var velocity:Vector3=point_velocity(body,point)
-		var load:float=clampf(float(item.stiffness)*penetration-float(item.damping)*velocity.dot(normal),0,float(item.nominal)*float(cfg.contact_max_nominal_load_factor)) if penetration>=0 else 0.
-		var forward:Vector3=(body.global_basis.x-normal*body.global_basis.x.dot(normal)).normalized()
-		var lateral:Vector3=normal.cross(forward);var longitudinal_speed:float=velocity.dot(forward)
-		item.point=point;item.normal=normal;item.forward=forward;item.lateral=lateral;item.velocity=velocity;item.load=load;item.speed=longitudinal_speed
-		total_load+=load
-		if load>1:supported+=1
-	var grade:=0.0;var leverage_mean:=0.0
+	var used_native:bool=false
+	if contact_core==null and ClassDB.class_exists("LeviathanTrackPath"):
+		contact_core=ClassDB.instantiate("LeviathanTrackPath")
+	if contact_core!=null and contact_core.has_method("contact_geometry") and OS.get_environment("SAINIVERSE_LEGACY_CONTACT")!="1":
+		var result:Dictionary=contact_core.contact_geometry(contacts,str(options.terrain),origin.offset_x,origin.offset_z,float(cfg.contact_max_nominal_load_factor))
+		if result.has("total_load"):
+			total_load=float(result.total_load);supported=int(result.supported);used_native=true;native_contact_calls+=1
+	if not used_native:
+		for item in contacts:
+			var body:RigidBody3D=item.body;var center:Vector3=body.global_transform*item.local
+			var world_x:float=float(center.x)+origin.offset_x;var world_y:float=-float(center.z)-origin.offset_z
+			var h:float=height(world_x,world_y)
+			var dx:float=(height(world_x+.01,world_y)-height(world_x-.01,world_y))/.02
+			var dy:float=(height(world_x,world_y+.01)-height(world_x,world_y-.01))/.02
+			var normal:=Vector3(-dx,1,dy).normalized()
+			var penetration:float=item.radius-(center.y-h)*normal.y
+			var point:Vector3=center-normal*float(item.radius);var velocity:Vector3=point_velocity(body,point)
+			var load:float=clampf(float(item.stiffness)*penetration-float(item.damping)*velocity.dot(normal),0,float(item.nominal)*float(cfg.contact_max_nominal_load_factor)) if penetration>=0 else 0.
+			var forward:Vector3=(body.global_basis.x-normal*body.global_basis.x.dot(normal)).normalized()
+			var lateral:Vector3=normal.cross(forward);var longitudinal_speed:float=velocity.dot(forward)
+			item.point=point;item.normal=normal;item.forward=forward;item.lateral=lateral;item.velocity=velocity;item.load=load;item.speed=longitudinal_speed
+			total_load+=load
+			if load>1:supported+=1
 	var leader_com:Vector3=com(leader)
-	for p in points:
-		p.share=float(p.load)/maxf(total_load,1.);grade+=float(p.share)*p.forward.y*9.81
-		p.leverage=(p.point-leader_com).cross(p.forward).y;leverage_mean+=float(p.leverage)*float(p.share)
-	var propulsion:float=clampf(float(cfg.total_mass_kg)*(accel+grade+float(cfg.rolling_resistance)*9.81*tanh(speed*2)),-float(cfg.friction)*total_load,available_power/maxf(absf(speed),2))
 	var yaw_request:=0.0;var moment:=0.0
 	if maxf(absf(speed),absf(speed_request))>.1:
 		var heading:float=atan2(-leader.global_basis.x.z,leader.global_basis.x.x)
@@ -304,20 +331,29 @@ func _physics_process(dt:float)->bool:
 		yaw_request=clampf(float(cfg.path_heading_gain_per_s)*error,-limit,limit)
 		if steering!=null:yaw_request=steering.state.yaw_rate_request_rad_s
 		moment=clampf(float(spec.steering_inertia)*float(cfg.path_yaw_rate_gain_per_s)*(yaw_request-leader.angular_velocity.y),-float(cfg.path_yaw_moment_limit_Nm),float(cfg.path_yaw_moment_limit_Nm))
-	var denominator:=0.0
-	for p in points:p.leverage-=leverage_mean;denominator+=float(p.share)*float(p.leverage)*float(p.leverage)
-	var power:=0.0
-	for p in points:
-		p.drive=propulsion*float(p.share)+moment*float(p.share)*float(p.leverage)/maxf(denominator,1.)
-		power+=absf(float(p.drive)*float(p.speed))
-	var power_scale:float=minf(1.,available_power/maxf(power,1.))
-	for p in points:
-		var fx:float=float(p.drive)*power_scale-float(cfg.rolling_resistance)*float(p.load)*tanh(float(p.speed)*2)
-		var fy:float=-float(cfg.total_mass_kg)*float(p.share)*float(cfg.lateral_relaxation_per_s)*p.velocity.dot(p.lateral)
-		var tangent:Vector3=p.forward*fx+p.lateral*fy
-		tangent*=minf(1.,float(cfg.friction)*float(p.load)/maxf(tangent.length(),1.))
-		var force:Vector3=p.normal*float(p.load)+tangent
-		p.body.apply_force(force,p.point-p.body.global_position)
+	var power:=0.0;var power_scale:=1.0
+	if contact_core!=null and contact_core.has_method("apply_traction") and OS.get_environment("SAINIVERSE_LEGACY_TRACTION")!="1":
+		var result:Dictionary=contact_core.apply_traction(points,{"total_load":total_load,"leader_com":leader_com,"accel":accel,"speed":speed,"moment":moment,"available_power":available_power,"total_mass":float(cfg.total_mass_kg),"rolling_resistance":float(cfg.rolling_resistance),"friction":float(cfg.friction),"lateral_relaxation":float(cfg.lateral_relaxation_per_s)})
+		power=float(result.power);power_scale=float(result.power_scale);native_traction_calls+=1
+	else:
+		var grade:=0.0;var leverage_mean:=0.0
+		for p in points:
+			p.share=float(p.load)/maxf(total_load,1.);grade+=float(p.share)*p.forward.y*9.81
+			p.leverage=(p.point-leader_com).cross(p.forward).y;leverage_mean+=float(p.leverage)*float(p.share)
+		var propulsion:float=clampf(float(cfg.total_mass_kg)*(accel+grade+float(cfg.rolling_resistance)*9.81*tanh(speed*2)),-float(cfg.friction)*total_load,available_power/maxf(absf(speed),2))
+		var denominator:=0.0
+		for p in points:p.leverage-=leverage_mean;denominator+=float(p.share)*float(p.leverage)*float(p.leverage)
+		for p in points:
+			p.drive=propulsion*float(p.share)+moment*float(p.share)*float(p.leverage)/maxf(denominator,1.)
+			power+=absf(float(p.drive)*float(p.speed))
+		power_scale=minf(1.,available_power/maxf(power,1.))
+		for p in points:
+			var fx:float=float(p.drive)*power_scale-float(cfg.rolling_resistance)*float(p.load)*tanh(float(p.speed)*2)
+			var fy:float=-float(cfg.total_mass_kg)*float(p.share)*float(cfg.lateral_relaxation_per_s)*p.velocity.dot(p.lateral)
+			var tangent:Vector3=p.forward*fx+p.lateral*fy
+			tangent*=minf(1.,float(cfg.friction)*float(p.load)/maxf(tangent.length(),1.))
+			var force:Vector3=p.normal*float(p.load)+tangent
+			p.body.apply_force(force,p.point-p.body.global_position)
 	var imu:Array=[];var accelerations:Array=[];var hulls:Array=[];var positions:Array=[];var upright:Array=[]
 	accelerations.resize(hull_names.size());accelerations.fill(0.)
 	for name in hull_names:
@@ -362,7 +398,7 @@ func _physics_process(dt:float)->bool:
 		for value in accel_squares:rms.append(sqrt(float(value)/maxi(accel_count,1)))
 		var out:Dictionary={"engine":"Godot "+str(Engine.get_version_info().string),"physics_engine":ProjectSettings.get_setting("physics/3d/physics_engine"),
 			"failed":failed,"terrain":options.terrain,"rigid":options.rigid,"seconds":elapsed,"wall_seconds":(Time.get_ticks_usec()-start_usec)/1e6,
-			"dynamic_bodies":bodies.size(),"joints":links.size(),"peak_speed_kmh":peak_speed*3.6,"peak_all_step_vertical_accel_m_s2":peak_accel,"samples":samples,
+			"dynamic_bodies":bodies.size(),"joints":links.size(),"native_contact_calls":native_contact_calls,"native_link_calls":native_link_calls,"native_traction_calls":native_traction_calls,"peak_speed_kmh":peak_speed*3.6,"peak_all_step_vertical_accel_m_s2":peak_accel,"samples":samples,
 			"rms_all_step_vertical_accel_after_settle_m_s2":rms,"total_mass_kg":cfg.total_mass_kg,
 			"peak_acceleration_times_s":peak_times,"max_all_step_lateral_path_error_m":route_max,"joint_anchor_sample_hz":10,"maximum_sampled_joint_anchor_residual_m":maximum_anchor_residual,
 			"joint_anchor_peaks":anchor_peaks,"initial_world_x_m":options.start_x,

@@ -39,7 +39,12 @@ func configure(controller:SceneTree,data:Dictionary)->void:
 	for spec in rig.spans:
 		var group:Node3D=host.visual.groups[spec.group]
 		var node:MeshInstance3D=group.get_node(str(spec.group)+"__"+str(spec.material))
-		spans.append({"spec":spec,"node":node,"group":group})
+		var old_a:=Vector3(spec.rest_start[0],spec.rest_start[1],spec.rest_start[2])
+		var old_b:=Vector3(spec.rest_end[0],spec.rest_end[1],spec.rest_end[2])
+		spans.append({"spec":spec,"node":node,"group":group,
+			"a_body":host.bodies[spec.a.body],"a_local":host.vec(spec.a.local),
+			"b_body":host.bodies[spec.b.body],"b_local":host.vec(spec.b.local),
+			"old_a":old_a,"old_dir":(old_b-old_a).normalized(),"old_length":old_a.distance_to(old_b)})
 
 func coordinate(name:String)->Vector2:
 	if coordinate_cache.has(name):return coordinate_cache[name]
@@ -140,11 +145,11 @@ func update_skins()->void:
 	var started:int=Time.get_ticks_usec()
 	for item in spans:
 		var spec:Dictionary=item.spec;var group:Node3D=item.group;var node:MeshInstance3D=item.node
-		var a:Vector3=group.to_local(endpoint(spec.a));var b:Vector3=group.to_local(endpoint(spec.b));var direction:Vector3=(b-a).normalized()
+		var a:Vector3=group.to_local(item.a_body.global_transform*item.a_local);var b:Vector3=group.to_local(item.b_body.global_transform*item.b_local);var direction:Vector3=(b-a).normalized()
 		if spec.mode=="from_a":b=a+direction*float(spec.length)
 		if spec.mode=="to_b":a=b-direction*float(spec.length)
-		var old_a:=Vector3(spec.rest_start[0],spec.rest_start[1],spec.rest_start[2]);var old_b:=Vector3(spec.rest_end[0],spec.rest_end[1],spec.rest_end[2]);var old_dir:Vector3=(old_b-old_a).normalized()
-		var factor:float=a.distance_to(b)/old_a.distance_to(old_b)-1.
+		var old_a:Vector3=item.old_a;var old_dir:Vector3=item.old_dir
+		var factor:float=a.distance_to(b)/float(item.old_length)-1.
 		var stretch:=Basis(Vector3.RIGHT+old_dir*old_dir.x*factor,Vector3.UP+old_dir*old_dir.y*factor,Vector3.BACK+old_dir*old_dir.z*factor)
 		var rotation:=Basis(Quaternion(old_dir,(b-a).normalized()));var basis:Basis=rotation*stretch
 		node.transform=Transform3D(basis,a-basis*old_a)
