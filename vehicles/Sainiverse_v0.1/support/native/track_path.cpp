@@ -12,7 +12,8 @@
 #include <cmath>
 #include <vector>
 using namespace godot;
-// Track geometry and read-only contact sampling. No force, time decimation or pose writes.
+// Track geometry and contact sampling; traction uses the same per-contact forces
+// as the GDScript fallback without changing the physics step or body layout.
 class LeviathanTrackPath : public RefCounted {
     GDCLASS(LeviathanTrackPath,RefCounted)
 protected:
@@ -21,6 +22,7 @@ protected:
         ClassDB::bind_method(D_METHOD("envelope","wheels"),&LeviathanTrackPath::envelope);
         ClassDB::bind_method(D_METHOD("contact_geometry","contacts","terrain","offset_x","offset_z","max_factor"),&LeviathanTrackPath::contact_geometry);
         ClassDB::bind_method(D_METHOD("sample_linear_links","links"),&LeviathanTrackPath::sample_linear_links);
+        ClassDB::bind_method(D_METHOD("apply_traction","contacts","parameters"),&LeviathanTrackPath::apply_traction);
     }
 public:
     // Read the existing dynamic links in one native call. The returned states
@@ -89,6 +91,55 @@ public:
             total_load+=load;if(load>1.0)++supported;
         }
         result["total_load"]=total_load;result["supported"]=supported;return result;
+    }
+    Dictionary apply_traction(Array contacts,Dictionary parameters) const {
+        const int n=contacts.size();
+        const double total_load=parameters["total_load"],accel=parameters["accel"],speed=parameters["speed"];
+        const double moment=parameters["moment"],available_power=parameters["available_power"];
+        const double total_mass=parameters["total_mass"],rolling=parameters["rolling_resistance"];
+        const double friction=parameters["friction"],lateral_relaxation=parameters["lateral_relaxation"];
+        const Vector3 leader_com=parameters["leader_com"];
+        std::vector<double> share(n),leverage(n),drive(n);
+        double grade=0.0,leverage_mean=0.0;
+        for(int i=0;i<n;++i){
+            Dictionary p=contacts[i];
+            const Vector3 forward=p["forward"],point=p["point"];
+            share[i]=double(p["load"])/std::max(total_load,1.0);
+            grade+=share[i]*double(forward.y)*9.81;
+            leverage[i]=double((point-leader_com).cross(forward).y);
+            leverage_mean+=leverage[i]*share[i];
+        }
+        const double propulsion=std::clamp(total_mass*(accel+grade+rolling*9.81*std::tanh(speed*2.0)),
+                                           -friction*total_load,available_power/std::max(std::abs(speed),2.0));
+        double denominator=0.0;
+        for(int i=0;i<n;++i){
+            leverage[i]-=leverage_mean;
+            denominator+=share[i]*leverage[i]*leverage[i];
+        }
+        double power=0.0;
+        for(int i=0;i<n;++i){
+            Dictionary p=contacts[i];
+            drive[i]=propulsion*share[i]+moment*share[i]*leverage[i]/std::max(denominator,1.0);
+            power+=std::abs(drive[i]*double(p["speed"]));
+        }
+        const double power_scale=std::min(1.0,available_power/std::max(power,1.0));
+        for(int i=0;i<n;++i){
+            Dictionary p=contacts[i];
+            Object *object=p["body"];
+            RigidBody3D *body=Object::cast_to<RigidBody3D>(object);
+            ERR_FAIL_NULL_V(body,Dictionary());
+            const double load=p["load"],contact_speed=p["speed"];
+            const Vector3 forward=p["forward"],lateral=p["lateral"],normal=p["normal"];
+            const Vector3 velocity=p["velocity"],point=p["point"];
+            const double fx=drive[i]*power_scale-rolling*load*std::tanh(contact_speed*2.0);
+            const double fy=-total_mass*share[i]*lateral_relaxation*double(velocity.dot(lateral));
+            Vector3 tangent=forward*fx+lateral*fy;
+            tangent*=std::min(1.0,friction*load/std::max(double(tangent.length()),1.0));
+            const Vector3 force=normal*load+tangent;
+            body->apply_force(force,point-body->get_global_position());
+        }
+        Dictionary result;result["power"]=power;result["power_scale"]=power_scale;
+        return result;
     }
     Dictionary envelope(Array wheels) const {
         constexpr double tau=6.283185307179586476925286766559;
