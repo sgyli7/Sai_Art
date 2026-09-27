@@ -1,0 +1,6 @@
+---
+description: 新资产、制作工具、路径迁移或跨 Sai_Lab 维护时读取统一规则
+alwaysApply: true
+---
+
+维护入口为 `AGENTS.md`；新增/迁移读 `art_engineering_rules.md` 与 `docs/repository_layout.md`，跨仓库按本地规则定位 Lab 职责约定。规则正文不复制到工具入口；缺少 Lab 时本地资产制作继续。
