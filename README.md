@@ -1,5 +1,7 @@
 # Sainiverse_v0.1
 
+新增资产和目录迁移先看 [资产规则](art_engineering_rules.md)、[目录导航](docs/repository_layout.md) 和 [交付来源清单](docs/directory_inventory.json)。制作源与制作工具在 Art 维护，正式运行功能归 Lab；现有交付与启动入口保持有效。
+
 私有设计审阅版：可编辑车体、五套主题、MuJoCo 模型和 Godot/Jolt 可驾驶版本。沿用现有 Robot_Godot_Sim2Sim 工程，英文显示名统一为 **Sainiverse_v0.1**。
 
 ## 极地游戏场景 · 2026-09-20
