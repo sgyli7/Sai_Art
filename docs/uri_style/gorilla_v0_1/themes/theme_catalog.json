@@ -1,0 +1,115 @@
+{
+  "asset": "Gorilla V0.1",
+  "base_revision": "AA3",
+  "requested_theme_count": 5,
+  "source_sheet": "/home/ethan/Projects/Sai_Art/docs/uri_style/gorilla_v0_1/images/locked_four_view_review_rev_aa3.png",
+  "source_sha256": "5c0469708d7c878ac6253e6ac3e6276198bf3694235bbed3da66c8c743b5aba4",
+  "geometry_and_composition": "All four imagegen edits use approved AA3 as the subject and layout authority. Major forms visually checked; raster generation does not guarantee identical geometry or pixels. Original URI sheet remains byte-identical.",
+  "existing_theme": {
+    "id": "uri",
+    "name": "URI",
+    "image": "/home/ethan/Projects/Sai_Art/docs/uri_style/gorilla_v0_1/images/locked_four_view_review_rev_aa3.png",
+    "status": "existing_selected_original_unchanged",
+    "roles": {
+      "blue_enamel": [
+        "upper guards",
+        "body side fields",
+        "outer upper arm armor",
+        "forearm armor",
+        "thigh armor above orange caps",
+        "main calf armor",
+        "short distal cuffs",
+        "rear service door"
+      ],
+      "warm_ivory": [
+        "central upper core",
+        "radiator housings",
+        "shoulder bearing covers",
+        "inner upper arm covers",
+        "hand armor",
+        "toe armor",
+        "rear central pelvis plate"
+      ],
+      "saffron_orange": [
+        "front pelvis cover",
+        "distal thigh caps",
+        "radiator forward rim",
+        "existing small markers",
+        "existing joint edge rings"
+      ],
+      "graphite": [
+        "main joint bodies",
+        "load-bearing interior",
+        "fingers",
+        "heel",
+        "grille blades",
+        "foot sole"
+      ]
+    }
+  },
+  "microduck_source_found": {
+    "path": "/home/ethan/Projects/Sai_Art/integration/robots/visuals/microduck/style.gd",
+    "version_note": "historical single palette, not a confirmed four-theme catalog",
+    "colors": {
+      "graphite": "#6c6a68",
+      "yellow": "#e0bd38",
+      "purple": "#89729e",
+      "rubber": "#39383d",
+      "metal": "#969b95"
+    }
+  },
+  "four_new_themes_status": "four_self_designed_candidates_generated_not_verified_microduck_originals",
+  "generated_variants": [
+    {
+      "id": "yellow_purple",
+      "name": "黄紫",
+      "shell": "muted warm graphite gray #6C6A68",
+      "armor": "soft industrial lavender #89729E",
+      "accent": "ochre yellow #E0BD38",
+      "basis": "Self-designed candidate inspired by the found historical MicroDuck graphite/yellow/purple palette; not claimed to be one of a verified four-theme catalog.",
+      "image": "/home/ethan/Projects/Sai_Art/docs/uri_style/gorilla_v0_1/themes/images/yellow_purple.png",
+      "sha256": "21623e06167e73ebb482f38d1cc60183474487b6a05e11f42df7094021027209",
+      "status": "generated_candidate_awaiting_user_review",
+      "prompt": "/home/ethan/Projects/Sai_Art/docs/uri_style/gorilla_v0_1/themes/prompts/yellow_purple.txt"
+    },
+    {
+      "id": "white_orange",
+      "name": "白橙",
+      "shell": "clean neutral porcelain white #F1F0EA",
+      "armor": "light cool silver-gray #B7BEC2",
+      "accent": "confident vermilion-orange #E26A32",
+      "basis": "Self-designed palette candidate, not a verified MicroDuck original theme.",
+      "image": "/home/ethan/Projects/Sai_Art/docs/uri_style/gorilla_v0_1/themes/images/white_orange.png",
+      "sha256": "546302784d7186edceb1cfccddcab249139388234e9fd68ba5b72de858c1cc72",
+      "status": "generated_candidate_awaiting_user_review",
+      "prompt": "/home/ethan/Projects/Sai_Art/docs/uri_style/gorilla_v0_1/themes/prompts/white_orange.txt"
+    },
+    {
+      "id": "black_gold",
+      "name": "黑金",
+      "shell": "satin charcoal enamel #363A3F",
+      "armor": "dark graphite blue-gray #505963",
+      "accent": "restrained metallic warm gold #D4AD51",
+      "basis": "Self-designed palette candidate, not a verified MicroDuck original theme.",
+      "image": "/home/ethan/Projects/Sai_Art/docs/uri_style/gorilla_v0_1/themes/images/black_gold_rev_2.png",
+      "sha256": "6fc524f27bc9cfa00bb9e8bac12a427b70222ff4bed3247625cecebf761bf410",
+      "status": "generated_candidate_awaiting_user_review",
+      "prompt": "/home/ethan/Projects/Sai_Art/docs/uri_style/gorilla_v0_1/themes/prompts/black_gold.txt",
+      "local_fix_prompt": "/home/ethan/Projects/Sai_Art/docs/uri_style/gorilla_v0_1/themes/prompts/black_gold_rear_edge_fix.txt"
+    },
+    {
+      "id": "desert",
+      "name": "沙漠",
+      "shell": "warm sand beige #D7C5A4",
+      "armor": "muted sage-olive #8A9278",
+      "accent": "burnt amber #BE8140",
+      "basis": "Self-designed palette candidate, not a verified MicroDuck original theme.",
+      "image": "/home/ethan/Projects/Sai_Art/docs/uri_style/gorilla_v0_1/themes/images/desert.png",
+      "sha256": "1d26d67da57e444d2941e022769018e2fb6988ba60c6ad66b75a4143c451f9e5",
+      "status": "generated_candidate_awaiting_user_review",
+      "prompt": "/home/ethan/Projects/Sai_Art/docs/uri_style/gorilla_v0_1/themes/prompts/desert.txt"
+    }
+  ],
+  "prior_handoff_package": "AA3 unchanged; no new delivery or task messaging",
+  "preview": "/home/ethan/Projects/Sai_Art/docs/uri_style/gorilla_v0_1/themes/index.html"
+}

@@ -1,0 +1,212 @@
+{
+  "schema_version": 1,
+  "asset": "Gorilla V0.1",
+  "scope": "Five palette artwork; G47–G51 provenance; original AA3 unchanged",
+  "calls": [
+    {
+      "id": "G47",
+      "art_revision": "AA3_palette_candidates",
+      "tool": "built-in imagegen",
+      "mode": "image_edit",
+      "model_version": "not exposed by tool",
+      "prompt": "/home/ethan/Projects/Sai_Art/docs/uri_style/gorilla_v0_1/themes/prompts/yellow_purple.txt",
+      "prompt_sha256": "a0af3716dce89df465118aaf7aedf17daa34b66b4bb8562bfe896444fc97cb6e",
+      "inputs_in_order": [
+        {
+          "path": "/home/ethan/Projects/Sai_Art/docs/uri_style/gorilla_v0_1/images/locked_four_view_review_rev_aa3.png",
+          "role": "EDIT_TARGET",
+          "sha256": "5c0469708d7c878ac6253e6ac3e6276198bf3694235bbed3da66c8c743b5aba4"
+        },
+        {
+          "path": "/home/ethan/Projects/Sai_Art/.agents/skills/uri-style/assets/style_01_headphones.png",
+          "role": "STYLE_ONLY",
+          "sha256": "78270e8007dea7ebd84e580bb5fa1d936cc9118b375e9b8845b3cffc84d51c0c",
+          "published_copy": "references/style_01_headphones.png"
+        },
+        {
+          "path": "/home/ethan/Projects/Sai_Art/.agents/skills/uri-style/assets/style_03_waterfront.png",
+          "role": "STYLE_ONLY",
+          "sha256": "25b75c83586e01222dde9cd164035afe9cba005b08cd2674eb6b9993aa12c053",
+          "published_copy": "references/style_03_waterfront.png"
+        },
+        {
+          "path": "/home/ethan/Projects/Sai_Art/.agents/skills/uri-style/assets/style_06_architecture.png",
+          "role": "STYLE_ONLY",
+          "sha256": "51118389231d7cf1832b8b466aa31af2b6950f04cc91b77473e1f94b5a56e59c",
+          "published_copy": "references/style_06_architecture.png"
+        }
+      ],
+      "output": "/home/ethan/Projects/Sai_Art/docs/uri_style/gorilla_v0_1/themes/images/yellow_purple.png",
+      "output_sha256": "21623e06167e73ebb482f38d1cc60183474487b6a05e11f42df7094021027209",
+      "generated_source": "/home/ethan/.codex/generated_images/01a0f3ab-7a57-7172-b8c5-e517aa2973da/exec-75acb4dd-02da-41ec-9396-d4b5ec548d80.png",
+      "status": "generated_candidate_awaiting_user_review",
+      "notes": "Self-designed palette variant; not a verified MicroDuck original theme.",
+      "published_prompt": "prompts/yellow_purple.txt",
+      "published_output": "images/yellow_purple.png"
+    },
+    {
+      "id": "G48",
+      "art_revision": "AA3_palette_candidates",
+      "tool": "built-in imagegen",
+      "mode": "image_edit",
+      "model_version": "not exposed by tool",
+      "prompt": "/home/ethan/Projects/Sai_Art/docs/uri_style/gorilla_v0_1/themes/prompts/white_orange.txt",
+      "prompt_sha256": "08755d18622caa5e0b780a91e8d6ec1b158a8e41cf0bc60c49fb2efb391a819b",
+      "inputs_in_order": [
+        {
+          "path": "/home/ethan/Projects/Sai_Art/docs/uri_style/gorilla_v0_1/images/locked_four_view_review_rev_aa3.png",
+          "role": "EDIT_TARGET",
+          "sha256": "5c0469708d7c878ac6253e6ac3e6276198bf3694235bbed3da66c8c743b5aba4"
+        },
+        {
+          "path": "/home/ethan/Projects/Sai_Art/.agents/skills/uri-style/assets/style_01_headphones.png",
+          "role": "STYLE_ONLY",
+          "sha256": "78270e8007dea7ebd84e580bb5fa1d936cc9118b375e9b8845b3cffc84d51c0c",
+          "published_copy": "references/style_01_headphones.png"
+        },
+        {
+          "path": "/home/ethan/Projects/Sai_Art/.agents/skills/uri-style/assets/style_03_waterfront.png",
+          "role": "STYLE_ONLY",
+          "sha256": "25b75c83586e01222dde9cd164035afe9cba005b08cd2674eb6b9993aa12c053",
+          "published_copy": "references/style_03_waterfront.png"
+        },
+        {
+          "path": "/home/ethan/Projects/Sai_Art/.agents/skills/uri-style/assets/style_06_architecture.png",
+          "role": "STYLE_ONLY",
+          "sha256": "51118389231d7cf1832b8b466aa31af2b6950f04cc91b77473e1f94b5a56e59c",
+          "published_copy": "references/style_06_architecture.png"
+        }
+      ],
+      "output": "/home/ethan/Projects/Sai_Art/docs/uri_style/gorilla_v0_1/themes/images/white_orange.png",
+      "output_sha256": "546302784d7186edceb1cfccddcab249139388234e9fd68ba5b72de858c1cc72",
+      "generated_source": "/home/ethan/.codex/generated_images/01a0f3ab-7a57-7172-b8c5-e517aa2973da/exec-7e76cc78-7989-40f5-b87c-900e714bcec8.png",
+      "status": "generated_candidate_awaiting_user_review",
+      "notes": "Self-designed palette variant; not a verified MicroDuck original theme.",
+      "published_prompt": "prompts/white_orange.txt",
+      "published_output": "images/white_orange.png"
+    },
+    {
+      "id": "G49",
+      "art_revision": "AA3_palette_candidates",
+      "tool": "built-in imagegen",
+      "mode": "image_edit",
+      "model_version": "not exposed by tool",
+      "prompt": "/home/ethan/Projects/Sai_Art/docs/uri_style/gorilla_v0_1/themes/prompts/black_gold.txt",
+      "prompt_sha256": "3cfd9073292fcd16c0d1494a1872e9473400d0389d9668afb9481cff2f7da47a",
+      "inputs_in_order": [
+        {
+          "path": "/home/ethan/Projects/Sai_Art/docs/uri_style/gorilla_v0_1/images/locked_four_view_review_rev_aa3.png",
+          "role": "EDIT_TARGET",
+          "sha256": "5c0469708d7c878ac6253e6ac3e6276198bf3694235bbed3da66c8c743b5aba4"
+        },
+        {
+          "path": "/home/ethan/Projects/Sai_Art/.agents/skills/uri-style/assets/style_01_headphones.png",
+          "role": "STYLE_ONLY",
+          "sha256": "78270e8007dea7ebd84e580bb5fa1d936cc9118b375e9b8845b3cffc84d51c0c",
+          "published_copy": "references/style_01_headphones.png"
+        },
+        {
+          "path": "/home/ethan/Projects/Sai_Art/.agents/skills/uri-style/assets/style_03_waterfront.png",
+          "role": "STYLE_ONLY",
+          "sha256": "25b75c83586e01222dde9cd164035afe9cba005b08cd2674eb6b9993aa12c053",
+          "published_copy": "references/style_03_waterfront.png"
+        },
+        {
+          "path": "/home/ethan/Projects/Sai_Art/.agents/skills/uri-style/assets/style_06_architecture.png",
+          "role": "STYLE_ONLY",
+          "sha256": "51118389231d7cf1832b8b466aa31af2b6950f04cc91b77473e1f94b5a56e59c",
+          "published_copy": "references/style_06_architecture.png"
+        }
+      ],
+      "output": "/home/ethan/Projects/Sai_Art/docs/uri_style/gorilla_v0_1/themes/images/black_gold.png",
+      "output_sha256": "d198ca0acb6d1460e341c1a77ffdb77cf425c2e0b063ba1371498a62ee9409bc",
+      "generated_source": "/home/ethan/.codex/generated_images/01a0f3ab-7a57-7172-b8c5-e517aa2973da/exec-f33e54f8-3642-40c0-8c5d-f16014cdae13.png",
+      "status": "generated_candidate_awaiting_user_review",
+      "notes": "Self-designed palette variant; not a verified MicroDuck original theme.",
+      "published_prompt": "prompts/black_gold.txt",
+      "published_output": "images/black_gold.png"
+    },
+    {
+      "id": "G50",
+      "art_revision": "AA3_palette_candidates",
+      "tool": "built-in imagegen",
+      "mode": "image_edit",
+      "model_version": "not exposed by tool",
+      "prompt": "/home/ethan/Projects/Sai_Art/docs/uri_style/gorilla_v0_1/themes/prompts/desert.txt",
+      "prompt_sha256": "58a83e81ad0894582eb21bc7d16fd5aa6bd0c2189b6520a309b4a688b2bae7d8",
+      "inputs_in_order": [
+        {
+          "path": "/home/ethan/Projects/Sai_Art/docs/uri_style/gorilla_v0_1/images/locked_four_view_review_rev_aa3.png",
+          "role": "EDIT_TARGET",
+          "sha256": "5c0469708d7c878ac6253e6ac3e6276198bf3694235bbed3da66c8c743b5aba4"
+        },
+        {
+          "path": "/home/ethan/Projects/Sai_Art/.agents/skills/uri-style/assets/style_01_headphones.png",
+          "role": "STYLE_ONLY",
+          "sha256": "78270e8007dea7ebd84e580bb5fa1d936cc9118b375e9b8845b3cffc84d51c0c",
+          "published_copy": "references/style_01_headphones.png"
+        },
+        {
+          "path": "/home/ethan/Projects/Sai_Art/.agents/skills/uri-style/assets/style_03_waterfront.png",
+          "role": "STYLE_ONLY",
+          "sha256": "25b75c83586e01222dde9cd164035afe9cba005b08cd2674eb6b9993aa12c053",
+          "published_copy": "references/style_03_waterfront.png"
+        },
+        {
+          "path": "/home/ethan/Projects/Sai_Art/.agents/skills/uri-style/assets/style_06_architecture.png",
+          "role": "STYLE_ONLY",
+          "sha256": "51118389231d7cf1832b8b466aa31af2b6950f04cc91b77473e1f94b5a56e59c",
+          "published_copy": "references/style_06_architecture.png"
+        }
+      ],
+      "output": "/home/ethan/Projects/Sai_Art/docs/uri_style/gorilla_v0_1/themes/images/desert.png",
+      "output_sha256": "1d26d67da57e444d2941e022769018e2fb6988ba60c6ad66b75a4143c451f9e5",
+      "generated_source": "/home/ethan/.codex/generated_images/01a0f3ab-7a57-7172-b8c5-e517aa2973da/exec-9e6e7413-cbcd-4cfc-bf80-e44fe83913cd.png",
+      "status": "generated_candidate_awaiting_user_review",
+      "notes": "Self-designed palette variant; not a verified MicroDuck original theme.",
+      "published_prompt": "prompts/desert.txt",
+      "published_output": "images/desert.png"
+    },
+    {
+      "id": "G51",
+      "art_revision": "AA3_palette_candidates",
+      "tool": "built-in imagegen",
+      "mode": "image_edit",
+      "model_version": "not exposed by tool",
+      "prompt": "/home/ethan/Projects/Sai_Art/docs/uri_style/gorilla_v0_1/themes/prompts/black_gold_rear_edge_fix.txt",
+      "prompt_sha256": "59d142b102d88454fd8318266db10660135d63902ea402d8e072476b92cd7632",
+      "inputs_in_order": [
+        {
+          "path": "/home/ethan/Projects/Sai_Art/docs/uri_style/gorilla_v0_1/themes/images/black_gold.png",
+          "role": "EDIT_TARGET",
+          "sha256": "d198ca0acb6d1460e341c1a77ffdb77cf425c2e0b063ba1371498a62ee9409bc"
+        },
+        {
+          "path": "/home/ethan/Projects/Sai_Art/.agents/skills/uri-style/assets/style_01_headphones.png",
+          "role": "STYLE_ONLY",
+          "sha256": "78270e8007dea7ebd84e580bb5fa1d936cc9118b375e9b8845b3cffc84d51c0c",
+          "published_copy": "references/style_01_headphones.png"
+        },
+        {
+          "path": "/home/ethan/Projects/Sai_Art/.agents/skills/uri-style/assets/style_03_waterfront.png",
+          "role": "STYLE_ONLY",
+          "sha256": "25b75c83586e01222dde9cd164035afe9cba005b08cd2674eb6b9993aa12c053",
+          "published_copy": "references/style_03_waterfront.png"
+        },
+        {
+          "path": "/home/ethan/Projects/Sai_Art/.agents/skills/uri-style/assets/style_06_architecture.png",
+          "role": "STYLE_ONLY",
+          "sha256": "51118389231d7cf1832b8b466aa31af2b6950f04cc91b77473e1f94b5a56e59c",
+          "published_copy": "references/style_06_architecture.png"
+        }
+      ],
+      "output": "/home/ethan/Projects/Sai_Art/docs/uri_style/gorilla_v0_1/themes/images/black_gold_rev_2.png",
+      "output_sha256": "6fc524f27bc9cfa00bb9e8bac12a427b70222ff4bed3247625cecebf761bf410",
+      "generated_source": "/home/ethan/.codex/generated_images/01a0f3ab-7a57-7172-b8c5-e517aa2973da/exec-eb7e6274-1afc-4aba-864e-ea1f44dfed87.png",
+      "status": "generated_candidate_awaiting_user_review",
+      "notes": "Local TOP rear service-door edge color correction only.",
+      "published_prompt": "prompts/black_gold_rear_edge_fix.txt",
+      "published_output": "images/black_gold_rev_2.png"
+    }
+  ]
+}
