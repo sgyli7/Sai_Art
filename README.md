@@ -8,7 +8,6 @@ Sai 的角色、机器人与载具资产库。首页汇总各项目的设定、�
 | --- | --- | --- |
 | **Sainiverse V0.1** | [载具资料与完整仿真演示](vehicles/Sainiverse_v0.1/README.md) | [制作源](vehicles/Sainiverse_v0.1/source/) · [导出资产](vehicles/Sainiverse_v0.1/assets/) · [五套主题](vehicles/Sainiverse_v0.1/themes/) |
 | **Gorilla V0.2** | [设定集](robots/gorilla/README.md) · [五款四视图](robots/gorilla/artbook.md) | [B7 3D 与交付包](robots/gorilla/README.md#3d-资产与交付包) · [制作历史](robots/gorilla/history.md) |
-| **URI 风格资料** | [参考与制作说明](docs/uri_style/README.md) | [固定五图](.agents/skills/uri-style/assets/) · [风格规范](.agents/skills/uri-style/SKILL.md) |
 
 ## Sainiverse · V0.1
 
@@ -45,9 +44,6 @@ Sai 的角色、机器人与载具资产库。首页汇总各项目的设定、�
 
 [打开设定集](robots/gorilla/README.md) · [完整 FRONT／LEFT／REAR／TOP](robots/gorilla/artbook.md) · [3D 与整包下载](robots/gorilla/README.md#3d-资产与交付包) · [历史迭代](robots/gorilla/history.md)
 
-## URI 风格资料
-
-固定五张原画参考、准确提示词和制作规范集中在 [URI 制作资料](docs/uri_style/README.md)。参考原图与来源清单在 [风格资产目录](.agents/skills/uri-style/assets/)，现有项目的实际配色要求在各自设定集中维护。
 
 ## 仓库目录
 
@@ -63,7 +59,6 @@ robots/gorilla/                Gorilla 项目
   artbook.md                   当前五款完整四视图
   v0_2_p30/                    配色、B7 模型、预览与冻结交付资料
   history.md                   历史迭代导航
-.agents/skills/uri-style/       共用风格参考与规范
 evidence/                      既有仿真与制作证据
 docs/                          维护规则、来源与制作记录
 integration/                   既有机器人交付快照与依赖

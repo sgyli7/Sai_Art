@@ -4,3 +4,25 @@ __pycache__/
 *.pyc
 *.blend1
 /Sainiverse_v0.1.blend
+
+# Private authoring skill and original reference materials: never publish.
+.private_art_materials/
+.agents/skills/uri-style/
+docs/uri_style/reference_history/
+docs/uri_style/gorilla_v0_1/handoff_rev_y5/gorilla_v0_1/design/concepts/references/style_01_headphones.png
+docs/uri_style/gorilla_v0_1/handoff_rev_y5/gorilla_v0_1/design/concepts/references/style_03_waterfront.png
+docs/uri_style/gorilla_v0_1/handoff_rev_y5/gorilla_v0_1/design/concepts/references/style_06_architecture.png
+docs/uri_style/gorilla_v0_1/references/style_01_headphones.png
+docs/uri_style/gorilla_v0_1/references/style_03_waterfront.png
+docs/uri_style/gorilla_v0_1/references/style_06_architecture.png
+docs/uri_style/gorilla_v0_1/themes/references/style_01_headphones.png
+docs/uri_style/gorilla_v0_1/themes/references/style_03_waterfront.png
+docs/uri_style/gorilla_v0_1/themes/references/style_06_architecture.png
+docs/uri_style/gorilla_v0_2/delivery/gorilla_v0_2_p30/provenance/style_references/style_01_race_car_hangar.png
+docs/uri_style/gorilla_v0_2/delivery/gorilla_v0_2_p30/provenance/style_references/style_03_tracked_mobile_station.png
+docs/uri_style/gorilla_v0_2/delivery/gorilla_v0_2_p30/provenance/style_references/style_05_white_blue_racer.png
+robots/gorilla/v0_2_p30/provenance/style_references/style_01_race_car_hangar.png
+robots/gorilla/v0_2_p30/provenance/style_references/style_03_tracked_mobile_station.png
+robots/gorilla/v0_2_p30/provenance/style_references/style_05_white_blue_racer.png
+docs/uri_style/gorilla_v0_1/gorilla_v0_1_appearance_handoff_rev_y5.zip
+docs/uri_style/gorilla_v0_2/delivery/gorilla_v0_2_appearance_handoff_p30.zip
