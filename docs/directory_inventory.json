@@ -4,26 +4,6 @@
   "path_convention": "Paths are relative to Godot_Sim2Sim for Lab, repository root for Art. legacy_paths are exact paths, never prefix exemptions.",
   "compatibility_additions": [
     {
-      "path": ".agents/skills/uri-style/SKILL.md",
-      "reason": "用户明确要求的本项目 Codex skill 制作源；.agents/skills/uri-style 与 SKILL.md 使用技能发现规范的保留路径/名称。普通制作文件仍按 snake_case。"
-    },
-    {
-      "path": ".agents/skills/uri-style/references/gpt_prompt.txt",
-      "reason": "用户明确要求的本项目 Codex skill 制作源；.agents/skills/uri-style 与 SKILL.md 使用技能发现规范的保留路径/名称。普通制作文件仍按 snake_case。"
-    },
-    {
-      "path": ".agents/skills/uri-style/references/calibration.md",
-      "reason": "用户明确要求的本项目 Codex skill 制作源；.agents/skills/uri-style 与 SKILL.md 使用技能发现规范的保留路径/名称。普通制作文件仍按 snake_case。"
-    },
-    {
-      "path": ".agents/skills/uri-style/references/mecha_design.md",
-      "reason": "用户明确要求的本项目 Codex skill 制作源；.agents/skills/uri-style 与 SKILL.md 使用技能发现规范的保留路径/名称。普通制作文件仍按 snake_case。"
-    },
-    {
-      "path": ".agents/skills/uri-style/agents/openai.yaml",
-      "reason": "用户明确要求的本项目 Codex skill 制作源；.agents/skills/uri-style 与 SKILL.md 使用技能发现规范的保留路径/名称。普通制作文件仍按 snake_case。"
-    },
-    {
       "path": "docs/uri_style/gorilla_v0_1/source/build_blockout.py",
       "reason": "本次外观概念稿的辅助 Blender 尺寸定位制作源，和制作记录一同保存在 URI 设计文档分支；用户明确限制为内部辅助，非物理、控制或运行代码。"
     },
@@ -38,10 +18,6 @@
     {
       "path": "docs/uri_style/gorilla_v0_1/source/build_manifold_study.py",
       "reason": "已停止的外观曲面辅助图制作源，仅生成数学参考 PNG／JSON；用户要求回到主设计后归档，非建模交付、控制、物理或活动运行实现。"
-    },
-    {
-      "path": ".agents/skills/uri-style/assets/source_manifest.json",
-      "reason": "本项目 URI skill 的新五图来源、顺序、尺寸与哈希清单；与全局 skill 和 GitHub 维护源同步。"
     },
     {
       "path": "docs/uri_style/gorilla_v0_1/leg_design_r2/source/build_leg_design.py",
@@ -447,27 +423,6 @@
       "reason": "additional fold-joint leg grammar"
     },
     {
-      "path": "docs/uri_style/gorilla_v0_1/references/style_01_headphones.png",
-      "repository": "user attachment or project URI reference",
-      "revision": "/home/ethan/Projects/Sai_Art/.agents/skills/uri-style/assets/style_01_headphones.png",
-      "sha256": "78270e8007dea7ebd84e580bb5fa1d936cc9118b375e9b8845b3cffc84d51c0c",
-      "reason": "fixed URI full-size STYLE original"
-    },
-    {
-      "path": "docs/uri_style/gorilla_v0_1/references/style_03_waterfront.png",
-      "repository": "user attachment or project URI reference",
-      "revision": "/home/ethan/Projects/Sai_Art/.agents/skills/uri-style/assets/style_03_waterfront.png",
-      "sha256": "25b75c83586e01222dde9cd164035afe9cba005b08cd2674eb6b9993aa12c053",
-      "reason": "fixed URI full-size STYLE original"
-    },
-    {
-      "path": "docs/uri_style/gorilla_v0_1/references/style_06_architecture.png",
-      "repository": "user attachment or project URI reference",
-      "revision": "/home/ethan/Projects/Sai_Art/.agents/skills/uri-style/assets/style_06_architecture.png",
-      "sha256": "51118389231d7cf1832b8b466aa31af2b6950f04cc91b77473e1f94b5a56e59c",
-      "reason": "fixed URI full-size STYLE original"
-    },
-    {
       "path": "docs/uri_style/gorilla_v0_1/images/appearance_master.png",
       "repository": "built-in imagegen",
       "revision": "/home/ethan/.codex/generated_images/01a0f3ab-7a57-7172-b8c5-e517aa2973da/exec-c34c8deb-af2f-437c-834b-3d3498c2369c.png",
@@ -823,38 +778,6 @@
       "reason": "User geometry/material reference copied byte-for-byte; actual G28 input 2."
     },
     {
-      "path": "docs/uri_style/gorilla_v0_1/references/palette_01_blue_optical.png",
-      "repository": "user attachment",
-      "revision": "2026-10-02 palette distribution correction",
-      "source_path": "/tmp/codex-clipboard-ae11346e-efb9-433b-8f06-590f89134ef1.png",
-      "sha256": "5da87c1921b9f038eedb0051b7fcbb5c7810c98183d1ae70a663c71d7af722bf",
-      "reason": "Preserved original byte-for-byte; color distribution authority, not geometry."
-    },
-    {
-      "path": "docs/uri_style/gorilla_v0_1/references/palette_02_blue_vehicle.png",
-      "repository": "user attachment",
-      "revision": "2026-10-02 palette distribution correction",
-      "source_path": "/tmp/codex-clipboard-35979e89-cc40-4b98-830d-ffeb82d51b5a.png",
-      "sha256": "73d341781bf20f5f22ba2bfaf328b78f7ea6c1de4ee21c0830c5b0dbb95e6c93",
-      "reason": "Preserved original byte-for-byte; color distribution authority, not geometry."
-    },
-    {
-      "path": "docs/uri_style/gorilla_v0_1/references/palette_03_blue_architecture.png",
-      "repository": "user attachment",
-      "revision": "2026-10-02 palette distribution correction",
-      "source_path": "/tmp/codex-clipboard-62fade8e-bf90-4909-891c-af66990973ec.png",
-      "sha256": "e84820049c4d4d64a59f2b45fe92b27c6b8de9aa6b18dd9f16a44b9bba88af7e",
-      "reason": "Preserved original byte-for-byte; color distribution authority, not geometry."
-    },
-    {
-      "path": "docs/uri_style/gorilla_v0_1/references/palette_04_ivory_vehicle.png",
-      "repository": "user attachment",
-      "revision": "2026-10-02 palette distribution correction",
-      "source_path": "/tmp/codex-clipboard-dff278b4-4e09-4bde-8e32-41382578ff3d.png",
-      "sha256": "4244572b98c01599b8b73a9859fbf9e8e7df3d14a0f8a955c5cb124234bd366a",
-      "reason": "Preserved original byte-for-byte; color distribution authority, not geometry."
-    },
-    {
       "path": "docs/uri_style/gorilla_v0_1/images/blue_clearance_z_stance_rev_v.png",
       "repository": "built-in imagegen",
       "revision": "G29 / V / user rejected",
@@ -919,54 +842,19 @@
       "reason": "Current appearance candidate"
     },
     {
-      "path": ".agents/skills/uri-style/assets/style_01_race_car_hangar.png",
-      "repository": "user-provided image attachments in URI reference replacement request",
-      "revision": "2026-10-03 / user image 1 / codex-clipboard-76919b37-ede7-4907-82eb-0cd692fa0573.png",
-      "sha256": "1aed979f442030b644db5b86c79ad69d44f14092f865eb28f157663476eec8c9",
-      "reason": "User explicitly selected the new URI v5 reference set; uploaded PNG bytes copied unchanged."
-    },
-    {
-      "path": ".agents/skills/uri-style/assets/style_02_blue_optical_pod.png",
-      "repository": "user-provided image attachments in URI reference replacement request",
-      "revision": "2026-10-03 / user image 2 / codex-clipboard-8b6430d2-203b-426c-a6f9-4033d7e014f3.png",
-      "sha256": "69d56cdd5f53efa28ef008fee152419a945dcd51a35e572375268194126c6f98",
-      "reason": "User explicitly selected the new URI v5 reference set; uploaded PNG bytes copied unchanged."
-    },
-    {
-      "path": ".agents/skills/uri-style/assets/style_03_tracked_mobile_station.png",
-      "repository": "user-provided image attachments in URI reference replacement request",
-      "revision": "2026-10-03 / user image 3 / codex-clipboard-2980c3a6-4562-431d-a5a0-a383d35bafb5.png",
-      "sha256": "da14249a726ca5009b222a0dd7dc2c7a1fdbfe49ef31b8080936e855e8eb1f6f",
-      "reason": "User explicitly selected the new URI v5 reference set; uploaded PNG bytes copied unchanged."
-    },
-    {
-      "path": ".agents/skills/uri-style/assets/style_04_service_entry.png",
-      "repository": "user-provided image attachments in URI reference replacement request",
-      "revision": "2026-10-03 / user image 4 / codex-clipboard-a515d760-eb18-4d1c-b5bf-727b48b18e09.png",
-      "sha256": "57670970191600eecf06f6ea8531baa6bb45277db6cb883e252e9882f8a349f8",
-      "reason": "User explicitly selected the new URI v5 reference set; uploaded PNG bytes copied unchanged."
-    },
-    {
-      "path": ".agents/skills/uri-style/assets/style_05_white_blue_racer.png",
-      "repository": "user-provided image attachments in URI reference replacement request",
-      "revision": "2026-10-03 / user image 5 / codex-clipboard-392698eb-e700-4244-ac5b-9b23e2d60ef1.png",
-      "sha256": "fc5f342e892842887e738798b5870b9245fb3c7376a028c5f503301ac687f1bc",
-      "reason": "User explicitly selected the new URI v5 reference set; uploaded PNG bytes copied unchanged."
-    },
-    {
       "path": "robots/gorilla/v0_2_p30/README.md",
       "repository": "https://github.com/sgyli7/Sai_Art",
       "revision": "Gorilla V0.2 frozen P30 appearance handoff",
       "source_path": "docs/uri_style/gorilla_v0_2/delivery/gorilla_v0_2_p30/README.md",
-      "sha256": "671cc2a5a0cbc4b52df0f3fa143d3594e8654a79ad86753c73fe4729067889b7",
-      "reason": "Byte-identical publication copy for the Gorilla artbook; original frozen archive and authoring paths retained."
+      "sha256": "1b58ccea9ea8e4582796d86698dd07c41bfb6b3d43ee2947d6fddfd018d4526b",
+      "reason": "Public outputs-only P30 delivery copy; private original reference materials excluded."
     },
     {
       "path": "robots/gorilla/v0_2_p30/manifest.json",
       "repository": "https://github.com/sgyli7/Sai_Art",
       "revision": "Gorilla V0.2 frozen P30 appearance handoff",
       "source_path": "docs/uri_style/gorilla_v0_2/delivery/gorilla_v0_2_p30/manifest.json",
-      "sha256": "6ec8fe9ba205a7eba2eb34b63920b9aac8cd858edadfda45c64513e94824b784",
+      "sha256": "4a46f423b76c554fd467c9e6ba747eede4b27abb702622db5846339db153b9f9",
       "reason": "Byte-identical publication copy for the Gorilla artbook; original frozen archive and authoring paths retained."
     },
     {
@@ -1079,30 +967,6 @@
       "revision": "Gorilla V0.2 frozen P30 appearance handoff",
       "source_path": "docs/uri_style/gorilla_v0_2/delivery/gorilla_v0_2_p30/provenance/camera_frame_and_knee_marker_p29_record.json",
       "sha256": "aa057eccbbfa316cce81e638da47a8eed2b5c8a02e02d5ddc8f54e691d1def99",
-      "reason": "Byte-identical publication copy for the Gorilla artbook; original frozen archive and authoring paths retained."
-    },
-    {
-      "path": "robots/gorilla/v0_2_p30/provenance/style_references/style_01_race_car_hangar.png",
-      "repository": "https://github.com/sgyli7/Sai_Art",
-      "revision": "Gorilla V0.2 frozen P30 appearance handoff",
-      "source_path": "docs/uri_style/gorilla_v0_2/delivery/gorilla_v0_2_p30/provenance/style_references/style_01_race_car_hangar.png",
-      "sha256": "1aed979f442030b644db5b86c79ad69d44f14092f865eb28f157663476eec8c9",
-      "reason": "Byte-identical publication copy for the Gorilla artbook; original frozen archive and authoring paths retained."
-    },
-    {
-      "path": "robots/gorilla/v0_2_p30/provenance/style_references/style_03_tracked_mobile_station.png",
-      "repository": "https://github.com/sgyli7/Sai_Art",
-      "revision": "Gorilla V0.2 frozen P30 appearance handoff",
-      "source_path": "docs/uri_style/gorilla_v0_2/delivery/gorilla_v0_2_p30/provenance/style_references/style_03_tracked_mobile_station.png",
-      "sha256": "da14249a726ca5009b222a0dd7dc2c7a1fdbfe49ef31b8080936e855e8eb1f6f",
-      "reason": "Byte-identical publication copy for the Gorilla artbook; original frozen archive and authoring paths retained."
-    },
-    {
-      "path": "robots/gorilla/v0_2_p30/provenance/style_references/style_05_white_blue_racer.png",
-      "repository": "https://github.com/sgyli7/Sai_Art",
-      "revision": "Gorilla V0.2 frozen P30 appearance handoff",
-      "source_path": "docs/uri_style/gorilla_v0_2/delivery/gorilla_v0_2_p30/provenance/style_references/style_05_white_blue_racer.png",
-      "sha256": "fc5f342e892842887e738798b5870b9245fb3c7376a028c5f503301ac687f1bc",
       "reason": "Byte-identical publication copy for the Gorilla artbook; original frozen archive and authoring paths retained."
     },
     {
@@ -1322,65 +1186,11 @@
       "reason": "Byte-identical publication copy for the Gorilla artbook; original frozen archive and authoring paths retained."
     },
     {
-      "path": "docs/uri_style/reference_history/v4_1/style_04_person.png",
-      "repository": "user-provided local collection /home/ethan/图片/截图/uri",
-      "revision": "snapshot 2026-10-01 / 截图 2026-10-01 02-37-20.png",
-      "sha256": "ad98a8531548f78daa0fbf7f3353fd9b49d1fcd5faa32a9d01b2bfb1b33f5e73",
-      "reason": "URI skill bundled original style reference; pixels copied unchanged. Archived after user replaced the complete STYLE set; not a current generation reference.",
-      "previous_path": ".agents/skills/uri-style/assets/style_04_person.png",
-      "status": "superseded 2026-10-03; historical reproduction only"
-    },
-    {
-      "path": "docs/uri_style/reference_history/v4_1/style_05_control_room.png",
-      "repository": "user-provided local collection /home/ethan/图片/截图/uri",
-      "revision": "snapshot 2026-10-01 / 截图 2026-10-01 02-45-01.png",
-      "sha256": "9f635177296b690055f5233e9736a17a005c579319b7d8d2c9563b2d8940b3d3",
-      "reason": "URI skill bundled original style reference; pixels copied unchanged. Archived after user replaced the complete STYLE set; not a current generation reference.",
-      "previous_path": ".agents/skills/uri-style/assets/style_05_control_room.png",
-      "status": "superseded 2026-10-03; historical reproduction only"
-    },
-    {
-      "path": "docs/uri_style/reference_history/v4_1/style_02_recorder.png",
-      "repository": "user-provided local collection /home/ethan/图片/截图/uri",
-      "revision": "snapshot 2026-10-01 / 截图 2026-10-01 02-41-52.png",
-      "sha256": "1b0564e089b7610394e5987a55d0eac565d36c86950635855572dd9f88d7e451",
-      "reason": "Unchanged original; removed from default v4 after source-object leakage, retained only for relevant audio equipment subjects. Archived after user replaced the complete STYLE set; not a current generation reference.",
-      "previous_path": ".agents/skills/uri-style/assets/style_02_recorder.png",
-      "status": "superseded 2026-10-03; historical reproduction only"
-    },
-    {
-      "path": "docs/uri_style/reference_history/v4_1/style_03_waterfront.png",
-      "repository": "user-provided local collection /home/ethan/图片/截图/uri",
-      "revision": "snapshot 2026-10-01 / 截图 2026-10-01 02-33-09.png",
-      "sha256": "25b75c83586e01222dde9cd164035afe9cba005b08cd2674eb6b9993aa12c053",
-      "reason": "URI skill bundled original style reference; pixels copied unchanged. Archived after user replaced the complete STYLE set; not a current generation reference.",
-      "previous_path": ".agents/skills/uri-style/assets/style_03_waterfront.png",
-      "status": "superseded 2026-10-03; historical reproduction only"
-    },
-    {
-      "path": "docs/uri_style/reference_history/v4_1/style_01_headphones.png",
-      "repository": "user-provided local collection /home/ethan/图片/截图/uri",
-      "revision": "snapshot 2026-10-01 / 截图 2026-10-01 02-41-54.png",
-      "sha256": "78270e8007dea7ebd84e580bb5fa1d936cc9118b375e9b8845b3cffc84d51c0c",
-      "reason": "URI skill bundled original style reference; pixels copied unchanged. Archived after user replaced the complete STYLE set; not a current generation reference.",
-      "previous_path": ".agents/skills/uri-style/assets/style_01_headphones.png",
-      "status": "superseded 2026-10-03; historical reproduction only"
-    },
-    {
       "path": "docs/uri_style/robot_proportion_reference.png",
       "repository": "user attachment 02995c80-dedf-4a57-8dbc-5b94088af061",
       "revision": "image-2.png provided 2026-10-01",
       "sha256": "c278274aba4768a11557baf571ff0a1812f0815d072ecacb81b4020f8ec48abf",
       "reason": "Original robot used solely as proportion reference for fresh design."
-    },
-    {
-      "path": "docs/uri_style/reference_history/v4_1/style_06_architecture.png",
-      "repository": "user-provided local collection /home/ethan/图片/截图/uri",
-      "revision": "snapshot 2026-10-01 / 截图 2026-10-01 02-34-49.png",
-      "sha256": "51118389231d7cf1832b8b466aa31af2b6950f04cc91b77473e1f94b5a56e59c",
-      "reason": "Unchanged original v4 core STYLE reference: continuous elegant architectural forms and detail hierarchy. Archived after user replaced the complete STYLE set; not a current generation reference.",
-      "previous_path": ".agents/skills/uri-style/assets/style_06_architecture.png",
-      "status": "superseded 2026-10-03; historical reproduction only"
     },
     {
       "path": "docs/uri_style/genomaru_user_proportion.png",
@@ -2799,6 +2609,7 @@
     "current_revision": "p30",
     "selected_model": "b7",
     "date": "2026-10-09",
-    "storage": "Git LFS for Gorilla models / archives / large geometry dumps; PNG and navigation files remain normal Git blobs."
+    "storage": "Git LFS for Gorilla models / archives / large geometry dumps; PNG and navigation files remain normal Git blobs.",
+    "publication_policy": "Private drawing skills and original reference artwork must never be published or included in public archives."
   }
 }

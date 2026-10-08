@@ -26,3 +26,19 @@ robots/gorilla/v0_2_p30/provenance/style_references/style_03_tracked_mobile_stat
 robots/gorilla/v0_2_p30/provenance/style_references/style_05_white_blue_racer.png
 docs/uri_style/gorilla_v0_1/gorilla_v0_1_appearance_handoff_rev_y5.zip
 docs/uri_style/gorilla_v0_2/delivery/gorilla_v0_2_appearance_handoff_p30.zip
+
+# Private originals must not be copied into public provenance or palette folders.
+**/style_references/
+**/style_*.png
+docs/uri_style/gorilla_v0_1/handoff_rev_y5/gorilla_v0_1/design/concepts/references/palette_01_blue_optical.png
+docs/uri_style/gorilla_v0_1/handoff_rev_y5/gorilla_v0_1/design/concepts/references/palette_02_blue_vehicle.png
+docs/uri_style/gorilla_v0_1/handoff_rev_y5/gorilla_v0_1/design/concepts/references/palette_03_blue_architecture.png
+docs/uri_style/gorilla_v0_1/handoff_rev_y5/gorilla_v0_1/design/concepts/references/palette_04_ivory_vehicle.png
+docs/uri_style/gorilla_v0_1/references/palette_01_blue_optical.png
+docs/uri_style/gorilla_v0_1/references/palette_02_blue_vehicle.png
+docs/uri_style/gorilla_v0_1/references/palette_03_blue_architecture.png
+docs/uri_style/gorilla_v0_1/references/palette_04_ivory_vehicle.png
+
+docs/uri_style/gorilla_v0_1/handoff_delivery_rev_y5.json
+docs/uri_style/gorilla_v0_2/delivery/delivery_verification_p30.json
+docs/uri_style/gorilla_v0_2/delivery/engineering_handoff_message_p30.txt

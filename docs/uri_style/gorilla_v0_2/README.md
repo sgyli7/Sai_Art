@@ -7,7 +7,7 @@
 | 目录 | 内容 |
 | --- | --- |
 | [themes](themes/) | 当前 P30 五款配色、四视图、总览和提示词 |
-| [delivery](delivery/) | 冻结 P30 交付 ZIP、原解包目录与交付检查 |
+| [delivery](delivery/) | 不含私人参考原图的 P30 公开交付 ZIP、目录与检查 |
 | [source](source/) | Blender 制作源和制作／导出工具，含历史候选 |
 | [exports](exports/) | B7 GLB 和历史配色试验副本 |
 | [images](images/) | 完整外观迭代、原生视角和细节图 |

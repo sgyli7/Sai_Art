@@ -174,12 +174,13 @@
   "whole_v0_2_qualified": false,
   "art_delivery": {
     "status": "delivered_and_engineering_notified",
-    "archive": "../gorilla_v0_2/delivery/gorilla_v0_2_appearance_handoff_p30.zip",
-    "archive_sha256": "0e9377d44c66ae8646639de3f7d02f77c5da546e9780922e2a8ac693e3d531be",
-    "verification": "../gorilla_v0_2/delivery/delivery_verification_p30.json",
+    "archive": "../gorilla_v0_2/delivery/gorilla_v0_2_appearance_handoff_p30_public.zip",
+    "archive_sha256": "a23d993ad53fb7a45be48c890ed814526efe5458ecc4f4cb31006c9beaf6935d",
+    "verification": "../gorilla_v0_2/delivery/public_delivery_verification_p30.json",
     "engineering_thread_id": "01a0fa4c-3989-7342-8b07-da32d3a9129f",
     "engineering_host_id": "local",
     "scope": "Five complete four-view appearance themes and original user-selected lower-body B7 model; not whole-robot manufacturing CAD.",
-    "notification": "../gorilla_v0_2/delivery/engineering_notification_p30.json"
+    "notification": "../gorilla_v0_2/delivery/engineering_notification_p30.json",
+    "publication_scope": "Public outputs only; private skill and original style references are not published."
   }
 }

@@ -22,17 +22,19 @@
 
 - **[Blender 制作源](https://github.com/sgyli7/Sai_Art/raw/refs/heads/main/robots/gorilla/v0_2_p30/model/source/lower_modular_components_b7.blend)**（84.1 MB）
 - **[GLB 交换资产](https://github.com/sgyli7/Sai_Art/raw/refs/heads/main/robots/gorilla/v0_2_p30/model/exports/lower_modular_components_b7.glb)**（100.6 MB）
-- **[完整交付 ZIP](https://github.com/sgyli7/Sai_Art/raw/refs/heads/main/docs/uri_style/gorilla_v0_2/delivery/gorilla_v0_2_appearance_handoff_p30.zip)**（177.4 MB）：五款四视图、B7 模型、八张原生预览、来源和 SHA256 清单。
+- **[完整交付 ZIP](https://github.com/sgyli7/Sai_Art/raw/refs/heads/main/docs/uri_style/gorilla_v0_2/delivery/gorilla_v0_2_appearance_handoff_p30_public.zip)**（172.8 MB）：五款四视图、B7 模型、八张原生预览、公开来源和 SHA256 清单。
 - [交付说明](v0_2_p30/README.md) · [包内清单](v0_2_p30/manifest.json) · [导出检查](v0_2_p30/model/reports/selected_b7_asset_validation_p30.json)
 
 3D 文件保持原始灰色 B7 资产和共享主网格镜像；五款配色属于外观图稿。可编辑模型范围是腿部，整机四视图属于设定稿，制造与物理资格见包内报告。
 
 ## 制作源与历史
 
-当前交付的便携浏览副本在 `v0_2_p30/`，其图片、模型和包内清单与冻结交付一致。原始制作源保留原路径，便于继续使用既有脚本和工程交接引用。
+当前交付的便携浏览副本在 `v0_2_p30/`，其图片与模型和原交付一致；公开清单与压缩包排除了私人参考原图。原始制作源保留原路径，便于继续使用既有脚本和工程交接引用。
 
 - [V0.2 完整制作目录](../../docs/uri_style/gorilla_v0_2/README.md)：源文件、生成网格、图稿、提示词、参考与逐轮报告。
 - [V0.1 历史目录](../../docs/uri_style/gorilla_v0_1/README.md)：原设计、旧五款配色、旧交付和腿部重做过程。
 - [历史版本导航](history.md)：区分定稿、方向参考和已替代版本。
 
 `asset_catalog.json` 逐文件记录路径、来源角色、大小和 SHA256。缓存与 Blender 自动备份不进入发布清单。
+
+私人绘画 skill 与风格参考原图仅用于本地制作，不随公开图稿或资产包发布。

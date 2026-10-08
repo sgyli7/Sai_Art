@@ -382,33 +382,6 @@
       "adapted_for_portable_paths": false
     },
     {
-      "path": "provenance/style_references/style_01_race_car_hangar.png",
-      "source_path": "/home/ethan/Projects/Sai_Art/.agents/skills/uri-style/assets/style_01_race_car_hangar.png",
-      "source_repository": "Sai_Art",
-      "source_version": "URI v5 style-only fixed original",
-      "sha256": "1aed979f442030b644db5b86c79ad69d44f14092f865eb28f157663476eec8c9",
-      "source_sha256": "1aed979f442030b644db5b86c79ad69d44f14092f865eb28f157663476eec8c9",
-      "adapted_for_portable_paths": false
-    },
-    {
-      "path": "provenance/style_references/style_03_tracked_mobile_station.png",
-      "source_path": "/home/ethan/Projects/Sai_Art/.agents/skills/uri-style/assets/style_03_tracked_mobile_station.png",
-      "source_repository": "Sai_Art",
-      "source_version": "URI v5 style-only fixed original",
-      "sha256": "da14249a726ca5009b222a0dd7dc2c7a1fdbfe49ef31b8080936e855e8eb1f6f",
-      "source_sha256": "da14249a726ca5009b222a0dd7dc2c7a1fdbfe49ef31b8080936e855e8eb1f6f",
-      "adapted_for_portable_paths": false
-    },
-    {
-      "path": "provenance/style_references/style_05_white_blue_racer.png",
-      "source_path": "/home/ethan/Projects/Sai_Art/.agents/skills/uri-style/assets/style_05_white_blue_racer.png",
-      "source_repository": "Sai_Art",
-      "source_version": "URI v5 style-only fixed original",
-      "sha256": "fc5f342e892842887e738798b5870b9245fb3c7376a028c5f503301ac687f1bc",
-      "source_sha256": "fc5f342e892842887e738798b5870b9245fb3c7376a028c5f503301ac687f1bc",
-      "adapted_for_portable_paths": false
-    },
-    {
       "path": "tools/package_appearance_p30.py",
       "source_path": "/home/ethan/Projects/Sai_Art/docs/uri_style/gorilla_v0_2/source/package_appearance_p30.py",
       "source_repository": "Sai_Art",
@@ -431,13 +404,14 @@
     "Rejected P22 whole assembly",
     "C15 upper candidate",
     "P25 colored B7 experiment",
-    "Unexecuted P31 art draft"
+    "Unexecuted P31 art draft",
+    "Private drawing skill and original style reference images, including all embedded copies."
   ],
   "files": [
     {
       "path": "README.md",
-      "bytes": 2504,
-      "sha256": "671cc2a5a0cbc4b52df0f3fa143d3594e8654a79ad86753c73fe4729067889b7"
+      "bytes": 2719,
+      "sha256": "1b58ccea9ea8e4582796d86698dd07c41bfb6b3d43ee2947d6fddfd018d4526b"
     },
     {
       "path": "model/exports/lower_modular_components_b7.glb",
@@ -508,21 +482,6 @@
       "path": "provenance/camera_frame_and_knee_marker_p29_record.json",
       "bytes": 3225,
       "sha256": "aa057eccbbfa316cce81e638da47a8eed2b5c8a02e02d5ddc8f54e691d1def99"
-    },
-    {
-      "path": "provenance/style_references/style_01_race_car_hangar.png",
-      "bytes": 2093830,
-      "sha256": "1aed979f442030b644db5b86c79ad69d44f14092f865eb28f157663476eec8c9"
-    },
-    {
-      "path": "provenance/style_references/style_03_tracked_mobile_station.png",
-      "bytes": 1295827,
-      "sha256": "da14249a726ca5009b222a0dd7dc2c7a1fdbfe49ef31b8080936e855e8eb1f6f"
-    },
-    {
-      "path": "provenance/style_references/style_05_white_blue_racer.png",
-      "bytes": 1845960,
-      "sha256": "fc5f342e892842887e738798b5870b9245fb3c7376a028c5f503301ac687f1bc"
     },
     {
       "path": "provenance/thermal_outlets_and_knee_seam_fix_p26_record.json",
@@ -659,5 +618,6 @@
       "bytes": 13601,
       "sha256": "cda6a6ab53ecedc843e1f37e476b6d2b4bebde3ee048b7ffbff8a71af7136114"
     }
-  ]
+  ],
+  "publication": "Public P30 outputs-only derivative; private drawing skill and original style references excluded."
 }

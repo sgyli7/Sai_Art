@@ -3,10 +3,10 @@
   "publication_date": "2026-10-09",
   "current_revision": "p30",
   "current_model": "b7",
-  "count": 1024,
-  "total_file_bytes": 3833391461,
-  "unique_lfs_objects": 104,
-  "unique_lfs_bytes": 2956886235,
+  "count": 1015,
+  "total_file_bytes": 3993374163,
+  "unique_lfs_objects": 103,
+  "unique_lfs_bytes": 2926567619,
   "excluded_local_files": [
     "*.blend1",
     "*.pyc",
@@ -14,7 +14,6 @@
     "docs/uri_style/gorilla_v0_1/chat_user_messages_for_y5_audit.json",
     "docs/uri_style/gorilla_v0_2/delivery/engineering_notification_p30.json"
   ],
-  "frozen_archive_sha256": "0e9377d44c66ae8646639de3f7d02f77c5da546e9780922e2a8ac693e3d531be",
   "files": [
     {
       "path": "docs/uri_style/biped_lifter_clean.png",
@@ -164,13 +163,6 @@
       "role": "authoring_and_revision_history"
     },
     {
-      "path": "docs/uri_style/gorilla_v0_1/handoff_delivery_rev_y5.json",
-      "bytes": 1309,
-      "sha256": "8f68e33a4dd47d9fc83f144abf105bd61706cdae19c29f7d61293ac89e2af390",
-      "storage": "git",
-      "role": "authoring_and_revision_history"
-    },
-    {
       "path": "docs/uri_style/gorilla_v0_1/handoff_rev_y5/gorilla_v0_1/README.md",
       "bytes": 460,
       "sha256": "b35c40ad31f705d207e166b5910cd97391c2d1976e676e1fd12e8045a9e7a654",
@@ -251,34 +243,6 @@
       "path": "docs/uri_style/gorilla_v0_1/handoff_rev_y5/gorilla_v0_1/design/concepts/references/original_wedge_depth_reference.png",
       "bytes": 1035287,
       "sha256": "a2f1a7174d287a521b17a704a30bebc34f1e176e2354c29ba67e794b430af13a",
-      "storage": "git",
-      "role": "authoring_and_revision_history"
-    },
-    {
-      "path": "docs/uri_style/gorilla_v0_1/handoff_rev_y5/gorilla_v0_1/design/concepts/references/palette_01_blue_optical.png",
-      "bytes": 1573733,
-      "sha256": "5da87c1921b9f038eedb0051b7fcbb5c7810c98183d1ae70a663c71d7af722bf",
-      "storage": "git",
-      "role": "authoring_and_revision_history"
-    },
-    {
-      "path": "docs/uri_style/gorilla_v0_1/handoff_rev_y5/gorilla_v0_1/design/concepts/references/palette_02_blue_vehicle.png",
-      "bytes": 1249607,
-      "sha256": "73d341781bf20f5f22ba2bfaf328b78f7ea6c1de4ee21c0830c5b0dbb95e6c93",
-      "storage": "git",
-      "role": "authoring_and_revision_history"
-    },
-    {
-      "path": "docs/uri_style/gorilla_v0_1/handoff_rev_y5/gorilla_v0_1/design/concepts/references/palette_03_blue_architecture.png",
-      "bytes": 1889021,
-      "sha256": "e84820049c4d4d64a59f2b45fe92b27c6b8de9aa6b18dd9f16a44b9bba88af7e",
-      "storage": "git",
-      "role": "authoring_and_revision_history"
-    },
-    {
-      "path": "docs/uri_style/gorilla_v0_1/handoff_rev_y5/gorilla_v0_1/design/concepts/references/palette_04_ivory_vehicle.png",
-      "bytes": 1702428,
-      "sha256": "4244572b98c01599b8b73a9859fbf9e8e7df3d14a0f8a955c5cb124234bd366a",
       "storage": "git",
       "role": "authoring_and_revision_history"
     },
@@ -2761,34 +2725,6 @@
       "role": "authoring_and_revision_history"
     },
     {
-      "path": "docs/uri_style/gorilla_v0_1/references/palette_01_blue_optical.png",
-      "bytes": 1573733,
-      "sha256": "5da87c1921b9f038eedb0051b7fcbb5c7810c98183d1ae70a663c71d7af722bf",
-      "storage": "git",
-      "role": "authoring_and_revision_history"
-    },
-    {
-      "path": "docs/uri_style/gorilla_v0_1/references/palette_02_blue_vehicle.png",
-      "bytes": 1249607,
-      "sha256": "73d341781bf20f5f22ba2bfaf328b78f7ea6c1de4ee21c0830c5b0dbb95e6c93",
-      "storage": "git",
-      "role": "authoring_and_revision_history"
-    },
-    {
-      "path": "docs/uri_style/gorilla_v0_1/references/palette_03_blue_architecture.png",
-      "bytes": 1889021,
-      "sha256": "e84820049c4d4d64a59f2b45fe92b27c6b8de9aa6b18dd9f16a44b9bba88af7e",
-      "storage": "git",
-      "role": "authoring_and_revision_history"
-    },
-    {
-      "path": "docs/uri_style/gorilla_v0_1/references/palette_04_ivory_vehicle.png",
-      "bytes": 1702428,
-      "sha256": "4244572b98c01599b8b73a9859fbf9e8e7df3d14a0f8a955c5cb124234bd366a",
-      "storage": "git",
-      "role": "authoring_and_revision_history"
-    },
-    {
       "path": "docs/uri_style/gorilla_v0_1/references/rejected_side_depth_rev_w.png",
       "bytes": 444239,
       "sha256": "beaaf32b102aee5142ca4855b144c99f9dc54c3924b6391e6caec16e35f34267",
@@ -3209,30 +3145,23 @@
       "role": "authoring_and_revision_history"
     },
     {
-      "path": "docs/uri_style/gorilla_v0_2/delivery/delivery_verification_p30.json",
-      "bytes": 662,
-      "sha256": "a97076f56c73254472534c047ebd6de5061ef69b1e7c7bfa0322f1474668342e",
-      "storage": "git",
-      "role": "authoring_and_revision_history"
-    },
-    {
-      "path": "docs/uri_style/gorilla_v0_2/delivery/engineering_handoff_message_p30.txt",
-      "bytes": 1900,
-      "sha256": "648210cc520803ce1dd64957b183add8069d62123502bd329dc32d595c192cc8",
-      "storage": "git",
-      "role": "authoring_and_revision_history"
+      "path": "docs/uri_style/gorilla_v0_2/delivery/gorilla_v0_2_appearance_handoff_p30_public.zip",
+      "bytes": 172819212,
+      "sha256": "a23d993ad53fb7a45be48c890ed814526efe5458ecc4f4cb31006c9beaf6935d",
+      "storage": "git_lfs",
+      "role": "public_outputs_only_delivery_archive"
     },
     {
       "path": "docs/uri_style/gorilla_v0_2/delivery/gorilla_v0_2_p30/README.md",
-      "bytes": 2504,
-      "sha256": "671cc2a5a0cbc4b52df0f3fa143d3594e8654a79ad86753c73fe4729067889b7",
+      "bytes": 2719,
+      "sha256": "1b58ccea9ea8e4582796d86698dd07c41bfb6b3d43ee2947d6fddfd018d4526b",
       "storage": "git",
       "role": "authoring_and_revision_history"
     },
     {
       "path": "docs/uri_style/gorilla_v0_2/delivery/gorilla_v0_2_p30/manifest.json",
-      "bytes": 31988,
-      "sha256": "6ec8fe9ba205a7eba2eb34b63920b9aac8cd858edadfda45c64513e94824b784",
+      "bytes": 30049,
+      "sha256": "4a46f423b76c554fd467c9e6ba747eede4b27abb702622db5846339db153b9f9",
       "storage": "git",
       "role": "authoring_and_revision_history"
     },
@@ -3522,6 +3451,13 @@
       "sha256": "cda6a6ab53ecedc843e1f37e476b6d2b4bebde3ee048b7ffbff8a71af7136114",
       "storage": "git",
       "role": "authoring_and_revision_history"
+    },
+    {
+      "path": "docs/uri_style/gorilla_v0_2/delivery/public_delivery_verification_p30.json",
+      "bytes": 387,
+      "sha256": "9ba0100c35e2290d9de8f9120fa326d90f9f45beb8610c38fe67200e23c10038",
+      "storage": "git",
+      "role": "public_archive_verification"
     },
     {
       "path": "docs/uri_style/gorilla_v0_2/dense_topology_diagnosis_s6.json",
@@ -6885,15 +6821,15 @@
     },
     {
       "path": "robots/gorilla/v0_2_p30/README.md",
-      "bytes": 2504,
-      "sha256": "671cc2a5a0cbc4b52df0f3fa143d3594e8654a79ad86753c73fe4729067889b7",
+      "bytes": 2719,
+      "sha256": "1b58ccea9ea8e4582796d86698dd07c41bfb6b3d43ee2947d6fddfd018d4526b",
       "storage": "git",
       "role": "frozen_p30_publication_copy"
     },
     {
       "path": "robots/gorilla/v0_2_p30/manifest.json",
-      "bytes": 31988,
-      "sha256": "6ec8fe9ba205a7eba2eb34b63920b9aac8cd858edadfda45c64513e94824b784",
+      "bytes": 30049,
+      "sha256": "4a46f423b76c554fd467c9e6ba747eede4b27abb702622db5846339db153b9f9",
       "storage": "git",
       "role": "frozen_p30_publication_copy"
     },
@@ -7186,5 +7122,6 @@
     }
   ],
   "internal_record_exclusion_reason": "Raw chat capture and local thread-dispatch receipt are internal coordination records, not published art assets. Technical review, provenance and frozen delivery files are retained.",
-  "publication_policy": "Public project outputs only. Private skill and original style reference images, copies and archives containing them are excluded."
+  "publication_policy": "Public project outputs only. Private skill and original style reference images, copies and archives containing them are excluded.",
+  "public_archive_sha256": "a23d993ad53fb7a45be48c890ed814526efe5458ecc4f4cb31006c9beaf6935d"
 }
