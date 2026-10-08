@@ -1,0 +1,79 @@
+{
+  "image": "/home/ethan/Projects/Sai_Art/docs/uri_style/gorilla_v0_2/images/gorilla_four_view_registration_p14.png",
+  "sha256": "31129ec49898b974b5b19a76dd7694feb59aa8c91f2e0c29411427714b55b46e",
+  "dimensions_px": [
+    1254,
+    1254
+  ],
+  "measurement_scope": "visible raster extents after frame/text exclusion",
+  "limitations": [
+    "Antialiasing, highlights, shadows and disconnected small features affect extents.",
+    "This is not proof of common 3D geometry, source fidelity, collision clearance or load capacity."
+  ],
+  "panels": {
+    "FRONT": {
+      "bbox_panel_px": [
+        88,
+        18,
+        535,
+        600
+      ],
+      "visible_width_px": 448,
+      "visible_height_px": 583,
+      "retained_component_areas_px": [
+        153780,
+        347
+      ]
+    },
+    "LEFT": {
+      "bbox_panel_px": [
+        161,
+        14,
+        429,
+        600
+      ],
+      "visible_width_px": 269,
+      "visible_height_px": 587,
+      "retained_component_areas_px": [
+        91691
+      ]
+    },
+    "REAR": {
+      "bbox_panel_px": [
+        86,
+        16,
+        539,
+        578
+      ],
+      "visible_width_px": 454,
+      "visible_height_px": 563,
+      "retained_component_areas_px": [
+        149302
+      ]
+    },
+    "TOP": {
+      "bbox_panel_px": [
+        43,
+        103,
+        553,
+        483
+      ],
+      "visible_width_px": 511,
+      "visible_height_px": 381,
+      "retained_component_areas_px": [
+        114848,
+        2128
+      ]
+    }
+  },
+  "elevation_height_spread_fraction": 0.0415464512406232,
+  "top_to_front_visible_width_ratio": 1.140625,
+  "top_uniform_scale_to_match_front": 0.8767123287671232,
+  "top_to_left_visible_depth_ratio": 1.41635687732342,
+  "top_depth_scale_to_match_left": 0.7060367454068242,
+  "raster_alignment_findings": {
+    "elevation_height_difference_exceeds_2_percent": true,
+    "top_width_difference_exceeds_2_percent": true,
+    "top_depth_difference_exceeds_2_percent": true
+  }
+}

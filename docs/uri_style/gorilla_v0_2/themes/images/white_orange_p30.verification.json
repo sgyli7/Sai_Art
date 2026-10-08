@@ -1,0 +1,40 @@
+{
+  "spec": "/home/ethan/Projects/Sai_Art/docs/uri_style/gorilla_v0_2/themes/white_orange_coupler_composition_p30.json",
+  "base": "/home/ethan/Projects/Sai_Art/docs/uri_style/gorilla_v0_2/themes/images/white_orange_generated_p30.png",
+  "base_sha256": "908653b47336e2e921822936b4303044f5e9603373f4b2516db3f16195aaa7e8",
+  "overlay": "/home/ethan/Projects/Sai_Art/docs/uri_style/gorilla_v0_2/themes/images/white_orange_coupler_fix_generated_p30.png",
+  "overlay_sha256": "157f1782417e2b63adfefa40fa570b8e60ad8a0b7c68839334744c9efb853da1",
+  "output": "/home/ethan/Projects/Sai_Art/docs/uri_style/gorilla_v0_2/themes/images/white_orange_p30.png",
+  "output_sha256": "260fc2d59b7ec4b7b962b7fcc73e7e92126d76635eb24e248cd0cfb0dd3f4ae4",
+  "svg": "/home/ethan/Projects/Sai_Art/docs/uri_style/gorilla_v0_2/themes/images/white_orange_p30.svg",
+  "svg_sha256": "d74f320b6a504649631ce71723d5dd6577c0f606905cd4cdb93cd000c1cb9f36",
+  "authorized_regions": [
+    [
+      825,
+      804,
+      883,
+      835
+    ],
+    [
+      1002,
+      804,
+      1064,
+      835
+    ]
+  ],
+  "unchanged_region_checks": {
+    "FRONT": true,
+    "LEFT": true,
+    "REAR": true,
+    "TOP_main_crown_center": true,
+    "TOP_legs_and_hands": true,
+    "all_labels": true
+  },
+  "verification_baseline": "/home/ethan/Projects/Sai_Art/docs/uri_style/gorilla_v0_2/themes/images/white_orange_p30_original_native_baseline.png",
+  "source_embedded_bytes_unchanged": true,
+  "native_decoder_vs_pillow_original_max_channel_difference": 0,
+  "changed_pixels_outside_authorized_regions": 0,
+  "image_editing_method": "Imagegen raster edit; native SVG layout embeds original bytes without raster painting.",
+  "whole_v0_2_qualified": false,
+  "user_accepted": false
+}

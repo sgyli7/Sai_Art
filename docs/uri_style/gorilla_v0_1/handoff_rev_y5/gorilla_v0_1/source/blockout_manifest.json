@@ -1,0 +1,121 @@
+{
+  "name": "Gorilla V0.1",
+  "revision": "C",
+  "blender": "4.0.2",
+  "scope": "appearance-envelope blockout only; no engineered geometry or physics",
+  "orientation": {
+    "front": "-Y",
+    "up": "+Z"
+  },
+  "unit": "metre",
+  "height_intent_m": 2.65,
+  "assembly_bounds_m": {
+    "x": [
+      -1.2934887409210205,
+      1.2934887409210205
+    ],
+    "y": [
+      -0.5283966660499573,
+      0.5434389114379883
+    ],
+    "z": [
+      0.0,
+      2.6500000953674316
+    ]
+  },
+  "object_count": 80,
+  "same_assembly_for_all_views": true,
+  "changes": "fuller central torso, broad roof and reduced forward snout; subtle gorilla forearms",
+  "views": [
+    {
+      "name": "front",
+      "camera_location": [
+        0.0,
+        -9.0,
+        1.3250000476837158
+      ],
+      "camera_rotation": [
+        1.5707963705062866,
+        -0.0,
+        0.0
+      ],
+      "projection": "ORTHO",
+      "ortho_scale_m": 3.119999885559082
+    },
+    {
+      "name": "left",
+      "camera_location": [
+        9.0,
+        0.0,
+        1.3250000476837158
+      ],
+      "camera_rotation": [
+        1.570796251296997,
+        -0.0,
+        1.570796251296997
+      ],
+      "projection": "ORTHO",
+      "ortho_scale_m": 3.119999885559082
+    },
+    {
+      "name": "rear",
+      "camera_location": [
+        0.0,
+        9.0,
+        1.3250000476837158
+      ],
+      "camera_rotation": [
+        1.5707963705062866,
+        8.74227694680485e-08,
+        3.1415927410125732
+      ],
+      "projection": "ORTHO",
+      "ortho_scale_m": 3.119999885559082
+    },
+    {
+      "name": "top",
+      "camera_location": [
+        0.0,
+        0.0,
+        10.0
+      ],
+      "camera_rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "projection": "ORTHO",
+      "ortho_scale_m": 3.119999885559082
+    },
+    {
+      "name": "front_three_quarter",
+      "camera_location": [
+        5.0,
+        -8.0,
+        3.5
+      ],
+      "camera_rotation": [
+        1.3442060947418213,
+        3.737311971008239e-08,
+        0.5585994124412537
+      ],
+      "projection": "ORTHO",
+      "ortho_scale_m": 3.119999885559082
+    },
+    {
+      "name": "rear_three_quarter",
+      "camera_location": [
+        5.0,
+        8.0,
+        3.5
+      ],
+      "camera_rotation": [
+        1.3442060947418213,
+        -1.8464807283180562e-07,
+        2.582993507385254
+      ],
+      "projection": "ORTHO",
+      "ortho_scale_m": 3.119999885559082
+    }
+  ]
+}

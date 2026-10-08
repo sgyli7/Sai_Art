@@ -1,0 +1,1288 @@
+{
+  "revision": "b5",
+  "source": "source/lower_modular_components_b5.blend",
+  "joints": {
+    "hip": [
+      0.19,
+      0.029,
+      0.061
+    ],
+    "knee": [
+      0.19,
+      -0.158,
+      -0.17
+    ],
+    "hock": [
+      0.19,
+      0.006,
+      -0.169
+    ],
+    "ankle": [
+      0.19,
+      -0.042,
+      -0.412
+    ]
+  },
+  "source_fit": [
+    {
+      "module": "thigh_main_shell",
+      "controls": [
+        62,
+        128
+      ],
+      "method": "Source-bounded horizontal section contours with fairing",
+      "local_surface_distance_q50": 0.0017369773450391414,
+      "local_surface_distance_q95": 0.011721082726547979,
+      "scope": "Local geometric distance; no appearance acceptance inferred"
+    },
+    {
+      "module": "shank_front_side_shell",
+      "controls": [
+        62,
+        128
+      ],
+      "method": "Source-bounded horizontal section contours with fairing",
+      "local_surface_distance_q50": 0.0011506362428611088,
+      "local_surface_distance_q95": 0.008895664658173118,
+      "scope": "Local geometric distance; no appearance acceptance inferred"
+    },
+    {
+      "module": "hock_rear_guard",
+      "controls": [
+        62,
+        128
+      ],
+      "method": "Source-bounded horizontal section contours with fairing",
+      "local_surface_distance_q50": 0.005141672139070495,
+      "local_surface_distance_q95": 0.0326021426087021,
+      "scope": "Local geometric distance; no appearance acceptance inferred"
+    }
+  ],
+  "units": "Normalized appearance units; no load or manufacturing qualification",
+  "construction": "Regular clean component patches fitted to source point/normal measurements; no dense source triangles used",
+  "reference_scope": "Latest dense appearance direction, foot reference used for feet only",
+  "core_names": [
+    "L_thigh_carrier",
+    "L_return_carrier",
+    "L_shank_ankle_carrier",
+    "L_foot_central_carrier"
+  ],
+  "appearance_accepted": false,
+  "engineering_ready": false,
+  "master_topology": [
+    {
+      "name": "L_ankle_common_axle",
+      "owner": "shank",
+      "role": "Common transverse joint axis",
+      "vertices": 384,
+      "faces": 384,
+      "connected_components": 1,
+      "loose_vertices": 0,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "signed_volume": 4.540542414447811e-05
+    },
+    {
+      "name": "L_ankle_side_cover_-1",
+      "owner": "shank",
+      "role": "Shallow joint side cover",
+      "vertices": 384,
+      "faces": 384,
+      "connected_components": 1,
+      "loose_vertices": 0,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "signed_volume": 8.185919144200118e-06
+    },
+    {
+      "name": "L_ankle_side_cover_1",
+      "owner": "shank",
+      "role": "Shallow joint side cover",
+      "vertices": 384,
+      "faces": 384,
+      "connected_components": 1,
+      "loose_vertices": 0,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "signed_volume": 8.185919144200103e-06
+    },
+    {
+      "name": "L_ankle_side_cover_rim_-1",
+      "owner": "shank",
+      "role": "Concentric interface rim",
+      "vertices": 384,
+      "faces": 384,
+      "connected_components": 1,
+      "loose_vertices": 0,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "signed_volume": 1.2827953648734629e-06
+    },
+    {
+      "name": "L_ankle_side_cover_rim_1",
+      "owner": "shank",
+      "role": "Concentric interface rim",
+      "vertices": 384,
+      "faces": 384,
+      "connected_components": 1,
+      "loose_vertices": 0,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "signed_volume": 1.2827953648734675e-06
+    },
+    {
+      "name": "L_foot_central_carrier",
+      "owner": "foot",
+      "role": "Continuous ankle pedestal, centre web and foot rails",
+      "vertices": 4818,
+      "faces": 3205,
+      "connected_components": 1,
+      "loose_vertices": 0,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "signed_volume": 0.00033867642031928875
+    },
+    {
+      "name": "L_hip_common_axle",
+      "owner": "thigh",
+      "role": "Common transverse joint axis",
+      "vertices": 384,
+      "faces": 384,
+      "connected_components": 1,
+      "loose_vertices": 0,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "signed_volume": 4.5405427191388664e-05
+    },
+    {
+      "name": "L_hip_side_cover_-1",
+      "owner": "thigh",
+      "role": "Shallow joint side cover",
+      "vertices": 384,
+      "faces": 384,
+      "connected_components": 1,
+      "loose_vertices": 0,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "signed_volume": 8.185918707322238e-06
+    },
+    {
+      "name": "L_hip_side_cover_1",
+      "owner": "thigh",
+      "role": "Shallow joint side cover",
+      "vertices": 384,
+      "faces": 384,
+      "connected_components": 1,
+      "loose_vertices": 0,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "signed_volume": 8.185918707322245e-06
+    },
+    {
+      "name": "L_hip_side_cover_rim_-1",
+      "owner": "thigh",
+      "role": "Concentric interface rim",
+      "vertices": 384,
+      "faces": 384,
+      "connected_components": 1,
+      "loose_vertices": 0,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "signed_volume": 1.282795464757219e-06
+    },
+    {
+      "name": "L_hip_side_cover_rim_1",
+      "owner": "thigh",
+      "role": "Concentric interface rim",
+      "vertices": 384,
+      "faces": 384,
+      "connected_components": 1,
+      "loose_vertices": 0,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "signed_volume": 1.2827954647572181e-06
+    },
+    {
+      "name": "L_hock_common_axle",
+      "owner": "return_link",
+      "role": "Common transverse joint axis",
+      "vertices": 384,
+      "faces": 384,
+      "connected_components": 1,
+      "loose_vertices": 0,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "signed_volume": 4.5405429644393274e-05
+    },
+    {
+      "name": "L_hock_rear_guard",
+      "owner": "shank",
+      "role": "Fitted open armor shell with sealed module boundaries",
+      "vertices": 15539,
+      "faces": 15374,
+      "connected_components": 2,
+      "loose_vertices": 0,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "signed_volume": 0.00010714561402992958
+    },
+    {
+      "name": "L_hock_rear_service_panel",
+      "owner": "shank",
+      "role": "Source-fitted removable surface insert; no independent paint-band geometry",
+      "vertices": 2992,
+      "faces": 2990,
+      "connected_components": 1,
+      "loose_vertices": 0,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "signed_volume": 1.0177905798870225e-05
+    },
+    {
+      "name": "L_hock_side_cover_-1",
+      "owner": "return_link",
+      "role": "Shallow joint side cover",
+      "vertices": 384,
+      "faces": 384,
+      "connected_components": 1,
+      "loose_vertices": 0,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "signed_volume": 8.185918957432455e-06
+    },
+    {
+      "name": "L_hock_side_cover_1",
+      "owner": "return_link",
+      "role": "Shallow joint side cover",
+      "vertices": 384,
+      "faces": 384,
+      "connected_components": 1,
+      "loose_vertices": 0,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "signed_volume": 8.185918957432457e-06
+    },
+    {
+      "name": "L_hock_side_cover_rim_-1",
+      "owner": "return_link",
+      "role": "Concentric interface rim",
+      "vertices": 384,
+      "faces": 384,
+      "connected_components": 1,
+      "loose_vertices": 0,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "signed_volume": 1.282795471651942e-06
+    },
+    {
+      "name": "L_hock_side_cover_rim_1",
+      "owner": "return_link",
+      "role": "Concentric interface rim",
+      "vertices": 384,
+      "faces": 384,
+      "connected_components": 1,
+      "loose_vertices": 0,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "signed_volume": 1.2827954716519458e-06
+    },
+    {
+      "name": "L_knee_common_axle",
+      "owner": "thigh",
+      "role": "Common transverse joint axis",
+      "vertices": 384,
+      "faces": 384,
+      "connected_components": 1,
+      "loose_vertices": 0,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "signed_volume": 4.540542419236428e-05
+    },
+    {
+      "name": "L_knee_front_shield",
+      "owner": "thigh",
+      "role": "Source-fitted removable surface insert; no independent paint-band geometry",
+      "vertices": 2992,
+      "faces": 2990,
+      "connected_components": 1,
+      "loose_vertices": 0,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "signed_volume": 3.248462422245055e-05
+    },
+    {
+      "name": "L_knee_side_cover_-1",
+      "owner": "thigh",
+      "role": "Shallow joint side cover",
+      "vertices": 384,
+      "faces": 384,
+      "connected_components": 1,
+      "loose_vertices": 0,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "signed_volume": 8.185919752076269e-06
+    },
+    {
+      "name": "L_knee_side_cover_1",
+      "owner": "thigh",
+      "role": "Shallow joint side cover",
+      "vertices": 384,
+      "faces": 384,
+      "connected_components": 1,
+      "loose_vertices": 0,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "signed_volume": 8.185919752076249e-06
+    },
+    {
+      "name": "L_knee_side_cover_rim_-1",
+      "owner": "thigh",
+      "role": "Concentric interface rim",
+      "vertices": 384,
+      "faces": 384,
+      "connected_components": 1,
+      "loose_vertices": 0,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "signed_volume": 1.2827955280149295e-06
+    },
+    {
+      "name": "L_knee_side_cover_rim_1",
+      "owner": "thigh",
+      "role": "Concentric interface rim",
+      "vertices": 384,
+      "faces": 384,
+      "connected_components": 1,
+      "loose_vertices": 0,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "signed_volume": 1.2827955280149282e-06
+    },
+    {
+      "name": "L_return_carrier",
+      "owner": "return_link",
+      "role": "Continuous carrier with integral proximal hub and distal fork",
+      "vertices": 1660,
+      "faces": 1341,
+      "connected_components": 1,
+      "loose_vertices": 0,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "signed_volume": 0.0002780231839123625
+    },
+    {
+      "name": "L_shank_ankle_carrier",
+      "owner": "shank",
+      "role": "Continuous carrier with integral proximal hub and distal fork",
+      "vertices": 1628,
+      "faces": 1345,
+      "connected_components": 1,
+      "loose_vertices": 0,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "signed_volume": 0.0004975763099960872
+    },
+    {
+      "name": "L_shank_front_service_panel",
+      "owner": "shank",
+      "role": "Source-fitted removable surface insert; no independent paint-band geometry",
+      "vertices": 2992,
+      "faces": 2990,
+      "connected_components": 1,
+      "loose_vertices": 0,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "signed_volume": 1.5122737728430204e-05
+    },
+    {
+      "name": "L_shank_front_side_shell",
+      "owner": "shank",
+      "role": "Fitted open armor shell with sealed module boundaries",
+      "vertices": 15380,
+      "faces": 15380,
+      "connected_components": 1,
+      "loose_vertices": 0,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "signed_volume": 0.0001459336760849169
+    },
+    {
+      "name": "L_sole_contact_-0.037",
+      "owner": "foot",
+      "role": "Connected frame contact pad",
+      "vertices": 128,
+      "faces": 98,
+      "connected_components": 1,
+      "loose_vertices": 0,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "signed_volume": 8.860166353178027e-06
+    },
+    {
+      "name": "L_sole_contact_-0.176",
+      "owner": "foot",
+      "role": "Connected frame contact pad",
+      "vertices": 128,
+      "faces": 98,
+      "connected_components": 1,
+      "loose_vertices": 0,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "signed_volume": 1.768746220068142e-05
+    },
+    {
+      "name": "L_sole_contact_0.052",
+      "owner": "foot",
+      "role": "Connected frame contact pad",
+      "vertices": 128,
+      "faces": 98,
+      "connected_components": 1,
+      "loose_vertices": 0,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "signed_volume": 1.348168050819903e-05
+    },
+    {
+      "name": "L_thigh_carrier",
+      "owner": "thigh",
+      "role": "Continuous carrier with integral proximal hub and distal fork",
+      "vertices": 1674,
+      "faces": 1371,
+      "connected_components": 1,
+      "loose_vertices": 0,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "signed_volume": 0.0006969346505301306
+    },
+    {
+      "name": "L_thigh_front_service_panel",
+      "owner": "thigh",
+      "role": "Source-fitted removable surface insert; no independent paint-band geometry",
+      "vertices": 2992,
+      "faces": 2990,
+      "connected_components": 1,
+      "loose_vertices": 0,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "signed_volume": 4.872922224159885e-05
+    },
+    {
+      "name": "L_thigh_inner_lateral_panel",
+      "owner": "thigh",
+      "role": "Source-fitted removable surface insert; no independent paint-band geometry",
+      "vertices": 2992,
+      "faces": 2990,
+      "connected_components": 1,
+      "loose_vertices": 0,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "signed_volume": 1.883293391419873e-05
+    },
+    {
+      "name": "L_thigh_main_shell",
+      "owner": "thigh",
+      "role": "Fitted open armor shell with sealed module boundaries",
+      "vertices": 15872,
+      "faces": 15870,
+      "connected_components": 1,
+      "loose_vertices": 0,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "signed_volume": 0.00045196386345867397
+    },
+    {
+      "name": "L_thigh_outer_lateral_panel",
+      "owner": "thigh",
+      "role": "Source-fitted removable surface insert; no independent paint-band geometry",
+      "vertices": 2992,
+      "faces": 2990,
+      "connected_components": 1,
+      "loose_vertices": 0,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "signed_volume": 2.1655892050910656e-05
+    }
+  ],
+  "mirroring": [
+    {
+      "left": "L_ankle_common_axle",
+      "right": "R_ankle_common_axle",
+      "shared_mesh_data": true,
+      "max_vertex_mirror_error": 0.0
+    },
+    {
+      "left": "L_ankle_side_cover_-1",
+      "right": "R_ankle_side_cover_-1",
+      "shared_mesh_data": true,
+      "max_vertex_mirror_error": 0.0
+    },
+    {
+      "left": "L_ankle_side_cover_1",
+      "right": "R_ankle_side_cover_1",
+      "shared_mesh_data": true,
+      "max_vertex_mirror_error": 0.0
+    },
+    {
+      "left": "L_ankle_side_cover_rim_-1",
+      "right": "R_ankle_side_cover_rim_-1",
+      "shared_mesh_data": true,
+      "max_vertex_mirror_error": 0.0
+    },
+    {
+      "left": "L_ankle_side_cover_rim_1",
+      "right": "R_ankle_side_cover_rim_1",
+      "shared_mesh_data": true,
+      "max_vertex_mirror_error": 0.0
+    },
+    {
+      "left": "L_foot_central_carrier",
+      "right": "R_foot_central_carrier",
+      "shared_mesh_data": true,
+      "max_vertex_mirror_error": 0.0
+    },
+    {
+      "left": "L_hip_common_axle",
+      "right": "R_hip_common_axle",
+      "shared_mesh_data": true,
+      "max_vertex_mirror_error": 0.0
+    },
+    {
+      "left": "L_hip_side_cover_-1",
+      "right": "R_hip_side_cover_-1",
+      "shared_mesh_data": true,
+      "max_vertex_mirror_error": 0.0
+    },
+    {
+      "left": "L_hip_side_cover_1",
+      "right": "R_hip_side_cover_1",
+      "shared_mesh_data": true,
+      "max_vertex_mirror_error": 0.0
+    },
+    {
+      "left": "L_hip_side_cover_rim_-1",
+      "right": "R_hip_side_cover_rim_-1",
+      "shared_mesh_data": true,
+      "max_vertex_mirror_error": 0.0
+    },
+    {
+      "left": "L_hip_side_cover_rim_1",
+      "right": "R_hip_side_cover_rim_1",
+      "shared_mesh_data": true,
+      "max_vertex_mirror_error": 0.0
+    },
+    {
+      "left": "L_hock_common_axle",
+      "right": "R_hock_common_axle",
+      "shared_mesh_data": true,
+      "max_vertex_mirror_error": 0.0
+    },
+    {
+      "left": "L_hock_rear_guard",
+      "right": "R_hock_rear_guard",
+      "shared_mesh_data": true,
+      "max_vertex_mirror_error": 0.0
+    },
+    {
+      "left": "L_hock_rear_service_panel",
+      "right": "R_hock_rear_service_panel",
+      "shared_mesh_data": true,
+      "max_vertex_mirror_error": 0.0
+    },
+    {
+      "left": "L_hock_side_cover_-1",
+      "right": "R_hock_side_cover_-1",
+      "shared_mesh_data": true,
+      "max_vertex_mirror_error": 0.0
+    },
+    {
+      "left": "L_hock_side_cover_1",
+      "right": "R_hock_side_cover_1",
+      "shared_mesh_data": true,
+      "max_vertex_mirror_error": 0.0
+    },
+    {
+      "left": "L_hock_side_cover_rim_-1",
+      "right": "R_hock_side_cover_rim_-1",
+      "shared_mesh_data": true,
+      "max_vertex_mirror_error": 0.0
+    },
+    {
+      "left": "L_hock_side_cover_rim_1",
+      "right": "R_hock_side_cover_rim_1",
+      "shared_mesh_data": true,
+      "max_vertex_mirror_error": 0.0
+    },
+    {
+      "left": "L_knee_common_axle",
+      "right": "R_knee_common_axle",
+      "shared_mesh_data": true,
+      "max_vertex_mirror_error": 0.0
+    },
+    {
+      "left": "L_knee_front_shield",
+      "right": "R_knee_front_shield",
+      "shared_mesh_data": true,
+      "max_vertex_mirror_error": 0.0
+    },
+    {
+      "left": "L_knee_side_cover_-1",
+      "right": "R_knee_side_cover_-1",
+      "shared_mesh_data": true,
+      "max_vertex_mirror_error": 0.0
+    },
+    {
+      "left": "L_knee_side_cover_1",
+      "right": "R_knee_side_cover_1",
+      "shared_mesh_data": true,
+      "max_vertex_mirror_error": 0.0
+    },
+    {
+      "left": "L_knee_side_cover_rim_-1",
+      "right": "R_knee_side_cover_rim_-1",
+      "shared_mesh_data": true,
+      "max_vertex_mirror_error": 0.0
+    },
+    {
+      "left": "L_knee_side_cover_rim_1",
+      "right": "R_knee_side_cover_rim_1",
+      "shared_mesh_data": true,
+      "max_vertex_mirror_error": 0.0
+    },
+    {
+      "left": "L_return_carrier",
+      "right": "R_return_carrier",
+      "shared_mesh_data": true,
+      "max_vertex_mirror_error": 0.0
+    },
+    {
+      "left": "L_shank_ankle_carrier",
+      "right": "R_shank_ankle_carrier",
+      "shared_mesh_data": true,
+      "max_vertex_mirror_error": 0.0
+    },
+    {
+      "left": "L_shank_front_service_panel",
+      "right": "R_shank_front_service_panel",
+      "shared_mesh_data": true,
+      "max_vertex_mirror_error": 0.0
+    },
+    {
+      "left": "L_shank_front_side_shell",
+      "right": "R_shank_front_side_shell",
+      "shared_mesh_data": true,
+      "max_vertex_mirror_error": 0.0
+    },
+    {
+      "left": "L_sole_contact_-0.037",
+      "right": "R_sole_contact_-0.037",
+      "shared_mesh_data": true,
+      "max_vertex_mirror_error": 0.0
+    },
+    {
+      "left": "L_sole_contact_-0.176",
+      "right": "R_sole_contact_-0.176",
+      "shared_mesh_data": true,
+      "max_vertex_mirror_error": 0.0
+    },
+    {
+      "left": "L_sole_contact_0.052",
+      "right": "R_sole_contact_0.052",
+      "shared_mesh_data": true,
+      "max_vertex_mirror_error": 0.0
+    },
+    {
+      "left": "L_thigh_carrier",
+      "right": "R_thigh_carrier",
+      "shared_mesh_data": true,
+      "max_vertex_mirror_error": 0.0
+    },
+    {
+      "left": "L_thigh_front_service_panel",
+      "right": "R_thigh_front_service_panel",
+      "shared_mesh_data": true,
+      "max_vertex_mirror_error": 0.0
+    },
+    {
+      "left": "L_thigh_inner_lateral_panel",
+      "right": "R_thigh_inner_lateral_panel",
+      "shared_mesh_data": true,
+      "max_vertex_mirror_error": 0.0
+    },
+    {
+      "left": "L_thigh_main_shell",
+      "right": "R_thigh_main_shell",
+      "shared_mesh_data": true,
+      "max_vertex_mirror_error": 0.0
+    },
+    {
+      "left": "L_thigh_outer_lateral_panel",
+      "right": "R_thigh_outer_lateral_panel",
+      "shared_mesh_data": true,
+      "max_vertex_mirror_error": 0.0
+    }
+  ],
+  "pose_checks": [
+    {
+      "pose": "reference_bent",
+      "angles_degrees": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "fk_position_error_max": 7.858776910981472e-09,
+      "mirror_joint_position_error_max": 7.858776910981472e-09,
+      "different_owner_triangle_intersections": [
+        {
+          "a": "L_knee_front_shield",
+          "b": "L_return_carrier",
+          "triangle_pairs": 781,
+          "involved_triangle_bounds": [
+            [
+              0.1632810514420271,
+              -0.18838690221309662,
+              -0.19732000306248665
+            ],
+            [
+              0.21689768135547638,
+              -0.14450000692158937,
+              -0.1466173157095909
+            ]
+          ],
+          "mean_involved_triangle_coordinate": [
+            0.18022665826167059,
+            -0.17062466323993,
+            -0.17381258551316014
+          ]
+        },
+        {
+          "a": "L_return_carrier",
+          "b": "L_thigh_inner_lateral_panel",
+          "triangle_pairs": 34,
+          "involved_triangle_bounds": [
+            [
+              0.16011454723775387,
+              -0.14883047435432673,
+              -0.15627682581543922
+            ],
+            [
+              0.21499999798834324,
+              -0.1389081235975027,
+              -0.14433151856064796
+            ]
+          ],
+          "mean_involved_triangle_coordinate": [
+            0.16866381410121298,
+            -0.14186940912622958,
+            -0.14868939757191887
+          ]
+        },
+        {
+          "a": "L_return_carrier",
+          "b": "L_thigh_main_shell",
+          "triangle_pairs": 1581,
+          "involved_triangle_bounds": [
+            [
+              0.15769647806882858,
+              -0.18878215551376343,
+              -0.20032786205410957
+            ],
+            [
+              0.2169984169304371,
+              -0.069185271859169,
+              -0.14108196273446083
+            ]
+          ],
+          "mean_involved_triangle_coordinate": [
+            0.1807480360510847,
+            -0.15162953778250304,
+            -0.16996459295625918
+          ]
+        }
+      ],
+      "core_carrier_triangle_intersections": [],
+      "scope": "Actual modeled articulation perturbations; no walking, balance, material or load claim"
+    },
+    {
+      "pose": "further_fold",
+      "angles_degrees": [
+        0,
+        -6,
+        6,
+        0
+      ],
+      "fk_position_error_max": 9.425450994076225e-09,
+      "mirror_joint_position_error_max": 9.425450994076225e-09,
+      "different_owner_triangle_intersections": [
+        {
+          "a": "L_knee_front_shield",
+          "b": "L_return_carrier",
+          "triangle_pairs": 779,
+          "involved_triangle_bounds": [
+            [
+              0.16308659501373768,
+              -0.18838690221309662,
+              -0.19732000306248665
+            ],
+            [
+              0.21696916036307812,
+              -0.1438925460854133,
+              -0.1469787168308986
+            ]
+          ],
+          "mean_involved_triangle_coordinate": [
+            0.1801870815220311,
+            -0.1706351482527873,
+            -0.1738300569482382
+          ]
+        },
+        {
+          "a": "L_return_carrier",
+          "b": "L_thigh_inner_lateral_panel",
+          "triangle_pairs": 36,
+          "involved_triangle_bounds": [
+            [
+              0.16011454723775387,
+              -0.1498438368664487,
+              -0.15731047972227716
+            ],
+            [
+              0.21499999798834324,
+              -0.1394144337205369,
+              -0.14433151856064796
+            ]
+          ],
+          "mean_involved_triangle_coordinate": [
+            0.16855278934794243,
+            -0.14214158859331874,
+            -0.1488157376083384
+          ]
+        },
+        {
+          "a": "L_return_carrier",
+          "b": "L_thigh_main_shell",
+          "triangle_pairs": 1560,
+          "involved_triangle_bounds": [
+            [
+              0.15769647806882858,
+              -0.18878215551376343,
+              -0.20032786205410957
+            ],
+            [
+              0.2169984169304371,
+              -0.06828425481194322,
+              -0.14108196273446083
+            ]
+          ],
+          "mean_involved_triangle_coordinate": [
+            0.1811239883429808,
+            -0.15215302371984132,
+            -0.1705954641140259
+          ]
+        }
+      ],
+      "core_carrier_triangle_intersections": [],
+      "scope": "Actual modeled articulation perturbations; no walking, balance, material or load claim"
+    },
+    {
+      "pose": "partial_extension",
+      "angles_degrees": [
+        0,
+        6,
+        -6,
+        0
+      ],
+      "fk_position_error_max": 2.0878406389522127e-08,
+      "mirror_joint_position_error_max": 2.0878406389522127e-08,
+      "different_owner_triangle_intersections": [
+        {
+          "a": "L_knee_front_shield",
+          "b": "L_return_carrier",
+          "triangle_pairs": 783,
+          "involved_triangle_bounds": [
+            [
+              0.16351493261754513,
+              -0.18838690221309662,
+              -0.19732000306248665
+            ],
+            [
+              0.2164850626140833,
+              -0.1450558602809906,
+              -0.14716534997365485
+            ]
+          ],
+          "mean_involved_triangle_coordinate": [
+            0.18017061458307163,
+            -0.17060337542010437,
+            -0.1737573283444268
+          ]
+        },
+        {
+          "a": "L_return_carrier",
+          "b": "L_thigh_inner_lateral_panel",
+          "triangle_pairs": 32,
+          "involved_triangle_bounds": [
+            [
+              0.16011454723775387,
+              -0.1474520111367619,
+              -0.15507493295535482
+            ],
+            [
+              0.21499999798834324,
+              -0.13967238662318282,
+              -0.14433151856064796
+            ]
+          ],
+          "mean_involved_triangle_coordinate": [
+            0.16824436732517775,
+            -0.14176959284723414,
+            -0.1486681503407174
+          ]
+        },
+        {
+          "a": "L_return_carrier",
+          "b": "L_thigh_main_shell",
+          "triangle_pairs": 1573,
+          "involved_triangle_bounds": [
+            [
+              0.15769647806882858,
+              -0.18878215551376343,
+              -0.20032786205410957
+            ],
+            [
+              0.2169984169304371,
+              -0.0682127233171839,
+              -0.14108196273446083
+            ]
+          ],
+          "mean_involved_triangle_coordinate": [
+            0.18019138643263913,
+            -0.15100590739281028,
+            -0.16960556658029358
+          ]
+        },
+        {
+          "a": "L_shank_front_side_shell",
+          "b": "L_thigh_main_shell",
+          "triangle_pairs": 110,
+          "involved_triangle_bounds": [
+            [
+              0.16924994997680187,
+              -0.09874337911605835,
+              -0.21519068628549576
+            ],
+            [
+              0.25372859835624695,
+              -0.06454504281282425,
+              -0.20430543646216393
+            ]
+          ],
+          "mean_involved_triangle_coordinate": [
+            0.24427063640722502,
+            -0.07983407136872879,
+            -0.21142914755351888
+          ]
+        }
+      ],
+      "core_carrier_triangle_intersections": [],
+      "scope": "Actual modeled articulation perturbations; no walking, balance, material or load claim"
+    },
+    {
+      "pose": "ankle_pitch",
+      "angles_degrees": [
+        0,
+        0,
+        0,
+        5
+      ],
+      "fk_position_error_max": 7.858776910981472e-09,
+      "mirror_joint_position_error_max": 7.858776910981472e-09,
+      "different_owner_triangle_intersections": [
+        {
+          "a": "L_knee_front_shield",
+          "b": "L_return_carrier",
+          "triangle_pairs": 781,
+          "involved_triangle_bounds": [
+            [
+              0.1632810514420271,
+              -0.18838690221309662,
+              -0.19732000306248665
+            ],
+            [
+              0.21689768135547638,
+              -0.14450000692158937,
+              -0.1466173157095909
+            ]
+          ],
+          "mean_involved_triangle_coordinate": [
+            0.18022665826167059,
+            -0.17062466323993,
+            -0.17381258551316014
+          ]
+        },
+        {
+          "a": "L_return_carrier",
+          "b": "L_thigh_inner_lateral_panel",
+          "triangle_pairs": 34,
+          "involved_triangle_bounds": [
+            [
+              0.16011454723775387,
+              -0.14883047435432673,
+              -0.15627682581543922
+            ],
+            [
+              0.21499999798834324,
+              -0.1389081235975027,
+              -0.14433151856064796
+            ]
+          ],
+          "mean_involved_triangle_coordinate": [
+            0.16866381410121298,
+            -0.14186940912622958,
+            -0.14868939757191887
+          ]
+        },
+        {
+          "a": "L_return_carrier",
+          "b": "L_thigh_main_shell",
+          "triangle_pairs": 1581,
+          "involved_triangle_bounds": [
+            [
+              0.15769647806882858,
+              -0.18878215551376343,
+              -0.20032786205410957
+            ],
+            [
+              0.2169984169304371,
+              -0.069185271859169,
+              -0.14108196273446083
+            ]
+          ],
+          "mean_involved_triangle_coordinate": [
+            0.1807480360510847,
+            -0.15162953778250304,
+            -0.16996459295625918
+          ]
+        }
+      ],
+      "core_carrier_triangle_intersections": [],
+      "scope": "Actual modeled articulation perturbations; no walking, balance, material or load claim"
+    }
+  ],
+  "connected_closed_master_components": false,
+  "strict_shared_mesh_mirroring": true,
+  "core_intersections_observed": false,
+  "different_owner_intersections_observed": true,
+  "source_sha256": "60ce8179be0890bfdc41a3ec9aa36d33a4e9010a2768344aa8a4fabfdb0c971f",
+  "views": {
+    "front": {
+      "image": "images/lower_modular_components_front_b5.png",
+      "span_world": [
+        0.5292962789535522,
+        0.5423000022904532
+      ],
+      "camera_matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          -4.371138828673793e-08,
+          -1.0,
+          -3.0587217807769775
+        ],
+        [
+          0.0,
+          1.0,
+          -4.371138828673793e-08,
+          -0.18115000426769257
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "ortho_scale": 0.6616060137748718
+    },
+    "left": {
+      "image": "images/lower_modular_components_left_b5.png",
+      "span_world": [
+        0.37849771280813993,
+        0.5423000298456216
+      ],
+      "camera_matrix_world": [
+        [
+          7.549790126404332e-08,
+          -7.549790126404332e-08,
+          1.0,
+          3.0
+        ],
+        [
+          1.0,
+          5.6999328827277325e-15,
+          -7.549790126404332e-08,
+          -0.05872166529297829
+        ],
+        [
+          0.0,
+          1.0,
+          7.549790126404332e-08,
+          -0.18115000426769257
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "ortho_scale": 0.6616060137748718
+    },
+    "rear": {
+      "image": "images/lower_modular_components_rear_b5.png",
+      "span_world": [
+        0.5292962789535522,
+        0.5423000412216494
+      ],
+      "camera_matrix_world": [
+        [
+          -1.0,
+          -8.742277657347586e-08,
+          -8.742277657347586e-08,
+          0.0
+        ],
+        [
+          -8.742277657347586e-08,
+          4.371138118131057e-08,
+          1.0,
+          2.9412782192230225
+        ],
+        [
+          -8.74227694680485e-08,
+          1.0,
+          -4.371138828673793e-08,
+          -0.18115000426769257
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "ortho_scale": 0.6616060137748718
+    },
+    "top": {
+      "image": "images/lower_modular_components_top_b5.png",
+      "span_world": [
+        0.5292962789535522,
+        0.3784976825118065
+      ],
+      "camera_matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          -0.05872166529297829
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          2.818850040435791
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "ortho_scale": 0.6616060137748718
+    },
+    "front_oblique": {
+      "image": "images/lower_modular_components_front_oblique_b5.png",
+      "span_world": [
+        0.5868233400415279,
+        0.6787848796585115
+      ],
+      "camera_matrix_world": [
+        [
+          0.7071067094802856,
+          -0.24402658641338348,
+          0.6636649370193481,
+          1.996802568435669
+        ],
+        [
+          0.7071068286895752,
+          0.24402639269828796,
+          -0.6636648774147034,
+          -2.0469839572906494
+        ],
+        [
+          1.0536729178056703e-07,
+          0.938563883304596,
+          0.3451055586338043,
+          0.84825199842453
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "ortho_scale": 0.794178307056427
+    },
+    "rear_oblique": {
+      "image": "images/lower_modular_components_rear_oblique_b5.png",
+      "span_world": [
+        0.5868233116052717,
+        0.6565242455831602
+      ],
+      "camera_matrix_world": [
+        [
+          -0.7071067690849304,
+          -0.24402666091918945,
+          0.6636648178100586,
+          1.9902691841125488
+        ],
+        [
+          0.7071067690849304,
+          -0.24402663111686707,
+          0.6636648178100586,
+          1.9400876760482788
+        ],
+        [
+          -1.669983618057813e-08,
+          0.9385637640953064,
+          0.3451057970523834,
+          0.8405330777168274
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "ortho_scale": 0.7681333422660828
+    }
+  },
+  "projection_checks": {
+    "front_left_height": true,
+    "front_top_width": true,
+    "left_top_depth": true
+  }
+}

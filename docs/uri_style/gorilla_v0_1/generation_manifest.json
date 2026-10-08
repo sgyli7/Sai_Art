@@ -1,0 +1,2215 @@
+{
+  "name": "Gorilla V0.1",
+  "date": "2026-10-02",
+  "current_art_revision": "AA3",
+  "review_status": "user_confirmed_current_sheet_manual_handoff_requested",
+  "style_prompt_sha256": "b8c5ac1c2b27c1383c51ae70c8946196378545a09bcc25de5ab2e6302edd1a23",
+  "calls": [
+    {
+      "id": "G1",
+      "art_revision": "A",
+      "tool": "built-in imagegen",
+      "model_version": "not exposed by tool",
+      "prompt": "docs/uri_style/gorilla_v0_1/prompts/appearance_master.txt",
+      "prompt_sha256": "b5074adca685c5ea8c0f7e0c336fcd2b371dd301066375511012fc7bde0aa9b5",
+      "inputs_in_order": [
+        {
+          "path": "docs/uri_style/gorilla_v0_1/references/approved_direction.png",
+          "role": "SUBJECT / APPROVED_DIRECTION",
+          "sha256": "6b068d42588b2f390095af9a144ad4e5ef0a6e0eb3c404b316adbe64b269489a"
+        },
+        {
+          "path": "docs/uri_style/gorilla_v0_1/references/style_01_headphones.png",
+          "role": "STYLE",
+          "sha256": "78270e8007dea7ebd84e580bb5fa1d936cc9118b375e9b8845b3cffc84d51c0c"
+        },
+        {
+          "path": "docs/uri_style/gorilla_v0_1/references/style_03_waterfront.png",
+          "role": "STYLE",
+          "sha256": "25b75c83586e01222dde9cd164035afe9cba005b08cd2674eb6b9993aa12c053"
+        },
+        {
+          "path": "docs/uri_style/gorilla_v0_1/references/style_06_architecture.png",
+          "role": "STYLE",
+          "sha256": "51118389231d7cf1832b8b466aa31af2b6950f04cc91b77473e1f94b5a56e59c"
+        }
+      ],
+      "output": "docs/uri_style/gorilla_v0_1/images/appearance_master.png",
+      "generated_source": "/home/ethan/.codex/generated_images/01a0f3ab-7a57-7172-b8c5-e517aa2973da/exec-c34c8deb-af2f-437c-834b-3d3498c2369c.png",
+      "output_sha256": "c0aa37b1f95f1c8a3bd2e2fb17375cf1a91c39bc1af9d4ecea5b22ff72c20fd6",
+      "status": "superseded_after_user_torso_feedback",
+      "notes": "Original continuous-core identity retained; later request broadens torso."
+    },
+    {
+      "id": "G2",
+      "art_revision": "A",
+      "tool": "built-in imagegen",
+      "model_version": "not exposed by tool",
+      "prompt": "docs/uri_style/gorilla_v0_1/prompts/orthographic_turnaround.txt",
+      "prompt_sha256": "c34bd2b0fbec66a9db716afac610255273af515cc2360bb35fa8b994d90e0aae",
+      "inputs_in_order": [
+        {
+          "path": "docs/uri_style/gorilla_v0_1/images/appearance_master.png",
+          "role": "SUBJECT",
+          "sha256": "c0aa37b1f95f1c8a3bd2e2fb17375cf1a91c39bc1af9d4ecea5b22ff72c20fd6"
+        },
+        {
+          "path": "docs/uri_style/gorilla_v0_1/references/style_01_headphones.png",
+          "role": "STYLE",
+          "sha256": "78270e8007dea7ebd84e580bb5fa1d936cc9118b375e9b8845b3cffc84d51c0c"
+        },
+        {
+          "path": "docs/uri_style/gorilla_v0_1/references/style_03_waterfront.png",
+          "role": "STYLE",
+          "sha256": "25b75c83586e01222dde9cd164035afe9cba005b08cd2674eb6b9993aa12c053"
+        },
+        {
+          "path": "docs/uri_style/gorilla_v0_1/references/style_06_architecture.png",
+          "role": "STYLE",
+          "sha256": "51118389231d7cf1832b8b466aa31af2b6950f04cc91b77473e1f94b5a56e59c"
+        }
+      ],
+      "output": "docs/uri_style/gorilla_v0_1/images/orthographic_exploration_rev_a.png",
+      "generated_source": "/home/ethan/.codex/generated_images/01a0f3ab-7a57-7172-b8c5-e517aa2973da/exec-14385df3-ca97-4444-bb78-a88bd6c085ae.png",
+      "output_sha256": "882a55925f6e74d4d0f98c990043c64f1ac680434936dc1dc9a286674093f697",
+      "status": "superseded_exploration",
+      "notes": "Initial freehand four-view plate, not a validated same-assembly projection."
+    },
+    {
+      "id": "G3",
+      "art_revision": "B",
+      "tool": "built-in imagegen",
+      "model_version": "not exposed by tool",
+      "prompt": "docs/uri_style/gorilla_v0_1/prompts/appearance_master_rev_b.txt",
+      "prompt_sha256": "53780c724075093f79488efd986f73222bf9e711465329587301ac3a4d6d6388",
+      "inputs_in_order": [
+        {
+          "path": "docs/uri_style/gorilla_v0_1/source/blockout_views/front_three_quarter.png",
+          "role": "GEOMETRY",
+          "historical_revision": "B",
+          "input_snapshot_preserved": false,
+          "note": "This input was overwritten by C blockout rerender before archival; current file is not this call input and no hash is asserted."
+        },
+        {
+          "path": "docs/uri_style/gorilla_v0_1/images/appearance_master.png",
+          "role": "SUBJECT_DETAIL_LANGUAGE",
+          "sha256": "c0aa37b1f95f1c8a3bd2e2fb17375cf1a91c39bc1af9d4ecea5b22ff72c20fd6"
+        },
+        {
+          "path": "docs/uri_style/gorilla_v0_1/references/style_01_headphones.png",
+          "role": "STYLE",
+          "sha256": "78270e8007dea7ebd84e580bb5fa1d936cc9118b375e9b8845b3cffc84d51c0c"
+        },
+        {
+          "path": "docs/uri_style/gorilla_v0_1/references/style_03_waterfront.png",
+          "role": "STYLE",
+          "sha256": "25b75c83586e01222dde9cd164035afe9cba005b08cd2674eb6b9993aa12c053"
+        },
+        {
+          "path": "docs/uri_style/gorilla_v0_1/references/style_06_architecture.png",
+          "role": "STYLE",
+          "sha256": "51118389231d7cf1832b8b466aa31af2b6950f04cc91b77473e1f94b5a56e59c"
+        }
+      ],
+      "output": "docs/uri_style/gorilla_v0_1/images/blocky_torso_exploration_rev_b.png",
+      "generated_source": "/home/ethan/.codex/generated_images/01a0f3ab-7a57-7172-b8c5-e517aa2973da/exec-b10390ea-9959-4030-98b5-3ab91ef85993.png",
+      "output_sha256": "cfd600e8cf44a7944fc0ea61621acc1cc7f7c73fddeb0c9f63937cf4da818b54",
+      "status": "rejected_blockout_appearance_leakage",
+      "notes": "Primitive geometry displaced approved appearance. User clarified blockout supplies size and location only."
+    },
+    {
+      "id": "G4",
+      "art_revision": "D",
+      "tool": "built-in imagegen",
+      "model_version": "not exposed by tool",
+      "prompt": "docs/uri_style/gorilla_v0_1/prompts/appearance_master_rev_d.txt",
+      "prompt_sha256": "a7b0a1d05d33952e2de4923187bfb94e50760add06c4d1cebe2f001c52df29fb",
+      "inputs_in_order": [
+        {
+          "path": "docs/uri_style/gorilla_v0_1/images/appearance_master.png",
+          "role": "EDIT_TARGET / SUBJECT",
+          "sha256": "c0aa37b1f95f1c8a3bd2e2fb17375cf1a91c39bc1af9d4ecea5b22ff72c20fd6"
+        },
+        {
+          "path": "docs/uri_style/gorilla_v0_1/references/full_torso_reference.png",
+          "role": "PROPORTION / TORSO_MASS_ONLY",
+          "sha256": "a2f1a7174d287a521b17a704a30bebc34f1e176e2354c29ba67e794b430af13a"
+        },
+        {
+          "path": "docs/uri_style/gorilla_v0_1/references/style_01_headphones.png",
+          "role": "STYLE",
+          "sha256": "78270e8007dea7ebd84e580bb5fa1d936cc9118b375e9b8845b3cffc84d51c0c"
+        },
+        {
+          "path": "docs/uri_style/gorilla_v0_1/references/style_03_waterfront.png",
+          "role": "STYLE",
+          "sha256": "25b75c83586e01222dde9cd164035afe9cba005b08cd2674eb6b9993aa12c053"
+        },
+        {
+          "path": "docs/uri_style/gorilla_v0_1/references/style_06_architecture.png",
+          "role": "STYLE",
+          "sha256": "51118389231d7cf1832b8b466aa31af2b6950f04cc91b77473e1f94b5a56e59c"
+        }
+      ],
+      "output": "docs/uri_style/gorilla_v0_1/images/appearance_master_rev_d.png",
+      "generated_source": "/home/ethan/.codex/generated_images/01a0f3ab-7a57-7172-b8c5-e517aa2973da/exec-9daf275a-5362-41fe-b5c2-188b3735f88c.png",
+      "output_sha256": "adb26ca8de29cf7096be992b10799fa8cb218e2098c4957a0466c489e79ae2e4",
+      "status": "superseded_by_new_leg_structure",
+      "notes": "Fuller torso revision using artwork appearance authority; no blockout image."
+    },
+    {
+      "id": "G5",
+      "art_revision": "D",
+      "tool": "built-in imagegen",
+      "model_version": "not exposed by tool",
+      "prompt": "docs/uri_style/gorilla_v0_1/prompts/turnaround_rev_d.txt",
+      "prompt_sha256": "4fb5fe39ef9f9c48cff442b1a8262e54bb90fb21ce6c1d451e11af31e660508e",
+      "inputs_in_order": [
+        {
+          "path": "docs/uri_style/gorilla_v0_1/images/appearance_master_rev_d.png",
+          "role": "SUBJECT",
+          "sha256": "adb26ca8de29cf7096be992b10799fa8cb218e2098c4957a0466c489e79ae2e4"
+        },
+        {
+          "path": "docs/uri_style/gorilla_v0_1/references/style_01_headphones.png",
+          "role": "STYLE",
+          "sha256": "78270e8007dea7ebd84e580bb5fa1d936cc9118b375e9b8845b3cffc84d51c0c"
+        },
+        {
+          "path": "docs/uri_style/gorilla_v0_1/references/style_03_waterfront.png",
+          "role": "STYLE",
+          "sha256": "25b75c83586e01222dde9cd164035afe9cba005b08cd2674eb6b9993aa12c053"
+        },
+        {
+          "path": "docs/uri_style/gorilla_v0_1/references/style_06_architecture.png",
+          "role": "STYLE",
+          "sha256": "51118389231d7cf1832b8b466aa31af2b6950f04cc91b77473e1f94b5a56e59c"
+        }
+      ],
+      "output": "docs/uri_style/gorilla_v0_1/images/turnaround_rev_d.png",
+      "generated_source": "/home/ethan/.codex/generated_images/01a0f3ab-7a57-7172-b8c5-e517aa2973da/exec-1e33c69c-77f8-4e49-9c10-4af34aef4e30.png",
+      "output_sha256": "0ca6f7ea345ba15d849157eb04d2d4da721ad01542aaae8d2193e0ac28a90d26",
+      "status": "superseded_rear_heel_error",
+      "notes": "Agent found front toe geometry duplicated into rear feet."
+    },
+    {
+      "id": "G6",
+      "art_revision": "D",
+      "tool": "built-in imagegen",
+      "model_version": "not exposed by tool",
+      "prompt": "docs/uri_style/gorilla_v0_1/prompts/details_rev_d.txt",
+      "prompt_sha256": "a38c9d4bb0079dec7f35eb7d5cad1f7f7dd4aca798b49da30d1ed12259dd901e",
+      "inputs_in_order": [
+        {
+          "path": "docs/uri_style/gorilla_v0_1/images/appearance_master_rev_d.png",
+          "role": "SUBJECT",
+          "sha256": "adb26ca8de29cf7096be992b10799fa8cb218e2098c4957a0466c489e79ae2e4"
+        },
+        {
+          "path": "docs/uri_style/gorilla_v0_1/images/turnaround_rev_d.png",
+          "role": "VIEW_CONTINUITY",
+          "sha256": "0ca6f7ea345ba15d849157eb04d2d4da721ad01542aaae8d2193e0ac28a90d26"
+        },
+        {
+          "path": "docs/uri_style/gorilla_v0_1/references/style_01_headphones.png",
+          "role": "STYLE",
+          "sha256": "78270e8007dea7ebd84e580bb5fa1d936cc9118b375e9b8845b3cffc84d51c0c"
+        },
+        {
+          "path": "docs/uri_style/gorilla_v0_1/references/style_03_waterfront.png",
+          "role": "STYLE",
+          "sha256": "25b75c83586e01222dde9cd164035afe9cba005b08cd2674eb6b9993aa12c053"
+        },
+        {
+          "path": "docs/uri_style/gorilla_v0_1/references/style_06_architecture.png",
+          "role": "STYLE",
+          "sha256": "51118389231d7cf1832b8b466aa31af2b6950f04cc91b77473e1f94b5a56e59c"
+        }
+      ],
+      "output": "docs/uri_style/gorilla_v0_1/images/details_rev_d.png",
+      "generated_source": "/home/ethan/.codex/generated_images/01a0f3ab-7a57-7172-b8c5-e517aa2973da/exec-ac2dc613-9fb4-49dd-9f00-4439d0419a5e.png",
+      "output_sha256": "04e3f95f744267d0e6a0680e0a3e26bbb7d21a930642d4db221721f915fa62ee",
+      "status": "superseded_rear_heel_error",
+      "notes": "Rear feet and rear-view title required local correction."
+    },
+    {
+      "id": "G7",
+      "art_revision": "D",
+      "tool": "built-in imagegen",
+      "model_version": "not exposed by tool",
+      "prompt": "docs/uri_style/gorilla_v0_1/prompts/turnaround_heel_fix_rev_d.txt",
+      "prompt_sha256": "4b626dc45d7848f728aea731392998935091330e3ea69b3b501bd10fc0be098f",
+      "inputs_in_order": [
+        {
+          "path": "docs/uri_style/gorilla_v0_1/images/turnaround_rev_d.png",
+          "role": "EDIT_TARGET",
+          "sha256": "0ca6f7ea345ba15d849157eb04d2d4da721ad01542aaae8d2193e0ac28a90d26"
+        },
+        {
+          "path": "docs/uri_style/gorilla_v0_1/images/appearance_master_rev_d.png",
+          "role": "FOOT_ORIENTATION",
+          "sha256": "adb26ca8de29cf7096be992b10799fa8cb218e2098c4957a0466c489e79ae2e4"
+        },
+        {
+          "path": "docs/uri_style/gorilla_v0_1/references/style_01_headphones.png",
+          "role": "STYLE",
+          "sha256": "78270e8007dea7ebd84e580bb5fa1d936cc9118b375e9b8845b3cffc84d51c0c"
+        },
+        {
+          "path": "docs/uri_style/gorilla_v0_1/references/style_03_waterfront.png",
+          "role": "STYLE",
+          "sha256": "25b75c83586e01222dde9cd164035afe9cba005b08cd2674eb6b9993aa12c053"
+        },
+        {
+          "path": "docs/uri_style/gorilla_v0_1/references/style_06_architecture.png",
+          "role": "STYLE",
+          "sha256": "51118389231d7cf1832b8b466aa31af2b6950f04cc91b77473e1f94b5a56e59c"
+        }
+      ],
+      "output": "docs/uri_style/gorilla_v0_1/images/turnaround_final_rev_d.png",
+      "generated_source": "/home/ethan/.codex/generated_images/01a0f3ab-7a57-7172-b8c5-e517aa2973da/exec-c2852a17-ea6a-45c6-a79f-edf6de82d639.png",
+      "output_sha256": "bf0a24358abc3f77bd417d264626edc6aa2b8289765aaa9dd2d1f00b383ea3ec",
+      "status": "superseded_by_new_leg_structure",
+      "notes": "Rear toe bumpers removed and heel covers restored."
+    },
+    {
+      "id": "G8",
+      "art_revision": "D",
+      "tool": "built-in imagegen",
+      "model_version": "not exposed by tool",
+      "prompt": "docs/uri_style/gorilla_v0_1/prompts/details_heel_fix_rev_d.txt",
+      "prompt_sha256": "d0230c22e9de8fd17b45bc274436b8bceda7364359397bd1efc5b88b8341a39a",
+      "inputs_in_order": [
+        {
+          "path": "docs/uri_style/gorilla_v0_1/images/details_rev_d.png",
+          "role": "EDIT_TARGET",
+          "sha256": "04e3f95f744267d0e6a0680e0a3e26bbb7d21a930642d4db221721f915fa62ee"
+        },
+        {
+          "path": "docs/uri_style/gorilla_v0_1/images/turnaround_final_rev_d.png",
+          "role": "REAR_HEEL_ORIENTATION",
+          "sha256": "bf0a24358abc3f77bd417d264626edc6aa2b8289765aaa9dd2d1f00b383ea3ec"
+        },
+        {
+          "path": "docs/uri_style/gorilla_v0_1/references/style_01_headphones.png",
+          "role": "STYLE",
+          "sha256": "78270e8007dea7ebd84e580bb5fa1d936cc9118b375e9b8845b3cffc84d51c0c"
+        },
+        {
+          "path": "docs/uri_style/gorilla_v0_1/references/style_03_waterfront.png",
+          "role": "STYLE",
+          "sha256": "25b75c83586e01222dde9cd164035afe9cba005b08cd2674eb6b9993aa12c053"
+        },
+        {
+          "path": "docs/uri_style/gorilla_v0_1/references/style_06_architecture.png",
+          "role": "STYLE",
+          "sha256": "51118389231d7cf1832b8b466aa31af2b6950f04cc91b77473e1f94b5a56e59c"
+        }
+      ],
+      "output": "docs/uri_style/gorilla_v0_1/images/details_final_rev_d.png",
+      "generated_source": "/home/ethan/.codex/generated_images/01a0f3ab-7a57-7172-b8c5-e517aa2973da/exec-970d679a-f5c1-4f30-9e32-1947476e69f3.png",
+      "output_sha256": "a2b249066345203fb9b445f7f073efe83e2b66018f853c001e2462b92e535d63",
+      "status": "superseded_by_new_leg_structure",
+      "notes": "Corrected rear heels, title REAR."
+    },
+    {
+      "id": "G9",
+      "art_revision": "E",
+      "tool": "built-in imagegen",
+      "model_version": "not exposed by tool",
+      "prompt": "docs/uri_style/gorilla_v0_1/prompts/structure_variant_rev_e.txt",
+      "prompt_sha256": "141388e9fb3e669cf5c9eb93a45e32fde9c53987348e784eaad363bc72442c78",
+      "inputs_in_order": [
+        {
+          "path": "docs/uri_style/gorilla_v0_1/references/leg_structure_reference.png",
+          "role": "PRIMARY_STRUCTURE",
+          "sha256": "7b103fb671ee5530c576d5054033626e3b960d7ac2d54ee678807057894fe22d"
+        },
+        {
+          "path": "docs/uri_style/gorilla_v0_1/references/leg_structure_reference_02.png",
+          "role": "SECONDARY_LEG_STRUCTURE",
+          "sha256": "38733623b7a795de916c1365e96aad7515b58b99876c4b1050b292f765889ded"
+        },
+        {
+          "path": "docs/uri_style/gorilla_v0_1/references/style_01_headphones.png",
+          "role": "STYLE",
+          "sha256": "78270e8007dea7ebd84e580bb5fa1d936cc9118b375e9b8845b3cffc84d51c0c"
+        },
+        {
+          "path": "docs/uri_style/gorilla_v0_1/references/style_03_waterfront.png",
+          "role": "STYLE",
+          "sha256": "25b75c83586e01222dde9cd164035afe9cba005b08cd2674eb6b9993aa12c053"
+        },
+        {
+          "path": "docs/uri_style/gorilla_v0_1/references/style_06_architecture.png",
+          "role": "STYLE",
+          "sha256": "51118389231d7cf1832b8b466aa31af2b6950f04cc91b77473e1f94b5a56e59c"
+        }
+      ],
+      "output": "docs/uri_style/gorilla_v0_1/images/structure_variant_rev_e.png",
+      "generated_source": "/home/ethan/.codex/generated_images/01a0f3ab-7a57-7172-b8c5-e517aa2973da/exec-538e3e66-53a3-4b28-8f9e-d4c997dd692f.png",
+      "output_sha256": "2f1a797dbc2fa5d16b9f6813bb66e92a622f99311147448c2dafc8d841072334",
+      "status": "user_rejected_leg_topology_and_upper_core",
+      "notes": "Used ordinary two-link legs; user explicitly requests Z legs with one extra intermediate joint and criticizes upper core."
+    },
+    {
+      "id": "G10",
+      "art_revision": "F",
+      "tool": "built-in imagegen",
+      "model_version": "not exposed by tool",
+      "prompt": "docs/uri_style/gorilla_v0_1/prompts/z_leg_variant_rev_f.txt",
+      "prompt_sha256": "3362ab00598197be9a81b05d812ae87aba59481426c5c5167be50b652618dc52",
+      "inputs_in_order": [
+        {
+          "path": "docs/uri_style/gorilla_v0_1/references/leg_structure_reference.png",
+          "role": "UPPER_BODY_STRUCTURE",
+          "sha256": "7b103fb671ee5530c576d5054033626e3b960d7ac2d54ee678807057894fe22d"
+        },
+        {
+          "path": "docs/uri_style/gorilla_v0_1/references/z_leg_structure_reference.png",
+          "role": "THREE_LINK_Z_LEG_STRUCTURE",
+          "sha256": "351ceeb2d1b6f3418335b8c46a8d3cfb74026e39e12ced6b3b43b94378248f0e"
+        },
+        {
+          "path": "docs/uri_style/gorilla_v0_1/references/style_01_headphones.png",
+          "role": "STYLE",
+          "sha256": "78270e8007dea7ebd84e580bb5fa1d936cc9118b375e9b8845b3cffc84d51c0c"
+        },
+        {
+          "path": "docs/uri_style/gorilla_v0_1/references/style_03_waterfront.png",
+          "role": "STYLE",
+          "sha256": "25b75c83586e01222dde9cd164035afe9cba005b08cd2674eb6b9993aa12c053"
+        },
+        {
+          "path": "docs/uri_style/gorilla_v0_1/references/style_06_architecture.png",
+          "role": "STYLE",
+          "sha256": "51118389231d7cf1832b8b466aa31af2b6950f04cc91b77473e1f94b5a56e59c"
+        }
+      ],
+      "output": "docs/uri_style/gorilla_v0_1/images/z_leg_variant_rev_f.png",
+      "generated_source": "/home/ethan/.codex/generated_images/01a0f3ab-7a57-7172-b8c5-e517aa2973da/exec-faa0ded1-6fbf-44fa-862d-e50cfc477759.png",
+      "output_sha256": "fdd3b5d29c1e5568b4bf550a230317618438cac6c32f36af463190621333862c",
+      "status": "superseded_after_user_rejected_shared_head_leg_foot_geometry",
+      "notes": "Actual three-link leg chain and two intermediate fold joints visible in the side inset; newly organized continuous upper core. Cosmetic seam/cover differences among rendered angles still possible. Subsequent user feedback rejects this geometry; retained as history only."
+    },
+    {
+      "id": "G11",
+      "art_revision": "F",
+      "tool": "built-in imagegen",
+      "model_version": "not exposed by tool",
+      "prompt": "docs/uri_style/gorilla_v0_1/prompts/turnaround_rev_f.txt",
+      "prompt_sha256": "6dd0f4591c24e2bf42ce0032610f5c7f6b7576003c0bae0dce41a90464929862",
+      "inputs_in_order": [
+        {
+          "path": "docs/uri_style/gorilla_v0_1/images/z_leg_variant_rev_f.png",
+          "role": "SUBJECT / GEOMETRY / APPEARANCE",
+          "sha256": "fdd3b5d29c1e5568b4bf550a230317618438cac6c32f36af463190621333862c"
+        },
+        {
+          "path": "docs/uri_style/gorilla_v0_1/references/style_01_headphones.png",
+          "role": "STYLE",
+          "sha256": "78270e8007dea7ebd84e580bb5fa1d936cc9118b375e9b8845b3cffc84d51c0c"
+        },
+        {
+          "path": "docs/uri_style/gorilla_v0_1/references/style_03_waterfront.png",
+          "role": "STYLE",
+          "sha256": "25b75c83586e01222dde9cd164035afe9cba005b08cd2674eb6b9993aa12c053"
+        },
+        {
+          "path": "docs/uri_style/gorilla_v0_1/references/style_06_architecture.png",
+          "role": "STYLE",
+          "sha256": "51118389231d7cf1832b8b466aa31af2b6950f04cc91b77473e1f94b5a56e59c"
+        }
+      ],
+      "output": "docs/uri_style/gorilla_v0_1/images/turnaround_rev_f.png",
+      "generated_source": "/home/ethan/.codex/generated_images/01a0f3ab-7a57-7172-b8c5-e517aa2973da/exec-ef0d7054-a44d-41d3-8c0d-fafd482b5b84.png",
+      "output_sha256": "8c0cda9f9d3b7f61277f9a64025c6a09d5a6a319ff27d1795c036645df1abe7b",
+      "status": "superseded_after_user_rejected_shared_head_leg_foot_geometry",
+      "notes": "Front/rear show all three link levels; side preserves two fold joints plus distinct ankle; rear heels visually separated from front toe. Profile faces right despite requested left-facing composition; LEFT SIDE title identifies viewpoint. Raster views are conceptual, not identical CAD projections. Subsequent user feedback rejects this geometry; retained as history only."
+    },
+    {
+      "id": "G12",
+      "art_revision": "G",
+      "tool": "built-in imagegen",
+      "model_version": "not exposed by tool",
+      "prompt": "docs/uri_style/gorilla_v0_1/prompts/hard_armor_lower_leg_rev_g.txt",
+      "prompt_sha256": "f133d3aac12226c1d74cc1839768247d9f1bdfe89442ff72be6a093e59ca201b",
+      "inputs_in_order": [
+        {
+          "path": "docs/uri_style/gorilla_v0_1/images/z_leg_variant_rev_f.png",
+          "role": "EDIT_TARGET",
+          "sha256": "fdd3b5d29c1e5568b4bf550a230317618438cac6c32f36af463190621333862c"
+        },
+        {
+          "path": "docs/uri_style/gorilla_v0_1/references/full_torso_reference.png",
+          "role": "REGIONAL_GEOMETRY",
+          "sha256": "a2f1a7174d287a521b17a704a30bebc34f1e176e2354c29ba67e794b430af13a"
+        },
+        {
+          "path": "docs/uri_style/gorilla_v0_1/references/style_01_headphones.png",
+          "role": "STYLE",
+          "sha256": "78270e8007dea7ebd84e580bb5fa1d936cc9118b375e9b8845b3cffc84d51c0c"
+        },
+        {
+          "path": "docs/uri_style/gorilla_v0_1/references/style_03_waterfront.png",
+          "role": "STYLE",
+          "sha256": "25b75c83586e01222dde9cd164035afe9cba005b08cd2674eb6b9993aa12c053"
+        },
+        {
+          "path": "docs/uri_style/gorilla_v0_1/references/style_06_architecture.png",
+          "role": "STYLE",
+          "sha256": "51118389231d7cf1832b8b466aa31af2b6950f04cc91b77473e1f94b5a56e59c"
+        }
+      ],
+      "output": "docs/uri_style/gorilla_v0_1/images/hard_armor_lower_leg_rev_g.png",
+      "generated_source": "/home/ethan/.codex/generated_images/01a0f3ab-7a57-7172-b8c5-e517aa2973da/exec-62808fbd-bc74-4ed7-8252-c88e0d4ff0e2.png",
+      "output_sha256": "a53918c6034b2d0317c064418533cd12eaf98cd0cfa495729d8728a5e0106c02",
+      "status": "user_rejected_head_legs_and_feet",
+      "notes": "User rejected all requested design regions; excluded from subsequent reference-first generations."
+    },
+    {
+      "id": "G13",
+      "art_revision": "H",
+      "tool": "built-in imagegen",
+      "model_version": "not exposed by tool",
+      "prompt": "docs/uri_style/gorilla_v0_1/prompts/reference_first_rev_h.txt",
+      "prompt_sha256": "2c0cba170079331783546e079369445342e16d4cf2ffa7f464ab592ea133ba31",
+      "inputs_in_order": [
+        {
+          "path": "docs/uri_style/gorilla_v0_1/references/full_torso_reference.png",
+          "role": "PRIMARY_STRUCTURE",
+          "sha256": "a2f1a7174d287a521b17a704a30bebc34f1e176e2354c29ba67e794b430af13a"
+        },
+        {
+          "path": "docs/uri_style/gorilla_v0_1/references/leg_structure_reference_02.png",
+          "role": "LEG_STRUCTURE",
+          "sha256": "38733623b7a795de916c1365e96aad7515b58b99876c4b1050b292f765889ded"
+        },
+        {
+          "path": "docs/uri_style/gorilla_v0_1/references/style_01_headphones.png",
+          "role": "STYLE",
+          "sha256": "78270e8007dea7ebd84e580bb5fa1d936cc9118b375e9b8845b3cffc84d51c0c"
+        },
+        {
+          "path": "docs/uri_style/gorilla_v0_1/references/style_03_waterfront.png",
+          "role": "STYLE",
+          "sha256": "25b75c83586e01222dde9cd164035afe9cba005b08cd2674eb6b9993aa12c053"
+        },
+        {
+          "path": "docs/uri_style/gorilla_v0_1/references/style_06_architecture.png",
+          "role": "STYLE",
+          "sha256": "51118389231d7cf1832b8b466aa31af2b6950f04cc91b77473e1f94b5a56e59c"
+        }
+      ],
+      "output": "docs/uri_style/gorilla_v0_1/images/reference_first_rev_h.png",
+      "generated_source": "/home/ethan/.codex/generated_images/01a0f3ab-7a57-7172-b8c5-e517aa2973da/exec-a421f9fe-7c2e-4942-833d-d1e1b29f3fb0.png",
+      "output_sha256": "215b555829e657507e219713ad7741f1e6f8d67e715aea92cf75d24f1776b033",
+      "status": "user_rejected_surface_language_and_cleanliness",
+      "notes": "User criticizes fragmented faceted crown, dirty surface, low sophistication; requests complex flowing freeform surfaces. Three-link chain is also not clearly resolved."
+    },
+    {
+      "id": "G14",
+      "art_revision": "I",
+      "tool": "built-in imagegen",
+      "model_version": "not exposed by tool",
+      "prompt": "docs/uri_style/gorilla_v0_1/prompts/freeform_surface_rev_i.txt",
+      "prompt_sha256": "548207b14a7b2e3efed0912cb6d323681ceb87b0c654f1ca1d867f156f9371de",
+      "inputs_in_order": [
+        {
+          "path": "docs/uri_style/gorilla_v0_1/references/full_torso_reference.png",
+          "role": "PRIMARY_STRUCTURE_AND_CURVED_CROWN",
+          "sha256": "a2f1a7174d287a521b17a704a30bebc34f1e176e2354c29ba67e794b430af13a"
+        },
+        {
+          "path": "docs/uri_style/gorilla_v0_1/references/z_leg_structure_reference.png",
+          "role": "THREE_LINK_Z_LEG_STRUCTURE",
+          "sha256": "351ceeb2d1b6f3418335b8c46a8d3cfb74026e39e12ced6b3b43b94378248f0e"
+        },
+        {
+          "path": "docs/uri_style/gorilla_v0_1/references/style_01_headphones.png",
+          "role": "STYLE",
+          "sha256": "78270e8007dea7ebd84e580bb5fa1d936cc9118b375e9b8845b3cffc84d51c0c"
+        },
+        {
+          "path": "docs/uri_style/gorilla_v0_1/references/style_03_waterfront.png",
+          "role": "STYLE",
+          "sha256": "25b75c83586e01222dde9cd164035afe9cba005b08cd2674eb6b9993aa12c053"
+        },
+        {
+          "path": "docs/uri_style/gorilla_v0_1/references/style_06_architecture.png",
+          "role": "STYLE",
+          "sha256": "51118389231d7cf1832b8b466aa31af2b6950f04cc91b77473e1f94b5a56e59c"
+        }
+      ],
+      "output": "docs/uri_style/gorilla_v0_1/images/freeform_surface_rev_i.png",
+      "generated_source": "/home/ethan/.codex/generated_images/01a0f3ab-7a57-7172-b8c5-e517aa2973da/exec-8e9117a0-639a-4c0f-81ca-845ed837ab6a.png",
+      "output_sha256": "a4dad17c2512bd99096bd40f82fa360f0c30a9ff5ae77d4aacb688e21e614bb9",
+      "status": "user_accepts_overall_improvement_requests_crown_hands_feet_refinement",
+      "notes": "New freeform surface study from original structure references and three fixed URI originals. Crown and limb surfaces are cleaner and more continuously curved. Some pin-sized marks remain; hip-knee-extra-fold-ankle topology is not unambiguously readable because the lower guard appears continuous. Not approved or metric geometry verified. User states overall substantial improvement; specifically requests removing top blue cap, less spherical crown, simpler hands and feet. Not whole-design approval."
+    },
+    {
+      "id": "G15",
+      "art_revision": "I2",
+      "tool": "built-in imagegen",
+      "model_version": "not exposed by tool",
+      "prompt": "docs/uri_style/gorilla_v0_1/prompts/freeform_surface_rev_i2.txt",
+      "prompt_sha256": "e57c0a0a67f41cea6c85a018f3bfc69eff9cff21f3e28dc0f8a61b2f200b86d0",
+      "inputs_in_order": [
+        {
+          "path": "docs/uri_style/gorilla_v0_1/images/freeform_surface_rev_i.png",
+          "role": "EDIT_TARGET_AND_APPEARANCE",
+          "sha256": "a4dad17c2512bd99096bd40f82fa360f0c30a9ff5ae77d4aacb688e21e614bb9"
+        },
+        {
+          "path": "docs/uri_style/gorilla_v0_1/references/z_leg_structure_reference.png",
+          "role": "THREE_LINK_Z_LEG_GEOMETRY",
+          "sha256": "351ceeb2d1b6f3418335b8c46a8d3cfb74026e39e12ced6b3b43b94378248f0e"
+        },
+        {
+          "path": "docs/uri_style/gorilla_v0_1/references/style_01_headphones.png",
+          "role": "STYLE",
+          "sha256": "78270e8007dea7ebd84e580bb5fa1d936cc9118b375e9b8845b3cffc84d51c0c"
+        },
+        {
+          "path": "docs/uri_style/gorilla_v0_1/references/style_03_waterfront.png",
+          "role": "STYLE",
+          "sha256": "25b75c83586e01222dde9cd164035afe9cba005b08cd2674eb6b9993aa12c053"
+        },
+        {
+          "path": "docs/uri_style/gorilla_v0_1/references/style_06_architecture.png",
+          "role": "STYLE",
+          "sha256": "51118389231d7cf1832b8b466aa31af2b6950f04cc91b77473e1f94b5a56e59c"
+        }
+      ],
+      "output": "docs/uri_style/gorilla_v0_1/images/freeform_surface_rev_i2.png",
+      "generated_source": "/home/ethan/.codex/generated_images/01a0f3ab-7a57-7172-b8c5-e517aa2973da/exec-2f01840b-58da-42f6-87ae-d844470369f9.png",
+      "output_sha256": "eb04f532625abcd6187f8c3be833ec3a55a4438abde156dd5d1c9c9c38108235",
+      "status": "superseded_by_user_crown_hand_foot_feedback",
+      "notes": "Preserved I upper surfaces; separated middle and short distal leg guards at a distinct extra fold above ankle. Subsequent J edits requested by user on I upper crown/hands/feet, with I2 topology preserved."
+    },
+    {
+      "id": "G16",
+      "art_revision": "J",
+      "tool": "built-in imagegen",
+      "model_version": "not exposed by tool",
+      "prompt": "docs/uri_style/gorilla_v0_1/prompts/crown_graspers_feet_rev_j.txt",
+      "prompt_sha256": "ec4eea67280270393ee306b69cffd4bdd5843588dec28619e10698e6f66b56b7",
+      "inputs_in_order": [
+        {
+          "path": "docs/uri_style/gorilla_v0_1/images/freeform_surface_rev_i2.png",
+          "role": "EDIT_TARGET_AND_APPEARANCE",
+          "sha256": "eb04f532625abcd6187f8c3be833ec3a55a4438abde156dd5d1c9c9c38108235"
+        },
+        {
+          "path": "docs/uri_style/gorilla_v0_1/references/leg_structure_reference_02.png",
+          "role": "FOOT_STRUCTURE_ONLY",
+          "sha256": "38733623b7a795de916c1365e96aad7515b58b99876c4b1050b292f765889ded"
+        },
+        {
+          "path": "docs/uri_style/gorilla_v0_1/references/style_01_headphones.png",
+          "role": "STYLE",
+          "sha256": "78270e8007dea7ebd84e580bb5fa1d936cc9118b375e9b8845b3cffc84d51c0c"
+        },
+        {
+          "path": "docs/uri_style/gorilla_v0_1/references/style_03_waterfront.png",
+          "role": "STYLE",
+          "sha256": "25b75c83586e01222dde9cd164035afe9cba005b08cd2674eb6b9993aa12c053"
+        },
+        {
+          "path": "docs/uri_style/gorilla_v0_1/references/style_06_architecture.png",
+          "role": "STYLE",
+          "sha256": "51118389231d7cf1832b8b466aa31af2b6950f04cc91b77473e1f94b5a56e59c"
+        }
+      ],
+      "output": "docs/uri_style/gorilla_v0_1/images/crown_graspers_feet_rev_j.png",
+      "generated_source": "/home/ethan/.codex/generated_images/01a0f3ab-7a57-7172-b8c5-e517aa2973da/exec-f4835387-3b04-4349-b259-013beb887a97.png",
+      "output_sha256": "2a9810b31bc8f0d232ac2ba051c4a8072a6ec63235cd17fb6313a9bbbaaf333b",
+      "status": "user_rejected_crown_hollow",
+      "notes": "Deleted blue crown cap; shallow saddle-to-convex crown flow visible; reduced fingers/linkage into three load digits plus thumb; single continuous forefoot guard and separate heel. I2 three-link leg segmentation retained. Crown hollow and foot volume remain subjective review points; no CAD, manufacturing or load validation. User explicitly rejects the crown hollow as arbitrary curvature."
+    },
+    {
+      "id": "G17",
+      "art_revision": "M",
+      "tool": "built-in imagegen",
+      "model_version": "not exposed by tool",
+      "prompt": "docs/uri_style/gorilla_v0_1/prompts/main_design_rev_m.txt",
+      "prompt_sha256": "f4e48303e41bb6d9dfc4f0e53ff4b13d9021b3b33c256fe3a9c9fa5e690e9e3f",
+      "inputs_in_order": [
+        {
+          "path": "docs/uri_style/gorilla_v0_1/images/crown_graspers_feet_rev_j.png",
+          "role": "EDIT_TARGET",
+          "sha256": "2a9810b31bc8f0d232ac2ba051c4a8072a6ec63235cd17fb6313a9bbbaaf333b"
+        },
+        {
+          "path": "docs/uri_style/gorilla_v0_1/references/full_torso_reference.png",
+          "role": "UPPER_CORE_STRUCTURE",
+          "sha256": "a2f1a7174d287a521b17a704a30bebc34f1e176e2354c29ba67e794b430af13a"
+        },
+        {
+          "path": "docs/uri_style/gorilla_v0_1/references/style_01_headphones.png",
+          "role": "STYLE",
+          "sha256": "78270e8007dea7ebd84e580bb5fa1d936cc9118b375e9b8845b3cffc84d51c0c"
+        },
+        {
+          "path": "docs/uri_style/gorilla_v0_1/references/style_03_waterfront.png",
+          "role": "STYLE",
+          "sha256": "25b75c83586e01222dde9cd164035afe9cba005b08cd2674eb6b9993aa12c053"
+        },
+        {
+          "path": "docs/uri_style/gorilla_v0_1/references/style_06_architecture.png",
+          "role": "STYLE",
+          "sha256": "51118389231d7cf1832b8b466aa31af2b6950f04cc91b77473e1f94b5a56e59c"
+        }
+      ],
+      "output": "docs/uri_style/gorilla_v0_1/images/main_design_rev_m.png",
+      "generated_source": "/home/ethan/.codex/generated_images/01a0f3ab-7a57-7172-b8c5-e517aa2973da/exec-a98c6147-86c7-4eeb-a3c0-6c64fd297050.png",
+      "output_sha256": "df5fdfb4c5e49dd79de4eb903c8bae17c3bced16137ab0972f986ad2049c28e6",
+      "status": "user_rejected_persistent_crown_hollow",
+      "notes": "Output retained the explicitly unwanted crown depression. User rejects it and asks to stop tool/mathematical experiments and finish main artwork."
+    },
+    {
+      "id": "G18",
+      "art_revision": "N",
+      "tool": "built-in imagegen",
+      "model_version": "not exposed by tool",
+      "prompt": "docs/uri_style/gorilla_v0_1/prompts/crown_full_volume_rev_n.txt",
+      "prompt_sha256": "fc3aa53c13faf8d56b329741bc21c6b0969a37c075356063572a9cb76eaeab8d",
+      "inputs_in_order": [
+        {
+          "path": "docs/uri_style/gorilla_v0_1/images/main_design_rev_m.png",
+          "role": "EDIT_TARGET_BODY_AND_LIMBS",
+          "sha256": "df5fdfb4c5e49dd79de4eb903c8bae17c3bced16137ab0972f986ad2049c28e6"
+        },
+        {
+          "path": "docs/uri_style/gorilla_v0_1/images/freeform_surface_rev_i2.png",
+          "role": "CROWN_FULL_VOLUME_ONLY",
+          "sha256": "eb04f532625abcd6187f8c3be833ec3a55a4438abde156dd5d1c9c9c38108235"
+        },
+        {
+          "path": "docs/uri_style/gorilla_v0_1/references/style_01_headphones.png",
+          "role": "STYLE",
+          "sha256": "78270e8007dea7ebd84e580bb5fa1d936cc9118b375e9b8845b3cffc84d51c0c"
+        },
+        {
+          "path": "docs/uri_style/gorilla_v0_1/references/style_03_waterfront.png",
+          "role": "STYLE",
+          "sha256": "25b75c83586e01222dde9cd164035afe9cba005b08cd2674eb6b9993aa12c053"
+        },
+        {
+          "path": "docs/uri_style/gorilla_v0_1/references/style_06_architecture.png",
+          "role": "STYLE",
+          "sha256": "51118389231d7cf1832b8b466aa31af2b6950f04cc91b77473e1f94b5a56e59c"
+        }
+      ],
+      "output": "docs/uri_style/gorilla_v0_1/images/main_design_rev_n.png",
+      "generated_source": "/home/ethan/.codex/generated_images/01a0f3ab-7a57-7172-b8c5-e517aa2973da/exec-b878fba6-d6e1-419b-83fd-a14cc96e9ff4.png",
+      "output_sha256": "2764a6e7a715abf4b87e73192fd63131e3ddf716b046e52586ec53c6446509da",
+      "status": "user_rejected_crown_and_bilateral_structure",
+      "notes": "Crown depression removed; full low directional crown with continuous warm-ivory surface. Blue crown applique absent. Three separate leg link groups, simple graspers and continuous forefoot/separate heel retained. Subjective appearance and exact geometric/engineering checks remain for review. No new modelling. User then challenged left/right consistency and preferred the earlier I2 crown mass to this broad slanted lid."
+    },
+    {
+      "id": "G19",
+      "art_revision": "O",
+      "tool": "built-in imagegen",
+      "model_version": "not exposed by tool",
+      "prompt": "docs/uri_style/gorilla_v0_1/prompts/symmetric_front_rev_o.txt",
+      "prompt_sha256": "66b0a0b2f75ec93b7f04a8f9c50bbbb9b75e26130119ac7d0cf0f8df4999ccaf",
+      "inputs_in_order": [
+        {
+          "path": "docs/uri_style/gorilla_v0_1/images/main_design_rev_n.png",
+          "role": "BODY_LIMBS_CLEAN_FINISH_ONLY",
+          "sha256": "2764a6e7a715abf4b87e73192fd63131e3ddf716b046e52586ec53c6446509da"
+        },
+        {
+          "path": "docs/uri_style/gorilla_v0_1/images/freeform_surface_rev_i2.png",
+          "role": "CROWN_MASS_AND_CURVATURE_ONLY",
+          "sha256": "eb04f532625abcd6187f8c3be833ec3a55a4438abde156dd5d1c9c9c38108235"
+        },
+        {
+          "path": "docs/uri_style/gorilla_v0_1/references/style_01_headphones.png",
+          "role": "STYLE",
+          "sha256": "78270e8007dea7ebd84e580bb5fa1d936cc9118b375e9b8845b3cffc84d51c0c"
+        },
+        {
+          "path": "docs/uri_style/gorilla_v0_1/references/style_03_waterfront.png",
+          "role": "STYLE",
+          "sha256": "25b75c83586e01222dde9cd164035afe9cba005b08cd2674eb6b9993aa12c053"
+        },
+        {
+          "path": "docs/uri_style/gorilla_v0_1/references/style_06_architecture.png",
+          "role": "STYLE",
+          "sha256": "51118389231d7cf1832b8b466aa31af2b6950f04cc91b77473e1f94b5a56e59c"
+        }
+      ],
+      "output": "docs/uri_style/gorilla_v0_1/images/symmetric_front_rev_o.png",
+      "generated_source": "/home/ethan/.codex/generated_images/01a0f3ab-7a57-7172-b8c5-e517aa2973da/exec-29fff2f9-8ecc-472a-858a-7ce72a3c976f.png",
+      "output_sha256": "283635e8ebf082c58798416b436ab64972f75fa0cf191d7412b72df1d6680758",
+      "status": "superseded_user_requested_stronger_crown",
+      "notes": "Straight-on front artwork restores fuller continuous crown volume without blue top applique, organizes matching paired shells and joint groups, and retains simplified end effectors. Major bilateral geometry visually corresponds; small rendering and detail differences remain. This is a raster front concept, not exact mirrored CAD or proof of sagittal Z articulation. No new modelling or experiment. User requested a less flat, more aggressive upper protector."
+    },
+    {
+      "id": "G20",
+      "art_revision": "P",
+      "tool": "built-in imagegen",
+      "model_version": "not exposed by tool",
+      "prompt": "docs/uri_style/gorilla_v0_1/prompts/crown_attack_rev_p.txt",
+      "prompt_sha256": "c0342ab3d2e71f34f70316b6e35c8b6e74d94a10900208f6eda72134c519ce8a",
+      "inputs_in_order": [
+        {
+          "path": "docs/uri_style/gorilla_v0_1/images/symmetric_front_rev_o.png",
+          "role": "EDIT_TARGET_BODY_AND_COMPOSITION",
+          "sha256": "283635e8ebf082c58798416b436ab64972f75fa0cf191d7412b72df1d6680758"
+        },
+        {
+          "path": "docs/uri_style/gorilla_v0_1/references/full_torso_reference.png",
+          "role": "UPPER_ARMOR_CHARACTER_ONLY",
+          "sha256": "a2f1a7174d287a521b17a704a30bebc34f1e176e2354c29ba67e794b430af13a"
+        },
+        {
+          "path": "docs/uri_style/gorilla_v0_1/references/style_01_headphones.png",
+          "role": "STYLE",
+          "sha256": "78270e8007dea7ebd84e580bb5fa1d936cc9118b375e9b8845b3cffc84d51c0c"
+        },
+        {
+          "path": "docs/uri_style/gorilla_v0_1/references/style_03_waterfront.png",
+          "role": "STYLE",
+          "sha256": "25b75c83586e01222dde9cd164035afe9cba005b08cd2674eb6b9993aa12c053"
+        },
+        {
+          "path": "docs/uri_style/gorilla_v0_1/references/style_06_architecture.png",
+          "role": "STYLE",
+          "sha256": "51118389231d7cf1832b8b466aa31af2b6950f04cc91b77473e1f94b5a56e59c"
+        }
+      ],
+      "output": "docs/uri_style/gorilla_v0_1/images/crown_attack_rev_p.png",
+      "generated_source": "/home/ethan/.codex/generated_images/01a0f3ab-7a57-7172-b8c5-e517aa2973da/exec-a443d92c-53a3-4a9c-aecd-fd49affd3890.png",
+      "output_sha256": "9bd0486f6ad04ce5a0dca16a056011c9573e5b27d9aba6d748831621bad78f21",
+      "status": "agent_rejected_top_frame_contact_and_fluting",
+      "notes": "Raised central crown and stronger silhouette produced, but crown touched top frame and surface developed channel-like shading. Finishing edit followed; not current deliverable. User subsequently supplied seven regional simplification and continuous-surface corrections on this image.",
+      "user_feedback": [
+        {
+          "location_percent": [
+            31.9,
+            7.3
+          ],
+          "request": "Remove redundant small blue crown applique."
+        },
+        {
+          "location_percent": [
+            12.4,
+            40
+          ],
+          "request": "Simplify overlapping forearm armor into a single guard."
+        },
+        {
+          "location_percent": [
+            29.8,
+            75.7
+          ],
+          "request": "Remove redundant layered lower-leg armor."
+        },
+        {
+          "location_percent": [
+            32.4,
+            88
+          ],
+          "request": "Make feet more practically grounded and less anime/comic."
+        },
+        {
+          "location_percent": [
+            45.9,
+            7.6
+          ],
+          "request": "Extra crown ridges undermine simplicity; do not substitute creases for sophisticated shape."
+        },
+        {
+          "location_percent": [
+            58.9,
+            11.5
+          ],
+          "request": "Make the structure itself more forceful without extra corners."
+        },
+        {
+          "location_percent": [
+            55.4,
+            8.6
+          ],
+          "request": "Retain one integrated streamlined shell."
+        }
+      ]
+    },
+    {
+      "id": "G21",
+      "art_revision": "P2",
+      "tool": "built-in imagegen",
+      "model_version": "not exposed by tool",
+      "prompt": "docs/uri_style/gorilla_v0_1/prompts/crown_attack_finish_rev_p2.txt",
+      "prompt_sha256": "ead7915ff44eaddc181a4219c36fd6fff4e46b663cdf600a118502a788b84707",
+      "inputs_in_order": [
+        {
+          "path": "docs/uri_style/gorilla_v0_1/images/crown_attack_rev_p.png",
+          "role": "EDIT_TARGET_BODY_AND_COMPOSITION",
+          "sha256": "9bd0486f6ad04ce5a0dca16a056011c9573e5b27d9aba6d748831621bad78f21"
+        },
+        {
+          "path": "docs/uri_style/gorilla_v0_1/references/full_torso_reference.png",
+          "role": "UPPER_ARMOR_CHARACTER_ONLY",
+          "sha256": "a2f1a7174d287a521b17a704a30bebc34f1e176e2354c29ba67e794b430af13a"
+        },
+        {
+          "path": "docs/uri_style/gorilla_v0_1/references/style_01_headphones.png",
+          "role": "STYLE",
+          "sha256": "78270e8007dea7ebd84e580bb5fa1d936cc9118b375e9b8845b3cffc84d51c0c"
+        },
+        {
+          "path": "docs/uri_style/gorilla_v0_1/references/style_03_waterfront.png",
+          "role": "STYLE",
+          "sha256": "25b75c83586e01222dde9cd164035afe9cba005b08cd2674eb6b9993aa12c053"
+        },
+        {
+          "path": "docs/uri_style/gorilla_v0_1/references/style_06_architecture.png",
+          "role": "STYLE",
+          "sha256": "51118389231d7cf1832b8b466aa31af2b6950f04cc91b77473e1f94b5a56e59c"
+        }
+      ],
+      "output": "docs/uri_style/gorilla_v0_1/images/crown_attack_finish_rev_p2.png",
+      "generated_source": "/home/ethan/.codex/generated_images/01a0f3ab-7a57-7172-b8c5-e517aa2973da/exec-59eda897-7ae5-43f1-96ac-c94f8eb9d695.png",
+      "output_sha256": "4e6286642e56a21abb7470411d36254749004d82a75150197995b1a0ede0b68a",
+      "status": "superseded_by_user_regional_simplification_request",
+      "notes": "Full top outline now visible, with raised central crown and steeper paired side returns. Major bilateral assemblies, simple graspers/feet and three leg cover groups retained. Upper side highlight bands remain pronounced; aesthetic judgment pending. Front artwork is not proof of side geometry, exact CAD symmetry or engineering dimensions. Latest feedback on P also applies to inherited blue fins, layered armor and crown surface treatment."
+    },
+    {
+      "id": "G22",
+      "art_revision": "Q",
+      "tool": "built-in imagegen",
+      "model_version": "not exposed by tool",
+      "prompt": "docs/uri_style/gorilla_v0_1/prompts/streamlined_functional_rev_q.txt",
+      "prompt_sha256": "f7562a067d97fa0adb4e44aa571a6b28becec3736ed7ca9864974fc8ce55d39f",
+      "inputs_in_order": [
+        {
+          "path": "docs/uri_style/gorilla_v0_1/images/crown_attack_rev_p.png",
+          "role": "EDIT_TARGET_UNCHANGED_REGIONS_AND_FINISH",
+          "sha256": "9bd0486f6ad04ce5a0dca16a056011c9573e5b27d9aba6d748831621bad78f21"
+        },
+        {
+          "path": "docs/uri_style/gorilla_v0_1/references/leg_structure_reference_02.png",
+          "role": "LOW_INDUSTRIAL_FOOT_GEOMETRY_ONLY",
+          "sha256": "38733623b7a795de916c1365e96aad7515b58b99876c4b1050b292f765889ded"
+        },
+        {
+          "path": "docs/uri_style/gorilla_v0_1/references/style_01_headphones.png",
+          "role": "STYLE",
+          "sha256": "78270e8007dea7ebd84e580bb5fa1d936cc9118b375e9b8845b3cffc84d51c0c"
+        },
+        {
+          "path": "docs/uri_style/gorilla_v0_1/references/style_03_waterfront.png",
+          "role": "STYLE",
+          "sha256": "25b75c83586e01222dde9cd164035afe9cba005b08cd2674eb6b9993aa12c053"
+        },
+        {
+          "path": "docs/uri_style/gorilla_v0_1/references/style_06_architecture.png",
+          "role": "STYLE",
+          "sha256": "51118389231d7cf1832b8b466aa31af2b6950f04cc91b77473e1f94b5a56e59c"
+        }
+      ],
+      "output": "docs/uri_style/gorilla_v0_1/images/streamlined_functional_rev_q.png",
+      "generated_source": "/home/ethan/.codex/generated_images/01a0f3ab-7a57-7172-b8c5-e517aa2973da/exec-6861cc1b-2025-46c8-b4c8-771b6cdff22d.png",
+      "output_sha256": "d9376a316c8ee41b29a6ebc8906c52407c9cfbe1194537d07fce23939e84331a",
+      "status": "agent_rejected_incomplete_regional_changes",
+      "notes": "Small crown blue fins removed, but ridged/channel-like crown shading, separate ivory inner forearm plate, lower-link blue side guards and boot-like foot volumes persisted. Targeted regional redraw followed."
+    },
+    {
+      "id": "G23",
+      "art_revision": "Q2",
+      "tool": "built-in imagegen",
+      "model_version": "not exposed by tool",
+      "prompt": "docs/uri_style/gorilla_v0_1/prompts/streamlined_regional_redraw_rev_q2.txt",
+      "prompt_sha256": "bc06f934a37ea04a0e0cbd2a0ad7d3476a9ca3e98d20b6609791924cc07d04bc",
+      "inputs_in_order": [
+        {
+          "path": "docs/uri_style/gorilla_v0_1/images/streamlined_functional_rev_q.png",
+          "role": "EDIT_TARGET_UNCHANGED_REGIONS_AND_FINISH",
+          "sha256": "d9376a316c8ee41b29a6ebc8906c52407c9cfbe1194537d07fce23939e84331a"
+        },
+        {
+          "path": "docs/uri_style/gorilla_v0_1/references/leg_structure_reference_02.png",
+          "role": "LOW_INDUSTRIAL_FOOT_GEOMETRY_ONLY",
+          "sha256": "38733623b7a795de916c1365e96aad7515b58b99876c4b1050b292f765889ded"
+        },
+        {
+          "path": "docs/uri_style/gorilla_v0_1/references/style_01_headphones.png",
+          "role": "STYLE",
+          "sha256": "78270e8007dea7ebd84e580bb5fa1d936cc9118b375e9b8845b3cffc84d51c0c"
+        },
+        {
+          "path": "docs/uri_style/gorilla_v0_1/references/style_03_waterfront.png",
+          "role": "STYLE",
+          "sha256": "25b75c83586e01222dde9cd164035afe9cba005b08cd2674eb6b9993aa12c053"
+        },
+        {
+          "path": "docs/uri_style/gorilla_v0_1/references/style_06_architecture.png",
+          "role": "STYLE",
+          "sha256": "51118389231d7cf1832b8b466aa31af2b6950f04cc91b77473e1f94b5a56e59c"
+        }
+      ],
+      "output": "docs/uri_style/gorilla_v0_1/images/streamlined_regional_redraw_rev_q2.png",
+      "generated_source": "/home/ethan/.codex/generated_images/01a0f3ab-7a57-7172-b8c5-e517aa2973da/exec-8adc6546-7d13-49c2-b780-006e59b75799.png",
+      "output_sha256": "1f283f2003843069dc8bfdf7447133d4aed1c5542ce18c2eb8894f9ebae3c388",
+      "status": "superseded_by_user_upper_guard_foot_and_link_feedback",
+      "notes": "Crown center strip and twin trough shading removed; one continuous ivory upper volume. Forearms have unified azure guards without separate ivory inner overplates. Lower moving links have clean single ivory guards without blue side fins; three leg groups and independent ankle remain visible. Foot volume reduced to low platform and modest ankle shield. Top margin is narrow. Aesthetic aggression and sagittal geometry remain pending; no computed topology optimization or engineering validation claimed. User then supplied paired upper-flank guard locations, rejected the feet, and identified excessive repetition of the middle/distal leg guards."
+    },
+    {
+      "id": "G24",
+      "art_revision": "R",
+      "tool": "built-in imagegen",
+      "model_version": "not exposed by tool",
+      "prompt": "docs/uri_style/gorilla_v0_1/prompts/guard_link_foot_rev_r.txt",
+      "prompt_sha256": "34f7264a5e93d7457b6f70fba653064e0eb90115fe71d349137d8141021ebb06",
+      "inputs_in_order": [
+        {
+          "path": "docs/uri_style/gorilla_v0_1/images/streamlined_regional_redraw_rev_q2.png",
+          "role": "EDIT_TARGET_CURRENT_SKELETON_AND_FINISH",
+          "sha256": "1f283f2003843069dc8bfdf7447133d4aed1c5542ce18c2eb8894f9ebae3c388"
+        },
+        {
+          "path": "docs/uri_style/gorilla_v0_1/references/leg_foot_synthesis_reference_08.png",
+          "role": "LOWER_CHAIN_AND_FOOT_GEOMETRY_ONLY",
+          "sha256": "d49f326f70ed1f25757f9a4028e43e75327b584684fb998131bb9b97b9e5b35b"
+        },
+        {
+          "path": "docs/uri_style/gorilla_v0_1/references/style_01_headphones.png",
+          "role": "STYLE",
+          "sha256": "78270e8007dea7ebd84e580bb5fa1d936cc9118b375e9b8845b3cffc84d51c0c"
+        },
+        {
+          "path": "docs/uri_style/gorilla_v0_1/references/style_03_waterfront.png",
+          "role": "STYLE",
+          "sha256": "25b75c83586e01222dde9cd164035afe9cba005b08cd2674eb6b9993aa12c053"
+        },
+        {
+          "path": "docs/uri_style/gorilla_v0_1/references/style_06_architecture.png",
+          "role": "STYLE",
+          "sha256": "51118389231d7cf1832b8b466aa31af2b6950f04cc91b77473e1f94b5a56e59c"
+        }
+      ],
+      "output": "docs/uri_style/gorilla_v0_1/images/guard_link_foot_rev_r.png",
+      "generated_source": "/home/ethan/.codex/generated_images/01a0f3ab-7a57-7172-b8c5-e517aa2973da/exec-a7cb2738-79b3-4200-b0f5-079405281270.png",
+      "output_sha256": "75afeea284c8a9581cb205f9b3acb9cfb11f9543adf1c4f2e7ea6922a71c29e3",
+      "status": "user_rejected_navy_soft_guard_shape_and_top_heavy_balance",
+      "notes": "Paired broad navy guards frame the ivory upper core. Consecutive lower groups now differ: full ivory middle shank versus narrow graphite terminal carrier. Thin formed toe supports, visible ankle assembly and compact dark rear heels replace platform boots. Full three-link chain and simplified forearms retained. Crown margin remains narrow. Raster appearance only; side articulation, exact support geometry and manufacture remain unverified. User clarified permitted color is original blue or black, rejected unrequested navy, identified top-heavy balance and unchanged soft upper-guard arc.",
+      "user_region_guide": {
+        "source": "blue/red marked robot image embedded in user message; no local path provided",
+        "role": "upper-flank locations interpreted as textual region constraints",
+        "supplied_as_imagegen_input": false
+      },
+      "observed_reference_study": {
+        "manifest": "docs/uri_style/gorilla_v0_1/reference_manifest.json",
+        "note": "Seven newly copied leg/foot references inspected in user images; only reference_08 was supplied to this imagegen call. Others informed textual synthesis."
+      }
+    },
+    {
+      "id": "G25",
+      "art_revision": "S",
+      "tool": "built-in imagegen",
+      "model_version": "not exposed by tool",
+      "prompt": "docs/uri_style/gorilla_v0_1/prompts/balanced_original_blue_rev_s.txt",
+      "prompt_sha256": "1e0c751fc7c01c71910ccbded7f2294eeabf229a48f0626d5e3fbdd9b7492ab0",
+      "inputs_in_order": [
+        {
+          "path": "docs/uri_style/gorilla_v0_1/images/guard_link_foot_rev_r.png",
+          "role": "EDIT_TARGET_CURRENT_MACHINE",
+          "sha256": "75afeea284c8a9581cb205f9b3acb9cfb11f9543adf1c4f2e7ea6922a71c29e3"
+        },
+        {
+          "path": "docs/uri_style/gorilla_v0_1/references/leg_foot_synthesis_reference_08.png",
+          "role": "LOWER_SUPPORT_HIERARCHY_ONLY",
+          "sha256": "d49f326f70ed1f25757f9a4028e43e75327b584684fb998131bb9b97b9e5b35b"
+        },
+        {
+          "path": "docs/uri_style/gorilla_v0_1/references/style_01_headphones.png",
+          "role": "STYLE",
+          "sha256": "78270e8007dea7ebd84e580bb5fa1d936cc9118b375e9b8845b3cffc84d51c0c"
+        },
+        {
+          "path": "docs/uri_style/gorilla_v0_1/references/style_03_waterfront.png",
+          "role": "STYLE",
+          "sha256": "25b75c83586e01222dde9cd164035afe9cba005b08cd2674eb6b9993aa12c053"
+        },
+        {
+          "path": "docs/uri_style/gorilla_v0_1/references/style_06_architecture.png",
+          "role": "STYLE",
+          "sha256": "51118389231d7cf1832b8b466aa31af2b6950f04cc91b77473e1f94b5a56e59c"
+        }
+      ],
+      "output": "docs/uri_style/gorilla_v0_1/images/balanced_original_blue_rev_s.png",
+      "generated_source": "/home/ethan/.codex/generated_images/01a0f3ab-7a57-7172-b8c5-e517aa2973da/exec-f2103610-7461-4d70-ac20-18717c11e426.png",
+      "output_sha256": "fb525b3d0cec7a3eae211aa3663961e2ae0dfba392cf91b93d8359bc0bde47f6",
+      "status": "user_rejected_spherical_top_redundant_mechanics_and_narrow_support",
+      "notes": "Upper guards now use the existing bright azure family, matching shoulders/forearms. Long curved guard tails replaced by compact hard-edged upper pieces with a different perimeter. Graphite distal carriers, ankle supports and foot grounding broadened while middle/distal differentiation and extra fold remain. Ivory core continuity retained. Overall aesthetic balance remains for user review; no mass, CAD or dynamics inference. Subsequent user marks rejected spherical top, pointless fittings and upper yellow strip parts; requested wider low feet and coherent shank, then supplied contour guide."
+    },
+    {
+      "id": "G26",
+      "art_revision": "T",
+      "tool": "built-in imagegen",
+      "model_version": "not exposed by tool",
+      "prompt": "docs/uri_style/gorilla_v0_1/prompts/minimal_sketch_grounded_rev_t.txt",
+      "prompt_sha256": "edce903a282c0ae770efc95423589944cf3b49ffcd77498fd2580ae74c8ded4f",
+      "inputs_in_order": [
+        {
+          "path": "docs/uri_style/gorilla_v0_1/images/balanced_original_blue_rev_s.png",
+          "role": "EDIT_TARGET_CURRENT_MACHINE",
+          "sha256": "fb525b3d0cec7a3eae211aa3663961e2ae0dfba392cf91b93d8359bc0bde47f6"
+        },
+        {
+          "path": "docs/uri_style/gorilla_v0_1/references/user_upper_contour_rev_t.png",
+          "role": "USER_UPPER_CONTOUR_GEOMETRY_ONLY",
+          "sha256": "08c5be17f025d55a35588e1c5d378c704bddad840df450dcc7314f9493bea774"
+        },
+        {
+          "path": "docs/uri_style/gorilla_v0_1/references/style_01_headphones.png",
+          "role": "STYLE",
+          "sha256": "78270e8007dea7ebd84e580bb5fa1d936cc9118b375e9b8845b3cffc84d51c0c"
+        },
+        {
+          "path": "docs/uri_style/gorilla_v0_1/references/style_03_waterfront.png",
+          "role": "STYLE",
+          "sha256": "25b75c83586e01222dde9cd164035afe9cba005b08cd2674eb6b9993aa12c053"
+        },
+        {
+          "path": "docs/uri_style/gorilla_v0_1/references/style_06_architecture.png",
+          "role": "STYLE",
+          "sha256": "51118389231d7cf1832b8b466aa31af2b6950f04cc91b77473e1f94b5a56e59c"
+        }
+      ],
+      "output": "docs/uri_style/gorilla_v0_1/images/minimal_sketch_grounded_rev_t.png",
+      "generated_source": "/home/ethan/.codex/generated_images/01a0f3ab-7a57-7172-b8c5-e517aa2973da/exec-5aa046d5-51d1-4e14-8475-1d059391c7b1.png",
+      "output_sha256": "bff615ac400d0ec0a18b3243bb2a54f62755a2549ba35850de31f1077710b5df",
+      "status": "user_rejected_wrong_simplification_target_and_shell_color_loss",
+      "notes": "Upper contour changed to a taut short top span, upper yellow-strip parts removed, feet broadened and incidental color accents removed. User rejected the removal of exterior color and failure to sufficiently reduce actual internal balls/columns. Forefoot sidewall remained bulky; followed by T2 local finishing."
+    },
+    {
+      "id": "G27",
+      "art_revision": "T2",
+      "tool": "built-in imagegen",
+      "model_version": "not exposed by tool",
+      "prompt": "docs/uri_style/gorilla_v0_1/prompts/minimal_support_finish_rev_t2.txt",
+      "prompt_sha256": "aabf840fb6ceb2821de6f3f97dbd31858122e40377a64a686ea45b0c5b231284",
+      "inputs_in_order": [
+        {
+          "path": "docs/uri_style/gorilla_v0_1/images/minimal_sketch_grounded_rev_t.png",
+          "role": "EDIT_TARGET_CURRENT_MACHINE",
+          "sha256": "bff615ac400d0ec0a18b3243bb2a54f62755a2549ba35850de31f1077710b5df"
+        },
+        {
+          "path": "docs/uri_style/gorilla_v0_1/references/user_upper_contour_rev_t.png",
+          "role": "USER_UPPER_CONTOUR_GEOMETRY_ONLY",
+          "sha256": "08c5be17f025d55a35588e1c5d378c704bddad840df450dcc7314f9493bea774"
+        },
+        {
+          "path": "docs/uri_style/gorilla_v0_1/references/style_01_headphones.png",
+          "role": "STYLE",
+          "sha256": "78270e8007dea7ebd84e580bb5fa1d936cc9118b375e9b8845b3cffc84d51c0c"
+        },
+        {
+          "path": "docs/uri_style/gorilla_v0_1/references/style_03_waterfront.png",
+          "role": "STYLE",
+          "sha256": "25b75c83586e01222dde9cd164035afe9cba005b08cd2674eb6b9993aa12c053"
+        },
+        {
+          "path": "docs/uri_style/gorilla_v0_1/references/style_06_architecture.png",
+          "role": "STYLE",
+          "sha256": "51118389231d7cf1832b8b466aa31af2b6950f04cc91b77473e1f94b5a56e59c"
+        }
+      ],
+      "output": "docs/uri_style/gorilla_v0_1/images/minimal_support_finish_rev_t2.png",
+      "generated_source": "/home/ethan/.codex/generated_images/01a0f3ab-7a57-7172-b8c5-e517aa2973da/exec-11823869-d179-47bd-8af3-6bcdd082358c.png",
+      "output_sha256": "3d511cb7473cdf619f1803863c3a76d0bc732488a6d0d2c5d1e7188765288d58",
+      "status": "user_rejected_flat_top_wrong_internal_simplification_and_shell_color_loss",
+      "notes": "Lowered the broad forefoot sidewalls and reduced extra foot-side caps; torso fitting clusters partly contained in graphite service housings. User identified continued flat top and unnecessary elbow, shoulder and waist parts, clarified color must be retained, then specified open graphite upper flank guards and surface depth. No approval."
+    },
+    {
+      "id": "G28",
+      "art_revision": "U",
+      "tool": "built-in imagegen",
+      "model_version": "not exposed by tool",
+      "prompt": "docs/uri_style/gorilla_v0_1/prompts/raised_surface_internal_simplification_rev_u.txt",
+      "prompt_sha256": "4cd1cef2122745c9399c086d40be0b865b2c18a884ff125ff061864bf3a3a7e3",
+      "inputs_in_order": [
+        {
+          "path": "docs/uri_style/gorilla_v0_1/images/minimal_support_finish_rev_t2.png",
+          "role": "EDIT_TARGET_CURRENT_MACHINE",
+          "sha256": "3d511cb7473cdf619f1803863c3a76d0bc732488a6d0d2c5d1e7188765288d58"
+        },
+        {
+          "path": "docs/uri_style/gorilla_v0_1/references/user_core_volume_guard_rev_u.png",
+          "role": "USER_CORE_SURFACE_AND_GRAPHITE_GUARD_MATERIAL_REGION_AUTHORITY",
+          "sha256": "bc82abc9bafc5b91494fd9f0c1c6c7d6ed4407eabaa2f4c71e6c74de986574f7"
+        },
+        {
+          "path": "docs/uri_style/gorilla_v0_1/references/style_01_headphones.png",
+          "role": "STYLE",
+          "sha256": "78270e8007dea7ebd84e580bb5fa1d936cc9118b375e9b8845b3cffc84d51c0c"
+        },
+        {
+          "path": "docs/uri_style/gorilla_v0_1/references/style_03_waterfront.png",
+          "role": "STYLE",
+          "sha256": "25b75c83586e01222dde9cd164035afe9cba005b08cd2674eb6b9993aa12c053"
+        },
+        {
+          "path": "docs/uri_style/gorilla_v0_1/references/style_06_architecture.png",
+          "role": "STYLE",
+          "sha256": "51118389231d7cf1832b8b466aa31af2b6950f04cc91b77473e1f94b5a56e59c"
+        }
+      ],
+      "output": "docs/uri_style/gorilla_v0_1/images/spatial_core_internal_simplification_rev_u.png",
+      "generated_source": "/home/ethan/.codex/generated_images/01a0f3ab-7a57-7172-b8c5-e517aa2973da/exec-bd7e428b-8a61-48da-8198-e09224454cdd.png",
+      "output_sha256": "b63e342c959da3471e147bfef3c3dd1195abc5970f316b848ec6ce091c332817",
+      "status": "user_requested_blue_upper_and_inner_torso_panels_more_upper_clearance_less_hardware_and_natural_z_stance",
+      "notes": "Paired upper flank guards use the user-authorized graphite of the inner frame, with open undersides showing compact shoulder drives. Repeated elbow columns and shoulder ball/coil strings replaced by fewer integrated drive/frame members; waist/hip roots simplified. Saffron exterior accents restored as colored finish on existing shells. Main ivory top receives a continuous shaped depth/section treatment; broad low feet and differentiated lower links retained. Latest instruction concerns structural distribution, not increased total height. Visual concept only; no computed topology optimum, CAD measurement, physical stability or exact symmetry claim.",
+      "latest_user_contour_note": {
+        "source": "red contour embedded in user message without local path",
+        "supplied_as_imagegen_input": false,
+        "usage": "described as distribution correction in exact prompt; later height clarification incorporated before call"
+      },
+      "topology_method_status": "No numerical optimization solver or new mathematical/model experiment used. User reference informs visual form intent only."
+    },
+    {
+      "id": "G29",
+      "art_revision": "V",
+      "tool": "built-in imagegen",
+      "model_version": "not exposed by tool",
+      "prompt": "docs/uri_style/gorilla_v0_1/prompts/blue_clearance_z_stance_rev_v.txt",
+      "prompt_sha256": "edbba2b8e0ffd5a12389295bcdd56f68c7687dc0ebe680f5f19995b5f2cbdc46",
+      "inputs_in_order": [
+        {
+          "path": "docs/uri_style/gorilla_v0_1/images/spatial_core_internal_simplification_rev_u.png",
+          "role": "SUBJECT_REGIONAL_GEOMETRY",
+          "sha256": "b63e342c959da3471e147bfef3c3dd1195abc5970f316b848ec6ce091c332817"
+        },
+        {
+          "path": "docs/uri_style/gorilla_v0_1/references/palette_02_blue_vehicle.png",
+          "role": "USER_PALETTE_DISTRIBUTION_ONLY",
+          "sha256": "73d341781bf20f5f22ba2bfaf328b78f7ea6c1de4ee21c0830c5b0dbb95e6c93"
+        },
+        {
+          "path": "docs/uri_style/gorilla_v0_1/references/style_01_headphones.png",
+          "role": "STYLE",
+          "sha256": "78270e8007dea7ebd84e580bb5fa1d936cc9118b375e9b8845b3cffc84d51c0c"
+        },
+        {
+          "path": "docs/uri_style/gorilla_v0_1/references/style_03_waterfront.png",
+          "role": "STYLE",
+          "sha256": "25b75c83586e01222dde9cd164035afe9cba005b08cd2674eb6b9993aa12c053"
+        },
+        {
+          "path": "docs/uri_style/gorilla_v0_1/references/style_06_architecture.png",
+          "role": "STYLE",
+          "sha256": "51118389231d7cf1832b8b466aa31af2b6950f04cc91b77473e1f94b5a56e59c"
+        }
+      ],
+      "output": "docs/uri_style/gorilla_v0_1/images/blue_clearance_z_stance_rev_v.png",
+      "generated_source": "/home/ethan/.codex/generated_images/01a0f3ab-7a57-7172-b8c5-e517aa2973da/exec-3004fe84-d4b9-4871-a76f-1ab4195da8d7.png",
+      "output_sha256": "49f14e1a9bd25b895695038031404dfa5fbf8364029a1f3220c3aa96d535d0a4",
+      "status": "user_rejected_skewed_bilateral_design_and_foot_regression",
+      "notes": "Blue-led paint and substantial yellow fields introduced; upper and lower torso-side guards restored azure. Output did not reliably implement desired matching stance, orthographic compact dimensions or foot refinement. User explicitly rejected asymmetry/skew and feet, then requested GPT 6.1 SOL redraw with all prior feedback. Not a delivery candidate."
+    },
+    {
+      "id": "G30",
+      "art_revision": "V2",
+      "tool": "built-in imagegen",
+      "model_version": "not exposed by tool",
+      "orchestration_model": "gpt-6.1-sol",
+      "model_evidence": "current turn_context 01a0f85b-2171-7011-b438-51f8d26ce616 records gpt-6.1-sol / xhigh",
+      "prompt": "docs/uri_style/gorilla_v0_1/prompts/symmetric_blue_master_rev_v2.txt",
+      "prompt_sha256": "9c2a8c871e653851ae3c33e545fdae270c596e15435157a88b2c4df40c56900e",
+      "inputs_in_order": [
+        {
+          "path": "docs/uri_style/gorilla_v0_1/images/spatial_core_internal_simplification_rev_u.png",
+          "role": "REGIONAL_GEOMETRY_ONLY",
+          "sha256": "b63e342c959da3471e147bfef3c3dd1195abc5970f316b848ec6ce091c332817"
+        },
+        {
+          "path": "docs/uri_style/gorilla_v0_1/references/palette_02_blue_vehicle.png",
+          "role": "USER_PALETTE_DISTRIBUTION_ONLY",
+          "sha256": "73d341781bf20f5f22ba2bfaf328b78f7ea6c1de4ee21c0830c5b0dbb95e6c93"
+        },
+        {
+          "path": "docs/uri_style/gorilla_v0_1/references/style_01_headphones.png",
+          "role": "STYLE",
+          "sha256": "78270e8007dea7ebd84e580bb5fa1d936cc9118b375e9b8845b3cffc84d51c0c"
+        },
+        {
+          "path": "docs/uri_style/gorilla_v0_1/references/style_03_waterfront.png",
+          "role": "STYLE",
+          "sha256": "25b75c83586e01222dde9cd164035afe9cba005b08cd2674eb6b9993aa12c053"
+        },
+        {
+          "path": "docs/uri_style/gorilla_v0_1/references/style_06_architecture.png",
+          "role": "STYLE",
+          "sha256": "51118389231d7cf1832b8b466aa31af2b6950f04cc91b77473e1f94b5a56e59c"
+        }
+      ],
+      "output": "docs/uri_style/gorilla_v0_1/images/symmetric_blue_master_rev_v2.png",
+      "generated_source": "/home/ethan/.codex/generated_images/01a0f3ab-7a57-7172-b8c5-e517aa2973da/exec-5c93bf9a-3a4c-4844-b574-cb2ed4fd413b.png",
+      "output_sha256": "b59055867e74766c4f069899bfbfc30975c43bf369fb3f0db7f40172d41ad9fe",
+      "status": "agent_revision_required",
+      "notes": "Bilateral composition improved and azure restored. Crown/guard fit remains too conformal; near-extended silhouette remains tall; shoe-cap layering remains. Not current delivery."
+    },
+    {
+      "id": "G31",
+      "art_revision": "W",
+      "tool": "built-in imagegen",
+      "model_version": "not exposed by tool",
+      "orchestration_model": "gpt-6.1-sol",
+      "prompt": "docs/uri_style/gorilla_v0_1/prompts/orthographic_three_view_rev_w.txt",
+      "prompt_sha256": "0f83e1c6b13623416fb66cb70d80f8ea3b808632b5b3905a4ce7e98ede66ef9a",
+      "inputs_in_order": [
+        {
+          "path": "docs/uri_style/gorilla_v0_1/images/symmetric_blue_master_rev_v2.png",
+          "role": "REGIONAL_IDENTITY_PAINT",
+          "sha256": "b59055867e74766c4f069899bfbfc30975c43bf369fb3f0db7f40172d41ad9fe"
+        },
+        {
+          "path": "docs/uri_style/gorilla_v0_1/references/compound_foot_reference_02.png",
+          "role": "COMPOUND_FOOT_GEOMETRY",
+          "sha256": "25e012ca52fd5709a711ed6ae7d7227112109c453dbd83e093dc64a006f29777"
+        },
+        {
+          "path": "docs/uri_style/gorilla_v0_1/references/style_01_headphones.png",
+          "role": "STYLE",
+          "sha256": "78270e8007dea7ebd84e580bb5fa1d936cc9118b375e9b8845b3cffc84d51c0c"
+        },
+        {
+          "path": "docs/uri_style/gorilla_v0_1/references/style_03_waterfront.png",
+          "role": "STYLE",
+          "sha256": "25b75c83586e01222dde9cd164035afe9cba005b08cd2674eb6b9993aa12c053"
+        },
+        {
+          "path": "docs/uri_style/gorilla_v0_1/references/style_06_architecture.png",
+          "role": "STYLE",
+          "sha256": "51118389231d7cf1832b8b466aa31af2b6950f04cc91b77473e1f94b5a56e59c"
+        }
+      ],
+      "output": "docs/uri_style/gorilla_v0_1/images/orthographic_three_view_rev_w.png",
+      "generated_source": "/home/ethan/.codex/generated_images/01a0f3ab-7a57-7172-b8c5-e517aa2973da/exec-f254fd03-a165-4319-b49a-88fab4aab95f.png",
+      "output_sha256": "75e57c88356740b3723d9f1c33bc70822c885886054b8934da6a2bde7a755d9d",
+      "status": "user_rejected_side_depth",
+      "notes": "Three views generated. Side Z path visible but arm obscures knee, row labels do not match joint centers, silhouette too tall relative to frozen H/W. Foot still inherits cap-like enclosure. Not delivery. User now explicitly preserves X width and Y height, rejects Z-depth and requires original tetrahedral wedge mass. Earlier near-square interpretation and invented anchors withdrawn."
+    },
+    {
+      "id": "G32",
+      "art_revision": "X1",
+      "tool": "built-in imagegen",
+      "model_version": "not exposed by tool",
+      "orchestration_model": "gpt-6.1-sol",
+      "prompt": "docs/uri_style/gorilla_v0_1/prompts/original_depth_z_profile_rev_x1.txt",
+      "prompt_sha256": "c020187c233020b53ed6ccff497a3d16ab669c21c2c3284ea610119336b204be",
+      "inputs_in_order": [
+        {
+          "path": "docs/uri_style/gorilla_v0_1/references/original_wedge_depth_reference.png",
+          "role": "ORIGINAL_TORSO_GEOMETRY",
+          "sha256": "a2f1a7174d287a521b17a704a30bebc34f1e176e2354c29ba67e794b430af13a"
+        },
+        {
+          "path": "docs/uri_style/gorilla_v0_1/references/compound_foot_reference_03.png",
+          "role": "LOWER_LEG_FOOT_STRUCTURE",
+          "sha256": "1b992336a5822b91414c5fe3163f270a75f7910ba2fdfbdf39647e74d798fd9f"
+        },
+        {
+          "path": "docs/uri_style/gorilla_v0_1/references/style_01_headphones.png",
+          "role": "STYLE",
+          "sha256": "78270e8007dea7ebd84e580bb5fa1d936cc9118b375e9b8845b3cffc84d51c0c"
+        },
+        {
+          "path": "docs/uri_style/gorilla_v0_1/references/style_03_waterfront.png",
+          "role": "STYLE",
+          "sha256": "25b75c83586e01222dde9cd164035afe9cba005b08cd2674eb6b9993aa12c053"
+        },
+        {
+          "path": "docs/uri_style/gorilla_v0_1/references/style_06_architecture.png",
+          "role": "STYLE",
+          "sha256": "51118389231d7cf1832b8b466aa31af2b6950f04cc91b77473e1f94b5a56e59c"
+        }
+      ],
+      "output": "docs/uri_style/gorilla_v0_1/images/original_depth_z_profile_rev_x1.png",
+      "generated_source": "/home/ethan/.codex/generated_images/01a0f3ab-7a57-7172-b8c5-e517aa2973da/exec-9a4d0643-d95a-44ec-abea-1132dacb6970.png",
+      "output_sha256": "81f8e19b11ee5230830358f01f6808d618d71476cf352991887f6c4a578ad758",
+      "status": "user_rejected_forked_leg_not_delivery",
+      "notes": "Stronger original forward wedge and visible sagittal Z. Output is not exact orthographic and core became over-faceted; user clarifies continuous intrinsic curvature and authorizes complete leg redesign. Not approved master or delivery."
+    },
+    {
+      "id": "G33",
+      "art_revision": "Y2",
+      "tool": "built-in imagegen",
+      "model_version": "not exposed by tool",
+      "orchestration_model": "gpt-6.1-sol",
+      "prompt": "docs/uri_style/gorilla_v0_1/prompts/bounded_z_leg_depth_edit_rev_y2.txt",
+      "prompt_sha256": "3ce684f23e3b366d98da644519d925238e2903596571390682e44f2578d216f0",
+      "inputs_in_order": [
+        {
+          "path": "docs/uri_style/gorilla_v0_1/images/orthographic_three_view_rev_w.png",
+          "role": "EDIT_TARGET_LOCKED_UPPER_REGIONS",
+          "sha256": "75e57c88356740b3723d9f1c33bc70822c885886054b8934da6a2bde7a755d9d"
+        },
+        {
+          "path": "docs/uri_style/gorilla_v0_1/references/compound_foot_reference_03.png",
+          "role": "LOWER_LEG_FOOT_STRUCTURE",
+          "sha256": "1b992336a5822b91414c5fe3163f270a75f7910ba2fdfbdf39647e74d798fd9f"
+        },
+        {
+          "path": "docs/uri_style/gorilla_v0_1/references/style_01_headphones.png",
+          "role": "STYLE",
+          "sha256": "78270e8007dea7ebd84e580bb5fa1d936cc9118b375e9b8845b3cffc84d51c0c"
+        },
+        {
+          "path": "docs/uri_style/gorilla_v0_1/references/style_03_waterfront.png",
+          "role": "STYLE",
+          "sha256": "25b75c83586e01222dde9cd164035afe9cba005b08cd2674eb6b9993aa12c053"
+        },
+        {
+          "path": "docs/uri_style/gorilla_v0_1/references/style_06_architecture.png",
+          "role": "STYLE",
+          "sha256": "51118389231d7cf1832b8b466aa31af2b6950f04cc91b77473e1f94b5a56e59c"
+        }
+      ],
+      "output": "docs/uri_style/gorilla_v0_1/images/bounded_z_leg_depth_edit_rev_y2.png",
+      "generated_source": "/home/ethan/.codex/generated_images/01a0f3ab-7a57-7172-b8c5-e517aa2973da/exec-938cbabc-3993-4507-ac55-9f201019f3fc.png",
+      "output_sha256": "6cc3629dc0965a9da0806feb09fb9785bffea1d7ae52b43b507eaceb9aae5dbf",
+      "status": "agent_lower_chain_revision_required",
+      "notes": "Upper regions substantially retained and forked side chain removed. Side folding not pronounced enough and feet still retain solid shoe-cap enclosure. A bounded lower-chain-only edit follows."
+    },
+    {
+      "id": "G34",
+      "art_revision": "Y3",
+      "tool": "built-in imagegen",
+      "model_version": "not exposed by tool",
+      "orchestration_model": "gpt-6.1-sol",
+      "prompt": "docs/uri_style/gorilla_v0_1/prompts/lower_chain_compound_foot_only_rev_y3.txt",
+      "prompt_sha256": "048b9efac820d97153156318fc880b01b6a7b3fefb77a8f15767128578f6e310",
+      "inputs_in_order": [
+        {
+          "path": "docs/uri_style/gorilla_v0_1/images/bounded_z_leg_depth_edit_rev_y2.png",
+          "role": "EDIT_TARGET_LOCKED_UPPER",
+          "sha256": "6cc3629dc0965a9da0806feb09fb9785bffea1d7ae52b43b507eaceb9aae5dbf"
+        },
+        {
+          "path": "docs/uri_style/gorilla_v0_1/references/compound_foot_reference_02.png",
+          "role": "COMPOUND_FOOT_STRUCTURE",
+          "sha256": "25e012ca52fd5709a711ed6ae7d7227112109c453dbd83e093dc64a006f29777"
+        },
+        {
+          "path": "docs/uri_style/gorilla_v0_1/references/style_01_headphones.png",
+          "role": "STYLE",
+          "sha256": "78270e8007dea7ebd84e580bb5fa1d936cc9118b375e9b8845b3cffc84d51c0c"
+        },
+        {
+          "path": "docs/uri_style/gorilla_v0_1/references/style_03_waterfront.png",
+          "role": "STYLE",
+          "sha256": "25b75c83586e01222dde9cd164035afe9cba005b08cd2674eb6b9993aa12c053"
+        },
+        {
+          "path": "docs/uri_style/gorilla_v0_1/references/style_06_architecture.png",
+          "role": "STYLE",
+          "sha256": "51118389231d7cf1832b8b466aa31af2b6950f04cc91b77473e1f94b5a56e59c"
+        }
+      ],
+      "output": "docs/uri_style/gorilla_v0_1/images/lower_chain_compound_foot_only_rev_y3.png",
+      "generated_source": "/home/ethan/.codex/generated_images/01a0f3ab-7a57-7172-b8c5-e517aa2973da/exec-c5e7f8c0-2a6e-4e9d-bd90-f29ab24e28bf.png",
+      "output_sha256": "e1f403047f3a80ab3f145a7099b6b701f69614b5c7762ae6e9271365792bf58f",
+      "status": "regional_lower_structure_candidate_pending_latest_body_edits",
+      "notes": "Compound open foot construction replaces shoe-cap roof; side remains a single leg chain. Upper regions retained. User subsequent annotations reference prior Y2, asking forward-facing radiators, fewer inner shoulder/hip entities and whole orange front central pelvis lid; carry these to Y3 without undoing new feet."
+    },
+    {
+      "id": "G35",
+      "art_revision": "Y4",
+      "tool": "built-in imagegen",
+      "model_version": "not exposed by tool",
+      "orchestration_model": "gpt-6.1-sol",
+      "prompt": "docs/uri_style/gorilla_v0_1/prompts/forward_radiators_minimal_interfaces_orange_lid_rev_y4.txt",
+      "prompt_sha256": "743edda7faabd2b8d5abaee69fa187cc53483d1d0b05ae5f6f7923d2eb0a82e3",
+      "inputs_in_order": [
+        {
+          "path": "docs/uri_style/gorilla_v0_1/images/lower_chain_compound_foot_only_rev_y3.png",
+          "role": "EDIT_TARGET",
+          "sha256": "e1f403047f3a80ab3f145a7099b6b701f69614b5c7762ae6e9271365792bf58f"
+        },
+        {
+          "path": "docs/uri_style/gorilla_v0_1/references/style_01_headphones.png",
+          "role": "STYLE",
+          "sha256": "78270e8007dea7ebd84e580bb5fa1d936cc9118b375e9b8845b3cffc84d51c0c"
+        },
+        {
+          "path": "docs/uri_style/gorilla_v0_1/references/style_03_waterfront.png",
+          "role": "STYLE",
+          "sha256": "25b75c83586e01222dde9cd164035afe9cba005b08cd2674eb6b9993aa12c053"
+        },
+        {
+          "path": "docs/uri_style/gorilla_v0_1/references/style_06_architecture.png",
+          "role": "STYLE",
+          "sha256": "51118389231d7cf1832b8b466aa31af2b6950f04cc91b77473e1f94b5a56e59c"
+        }
+      ],
+      "output": "docs/uri_style/gorilla_v0_1/images/forward_radiators_minimal_interfaces_orange_lid_rev_y4.png",
+      "generated_source": "/home/ethan/.codex/generated_images/01a0f3ab-7a57-7172-b8c5-e517aa2973da/exec-43d8555a-fe9d-4575-97a5-2512a652f30c.png",
+      "output_sha256": "a200e6fbefa25ed1df2bd098bd84b347562d2fc8ceacce6e7cb9e940baa95bc7",
+      "status": "agent_final_interface_cleanup",
+      "notes": "Radiators now face forward with closed sidewall in LEFT. Front central cover fully orange, upper and leg regions retained. Some round hip fillers remain and will be removed in one narrow cleanup."
+    },
+    {
+      "id": "G36",
+      "art_revision": "Y5",
+      "tool": "built-in imagegen",
+      "model_version": "not exposed by tool",
+      "orchestration_model": "gpt-6.1-sol",
+      "orchestration_effort": "xhigh",
+      "model_evidence": "active turn_context 01a0f85b-2171-7011-b438-51f8d26ce616",
+      "prompt": "docs/uri_style/gorilla_v0_1/prompts/hip_root_entity_cleanup_rev_y5.txt",
+      "prompt_sha256": "ad1be035bfdddad90b4250e87eaeb22d16bc9abc2108bc6021bfd61af649e9a2",
+      "inputs_in_order": [
+        {
+          "path": "docs/uri_style/gorilla_v0_1/images/forward_radiators_minimal_interfaces_orange_lid_rev_y4.png",
+          "role": "EDIT_TARGET",
+          "sha256": "a200e6fbefa25ed1df2bd098bd84b347562d2fc8ceacce6e7cb9e940baa95bc7"
+        },
+        {
+          "path": "docs/uri_style/gorilla_v0_1/references/style_01_headphones.png",
+          "role": "STYLE",
+          "sha256": "78270e8007dea7ebd84e580bb5fa1d936cc9118b375e9b8845b3cffc84d51c0c"
+        },
+        {
+          "path": "docs/uri_style/gorilla_v0_1/references/style_03_waterfront.png",
+          "role": "STYLE",
+          "sha256": "25b75c83586e01222dde9cd164035afe9cba005b08cd2674eb6b9993aa12c053"
+        },
+        {
+          "path": "docs/uri_style/gorilla_v0_1/references/style_06_architecture.png",
+          "role": "STYLE",
+          "sha256": "51118389231d7cf1832b8b466aa31af2b6950f04cc91b77473e1f94b5a56e59c"
+        }
+      ],
+      "output": "docs/uri_style/gorilla_v0_1/images/orthographic_three_view_rev_y5.png",
+      "generated_source": "/home/ethan/.codex/generated_images/01a0f3ab-7a57-7172-b8c5-e517aa2973da/exec-e1dff166-d059-457d-83f2-6dc6ec0a6f4e.png",
+      "output_sha256": "829c45ee4f50fa8fd1f8fd213a6b98827a214f7961bf5b63ee91138f69d366c6",
+      "status": "user_rejected_not_for_delivery",
+      "notes": "Matched FRONT/LEFT/REAR sheet. Whole upper body, hands, colors and front projected dimensions preserved at major-assembly level. Single side leg chain, open compound feet, forward radiator faces with closed side wall in LEFT, whole orange front pelvis lid, reduced shoulder/hip round fillers. Raster construction/registration remains illustrative; not same-source CAD or numerical topology proof.",
+      "previous_agent_review_status": "agent_reviewed_appearance_handoff_candidate_not_user_approved",
+      "review_withdrawal": "User rejected all Y5. Previous success claims are withdrawn; original call/prompt/output retained unchanged."
+    },
+    {
+      "id": "G37",
+      "art_revision": "Z1",
+      "tool": "built-in imagegen",
+      "model_version": "not exposed by tool",
+      "orchestration_model": "gpt-6.1-sol",
+      "orchestration_effort": "xhigh",
+      "prompt": "docs/uri_style/gorilla_v0_1/prompts/original_wedge_rebuild_rev_z1.txt",
+      "prompt_sha256": "ad2e42d81f96deff65975b093e629d85410504d52ebf78e19c989edc16195639",
+      "inputs_in_order": [
+        {
+          "path": "docs/uri_style/gorilla_v0_1/images/orthographic_three_view_rev_w.png",
+          "role": "REGIONAL_REFERENCE_XY_ARMS_PALETTE_ONLY",
+          "sha256": "75e57c88356740b3723d9f1c33bc70822c885886054b8934da6a2bde7a755d9d"
+        },
+        {
+          "path": "docs/uri_style/gorilla_v0_1/references/original_wedge_depth_reference.png",
+          "role": "GEOMETRY_BODY_DEPTH",
+          "sha256": "a2f1a7174d287a521b17a704a30bebc34f1e176e2354c29ba67e794b430af13a"
+        },
+        {
+          "path": ".agents/skills/uri-style/assets/style_01_headphones.png",
+          "role": "STYLE",
+          "sha256": "78270e8007dea7ebd84e580bb5fa1d936cc9118b375e9b8845b3cffc84d51c0c"
+        },
+        {
+          "path": ".agents/skills/uri-style/assets/style_03_waterfront.png",
+          "role": "STYLE",
+          "sha256": "25b75c83586e01222dde9cd164035afe9cba005b08cd2674eb6b9993aa12c053"
+        },
+        {
+          "path": ".agents/skills/uri-style/assets/style_06_architecture.png",
+          "role": "STYLE",
+          "sha256": "51118389231d7cf1832b8b466aa31af2b6950f04cc91b77473e1f94b5a56e59c"
+        }
+      ],
+      "output": "docs/uri_style/gorilla_v0_1/images/original_wedge_rebuild_rev_z1.png",
+      "output_sha256": "f737106f29b6894f11ecd1c2747f8c59ba8da85178e5a2485ae66d0e5d2a8af5",
+      "generated_source": "/home/ethan/.codex/generated_images/01a0f3ab-7a57-7172-b8c5-e517aa2973da/exec-bbaf647f-d43d-465a-a286-a8ecfac077ab.png",
+      "status": "agent_rejected_original_depth_not_implemented",
+      "notes": "Old arched thin profile and old lower chain/boot feet dominate despite regional-reference role. Radiators and shoulder clutter also persist. Not approved, not for delivery; original geometry must dominate subsequent redraw.",
+      "subsequent_user_selection": {
+        "views": [
+          "FRONT",
+          "REAR"
+        ],
+        "paint_authority": true,
+        "left_geometry_approved": false,
+        "local_exceptions": [
+          "radiators face straight forward",
+          "reduce unnecessary FRONT hip internal entities",
+          "reduce unnecessary REAR shoulder internal entities"
+        ]
+      }
+    },
+    {
+      "id": "G38",
+      "art_revision": "Z2",
+      "tool": "built-in imagegen",
+      "model_version": "not exposed by tool",
+      "orchestration_model": "gpt-6.1-sol",
+      "orchestration_effort": "xhigh",
+      "prompt": "docs/uri_style/gorilla_v0_1/prompts/original_geometry_first_rev_z2.txt",
+      "prompt_sha256": "2056c2f7434fd799e00e7128f56afdbfff5fb7b21d165a5ea3b0d85e82026043",
+      "inputs_in_order": [
+        {
+          "path": "docs/uri_style/gorilla_v0_1/references/original_wedge_depth_reference.png",
+          "role": "PRIMARY_GEOMETRY_BODY_DEPTH",
+          "sha256": "a2f1a7174d287a521b17a704a30bebc34f1e176e2354c29ba67e794b430af13a"
+        },
+        {
+          "path": "docs/uri_style/gorilla_v0_1/images/orthographic_three_view_rev_w.png",
+          "role": "REGIONAL_XY_ARMS_PALETTE_REFERENCE_ONLY",
+          "sha256": "75e57c88356740b3723d9f1c33bc70822c885886054b8934da6a2bde7a755d9d"
+        },
+        {
+          "path": ".agents/skills/uri-style/assets/style_01_headphones.png",
+          "role": "STYLE",
+          "sha256": "78270e8007dea7ebd84e580bb5fa1d936cc9118b375e9b8845b3cffc84d51c0c"
+        },
+        {
+          "path": ".agents/skills/uri-style/assets/style_03_waterfront.png",
+          "role": "STYLE",
+          "sha256": "25b75c83586e01222dde9cd164035afe9cba005b08cd2674eb6b9993aa12c053"
+        },
+        {
+          "path": ".agents/skills/uri-style/assets/style_06_architecture.png",
+          "role": "STYLE",
+          "sha256": "51118389231d7cf1832b8b466aa31af2b6950f04cc91b77473e1f94b5a56e59c"
+        }
+      ],
+      "output": "docs/uri_style/gorilla_v0_1/images/original_geometry_first_rev_z2.png",
+      "output_sha256": "f06a5426849aa072c4c933cbbd9ba20624e77e3ed8b576448fb94670b7c6d063",
+      "generated_source": "/home/ethan/.codex/generated_images/01a0f3ab-7a57-7172-b8c5-e517aa2973da/exec-bb3199cd-7649-4f2c-a844-8dd36e501be7.png",
+      "status": "intermediate_body_depth_study_lower_chain_and_details_require_rebuild",
+      "notes": "Profile now has anterior wedge mass rather than skinny arch. This is not accepted: boot feet and blue repeated terminal remain, grilles still show side-facing opening, orange front lid reverted to ivory lower portion, upper guard clearance remains unclear. Next bounded rebuild uses original compound leg/foot reference."
+    },
+    {
+      "id": "G39",
+      "art_revision": "Z3",
+      "tool": "built-in imagegen",
+      "model_version": "not exposed by tool",
+      "orchestration_model": "gpt-6.1-sol",
+      "orchestration_effort": "xhigh",
+      "prompt": "docs/uri_style/gorilla_v0_1/prompts/compound_z_chain_rebuild_rev_z3.txt",
+      "prompt_sha256": "ec9d4eb4cdcfe01ec74b644b29e49c436d7fb4c44de05095fca97bfc1e63499d",
+      "inputs_in_order": [
+        {
+          "path": "docs/uri_style/gorilla_v0_1/images/original_geometry_first_rev_z2.png",
+          "role": "EDIT_TARGET_PRESERVED_UPPER_FORM_ONLY",
+          "sha256": "f06a5426849aa072c4c933cbbd9ba20624e77e3ed8b576448fb94670b7c6d063"
+        },
+        {
+          "path": "docs/uri_style/gorilla_v0_1/references/compound_foot_reference_03.png",
+          "role": "PRIMARY_GEOMETRY_LEGS_FEET",
+          "sha256": "1b992336a5822b91414c5fe3163f270a75f7910ba2fdfbdf39647e74d798fd9f"
+        },
+        {
+          "path": ".agents/skills/uri-style/assets/style_01_headphones.png",
+          "role": "STYLE",
+          "sha256": "78270e8007dea7ebd84e580bb5fa1d936cc9118b375e9b8845b3cffc84d51c0c"
+        },
+        {
+          "path": ".agents/skills/uri-style/assets/style_03_waterfront.png",
+          "role": "STYLE",
+          "sha256": "25b75c83586e01222dde9cd164035afe9cba005b08cd2674eb6b9993aa12c053"
+        },
+        {
+          "path": ".agents/skills/uri-style/assets/style_06_architecture.png",
+          "role": "STYLE",
+          "sha256": "51118389231d7cf1832b8b466aa31af2b6950f04cc91b77473e1f94b5a56e59c"
+        }
+      ],
+      "output": "docs/uri_style/gorilla_v0_1/images/compound_z_chain_rebuild_rev_z3.png",
+      "output_sha256": "4f602f0f6fc7244c05e4395317a288852a478ce750145f45ad8a7eb40694ae31",
+      "generated_source": "/home/ethan/.codex/generated_images/01a0f3ab-7a57-7172-b8c5-e517aa2973da/exec-9e855efd-09e9-48cf-8dd7-9d1464608158.png",
+      "status": "layout_revision_required_by_user",
+      "notes": "Legs and compact compound toe pads changed. User says LEFT panel is too narrow to realize reference depth; redraw layout. Still-open details: side grille faces sideways, orange lid ends in ivory, upper clearance unclear, terminal folds/color need further correction. No user approval."
+    },
+    {
+      "id": "G40",
+      "art_revision": "Z4",
+      "tool": "built-in imagegen",
+      "model_version": "not exposed by tool",
+      "orchestration_model": "gpt-6.1-sol",
+      "orchestration_effort": "xhigh",
+      "prompt": "docs/uri_style/gorilla_v0_1/prompts/full_width_left_relayout_rev_z4.txt",
+      "prompt_sha256": "14fd0b29eb96f00ba0671a0589db6ad811f2ef3f8f37256965dea07d414ae425",
+      "inputs_in_order": [
+        {
+          "path": "docs/uri_style/gorilla_v0_1/references/original_wedge_depth_reference.png",
+          "role": "PRIMARY_BODY_DEPTH_GEOMETRY",
+          "sha256": "a2f1a7174d287a521b17a704a30bebc34f1e176e2354c29ba67e794b430af13a"
+        },
+        {
+          "path": "docs/uri_style/gorilla_v0_1/images/compound_z_chain_rebuild_rev_z3.png",
+          "role": "REGIONAL_XY_ARMS_PAINT_AND_INTERMEDIATE_LEGS",
+          "sha256": "4f602f0f6fc7244c05e4395317a288852a478ce750145f45ad8a7eb40694ae31"
+        },
+        {
+          "path": ".agents/skills/uri-style/assets/style_01_headphones.png",
+          "role": "STYLE",
+          "sha256": "78270e8007dea7ebd84e580bb5fa1d936cc9118b375e9b8845b3cffc84d51c0c"
+        },
+        {
+          "path": ".agents/skills/uri-style/assets/style_03_waterfront.png",
+          "role": "STYLE",
+          "sha256": "25b75c83586e01222dde9cd164035afe9cba005b08cd2674eb6b9993aa12c053"
+        },
+        {
+          "path": ".agents/skills/uri-style/assets/style_06_architecture.png",
+          "role": "STYLE",
+          "sha256": "51118389231d7cf1832b8b466aa31af2b6950f04cc91b77473e1f94b5a56e59c"
+        }
+      ],
+      "output": "docs/uri_style/gorilla_v0_1/images/full_width_left_relayout_rev_z4.png",
+      "output_sha256": "5dfe903cf4d53cf32b1d7420251d1738c21c484f2f6bc64cff2f9b1d1552d0a6",
+      "generated_source": "/home/ethan/.codex/generated_images/01a0f3ab-7a57-7172-b8c5-e517aa2973da/exec-2a43c734-612d-47b0-94b6-e0e51955644f.png",
+      "status": "user_rejected_exaggerated_upper_core_view_inconsistency",
+      "notes": "Larger LEFT row provides greater wedge mass/projection. Still oblique grille/torso profile and repeated terminal plate; not validated orthographic. User now specifies original standard 2x2 FRONT/LEFT/REAR/TOP layout; no user acceptance of design."
+    },
+    {
+      "id": "G41",
+      "art_revision": "Z5",
+      "tool": "built-in imagegen",
+      "model_version": "not exposed by tool",
+      "orchestration_model": "gpt-6.1-sol",
+      "orchestration_effort": "xhigh",
+      "prompt": "docs/uri_style/gorilla_v0_1/prompts/standard_four_view_relayout_rev_z5.txt",
+      "prompt_sha256": "cc5a225991612b0be7b66f17d4f83071bc16c9aaeaf87a115021bfeb933796c7",
+      "inputs_in_order": [
+        {
+          "path": "docs/uri_style/gorilla_v0_1/images/full_width_left_relayout_rev_z4.png",
+          "role": "EDIT_TARGET_INTERMEDIATE_SUBJECT",
+          "sha256": "5dfe903cf4d53cf32b1d7420251d1738c21c484f2f6bc64cff2f9b1d1552d0a6"
+        },
+        {
+          "path": "docs/uri_style/gorilla_v0_1/source/blockout_views/orthographic_sheet.png",
+          "role": "COMPOSITION_VIEW_CAMERAS_ONLY",
+          "sha256": "65f7a01fef259bfe43061160a6bebb16afdf099ecb66214b89d6c508f5a14ad6"
+        },
+        {
+          "path": ".agents/skills/uri-style/assets/style_01_headphones.png",
+          "role": "STYLE",
+          "sha256": "78270e8007dea7ebd84e580bb5fa1d936cc9118b375e9b8845b3cffc84d51c0c"
+        },
+        {
+          "path": ".agents/skills/uri-style/assets/style_03_waterfront.png",
+          "role": "STYLE",
+          "sha256": "25b75c83586e01222dde9cd164035afe9cba005b08cd2674eb6b9993aa12c053"
+        },
+        {
+          "path": ".agents/skills/uri-style/assets/style_06_architecture.png",
+          "role": "STYLE",
+          "sha256": "51118389231d7cf1832b8b466aa31af2b6950f04cc91b77473e1f94b5a56e59c"
+        }
+      ],
+      "output": "docs/uri_style/gorilla_v0_1/images/standard_four_view_relayout_rev_z5.png",
+      "output_sha256": "e9d1a48a18ee65f51f95e7c5791a8bcb13d88fa16f39544e14db2abab679f419",
+      "generated_source": "/home/ethan/.codex/generated_images/01a0f3ab-7a57-7172-b8c5-e517aa2973da/exec-16d56d0c-65f0-42c0-9750-c14353691e16.png",
+      "status": "user_rejected_z4_core_same_exaggeration_carried_to_z5",
+      "notes": "Standard 2x2 layout created. User rejects inflated forward upper core in Z4 and inconsistency with front/rear; Z5 inherited that form and is not accepted. Also side grille and TOP rear hatch orientation remain wrong; substantial orange thigh fields lost."
+    },
+    {
+      "id": "G42",
+      "art_revision": "Z6",
+      "tool": "built-in imagegen",
+      "model_version": "not exposed by tool",
+      "orchestration_model": "gpt-6.1-sol",
+      "orchestration_effort": "xhigh",
+      "prompt": "docs/uri_style/gorilla_v0_1/prompts/compact_corresponding_core_rev_z6.txt",
+      "prompt_sha256": "06ea4fe1e57bc66cbaf1c7d6c0188ec4ab9189a5ec19b459c98a9a6a898aed92",
+      "inputs_in_order": [
+        {
+          "path": "docs/uri_style/gorilla_v0_1/images/standard_four_view_relayout_rev_z5.png",
+          "role": "EDIT_TARGET_TORSO_PROJECTION_CORRECTION",
+          "sha256": "e9d1a48a18ee65f51f95e7c5791a8bcb13d88fa16f39544e14db2abab679f419"
+        },
+        {
+          "path": ".agents/skills/uri-style/assets/style_01_headphones.png",
+          "role": "STYLE",
+          "sha256": "78270e8007dea7ebd84e580bb5fa1d936cc9118b375e9b8845b3cffc84d51c0c"
+        },
+        {
+          "path": ".agents/skills/uri-style/assets/style_03_waterfront.png",
+          "role": "STYLE",
+          "sha256": "25b75c83586e01222dde9cd164035afe9cba005b08cd2674eb6b9993aa12c053"
+        },
+        {
+          "path": ".agents/skills/uri-style/assets/style_06_architecture.png",
+          "role": "STYLE",
+          "sha256": "51118389231d7cf1832b8b466aa31af2b6950f04cc91b77473e1f94b5a56e59c"
+        }
+      ],
+      "output": "docs/uri_style/gorilla_v0_1/images/compact_corresponding_core_rev_z6.png",
+      "output_sha256": "b1e321c407f76a93e29a832ec08f3f50fc2f62af5b2716b7c1efa0e6bea318bc",
+      "generated_source": "/home/ethan/.codex/generated_images/01a0f3ab-7a57-7172-b8c5-e517aa2973da/exec-d7aefdd5-2eb1-4cd1-a640-2938d11f13a8.png",
+      "status": "user_review_draft_old_detail_feedback_still_open",
+      "notes": "Inflated anterior core retracted, extra nose block removed, LEFT broad black grille hidden, TOP roof hatch removed. Still pending: orange thigh cap fields lost, duplicate blue terminal wing, terminal ankle not clearly forward of rear fold, TOP grille projection broad. No user acceptance or delivery."
+    },
+    {
+      "id": "G43",
+      "art_revision": "Z7",
+      "tool": "built-in imagegen",
+      "model_version": "not exposed by tool",
+      "orchestration_model": "gpt-6.1-sol",
+      "orchestration_effort": "xhigh",
+      "prompt": "docs/uri_style/gorilla_v0_1/prompts/recover_prior_feedback_rev_z7.txt",
+      "prompt_sha256": "f3c52cbcedf44311fcbff04c873f4ca19be0629c12ad036ac8682c7d3c5632c5",
+      "inputs_in_order": [
+        {
+          "path": "docs/uri_style/gorilla_v0_1/images/compact_corresponding_core_rev_z6.png",
+          "role": "EDIT_TARGET_PRIOR_FEEDBACK_RECOVERY",
+          "sha256": "b1e321c407f76a93e29a832ec08f3f50fc2f62af5b2716b7c1efa0e6bea318bc"
+        },
+        {
+          "path": ".agents/skills/uri-style/assets/style_01_headphones.png",
+          "role": "STYLE",
+          "sha256": "78270e8007dea7ebd84e580bb5fa1d936cc9118b375e9b8845b3cffc84d51c0c"
+        },
+        {
+          "path": ".agents/skills/uri-style/assets/style_03_waterfront.png",
+          "role": "STYLE",
+          "sha256": "25b75c83586e01222dde9cd164035afe9cba005b08cd2674eb6b9993aa12c053"
+        },
+        {
+          "path": ".agents/skills/uri-style/assets/style_06_architecture.png",
+          "role": "STYLE",
+          "sha256": "51118389231d7cf1832b8b466aa31af2b6950f04cc91b77473e1f94b5a56e59c"
+        }
+      ],
+      "output": "docs/uri_style/gorilla_v0_1/images/recover_prior_feedback_rev_z7.png",
+      "output_sha256": "7485f1e6d667148bf8660086ce3d2cd7e6ba806ce93ed0b797086b41a7c25b47",
+      "generated_source": "/home/ethan/.codex/generated_images/01a0f3ab-7a57-7172-b8c5-e517aa2973da/exec-711db60e-aff4-4e87-ab34-59909062e272.png",
+      "status": "intermediate_color_correspondence_cleanup_required",
+      "notes": "Orange thigh fields restored, TOP broad fin rectangles removed, profile repeated blue terminal wing removed, core remains compact. New unintended orange shank side fragments in FRONT conflict with blue REAR/LEFT; correct only that paint before review. Still not user accepted or metrically validated."
+    },
+    {
+      "id": "G44",
+      "art_revision": "AA1",
+      "tool": "built-in imagegen",
+      "model_version": "not exposed by tool",
+      "orchestration_model": "gpt-6.1-sol",
+      "orchestration_effort": "xhigh",
+      "prompt": "docs/uri_style/gorilla_v0_1/prompts/locked_front_rear_local_corrections_rev_aa1.txt",
+      "prompt_sha256": "89817ff752188c7325a5ec0d46fac13ba6b0c8fb221ced69ec5c17adfc60d53b",
+      "inputs_in_order": [
+        {
+          "path": "docs/uri_style/gorilla_v0_1/images/original_wedge_rebuild_rev_z1.png",
+          "role": "SELECTED_FRONT_REAR_WITH_THREE_LOCAL_EXCEPTIONS",
+          "sha256": "f737106f29b6894f11ecd1c2747f8c59ba8da85178e5a2485ae66d0e5d2a8af5"
+        },
+        {
+          "path": ".agents/skills/uri-style/assets/style_01_headphones.png",
+          "role": "STYLE",
+          "sha256": "78270e8007dea7ebd84e580bb5fa1d936cc9118b375e9b8845b3cffc84d51c0c"
+        },
+        {
+          "path": ".agents/skills/uri-style/assets/style_03_waterfront.png",
+          "role": "STYLE",
+          "sha256": "25b75c83586e01222dde9cd164035afe9cba005b08cd2674eb6b9993aa12c053"
+        },
+        {
+          "path": ".agents/skills/uri-style/assets/style_06_architecture.png",
+          "role": "STYLE",
+          "sha256": "51118389231d7cf1832b8b466aa31af2b6950f04cc91b77473e1f94b5a56e59c"
+        }
+      ],
+      "output": "docs/uri_style/gorilla_v0_1/images/locked_front_rear_local_corrections_rev_aa1.png",
+      "output_sha256": "6e1c043bab8b43d71dd24bf4bc731451bc4e2214634795193971cb249e453c5d",
+      "generated_source": "/home/ethan/.codex/generated_images/01a0f3ab-7a57-7172-b8c5-e517aa2973da/exec-4ffc992d-bf92-4147-8af8-633051575151.png",
+      "status": "local_correction_candidate",
+      "notes": "Forward radiator faces and side wall projection corrected; redundant interior entities reduced. All global paint boundaries and silhouettes retained visually. Final layout will reuse original raster regions outside authorized local corrections. LEFT geometry not accepted as final."
+    },
+    {
+      "id": "G45",
+      "art_revision": "AA2",
+      "tool": "built-in imagegen",
+      "model_version": "not exposed by tool",
+      "orchestration_model": "gpt-6.1-sol",
+      "orchestration_effort": "xhigh",
+      "prompt": "docs/uri_style/gorilla_v0_1/prompts/locked_machine_left_top_rev_aa2.txt",
+      "prompt_sha256": "f791dbbfd42599dbe5e51333118c8ab3adf1dc12f2a44a7e7a5a09dd32611d2c",
+      "inputs_in_order": [
+        {
+          "path": "docs/uri_style/gorilla_v0_1/images/locked_front_rear_local_corrections_rev_aa1.png",
+          "role": "FIXED_FRONT_REAR_COMPONENT_PAINT_AUTHORITY",
+          "sha256": "6e1c043bab8b43d71dd24bf4bc731451bc4e2214634795193971cb249e453c5d"
+        },
+        {
+          "path": "docs/uri_style/gorilla_v0_1/references/original_wedge_depth_reference.png",
+          "role": "UPPER_CORE_GEOMETRY_ONLY",
+          "sha256": "a2f1a7174d287a521b17a704a30bebc34f1e176e2354c29ba67e794b430af13a"
+        },
+        {
+          "path": ".agents/skills/uri-style/assets/style_01_headphones.png",
+          "role": "STYLE",
+          "sha256": "78270e8007dea7ebd84e580bb5fa1d936cc9118b375e9b8845b3cffc84d51c0c"
+        },
+        {
+          "path": ".agents/skills/uri-style/assets/style_03_waterfront.png",
+          "role": "STYLE",
+          "sha256": "25b75c83586e01222dde9cd164035afe9cba005b08cd2674eb6b9993aa12c053"
+        },
+        {
+          "path": ".agents/skills/uri-style/assets/style_06_architecture.png",
+          "role": "STYLE",
+          "sha256": "51118389231d7cf1832b8b466aa31af2b6950f04cc91b77473e1f94b5a56e59c"
+        }
+      ],
+      "output": "docs/uri_style/gorilla_v0_1/images/locked_machine_left_top_rev_aa2.png",
+      "output_sha256": "47835aa0ac34dff4c3d1eb467dbcd0b24d2184a2d73aa1363778653f35292110",
+      "generated_source": "/home/ethan/.codex/generated_images/01a0f3ab-7a57-7172-b8c5-e517aa2973da/exec-b05233ff-866f-4dda-877f-63483bee1aef.png",
+      "status": "left_top_candidate",
+      "notes": "Only LEFT and TOP generated. FRONT/REAR not redrawn. Forward vent projection and blue side fields present. TOP front lamp remains a small stub requiring further edge-only projection correction. No user acceptance or measured CAD validation."
+    },
+    {
+      "id": "G46",
+      "art_revision": "AA3",
+      "tool": "built-in imagegen",
+      "model_version": "not exposed by tool",
+      "orchestration_model": "gpt-6.1-sol",
+      "orchestration_effort": "xhigh",
+      "prompt": "docs/uri_style/gorilla_v0_1/prompts/top_lamp_edge_only_rev_aa3.txt",
+      "prompt_sha256": "0080d5c1b09ffa131559269c11f9280690ba85e17ff11951c9bccaa456185a96",
+      "inputs_in_order": [
+        {
+          "path": "docs/uri_style/gorilla_v0_1/images/locked_machine_left_top_rev_aa2.png",
+          "role": "TOP_LAMP_LOCAL_EDIT",
+          "sha256": "47835aa0ac34dff4c3d1eb467dbcd0b24d2184a2d73aa1363778653f35292110"
+        },
+        {
+          "path": ".agents/skills/uri-style/assets/style_01_headphones.png",
+          "role": "STYLE",
+          "sha256": "78270e8007dea7ebd84e580bb5fa1d936cc9118b375e9b8845b3cffc84d51c0c"
+        },
+        {
+          "path": ".agents/skills/uri-style/assets/style_03_waterfront.png",
+          "role": "STYLE",
+          "sha256": "25b75c83586e01222dde9cd164035afe9cba005b08cd2674eb6b9993aa12c053"
+        },
+        {
+          "path": ".agents/skills/uri-style/assets/style_06_architecture.png",
+          "role": "STYLE",
+          "sha256": "51118389231d7cf1832b8b466aa31af2b6950f04cc91b77473e1f94b5a56e59c"
+        }
+      ],
+      "output": "docs/uri_style/gorilla_v0_1/images/top_lamp_edge_only_rev_aa3.png",
+      "output_sha256": "824967a97a5338175792e04cbd47987dd64e89612fc135aaad6707c1434daead",
+      "generated_source": "/home/ethan/.codex/generated_images/01a0f3ab-7a57-7172-b8c5-e517aa2973da/exec-802087e2-a2a3-4bce-afb3-02391a714386.png",
+      "status": "local_top_lamp_correction_candidate",
+      "notes": "Full vertical TOP lamp stub reduced to a thin orange front edge. Final SVG uses only the small corrected lamp region from this image; all other LEFT/TOP areas reuse G45 unchanged."
+    },
+    {
+      "id": "G47",
+      "art_revision": "AA3_palette_candidates",
+      "tool": "built-in imagegen",
+      "mode": "image_edit",
+      "model_version": "not exposed by tool",
+      "prompt": "/home/ethan/Projects/Sai_Art/docs/uri_style/gorilla_v0_1/themes/prompts/yellow_purple.txt",
+      "prompt_sha256": "a0af3716dce89df465118aaf7aedf17daa34b66b4bb8562bfe896444fc97cb6e",
+      "inputs_in_order": [
+        {
+          "path": "/home/ethan/Projects/Sai_Art/docs/uri_style/gorilla_v0_1/images/locked_four_view_review_rev_aa3.png",
+          "role": "EDIT_TARGET",
+          "sha256": "5c0469708d7c878ac6253e6ac3e6276198bf3694235bbed3da66c8c743b5aba4"
+        },
+        {
+          "path": "/home/ethan/Projects/Sai_Art/.agents/skills/uri-style/assets/style_01_headphones.png",
+          "role": "STYLE_ONLY",
+          "sha256": "78270e8007dea7ebd84e580bb5fa1d936cc9118b375e9b8845b3cffc84d51c0c"
+        },
+        {
+          "path": "/home/ethan/Projects/Sai_Art/.agents/skills/uri-style/assets/style_03_waterfront.png",
+          "role": "STYLE_ONLY",
+          "sha256": "25b75c83586e01222dde9cd164035afe9cba005b08cd2674eb6b9993aa12c053"
+        },
+        {
+          "path": "/home/ethan/Projects/Sai_Art/.agents/skills/uri-style/assets/style_06_architecture.png",
+          "role": "STYLE_ONLY",
+          "sha256": "51118389231d7cf1832b8b466aa31af2b6950f04cc91b77473e1f94b5a56e59c"
+        }
+      ],
+      "output": "/home/ethan/Projects/Sai_Art/docs/uri_style/gorilla_v0_1/themes/images/yellow_purple.png",
+      "output_sha256": "21623e06167e73ebb482f38d1cc60183474487b6a05e11f42df7094021027209",
+      "generated_source": "/home/ethan/.codex/generated_images/01a0f3ab-7a57-7172-b8c5-e517aa2973da/exec-75acb4dd-02da-41ec-9396-d4b5ec548d80.png",
+      "status": "generated_candidate_awaiting_user_review",
+      "notes": "Self-designed palette variant; not a verified MicroDuck original theme."
+    },
+    {
+      "id": "G48",
+      "art_revision": "AA3_palette_candidates",
+      "tool": "built-in imagegen",
+      "mode": "image_edit",
+      "model_version": "not exposed by tool",
+      "prompt": "/home/ethan/Projects/Sai_Art/docs/uri_style/gorilla_v0_1/themes/prompts/white_orange.txt",
+      "prompt_sha256": "08755d18622caa5e0b780a91e8d6ec1b158a8e41cf0bc60c49fb2efb391a819b",
+      "inputs_in_order": [
+        {
+          "path": "/home/ethan/Projects/Sai_Art/docs/uri_style/gorilla_v0_1/images/locked_four_view_review_rev_aa3.png",
+          "role": "EDIT_TARGET",
+          "sha256": "5c0469708d7c878ac6253e6ac3e6276198bf3694235bbed3da66c8c743b5aba4"
+        },
+        {
+          "path": "/home/ethan/Projects/Sai_Art/.agents/skills/uri-style/assets/style_01_headphones.png",
+          "role": "STYLE_ONLY",
+          "sha256": "78270e8007dea7ebd84e580bb5fa1d936cc9118b375e9b8845b3cffc84d51c0c"
+        },
+        {
+          "path": "/home/ethan/Projects/Sai_Art/.agents/skills/uri-style/assets/style_03_waterfront.png",
+          "role": "STYLE_ONLY",
+          "sha256": "25b75c83586e01222dde9cd164035afe9cba005b08cd2674eb6b9993aa12c053"
+        },
+        {
+          "path": "/home/ethan/Projects/Sai_Art/.agents/skills/uri-style/assets/style_06_architecture.png",
+          "role": "STYLE_ONLY",
+          "sha256": "51118389231d7cf1832b8b466aa31af2b6950f04cc91b77473e1f94b5a56e59c"
+        }
+      ],
+      "output": "/home/ethan/Projects/Sai_Art/docs/uri_style/gorilla_v0_1/themes/images/white_orange.png",
+      "output_sha256": "546302784d7186edceb1cfccddcab249139388234e9fd68ba5b72de858c1cc72",
+      "generated_source": "/home/ethan/.codex/generated_images/01a0f3ab-7a57-7172-b8c5-e517aa2973da/exec-7e76cc78-7989-40f5-b87c-900e714bcec8.png",
+      "status": "generated_candidate_awaiting_user_review",
+      "notes": "Self-designed palette variant; not a verified MicroDuck original theme."
+    },
+    {
+      "id": "G49",
+      "art_revision": "AA3_palette_candidates",
+      "tool": "built-in imagegen",
+      "mode": "image_edit",
+      "model_version": "not exposed by tool",
+      "prompt": "/home/ethan/Projects/Sai_Art/docs/uri_style/gorilla_v0_1/themes/prompts/black_gold.txt",
+      "prompt_sha256": "3cfd9073292fcd16c0d1494a1872e9473400d0389d9668afb9481cff2f7da47a",
+      "inputs_in_order": [
+        {
+          "path": "/home/ethan/Projects/Sai_Art/docs/uri_style/gorilla_v0_1/images/locked_four_view_review_rev_aa3.png",
+          "role": "EDIT_TARGET",
+          "sha256": "5c0469708d7c878ac6253e6ac3e6276198bf3694235bbed3da66c8c743b5aba4"
+        },
+        {
+          "path": "/home/ethan/Projects/Sai_Art/.agents/skills/uri-style/assets/style_01_headphones.png",
+          "role": "STYLE_ONLY",
+          "sha256": "78270e8007dea7ebd84e580bb5fa1d936cc9118b375e9b8845b3cffc84d51c0c"
+        },
+        {
+          "path": "/home/ethan/Projects/Sai_Art/.agents/skills/uri-style/assets/style_03_waterfront.png",
+          "role": "STYLE_ONLY",
+          "sha256": "25b75c83586e01222dde9cd164035afe9cba005b08cd2674eb6b9993aa12c053"
+        },
+        {
+          "path": "/home/ethan/Projects/Sai_Art/.agents/skills/uri-style/assets/style_06_architecture.png",
+          "role": "STYLE_ONLY",
+          "sha256": "51118389231d7cf1832b8b466aa31af2b6950f04cc91b77473e1f94b5a56e59c"
+        }
+      ],
+      "output": "/home/ethan/Projects/Sai_Art/docs/uri_style/gorilla_v0_1/themes/images/black_gold.png",
+      "output_sha256": "d198ca0acb6d1460e341c1a77ffdb77cf425c2e0b063ba1371498a62ee9409bc",
+      "generated_source": "/home/ethan/.codex/generated_images/01a0f3ab-7a57-7172-b8c5-e517aa2973da/exec-f33e54f8-3642-40c0-8c5d-f16014cdae13.png",
+      "status": "generated_candidate_awaiting_user_review",
+      "notes": "Self-designed palette variant; not a verified MicroDuck original theme."
+    },
+    {
+      "id": "G50",
+      "art_revision": "AA3_palette_candidates",
+      "tool": "built-in imagegen",
+      "mode": "image_edit",
+      "model_version": "not exposed by tool",
+      "prompt": "/home/ethan/Projects/Sai_Art/docs/uri_style/gorilla_v0_1/themes/prompts/desert.txt",
+      "prompt_sha256": "58a83e81ad0894582eb21bc7d16fd5aa6bd0c2189b6520a309b4a688b2bae7d8",
+      "inputs_in_order": [
+        {
+          "path": "/home/ethan/Projects/Sai_Art/docs/uri_style/gorilla_v0_1/images/locked_four_view_review_rev_aa3.png",
+          "role": "EDIT_TARGET",
+          "sha256": "5c0469708d7c878ac6253e6ac3e6276198bf3694235bbed3da66c8c743b5aba4"
+        },
+        {
+          "path": "/home/ethan/Projects/Sai_Art/.agents/skills/uri-style/assets/style_01_headphones.png",
+          "role": "STYLE_ONLY",
+          "sha256": "78270e8007dea7ebd84e580bb5fa1d936cc9118b375e9b8845b3cffc84d51c0c"
+        },
+        {
+          "path": "/home/ethan/Projects/Sai_Art/.agents/skills/uri-style/assets/style_03_waterfront.png",
+          "role": "STYLE_ONLY",
+          "sha256": "25b75c83586e01222dde9cd164035afe9cba005b08cd2674eb6b9993aa12c053"
+        },
+        {
+          "path": "/home/ethan/Projects/Sai_Art/.agents/skills/uri-style/assets/style_06_architecture.png",
+          "role": "STYLE_ONLY",
+          "sha256": "51118389231d7cf1832b8b466aa31af2b6950f04cc91b77473e1f94b5a56e59c"
+        }
+      ],
+      "output": "/home/ethan/Projects/Sai_Art/docs/uri_style/gorilla_v0_1/themes/images/desert.png",
+      "output_sha256": "1d26d67da57e444d2941e022769018e2fb6988ba60c6ad66b75a4143c451f9e5",
+      "generated_source": "/home/ethan/.codex/generated_images/01a0f3ab-7a57-7172-b8c5-e517aa2973da/exec-9e6e7413-cbcd-4cfc-bf80-e44fe83913cd.png",
+      "status": "generated_candidate_awaiting_user_review",
+      "notes": "Self-designed palette variant; not a verified MicroDuck original theme."
+    },
+    {
+      "id": "G51",
+      "art_revision": "AA3_palette_candidates",
+      "tool": "built-in imagegen",
+      "mode": "image_edit",
+      "model_version": "not exposed by tool",
+      "prompt": "/home/ethan/Projects/Sai_Art/docs/uri_style/gorilla_v0_1/themes/prompts/black_gold_rear_edge_fix.txt",
+      "prompt_sha256": "59d142b102d88454fd8318266db10660135d63902ea402d8e072476b92cd7632",
+      "inputs_in_order": [
+        {
+          "path": "/home/ethan/Projects/Sai_Art/docs/uri_style/gorilla_v0_1/themes/images/black_gold.png",
+          "role": "EDIT_TARGET",
+          "sha256": "d198ca0acb6d1460e341c1a77ffdb77cf425c2e0b063ba1371498a62ee9409bc"
+        },
+        {
+          "path": "/home/ethan/Projects/Sai_Art/.agents/skills/uri-style/assets/style_01_headphones.png",
+          "role": "STYLE_ONLY",
+          "sha256": "78270e8007dea7ebd84e580bb5fa1d936cc9118b375e9b8845b3cffc84d51c0c"
+        },
+        {
+          "path": "/home/ethan/Projects/Sai_Art/.agents/skills/uri-style/assets/style_03_waterfront.png",
+          "role": "STYLE_ONLY",
+          "sha256": "25b75c83586e01222dde9cd164035afe9cba005b08cd2674eb6b9993aa12c053"
+        },
+        {
+          "path": "/home/ethan/Projects/Sai_Art/.agents/skills/uri-style/assets/style_06_architecture.png",
+          "role": "STYLE_ONLY",
+          "sha256": "51118389231d7cf1832b8b466aa31af2b6950f04cc91b77473e1f94b5a56e59c"
+        }
+      ],
+      "output": "/home/ethan/Projects/Sai_Art/docs/uri_style/gorilla_v0_1/themes/images/black_gold_rev_2.png",
+      "output_sha256": "6fc524f27bc9cfa00bb9e8bac12a427b70222ff4bed3247625cecebf761bf410",
+      "generated_source": "/home/ethan/.codex/generated_images/01a0f3ab-7a57-7172-b8c5-e517aa2973da/exec-eb7e6274-1afc-4aba-864e-ea1f44dfed87.png",
+      "status": "generated_candidate_awaiting_user_review",
+      "notes": "Local TOP rear service-door edge color correction only."
+    }
+  ],
+  "unexecuted_prompts": [
+    {
+      "path": "docs/uri_style/gorilla_v0_1/prompts/appearance_master_rev_c.txt",
+      "status": "not_called_after_user_rejected_blockout_as_appearance"
+    },
+    {
+      "path": "docs/uri_style/gorilla_v0_1/prompts/turnaround_rev_e.txt",
+      "status": "not_called_after_user_specified_extra_z_joint"
+    },
+    {
+      "path": "docs/uri_style/gorilla_v0_1/prompts/lower_leg_foot_refine_rev_g2.txt",
+      "status": "not_called_after_user_requested_discard_and_redraw"
+    },
+    {
+      "path": "docs/uri_style/gorilla_v0_1/prompts/convex_crown_rev_k.txt",
+      "status": "not_called; user redirects to main design and cancels further mathematical/tool experiments"
+    },
+    {
+      "path": "docs/uri_style/gorilla_v0_1/prompts/manifold_crown_rev_l.txt",
+      "status": "not_called; user redirects to main design and cancels further mathematical/tool experiments"
+    },
+    {
+      "path": "docs/uri_style/gorilla_v0_1/prompts/upper_core_guards_rev_r.txt",
+      "status": "not_called; user added foot and lower-link corrections, incorporated into guard_link_foot_rev_r.txt"
+    },
+    {
+      "path": "docs/uri_style/gorilla_v0_1/prompts/existing_blue_match_rev_s.txt",
+      "status": "not_called; user added overall balance and hard-guard perimeter corrections before generation, incorporated into balanced_original_blue_rev_s.txt"
+    },
+    {
+      "path": "docs/uri_style/gorilla_v0_1/prompts/grounded_coherent_lower_body_rev_t.txt",
+      "sha256": "627c89049596ee5f31db1057b34622c6a71f102e02782da6addecb74b38b3cfb",
+      "status": "not_called; superseded by combined upper-contour/minimalism feedback in Rev T"
+    },
+    {
+      "path": "docs/uri_style/gorilla_v0_1/prompts/internal_simplification_color_restore_rev_u.txt",
+      "sha256": "5c455d9a4c12cf411b0a790fe19961a212ea2d41072d27b68f1d8fa81122ffd2",
+      "status": "not_called; user added flat-top, upper-region material and structural-distribution corrections before U generation"
+    },
+    {
+      "path": "docs/uri_style/gorilla_v0_1/prompts/raised_surface_internal_simplification_rev_u_draft.txt",
+      "sha256": "086221408f733b277fb282dc23cc0f930403cd84d45bb8fb7cc2bb1e62ac094b",
+      "status": "not_called; draft preserved before latest user region-2 graphite/open-guard specification and height clarification"
+    },
+    {
+      "path": "docs/uri_style/gorilla_v0_1/prompts/blue_clearance_z_stance_rev_v_draft.txt",
+      "sha256": "a7badb1b044926e362d7c46f362dc0f1ee234d7ee8324964c56763fbb3a51b36",
+      "status": "not_called; superseded by four user palette references"
+    },
+    {
+      "path": "docs/uri_style/gorilla_v0_1/prompts/geometry_correction_rev_v3.txt",
+      "sha256": "78654002811ca2a897f6538c53f440409d189aa5d6bf8e9e76288a0479cdb8bc",
+      "status": "not_called; user redirected directly to coordinated three views and clarified necessary compound foot structure"
+    },
+    {
+      "path": "docs/uri_style/gorilla_v0_1/prompts/orthographic_registration_correction_rev_w2.txt",
+      "sha256": "3466f9c83be5b53c14ad454bd9707bcb5b661ba5321fa64d77ea5f5de8ab91dd",
+      "status": "not_called; user rejects inferred layout; latest feedback locks X width/Y height and asks Z-depth and tetrahedral core correction from original reference"
+    },
+    {
+      "path": "docs/uri_style/gorilla_v0_1/prompts/original_wedge_depth_three_view_rev_x.txt",
+      "sha256": "29705b7f91f25b07e6196d1a8e8c0a582bd5dfbc3a0a57523db32ee337a77db0",
+      "status": "not_called; user additionally rejects whole lower-leg and foot structure; staged original-reference side reconstruction first"
+    },
+    {
+      "path": "docs/uri_style/gorilla_v0_1/prompts/curved_wedge_fresh_z_three_view_rev_y.txt",
+      "sha256": "bf321e39cc466a447495ae3711b14ae52f9c5165011dadec3fdcdfdf9afcd523",
+      "status": "not_called; user locks other body regions to W and rejects forked legs; replace with bounded edit"
+    },
+    {
+      "prompt": "docs/uri_style/gorilla_v0_1/prompts/paint_correspondence_cleanup_rev_z8.txt",
+      "status": "cancelled_before_execution",
+      "reason": "User locks FRONT and REAR from G37; broad Z7 whole-sheet repaint superseded."
+    }
+  ],
+  "current_deliverables": [
+    "/home/ethan/Projects/Sai_Art/docs/uri_style/gorilla_v0_1/gorilla_v0_1_appearance_handoff_rev_aa3.zip",
+    "/home/ethan/Projects/Sai_Art/docs/uri_style/gorilla_v0_1/images/locked_four_view_review_rev_aa3.png"
+  ],
+  "dimension_lock": "docs/uri_style/gorilla_v0_1/dimension_lock.json",
+  "boundary": "Appearance redraw in progress. User review must pass before any handoff. No current approved delivery.",
+  "review_book": null,
+  "review_index": "docs/uri_style/gorilla_v0_1/review.html",
+  "archived_review_books": [
+    "docs/uri_style/gorilla_v0_1/gorilla_v0_1_review_rev_f.pdf"
+  ],
+  "surface_study": null,
+  "three_view_status": "FRONT/REAR selected from G37 with three latest local exceptions; LEFT/TOP reconstructed separately; assembled 2x2 candidate, not user accepted",
+  "abandoned_auxiliary_study": "source/manifold_method_notes_rev_l.md",
+  "auxiliary_study_status": "abandoned by user; not a current deliverable or appearance authority",
+  "model_request": {
+    "requested": "gpt-6.1-sol",
+    "status": "current_turn_context_verified_gpt_6.1_sol_xhigh",
+    "thread_id": "01a0f3ab-7a57-7172-b8c5-e517aa2973da",
+    "imagegen_model_version": "not exposed; separate from orchestration model"
+  },
+  "handoff_status": "AA3 package prepared for user manual handoff; no task messaging",
+  "feedback_audit": "docs/uri_style/gorilla_v0_1/feedback_audit_rev_y5.md",
+  "layout_correction": "Latest user owns layout: original standard square 2x2 FRONT upper-left, LEFT upper-right, REAR lower-left, TOP lower-right; blockout reference owns layout only.",
+  "locked_views": {
+    "source": "docs/uri_style/gorilla_v0_1/images/original_wedge_rebuild_rev_z1.png",
+    "views": [
+      "FRONT",
+      "REAR"
+    ],
+    "user_instruction": "FRONT 与 REAR 就用这里这俩了，不要再改了",
+    "later_local_exceptions": [
+      "radiators face straight forward",
+      "reduce unnecessary FRONT hip internal entities",
+      "reduce unnecessary REAR shoulder internal entities"
+    ],
+    "status": "selected_source_preserved_with_clipped_local_corrections",
+    "local_correction_candidate": "docs/uri_style/gorilla_v0_1/images/locked_front_rear_local_corrections_rev_aa1.png"
+  },
+  "current_review_artifact": "docs/uri_style/gorilla_v0_1/images/locked_four_view_review_rev_aa3.png",
+  "composition_record": "docs/uri_style/gorilla_v0_1/locked_view_composition_rev_aa3.json",
+  "verification": "docs/uri_style/gorilla_v0_1/verification_rev_aa3.json",
+  "palette_candidates": {
+    "catalog": "/home/ethan/Projects/Sai_Art/docs/uri_style/gorilla_v0_1/themes/theme_catalog.json",
+    "preview": "/home/ethan/Projects/Sai_Art/docs/uri_style/gorilla_v0_1/themes/index.html",
+    "status": "four_generated_candidates_not_user_accepted",
+    "original_uri_sha256": "5c0469708d7c878ac6253e6ac3e6276198bf3694235bbed3da66c8c743b5aba4"
+  }
+}

@@ -1,0 +1,970 @@
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "pelvis_service_armor", Modifier: "surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "pelvis_inner_bridge", Modifier: "surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "rear_hatch_marker_1", Modifier: "surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "rear_hatch_marker_-1", Modifier: "surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "rear_hatch_handle", Modifier: "surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "rear_blue_service_hatch", Modifier: "surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "rear_service_hatch_seal", Modifier: "surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "rear_service_shell", Modifier: "surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "central_amber_lamp_lens", Modifier: "surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "central_amber_lamp_trim", Modifier: "surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "central_amber_lamp_frame", Modifier: "surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "radiator_louver_1_8", Modifier: "surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "radiator_louver_1_7", Modifier: "surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "radiator_louver_1_6", Modifier: "surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "radiator_louver_1_5", Modifier: "surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "pelvis_amber_band", Modifier: "surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "radiator_louver_1_4", Modifier: "surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "radiator_amber_frame_-1", Modifier: "surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "radiator_housing_-1", Modifier: "surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "radiator_louver_1_3", Modifier: "surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "radiator_louver_-1_0", Modifier: "surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "radiator_louver_-1_1", Modifier: "surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "radiator_louver_1_2", Modifier: "surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "radiator_louver_-1_3", Modifier: "surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "radiator_dark_recess_-1", Modifier: "surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "radiator_louver_1_1", Modifier: "surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "radiator_louver_-1_4", Modifier: "surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "radiator_louver_-1_5", Modifier: "surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "radiator_louver_-1_2", Modifier: "surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "radiator_louver_1_0", Modifier: "surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "radiator_louver_-1_7", Modifier: "surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "radiator_louver_-1_8", Modifier: "surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "radiator_louver_-1_6", Modifier: "surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "radiator_dark_recess_1", Modifier: "surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "radiator_amber_frame_1", Modifier: "surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "radiator_housing_1", Modifier: "surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "distal_thigh_amber_cap_-1", Modifier: "clean_surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "shoulder_guard_-1", Modifier: "clean_surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "upper_arm_cover_-1", Modifier: "clean_surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "blue_upper_flank_-1", Modifier: "clean_surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "forearm_guard_-1", Modifier: "clean_surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "continuous_lower_leg_-1", Modifier: "clean_surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "thigh_armor_-1", Modifier: "clean_surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "continuous_wedge_core", Modifier: "clean_surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "shoulder_joint_envelope_-1", Modifier: "clean_surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "shoulder_rim_-1_-1", Modifier: "clean_surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "shoulder_rim_-1_1", Modifier: "clean_surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "elbow_joint_envelope_-1", Modifier: "clean_surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "elbow_rim_-1_-1", Modifier: "clean_surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "elbow_rim_-1_1", Modifier: "clean_surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "hip_joint_envelope_-1", Modifier: "clean_surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "hip_rim_-1_-1", Modifier: "clean_surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "hip_rim_-1_1", Modifier: "clean_surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "knee_joint_envelope_-1", Modifier: "clean_surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "knee_rim_-1_-1", Modifier: "clean_surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "knee_rim_-1_1", Modifier: "clean_surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "return_joint_envelope_-1", Modifier: "clean_surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "return_rim_-1_-1", Modifier: "clean_surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "return_rim_-1_1", Modifier: "clean_surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "ankle_joint_envelope_-1", Modifier: "clean_surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "ankle_rim_-1_-1", Modifier: "clean_surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "ankle_rim_-1_1", Modifier: "clean_surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "knee_return_bridge_-1", Modifier: "clean_surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "hip_to_thigh_inner_-1", Modifier: "clean_surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "lower_leg_inner_-1", Modifier: "clean_surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "arm_upper_inner_-1", Modifier: "clean_surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "integrated_foot_-1", Modifier: "clean_surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "arm_fore_inner_-1", Modifier: "clean_surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "continuous_sole_-1", Modifier: "clean_surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "ankle_bridge_cover_-1", Modifier: "clean_surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "toe_top_cover_-1", Modifier: "clean_surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "wrist_-1", Modifier: "clean_surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "hand_palm_-1", Modifier: "clean_surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "finger_knuckle_-1_0", Modifier: "clean_surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "finger_armor_-1_0", Modifier: "clean_surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "finger_tip_-1_0", Modifier: "clean_surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "finger_knuckle_-1_1", Modifier: "clean_surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "finger_armor_-1_1", Modifier: "clean_surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "finger_tip_-1_1", Modifier: "clean_surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "finger_knuckle_-1_2", Modifier: "clean_surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "finger_armor_-1_2", Modifier: "clean_surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "finger_tip_-1_2", Modifier: "clean_surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "finger_knuckle_-1_3", Modifier: "clean_surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "finger_armor_-1_3", Modifier: "clean_surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "finger_tip_-1_3", Modifier: "clean_surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "hand_thumb_-1", Modifier: "clean_surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "upper_arm_cover_1", Modifier: "clean_surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "forearm_guard_1", Modifier: "clean_surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "distal_thigh_amber_cap_1", Modifier: "clean_surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "blue_upper_flank_1", Modifier: "clean_surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "shoulder_guard_1", Modifier: "clean_surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "continuous_lower_leg_1", Modifier: "clean_surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "thigh_armor_1", Modifier: "clean_surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "shoulder_joint_envelope_1", Modifier: "clean_surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "shoulder_rim_1_-1", Modifier: "clean_surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "shoulder_rim_1_1", Modifier: "clean_surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "elbow_joint_envelope_1", Modifier: "clean_surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "elbow_rim_1_-1", Modifier: "clean_surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "elbow_rim_1_1", Modifier: "clean_surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "hip_joint_envelope_1", Modifier: "clean_surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "hip_rim_1_-1", Modifier: "clean_surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "hip_rim_1_1", Modifier: "clean_surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "knee_joint_envelope_1", Modifier: "clean_surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "knee_rim_1_-1", Modifier: "clean_surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "knee_rim_1_1", Modifier: "clean_surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "return_joint_envelope_1", Modifier: "clean_surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "return_rim_1_-1", Modifier: "clean_surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "return_rim_1_1", Modifier: "clean_surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "ankle_joint_envelope_1", Modifier: "clean_surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "ankle_rim_1_-1", Modifier: "clean_surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "ankle_rim_1_1", Modifier: "clean_surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "knee_return_bridge_1", Modifier: "clean_surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "hip_to_thigh_inner_1", Modifier: "clean_surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "lower_leg_inner_1", Modifier: "clean_surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "arm_upper_inner_1", Modifier: "clean_surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "integrated_foot_1", Modifier: "clean_surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "arm_fore_inner_1", Modifier: "clean_surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "continuous_sole_1", Modifier: "clean_surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "ankle_bridge_cover_1", Modifier: "clean_surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "toe_top_cover_1", Modifier: "clean_surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "wrist_1", Modifier: "clean_surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "hand_palm_1", Modifier: "clean_surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "finger_knuckle_1_0", Modifier: "clean_surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "finger_armor_1_0", Modifier: "clean_surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "finger_tip_1_0", Modifier: "clean_surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "finger_knuckle_1_1", Modifier: "clean_surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "finger_armor_1_1", Modifier: "clean_surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "finger_tip_1_1", Modifier: "clean_surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "finger_knuckle_1_2", Modifier: "clean_surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "finger_armor_1_2", Modifier: "clean_surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "finger_tip_1_2", Modifier: "clean_surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "finger_knuckle_1_3", Modifier: "clean_surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "finger_armor_1_3", Modifier: "clean_surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "finger_tip_1_3", Modifier: "clean_surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "hand_thumb_1", Modifier: "clean_surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "integrated_waist_bridge", Modifier: "clean_surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "short_waist_service_cover", Modifier: "clean_surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "waist_amber_strip", Modifier: "clean_surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "forward_radiator_housing_-1", Modifier: "clean_surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "forward_radiator_rim_-1", Modifier: "clean_surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "forward_radiator_recess_-1", Modifier: "clean_surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "radiator_louver_-1_0", Modifier: "clean_surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "radiator_louver_-1_1", Modifier: "clean_surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "radiator_louver_-1_2", Modifier: "clean_surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "radiator_louver_-1_3", Modifier: "clean_surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "radiator_louver_-1_4", Modifier: "clean_surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "radiator_louver_-1_5", Modifier: "clean_surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "radiator_louver_-1_6", Modifier: "clean_surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "radiator_louver_-1_7", Modifier: "clean_surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "radiator_louver_-1_8", Modifier: "clean_surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "forward_radiator_housing_1", Modifier: "clean_surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "forward_radiator_rim_1", Modifier: "clean_surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "forward_radiator_recess_1", Modifier: "clean_surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "radiator_louver_1_0", Modifier: "clean_surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "radiator_louver_1_1", Modifier: "clean_surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "radiator_louver_1_2", Modifier: "clean_surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "radiator_louver_1_3", Modifier: "clean_surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "radiator_louver_1_4", Modifier: "clean_surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "radiator_louver_1_5", Modifier: "clean_surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "radiator_louver_1_6", Modifier: "clean_surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "radiator_louver_1_7", Modifier: "clean_surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "radiator_louver_1_8", Modifier: "clean_surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "central_lamp_socket", Modifier: "clean_surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "central_lamp_trim", Modifier: "clean_surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "central_lamp_lens", Modifier: "clean_surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "rear_hatch_seal", Modifier: "clean_surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "rear_blue_service_hatch", Modifier: "clean_surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "rear_hatch_handle", Modifier: "clean_surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "hatch_latch_marker_-1", Modifier: "clean_surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "hatch_latch_marker_1", Modifier: "clean_surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "hatch_latch_marker_1", Modifier: "clean_surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "hatch_latch_marker_-1", Modifier: "clean_surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "rear_hatch_handle", Modifier: "clean_surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "rear_blue_service_hatch", Modifier: "clean_surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "rear_hatch_seal", Modifier: "clean_surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "central_lamp_lens", Modifier: "clean_surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "central_lamp_trim", Modifier: "clean_surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "shoulder_guard_-1", Modifier: "clean_surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "central_lamp_socket", Modifier: "clean_surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "radiator_louver_1_8", Modifier: "clean_surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "radiator_louver_1_7", Modifier: "clean_surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "upper_arm_cover_-1", Modifier: "clean_surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "forearm_guard_-1", Modifier: "clean_surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "radiator_louver_1_6", Modifier: "clean_surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "radiator_louver_1_5", Modifier: "clean_surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "radiator_louver_1_4", Modifier: "clean_surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "radiator_louver_1_3", Modifier: "clean_surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "radiator_louver_1_2", Modifier: "clean_surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "radiator_louver_1_1", Modifier: "clean_surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "radiator_louver_1_0", Modifier: "clean_surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "thigh_armor_-1", Modifier: "clean_surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "forward_radiator_recess_1", Modifier: "clean_surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "forward_radiator_rim_1", Modifier: "clean_surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "forward_radiator_housing_1", Modifier: "clean_surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "continuous_wedge_core", Modifier: "clean_surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "radiator_louver_-1_8", Modifier: "clean_surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "radiator_louver_-1_7", Modifier: "clean_surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "distal_thigh_amber_cap_-1", Modifier: "clean_surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "radiator_louver_-1_6", Modifier: "clean_surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "shoulder_rim_-1_-1", Modifier: "clean_surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "shoulder_joint_envelope_-1", Modifier: "clean_surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "radiator_louver_-1_5", Modifier: "clean_surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "radiator_louver_-1_4", Modifier: "clean_surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "radiator_louver_-1_3", Modifier: "clean_surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "radiator_louver_-1_2", Modifier: "clean_surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "radiator_louver_-1_1", Modifier: "clean_surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "elbow_joint_envelope_-1", Modifier: "clean_surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "continuous_lower_leg_-1", Modifier: "clean_surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "radiator_louver_-1_0", Modifier: "clean_surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "forward_radiator_recess_-1", Modifier: "clean_surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "blue_upper_flank_-1", Modifier: "clean_surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "forward_radiator_rim_-1", Modifier: "clean_surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "forward_radiator_housing_-1", Modifier: "clean_surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "waist_amber_strip", Modifier: "clean_surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "hip_joint_envelope_-1", Modifier: "clean_surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "shoulder_rim_-1_1", Modifier: "clean_surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "short_waist_service_cover", Modifier: "clean_surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "elbow_rim_-1_-1", Modifier: "clean_surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "elbow_rim_-1_1", Modifier: "clean_surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "integrated_waist_bridge", Modifier: "clean_surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "hand_thumb_1", Modifier: "clean_surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "finger_tip_1_3", Modifier: "clean_surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "finger_armor_1_3", Modifier: "clean_surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "hip_rim_-1_1", Modifier: "clean_surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "finger_knuckle_1_3", Modifier: "clean_surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "finger_tip_1_2", Modifier: "clean_surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "finger_armor_1_2", Modifier: "clean_surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "finger_knuckle_1_2", Modifier: "clean_surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "finger_tip_1_1", Modifier: "clean_surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "hip_rim_-1_-1", Modifier: "clean_surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "finger_armor_1_1", Modifier: "clean_surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "return_joint_envelope_-1", Modifier: "clean_surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "finger_knuckle_1_1", Modifier: "clean_surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "knee_rim_-1_-1", Modifier: "clean_surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "finger_tip_1_0", Modifier: "clean_surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "knee_joint_envelope_-1", Modifier: "clean_surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "finger_armor_1_0", Modifier: "clean_surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "finger_knuckle_1_0", Modifier: "clean_surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "hand_palm_1", Modifier: "clean_surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "return_rim_-1_1", Modifier: "clean_surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "knee_return_bridge_-1", Modifier: "clean_surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "hip_to_thigh_inner_-1", Modifier: "clean_surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "lower_leg_inner_-1", Modifier: "clean_surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "wrist_1", Modifier: "clean_surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "arm_upper_inner_-1", Modifier: "clean_surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "return_rim_-1_-1", Modifier: "clean_surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "toe_top_cover_1", Modifier: "clean_surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "arm_fore_inner_-1", Modifier: "clean_surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "ankle_bridge_cover_1", Modifier: "clean_surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "continuous_sole_-1", Modifier: "clean_surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "ankle_rim_-1_-1", Modifier: "clean_surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "continuous_sole_1", Modifier: "clean_surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "ankle_rim_-1_1", Modifier: "clean_surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "integrated_foot_-1", Modifier: "clean_surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "ankle_joint_envelope_-1", Modifier: "clean_surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "ankle_bridge_cover_-1", Modifier: "clean_surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "knee_rim_-1_1", Modifier: "clean_surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "integrated_foot_1", Modifier: "clean_surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "finger_knuckle_-1_0", Modifier: "clean_surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "arm_fore_inner_1", Modifier: "clean_surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "toe_top_cover_-1", Modifier: "clean_surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "hand_palm_-1", Modifier: "clean_surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "finger_tip_-1_0", Modifier: "clean_surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "arm_upper_inner_1", Modifier: "clean_surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "finger_armor_-1_0", Modifier: "clean_surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "finger_armor_-1_1", Modifier: "clean_surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "lower_leg_inner_1", Modifier: "clean_surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "finger_knuckle_-1_1", Modifier: "clean_surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "finger_armor_-1_2", Modifier: "clean_surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "finger_tip_-1_1", Modifier: "clean_surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "hip_to_thigh_inner_1", Modifier: "clean_surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "finger_knuckle_-1_2", Modifier: "clean_surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "finger_knuckle_-1_3", Modifier: "clean_surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "knee_return_bridge_1", Modifier: "clean_surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "finger_tip_-1_2", Modifier: "clean_surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "hand_thumb_-1", Modifier: "clean_surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "finger_armor_-1_3", Modifier: "clean_surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "finger_tip_-1_3", Modifier: "clean_surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "ankle_rim_1_1", Modifier: "clean_surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "wrist_-1", Modifier: "clean_surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "blue_upper_flank_1", Modifier: "clean_surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "ankle_rim_1_-1", Modifier: "clean_surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "upper_arm_cover_1", Modifier: "clean_surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "forearm_guard_1", Modifier: "clean_surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "ankle_joint_envelope_1", Modifier: "clean_surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "continuous_lower_leg_1", Modifier: "clean_surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "thigh_armor_1", Modifier: "clean_surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "return_rim_1_1", Modifier: "clean_surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "shoulder_rim_1_1", Modifier: "clean_surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "distal_thigh_amber_cap_1", Modifier: "clean_surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "shoulder_rim_1_-1", Modifier: "clean_surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "shoulder_joint_envelope_1", Modifier: "clean_surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "return_rim_1_-1", Modifier: "clean_surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "shoulder_guard_1", Modifier: "clean_surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "elbow_rim_1_-1", Modifier: "clean_surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "return_joint_envelope_1", Modifier: "clean_surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "elbow_joint_envelope_1", Modifier: "clean_surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "hip_rim_1_1", Modifier: "clean_surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "knee_rim_1_1", Modifier: "clean_surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "elbow_rim_1_1", Modifier: "clean_surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "hip_joint_envelope_1", Modifier: "clean_surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "hip_rim_1_-1", Modifier: "clean_surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "knee_rim_1_-1", Modifier: "clean_surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "knee_joint_envelope_1", Modifier: "clean_surface_normals", Enable 'Auto Smooth' in Object Data Properties
+Blender 4.0.2
+Read blend: "/home/ethan/Projects/Sai_Art/docs/uri_style/gorilla_v0_2/source/gorilla_clean_g3.blend"
+Fra:1 Mem:166.89M (Peak 171.37M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | continuous_wedge_core
+Fra:1 Mem:166.93M (Peak 171.37M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | upper_arm_cover_-1
+Fra:1 Mem:166.95M (Peak 171.37M) | Time:00:00.02 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | forearm_guard_-1
+Fra:1 Mem:167.18M (Peak 171.37M) | Time:00:00.02 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | thigh_armor_-1
+Fra:1 Mem:167.57M (Peak 171.37M) | Time:00:00.02 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | continuous_lower_leg_-1
+Fra:1 Mem:167.71M (Peak 171.37M) | Time:00:00.02 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | distal_thigh_amber_cap_-1
+Fra:1 Mem:167.77M (Peak 171.37M) | Time:00:00.02 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | shoulder_joint_envelope_-1
+Fra:1 Mem:167.83M (Peak 171.37M) | Time:00:00.02 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | shoulder_rim_-1_-1
+Fra:1 Mem:167.98M (Peak 171.37M) | Time:00:00.02 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | elbow_joint_envelope_-1
+Fra:1 Mem:168.11M (Peak 171.37M) | Time:00:00.02 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | elbow_rim_-1_-1
+Fra:1 Mem:168.18M (Peak 171.37M) | Time:00:00.02 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | hip_joint_envelope_-1
+Fra:1 Mem:168.30M (Peak 171.37M) | Time:00:00.02 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | hip_rim_-1_-1
+Fra:1 Mem:168.38M (Peak 171.37M) | Time:00:00.02 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | knee_rim_-1_-1
+Fra:1 Mem:168.38M (Peak 171.37M) | Time:00:00.02 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | knee_rim_-1_1
+Fra:1 Mem:168.38M (Peak 171.37M) | Time:00:00.02 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | return_joint_envelope_-1
+Fra:1 Mem:168.52M (Peak 171.37M) | Time:00:00.02 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | return_rim_-1_-1
+Fra:1 Mem:168.58M (Peak 171.37M) | Time:00:00.02 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | return_rim_-1_1
+Fra:1 Mem:168.58M (Peak 171.37M) | Time:00:00.02 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | ankle_rim_-1_-1
+Fra:1 Mem:168.69M (Peak 171.37M) | Time:00:00.02 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | ankle_rim_-1_1
+Fra:1 Mem:168.74M (Peak 171.37M) | Time:00:00.02 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | knee_return_bridge_-1
+Fra:1 Mem:168.80M (Peak 171.37M) | Time:00:00.02 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | hip_to_thigh_inner_-1
+Fra:1 Mem:168.81M (Peak 171.37M) | Time:00:00.02 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | arm_upper_inner_-1
+Fra:1 Mem:168.88M (Peak 171.37M) | Time:00:00.02 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | arm_fore_inner_-1
+Fra:1 Mem:168.90M (Peak 171.37M) | Time:00:00.02 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | continuous_sole_-1
+Fra:1 Mem:168.91M (Peak 171.37M) | Time:00:00.02 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | hatch_latch_marker_1
+Fra:1 Mem:168.92M (Peak 171.37M) | Time:00:00.02 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | ankle_bridge_cover_-1
+Fra:1 Mem:168.96M (Peak 171.37M) | Time:00:00.02 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | wrist_-1
+Fra:1 Mem:169.07M (Peak 171.37M) | Time:00:00.02 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | rear_hatch_handle
+Fra:1 Mem:169.12M (Peak 171.37M) | Time:00:00.02 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | finger_armor_-1_0
+Fra:1 Mem:169.15M (Peak 171.37M) | Time:00:00.02 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | finger_tip_-1_0
+Fra:1 Mem:169.16M (Peak 171.37M) | Time:00:00.02 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | finger_knuckle_-1_1
+Fra:1 Mem:169.17M (Peak 171.37M) | Time:00:00.02 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | finger_armor_-1_1
+Fra:1 Mem:169.19M (Peak 171.37M) | Time:00:00.02 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | finger_tip_-1_1
+Fra:1 Mem:169.23M (Peak 171.37M) | Time:00:00.02 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | finger_knuckle_-1_2
+Fra:1 Mem:169.23M (Peak 171.37M) | Time:00:00.02 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | finger_tip_-1_2
+Fra:1 Mem:169.28M (Peak 171.37M) | Time:00:00.02 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | finger_knuckle_-1_3
+Fra:1 Mem:169.29M (Peak 171.37M) | Time:00:00.02 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | finger_tip_-1_3
+Fra:1 Mem:169.33M (Peak 171.37M) | Time:00:00.02 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | hand_thumb_-1
+Fra:1 Mem:169.35M (Peak 171.37M) | Time:00:00.02 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | blue_upper_flank_1
+Fra:1 Mem:169.41M (Peak 171.37M) | Time:00:00.02 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | shoulder_guard_1
+Fra:1 Mem:169.41M (Peak 171.37M) | Time:00:00.02 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | central_lamp_lens
+Fra:1 Mem:169.54M (Peak 171.37M) | Time:00:00.02 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | central_lamp_trim
+Fra:1 Mem:169.57M (Peak 171.37M) | Time:00:00.02 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | central_lamp_socket
+Fra:1 Mem:169.69M (Peak 171.37M) | Time:00:00.02 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | upper_arm_cover_1
+Fra:1 Mem:169.75M (Peak 171.37M) | Time:00:00.02 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | continuous_lower_leg_1
+Fra:1 Mem:169.82M (Peak 171.37M) | Time:00:00.02 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | distal_thigh_amber_cap_1
+Fra:1 Mem:169.90M (Peak 171.37M) | Time:00:00.02 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | radiator_louver_1_7
+Fra:1 Mem:169.95M (Peak 171.37M) | Time:00:00.02 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | shoulder_joint_envelope_1
+Fra:1 Mem:170.01M (Peak 171.37M) | Time:00:00.02 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | radiator_louver_1_6
+Fra:1 Mem:170.21M (Peak 171.37M) | Time:00:00.02 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | radiator_louver_1_5
+Fra:1 Mem:170.31M (Peak 171.37M) | Time:00:00.02 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | radiator_louver_1_4
+Fra:1 Mem:170.35M (Peak 171.37M) | Time:00:00.02 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | radiator_louver_1_3
+Fra:1 Mem:170.37M (Peak 171.37M) | Time:00:00.02 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | shoulder_rim_1_-1
+Fra:1 Mem:170.52M (Peak 171.37M) | Time:00:00.02 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | radiator_louver_1_2
+Fra:1 Mem:170.53M (Peak 171.37M) | Time:00:00.02 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | elbow_rim_1_1
+Fra:1 Mem:170.58M (Peak 171.37M) | Time:00:00.02 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | hip_joint_envelope_1
+Fra:1 Mem:170.74M (Peak 171.37M) | Time:00:00.02 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | hip_rim_1_-1
+Fra:1 Mem:170.76M (Peak 171.37M) | Time:00:00.02 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | knee_joint_envelope_1
+Fra:1 Mem:170.80M (Peak 171.37M) | Time:00:00.02 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | knee_rim_1_-1
+Fra:1 Mem:170.92M (Peak 171.37M) | Time:00:00.02 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | radiator_louver_1_0
+Fra:1 Mem:170.98M (Peak 171.37M) | Time:00:00.02 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | return_joint_envelope_1
+Fra:1 Mem:170.99M (Peak 171.37M) | Time:00:00.02 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | forward_radiator_recess_1
+Fra:1 Mem:171.06M (Peak 171.37M) | Time:00:00.02 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | return_rim_1_1
+Fra:1 Mem:171.12M (Peak 171.37M) | Time:00:00.02 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | ankle_rim_1_-1
+Fra:1 Mem:171.17M (Peak 171.37M) | Time:00:00.02 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | ankle_rim_1_1
+Fra:1 Mem:171.27M (Peak 171.37M) | Time:00:00.02 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | forward_radiator_housing_1
+Fra:1 Mem:171.31M (Peak 171.37M) | Time:00:00.02 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | radiator_louver_-1_8
+Fra:1 Mem:171.31M (Peak 171.37M) | Time:00:00.02 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | hip_to_thigh_inner_1
+Fra:1 Mem:171.33M (Peak 171.37M) | Time:00:00.02 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | radiator_louver_-1_7
+Fra:1 Mem:171.34M (Peak 171.37M) | Time:00:00.02 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | lower_leg_inner_1
+Fra:1 Mem:171.41M (Peak 171.41M) | Time:00:00.02 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | arm_upper_inner_1
+Fra:1 Mem:171.43M (Peak 171.43M) | Time:00:00.02 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | arm_fore_inner_1
+Fra:1 Mem:171.52M (Peak 171.52M) | Time:00:00.02 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | integrated_foot_1
+Fra:1 Mem:171.54M (Peak 171.54M) | Time:00:00.02 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | continuous_sole_1
+Fra:1 Mem:171.56M (Peak 171.56M) | Time:00:00.02 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | radiator_louver_-1_6
+Fra:1 Mem:171.60M (Peak 171.60M) | Time:00:00.02 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | hand_palm_1
+Fra:1 Mem:171.61M (Peak 171.61M) | Time:00:00.02 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | toe_top_cover_1
+Fra:1 Mem:171.64M (Peak 171.64M) | Time:00:00.02 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | radiator_louver_-1_5
+Fra:1 Mem:171.66M (Peak 171.66M) | Time:00:00.02 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | finger_armor_1_0
+Fra:1 Mem:171.68M (Peak 171.68M) | Time:00:00.02 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | radiator_louver_-1_4
+Fra:1 Mem:171.69M (Peak 171.69M) | Time:00:00.02 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | finger_tip_1_0
+Fra:1 Mem:171.71M (Peak 171.71M) | Time:00:00.02 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | finger_knuckle_1_1
+Fra:1 Mem:171.73M (Peak 171.73M) | Time:00:00.02 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | finger_armor_1_1
+Fra:1 Mem:171.77M (Peak 171.77M) | Time:00:00.02 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | radiator_louver_-1_3
+Fra:1 Mem:171.81M (Peak 171.81M) | Time:00:00.02 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | finger_tip_1_1
+Fra:1 Mem:171.85M (Peak 171.85M) | Time:00:00.02 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | radiator_louver_-1_2
+Fra:1 Mem:171.85M (Peak 171.85M) | Time:00:00.02 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | finger_armor_1_2
+Fra:1 Mem:171.88M (Peak 171.88M) | Time:00:00.02 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | radiator_louver_-1_1
+Fra:1 Mem:171.91M (Peak 171.91M) | Time:00:00.02 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | finger_knuckle_1_3
+Fra:1 Mem:171.91M (Peak 171.91M) | Time:00:00.02 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | radiator_louver_-1_0
+Fra:1 Mem:171.93M (Peak 171.93M) | Time:00:00.02 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | finger_armor_1_3
+Fra:1 Mem:171.96M (Peak 171.96M) | Time:00:00.02 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | forward_radiator_recess_-1
+Fra:1 Mem:171.96M (Peak 171.96M) | Time:00:00.02 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | hand_thumb_1
+Fra:1 Mem:171.99M (Peak 171.99M) | Time:00:00.02 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | integrated_waist_bridge
+Fra:1 Mem:172.01M (Peak 172.01M) | Time:00:00.02 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | short_waist_service_cover
+Fra:1 Mem:172.02M (Peak 172.02M) | Time:00:00.02 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | waist_amber_strip
+Fra:1 Mem:172.04M (Peak 172.04M) | Time:00:00.02 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | forward_radiator_rim_-1
+Fra:1 Mem:172.14M (Peak 172.14M) | Time:00:00.02 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Initializing
+Fra:1 Mem:172.14M (Peak 172.14M) | Time:00:00.02 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Waiting for render to start
+Fra:1 Mem:172.14M (Peak 172.14M) | Time:00:00.02 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Loading render kernels (may take a few minutes the first time)
+Fra:1 Mem:172.14M (Peak 172.14M) | Time:00:00.02 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Updating Scene
+Fra:1 Mem:172.14M (Peak 172.14M) | Time:00:00.02 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Updating Shaders
+Fra:1 Mem:172.22M (Peak 172.22M) | Time:00:00.02 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Updating Procedurals
+Fra:1 Mem:172.22M (Peak 172.22M) | Time:00:00.02 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Updating Background
+Fra:1 Mem:172.22M (Peak 172.22M) | Time:00:00.02 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Updating Camera
+Fra:1 Mem:172.22M (Peak 172.22M) | Time:00:00.02 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Updating Meshes Flags
+Fra:1 Mem:172.22M (Peak 172.22M) | Time:00:00.02 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Updating Objects
+Fra:1 Mem:172.22M (Peak 172.22M) | Time:00:00.02 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Updating Objects | Copying Transformations to device
+Fra:1 Mem:172.25M (Peak 172.25M) | Time:00:00.02 | Mem:0.04M, Peak:0.04M | Scene, ViewLayer | Updating Objects | Applying Static Transformations
+Fra:1 Mem:172.25M (Peak 172.25M) | Time:00:00.02 | Mem:0.04M, Peak:0.04M | Scene, ViewLayer | Updating Particle Systems
+Fra:1 Mem:172.25M (Peak 172.25M) | Time:00:00.02 | Mem:0.04M, Peak:0.04M | Scene, ViewLayer | Updating Particle Systems | Copying Particles to device
+Fra:1 Mem:172.25M (Peak 172.25M) | Time:00:00.02 | Mem:0.04M, Peak:0.04M | Scene, ViewLayer | Updating Meshes
+Fra:1 Mem:173.72M (Peak 173.72M) | Time:00:00.02 | Mem:0.04M, Peak:0.04M | Scene, ViewLayer | Updating Mesh | Computing attributes
+Fra:1 Mem:174.30M (Peak 174.30M) | Time:00:00.02 | Mem:0.04M, Peak:0.04M | Scene, ViewLayer | Updating Mesh | Copying Attributes to device
+Fra:1 Mem:174.28M (Peak 174.30M) | Time:00:00.02 | Mem:0.60M, Peak:0.60M | Scene, ViewLayer | Updating Scene BVH | Building
+Fra:1 Mem:174.28M (Peak 174.30M) | Time:00:00.02 | Mem:0.60M, Peak:0.60M | Scene, ViewLayer | Updating Scene BVH | Building BVH
+Fra:1 Mem:179.78M (Peak 179.78M) | Time:00:00.05 | Mem:0.60M, Peak:0.60M | Scene, ViewLayer | Updating Scene BVH | Packing BVH triangles and strands
+Fra:1 Mem:180.14M (Peak 180.14M) | Time:00:00.05 | Mem:0.60M, Peak:0.60M | Scene, ViewLayer | Updating Scene BVH | Packing BVH nodes
+Fra:1 Mem:180.10M (Peak 181.30M) | Time:00:00.05 | Mem:0.60M, Peak:0.60M | Scene, ViewLayer | Updating Scene BVH | Copying BVH to device
+Fra:1 Mem:180.10M (Peak 181.30M) | Time:00:00.05 | Mem:3.51M, Peak:3.51M | Scene, ViewLayer | Updating Mesh | Computing normals
+Fra:1 Mem:183.41M (Peak 183.41M) | Time:00:00.05 | Mem:3.51M, Peak:3.51M | Scene, ViewLayer | Updating Mesh | Copying Mesh to device
+Fra:1 Mem:183.41M (Peak 183.41M) | Time:00:00.05 | Mem:6.81M, Peak:6.81M | Scene, ViewLayer | Updating Objects Flags
+Fra:1 Mem:183.41M (Peak 183.41M) | Time:00:00.05 | Mem:6.81M, Peak:6.81M | Scene, ViewLayer | Updating Primitive Offsets
+Fra:1 Mem:183.41M (Peak 183.41M) | Time:00:00.05 | Mem:6.81M, Peak:6.81M | Scene, ViewLayer | Updating Images
+Fra:1 Mem:183.41M (Peak 183.41M) | Time:00:00.05 | Mem:6.81M, Peak:6.81M | Scene, ViewLayer | Updating Camera Volume
+Fra:1 Mem:183.41M (Peak 183.41M) | Time:00:00.05 | Mem:6.81M, Peak:6.81M | Scene, ViewLayer | Updating Lookup Tables
+Fra:1 Mem:183.41M (Peak 183.41M) | Time:00:00.05 | Mem:6.89M, Peak:6.89M | Scene, ViewLayer | Updating Lights
+Fra:1 Mem:183.41M (Peak 183.41M) | Time:00:00.05 | Mem:6.89M, Peak:6.89M | Scene, ViewLayer | Updating Lights | Computing distribution
+Fra:1 Mem:183.41M (Peak 183.41M) | Time:00:00.05 | Mem:6.89M, Peak:6.89M | Scene, ViewLayer | Updating Lights | Computing tree
+Fra:1 Mem:183.47M (Peak 183.47M) | Time:00:00.05 | Mem:6.95M, Peak:6.95M | Scene, ViewLayer | Updating Integrator
+Fra:1 Mem:184.47M (Peak 184.47M) | Time:00:00.05 | Mem:7.95M, Peak:7.95M | Scene, ViewLayer | Updating Film
+Fra:1 Mem:184.47M (Peak 184.47M) | Time:00:00.05 | Mem:7.87M, Peak:7.95M | Scene, ViewLayer | Updating Lookup Tables
+Fra:1 Mem:184.47M (Peak 184.47M) | Time:00:00.05 | Mem:7.95M, Peak:7.95M | Scene, ViewLayer | Updating Baking
+Fra:1 Mem:184.47M (Peak 184.47M) | Time:00:00.05 | Mem:7.95M, Peak:7.95M | Scene, ViewLayer | Updating Device | Writing constant memory
+Fra:1 Mem:184.47M (Peak 184.47M) | Time:00:00.05 | Mem:7.95M, Peak:7.95M | Scene, ViewLayer | Sample 0/40
+Fra:1 Mem:233.94M (Peak 233.94M) | Time:00:00.50 | Remaining:00:17.47 | Mem:57.39M, Peak:57.39M | Scene, ViewLayer | Sample 1/40
+Fra:1 Mem:255.91M (Peak 299.86M) | Time:00:13.46 | Mem:57.39M, Peak:57.39M | Scene, ViewLayer | Sample 40/40
+Fra:1 Mem:255.91M (Peak 299.86M) | Time:00:13.46 | Mem:57.39M, Peak:57.39M | Scene, ViewLayer | Finished
+Saved: '/home/ethan/Projects/Sai_Art/docs/uri_style/gorilla_v0_2/images/front_native_g5.png'
+Time: 00:13.53 (Saving: 00:00.06)
+
+RETOPO_NATIVE_VIEW front
+Fra:1 Mem:233.94M (Peak 233.94M) | Time:00:00.00 | Mem:57.39M, Peak:57.39M | Scene, ViewLayer | Initializing
+Fra:1 Mem:233.94M (Peak 233.94M) | Time:00:00.00 | Mem:57.39M, Peak:57.39M | Scene, ViewLayer | Waiting for render to start
+Fra:1 Mem:233.94M (Peak 233.94M) | Time:00:00.00 | Mem:57.39M, Peak:57.39M | Scene, ViewLayer | Updating Scene
+Fra:1 Mem:233.94M (Peak 233.94M) | Time:00:00.00 | Mem:57.39M, Peak:57.39M | Scene, ViewLayer | Updating Shaders
+Fra:1 Mem:233.94M (Peak 233.94M) | Time:00:00.00 | Mem:57.39M, Peak:57.39M | Scene, ViewLayer | Updating Background
+Fra:1 Mem:233.94M (Peak 233.94M) | Time:00:00.00 | Mem:57.39M, Peak:57.39M | Scene, ViewLayer | Updating Camera
+Fra:1 Mem:233.94M (Peak 233.94M) | Time:00:00.00 | Mem:57.39M, Peak:57.39M | Scene, ViewLayer | Updating Objects
+Fra:1 Mem:233.94M (Peak 233.94M) | Time:00:00.00 | Mem:57.39M, Peak:57.39M | Scene, ViewLayer | Updating Particle Systems
+Fra:1 Mem:233.94M (Peak 233.94M) | Time:00:00.00 | Mem:57.39M, Peak:57.39M | Scene, ViewLayer | Updating Meshes
+Fra:1 Mem:233.94M (Peak 233.94M) | Time:00:00.00 | Mem:57.39M, Peak:57.39M | Scene, ViewLayer | Updating Objects Flags
+Fra:1 Mem:233.94M (Peak 233.94M) | Time:00:00.00 | Mem:57.39M, Peak:57.39M | Scene, ViewLayer | Updating Primitive Offsets
+Fra:1 Mem:233.94M (Peak 233.94M) | Time:00:00.00 | Mem:57.39M, Peak:57.39M | Scene, ViewLayer | Updating Images
+Fra:1 Mem:233.94M (Peak 233.94M) | Time:00:00.00 | Mem:57.39M, Peak:57.39M | Scene, ViewLayer | Updating Camera Volume
+Fra:1 Mem:233.94M (Peak 233.94M) | Time:00:00.00 | Mem:57.39M, Peak:57.39M | Scene, ViewLayer | Updating Lookup Tables
+Fra:1 Mem:233.94M (Peak 233.94M) | Time:00:00.00 | Mem:57.39M, Peak:57.39M | Scene, ViewLayer | Updating Lights
+Fra:1 Mem:233.94M (Peak 233.94M) | Time:00:00.00 | Mem:57.39M, Peak:57.39M | Scene, ViewLayer | Updating Integrator
+Fra:1 Mem:233.94M (Peak 233.94M) | Time:00:00.00 | Mem:57.39M, Peak:57.39M | Scene, ViewLayer | Updating Film
+Fra:1 Mem:233.94M (Peak 233.94M) | Time:00:00.00 | Mem:57.39M, Peak:57.39M | Scene, ViewLayer | Updating Lookup Tables
+Fra:1 Mem:233.94M (Peak 233.94M) | Time:00:00.00 | Mem:57.39M, Peak:57.39M | Scene, ViewLayer | Updating Baking
+Fra:1 Mem:233.94M (Peak 233.94M) | Time:00:00.00 | Mem:57.39M, Peak:57.39M | Scene, ViewLayer | Updating Device | Writing constant memory
+Fra:1 Mem:233.94M (Peak 233.94M) | Time:00:00.00 | Mem:57.39M, Peak:57.39M | Scene, ViewLayer | Sample 0/40
+Fra:1 Mem:233.94M (Peak 233.94M) | Time:00:00.27 | Remaining:00:10.82 | Mem:57.39M, Peak:57.39M | Scene, ViewLayer | Sample 1/40
+Fra:1 Mem:255.91M (Peak 299.86M) | Time:00:09.37 | Mem:57.39M, Peak:57.39M | Scene, ViewLayer | Sample 40/40
+Fra:1 Mem:255.91M (Peak 299.86M) | Time:00:09.37 | Mem:57.39M, Peak:57.39M | Scene, ViewLayer | Finished
+Saved: '/home/ethan/Projects/Sai_Art/docs/uri_style/gorilla_v0_2/images/left_native_g5.png'
+Time: 00:09.43 (Saving: 00:00.06)
+
+RETOPO_NATIVE_VIEW left
+Fra:1 Mem:233.94M (Peak 233.94M) | Time:00:00.00 | Mem:57.39M, Peak:57.39M | Scene, ViewLayer | Initializing
+Fra:1 Mem:233.94M (Peak 233.94M) | Time:00:00.00 | Mem:57.39M, Peak:57.39M | Scene, ViewLayer | Waiting for render to start
+Fra:1 Mem:233.94M (Peak 233.94M) | Time:00:00.00 | Mem:57.39M, Peak:57.39M | Scene, ViewLayer | Updating Scene
+Fra:1 Mem:233.94M (Peak 233.94M) | Time:00:00.00 | Mem:57.39M, Peak:57.39M | Scene, ViewLayer | Updating Shaders
+Fra:1 Mem:233.94M (Peak 233.94M) | Time:00:00.00 | Mem:57.39M, Peak:57.39M | Scene, ViewLayer | Updating Background
+Fra:1 Mem:233.94M (Peak 233.94M) | Time:00:00.00 | Mem:57.39M, Peak:57.39M | Scene, ViewLayer | Updating Camera
+Fra:1 Mem:233.94M (Peak 233.94M) | Time:00:00.00 | Mem:57.39M, Peak:57.39M | Scene, ViewLayer | Updating Objects
+Fra:1 Mem:233.94M (Peak 233.94M) | Time:00:00.00 | Mem:57.39M, Peak:57.39M | Scene, ViewLayer | Updating Particle Systems
+Fra:1 Mem:233.94M (Peak 233.94M) | Time:00:00.00 | Mem:57.39M, Peak:57.39M | Scene, ViewLayer | Updating Meshes
+Fra:1 Mem:233.94M (Peak 233.94M) | Time:00:00.00 | Mem:57.39M, Peak:57.39M | Scene, ViewLayer | Updating Objects Flags
+Fra:1 Mem:233.94M (Peak 233.94M) | Time:00:00.00 | Mem:57.39M, Peak:57.39M | Scene, ViewLayer | Updating Primitive Offsets
+Fra:1 Mem:233.94M (Peak 233.94M) | Time:00:00.00 | Mem:57.39M, Peak:57.39M | Scene, ViewLayer | Updating Images
+Fra:1 Mem:233.94M (Peak 233.94M) | Time:00:00.00 | Mem:57.39M, Peak:57.39M | Scene, ViewLayer | Updating Camera Volume
+Fra:1 Mem:233.94M (Peak 233.94M) | Time:00:00.00 | Mem:57.39M, Peak:57.39M | Scene, ViewLayer | Updating Lookup Tables
+Fra:1 Mem:233.94M (Peak 233.94M) | Time:00:00.00 | Mem:57.39M, Peak:57.39M | Scene, ViewLayer | Updating Lights
+Fra:1 Mem:233.94M (Peak 233.94M) | Time:00:00.00 | Mem:57.39M, Peak:57.39M | Scene, ViewLayer | Updating Integrator
+Fra:1 Mem:233.94M (Peak 233.94M) | Time:00:00.00 | Mem:57.39M, Peak:57.39M | Scene, ViewLayer | Updating Film
+Fra:1 Mem:233.94M (Peak 233.94M) | Time:00:00.00 | Mem:57.39M, Peak:57.39M | Scene, ViewLayer | Updating Lookup Tables
+Fra:1 Mem:233.94M (Peak 233.94M) | Time:00:00.00 | Mem:57.39M, Peak:57.39M | Scene, ViewLayer | Updating Baking
+Fra:1 Mem:233.94M (Peak 233.94M) | Time:00:00.00 | Mem:57.39M, Peak:57.39M | Scene, ViewLayer | Updating Device | Writing constant memory
+Fra:1 Mem:233.94M (Peak 233.94M) | Time:00:00.00 | Mem:57.39M, Peak:57.39M | Scene, ViewLayer | Sample 0/40
+Fra:1 Mem:233.94M (Peak 233.94M) | Time:00:00.26 | Remaining:00:10.47 | Mem:57.39M, Peak:57.39M | Scene, ViewLayer | Sample 1/40
+Fra:1 Mem:255.91M (Peak 299.86M) | Time:00:09.19 | Mem:57.39M, Peak:57.39M | Scene, ViewLayer | Sample 40/40
+Fra:1 Mem:255.91M (Peak 299.86M) | Time:00:09.19 | Mem:57.39M, Peak:57.39M | Scene, ViewLayer | Finished
+Saved: '/home/ethan/Projects/Sai_Art/docs/uri_style/gorilla_v0_2/images/rear_native_g5.png'
+Time: 00:09.26 (Saving: 00:00.06)
+
+RETOPO_NATIVE_VIEW rear
+Fra:1 Mem:233.94M (Peak 233.94M) | Time:00:00.00 | Mem:57.39M, Peak:57.39M | Scene, ViewLayer | Initializing
+Fra:1 Mem:233.94M (Peak 233.94M) | Time:00:00.00 | Mem:57.39M, Peak:57.39M | Scene, ViewLayer | Waiting for render to start
+Fra:1 Mem:233.94M (Peak 233.94M) | Time:00:00.00 | Mem:57.39M, Peak:57.39M | Scene, ViewLayer | Updating Scene
+Fra:1 Mem:233.94M (Peak 233.94M) | Time:00:00.00 | Mem:57.39M, Peak:57.39M | Scene, ViewLayer | Updating Shaders
+Fra:1 Mem:233.94M (Peak 233.94M) | Time:00:00.00 | Mem:57.39M, Peak:57.39M | Scene, ViewLayer | Updating Background
+Fra:1 Mem:233.94M (Peak 233.94M) | Time:00:00.00 | Mem:57.39M, Peak:57.39M | Scene, ViewLayer | Updating Camera
+Fra:1 Mem:233.94M (Peak 233.94M) | Time:00:00.00 | Mem:57.39M, Peak:57.39M | Scene, ViewLayer | Updating Objects
+Fra:1 Mem:233.94M (Peak 233.94M) | Time:00:00.00 | Mem:57.39M, Peak:57.39M | Scene, ViewLayer | Updating Particle Systems
+Fra:1 Mem:233.94M (Peak 233.94M) | Time:00:00.00 | Mem:57.39M, Peak:57.39M | Scene, ViewLayer | Updating Meshes
+Fra:1 Mem:233.94M (Peak 233.94M) | Time:00:00.00 | Mem:57.39M, Peak:57.39M | Scene, ViewLayer | Updating Objects Flags
+Fra:1 Mem:233.94M (Peak 233.94M) | Time:00:00.00 | Mem:57.39M, Peak:57.39M | Scene, ViewLayer | Updating Primitive Offsets
+Fra:1 Mem:233.94M (Peak 233.94M) | Time:00:00.00 | Mem:57.39M, Peak:57.39M | Scene, ViewLayer | Updating Images
+Fra:1 Mem:233.94M (Peak 233.94M) | Time:00:00.00 | Mem:57.39M, Peak:57.39M | Scene, ViewLayer | Updating Camera Volume
+Fra:1 Mem:233.94M (Peak 233.94M) | Time:00:00.00 | Mem:57.39M, Peak:57.39M | Scene, ViewLayer | Updating Lookup Tables
+Fra:1 Mem:233.94M (Peak 233.94M) | Time:00:00.00 | Mem:57.39M, Peak:57.39M | Scene, ViewLayer | Updating Lights
+Fra:1 Mem:233.94M (Peak 233.94M) | Time:00:00.00 | Mem:57.39M, Peak:57.39M | Scene, ViewLayer | Updating Integrator
+Fra:1 Mem:233.94M (Peak 233.94M) | Time:00:00.00 | Mem:57.39M, Peak:57.39M | Scene, ViewLayer | Updating Film
+Fra:1 Mem:233.94M (Peak 233.94M) | Time:00:00.00 | Mem:57.39M, Peak:57.39M | Scene, ViewLayer | Updating Lookup Tables
+Fra:1 Mem:233.94M (Peak 233.94M) | Time:00:00.00 | Mem:57.39M, Peak:57.39M | Scene, ViewLayer | Updating Baking
+Fra:1 Mem:233.94M (Peak 233.94M) | Time:00:00.00 | Mem:57.39M, Peak:57.39M | Scene, ViewLayer | Updating Device | Writing constant memory
+Fra:1 Mem:233.94M (Peak 233.94M) | Time:00:00.00 | Mem:57.39M, Peak:57.39M | Scene, ViewLayer | Sample 0/40
+Fra:1 Mem:233.94M (Peak 233.94M) | Time:00:00.18 | Remaining:00:06.98 | Mem:57.39M, Peak:57.39M | Scene, ViewLayer | Sample 1/40
+Fra:1 Mem:255.91M (Peak 299.86M) | Time:00:06.05 | Mem:57.39M, Peak:57.39M | Scene, ViewLayer | Sample 40/40
+Fra:1 Mem:255.91M (Peak 299.86M) | Time:00:06.05 | Mem:57.39M, Peak:57.39M | Scene, ViewLayer | Finished
+Saved: '/home/ethan/Projects/Sai_Art/docs/uri_style/gorilla_v0_2/images/top_native_g5.png'
+Time: 00:06.10 (Saving: 00:00.05)
+
+RETOPO_NATIVE_VIEW top
+Fra:1 Mem:233.94M (Peak 233.94M) | Time:00:00.00 | Mem:57.39M, Peak:57.39M | Scene, ViewLayer | Initializing
+Fra:1 Mem:233.94M (Peak 233.94M) | Time:00:00.00 | Mem:57.39M, Peak:57.39M | Scene, ViewLayer | Waiting for render to start
+Fra:1 Mem:233.94M (Peak 233.94M) | Time:00:00.00 | Mem:57.39M, Peak:57.39M | Scene, ViewLayer | Updating Scene
+Fra:1 Mem:233.94M (Peak 233.94M) | Time:00:00.00 | Mem:57.39M, Peak:57.39M | Scene, ViewLayer | Updating Shaders
+Fra:1 Mem:233.94M (Peak 233.94M) | Time:00:00.00 | Mem:57.39M, Peak:57.39M | Scene, ViewLayer | Updating Background
+Fra:1 Mem:233.94M (Peak 233.94M) | Time:00:00.00 | Mem:57.39M, Peak:57.39M | Scene, ViewLayer | Updating Camera
+Fra:1 Mem:233.94M (Peak 233.94M) | Time:00:00.00 | Mem:57.39M, Peak:57.39M | Scene, ViewLayer | Updating Objects
+Fra:1 Mem:233.94M (Peak 233.94M) | Time:00:00.00 | Mem:57.39M, Peak:57.39M | Scene, ViewLayer | Updating Particle Systems
+Fra:1 Mem:233.94M (Peak 233.94M) | Time:00:00.00 | Mem:57.39M, Peak:57.39M | Scene, ViewLayer | Updating Meshes
+Fra:1 Mem:233.94M (Peak 233.94M) | Time:00:00.00 | Mem:57.39M, Peak:57.39M | Scene, ViewLayer | Updating Objects Flags
+Fra:1 Mem:233.94M (Peak 233.94M) | Time:00:00.00 | Mem:57.39M, Peak:57.39M | Scene, ViewLayer | Updating Primitive Offsets
+Fra:1 Mem:233.94M (Peak 233.94M) | Time:00:00.00 | Mem:57.39M, Peak:57.39M | Scene, ViewLayer | Updating Images
+Fra:1 Mem:233.94M (Peak 233.94M) | Time:00:00.00 | Mem:57.39M, Peak:57.39M | Scene, ViewLayer | Updating Camera Volume
+Fra:1 Mem:233.94M (Peak 233.94M) | Time:00:00.00 | Mem:57.39M, Peak:57.39M | Scene, ViewLayer | Updating Lookup Tables
+Fra:1 Mem:233.94M (Peak 233.94M) | Time:00:00.00 | Mem:57.39M, Peak:57.39M | Scene, ViewLayer | Updating Lights
+Fra:1 Mem:233.94M (Peak 233.94M) | Time:00:00.00 | Mem:57.39M, Peak:57.39M | Scene, ViewLayer | Updating Integrator
+Fra:1 Mem:233.94M (Peak 233.94M) | Time:00:00.00 | Mem:57.39M, Peak:57.39M | Scene, ViewLayer | Updating Film
+Fra:1 Mem:233.94M (Peak 233.94M) | Time:00:00.00 | Mem:57.39M, Peak:57.39M | Scene, ViewLayer | Updating Lookup Tables
+Fra:1 Mem:233.94M (Peak 233.94M) | Time:00:00.00 | Mem:57.39M, Peak:57.39M | Scene, ViewLayer | Updating Baking
+Fra:1 Mem:233.94M (Peak 233.94M) | Time:00:00.00 | Mem:57.39M, Peak:57.39M | Scene, ViewLayer | Updating Device | Writing constant memory
+Fra:1 Mem:233.94M (Peak 233.94M) | Time:00:00.00 | Mem:57.39M, Peak:57.39M | Scene, ViewLayer | Sample 0/40
+Fra:1 Mem:233.94M (Peak 233.94M) | Time:00:00.48 | Remaining:00:18.97 | Mem:57.39M, Peak:57.39M | Scene, ViewLayer | Sample 1/40
+Fra:1 Mem:255.91M (Peak 299.86M) | Time:00:15.93 | Mem:57.39M, Peak:57.39M | Scene, ViewLayer | Sample 40/40
+Fra:1 Mem:255.91M (Peak 299.86M) | Time:00:15.93 | Mem:57.39M, Peak:57.39M | Scene, ViewLayer | Finished
+Saved: '/home/ethan/Projects/Sai_Art/docs/uri_style/gorilla_v0_2/images/reference_native_g5.png'
+Time: 00:16.00 (Saving: 00:00.06)
+
+RETOPO_NATIVE_VIEW reference
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "continuous_wedge_core", Modifier: "clean_surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "blue_upper_flank_-1", Modifier: "clean_surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "shoulder_guard_-1", Modifier: "clean_surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "upper_arm_cover_-1", Modifier: "clean_surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "forearm_guard_-1", Modifier: "clean_surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "thigh_armor_-1", Modifier: "clean_surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "continuous_lower_leg_-1", Modifier: "clean_surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "distal_thigh_amber_cap_-1", Modifier: "clean_surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "shoulder_joint_envelope_-1", Modifier: "clean_surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "shoulder_rim_-1_-1", Modifier: "clean_surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "shoulder_rim_-1_1", Modifier: "clean_surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "elbow_joint_envelope_-1", Modifier: "clean_surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "elbow_rim_-1_-1", Modifier: "clean_surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "elbow_rim_-1_1", Modifier: "clean_surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "hip_joint_envelope_-1", Modifier: "clean_surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "hip_rim_-1_-1", Modifier: "clean_surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "hip_rim_-1_1", Modifier: "clean_surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "knee_joint_envelope_-1", Modifier: "clean_surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "knee_rim_-1_-1", Modifier: "clean_surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "knee_rim_-1_1", Modifier: "clean_surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "return_joint_envelope_-1", Modifier: "clean_surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "return_rim_-1_-1", Modifier: "clean_surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "return_rim_-1_1", Modifier: "clean_surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "ankle_joint_envelope_-1", Modifier: "clean_surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "ankle_rim_-1_-1", Modifier: "clean_surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "ankle_rim_-1_1", Modifier: "clean_surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "knee_return_bridge_-1", Modifier: "clean_surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "hip_to_thigh_inner_-1", Modifier: "clean_surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "lower_leg_inner_-1", Modifier: "clean_surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "arm_upper_inner_-1", Modifier: "clean_surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "arm_fore_inner_-1", Modifier: "clean_surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "integrated_foot_-1", Modifier: "clean_surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "continuous_sole_-1", Modifier: "clean_surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "ankle_bridge_cover_-1", Modifier: "clean_surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "toe_top_cover_-1", Modifier: "clean_surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "wrist_-1", Modifier: "clean_surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "hand_palm_-1", Modifier: "clean_surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "finger_knuckle_-1_0", Modifier: "clean_surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "finger_armor_-1_0", Modifier: "clean_surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "finger_tip_-1_0", Modifier: "clean_surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "finger_knuckle_-1_1", Modifier: "clean_surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "finger_armor_-1_1", Modifier: "clean_surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "finger_tip_-1_1", Modifier: "clean_surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "finger_knuckle_-1_2", Modifier: "clean_surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "finger_armor_-1_2", Modifier: "clean_surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "finger_tip_-1_2", Modifier: "clean_surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "finger_knuckle_-1_3", Modifier: "clean_surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "finger_armor_-1_3", Modifier: "clean_surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "finger_tip_-1_3", Modifier: "clean_surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "hand_thumb_-1", Modifier: "clean_surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "blue_upper_flank_1", Modifier: "clean_surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "shoulder_guard_1", Modifier: "clean_surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "upper_arm_cover_1", Modifier: "clean_surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "forearm_guard_1", Modifier: "clean_surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "thigh_armor_1", Modifier: "clean_surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "continuous_lower_leg_1", Modifier: "clean_surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "distal_thigh_amber_cap_1", Modifier: "clean_surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "shoulder_joint_envelope_1", Modifier: "clean_surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "shoulder_rim_1_-1", Modifier: "clean_surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "shoulder_rim_1_1", Modifier: "clean_surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "elbow_joint_envelope_1", Modifier: "clean_surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "elbow_rim_1_-1", Modifier: "clean_surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "elbow_rim_1_1", Modifier: "clean_surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "hip_joint_envelope_1", Modifier: "clean_surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "hip_rim_1_-1", Modifier: "clean_surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "hip_rim_1_1", Modifier: "clean_surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "knee_joint_envelope_1", Modifier: "clean_surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "knee_rim_1_-1", Modifier: "clean_surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "knee_rim_1_1", Modifier: "clean_surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "return_joint_envelope_1", Modifier: "clean_surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "return_rim_1_-1", Modifier: "clean_surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "return_rim_1_1", Modifier: "clean_surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "ankle_joint_envelope_1", Modifier: "clean_surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "ankle_rim_1_-1", Modifier: "clean_surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "ankle_rim_1_1", Modifier: "clean_surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "knee_return_bridge_1", Modifier: "clean_surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "hip_to_thigh_inner_1", Modifier: "clean_surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "lower_leg_inner_1", Modifier: "clean_surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "arm_upper_inner_1", Modifier: "clean_surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "arm_fore_inner_1", Modifier: "clean_surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "integrated_foot_1", Modifier: "clean_surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "continuous_sole_1", Modifier: "clean_surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "ankle_bridge_cover_1", Modifier: "clean_surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "toe_top_cover_1", Modifier: "clean_surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "wrist_1", Modifier: "clean_surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "hand_palm_1", Modifier: "clean_surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "finger_knuckle_1_0", Modifier: "clean_surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "finger_armor_1_0", Modifier: "clean_surface_normals", Enable 'Auto Smooth' in Object Data Properties
+Info: Saved "gorilla_surface_g5.blend"
+09:39:23 | ERROR: Draco mesh compression is not available because library could not be found at /home/ethan/Softwares/blender-local/root/usr/bin/4.0/python/lib/python3.12/site-packages/libextern_draco.so
+09:39:23 | INFO: Starting glTF 2.0 export
+09:39:23 | INFO: Extracting primitive: continuous_wedge_core
+09:39:23 | INFO: Primitives created: 1
+09:39:23 | INFO: Extracting primitive: blue_upper_flank_-1
+09:39:23 | INFO: Primitives created: 1
+09:39:23 | INFO: Extracting primitive: shoulder_guard_-1
+09:39:23 | INFO: Primitives created: 1
+09:39:23 | INFO: Extracting primitive: upper_arm_cover_-1
+09:39:23 | INFO: Primitives created: 1
+09:39:23 | INFO: Extracting primitive: forearm_guard_-1
+09:39:23 | INFO: Primitives created: 1
+09:39:23 | INFO: Extracting primitive: thigh_armor_-1
+09:39:23 | INFO: Primitives created: 1
+09:39:23 | INFO: Extracting primitive: continuous_lower_leg_-1
+09:39:23 | INFO: Primitives created: 1
+09:39:23 | INFO: Extracting primitive: distal_thigh_amber_cap_-1
+09:39:23 | INFO: Primitives created: 1
+09:39:23 | INFO: Extracting primitive: Cylinder
+09:39:23 | INFO: Primitives created: 1
+09:39:23 | INFO: Extracting primitive: Cylinder.001
+09:39:23 | INFO: Primitives created: 1
+09:39:23 | INFO: Extracting primitive: Cylinder.002
+09:39:23 | INFO: Primitives created: 1
+09:39:23 | INFO: Extracting primitive: Cylinder.003
+09:39:23 | INFO: Primitives created: 1
+09:39:23 | INFO: Extracting primitive: Cylinder.004
+09:39:23 | INFO: Primitives created: 1
+09:39:23 | INFO: Extracting primitive: Cylinder.005
+09:39:23 | INFO: Primitives created: 1
+09:39:23 | INFO: Extracting primitive: Cylinder.006
+09:39:23 | INFO: Primitives created: 1
+09:39:23 | INFO: Extracting primitive: Cylinder.007
+09:39:23 | INFO: Primitives created: 1
+09:39:23 | INFO: Extracting primitive: Cylinder.008
+09:39:23 | INFO: Primitives created: 1
+09:39:23 | INFO: Extracting primitive: Cylinder.009
+09:39:23 | INFO: Primitives created: 1
+09:39:23 | INFO: Extracting primitive: Cylinder.010
+09:39:23 | INFO: Primitives created: 1
+09:39:23 | INFO: Extracting primitive: Cylinder.011
+09:39:23 | INFO: Primitives created: 1
+09:39:23 | INFO: Extracting primitive: Cylinder.012
+09:39:23 | INFO: Primitives created: 1
+09:39:23 | INFO: Extracting primitive: Cylinder.013
+09:39:23 | INFO: Primitives created: 1
+09:39:23 | INFO: Extracting primitive: Cylinder.014
+09:39:23 | INFO: Primitives created: 1
+09:39:23 | INFO: Extracting primitive: Cylinder.015
+09:39:23 | INFO: Primitives created: 1
+09:39:23 | INFO: Extracting primitive: Cylinder.016
+09:39:23 | INFO: Primitives created: 1
+09:39:23 | INFO: Extracting primitive: Cylinder.017
+09:39:23 | INFO: Primitives created: 1
+09:39:23 | INFO: Extracting primitive: Cube.036
+09:39:23 | INFO: Primitives created: 1
+09:39:23 | INFO: Extracting primitive: Cube.037
+09:39:23 | INFO: Primitives created: 1
+09:39:23 | INFO: Extracting primitive: Cube.038
+09:39:23 | INFO: Primitives created: 1
+09:39:23 | INFO: Extracting primitive: Cube.039
+09:39:23 | INFO: Primitives created: 1
+09:39:23 | INFO: Extracting primitive: Cube.040
+09:39:23 | INFO: Primitives created: 1
+09:39:23 | INFO: Extracting primitive: integrated_foot_-1
+09:39:23 | INFO: Primitives created: 1
+09:39:23 | INFO: Extracting primitive: Cube.041
+09:39:23 | INFO: Primitives created: 1
+09:39:23 | INFO: Extracting primitive: Cube.042
+09:39:23 | INFO: Primitives created: 1
+09:39:23 | INFO: Extracting primitive: Cube.043
+09:39:23 | INFO: Primitives created: 1
+09:39:23 | INFO: Extracting primitive: Cylinder.018
+09:39:23 | INFO: Primitives created: 1
+09:39:23 | INFO: Extracting primitive: Cube.044
+09:39:23 | INFO: Primitives created: 1
+09:39:23 | INFO: Extracting primitive: Cube.045
+09:39:23 | INFO: Primitives created: 1
+09:39:23 | INFO: Extracting primitive: Cube.046
+09:39:23 | INFO: Primitives created: 1
+09:39:23 | INFO: Extracting primitive: Cube.047
+09:39:23 | INFO: Primitives created: 1
+09:39:23 | INFO: Extracting primitive: Cube.048
+09:39:23 | INFO: Primitives created: 1
+09:39:23 | INFO: Extracting primitive: Cube.049
+09:39:23 | INFO: Primitives created: 1
+09:39:23 | INFO: Extracting primitive: Cube.050
+09:39:23 | INFO: Primitives created: 1
+09:39:23 | INFO: Extracting primitive: Cube.051
+09:39:23 | INFO: Primitives created: 1
+09:39:23 | INFO: Extracting primitive: Cube.052
+09:39:23 | INFO: Primitives created: 1
+09:39:23 | INFO: Extracting primitive: Cube.053
+09:39:23 | INFO: Primitives created: 1
+09:39:23 | INFO: Extracting primitive: Cube.054
+09:39:23 | INFO: Primitives created: 1
+09:39:23 | INFO: Extracting primitive: Cube.055
+09:39:23 | INFO: Primitives created: 1
+09:39:23 | INFO: Extracting primitive: Cube.056
+09:39:23 | INFO: Primitives created: 1
+09:39:23 | INFO: Extracting primitive: Cube.057
+09:39:23 | INFO: Primitives created: 1
+09:39:23 | INFO: Extracting primitive: blue_upper_flank_1
+09:39:23 | INFO: Primitives created: 1
+09:39:23 | INFO: Extracting primitive: shoulder_guard_1
+09:39:23 | INFO: Primitives created: 1
+09:39:23 | INFO: Extracting primitive: upper_arm_cover_1
+09:39:23 | INFO: Primitives created: 1
+09:39:23 | INFO: Extracting primitive: forearm_guard_1
+09:39:23 | INFO: Primitives created: 1
+09:39:23 | INFO: Extracting primitive: thigh_armor_1
+09:39:23 | INFO: Primitives created: 1
+09:39:23 | INFO: Extracting primitive: continuous_lower_leg_1
+09:39:23 | INFO: Primitives created: 1
+09:39:23 | INFO: Extracting primitive: distal_thigh_amber_cap_1
+09:39:23 | INFO: Primitives created: 1
+09:39:23 | INFO: Extracting primitive: Cylinder.019
+09:39:23 | INFO: Primitives created: 1
+09:39:23 | INFO: Extracting primitive: Cylinder.020
+09:39:23 | INFO: Primitives created: 1
+09:39:23 | INFO: Extracting primitive: Cylinder.021
+09:39:23 | INFO: Primitives created: 1
+09:39:23 | INFO: Extracting primitive: Cylinder.022
+09:39:23 | INFO: Primitives created: 1
+09:39:23 | INFO: Extracting primitive: Cylinder.023
+09:39:23 | INFO: Primitives created: 1
+09:39:23 | INFO: Extracting primitive: Cylinder.024
+09:39:23 | INFO: Primitives created: 1
+09:39:23 | INFO: Extracting primitive: Cylinder.025
+09:39:23 | INFO: Primitives created: 1
+09:39:23 | INFO: Extracting primitive: Cylinder.026
+09:39:23 | INFO: Primitives created: 1
+09:39:23 | INFO: Extracting primitive: Cylinder.027
+09:39:23 | INFO: Primitives created: 1
+09:39:23 | INFO: Extracting primitive: Cylinder.028
+09:39:23 | INFO: Primitives created: 1
+09:39:23 | INFO: Extracting primitive: Cylinder.029
+09:39:23 | INFO: Primitives created: 1
+09:39:23 | INFO: Extracting primitive: Cylinder.030
+09:39:23 | INFO: Primitives created: 1
+09:39:23 | INFO: Extracting primitive: Cylinder.031
+09:39:23 | INFO: Primitives created: 1
+09:39:23 | INFO: Extracting primitive: Cylinder.032
+09:39:23 | INFO: Primitives created: 1
+09:39:23 | INFO: Extracting primitive: Cylinder.033
+09:39:23 | INFO: Primitives created: 1
+09:39:23 | INFO: Extracting primitive: Cylinder.034
+09:39:23 | INFO: Primitives created: 1
+09:39:23 | INFO: Extracting primitive: Cylinder.035
+09:39:23 | INFO: Primitives created: 1
+09:39:23 | INFO: Extracting primitive: Cylinder.036
+09:39:23 | INFO: Primitives created: 1
+09:39:23 | INFO: Extracting primitive: Cube.058
+09:39:23 | INFO: Primitives created: 1
+09:39:23 | INFO: Extracting primitive: Cube.059
+09:39:23 | INFO: Primitives created: 1
+09:39:23 | INFO: Extracting primitive: Cube.060
+09:39:23 | INFO: Primitives created: 1
+09:39:23 | INFO: Extracting primitive: Cube.061
+09:39:23 | INFO: Primitives created: 1
+09:39:23 | INFO: Extracting primitive: Cube.062
+09:39:23 | INFO: Primitives created: 1
+09:39:23 | INFO: Extracting primitive: integrated_foot_1
+09:39:23 | INFO: Primitives created: 1
+09:39:23 | INFO: Extracting primitive: Cube.063
+09:39:23 | INFO: Primitives created: 1
+09:39:23 | INFO: Extracting primitive: Cube.064
+09:39:23 | INFO: Primitives created: 1
+09:39:23 | INFO: Extracting primitive: Cube.065
+09:39:23 | INFO: Primitives created: 1
+09:39:23 | INFO: Extracting primitive: Cylinder.037
+09:39:23 | INFO: Primitives created: 1
+09:39:23 | INFO: Extracting primitive: Cube.066
+09:39:23 | INFO: Primitives created: 1
+09:39:23 | INFO: Extracting primitive: Cube.067
+09:39:23 | INFO: Primitives created: 1
+09:39:23 | INFO: Extracting primitive: Cube.068WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "finger_tip_1_0", Modifier: "clean_surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "finger_knuckle_1_1", Modifier: "clean_surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "finger_armor_1_1", Modifier: "clean_surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "finger_tip_1_1", Modifier: "clean_surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "finger_knuckle_1_2", Modifier: "clean_surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "finger_armor_1_2", Modifier: "clean_surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "finger_tip_1_2", Modifier: "clean_surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "finger_knuckle_1_3", Modifier: "clean_surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "finger_armor_1_3", Modifier: "clean_surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "finger_tip_1_3", Modifier: "clean_surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "hand_thumb_1", Modifier: "clean_surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "integrated_waist_bridge", Modifier: "clean_surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "short_waist_service_cover", Modifier: "clean_surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "waist_amber_strip", Modifier: "clean_surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "forward_radiator_housing_-1", Modifier: "clean_surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "forward_radiator_rim_-1", Modifier: "clean_surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "forward_radiator_recess_-1", Modifier: "clean_surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "radiator_louver_-1_0", Modifier: "clean_surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "radiator_louver_-1_1", Modifier: "clean_surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "radiator_louver_-1_2", Modifier: "clean_surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "radiator_louver_-1_3", Modifier: "clean_surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "radiator_louver_-1_4", Modifier: "clean_surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "radiator_louver_-1_5", Modifier: "clean_surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "radiator_louver_-1_6", Modifier: "clean_surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "radiator_louver_-1_7", Modifier: "clean_surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "radiator_louver_-1_8", Modifier: "clean_surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "forward_radiator_housing_1", Modifier: "clean_surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "forward_radiator_rim_1", Modifier: "clean_surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "forward_radiator_recess_1", Modifier: "clean_surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "radiator_louver_1_0", Modifier: "clean_surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "radiator_louver_1_1", Modifier: "clean_surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "radiator_louver_1_2", Modifier: "clean_surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "radiator_louver_1_3", Modifier: "clean_surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "radiator_louver_1_4", Modifier: "clean_surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "radiator_louver_1_5", Modifier: "clean_surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "radiator_louver_1_6", Modifier: "clean_surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "radiator_louver_1_7", Modifier: "clean_surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "radiator_louver_1_8", Modifier: "clean_surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "central_lamp_socket", Modifier: "clean_surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "central_lamp_trim", Modifier: "clean_surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "central_lamp_lens", Modifier: "clean_surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "rear_hatch_seal", Modifier: "clean_surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "rear_blue_service_hatch", Modifier: "clean_surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "rear_hatch_handle", Modifier: "clean_surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "hatch_latch_marker_-1", Modifier: "clean_surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "hatch_latch_marker_1", Modifier: "clean_surface_normals", Enable 'Auto Smooth' in Object Data Properties
+
+09:39:23 | INFO: Primitives created: 1
+09:39:23 | INFO: Extracting primitive: Cube.069
+09:39:23 | INFO: Primitives created: 1
+09:39:23 | INFO: Extracting primitive: Cube.070
+09:39:23 | INFO: Primitives created: 1
+09:39:23 | INFO: Extracting primitive: Cube.071
+09:39:23 | INFO: Primitives created: 1
+09:39:23 | INFO: Extracting primitive: Cube.072
+09:39:23 | INFO: Primitives created: 1
+09:39:23 | INFO: Extracting primitive: Cube.073
+09:39:23 | INFO: Primitives created: 1
+09:39:23 | INFO: Extracting primitive: Cube.074
+09:39:23 | INFO: Primitives created: 1
+09:39:23 | INFO: Extracting primitive: Cube.075
+09:39:23 | INFO: Primitives created: 1
+09:39:23 | INFO: Extracting primitive: Cube.076
+09:39:23 | INFO: Primitives created: 1
+09:39:23 | INFO: Extracting primitive: Cube.077
+09:39:23 | INFO: Primitives created: 1
+09:39:23 | INFO: Extracting primitive: Cube.078
+09:39:23 | INFO: Primitives created: 1
+09:39:23 | INFO: Extracting primitive: Cube.079
+09:39:23 | INFO: Primitives created: 1
+09:39:23 | INFO: Extracting primitive: Cube.080
+09:39:23 | INFO: Primitives created: 1
+09:39:23 | INFO: Extracting primitive: Cube.081
+09:39:23 | INFO: Primitives created: 1
+09:39:23 | INFO: Extracting primitive: Cube.082
+09:39:23 | INFO: Primitives created: 1
+09:39:23 | INFO: Extracting primitive: Cube.083
+09:39:23 | INFO: Primitives created: 1
+09:39:23 | INFO: Extracting primitive: Cube.084
+09:39:23 | INFO: Primitives created: 1
+09:39:23 | INFO: Extracting primitive: Cube.085
+09:39:23 | INFO: Primitives created: 1
+09:39:23 | INFO: Extracting primitive: Cube.086
+09:39:23 | INFO: Primitives created: 1
+09:39:23 | INFO: Extracting primitive: Cube.087
+09:39:23 | INFO: Primitives created: 1
+09:39:23 | INFO: Extracting primitive: Cube.088
+09:39:23 | INFO: Primitives created: 1
+09:39:23 | INFO: Extracting primitive: Cube.089
+09:39:23 | INFO: Primitives created: 1
+09:39:23 | INFO: Extracting primitive: Cube.090
+09:39:23 | INFO: Primitives created: 1
+09:39:23 | INFO: Extracting primitive: Cube.091
+09:39:23 | INFO: Primitives created: 1
+09:39:23 | INFO: Extracting primitive: Cube.092
+09:39:23 | INFO: Primitives created: 1
+09:39:23 | INFO: Extracting primitive: Cube.093
+09:39:23 | INFO: Primitives created: 1
+09:39:23 | INFO: Extracting primitive: Cube.094
+09:39:23 | INFO: Primitives created: 1
+09:39:23 | INFO: Extracting primitive: Cube.095
+09:39:23 | INFO: Primitives created: 1
+09:39:23 | INFO: Extracting primitive: Cube.096
+09:39:23 | INFO: Primitives created: 1
+09:39:23 | INFO: Extracting primitive: Cube.097
+09:39:23 | INFO: Primitives created: 1
+09:39:23 | INFO: Extracting primitive: Cube.098
+09:39:23 | INFO: Primitives created: 1
+09:39:23 | INFO: Extracting primitive: Cube.099
+09:39:23 | INFO: Primitives created: 1
+09:39:23 | INFO: Extracting primitive: Cube.100
+09:39:23 | INFO: Primitives created: 1
+09:39:23 | INFO: Extracting primitive: Cube.101
+09:39:23 | INFO: Primitives created: 1
+09:39:23 | INFO: Extracting primitive: Cube.102
+09:39:23 | INFO: Primitives created: 1
+09:39:23 | INFO: Extracting primitive: Cube.103
+09:39:23 | INFO: Primitives created: 1
+09:39:23 | INFO: Extracting primitive: Cube.104
+09:39:23 | INFO: Primitives created: 1
+09:39:23 | INFO: Extracting primitive: Cube.105
+09:39:23 | INFO: Primitives created: 1
+09:39:23 | INFO: Extracting primitive: Cube.106
+09:39:23 | INFO: Primitives created: 1
+09:39:23 | INFO: Extracting primitive: Cube.107
+09:39:23 | INFO: Primitives created: 1
+09:39:23 | INFO: Extracting primitive: Cube.108
+09:39:23 | INFO: Primitives created: 1
+09:39:23 | INFO: Extracting primitive: Cube.109
+09:39:23 | INFO: Primitives created: 1
+09:39:23 | INFO: Extracting primitive: Cube.110
+09:39:23 | INFO: Primitives created: 1
+09:39:23 | INFO: Extracting primitive: Cube.111
+09:39:23 | INFO: Primitives created: 1
+09:39:23 | INFO: Extracting primitive: Cube.112
+09:39:23 | INFO: Primitives created: 1
+09:39:23 | INFO: Extracting primitive: Cube.113
+09:39:23 | INFO: Primitives created: 1
+09:39:23 | INFO: Extracting primitive: Cube.114
+09:39:23 | INFO: Primitives created: 1
+09:39:23 | INFO: Finished glTF 2.0 export in 0.23006939888000488 s
+
+RETOPOLOGY_G5_COMPLETE 56.0453085899353
+
+Blender quit

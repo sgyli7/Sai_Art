@@ -1,0 +1,274 @@
+{
+  "primary_leg_source": "source/lower_dense_surface_s7.blend",
+  "primary_user_reference": "references/user_primary_dense_lower_s6.jpg",
+  "foot_only_source": "source/complete_foot_reference_highpoly_s6.blend",
+  "foot_only_user_reference": "references/user_foot_only_dense_reference_s6.jpg",
+  "source_leg_world_vertex_hashes_before": {
+    "pixal_clear_side_leg": "2faf52b24118dcfaa2be66761099b0548abb17fc6ae736170d2d8c929f128e1d",
+    "pixal_mirrored_leg": "6e850e9e686b0ae4ad65535caa4eaf1e850c2a8c01c85787d507c5ffacb55926"
+  },
+  "source_leg_world_vertex_hashes_after": {
+    "pixal_clear_side_leg": "2faf52b24118dcfaa2be66761099b0548abb17fc6ae736170d2d8c929f128e1d",
+    "pixal_mirrored_leg": "6e850e9e686b0ae4ad65535caa4eaf1e850c2a8c01c85787d507c5ffacb55926"
+  },
+  "selected_leg_geometry_unchanged": true,
+  "foot_clip": {
+    "original_retained_vertices": 1759527,
+    "new_cut_edge_vertices": 4392,
+    "original_below_plane_coordinates_unchanged": true,
+    "removed_scope": "Reference shank and all upper leg geometry above the foot interface"
+  },
+  "foot_topology": {
+    "cut_caps": 119,
+    "boundary_edges": 132970,
+    "multi_face_edges": 265298,
+    "signed_volume": 0.0012934668582634187
+  },
+  "foot_transform": {
+    "yaw_degrees": 56.42830795149011,
+    "uniform_scale": 0.4,
+    "source_neck_center": [
+      0.10803413391113281,
+      0.0971212387084961,
+      -0.135
+    ],
+    "translation": [
+      0.19847207022861765,
+      -0.08548782029050651,
+      -0.311
+    ],
+    "connector_plane_z": -0.365,
+    "source_foot_surface_not_stretched_or_primitive_replaced": true
+  },
+  "bounds_xyz": [
+    [
+      -0.263761043548584,
+      -0.2486441731452942,
+      -0.47506630420684814
+    ],
+    [
+      0.263761043548584,
+      0.1145731508731842,
+      0.06700000166893005
+    ]
+  ],
+  "views": {
+    "front": {
+      "image": "images/lower_dense_assembled_front_s8.png",
+      "span_px": [
+        965.1261974994957,
+        991.7355228417988
+      ],
+      "shared_geometry_sha256": "428a313050a14c35abc0a7776c1193fce5ca2dee416bb28a332b06ccf49972e2",
+      "camera_matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          -4.371138828673793e-08,
+          -1.0,
+          -3.067035436630249
+        ],
+        [
+          0.0,
+          1.0,
+          -4.371138828673793e-08,
+          -0.20403315126895905
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    "left": {
+      "image": "images/lower_dense_assembled_left_s8.png",
+      "span_px": [
+        664.523052445441,
+        991.7355878095943
+      ],
+      "shared_geometry_sha256": "428a313050a14c35abc0a7776c1193fce5ca2dee416bb28a332b06ccf49972e2",
+      "camera_matrix_world": [
+        [
+          7.549790126404332e-08,
+          -7.549790126404332e-08,
+          1.0,
+          3.0
+        ],
+        [
+          1.0,
+          5.6999328827277325e-15,
+          -7.549790126404332e-08,
+          -0.06703551113605499
+        ],
+        [
+          0.0,
+          1.0,
+          7.549790126404332e-08,
+          -0.20403315126895905
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    "rear": {
+      "image": "images/lower_dense_assembled_rear_s8.png",
+      "span_px": [
+        965.1261974994957,
+        991.7356042409117
+      ],
+      "shared_geometry_sha256": "428a313050a14c35abc0a7776c1193fce5ca2dee416bb28a332b06ccf49972e2",
+      "camera_matrix_world": [
+        [
+          -1.0,
+          -8.742277657347586e-08,
+          -8.742277657347586e-08,
+          0.0
+        ],
+        [
+          -8.742277657347586e-08,
+          4.371138118131057e-08,
+          1.0,
+          2.932964563369751
+        ],
+        [
+          -8.74227694680485e-08,
+          1.0,
+          -4.371138828673793e-08,
+          -0.20403315126895905
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    "top": {
+      "image": "images/lower_dense_assembled_top_s8.png",
+      "span_px": [
+        965.1261974994957,
+        664.5229903545743
+      ],
+      "shared_geometry_sha256": "428a313050a14c35abc0a7776c1193fce5ca2dee416bb28a332b06ccf49972e2",
+      "camera_matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          -0.06703551113605499
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          2.795966863632202
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    "front_oblique": {
+      "image": "images/lower_dense_assembled_front_oblique_s8.png",
+      "span_px": [
+        1074.1121732476952,
+        1196.5277854069843
+      ],
+      "shared_geometry_sha256": "428a313050a14c35abc0a7776c1193fce5ca2dee416bb28a332b06ccf49972e2",
+      "camera_matrix_world": [
+        [
+          0.7071067094802856,
+          -0.24402673542499542,
+          0.6636648774147034,
+          1.9909944534301758
+        ],
+        [
+          0.70710688829422,
+          0.2440265566110611,
+          -0.6636647582054138,
+          -2.058029890060425
+        ],
+        [
+          8.393525519068135e-08,
+          0.9385637640953064,
+          0.3451057970523834,
+          0.8312839269638062
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    "rear_oblique": {
+      "image": "images/lower_dense_assembled_rear_oblique_s8.png",
+      "span_px": [
+        1074.11225964556,
+        1179.0789148948304
+      ],
+      "shared_geometry_sha256": "428a313050a14c35abc0a7776c1193fce5ca2dee416bb28a332b06ccf49972e2",
+      "camera_matrix_world": [
+        [
+          -0.7071067690849304,
+          -0.24402666091918945,
+          0.6636648178100586,
+          1.9909944534301758
+        ],
+        [
+          0.7071067690849304,
+          -0.24402663111686707,
+          0.6636648178100586,
+          1.9239588975906372
+        ],
+        [
+          -1.669983618057813e-08,
+          0.9385637640953064,
+          0.3451057970523834,
+          0.8312839269638062
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    }
+  },
+  "shared_geometry_sha256": "428a313050a14c35abc0a7776c1193fce5ca2dee416bb28a332b06ccf49972e2",
+  "projection_checks": {
+    "front_left_height": true,
+    "front_top_width": true,
+    "left_top_depth": true
+  },
+  "upper_body": "v0.1 identity unchanged; omitted from this lower assembly study",
+  "units": "Existing normalized appearance coordinates; no mass, strength or metre conversion claimed",
+  "appearance_accepted": false,
+  "engineering_ready": false,
+  "interface_status": "Positioned appearance candidate; inspect shank/ankle junction before adoption",
+  "collision_mass_strength_validation": false,
+  "elapsed_seconds": 146.57616591453552
+}

@@ -1,0 +1,44 @@
+{
+  "revision": "p25",
+  "prompt": "/home/ethan/Projects/Sai_Art/docs/uri_style/gorilla_v0_2/prompts/knee_component_recolor_p25.txt",
+  "references": [
+    {
+      "path": "/home/ethan/Projects/Sai_Art/docs/uri_style/gorilla_v0_2/images/gorilla_four_view_top_replaced_p24.png",
+      "role": "EDIT_TARGET",
+      "sha256": "70c77eff1eb4b7b94d39c103aacad41220ede8e6ade10d391180818fbfcf2f40"
+    },
+    {
+      "path": "/home/ethan/Projects/Sai_Art/docs/uri_style/gorilla_v0_2/references/user_knee_component_color_annotations_p25.png",
+      "role": "USER_ERROR_LOCATION_ONLY_OLD_TOP_IGNORED",
+      "sha256": "119b58dfa3663979103781471b2416cfbd8071e210cae43b7b367deb44b6b32b"
+    },
+    {
+      "path": "/home/ethan/Projects/Sai_Art/.agents/skills/uri-style/assets/style_01_race_car_hangar.png",
+      "role": "STYLE",
+      "sha256": "1aed979f442030b644db5b86c79ad69d44f14092f865eb28f157663476eec8c9"
+    },
+    {
+      "path": "/home/ethan/Projects/Sai_Art/.agents/skills/uri-style/assets/style_03_tracked_mobile_station.png",
+      "role": "STYLE",
+      "sha256": "da14249a726ca5009b222a0dd7dc2c7a1fdbfe49ef31b8080936e855e8eb1f6f"
+    },
+    {
+      "path": "/home/ethan/Projects/Sai_Art/.agents/skills/uri-style/assets/style_05_white_blue_racer.png",
+      "role": "STYLE",
+      "sha256": "fc5f342e892842887e738798b5870b9245fb3c7376a028c5f503301ac687f1bc"
+    }
+  ],
+  "fixed_style_subset": [
+    1,
+    3,
+    5
+  ],
+  "native_component_allocation": "lower_component_color_p25.json",
+  "status": "superseded_by_user_black_knee_choice",
+  "user_accepted": false,
+  "generated_file": "/home/ethan/.codex/generated_images/01a0f3ab-7a57-7172-b8c5-e517aa2973da/exec-d7ac0fb5-3b33-4d6d-bfaa-04d2746a1427.png",
+  "saved_image": "/home/ethan/Projects/Sai_Art/docs/uri_style/gorilla_v0_2/images/knee_component_recolor_generated_p25.png",
+  "saved_image_sha256": "8fc899ab630f057e94b0c1892f220d05431d9ac730f790311ffb3e6f9916ed54",
+  "applied_scope": "Illustration only per latest user correction; native color experiment is separate and excluded from requested original-model delivery.",
+  "superseding_revision": "p26"
+}

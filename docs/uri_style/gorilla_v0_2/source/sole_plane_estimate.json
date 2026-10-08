@@ -1,0 +1,10 @@
+{
+  "native_yaw_correction_deg": -20,
+  "lower_envelope_plane_z_ax_by_c": [
+    -0.2294098912664151,
+    -0.17364611732497176,
+    -0.40957814830472694
+  ],
+  "samples": 63,
+  "scope": "Visible reconstructed sole, orientation aid only; not a ground-contact validation."
+}

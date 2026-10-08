@@ -1,0 +1,34 @@
+
+Use case: precise-object-edit. Correct image 1's four-view Gorilla sheet. KEEP its 2x2 layout: FRONT upper-left, LEFT upper-right, REAR lower-left, TOP lower-right. Images 2/3/4 fixed URI STYLE only.
+
+MAIN ERROR: LEFT and TOP show an inflated long beak-like torso that does not match FRONT. CORRECT THESE TWO TORSO PROJECTIONS ONLY to one consistent compact curved wedge body. FRONT and REAR torso shapes, widths/heights, arms/hands, lower-body geometry and feet remain as in image 1.
+
+LEFT torso's fore-aft depth is currently almost twice its own vertical height. Retract the excess front overhang substantially: its complete fore-aft extent should be approximately the SAME ORDER as its vertical torso height, not 1.8 or 2 times. This is a visual correction ratio, not a new metric dimension. Keep the shoulder/back position, torso top level, waist junction, FRONT/REAR overall height and correct front width unchanged. Move the FRONT surface BACK toward the shoulder axis while retaining a clear but MODERATE anterior wedge. No huge horizontal nose projecting from the shoulders.
+One compact full body, broad compound-curved top and tapering curved front/side faces to waist. Intrinsic curvature and quiet directional mass; no sphere, thin C arch, inflated lump, exaggerated prow, added ridge, jagged panels or taller crown.
+Delete the extra small ORANGE NOSE BLOCK at the LEFT leading top corner: FRONT has no such part. Keep only the same original central vertical orange inset at its corresponding FRONT edge in LEFT. Eliminate extra patchwork on the left body; a few seams consistent with the retained FRONT/REAR only.
+STRICT LEFT, no three-quarter glimpse of the broad front face.
+
+TOP must match this retracted body depth and FRONT shoulder spacing at the SAME SCALE. Its core fore-aft footprint becomes COMPACT, not a giant kite. Keep two matching blue upper guard blocks with narrow real clearance from ivory core. Remove the full rectangular blue service door drawn ON THE TOP: that door belongs to the vertical REAR wall, so TOP sees only its THIN REAR EDGE, not a second roof hatch. Keep the actual REAR door unchanged.
+
+Radiator planes face exactly robot-forward as already required. LEFT sees a shallow IVORY HOUSING SIDEWALL with a thin orange leading lip, NOT a broad black fin rectangle facing the side camera. TOP also sees those same forward apertures edge-on rather than broad black grilles. FRONT black fins remain unchanged.
+
+Preserve original bright azure/ivory/orange palette, all limbs/feet and panel positions. No unrelated redesign. Clean continuous surfaces, no new details. Header H 2.650 m W 2.587 m only. Four same-machine orthographic projections, equal scale. This is still a user-review draft, not approved.
+
+
+URI / v4.1 — FUNCTIONAL RICHNESS, CLEAN ELEGANCE, CONTENT SEPARATION
+
+STYLE reference images control rendering language only: delicate technical contours, luminous blue/ivory/saffron color relationships, refined materials, smooth large forms and the hierarchy of detailed assemblies. The subject/design brief controls geometry, topology, component layout and function. Transfer visual language without transplanting the reference objects, their faces, silhouettes, reels, earpieces, branding, captions or page layouts into the new subject.
+
+A SURFACE_CLEANLINESS reference controls surface integrity, coherent seams and the absence of graphical noise only. A PROPORTION reference controls only explicitly approved body regions and coarse ratios. Keep these roles separate, even when they come from previous generated images. Preserve the user's required machine type and task action when developing its functional structure.
+
+Create a refined science-fiction illustration that is clean, elegant and richly constructed. Richness comes from complete, precisely fitted assemblies at meaningful scales: connected load-bearing parts, organized joints, layered covers, seals, hinges, tool interfaces, optical modules and service components appropriate to the subject. A detail belongs because it performs a function or completes a readable assembly. Use orderly groups and continuous contours so many parts remain individually intelligible.
+
+Maintain clean continuous painted surfaces and graceful large shapes around these assemblies. Cover surfaces contain intentional access-panel boundaries and grouped functional features. Fasteners appear at actual removable cover edges or structural connections, arranged coherently. Functional optical/service openings are small, bounded and correctly located. Rich detail does not require scattering circles, holes, black dots or tiny scratches over every plate. Eliminate arbitrary puncture patterns and decorative pseudo-engineering. Both physical dirt and nonfunctional graphical noise count as a dirty result.
+
+Draw fine crisp dark-blue-gray contours, restrained complete seam lines and controlled illustrated volume. Light reflects cleanly across smoothly maintained warm-white/ivory and powder/azure-blue enamel, clear glass, machined silver, rubber and cloth. Add confident but ordered saffron yellow-orange color accents. Keep dark areas inside real narrow recesses or clearly separated working components; complex areas must remain layered rather than merge into black scribble. Broad light/color planes remain readable at thumbnail scale and the fine assemblies reward close viewing. Favor airy clear light when the brief permits. Match a sophisticated ink-and-color concept illustration rather than an aged painting, plain icon or photograph.
+
+For designed objects/buildings, derive structure and functional detail from the task, then express them with compatible rounded shells, filleted boxes, cylinders and coherent integrated hardware. For people retain natural anatomy, identity and skin; supply fine hair, cloth folds, seams and relevant accessories. For animals/plants keep organic structure and refined natural detail; machinery appears only if requested. For scenes use clear perspective and broad sky/water/ground areas around richly described local structures. Exact forms, colors, weather and lighting follow explicit subject constraints.
+
+Paint is intact. Use no unrequested distress, grain overlay, chips, rust, random flecks, damage, logos or extra words. A clean design retains rich purposeful construction; a simplified blank toy also misses the target. Inspect separately for functional richness, surface integrity, visual order, source-object leakage and subject requirements.
+
+

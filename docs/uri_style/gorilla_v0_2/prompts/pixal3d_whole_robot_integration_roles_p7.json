@@ -1,0 +1,47 @@
+{
+  "stage": "whole_robot_integration",
+  "status": "generated_top_requires_correction",
+  "tool": "built_in_image_gen",
+  "prompt": "/home/ethan/Projects/Sai_Art/docs/uri_style/gorilla_v0_2/prompts/pixal3d_whole_robot_integration_p7.txt",
+  "references": [
+    {
+      "index": 1,
+      "path": "/home/ethan/Projects/Sai_Art/docs/uri_style/gorilla_v0_2/images/pixal_lower_body_isolated_p6.png",
+      "role": "NEW_LOWER_GEOMETRY_ONLY_DROP_FAKE_HIP",
+      "sha256": "c2d1a160b35a015c3fe483a1d165899c34f186426bfb4a9e05182c945716c685"
+    },
+    {
+      "index": 2,
+      "path": "/home/ethan/Projects/Sai_Art/docs/uri_style/gorilla_v0_1/images/locked_four_view_review_rev_aa3.png",
+      "role": "EXACT_V01_UPPER_PALETTE_COMPOSITION_ONLY",
+      "sha256": "5c0469708d7c878ac6253e6ac3e6276198bf3694235bbed3da66c8c743b5aba4"
+    },
+    {
+      "index": 3,
+      "path": "/home/ethan/Projects/Sai_Art/.agents/skills/uri-style/assets/style_01_race_car_hangar.png",
+      "role": "STYLE_ONLY",
+      "sha256": "1aed979f442030b644db5b86c79ad69d44f14092f865eb28f157663476eec8c9"
+    },
+    {
+      "index": 4,
+      "path": "/home/ethan/Projects/Sai_Art/.agents/skills/uri-style/assets/style_03_tracked_mobile_station.png",
+      "role": "STYLE_ONLY",
+      "sha256": "da14249a726ca5009b222a0dd7dc2c7a1fdbfe49ef31b8080936e855e8eb1f6f"
+    },
+    {
+      "index": 5,
+      "path": "/home/ethan/Projects/Sai_Art/.agents/skills/uri-style/assets/style_05_white_blue_racer.png",
+      "role": "STYLE_ONLY",
+      "sha256": "fc5f342e892842887e738798b5870b9245fb3c7376a028c5f503301ac687f1bc"
+    }
+  ],
+  "output": "/home/ethan/Projects/Sai_Art/docs/uri_style/gorilla_v0_2/images/pixal_whole_robot_four_view_p7.png",
+  "output_sha256": "dd37c0ec6c582b9d3e549d2829216f0c4ad28e3818f99936e7d2d348b87dbc86",
+  "built_in_output": "/home/ethan/.codex/generated_images/01a0f3ab-7a57-7172-b8c5-e517aa2973da/exec-294aa682-6e97-4cc3-a0d4-17869408e512.png",
+  "visual_findings": [
+    "Original upper identity integrated with visibly new modeled thigh/shank geometry and complete forefoot/heel.",
+    "Front/side/rear use new lower masses.",
+    "Top contains duplicate thigh masses behind shoulders, wrong facing vent openings, oblique shins, forefeet extending too far forward.",
+    "White thigh caps still inherited from model coloring; restore blue."
+  ]
+}

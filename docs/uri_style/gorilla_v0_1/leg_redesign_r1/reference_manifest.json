@@ -1,0 +1,32 @@
+[
+  {
+    "path": "/home/ethan/Projects/Sai_Art/docs/uri_style/gorilla_v0_1/leg_redesign_r1/references/user_reference_01.jpg",
+    "sha256": "4cbe2044956e1f14731175d2cbcdd499b423a23c70d0bbf30d77fe53befdcc11",
+    "role": "REJECTED_ENGINEERING_DIAGNOSTIC"
+  },
+  {
+    "path": "/home/ethan/Projects/Sai_Art/docs/uri_style/gorilla_v0_1/leg_redesign_r1/references/user_reference_02.jpg",
+    "sha256": "4e035e7b0b55227e809d871adac834cb5e98183249d43a2beff95cabde15de72",
+    "role": "STRUCTURAL_DESIGN_REFERENCE_ONLY_NOT_LOAD_CERTIFICATION"
+  },
+  {
+    "path": "/home/ethan/Projects/Sai_Art/docs/uri_style/gorilla_v0_1/leg_redesign_r1/references/user_reference_03.jpg",
+    "sha256": "05f00f7b897780a2840ee6303791015bc02b552fcbf8e0a5af358bf3ae8bc7e5",
+    "role": "STRUCTURAL_DESIGN_REFERENCE_ONLY_NOT_LOAD_CERTIFICATION"
+  },
+  {
+    "path": "/home/ethan/Projects/Sai_Art/docs/uri_style/gorilla_v0_1/leg_redesign_r1/references/user_reference_04.jpg",
+    "sha256": "5f63f30f07b4ff0cdb5a0a3838434f956589cf07da76bfc20dce98032fc4a335",
+    "role": "STRUCTURAL_DESIGN_REFERENCE_ONLY_NOT_LOAD_CERTIFICATION"
+  },
+  {
+    "path": "/home/ethan/Projects/Sai_Art/docs/uri_style/gorilla_v0_1/leg_redesign_r1/references/user_reference_05.jpg",
+    "sha256": "bb4112b18581da837246e59faad0ada988eced641fa43b093bb4f863aabf93f0",
+    "role": "STRUCTURAL_DESIGN_REFERENCE_ONLY_NOT_LOAD_CERTIFICATION"
+  },
+  {
+    "path": "/home/ethan/Projects/Sai_Art/docs/uri_style/gorilla_v0_1/leg_redesign_r1/references/user_reference_06.jpg",
+    "sha256": "6688a64220e4114cb8edf14abbadf0b6906a3b822ce7ab2d1fab2033d7624b06",
+    "role": "STRUCTURAL_DESIGN_REFERENCE_ONLY_NOT_LOAD_CERTIFICATION"
+  }
+]

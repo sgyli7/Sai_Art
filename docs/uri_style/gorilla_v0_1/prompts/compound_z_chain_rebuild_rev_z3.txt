@@ -1,0 +1,56 @@
+
+REBUILD REQUEST — NOT A FINAL APPROVAL
+Create a corrected FRONT / LEFT / REAR orthographic sheet from image 1. Change ALL LEG/FOOT STRUCTURES and the specified unresolved small details. Keep image 1's new directional full wedge torso depth, front projected size and shoulder/arm/hand shapes, palette and view composition.
+
+INPUTS:
+IMAGE 1 is EDIT TARGET / preserved upper regional form and X/Y size only. Existing legs and feet in image 1 are explicitly wrong — DO NOT trace them, keep their silhouette, retain their white shoe toe caps, short blue cuff or open-slot cuff. Replace the entire load chain below hip.
+IMAGE 2 is PRIMARY GEOMETRY for NEW LEGS AND FEET: the original dark-gray physical mecha. Study its actual load-carrying leg and compact low compound foot, not surface doodles. Copy the structural commonality, no backpack, weapons, gray military paint, text, grime or extra appendages.
+IMAGES 3/4/5 are fixed URI STYLE only.
+
+LEG REBUILD WITH THE REFERENCE'S COHERENT STRUCTURE:
+Three real serial links between hip and ankle:
+1. Thick blue thigh projects clearly forward/down from hip to a FORWARD knee.
+2. Longer load-carrying main shank angles strongly BACK/down to the REAR lower-fold joint. It is a coherent boxed/cast structural member whose blue cover follows the same diagonal; meaningful recessed drive space and primary internal linkage are bounded by that member.
+3. A SHORT stout terminal carrier turns FORWARD/down from that rear lower fold to a LOW independent ankle over the rear-middle of the foot. Graphite/ivory, no second copy of the blue shin cover.
+The knee and rear lower fold are genuinely distinct fore/aft pivots, then the independent ankle. Natural Z with forward/back/forward alternating directions is dominant in LEFT. NOT a conventional straight knee/tibia with an extra ring. NO extra decorative fourth section, no parallel leg branch or crossover.
+Use image 2's assembly sense: one main joint casting/housing at each fold, integrated load members with continuity, armor belongs to its specific link, manageable number of entities. No rows of spacer rings, balls or little side caps. No two equally thick equal-length calf cuffs. No leg shaped as an empty U bracket with a row of tiny cylinders in it.
+LEFT knee/thigh extends ahead of the hanging hand so it is visibly a separate load path. Keep arm/hand itself unchanged. Far leg shares EXACT same sagittal pose and is fully occluded: ONE visible side chain, ONE side foot. FRONT/REAR show exactly TWO same-length mirror copies, same component boundaries and joint elevations. Both feet face the same forward direction, neutral symmetrical stance. No knee lean sideways.
+
+COMPOUND FOOT — COPY THE REFERENCE'S LOW COMPACT LOAD ORGANIZATION:
+Look at image 2's feet: a compact ankle/joint carried very close to a short broad sole assembly, forward load pads formed by several purposeful members, a connected low rear support. Rebuild that geometry in brighter ivory/graphite with broad heavy-machine proportions. Do not invent a tall ankle feeding a long white shoe or U-shaped toe cage.
+One compact dark ankle casting sits low over an integrated structural sole core. A PAIR of short, broad formed forefoot load blocks with ivory upper protective/cast members and dark flat contact pads attach directly to the sole core; a small coherent central relief between them makes the compound construction clear. Compact graphite rear heel pad is connected to the SAME sole core behind ankle, not a disconnected large cuboid. The foot has real occupied support volume, low industrial functional thickness, small necessary articulation and broad flat contact. Profile is short, grounded and mechanically connected.
+No long upward-sloping solid white shoe roof, no long diagonal exposed rail extending from high ankle to toe, no U-shaped perimeter fence, no sharp fork claw, no flat empty plank, no stacked shoe soles or decorative pivot spheres along the foot edges. The forefoot/heel contact surfaces share ground plane. FRONT shows TWO matching short broad compound feet, with substantial contact area and matching cast load pads. REAR shows those same connected heels/carriers, not redesigned rear shoes.
+Use few complete members; do not add tiny accessory cylinders just to signal complexity.
+
+STILL-OPEN BODY DETAILS MUST ALSO BE CORRECTED:
+Whole FRONT central pelvis lid is ONE uninterrupted orange painted cover, including its lower pointed end. Do NOT keep image 1's white lower third. Real seam outside that cover, no extra internal color stripe. LEFT visible edge matches orange. Rear separate panel retains ivory.
+Two radiators are mounted with grille planes perpendicular to forward direction: fronts face directly forward and are parallel, not inward/outward angle. FRONT sees matching rectilinear apertures and fins. Strict LEFT sees actual shallow solid sidewall and thin front-opening edge; delete the fully visible side-facing black grille in image 1. No oversized empty side block.
+Give original bright-blue upper guards genuine separate hexahedral thickness, distinct own faces and a readable narrow physical gap between their medial edges and ivory body. Do not change their main silhouettes or add layers. Existing top/core height stays fixed.
+Remove pointless stacked shoulder collars, serial steel spheres and rod stubs at shoulder/hip/elbow roots. ONE necessary drive and connected bridge per working joint; real motion clearance, no ornamental fillers. Preserve exterior blue/ivory/orange color rather than whitening the outside to simplify it. Remove all random tiny dots/scuffs on painted panels; only actual bounded service seams remain.
+
+BODY PRESERVATION:
+Keep current large ivory curved wedge/tetrahedral body and its anterior projection in LEFT. Continuous internal curvature, no new high crown, indentation, ridge or extra angular patchwork. Same FRONT X-width/Y-height. Same rear ivory enclosure/blue maintenance door, same shoulders, arms, hands, blue forearm armor, orange accent allocation. No general redesign outside listed regions.
+
+ORTHOGRAPHIC / OUTPUT:
+Three views at one common scale: FRONT | LEFT facing page-left | REAR. Match crown/ground, pelvis, knee, rear lower fold, ankle levels, same link count, same lengths, same color/armor boundaries, same mirrored foot modules. No three-quarter perspective, far-leg offsets, asymmetry or detached assemblies.
+Fine clean URI industrial ink/color, original bright azure not navy, warm ivory, saffron-orange painted fields, graphite joints and soles. No distressed paint, random holes, lettering or decals. White studio sheet, narrow clean contact shadow. Keep only original source-envelope header and FRONT/LEFT/REAR labels; remove left-margin joint coordinate labels, which are not measurements of this reconstruction.
+This remains a design for user review, never add a passed/engineering-approved/handoff claim in the artwork.
+
+
+URI / v4.1 — FUNCTIONAL RICHNESS, CLEAN ELEGANCE, CONTENT SEPARATION
+
+STYLE reference images control rendering language only: delicate technical contours, luminous blue/ivory/saffron color relationships, refined materials, smooth large forms and the hierarchy of detailed assemblies. The subject/design brief controls geometry, topology, component layout and function. Transfer visual language without transplanting the reference objects, their faces, silhouettes, reels, earpieces, branding, captions or page layouts into the new subject.
+
+A SURFACE_CLEANLINESS reference controls surface integrity, coherent seams and the absence of graphical noise only. A PROPORTION reference controls only explicitly approved body regions and coarse ratios. Keep these roles separate, even when they come from previous generated images. Preserve the user's required machine type and task action when developing its functional structure.
+
+Create a refined science-fiction illustration that is clean, elegant and richly constructed. Richness comes from complete, precisely fitted assemblies at meaningful scales: connected load-bearing parts, organized joints, layered covers, seals, hinges, tool interfaces, optical modules and service components appropriate to the subject. A detail belongs because it performs a function or completes a readable assembly. Use orderly groups and continuous contours so many parts remain individually intelligible.
+
+Maintain clean continuous painted surfaces and graceful large shapes around these assemblies. Cover surfaces contain intentional access-panel boundaries and grouped functional features. Fasteners appear at actual removable cover edges or structural connections, arranged coherently. Functional optical/service openings are small, bounded and correctly located. Rich detail does not require scattering circles, holes, black dots or tiny scratches over every plate. Eliminate arbitrary puncture patterns and decorative pseudo-engineering. Both physical dirt and nonfunctional graphical noise count as a dirty result.
+
+Draw fine crisp dark-blue-gray contours, restrained complete seam lines and controlled illustrated volume. Light reflects cleanly across smoothly maintained warm-white/ivory and powder/azure-blue enamel, clear glass, machined silver, rubber and cloth. Add confident but ordered saffron yellow-orange color accents. Keep dark areas inside real narrow recesses or clearly separated working components; complex areas must remain layered rather than merge into black scribble. Broad light/color planes remain readable at thumbnail scale and the fine assemblies reward close viewing. Favor airy clear light when the brief permits. Match a sophisticated ink-and-color concept illustration rather than an aged painting, plain icon or photograph.
+
+For designed objects/buildings, derive structure and functional detail from the task, then express them with compatible rounded shells, filleted boxes, cylinders and coherent integrated hardware. For people retain natural anatomy, identity and skin; supply fine hair, cloth folds, seams and relevant accessories. For animals/plants keep organic structure and refined natural detail; machinery appears only if requested. For scenes use clear perspective and broad sky/water/ground areas around richly described local structures. Exact forms, colors, weather and lighting follow explicit subject constraints.
+
+Paint is intact. Use no unrequested distress, grain overlay, chips, rust, random flecks, damage, logos or extra words. A clean design retains rich purposeful construction; a simplified blank toy also misses the target. Inspect separately for functional richness, surface integrity, visual order, source-object leakage and subject requirements.
+
+

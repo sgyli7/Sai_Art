@@ -1,0 +1,193 @@
+{
+  "copied_references": [
+    {
+      "path": "docs/uri_style/gorilla_v0_1/references/approved_direction.png",
+      "original": "/home/ethan/Projects/Sai_Art/docs/uri_style/integrated_core_concept.png",
+      "sha256": "6b068d42588b2f390095af9a144ad4e5ef0a6e0eb3c404b316adbe64b269489a",
+      "role": "approved continuous-core direction"
+    },
+    {
+      "path": "docs/uri_style/gorilla_v0_1/references/full_torso_reference.png",
+      "original": "/tmp/codex-clipboard-334d8daa-eefa-4a2e-b2cf-54bb6a98fbc1.png",
+      "sha256": "a2f1a7174d287a521b17a704a30bebc34f1e176e2354c29ba67e794b430af13a",
+      "role": "user-provided full torso geometry"
+    },
+    {
+      "path": "docs/uri_style/gorilla_v0_1/references/leg_structure_reference.png",
+      "original": "/tmp/codex-clipboard-97df6097-34c9-422f-8eb8-e5c2ebb06f82.png",
+      "sha256": "7b103fb671ee5530c576d5054033626e3b960d7ac2d54ee678807057894fe22d",
+      "role": "primary structural reference, no weapons or wear"
+    },
+    {
+      "path": "docs/uri_style/gorilla_v0_1/references/leg_structure_reference_02.png",
+      "original": "/tmp/codex-clipboard-8a409479-a16f-4697-8e86-ff0fffd9fbdb.png",
+      "sha256": "38733623b7a795de916c1365e96aad7515b58b99876c4b1050b292f765889ded",
+      "role": "secondary structural reference"
+    },
+    {
+      "path": "docs/uri_style/gorilla_v0_1/references/integrated_angular_structure_reference.png",
+      "original": "/tmp/codex-clipboard-be53d997-690c-47a3-8e0f-7becf5bc4f08.png",
+      "sha256": "cddd8d5d518dde22995835d6dee356a07afc19a58496aedcee8d9089946fc2a9",
+      "role": "additional industrial structure study; not actual imagegen input yet"
+    },
+    {
+      "path": "docs/uri_style/gorilla_v0_1/references/z_leg_structure_reference.png",
+      "original": "/tmp/codex-clipboard-ab8d932e-7aaf-4927-987e-644d8796d073.png",
+      "sha256": "351ceeb2d1b6f3418335b8c46a8d3cfb74026e39e12ced6b3b43b94378248f0e",
+      "role": "additional fold-joint leg grammar"
+    },
+    {
+      "path": "docs/uri_style/gorilla_v0_1/references/style_01_headphones.png",
+      "original": "/home/ethan/Projects/Sai_Art/.agents/skills/uri-style/assets/style_01_headphones.png",
+      "sha256": "78270e8007dea7ebd84e580bb5fa1d936cc9118b375e9b8845b3cffc84d51c0c",
+      "role": "fixed URI full-size STYLE original"
+    },
+    {
+      "path": "docs/uri_style/gorilla_v0_1/references/style_03_waterfront.png",
+      "original": "/home/ethan/Projects/Sai_Art/.agents/skills/uri-style/assets/style_03_waterfront.png",
+      "sha256": "25b75c83586e01222dde9cd164035afe9cba005b08cd2674eb6b9993aa12c053",
+      "role": "fixed URI full-size STYLE original"
+    },
+    {
+      "path": "docs/uri_style/gorilla_v0_1/references/style_06_architecture.png",
+      "original": "/home/ethan/Projects/Sai_Art/.agents/skills/uri-style/assets/style_06_architecture.png",
+      "sha256": "51118389231d7cf1832b8b466aa31af2b6950f04cc91b77473e1f94b5a56e59c",
+      "role": "fixed URI full-size STYLE original"
+    },
+    {
+      "path": "docs/uri_style/gorilla_v0_1/references/foot_folded_reference_03.png",
+      "original": "/tmp/codex-clipboard-d15a55dc-96f9-4a13-8e4f-57f3e4e47fb5.png",
+      "sha256": "b2da51762b809c65d80e27555ac224c649f0fc2c4359981d9f87609befdccb73",
+      "role": "foot geometry: thin formed support, restrained upturned toe and separate heel"
+    },
+    {
+      "path": "docs/uri_style/gorilla_v0_1/references/foot_compact_reference_04.png",
+      "original": "/tmp/codex-clipboard-ca66692a-dd8f-4ee0-8e85-d7a2acfeeb41.png",
+      "sha256": "c5dc9cfdda225e63fdb1467f19e1a34cfa51fd9b4f43092afbeaccbd35ed2460",
+      "role": "secondary user foot study; not used as imagegen input in this call"
+    },
+    {
+      "path": "docs/uri_style/gorilla_v0_1/references/leg_foot_synthesis_reference_05.png",
+      "original": "/tmp/codex-clipboard-c082b2b4-3da1-4f6f-a933-e9379537a2f8.png",
+      "sha256": "0a16d270d29d8cf76bc042a76db0c323b183a7b2c06fbe855fbcf09fcfcfe5b3",
+      "role": "lower-link hierarchy and distinct ankle/foot study; observed, not imagegen input"
+    },
+    {
+      "path": "docs/uri_style/gorilla_v0_1/references/leg_foot_synthesis_reference_06.png",
+      "original": "/tmp/codex-clipboard-b9449a2e-32ea-4f5b-a87b-ff077fefebb3.png",
+      "sha256": "5982613fa472e4b7505ed5ef6f7edb09a92b70b415e4427a778ca5cf0176df42",
+      "role": "compact terminal linkage and concise foot study; observed, not imagegen input"
+    },
+    {
+      "path": "docs/uri_style/gorilla_v0_1/references/leg_foot_synthesis_reference_07.png",
+      "original": "/tmp/codex-clipboard-f56a7016-7d01-47ef-a687-0cde60ea7355.png",
+      "sha256": "35f67a0a830b7e010b166305ed2667cf0b46c707a827dac3707869df92ef19c0",
+      "role": "slender distal member and functional ankle/heel study; observed, not imagegen input"
+    },
+    {
+      "path": "docs/uri_style/gorilla_v0_1/references/leg_foot_synthesis_reference_08.png",
+      "original": "/tmp/codex-clipboard-d06d10cf-15e6-4844-beb3-852f7e5bf83b.png",
+      "sha256": "d49f326f70ed1f25757f9a4028e43e75327b584684fb998131bb9b97b9e5b35b",
+      "role": "primary lower-chain and formed forefoot/heel geometry for Rev R; no weapons, upper body or source finish"
+    },
+    {
+      "path": "docs/uri_style/gorilla_v0_1/references/leg_foot_synthesis_reference_09.png",
+      "original": "/tmp/codex-clipboard-dbb68ef5-eac3-47ef-9639-05043869b1e1.png",
+      "sha256": "32cded2bb0986633317c6987373022b5f7cfa5239032584fe39826018e9b1ecf",
+      "role": "distinct articulated lower groups and low foot study; observed, not imagegen input"
+    },
+    {
+      "path": "docs/uri_style/gorilla_v0_1/references/user_upper_contour_rev_t.png",
+      "original": "/tmp/codex-clipboard-288e30e9-56c0-41c3-83c8-0b56e2ff843a.png",
+      "sha256": "08c5be17f025d55a35588e1c5d378c704bddad840df450dcc7314f9493bea774",
+      "role": "user red/blue upper contour guide; actual Rev T geometry guidance, not colors or drawn marks"
+    },
+    {
+      "path": "docs/uri_style/gorilla_v0_1/references/user_core_volume_guard_rev_u.png",
+      "original": "/tmp/codex-clipboard-f7def01e-c84f-4c4b-a2ca-50eb292c7436.png",
+      "sha256": "bc82abc9bafc5b91494fd9f0c1c6c7d6ed4407eabaa2f4c71e6c74de986574f7",
+      "role": "Latest user core crop; region 1 spatial continuous surface, region 2 open hard upper guard, region 3 graphite material authority. Actual G28 second input."
+    },
+    {
+      "path": "docs/uri_style/gorilla_v0_1/references/palette_01_blue_optical.png",
+      "original": "/tmp/codex-clipboard-ae11346e-efb9-433b-8f06-590f89134ef1.png",
+      "sha256": "5da87c1921b9f038eedb0051b7fcbb5c7810c98183d1ae70a663c71d7af722bf",
+      "role": "Latest user palette distribution; observed in full. Only palette_02 actual G29 input; others informed textual synthesis."
+    },
+    {
+      "path": "docs/uri_style/gorilla_v0_1/references/palette_02_blue_vehicle.png",
+      "original": "/tmp/codex-clipboard-35979e89-cc40-4b98-830d-ffeb82d51b5a.png",
+      "sha256": "73d341781bf20f5f22ba2bfaf328b78f7ea6c1de4ee21c0830c5b0dbb95e6c93",
+      "role": "Latest user palette distribution; observed in full. Only palette_02 actual G29 input; others informed textual synthesis."
+    },
+    {
+      "path": "docs/uri_style/gorilla_v0_1/references/palette_03_blue_architecture.png",
+      "original": "/tmp/codex-clipboard-62fade8e-bf90-4909-891c-af66990973ec.png",
+      "sha256": "e84820049c4d4d64a59f2b45fe92b27c6b8de9aa6b18dd9f16a44b9bba88af7e",
+      "role": "Latest user palette distribution; observed in full. Only palette_02 actual G29 input; others informed textual synthesis."
+    },
+    {
+      "path": "docs/uri_style/gorilla_v0_1/references/palette_04_ivory_vehicle.png",
+      "original": "/tmp/codex-clipboard-dff278b4-4e09-4bde-8e32-41382578ff3d.png",
+      "sha256": "4244572b98c01599b8b73a9859fbf9e8e7df3d14a0f8a955c5cb124234bd366a",
+      "role": "Latest user palette distribution; observed in full. Only palette_02 actual G29 input; others informed textual synthesis."
+    },
+    {
+      "path": "docs/uri_style/gorilla_v0_1/references/original_wedge_depth_reference.png",
+      "original": "/tmp/codex-clipboard-334d8daa-eefa-4a2e-b2cf-54bb6a98fbc1.png",
+      "sha256": "a2f1a7174d287a521b17a704a30bebc34f1e176e2354c29ba67e794b430af13a",
+      "role": "PRIMARY current Z-depth / tetrahedral front core / structural mass reference, no weapon or distressed finish"
+    },
+    {
+      "path": "docs/uri_style/gorilla_v0_1/references/compound_foot_reference_01.png",
+      "original": "/tmp/codex-clipboard-0e9a2ddb-1ab5-4f36-8071-d1bba1c3306d.png",
+      "sha256": "9729c128b3cbeeb2fafe5545043beb0349acae0bc0fb0aa442551fc489975b1f",
+      "role": "User compound foot structure; observed in full"
+    },
+    {
+      "path": "docs/uri_style/gorilla_v0_1/references/compound_foot_reference_02.png",
+      "original": "/tmp/codex-clipboard-03ff6d97-2617-4038-b4e1-73197736be25.png",
+      "sha256": "25e012ca52fd5709a711ed6ae7d7227112109c453dbd83e093dc64a006f29777",
+      "role": "User formed compound foot structure; actual G31 second input"
+    },
+    {
+      "path": "docs/uri_style/gorilla_v0_1/references/compound_foot_reference_03.png",
+      "original": "/tmp/codex-clipboard-b4195e7c-d85f-4ed6-acb8-f98b33ccd63a.png",
+      "sha256": "1b992336a5822b91414c5fe3163f270a75f7910ba2fdfbdf39647e74d798fd9f",
+      "role": "User compound foot and lower joint hierarchy; observed in full"
+    }
+  ],
+  "goose_read_only_study": {
+    "snapshot": "/home/ethan/Projects/Sai_Rotbots/.scratch/goose_stage_three_four/artifacts/Goose_V0.1/mechanical_checkpoint/goose_mechanical_checkpoint",
+    "source_commit": "00b686adaf58c1e6a3051e3bab80e8d9c8153c44",
+    "purpose": "learn multi-view and localized detail presentation, not import hardware design or geometry",
+    "inspected_files": [
+      {
+        "path": "/home/ethan/Projects/Sai_Rotbots/.scratch/goose_stage_three_four/artifacts/Goose_V0.1/mechanical_checkpoint/goose_mechanical_checkpoint/checkpoint_manifest.json",
+        "sha256": "9f790ff7a49b1b160d93c509cd1dcbfdeb9f7095a42c60469dc7d2fb4446dc37"
+      },
+      {
+        "path": "/home/ethan/Projects/Sai_Rotbots/.scratch/goose_stage_three_four/artifacts/Goose_V0.1/mechanical_checkpoint/goose_mechanical_checkpoint/robots/Goose_V0.1/design/mechanical_integration_checkpoint.md",
+        "sha256": "37b82c8d9e972dfda5d14d0acb6deb2ca514ebc53ce6df70aba3f6b4f99e8ed2"
+      },
+      {
+        "path": "/home/ethan/Projects/Sai_Rotbots/.scratch/goose_stage_three_four/artifacts/Goose_V0.1/mechanical_checkpoint/goose_mechanical_checkpoint/robots/Goose_V0.1/design/hardware_milestones.md",
+        "sha256": "867dd9e92120334b735f0d0c3e8f344649101383b6a4d8500dcf87d4cfd25088"
+      },
+      {
+        "path": "/home/ethan/Projects/Sai_Rotbots/.scratch/goose_stage_three_four/artifacts/Goose_V0.1/mechanical_checkpoint/goose_mechanical_checkpoint/robots/Goose_V0.1/images/mechanical_preview/three_quarter.png",
+        "sha256": "f70bc4d9cd7f8badab2148aca60a43c24e5c2bead0d91eb0344c76b03429383f"
+      },
+      {
+        "path": "/home/ethan/Projects/Sai_Rotbots/.scratch/goose_stage_three_four/artifacts/Goose_V0.1/mechanical_checkpoint/goose_mechanical_checkpoint/robots/Goose_V0.1/images/mechanical_preview/side.png",
+        "sha256": "30b55d2eda057f019ee716d2c83ed1d4444c9440b007f9d3185b745eadd987bc"
+      },
+      {
+        "path": "/home/ethan/Projects/Sai_Rotbots/.scratch/goose_stage_three_four/artifacts/Goose_V0.1/mechanical_checkpoint/goose_mechanical_checkpoint/robots/Goose_V0.1/images/mechanical_preview/head_detail.png",
+        "sha256": "cceb7bfedec9d630ef6736dd51a5a2ae3cf29cc1967bdca8e3ba2da640e87b61"
+      }
+    ]
+  },
+  "copy_owner": "Sai_Art appearance artwork",
+  "external_project_writes": false
+}

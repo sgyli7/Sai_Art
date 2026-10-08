@@ -1,0 +1,2411 @@
+{
+  "scene_sha256": "2472ab88ed6e735407e05af6f7d83f662707a61a7fce03d4b4705ae43e1bce20",
+  "options": [
+    [
+      {
+        "a_world_m": [
+          0.15780828868569152,
+          0.5,
+          1.1528061638637102
+        ],
+        "b_world_m": [
+          0.28191798800785606,
+          0.5,
+          0.3551119290107895
+        ],
+        "lateral_offsets_m": [
+          -0.2,
+          0.2
+        ],
+        "bore_m": 0.12,
+        "rod_m": 0.06,
+        "outside_diameter_m": 0.13999999999999999,
+        "barrel_length_m": 0.2888048471280964,
+        "proposed_stroke_m": 0.08380484712809642,
+        "eye_length_min_m": 0.7394864942000666,
+        "eye_length_max_m": 0.807291341328163,
+        "min_arm_m": 0.1599762796442809,
+        "neutral_required_moment_Nm": 56594.78475410686,
+        "ideal_derated_pair_pull_N": 432597.3083993146,
+        "nominal_min_ratio": 1.2228212949750643,
+        "sweep_samples": 31,
+        "unqualified_custom_proposal": true,
+        "sizing_scope": "Worst specified CoP over grounded crouch FK; prescribed own-joint range in this crouch only. Force envelope provisional upperbody2200kg+2legs800kg allowances+external3000kg times1.5. Custom bore/rod,30MPa eta.85,NOT actual mass/continuous rating. No mount/valve/hose qualification."
+      },
+      {
+        "a_world_m": [
+          0.15780828868569152,
+          0.5,
+          1.1528061638637102
+        ],
+        "b_world_m": [
+          0.23403516794226245,
+          0.5,
+          0.4866688959208167
+        ],
+        "lateral_offsets_m": [
+          -0.2,
+          0.2
+        ],
+        "bore_m": 0.12,
+        "rod_m": 0.06,
+        "outside_diameter_m": 0.13999999999999999,
+        "barrel_length_m": 0.2919334452565353,
+        "proposed_stroke_m": 0.08693344525653533,
+        "eye_length_min_m": 0.599551004125863,
+        "eye_length_max_m": 0.6704844493823984,
+        "min_arm_m": 0.17553847727716582,
+        "neutral_required_moment_Nm": 56594.78475410686,
+        "ideal_derated_pair_pull_N": 432597.3083993146,
+        "nominal_min_ratio": 1.3417750967787838,
+        "sweep_samples": 31,
+        "unqualified_custom_proposal": true,
+        "sizing_scope": "Worst specified CoP over grounded crouch FK; prescribed own-joint range in this crouch only. Force envelope provisional upperbody2200kg+2legs800kg allowances+external3000kg times1.5. Custom bore/rod,30MPa eta.85,NOT actual mass/continuous rating. No mount/valve/hose qualification."
+      },
+      {
+        "a_world_m": [
+          0.2539748109270619,
+          0.5,
+          1.0566396416223396
+        ],
+        "b_world_m": [
+          0.10623697151537884,
+          0.5,
+          0.4401541564285257
+        ],
+        "lateral_offsets_m": [
+          -0.2,
+          0.2
+        ],
+        "bore_m": 0.12,
+        "rod_m": 0.06,
+        "outside_diameter_m": 0.13999999999999999,
+        "barrel_length_m": 0.29213749587779403,
+        "proposed_stroke_m": 0.08713749587779406,
+        "eye_length_min_m": 0.5628032132178472,
+        "eye_length_max_m": 0.6339407090956413,
+        "min_arm_m": 0.1795750503997764,
+        "neutral_required_moment_Nm": 56594.78475410686,
+        "ideal_derated_pair_pull_N": 432597.3083993146,
+        "nominal_min_ratio": 1.3726297183766094,
+        "sweep_samples": 31,
+        "unqualified_custom_proposal": true,
+        "sizing_scope": "Worst specified CoP over grounded crouch FK; prescribed own-joint range in this crouch only. Force envelope provisional upperbody2200kg+2legs800kg allowances+external3000kg times1.5. Custom bore/rod,30MPa eta.85,NOT actual mass/continuous rating. No mount/valve/hose qualification."
+      },
+      {
+        "a_world_m": [
+          0.3529697602931786,
+          0.5,
+          1.1556345909884562
+        ],
+        "b_world_m": [
+          0.058354151449785195,
+          0.5,
+          0.5717111233385528
+        ],
+        "lateral_offsets_m": [
+          -0.2,
+          0.2
+        ],
+        "bore_m": 0.12,
+        "rod_m": 0.06,
+        "outside_diameter_m": 0.13999999999999999,
+        "barrel_length_m": 0.2945700194083266,
+        "proposed_stroke_m": 0.08957001940832664,
+        "eye_length_min_m": 0.5804674206870025,
+        "eye_length_max_m": 0.6540374400953292,
+        "min_arm_m": 0.18328449751516462,
+        "neutral_required_moment_Nm": 56594.78475410686,
+        "ideal_derated_pair_pull_N": 432597.3083993146,
+        "nominal_min_ratio": 1.4009838652249211,
+        "sweep_samples": 31,
+        "unqualified_custom_proposal": true,
+        "sizing_scope": "Worst specified CoP over grounded crouch FK; prescribed own-joint range in this crouch only. Force envelope provisional upperbody2200kg+2legs800kg allowances+external3000kg times1.5. Custom bore/rod,30MPa eta.85,NOT actual mass/continuous rating. No mount/valve/hose qualification."
+      },
+      {
+        "a_world_m": [
+          0.3529697602931786,
+          0.5,
+          1.1556345909884562
+        ],
+        "b_world_m": [
+          -0.021561224911504667,
+          0.5,
+          0.39363941693623467
+        ],
+        "lateral_offsets_m": [
+          -0.2,
+          0.2
+        ],
+        "bore_m": 0.12,
+        "rod_m": 0.06,
+        "outside_diameter_m": 0.13999999999999999,
+        "barrel_length_m": 0.29547881637317863,
+        "proposed_stroke_m": 0.09047881637317866,
+        "eye_length_min_m": 0.7745854357051114,
+        "eye_length_max_m": 0.8490642520782901,
+        "min_arm_m": 0.18000602742819846,
+        "neutral_required_moment_Nm": 56594.78475410686,
+        "ideal_derated_pair_pull_N": 432597.3083993146,
+        "nominal_min_ratio": 1.37592400606208,
+        "sweep_samples": 31,
+        "unqualified_custom_proposal": true,
+        "sizing_scope": "Worst specified CoP over grounded crouch FK; prescribed own-joint range in this crouch only. Force envelope provisional upperbody2200kg+2legs800kg allowances+external3000kg times1.5. Custom bore/rod,30MPa eta.85,NOT actual mass/continuous rating. No mount/valve/hose qualification."
+      },
+      {
+        "a_world_m": [
+          0.15780828868569152,
+          0.5,
+          1.1528061638637102
+        ],
+        "b_world_m": [
+          0.18615234787666882,
+          0.5,
+          0.6182258628308439
+        ],
+        "lateral_offsets_m": [
+          -0.2,
+          0.2
+        ],
+        "bore_m": 0.12,
+        "rod_m": 0.06,
+        "outside_diameter_m": 0.13999999999999999,
+        "barrel_length_m": 0.2966763878161818,
+        "proposed_stroke_m": 0.0916763878161818,
+        "eye_length_min_m": 0.45965480307765305,
+        "eye_length_max_m": 0.5353311908938349,
+        "min_arm_m": 0.1984643805512157,
+        "neutral_required_moment_Nm": 56594.78475410686,
+        "ideal_derated_pair_pull_N": 432597.3083993146,
+        "nominal_min_ratio": 1.517015343597769,
+        "sweep_samples": 31,
+        "unqualified_custom_proposal": true,
+        "sizing_scope": "Worst specified CoP over grounded crouch FK; prescribed own-joint range in this crouch only. Force envelope provisional upperbody2200kg+2legs800kg allowances+external3000kg times1.5. Custom bore/rod,30MPa eta.85,NOT actual mass/continuous rating. No mount/valve/hose qualification."
+      },
+      {
+        "a_world_m": [
+          -0.2777694885252219,
+          0.5,
+          0.9095614311355378
+        ],
+        "b_world_m": [
+          0.18615234787666882,
+          0.5,
+          0.6182258628308439
+        ],
+        "lateral_offsets_m": [
+          -0.2,
+          0.2
+        ],
+        "bore_m": 0.12,
+        "rod_m": 0.06,
+        "outside_diameter_m": 0.13999999999999999,
+        "barrel_length_m": 0.3006571656458089,
+        "proposed_stroke_m": 0.09565716564580894,
+        "eye_length_min_m": 0.4681565651513677,
+        "eye_length_max_m": 0.5478137307971767,
+        "min_arm_m": 0.19851576456022027,
+        "neutral_required_moment_Nm": 56594.78475410686,
+        "ideal_derated_pair_pull_N": 432597.3083993146,
+        "nominal_min_ratio": 1.5174081109541024,
+        "sweep_samples": 31,
+        "unqualified_custom_proposal": true,
+        "sizing_scope": "Worst specified CoP over grounded crouch FK; prescribed own-joint range in this crouch only. Force envelope provisional upperbody2200kg+2legs800kg allowances+external3000kg times1.5. Custom bore/rod,30MPa eta.85,NOT actual mass/continuous rating. No mount/valve/hose qualification."
+      },
+      {
+        "a_world_m": [
+          0.2539748109270619,
+          0.5,
+          1.0566396416223396
+        ],
+        "b_world_m": [
+          0.058354151449785195,
+          0.5,
+          0.5717111233385528
+        ],
+        "lateral_offsets_m": [
+          -0.2,
+          0.2
+        ],
+        "bore_m": 0.12,
+        "rod_m": 0.06,
+        "outside_diameter_m": 0.13999999999999999,
+        "barrel_length_m": 0.3017503494242788,
+        "proposed_stroke_m": 0.09675034942427883,
+        "eye_length_min_m": 0.4421484077546167,
+        "eye_length_max_m": 0.5228987571788956,
+        "min_arm_m": 0.21119755761814668,
+        "neutral_required_moment_Nm": 56594.78475410686,
+        "ideal_derated_pair_pull_N": 432597.3083993146,
+        "nominal_min_ratio": 1.6143447733404361,
+        "sweep_samples": 31,
+        "unqualified_custom_proposal": true,
+        "sizing_scope": "Worst specified CoP over grounded crouch FK; prescribed own-joint range in this crouch only. Force envelope provisional upperbody2200kg+2legs800kg allowances+external3000kg times1.5. Custom bore/rod,30MPa eta.85,NOT actual mass/continuous rating. No mount/valve/hose qualification."
+      },
+      {
+        "a_world_m": [
+          -0.3498943802062497,
+          0.5,
+          0.9816863228165655
+        ],
+        "b_world_m": [
+          0.18615234787666882,
+          0.5,
+          0.6182258628308439
+        ],
+        "lateral_offsets_m": [
+          -0.2,
+          0.2
+        ],
+        "bore_m": 0.12,
+        "rod_m": 0.06,
+        "outside_diameter_m": 0.13999999999999999,
+        "barrel_length_m": 0.3023948407521818,
+        "proposed_stroke_m": 0.09739484075218184,
+        "eye_length_min_m": 0.566254447567843,
+        "eye_length_max_m": 0.6476492883200249,
+        "min_arm_m": 0.2071766011851805,
+        "neutral_required_moment_Nm": 56594.78475410686,
+        "ideal_derated_pair_pull_N": 432597.3083993146,
+        "nominal_min_ratio": 1.5836095220686155,
+        "sweep_samples": 31,
+        "unqualified_custom_proposal": true,
+        "sizing_scope": "Worst specified CoP over grounded crouch FK; prescribed own-joint range in this crouch only. Force envelope provisional upperbody2200kg+2legs800kg allowances+external3000kg times1.5. Custom bore/rod,30MPa eta.85,NOT actual mass/continuous rating. No mount/valve/hose qualification."
+      },
+      {
+        "a_world_m": [
+          0.2539748109270619,
+          0.5,
+          1.0566396416223396
+        ],
+        "b_world_m": [
+          -0.021561224911504667,
+          0.5,
+          0.39363941693623467
+        ],
+        "lateral_offsets_m": [
+          -0.2,
+          0.2
+        ],
+        "bore_m": 0.12,
+        "rod_m": 0.06,
+        "outside_diameter_m": 0.13999999999999999,
+        "barrel_length_m": 0.3034523657885754,
+        "proposed_stroke_m": 0.0984523657885754,
+        "eye_length_min_m": 0.635523542567309,
+        "eye_length_max_m": 0.7179759083558844,
+        "min_arm_m": 0.2132574074172946,
+        "neutral_required_moment_Nm": 56594.78475410686,
+        "ideal_derated_pair_pull_N": 432597.3083993146,
+        "nominal_min_ratio": 1.6300897838160453,
+        "sweep_samples": 31,
+        "unqualified_custom_proposal": true,
+        "sizing_scope": "Worst specified CoP over grounded crouch FK; prescribed own-joint range in this crouch only. Force envelope provisional upperbody2200kg+2legs800kg allowances+external3000kg times1.5. Custom bore/rod,30MPa eta.85,NOT actual mass/continuous rating. No mount/valve/hose qualification."
+      },
+      {
+        "a_world_m": [
+          0.1125534546897524,
+          0.5,
+          0.91521828538503
+        ],
+        "b_world_m": [
+          0.28191798800785606,
+          0.5,
+          0.3551119290107895
+        ],
+        "lateral_offsets_m": [
+          -0.2,
+          0.2
+        ],
+        "bore_m": 0.12,
+        "rod_m": 0.06,
+        "outside_diameter_m": 0.13999999999999999,
+        "barrel_length_m": 0.30390538650757626,
+        "proposed_stroke_m": 0.09890538650757628,
+        "eye_length_min_m": 0.5022471368543988,
+        "eye_length_max_m": 0.5851525233619751,
+        "min_arm_m": 0.21658275518482173,
+        "neutral_required_moment_Nm": 56594.78475410686,
+        "ideal_derated_pair_pull_N": 432597.3083993146,
+        "nominal_min_ratio": 1.655507965013731,
+        "sweep_samples": 31,
+        "unqualified_custom_proposal": true,
+        "sizing_scope": "Worst specified CoP over grounded crouch FK; prescribed own-joint range in this crouch only. Force envelope provisional upperbody2200kg+2legs800kg allowances+external3000kg times1.5. Custom bore/rod,30MPa eta.85,NOT actual mass/continuous rating. No mount/valve/hose qualification."
+      },
+      {
+        "a_world_m": [
+          0.3529697602931786,
+          0.5,
+          1.1556345909884562
+        ],
+        "b_world_m": [
+          -0.14935942133838823,
+          0.5,
+          0.34712467744394376
+        ],
+        "lateral_offsets_m": [
+          -0.2,
+          0.2
+        ],
+        "bore_m": 0.12,
+        "rod_m": 0.06,
+        "outside_diameter_m": 0.13999999999999999,
+        "barrel_length_m": 0.306224432065762,
+        "proposed_stroke_m": 0.10122443206576202,
+        "eye_length_min_m": 0.8666279131109438,
+        "eye_length_max_m": 0.9518523451767058,
+        "min_arm_m": 0.2102816490219665,
+        "neutral_required_moment_Nm": 56594.78475410686,
+        "ideal_derated_pair_pull_N": 432597.3083993146,
+        "nominal_min_ratio": 1.607343782080043,
+        "sweep_samples": 31,
+        "unqualified_custom_proposal": true,
+        "sizing_scope": "Worst specified CoP over grounded crouch FK; prescribed own-joint range in this crouch only. Force envelope provisional upperbody2200kg+2legs800kg allowances+external3000kg times1.5. Custom bore/rod,30MPa eta.85,NOT actual mass/continuous rating. No mount/valve/hose qualification."
+      },
+      {
+        "a_world_m": [
+          0.3529697602931786,
+          0.5,
+          1.1556345909884562
+        ],
+        "b_world_m": [
+          -0.0694440449770983,
+          0.5,
+          0.5251963838462619
+        ],
+        "lateral_offsets_m": [
+          -0.2,
+          0.2
+        ],
+        "bore_m": 0.12,
+        "rod_m": 0.06,
+        "outside_diameter_m": 0.13999999999999999,
+        "barrel_length_m": 0.3082972718400284,
+        "proposed_stroke_m": 0.10329727184002845,
+        "eye_length_min_m": 0.6715740979635634,
+        "eye_length_max_m": 0.7588713698035918,
+        "min_arm_m": 0.22032102927868527,
+        "neutral_required_moment_Nm": 56594.78475410686,
+        "ideal_derated_pair_pull_N": 432597.3083993146,
+        "nominal_min_ratio": 1.6840824585486127,
+        "sweep_samples": 31,
+        "unqualified_custom_proposal": true,
+        "sizing_scope": "Worst specified CoP over grounded crouch FK; prescribed own-joint range in this crouch only. Force envelope provisional upperbody2200kg+2legs800kg allowances+external3000kg times1.5. Custom bore/rod,30MPa eta.85,NOT actual mass/continuous rating. No mount/valve/hose qualification."
+      },
+      {
+        "a_world_m": [
+          -0.250899430840133,
+          0.5,
+          1.0806812721826822
+        ],
+        "b_world_m": [
+          0.18615234787666882,
+          0.5,
+          0.6182258628308439
+        ],
+        "lateral_offsets_m": [
+          -0.2,
+          0.2
+        ],
+        "bore_m": 0.12,
+        "rod_m": 0.06,
+        "outside_diameter_m": 0.13999999999999999,
+        "barrel_length_m": 0.3088810638907271,
+        "proposed_stroke_m": 0.10388106389072714,
+        "eye_length_min_m": 0.5484201720960471,
+        "eye_length_max_m": 0.6363012359867742,
+        "min_arm_m": 0.23882413800541868,
+        "neutral_required_moment_Nm": 56594.78475410686,
+        "ideal_derated_pair_pull_N": 432597.3083993146,
+        "nominal_min_ratio": 1.825515897459676,
+        "sweep_samples": 31,
+        "unqualified_custom_proposal": true,
+        "sizing_scope": "Worst specified CoP over grounded crouch FK; prescribed own-joint range in this crouch only. Force envelope provisional upperbody2200kg+2legs800kg allowances+external3000kg times1.5. Custom bore/rod,30MPa eta.85,NOT actual mass/continuous rating. No mount/valve/hose qualification."
+      },
+      {
+        "a_world_m": [
+          -0.17877453915910518,
+          0.5,
+          1.0085563805016544
+        ],
+        "b_world_m": [
+          0.18615234787666882,
+          0.5,
+          0.6182258628308439
+        ],
+        "lateral_offsets_m": [
+          -0.2,
+          0.2
+        ],
+        "bore_m": 0.12,
+        "rod_m": 0.06,
+        "outside_diameter_m": 0.13999999999999999,
+        "barrel_length_m": 0.3089292680786301,
+        "proposed_stroke_m": 0.10392926807863011,
+        "eye_length_min_m": 0.446420379536846,
+        "eye_length_max_m": 0.5343496476154761,
+        "min_arm_m": 0.23878336734543326,
+        "neutral_required_moment_Nm": 56594.78475410686,
+        "ideal_derated_pair_pull_N": 432597.3083993146,
+        "nominal_min_ratio": 1.8252042560628938,
+        "sweep_samples": 31,
+        "unqualified_custom_proposal": true,
+        "sizing_scope": "Worst specified CoP over grounded crouch FK; prescribed own-joint range in this crouch only. Force envelope provisional upperbody2200kg+2legs800kg allowances+external3000kg times1.5. Custom bore/rod,30MPa eta.85,NOT actual mass/continuous rating. No mount/valve/hose qualification."
+      },
+      {
+        "a_world_m": [
+          -0.07977958979298853,
+          0.5,
+          1.107551329867771
+        ],
+        "b_world_m": [
+          0.18615234787666882,
+          0.5,
+          0.6182258628308439
+        ],
+        "lateral_offsets_m": [
+          -0.2,
+          0.2
+        ],
+        "bore_m": 0.12,
+        "rod_m": 0.06,
+        "outside_diameter_m": 0.13999999999999999,
+        "barrel_length_m": 0.31036004614609036,
+        "proposed_stroke_m": 0.10536004614609039,
+        "eye_length_min_m": 0.4675593449363583,
+        "eye_length_max_m": 0.5569193910824487,
+        "min_arm_m": 0.2501918243716047,
+        "neutral_required_moment_Nm": 56594.78475410686,
+        "ideal_derated_pair_pull_N": 432597.3083993146,
+        "nominal_min_ratio": 1.91240783540247,
+        "sweep_samples": 31,
+        "unqualified_custom_proposal": true,
+        "sizing_scope": "Worst specified CoP over grounded crouch FK; prescribed own-joint range in this crouch only. Force envelope provisional upperbody2200kg+2legs800kg allowances+external3000kg times1.5. Custom bore/rod,30MPa eta.85,NOT actual mass/continuous rating. No mount/valve/hose qualification."
+      },
+      {
+        "a_world_m": [
+          0.2539748109270619,
+          0.5,
+          1.0566396416223396
+        ],
+        "b_world_m": [
+          -0.14935942133838823,
+          0.5,
+          0.34712467744394376
+        ],
+        "lateral_offsets_m": [
+          -0.2,
+          0.2
+        ],
+        "bore_m": 0.12,
+        "rod_m": 0.06,
+        "outside_diameter_m": 0.13999999999999999,
+        "barrel_length_m": 0.31049015067440133,
+        "proposed_stroke_m": 0.10549015067440136,
+        "eye_length_min_m": 0.726653211309405,
+        "eye_length_max_m": 0.8161433619838063,
+        "min_arm_m": 0.235727490761119,
+        "neutral_required_moment_Nm": 56594.78475410686,
+        "ideal_derated_pair_pull_N": 432597.3083993146,
+        "nominal_min_ratio": 1.8018458496139866,
+        "sweep_samples": 31,
+        "unqualified_custom_proposal": true,
+        "sizing_scope": "Worst specified CoP over grounded crouch FK; prescribed own-joint range in this crouch only. Force envelope provisional upperbody2200kg+2legs800kg allowances+external3000kg times1.5. Custom bore/rod,30MPa eta.85,NOT actual mass/continuous rating. No mount/valve/hose qualification."
+      },
+      {
+        "a_world_m": [
+          -0.15190448147401636,
+          0.5,
+          1.1796762215487988
+        ],
+        "b_world_m": [
+          0.18615234787666882,
+          0.5,
+          0.6182258628308439
+        ],
+        "lateral_offsets_m": [
+          -0.2,
+          0.2
+        ],
+        "bore_m": 0.12,
+        "rod_m": 0.06,
+        "outside_diameter_m": 0.13999999999999999,
+        "barrel_length_m": 0.3106085149214346,
+        "proposed_stroke_m": 0.10560851492143462,
+        "eye_length_min_m": 0.5657607894979579,
+        "eye_length_max_m": 0.6553693044193926,
+        "min_arm_m": 0.2527565930745722,
+        "neutral_required_moment_Nm": 56594.78475410686,
+        "ideal_derated_pair_pull_N": 432597.3083993146,
+        "nominal_min_ratio": 1.9320123279787944,
+        "sweep_samples": 31,
+        "unqualified_custom_proposal": true,
+        "sizing_scope": "Worst specified CoP over grounded crouch FK; prescribed own-joint range in this crouch only. Force envelope provisional upperbody2200kg+2legs800kg allowances+external3000kg times1.5. Custom bore/rod,30MPa eta.85,NOT actual mass/continuous rating. No mount/valve/hose qualification."
+      },
+      {
+        "a_world_m": [
+          0.2539748109270619,
+          0.5,
+          1.0566396416223396
+        ],
+        "b_world_m": [
+          -0.0694440449770983,
+          0.5,
+          0.5251963838462619
+        ],
+        "lateral_offsets_m": [
+          -0.2,
+          0.2
+        ],
+        "bore_m": 0.12,
+        "rod_m": 0.06,
+        "outside_diameter_m": 0.13999999999999999,
+        "barrel_length_m": 0.3114816834068478,
+        "proposed_stroke_m": 0.10648168340684781,
+        "eye_length_min_m": 0.5316370292115772,
+        "eye_length_max_m": 0.622118712618425,
+        "min_arm_m": 0.24064327817013245,
+        "neutral_required_moment_Nm": 56594.78475410686,
+        "ideal_derated_pair_pull_N": 432597.3083993146,
+        "nominal_min_ratio": 1.8394209797437668,
+        "sweep_samples": 31,
+        "unqualified_custom_proposal": true,
+        "sizing_scope": "Worst specified CoP over grounded crouch FK; prescribed own-joint range in this crouch only. Force envelope provisional upperbody2200kg+2legs800kg allowances+external3000kg times1.5. Custom bore/rod,30MPa eta.85,NOT actual mass/continuous rating. No mount/valve/hose qualification."
+      },
+      {
+        "a_world_m": [
+          0.2539748109270619,
+          0.5,
+          1.0566396416223396
+        ],
+        "b_world_m": [
+          -0.36141191020030294,
+          0.5,
+          0.929734102331207
+        ],
+        "lateral_offsets_m": [
+          -0.2,
+          0.2
+        ],
+        "bore_m": 0.12,
+        "rod_m": 0.06,
+        "outside_diameter_m": 0.13999999999999999,
+        "barrel_length_m": 0.3120735622987184,
+        "proposed_stroke_m": 0.10707356229871844,
+        "eye_length_min_m": 0.5372622017977258,
+        "eye_length_max_m": 0.6283357640964442,
+        "min_arm_m": 0.23025953653207962,
+        "neutral_required_moment_Nm": 56594.78475410686,
+        "ideal_derated_pair_pull_N": 432597.3083993146,
+        "nominal_min_ratio": 1.7600500853538983,
+        "sweep_samples": 31,
+        "unqualified_custom_proposal": true,
+        "sizing_scope": "Worst specified CoP over grounded crouch FK; prescribed own-joint range in this crouch only. Force envelope provisional upperbody2200kg+2legs800kg allowances+external3000kg times1.5. Custom bore/rod,30MPa eta.85,NOT actual mass/continuous rating. No mount/valve/hose qualification."
+      },
+      {
+        "a_world_m": [
+          0.016386932448381977,
+          0.5,
+          1.0113848076264005
+        ],
+        "b_world_m": [
+          0.23403516794226245,
+          0.5,
+          0.4866688959208167
+        ],
+        "lateral_offsets_m": [
+          -0.2,
+          0.2
+        ],
+        "bore_m": 0.12,
+        "rod_m": 0.06,
+        "outside_diameter_m": 0.13999999999999999,
+        "barrel_length_m": 0.31550102164945426,
+        "proposed_stroke_m": 0.11050102164945429,
+        "eye_length_min_m": 0.4735637126992127,
+        "eye_length_max_m": 0.568064734348667,
+        "min_arm_m": 0.2483554342856174,
+        "neutral_required_moment_Nm": 56594.78475410686,
+        "ideal_derated_pair_pull_N": 432597.3083993146,
+        "nominal_min_ratio": 1.8983708987514896,
+        "sweep_samples": 31,
+        "unqualified_custom_proposal": true,
+        "sizing_scope": "Worst specified CoP over grounded crouch FK; prescribed own-joint range in this crouch only. Force envelope provisional upperbody2200kg+2legs800kg allowances+external3000kg times1.5. Custom bore/rod,30MPa eta.85,NOT actual mass/continuous rating. No mount/valve/hose qualification."
+      },
+      {
+        "a_world_m": [
+          0.15780828868569152,
+          0.5,
+          1.1528061638637102
+        ],
+        "b_world_m": [
+          0.10623697151537884,
+          0.5,
+          0.4401541564285257
+        ],
+        "lateral_offsets_m": [
+          -0.2,
+          0.2
+        ],
+        "bore_m": 0.12,
+        "rod_m": 0.06,
+        "outside_diameter_m": 0.13999999999999999,
+        "barrel_length_m": 0.3162782632091312,
+        "proposed_stroke_m": 0.11127826320913124,
+        "eye_length_min_m": 0.6192372960728758,
+        "eye_length_max_m": 0.714515559282007,
+        "min_arm_m": 0.243147447067418,
+        "neutral_required_moment_Nm": 56594.78475410686,
+        "ideal_derated_pair_pull_N": 432597.3083993146,
+        "nominal_min_ratio": 1.8585622615676967,
+        "sweep_samples": 31,
+        "unqualified_custom_proposal": true,
+        "sizing_scope": "Worst specified CoP over grounded crouch FK; prescribed own-joint range in this crouch only. Force envelope provisional upperbody2200kg+2legs800kg allowances+external3000kg times1.5. Custom bore/rod,30MPa eta.85,NOT actual mass/continuous rating. No mount/valve/hose qualification."
+      },
+      {
+        "a_world_m": [
+          0.2539748109270619,
+          0.5,
+          1.0566396416223396
+        ],
+        "b_world_m": [
+          -0.19724224140398186,
+          0.5,
+          0.4786816443539709
+        ],
+        "lateral_offsets_m": [
+          -0.2,
+          0.2
+        ],
+        "bore_m": 0.12,
+        "rod_m": 0.06,
+        "outside_diameter_m": 0.13999999999999999,
+        "barrel_length_m": 0.31644681453380774,
+        "proposed_stroke_m": 0.11144681453380777,
+        "eye_length_min_m": 0.637787305594804,
+        "eye_length_max_m": 0.7332341201286118,
+        "min_arm_m": 0.25773818654274494,
+        "neutral_required_moment_Nm": 56594.78475410686,
+        "ideal_derated_pair_pull_N": 432597.3083993146,
+        "nominal_min_ratio": 1.9700904642458423,
+        "sweep_samples": 31,
+        "unqualified_custom_proposal": true,
+        "sizing_scope": "Worst specified CoP over grounded crouch FK; prescribed own-joint range in this crouch only. Force envelope provisional upperbody2200kg+2legs800kg allowances+external3000kg times1.5. Custom bore/rod,30MPa eta.85,NOT actual mass/continuous rating. No mount/valve/hose qualification."
+      },
+      {
+        "a_world_m": [
+          0.3529697602931786,
+          0.5,
+          1.1556345909884562
+        ],
+        "b_world_m": [
+          -0.19724224140398186,
+          0.5,
+          0.4786816443539709
+        ],
+        "lateral_offsets_m": [
+          -0.2,
+          0.2
+        ],
+        "bore_m": 0.12,
+        "rod_m": 0.06,
+        "outside_diameter_m": 0.13999999999999999,
+        "barrel_length_m": 0.3174185988628446,
+        "proposed_stroke_m": 0.11241859886284465,
+        "eye_length_min_m": 0.7759337031165267,
+        "eye_length_max_m": 0.8723523019793713,
+        "min_arm_m": 0.2459049153877306,
+        "neutral_required_moment_Nm": 56594.78475410686,
+        "ideal_derated_pair_pull_N": 432597.3083993146,
+        "nominal_min_ratio": 1.8796397049849018,
+        "sweep_samples": 31,
+        "unqualified_custom_proposal": true,
+        "sizing_scope": "Worst specified CoP over grounded crouch FK; prescribed own-joint range in this crouch only. Force envelope provisional upperbody2200kg+2legs800kg allowances+external3000kg times1.5. Custom bore/rod,30MPa eta.85,NOT actual mass/continuous rating. No mount/valve/hose qualification."
+      },
+      {
+        "a_world_m": [
+          0.016386932448381977,
+          0.5,
+          1.0113848076264005
+        ],
+        "b_world_m": [
+          0.28191798800785606,
+          0.5,
+          0.3551119290107895
+        ],
+        "lateral_offsets_m": [
+          -0.2,
+          0.2
+        ],
+        "bore_m": 0.12,
+        "rod_m": 0.06,
+        "outside_diameter_m": 0.13999999999999999,
+        "barrel_length_m": 0.3190017195162944,
+        "proposed_stroke_m": 0.11400171951629444,
+        "eye_length_min_m": 0.6099536693839872,
+        "eye_length_max_m": 0.7079553889002816,
+        "min_arm_m": 0.2513014671828543,
+        "neutral_required_moment_Nm": 56594.78475410686,
+        "ideal_derated_pair_pull_N": 432597.3083993146,
+        "nominal_min_ratio": 1.9208896857269628,
+        "sweep_samples": 31,
+        "unqualified_custom_proposal": true,
+        "sizing_scope": "Worst specified CoP over grounded crouch FK; prescribed own-joint range in this crouch only. Force envelope provisional upperbody2200kg+2legs800kg allowances+external3000kg times1.5. Custom bore/rod,30MPa eta.85,NOT actual mass/continuous rating. No mount/valve/hose qualification."
+      },
+      {
+        "a_world_m": [
+          0.2539748109270619,
+          0.5,
+          1.0566396416223396
+        ],
+        "b_world_m": [
+          -0.3135290901347093,
+          0.5,
+          0.7981771354211797
+        ],
+        "lateral_offsets_m": [
+          -0.2,
+          0.2
+        ],
+        "bore_m": 0.12,
+        "rod_m": 0.06,
+        "outside_diameter_m": 0.13999999999999999,
+        "barrel_length_m": 0.31970552721509626,
+        "proposed_stroke_m": 0.11470552721509629,
+        "eye_length_min_m": 0.5248837164638764,
+        "eye_length_max_m": 0.6235892436789727,
+        "min_arm_m": 0.2681296303517673,
+        "neutral_required_moment_Nm": 56594.78475410686,
+        "ideal_derated_pair_pull_N": 432597.3083993146,
+        "nominal_min_ratio": 2.0495202322305963,
+        "sweep_samples": 31,
+        "unqualified_custom_proposal": true,
+        "sizing_scope": "Worst specified CoP over grounded crouch FK; prescribed own-joint range in this crouch only. Force envelope provisional upperbody2200kg+2legs800kg allowances+external3000kg times1.5. Custom bore/rod,30MPa eta.85,NOT actual mass/continuous rating. No mount/valve/hose qualification."
+      },
+      {
+        "a_world_m": [
+          0.1125534546897524,
+          0.5,
+          0.91521828538503
+        ],
+        "b_world_m": [
+          -0.14935942133838823,
+          0.5,
+          0.34712467744394376
+        ],
+        "lateral_offsets_m": [
+          -0.2,
+          0.2
+        ],
+        "bore_m": 0.12,
+        "rod_m": 0.06,
+        "outside_diameter_m": 0.13999999999999999,
+        "barrel_length_m": 0.3198500292651232,
+        "proposed_stroke_m": 0.11485002926512321,
+        "eye_length_min_m": 0.5267126790326564,
+        "eye_length_max_m": 0.6255627082977796,
+        "min_arm_m": 0.2690243613572653,
+        "neutral_required_moment_Nm": 56594.78475410686,
+        "ideal_derated_pair_pull_N": 432597.3083993146,
+        "nominal_min_ratio": 2.0563593469370405,
+        "sweep_samples": 31,
+        "unqualified_custom_proposal": true,
+        "sizing_scope": "Worst specified CoP over grounded crouch FK; prescribed own-joint range in this crouch only. Force envelope provisional upperbody2200kg+2legs800kg allowances+external3000kg times1.5. Custom bore/rod,30MPa eta.85,NOT actual mass/continuous rating. No mount/valve/hose qualification."
+      },
+      {
+        "a_world_m": [
+          0.2539748109270619,
+          0.5,
+          1.0566396416223396
+        ],
+        "b_world_m": [
+          -0.2656462700691156,
+          0.5,
+          0.6666201685111526
+        ],
+        "lateral_offsets_m": [
+          -0.2,
+          0.2
+        ],
+        "bore_m": 0.12,
+        "rod_m": 0.06,
+        "outside_diameter_m": 0.13999999999999999,
+        "barrel_length_m": 0.321568212995899,
+        "proposed_stroke_m": 0.11656821299589902,
+        "eye_length_min_m": 0.5491403810842194,
+        "eye_length_max_m": 0.6497085940801184,
+        "min_arm_m": 0.28338574618353923,
+        "neutral_required_moment_Nm": 56594.78475410686,
+        "ideal_derated_pair_pull_N": 432597.3083993146,
+        "nominal_min_ratio": 2.1661344162782488,
+        "sweep_samples": 31,
+        "unqualified_custom_proposal": true,
+        "sizing_scope": "Worst specified CoP over grounded crouch FK; prescribed own-joint range in this crouch only. Force envelope provisional upperbody2200kg+2legs800kg allowances+external3000kg times1.5. Custom bore/rod,30MPa eta.85,NOT actual mass/continuous rating. No mount/valve/hose qualification."
+      },
+      {
+        "a_world_m": [
+          -0.07977958979298853,
+          0.5,
+          1.107551329867771
+        ],
+        "b_world_m": [
+          0.23403516794226245,
+          0.5,
+          0.4866688959208167
+        ],
+        "lateral_offsets_m": [
+          -0.2,
+          0.2
+        ],
+        "bore_m": 0.12,
+        "rod_m": 0.06,
+        "outside_diameter_m": 0.13999999999999999,
+        "barrel_length_m": 0.32160369963885926,
+        "proposed_stroke_m": 0.11660369963885929,
+        "eye_length_min_m": 0.5950792015139061,
+        "eye_length_max_m": 0.6956829011527654,
+        "min_arm_m": 0.26479247083733437,
+        "neutral_required_moment_Nm": 56594.78475410686,
+        "ideal_derated_pair_pull_N": 432597.3083993146,
+        "nominal_min_ratio": 2.0240117647999805,
+        "sweep_samples": 31,
+        "unqualified_custom_proposal": true,
+        "sizing_scope": "Worst specified CoP over grounded crouch FK; prescribed own-joint range in this crouch only. Force envelope provisional upperbody2200kg+2legs800kg allowances+external3000kg times1.5. Custom bore/rod,30MPa eta.85,NOT actual mass/continuous rating. No mount/valve/hose qualification."
+      },
+      {
+        "a_world_m": [
+          -0.15190448147401636,
+          0.5,
+          1.1796762215487988
+        ],
+        "b_world_m": [
+          0.23403516794226245,
+          0.5,
+          0.4866688959208167
+        ],
+        "lateral_offsets_m": [
+          -0.2,
+          0.2
+        ],
+        "bore_m": 0.12,
+        "rod_m": 0.06,
+        "outside_diameter_m": 0.13999999999999999,
+        "barrel_length_m": 0.32445298145473833,
+        "proposed_stroke_m": 0.11945298145473836,
+        "eye_length_min_m": 0.6897736988615557,
+        "eye_length_max_m": 0.7932266803162941,
+        "min_arm_m": 0.27301000152275307,
+        "neutral_required_moment_Nm": 56594.78475410686,
+        "ideal_derated_pair_pull_N": 432597.3083993146,
+        "nominal_min_ratio": 2.086824648913705,
+        "sweep_samples": 31,
+        "unqualified_custom_proposal": true,
+        "sizing_scope": "Worst specified CoP over grounded crouch FK; prescribed own-joint range in this crouch only. Force envelope provisional upperbody2200kg+2legs800kg allowances+external3000kg times1.5. Custom bore/rod,30MPa eta.85,NOT actual mass/continuous rating. No mount/valve/hose qualification."
+      },
+      {
+        "a_world_m": [
+          0.15780828868569152,
+          0.5,
+          1.1528061638637102
+        ],
+        "b_world_m": [
+          0.058354151449785195,
+          0.5,
+          0.5717111233385528
+        ],
+        "lateral_offsets_m": [
+          -0.2,
+          0.2
+        ],
+        "bore_m": 0.12,
+        "rod_m": 0.06,
+        "outside_diameter_m": 0.13999999999999999,
+        "barrel_length_m": 0.3254918426850498,
+        "proposed_stroke_m": 0.12049184268504985,
+        "eye_length_min_m": 0.48505253353804056,
+        "eye_length_max_m": 0.5895443762230904,
+        "min_arm_m": 0.27526509382873626,
+        "neutral_required_moment_Nm": 56594.78475410686,
+        "ideal_derated_pair_pull_N": 432597.3083993146,
+        "nominal_min_ratio": 2.1040620474831826,
+        "sweep_samples": 31,
+        "unqualified_custom_proposal": true,
+        "sizing_scope": "Worst specified CoP over grounded crouch FK; prescribed own-joint range in this crouch only. Force envelope provisional upperbody2200kg+2legs800kg allowances+external3000kg times1.5. Custom bore/rod,30MPa eta.85,NOT actual mass/continuous rating. No mount/valve/hose qualification."
+      },
+      {
+        "a_world_m": [
+          0.3529697602931786,
+          0.5,
+          1.1556345909884562
+        ],
+        "b_world_m": [
+          -0.1378480736422321,
+          0.5,
+          0.7131349080034435
+        ],
+        "lateral_offsets_m": [
+          -0.2,
+          0.2
+        ],
+        "bore_m": 0.12,
+        "rod_m": 0.06,
+        "outside_diameter_m": 0.13999999999999999,
+        "barrel_length_m": 0.32848887799953375,
+        "proposed_stroke_m": 0.12348887799953377,
+        "eye_length_min_m": 0.5533500702706822,
+        "eye_length_max_m": 0.6608389482702159,
+        "min_arm_m": 0.2840444893807394,
+        "neutral_required_moment_Nm": 56594.78475410686,
+        "ideal_derated_pair_pull_N": 432597.3083993146,
+        "nominal_min_ratio": 2.1711696953286648,
+        "sweep_samples": 31,
+        "unqualified_custom_proposal": true,
+        "sizing_scope": "Worst specified CoP over grounded crouch FK; prescribed own-joint range in this crouch only. Force envelope provisional upperbody2200kg+2legs800kg allowances+external3000kg times1.5. Custom bore/rod,30MPa eta.85,NOT actual mass/continuous rating. No mount/valve/hose qualification."
+      },
+      {
+        "a_world_m": [
+          -0.07977958979298853,
+          0.5,
+          1.107551329867771
+        ],
+        "b_world_m": [
+          0.28191798800785606,
+          0.5,
+          0.3551119290107895
+        ],
+        "lateral_offsets_m": [
+          -0.2,
+          0.2
+        ],
+        "bore_m": 0.12,
+        "rod_m": 0.06,
+        "outside_diameter_m": 0.13999999999999999,
+        "barrel_length_m": 0.3286546176189913,
+        "proposed_stroke_m": 0.12365461761899131,
+        "eye_length_min_m": 0.7272047656001298,
+        "eye_length_max_m": 0.8348593832191211,
+        "min_arm_m": 0.27440131206872176,
+        "neutral_required_moment_Nm": 56594.78475410686,
+        "ideal_derated_pair_pull_N": 432597.3083993146,
+        "nominal_min_ratio": 2.097459501576343,
+        "sweep_samples": 31,
+        "unqualified_custom_proposal": true,
+        "sizing_scope": "Worst specified CoP over grounded crouch FK; prescribed own-joint range in this crouch only. Force envelope provisional upperbody2200kg+2legs800kg allowances+external3000kg times1.5. Custom bore/rod,30MPa eta.85,NOT actual mass/continuous rating. No mount/valve/hose qualification."
+      },
+      {
+        "a_world_m": [
+          -0.17877453915910518,
+          0.5,
+          1.0085563805016544
+        ],
+        "b_world_m": [
+          0.23403516794226245,
+          0.5,
+          0.4866688959208167
+        ],
+        "lateral_offsets_m": [
+          -0.2,
+          0.2
+        ],
+        "bore_m": 0.12,
+        "rod_m": 0.06,
+        "outside_diameter_m": 0.13999999999999999,
+        "barrel_length_m": 0.3322678898654128,
+        "proposed_stroke_m": 0.12726788986541282,
+        "eye_length_min_m": 0.5541480708984022,
+        "eye_length_max_m": 0.665415960763815,
+        "min_arm_m": 0.3014383593211591,
+        "neutral_required_moment_Nm": 56594.78475410686,
+        "ideal_derated_pair_pull_N": 432597.3083993146,
+        "nominal_min_ratio": 2.304124372187424,
+        "sweep_samples": 31,
+        "unqualified_custom_proposal": true,
+        "sizing_scope": "Worst specified CoP over grounded crouch FK; prescribed own-joint range in this crouch only. Force envelope provisional upperbody2200kg+2legs800kg allowances+external3000kg times1.5. Custom bore/rod,30MPa eta.85,NOT actual mass/continuous rating. No mount/valve/hose qualification."
+      },
+      {
+        "a_world_m": [
+          -0.250899430840133,
+          0.5,
+          1.0806812721826822
+        ],
+        "b_world_m": [
+          0.23403516794226245,
+          0.5,
+          0.4866688959208167
+        ],
+        "lateral_offsets_m": [
+          -0.2,
+          0.2
+        ],
+        "bore_m": 0.12,
+        "rod_m": 0.06,
+        "outside_diameter_m": 0.13999999999999999,
+        "barrel_length_m": 0.3330306185271682,
+        "proposed_stroke_m": 0.12803061852716824,
+        "eye_length_min_m": 0.6547889614579224,
+        "eye_length_max_m": 0.7668195799850906,
+        "min_arm_m": 0.3037600035836331,
+        "neutral_required_moment_Nm": 56594.78475410686,
+        "ideal_derated_pair_pull_N": 432597.3083993146,
+        "nominal_min_ratio": 2.3218704783590542,
+        "sweep_samples": 31,
+        "unqualified_custom_proposal": true,
+        "sizing_scope": "Worst specified CoP over grounded crouch FK; prescribed own-joint range in this crouch only. Force envelope provisional upperbody2200kg+2legs800kg allowances+external3000kg times1.5. Custom bore/rod,30MPa eta.85,NOT actual mass/continuous rating. No mount/valve/hose qualification."
+      },
+      {
+        "a_world_m": [
+          0.3529697602931786,
+          0.5,
+          1.1556345909884562
+        ],
+        "b_world_m": [
+          -0.2656462700691156,
+          0.5,
+          0.6666201685111526
+        ],
+        "lateral_offsets_m": [
+          -0.2,
+          0.2
+        ],
+        "bore_m": 0.12,
+        "rod_m": 0.06,
+        "outside_diameter_m": 0.13999999999999999,
+        "barrel_length_m": 0.3333479276939014,
+        "proposed_stroke_m": 0.12834792769390146,
+        "eye_length_min_m": 0.6762082836265179,
+        "eye_length_max_m": 0.7885562113204193,
+        "min_arm_m": 0.2980485803948527,
+        "neutral_required_moment_Nm": 56594.78475410686,
+        "ideal_derated_pair_pull_N": 432597.3083993146,
+        "nominal_min_ratio": 2.2782136942696596,
+        "sweep_samples": 31,
+        "unqualified_custom_proposal": true,
+        "sizing_scope": "Worst specified CoP over grounded crouch FK; prescribed own-joint range in this crouch only. Force envelope provisional upperbody2200kg+2legs800kg allowances+external3000kg times1.5. Custom bore/rod,30MPa eta.85,NOT actual mass/continuous rating. No mount/valve/hose qualification."
+      },
+      {
+        "a_world_m": [
+          -0.15190448147401636,
+          0.5,
+          1.1796762215487988
+        ],
+        "b_world_m": [
+          0.28191798800785606,
+          0.5,
+          0.3551119290107895
+        ],
+        "lateral_offsets_m": [
+          -0.2,
+          0.2
+        ],
+        "bore_m": 0.12,
+        "rod_m": 0.06,
+        "outside_diameter_m": 0.13999999999999999,
+        "barrel_length_m": 0.3337664461745051,
+        "proposed_stroke_m": 0.12876644617450517,
+        "eye_length_min_m": 0.8189568000504981,
+        "eye_length_max_m": 0.9317232462250032,
+        "min_arm_m": 0.2870688510725323,
+        "neutral_required_moment_Nm": 56594.78475410686,
+        "ideal_derated_pair_pull_N": 432597.3083993146,
+        "nominal_min_ratio": 2.1942872093042025,
+        "sweep_samples": 31,
+        "unqualified_custom_proposal": true,
+        "sizing_scope": "Worst specified CoP over grounded crouch FK; prescribed own-joint range in this crouch only. Force envelope provisional upperbody2200kg+2legs800kg allowances+external3000kg times1.5. Custom bore/rod,30MPa eta.85,NOT actual mass/continuous rating. No mount/valve/hose qualification."
+      },
+      {
+        "a_world_m": [
+          0.15780828868569152,
+          0.5,
+          1.1528061638637102
+        ],
+        "b_world_m": [
+          -0.021561224911504667,
+          0.5,
+          0.39363941693623467
+        ],
+        "lateral_offsets_m": [
+          -0.2,
+          0.2
+        ],
+        "bore_m": 0.12,
+        "rod_m": 0.06,
+        "outside_diameter_m": 0.13999999999999999,
+        "barrel_length_m": 0.3344054317074333,
+        "proposed_stroke_m": 0.12940543170743335,
+        "eye_length_min_m": 0.666663521686137,
+        "eye_length_max_m": 0.7800689533935703,
+        "min_arm_m": 0.2945501778740902,
+        "neutral_required_moment_Nm": 56594.78475410686,
+        "ideal_derated_pair_pull_N": 432597.3083993146,
+        "nominal_min_ratio": 2.2514727229813216,
+        "sweep_samples": 31,
+        "unqualified_custom_proposal": true,
+        "sizing_scope": "Worst specified CoP over grounded crouch FK; prescribed own-joint range in this crouch only. Force envelope provisional upperbody2200kg+2legs800kg allowances+external3000kg times1.5. Custom bore/rod,30MPa eta.85,NOT actual mass/continuous rating. No mount/valve/hose qualification."
+      },
+      {
+        "a_world_m": [
+          -0.3498943802062497,
+          0.5,
+          0.9816863228165655
+        ],
+        "b_world_m": [
+          0.23403516794226245,
+          0.5,
+          0.4866688959208167
+        ],
+        "lateral_offsets_m": [
+          -0.2,
+          0.2
+        ],
+        "bore_m": 0.12,
+        "rod_m": 0.06,
+        "outside_diameter_m": 0.13999999999999999,
+        "barrel_length_m": 0.33774148199001097,
+        "proposed_stroke_m": 0.132741481990011,
+        "eye_length_min_m": 0.6487753173889533,
+        "eye_length_max_m": 0.7655167993789643,
+        "min_arm_m": 0.32566159192032096,
+        "neutral_required_moment_Nm": 56594.78475410686,
+        "ideal_derated_pair_pull_N": 432597.3083993146,
+        "nominal_min_ratio": 2.489281101180329,
+        "sweep_samples": 31,
+        "unqualified_custom_proposal": true,
+        "sizing_scope": "Worst specified CoP over grounded crouch FK; prescribed own-joint range in this crouch only. Force envelope provisional upperbody2200kg+2legs800kg allowances+external3000kg times1.5. Custom bore/rod,30MPa eta.85,NOT actual mass/continuous rating. No mount/valve/hose qualification."
+      },
+      {
+        "a_world_m": [
+          -0.2777694885252219,
+          0.5,
+          0.9095614311355378
+        ],
+        "b_world_m": [
+          0.23403516794226245,
+          0.5,
+          0.4866688959208167
+        ],
+        "lateral_offsets_m": [
+          -0.2,
+          0.2
+        ],
+        "bore_m": 0.12,
+        "rod_m": 0.06,
+        "outside_diameter_m": 0.13999999999999999,
+        "barrel_length_m": 0.33788505838703,
+        "proposed_stroke_m": 0.13288505838703002,
+        "eye_length_min_m": 0.5470291700507507,
+        "eye_length_max_m": 0.6639142284377807,
+        "min_arm_m": 0.3267774470694604,
+        "neutral_required_moment_Nm": 56594.78475410686,
+        "ideal_derated_pair_pull_N": 432597.3083993146,
+        "nominal_min_ratio": 2.497810437163822,
+        "sweep_samples": 31,
+        "unqualified_custom_proposal": true,
+        "sizing_scope": "Worst specified CoP over grounded crouch FK; prescribed own-joint range in this crouch only. Force envelope provisional upperbody2200kg+2legs800kg allowances+external3000kg times1.5. Custom bore/rod,30MPa eta.85,NOT actual mass/continuous rating. No mount/valve/hose qualification."
+      },
+      {
+        "a_world_m": [
+          0.3529697602931786,
+          0.5,
+          1.1556345909884562
+        ],
+        "b_world_m": [
+          -0.18573089370782572,
+          0.5,
+          0.8446918749134706
+        ],
+        "lateral_offsets_m": [
+          -0.2,
+          0.2
+        ],
+        "bore_m": 0.12,
+        "rod_m": 0.06,
+        "outside_diameter_m": 0.13999999999999999,
+        "barrel_length_m": 0.34058019537457007,
+        "proposed_stroke_m": 0.1355801953745701,
+        "eye_length_min_m": 0.5024196175684876,
+        "eye_length_max_m": 0.6219998129430577,
+        "min_arm_m": 0.3248655315595127,
+        "neutral_required_moment_Nm": 56594.78475410686,
+        "ideal_derated_pair_pull_N": 432597.3083993146,
+        "nominal_min_ratio": 2.483196201822459,
+        "sweep_samples": 31,
+        "unqualified_custom_proposal": true,
+        "sizing_scope": "Worst specified CoP over grounded crouch FK; prescribed own-joint range in this crouch only. Force envelope provisional upperbody2200kg+2legs800kg allowances+external3000kg times1.5. Custom bore/rod,30MPa eta.85,NOT actual mass/continuous rating. No mount/valve/hose qualification."
+      },
+      {
+        "a_world_m": [
+          -0.08260801691773467,
+          0.5,
+          0.912389858260284
+        ],
+        "b_world_m": [
+          0.28191798800785606,
+          0.5,
+          0.3551119290107895
+        ],
+        "lateral_offsets_m": [
+          -0.2,
+          0.2
+        ],
+        "bore_m": 0.12,
+        "rod_m": 0.06,
+        "outside_diameter_m": 0.13999999999999999,
+        "barrel_length_m": 0.34167218799575494,
+        "proposed_stroke_m": 0.13667218799575498,
+        "eye_length_min_m": 0.5452391414585624,
+        "eye_length_max_m": 0.6659113294543174,
+        "min_arm_m": 0.31842702224868097,
+        "neutral_required_moment_Nm": 56594.78475410686,
+        "ideal_derated_pair_pull_N": 432597.3083993146,
+        "nominal_min_ratio": 2.4339817413368996,
+        "sweep_samples": 31,
+        "unqualified_custom_proposal": true,
+        "sizing_scope": "Worst specified CoP over grounded crouch FK; prescribed own-joint range in this crouch only. Force envelope provisional upperbody2200kg+2legs800kg allowances+external3000kg times1.5. Custom bore/rod,30MPa eta.85,NOT actual mass/continuous rating. No mount/valve/hose qualification."
+      },
+      {
+        "a_world_m": [
+          0.3529697602931786,
+          0.5,
+          1.1556345909884562
+        ],
+        "b_world_m": [
+          -0.3135290901347093,
+          0.5,
+          0.7981771354211797
+        ],
+        "lateral_offsets_m": [
+          -0.2,
+          0.2
+        ],
+        "bore_m": 0.12,
+        "rod_m": 0.06,
+        "outside_diameter_m": 0.13999999999999999,
+        "barrel_length_m": 0.34209841548158915,
+        "proposed_stroke_m": 0.1370984154815892,
+        "eye_length_min_m": 0.6352061198494688,
+        "eye_length_max_m": 0.756304535331058,
+        "min_arm_m": 0.3297437552371358,
+        "neutral_required_moment_Nm": 56594.78475410686,
+        "ideal_derated_pair_pull_N": 432597.3083993146,
+        "nominal_min_ratio": 2.5204842035681754,
+        "sweep_samples": 31,
+        "unqualified_custom_proposal": true,
+        "sizing_scope": "Worst specified CoP over grounded crouch FK; prescribed own-joint range in this crouch only. Force envelope provisional upperbody2200kg+2legs800kg allowances+external3000kg times1.5. Custom bore/rod,30MPa eta.85,NOT actual mass/continuous rating. No mount/valve/hose qualification."
+      },
+      {
+        "a_world_m": [
+          0.15780828868569152,
+          0.5,
+          1.1528061638637102
+        ],
+        "b_world_m": [
+          -0.0694440449770983,
+          0.5,
+          0.5251963838462619
+        ],
+        "lateral_offsets_m": [
+          -0.2,
+          0.2
+        ],
+        "bore_m": 0.12,
+        "rod_m": 0.06,
+        "outside_diameter_m": 0.13999999999999999,
+        "barrel_length_m": 0.3441870913875842,
+        "proposed_stroke_m": 0.13918709138758423,
+        "eye_length_min_m": 0.5442989827208827,
+        "eye_length_max_m": 0.6674860741084669,
+        "min_arm_m": 0.32707469316961224,
+        "neutral_required_moment_Nm": 56594.78475410686,
+        "ideal_derated_pair_pull_N": 432597.3083993146,
+        "nominal_min_ratio": 2.5000825168866543,
+        "sweep_samples": 31,
+        "unqualified_custom_proposal": true,
+        "sizing_scope": "Worst specified CoP over grounded crouch FK; prescribed own-joint range in this crouch only. Force envelope provisional upperbody2200kg+2legs800kg allowances+external3000kg times1.5. Custom bore/rod,30MPa eta.85,NOT actual mass/continuous rating. No mount/valve/hose qualification."
+      },
+      {
+        "a_world_m": [
+          0.3529697602931786,
+          0.5,
+          1.1556345909884562
+        ],
+        "b_world_m": [
+          -0.36141191020030294,
+          0.5,
+          0.929734102331207
+        ],
+        "lateral_offsets_m": [
+          -0.2,
+          0.2
+        ],
+        "bore_m": 0.12,
+        "rod_m": 0.06,
+        "outside_diameter_m": 0.13999999999999999,
+        "barrel_length_m": 0.3466164668202495,
+        "proposed_stroke_m": 0.14161646682024953,
+        "eye_length_min_m": 0.6236312905421875,
+        "eye_length_max_m": 0.749247757362437,
+        "min_arm_m": 0.352013513859212,
+        "neutral_required_moment_Nm": 56594.78475410686,
+        "ideal_derated_pair_pull_N": 432597.3083993146,
+        "nominal_min_ratio": 2.6907090340091724,
+        "sweep_samples": 31,
+        "unqualified_custom_proposal": true,
+        "sizing_scope": "Worst specified CoP over grounded crouch FK; prescribed own-joint range in this crouch only. Force envelope provisional upperbody2200kg+2legs800kg allowances+external3000kg times1.5. Custom bore/rod,30MPa eta.85,NOT actual mass/continuous rating. No mount/valve/hose qualification."
+      },
+      {
+        "a_world_m": [
+          -0.17877453915910518,
+          0.5,
+          1.0085563805016544
+        ],
+        "b_world_m": [
+          0.28191798800785606,
+          0.5,
+          0.3551119290107895
+        ],
+        "lateral_offsets_m": [
+          -0.2,
+          0.2
+        ],
+        "bore_m": 0.12,
+        "rod_m": 0.06,
+        "outside_diameter_m": 0.13999999999999999,
+        "barrel_length_m": 0.34667045715093325,
+        "proposed_stroke_m": 0.1416704571509333,
+        "eye_length_min_m": 0.6738464318337076,
+        "eye_length_max_m": 0.7995168889846409,
+        "min_arm_m": 0.329224369821182,
+        "neutral_required_moment_Nm": 56594.78475410686,
+        "ideal_derated_pair_pull_N": 432597.3083993146,
+        "nominal_min_ratio": 2.5165141428295454,
+        "sweep_samples": 31,
+        "unqualified_custom_proposal": true,
+        "sizing_scope": "Worst specified CoP over grounded crouch FK; prescribed own-joint range in this crouch only. Force envelope provisional upperbody2200kg+2legs800kg allowances+external3000kg times1.5. Custom bore/rod,30MPa eta.85,NOT actual mass/continuous rating. No mount/valve/hose qualification."
+      },
+      {
+        "a_world_m": [
+          0.3529697602931786,
+          0.5,
+          1.1556345909884562
+        ],
+        "b_world_m": [
+          -0.23361371377341936,
+          0.5,
+          0.9762488418234979
+        ],
+        "lateral_offsets_m": [
+          -0.2,
+          0.2
+        ],
+        "bore_m": 0.12,
+        "rod_m": 0.06,
+        "outside_diameter_m": 0.13999999999999999,
+        "barrel_length_m": 0.34669644656572063,
+        "proposed_stroke_m": 0.1416964465657206,
+        "eye_length_min_m": 0.48770343854309856,
+        "eye_length_max_m": 0.6133998851088192,
+        "min_arm_m": 0.3528284620735054,
+        "neutral_required_moment_Nm": 56594.78475410686,
+        "ideal_derated_pair_pull_N": 432597.3083993146,
+        "nominal_min_ratio": 2.6969383077049716,
+        "sweep_samples": 31,
+        "unqualified_custom_proposal": true,
+        "sizing_scope": "Worst specified CoP over grounded crouch FK; prescribed own-joint range in this crouch only. Force envelope provisional upperbody2200kg+2legs800kg allowances+external3000kg times1.5. Custom bore/rod,30MPa eta.85,NOT actual mass/continuous rating. No mount/valve/hose qualification."
+      },
+      {
+        "a_world_m": [
+          0.15780828868569152,
+          0.5,
+          1.1528061638637102
+        ],
+        "b_world_m": [
+          -0.14935942133838823,
+          0.5,
+          0.34712467744394376
+        ],
+        "lateral_offsets_m": [
+          -0.2,
+          0.2
+        ],
+        "bore_m": 0.12,
+        "rod_m": 0.06,
+        "outside_diameter_m": 0.13999999999999999,
+        "barrel_length_m": 0.3467596622846635,
+        "proposed_stroke_m": 0.14175966228466352,
+        "eye_length_min_m": 0.7364901041061435,
+        "eye_length_max_m": 0.862249766390807,
+        "min_arm_m": 0.3314657480502646,
+        "neutral_required_moment_Nm": 56594.78475410686,
+        "ideal_derated_pair_pull_N": 432597.3083993146,
+        "nominal_min_ratio": 2.5336467142001893,
+        "sweep_samples": 31,
+        "unqualified_custom_proposal": true,
+        "sizing_scope": "Worst specified CoP over grounded crouch FK; prescribed own-joint range in this crouch only. Force envelope provisional upperbody2200kg+2legs800kg allowances+external3000kg times1.5. Custom bore/rod,30MPa eta.85,NOT actual mass/continuous rating. No mount/valve/hose qualification."
+      },
+      {
+        "a_world_m": [
+          -0.250899430840133,
+          0.5,
+          1.0806812721826822
+        ],
+        "b_world_m": [
+          0.28191798800785606,
+          0.5,
+          0.3551119290107895
+        ],
+        "lateral_offsets_m": [
+          -0.2,
+          0.2
+        ],
+        "bore_m": 0.12,
+        "rod_m": 0.06,
+        "outside_diameter_m": 0.13999999999999999,
+        "barrel_length_m": 0.34922516491534894,
+        "proposed_stroke_m": 0.14422516491534898,
+        "eye_length_min_m": 0.7719666333025226,
+        "eye_length_max_m": 0.9001917982178715,
+        "min_arm_m": 0.335042661128018,
+        "neutral_required_moment_Nm": 56594.78475410686,
+        "ideal_derated_pair_pull_N": 432597.3083993146,
+        "nominal_min_ratio": 2.560987801838165,
+        "sweep_samples": 31,
+        "unqualified_custom_proposal": true,
+        "sizing_scope": "Worst specified CoP over grounded crouch FK; prescribed own-joint range in this crouch only. Force envelope provisional upperbody2200kg+2legs800kg allowances+external3000kg times1.5. Custom bore/rod,30MPa eta.85,NOT actual mass/continuous rating. No mount/valve/hose qualification."
+      },
+      {
+        "a_world_m": [
+          -0.07977958979298853,
+          0.5,
+          1.107551329867771
+        ],
+        "b_world_m": [
+          0.10623697151537884,
+          0.5,
+          0.4401541564285257
+        ],
+        "lateral_offsets_m": [
+          -0.2,
+          0.2
+        ],
+        "bore_m": 0.12,
+        "rod_m": 0.06,
+        "outside_diameter_m": 0.13999999999999999,
+        "barrel_length_m": 0.35393490171594033,
+        "proposed_stroke_m": 0.14893490171594037,
+        "eye_length_min_m": 0.5599006835390924,
+        "eye_length_max_m": 0.6928355852550327,
+        "min_arm_m": 0.3543643925009962,
+        "neutral_required_moment_Nm": 56594.78475410686,
+        "ideal_derated_pair_pull_N": 432597.3083993146,
+        "nominal_min_ratio": 2.708678600944145,
+        "sweep_samples": 31,
+        "unqualified_custom_proposal": true,
+        "sizing_scope": "Worst specified CoP over grounded crouch FK; prescribed own-joint range in this crouch only. Force envelope provisional upperbody2200kg+2legs800kg allowances+external3000kg times1.5. Custom bore/rod,30MPa eta.85,NOT actual mass/continuous rating. No mount/valve/hose qualification."
+      },
+      {
+        "a_world_m": [
+          -0.15190448147401636,
+          0.5,
+          1.1796762215487988
+        ],
+        "b_world_m": [
+          0.058354151449785195,
+          0.5,
+          0.5717111233385528
+        ],
+        "lateral_offsets_m": [
+          -0.2,
+          0.2
+        ],
+        "bore_m": 0.12,
+        "rod_m": 0.06,
+        "outside_diameter_m": 0.13999999999999999,
+        "barrel_length_m": 0.3545544813531766,
+        "proposed_stroke_m": 0.14955448135317662,
+        "eye_length_min_m": 0.5097419148443927,
+        "eye_length_max_m": 0.6432963961975693,
+        "min_arm_m": 0.3723414006120954,
+        "neutral_required_moment_Nm": 56594.78475410686,
+        "ideal_derated_pair_pull_N": 432597.3083993146,
+        "nominal_min_ratio": 2.8460906496995713,
+        "sweep_samples": 31,
+        "unqualified_custom_proposal": true,
+        "sizing_scope": "Worst specified CoP over grounded crouch FK; prescribed own-joint range in this crouch only. Force envelope provisional upperbody2200kg+2legs800kg allowances+external3000kg times1.5. Custom bore/rod,30MPa eta.85,NOT actual mass/continuous rating. No mount/valve/hose qualification."
+      },
+      {
+        "a_world_m": [
+          0.15780828868569152,
+          0.5,
+          1.1528061638637102
+        ],
+        "b_world_m": [
+          -0.19724224140398186,
+          0.5,
+          0.4786816443539709
+        ],
+        "lateral_offsets_m": [
+          -0.2,
+          0.2
+        ],
+        "bore_m": 0.12,
+        "rod_m": 0.06,
+        "outside_diameter_m": 0.13999999999999999,
+        "barrel_length_m": 0.35502423282217754,
+        "proposed_stroke_m": 0.15002423282217758,
+        "eye_length_min_m": 0.6278843881562143,
+        "eye_length_max_m": 0.7619086209783918,
+        "min_arm_m": 0.360088611910535,
+        "neutral_required_moment_Nm": 56594.78475410686,
+        "ideal_derated_pair_pull_N": 432597.3083993146,
+        "nominal_min_ratio": 2.752433196354527,
+        "sweep_samples": 31,
+        "unqualified_custom_proposal": true,
+        "sizing_scope": "Worst specified CoP over grounded crouch FK; prescribed own-joint range in this crouch only. Force envelope provisional upperbody2200kg+2legs800kg allowances+external3000kg times1.5. Custom bore/rod,30MPa eta.85,NOT actual mass/continuous rating. No mount/valve/hose qualification."
+      },
+      {
+        "a_world_m": [
+          -0.15190448147401636,
+          0.5,
+          1.1796762215487988
+        ],
+        "b_world_m": [
+          0.10623697151537884,
+          0.5,
+          0.4401541564285257
+        ],
+        "lateral_offsets_m": [
+          -0.2,
+          0.2
+        ],
+        "bore_m": 0.12,
+        "rod_m": 0.06,
+        "outside_diameter_m": 0.13999999999999999,
+        "barrel_length_m": 0.3596581093877488,
+        "proposed_stroke_m": 0.15465810938774882,
+        "eye_length_min_m": 0.6446233818727237,
+        "eye_length_max_m": 0.7832814912604725,
+        "min_arm_m": 0.37079362785897463,
+        "neutral_required_moment_Nm": 56594.78475410686,
+        "ideal_derated_pair_pull_N": 432597.3083993146,
+        "nominal_min_ratio": 2.834259836490846,
+        "sweep_samples": 31,
+        "unqualified_custom_proposal": true,
+        "sizing_scope": "Worst specified CoP over grounded crouch FK; prescribed own-joint range in this crouch only. Force envelope provisional upperbody2200kg+2legs800kg allowances+external3000kg times1.5. Custom bore/rod,30MPa eta.85,NOT actual mass/continuous rating. No mount/valve/hose qualification."
+      },
+      {
+        "a_world_m": [
+          -0.18160296628385136,
+          0.5,
+          0.8133949088941672
+        ],
+        "b_world_m": [
+          0.28191798800785606,
+          0.5,
+          0.3551119290107895
+        ],
+        "lateral_offsets_m": [
+          -0.2,
+          0.2
+        ],
+        "bore_m": 0.12,
+        "rod_m": 0.06,
+        "outside_diameter_m": 0.13999999999999999,
+        "barrel_length_m": 0.36123078230282524,
+        "proposed_stroke_m": 0.15623078230282528,
+        "eye_length_min_m": 0.5115935534796642,
+        "eye_length_max_m": 0.6518243357824894,
+        "min_arm_m": 0.3776755208340315,
+        "neutral_required_moment_Nm": 56594.78475410686,
+        "ideal_derated_pair_pull_N": 432597.3083993146,
+        "nominal_min_ratio": 2.886863418086511,
+        "sweep_samples": 31,
+        "unqualified_custom_proposal": true,
+        "sizing_scope": "Worst specified CoP over grounded crouch FK; prescribed own-joint range in this crouch only. Force envelope provisional upperbody2200kg+2legs800kg allowances+external3000kg times1.5. Custom bore/rod,30MPa eta.85,NOT actual mass/continuous rating. No mount/valve/hose qualification."
+      },
+      {
+        "a_world_m": [
+          -0.2777694885252219,
+          0.5,
+          0.9095614311355378
+        ],
+        "b_world_m": [
+          0.28191798800785606,
+          0.5,
+          0.3551119290107895
+        ],
+        "lateral_offsets_m": [
+          -0.2,
+          0.2
+        ],
+        "bore_m": 0.12,
+        "rod_m": 0.06,
+        "outside_diameter_m": 0.13999999999999999,
+        "barrel_length_m": 0.3618980597387932,
+        "proposed_stroke_m": 0.15689805973879323,
+        "eye_length_min_m": 0.6469244594838716,
+        "eye_length_max_m": 0.7878225192226648,
+        "min_arm_m": 0.3774382814290534,
+        "neutral_required_moment_Nm": 56594.78475410686,
+        "ideal_derated_pair_pull_N": 432597.3083993146,
+        "nominal_min_ratio": 2.885050015517958,
+        "sweep_samples": 31,
+        "unqualified_custom_proposal": true,
+        "sizing_scope": "Worst specified CoP over grounded crouch FK; prescribed own-joint range in this crouch only. Force envelope provisional upperbody2200kg+2legs800kg allowances+external3000kg times1.5. Custom bore/rod,30MPa eta.85,NOT actual mass/continuous rating. No mount/valve/hose qualification."
+      },
+      {
+        "a_world_m": [
+          -0.3498943802062497,
+          0.5,
+          0.9816863228165655
+        ],
+        "b_world_m": [
+          0.28191798800785606,
+          0.5,
+          0.3551119290107895
+        ],
+        "lateral_offsets_m": [
+          -0.2,
+          0.2
+        ],
+        "bore_m": 0.12,
+        "rod_m": 0.06,
+        "outside_diameter_m": 0.13999999999999999,
+        "barrel_length_m": 0.3622397117049383,
+        "proposed_stroke_m": 0.15723971170493833,
+        "eye_length_min_m": 0.74858180950108,
+        "eye_length_max_m": 0.8898215212060183,
+        "min_arm_m": 0.3773077874478031,
+        "neutral_required_moment_Nm": 56594.78475410686,
+        "ideal_derated_pair_pull_N": 432597.3083993146,
+        "nominal_min_ratio": 2.8840525500218623,
+        "sweep_samples": 31,
+        "unqualified_custom_proposal": true,
+        "sizing_scope": "Worst specified CoP over grounded crouch FK; prescribed own-joint range in this crouch only. Force envelope provisional upperbody2200kg+2legs800kg allowances+external3000kg times1.5. Custom bore/rod,30MPa eta.85,NOT actual mass/continuous rating. No mount/valve/hose qualification."
+      },
+      {
+        "a_world_m": [
+          0.15780828868569152,
+          0.5,
+          1.1528061638637102
+        ],
+        "b_world_m": [
+          -0.2656462700691156,
+          0.5,
+          0.6666201685111526
+        ],
+        "lateral_offsets_m": [
+          -0.2,
+          0.2
+        ],
+        "bore_m": 0.12,
+        "rod_m": 0.06,
+        "outside_diameter_m": 0.13999999999999999,
+        "barrel_length_m": 0.36518631217067177,
+        "proposed_stroke_m": 0.1601863121706718,
+        "eye_length_min_m": 0.5005543995942869,
+        "eye_length_max_m": 0.6447407117649587,
+        "min_arm_m": 0.40015329977723446,
+        "neutral_required_moment_Nm": 56594.78475410686,
+        "ideal_derated_pair_pull_N": 432597.3083993146,
+        "nominal_min_ratio": 3.058678307247632,
+        "sweep_samples": 31,
+        "unqualified_custom_proposal": true,
+        "sizing_scope": "Worst specified CoP over grounded crouch FK; prescribed own-joint range in this crouch only. Force envelope provisional upperbody2200kg+2legs800kg allowances+external3000kg times1.5. Custom bore/rod,30MPa eta.85,NOT actual mass/continuous rating. No mount/valve/hose qualification."
+      },
+      {
+        "a_world_m": [
+          0.016386932448381977,
+          0.5,
+          1.0113848076264005
+        ],
+        "b_world_m": [
+          -0.14935942133838823,
+          0.5,
+          0.34712467744394376
+        ],
+        "lateral_offsets_m": [
+          -0.2,
+          0.2
+        ],
+        "bore_m": 0.12,
+        "rod_m": 0.06,
+        "outside_diameter_m": 0.13999999999999999,
+        "barrel_length_m": 0.36542368109560674,
+        "proposed_stroke_m": 0.16042368109560678,
+        "eye_length_min_m": 0.5402027676657769,
+        "eye_length_max_m": 0.6846264487613837,
+        "min_arm_m": 0.4012505778600155,
+        "neutral_required_moment_Nm": 56594.78475410686,
+        "ideal_derated_pair_pull_N": 432597.3083993146,
+        "nominal_min_ratio": 3.0670656444773616,
+        "sweep_samples": 31,
+        "unqualified_custom_proposal": true,
+        "sizing_scope": "Worst specified CoP over grounded crouch FK; prescribed own-joint range in this crouch only. Force envelope provisional upperbody2200kg+2legs800kg allowances+external3000kg times1.5. Custom bore/rod,30MPa eta.85,NOT actual mass/continuous rating. No mount/valve/hose qualification."
+      },
+      {
+        "a_world_m": [
+          -0.250899430840133,
+          0.5,
+          1.0806812721826822
+        ],
+        "b_world_m": [
+          0.10623697151537884,
+          0.5,
+          0.4401541564285257
+        ],
+        "lateral_offsets_m": [
+          -0.2,
+          0.2
+        ],
+        "bore_m": 0.12,
+        "rod_m": 0.06,
+        "outside_diameter_m": 0.13999999999999999,
+        "barrel_length_m": 0.36992016955985363,
+        "proposed_stroke_m": 0.16492016955985367,
+        "eye_length_min_m": 0.5844429028018359,
+        "eye_length_max_m": 0.7333630723616895,
+        "min_arm_m": 0.40738270919046304,
+        "neutral_required_moment_Nm": 56594.78475410686,
+        "ideal_derated_pair_pull_N": 432597.3083993146,
+        "nominal_min_ratio": 3.1139382232817225,
+        "sweep_samples": 31,
+        "unqualified_custom_proposal": true,
+        "sizing_scope": "Worst specified CoP over grounded crouch FK; prescribed own-joint range in this crouch only. Force envelope provisional upperbody2200kg+2legs800kg allowances+external3000kg times1.5. Custom bore/rod,30MPa eta.85,NOT actual mass/continuous rating. No mount/valve/hose qualification."
+      },
+      {
+        "a_world_m": [
+          -0.17877453915910518,
+          0.5,
+          1.0085563805016544
+        ],
+        "b_world_m": [
+          0.15411979158097247,
+          0.5,
+          0.30859718951849846
+        ],
+        "lateral_offsets_m": [
+          -0.2,
+          0.2
+        ],
+        "bore_m": 0.12,
+        "rod_m": 0.06,
+        "outside_diameter_m": 0.13999999999999999,
+        "barrel_length_m": 0.3743872446299208,
+        "proposed_stroke_m": 0.16938724462992083,
+        "eye_length_min_m": 0.6217008177737511,
+        "eye_length_max_m": 0.7750880624036719,
+        "min_arm_m": 0.4083129060313653,
+        "neutral_required_moment_Nm": 56594.78475410686,
+        "ideal_derated_pair_pull_N": 432597.3083993146,
+        "nominal_min_ratio": 3.121048430545593,
+        "sweep_samples": 31,
+        "unqualified_custom_proposal": true,
+        "sizing_scope": "Worst specified CoP over grounded crouch FK; prescribed own-joint range in this crouch only. Force envelope provisional upperbody2200kg+2legs800kg allowances+external3000kg times1.5. Custom bore/rod,30MPa eta.85,NOT actual mass/continuous rating. No mount/valve/hose qualification."
+      },
+      {
+        "a_world_m": [
+          -0.3498943802062497,
+          0.5,
+          0.9816863228165655
+        ],
+        "b_world_m": [
+          0.10623697151537884,
+          0.5,
+          0.4401541564285257
+        ],
+        "lateral_offsets_m": [
+          -0.2,
+          0.2
+        ],
+        "bore_m": 0.12,
+        "rod_m": 0.06,
+        "outside_diameter_m": 0.13999999999999999,
+        "barrel_length_m": 0.37513227546887407,
+        "proposed_stroke_m": 0.1701322754688741,
+        "eye_length_min_m": 0.5539022556497174,
+        "eye_length_max_m": 0.7080345311185915,
+        "min_arm_m": 0.43371201714341334,
+        "neutral_required_moment_Nm": 56594.78475410686,
+        "ideal_derated_pair_pull_N": 432597.3083993146,
+        "nominal_min_ratio": 3.3151933000869476,
+        "sweep_samples": 31,
+        "unqualified_custom_proposal": true,
+        "sizing_scope": "Worst specified CoP over grounded crouch FK; prescribed own-joint range in this crouch only. Force envelope provisional upperbody2200kg+2legs800kg allowances+external3000kg times1.5. Custom bore/rod,30MPa eta.85,NOT actual mass/continuous rating. No mount/valve/hose qualification."
+      },
+      {
+        "a_world_m": [
+          -0.250899430840133,
+          0.5,
+          1.0806812721826822
+        ],
+        "b_world_m": [
+          0.15411979158097247,
+          0.5,
+          0.30859718951849846
+        ],
+        "lateral_offsets_m": [
+          -0.2,
+          0.2
+        ],
+        "bore_m": 0.12,
+        "rod_m": 0.06,
+        "outside_diameter_m": 0.13999999999999999,
+        "barrel_length_m": 0.37959601725909653,
+        "proposed_stroke_m": 0.17459601725909657,
+        "eye_length_min_m": 0.7132723221328043,
+        "eye_length_max_m": 0.8718683393919009,
+        "min_arm_m": 0.4214317183847727,
+        "neutral_required_moment_Nm": 56594.78475410686,
+        "ideal_derated_pair_pull_N": 432597.3083993146,
+        "nominal_min_ratio": 3.221325566294712,
+        "sweep_samples": 31,
+        "unqualified_custom_proposal": true,
+        "sizing_scope": "Worst specified CoP over grounded crouch FK; prescribed own-joint range in this crouch only. Force envelope provisional upperbody2200kg+2legs800kg allowances+external3000kg times1.5. Custom bore/rod,30MPa eta.85,NOT actual mass/continuous rating. No mount/valve/hose qualification."
+      },
+      {
+        "a_world_m": [
+          -0.07977958979298853,
+          0.5,
+          1.107551329867771
+        ],
+        "b_world_m": [
+          -0.021561224911504667,
+          0.5,
+          0.39363941693623467
+        ],
+        "lateral_offsets_m": [
+          -0.2,
+          0.2
+        ],
+        "bore_m": 0.12,
+        "rod_m": 0.06,
+        "outside_diameter_m": 0.13999999999999999,
+        "barrel_length_m": 0.38063980554229293,
+        "proposed_stroke_m": 0.17563980554229297,
+        "eye_length_min_m": 0.5566419807925539,
+        "eye_length_max_m": 0.7162817863348468,
+        "min_arm_m": 0.4283522687326653,
+        "neutral_required_moment_Nm": 56594.78475410686,
+        "ideal_derated_pair_pull_N": 432597.3083993146,
+        "nominal_min_ratio": 3.2742246358140643,
+        "sweep_samples": 31,
+        "unqualified_custom_proposal": true,
+        "sizing_scope": "Worst specified CoP over grounded crouch FK; prescribed own-joint range in this crouch only. Force envelope provisional upperbody2200kg+2legs800kg allowances+external3000kg times1.5. Custom bore/rod,30MPa eta.85,NOT actual mass/continuous rating. No mount/valve/hose qualification."
+      },
+      {
+        "a_world_m": [
+          -0.15190448147401636,
+          0.5,
+          1.1796762215487988
+        ],
+        "b_world_m": [
+          -0.021561224911504667,
+          0.5,
+          0.39363941693623467
+        ],
+        "lateral_offsets_m": [
+          -0.2,
+          0.2
+        ],
+        "bore_m": 0.12,
+        "rod_m": 0.06,
+        "outside_diameter_m": 0.13999999999999999,
+        "barrel_length_m": 0.3914456172729085,
+        "proposed_stroke_m": 0.18644561727290854,
+        "eye_length_min_m": 0.6263248783761529,
+        "eye_length_max_m": 0.7967704956490614,
+        "min_arm_m": 0.4572367530510802,
+        "neutral_required_moment_Nm": 56594.78475410686,
+        "ideal_derated_pair_pull_N": 432597.3083993146,
+        "nominal_min_ratio": 3.4950108836094804,
+        "sweep_samples": 31,
+        "unqualified_custom_proposal": true,
+        "sizing_scope": "Worst specified CoP over grounded crouch FK; prescribed own-joint range in this crouch only. Force envelope provisional upperbody2200kg+2legs800kg allowances+external3000kg times1.5. Custom bore/rod,30MPa eta.85,NOT actual mass/continuous rating. No mount/valve/hose qualification."
+      },
+      {
+        "a_world_m": [
+          -0.2777694885252219,
+          0.5,
+          0.9095614311355378
+        ],
+        "b_world_m": [
+          0.15411979158097247,
+          0.5,
+          0.30859718951849846
+        ],
+        "lateral_offsets_m": [
+          -0.2,
+          0.2
+        ],
+        "bore_m": 0.12,
+        "rod_m": 0.06,
+        "outside_diameter_m": 0.13999999999999999,
+        "barrel_length_m": 0.39182420082590796,
+        "proposed_stroke_m": 0.186824200825908,
+        "eye_length_min_m": 0.5692341549630054,
+        "eye_length_max_m": 0.7400583557889134,
+        "min_arm_m": 0.46289017426293355,
+        "neutral_required_moment_Nm": 56594.78475410686,
+        "ideal_derated_pair_pull_N": 432597.3083993146,
+        "nominal_min_ratio": 3.5382243141423686,
+        "sweep_samples": 31,
+        "unqualified_custom_proposal": true,
+        "sizing_scope": "Worst specified CoP over grounded crouch FK; prescribed own-joint range in this crouch only. Force envelope provisional upperbody2200kg+2legs800kg allowances+external3000kg times1.5. Custom bore/rod,30MPa eta.85,NOT actual mass/continuous rating. No mount/valve/hose qualification."
+      },
+      {
+        "a_world_m": [
+          -0.3498943802062497,
+          0.5,
+          0.9816863228165655
+        ],
+        "b_world_m": [
+          0.15411979158097247,
+          0.5,
+          0.30859718951849846
+        ],
+        "lateral_offsets_m": [
+          -0.2,
+          0.2
+        ],
+        "bore_m": 0.12,
+        "rod_m": 0.06,
+        "outside_diameter_m": 0.13999999999999999,
+        "barrel_length_m": 0.39384336288490884,
+        "proposed_stroke_m": 0.18884336288490888,
+        "eye_length_min_m": 0.668036692013709,
+        "eye_length_max_m": 0.8408800548986178,
+        "min_arm_m": 0.46798619169087,
+        "neutral_required_moment_Nm": 56594.78475410686,
+        "ideal_derated_pair_pull_N": 432597.3083993146,
+        "nominal_min_ratio": 3.5771770804168503,
+        "sweep_samples": 31,
+        "unqualified_custom_proposal": true,
+        "sizing_scope": "Worst specified CoP over grounded crouch FK; prescribed own-joint range in this crouch only. Force envelope provisional upperbody2200kg+2legs800kg allowances+external3000kg times1.5. Custom bore/rod,30MPa eta.85,NOT actual mass/continuous rating. No mount/valve/hose qualification."
+      },
+      {
+        "a_world_m": [
+          -0.07977958979298853,
+          0.5,
+          1.107551329867771
+        ],
+        "b_world_m": [
+          -0.14935942133838823,
+          0.5,
+          0.34712467744394376
+        ],
+        "lateral_offsets_m": [
+          -0.2,
+          0.2
+        ],
+        "bore_m": 0.12,
+        "rod_m": 0.06,
+        "outside_diameter_m": 0.13999999999999999,
+        "barrel_length_m": 0.39876733477642834,
+        "proposed_stroke_m": 0.19376733477642838,
+        "eye_length_min_m": 0.5858359959355286,
+        "eye_length_max_m": 0.763603330711957,
+        "min_arm_m": 0.4820900857538646,
+        "neutral_required_moment_Nm": 56594.78475410686,
+        "ideal_derated_pair_pull_N": 432597.3083993146,
+        "nominal_min_ratio": 3.684983950539415,
+        "sweep_samples": 31,
+        "unqualified_custom_proposal": true,
+        "sizing_scope": "Worst specified CoP over grounded crouch FK; prescribed own-joint range in this crouch only. Force envelope provisional upperbody2200kg+2legs800kg allowances+external3000kg times1.5. Custom bore/rod,30MPa eta.85,NOT actual mass/continuous rating. No mount/valve/hose qualification."
+      },
+      {
+        "a_world_m": [
+          -0.15190448147401636,
+          0.5,
+          1.1796762215487988
+        ],
+        "b_world_m": [
+          -0.14935942133838823,
+          0.5,
+          0.34712467744394376
+        ],
+        "lateral_offsets_m": [
+          -0.2,
+          0.2
+        ],
+        "bore_m": 0.12,
+        "rod_m": 0.06,
+        "outside_diameter_m": 0.13999999999999999,
+        "barrel_length_m": 0.41635970119457455,
+        "proposed_stroke_m": 0.2113597011945746,
+        "eye_length_min_m": 0.6371957329492861,
+        "eye_length_max_m": 0.8325554341438607,
+        "min_arm_m": 0.5263189752479335,
+        "neutral_required_moment_Nm": 56594.78475410686,
+        "ideal_derated_pair_pull_N": 432597.3083993146,
+        "nominal_min_ratio": 4.023059245493806,
+        "sweep_samples": 31,
+        "unqualified_custom_proposal": true,
+        "sizing_scope": "Worst specified CoP over grounded crouch FK; prescribed own-joint range in this crouch only. Force envelope provisional upperbody2200kg+2legs800kg allowances+external3000kg times1.5. Custom bore/rod,30MPa eta.85,NOT actual mass/continuous rating. No mount/valve/hose qualification."
+      }
+    ],
+    [
+      {
+        "a_world_m": [
+          0.3777666353280188,
+          0.5,
+          0.3899979836300077
+        ],
+        "b_world_m": [
+          -0.2275104174600231,
+          0.5,
+          0.3626856830450139
+        ],
+        "lateral_offsets_m": [
+          -0.36,
+          0.36
+        ],
+        "bore_m": 0.13,
+        "rod_m": 0.065,
+        "outside_diameter_m": 0.15,
+        "barrel_length_m": 0.287278179699732,
+        "proposed_stroke_m": 0.08227817969973204,
+        "eye_length_min_m": 0.539614774868171,
+        "eye_length_max_m": 0.605892954567903,
+        "min_arm_m": 0.17467903796605375,
+        "neutral_required_moment_Nm": 63541.593533685584,
+        "ideal_derated_pair_pull_N": 507701.00777419563,
+        "nominal_min_ratio": 1.395695617318405,
+        "sweep_samples": 31,
+        "unqualified_custom_proposal": true,
+        "sizing_scope": "Worst specified CoP over grounded crouch FK; prescribed own-joint range in this crouch only. Force envelope provisional upperbody2200kg+2legs800kg allowances+external3000kg times1.5. Custom bore/rod,30MPa eta.85,NOT actual mass/continuous rating. No mount/valve/hose qualification."
+      },
+      {
+        "a_world_m": [
+          0.4736152826481814,
+          0.5,
+          0.4248840382492258
+        ],
+        "b_world_m": [
+          -0.2275104174600231,
+          0.5,
+          0.3626856830450139
+        ],
+        "lateral_offsets_m": [
+          -0.36,
+          0.36
+        ],
+        "bore_m": 0.13,
+        "rod_m": 0.065,
+        "outside_diameter_m": 0.15,
+        "barrel_length_m": 0.2882914720825782,
+        "proposed_stroke_m": 0.08329147208257824,
+        "eye_length_min_m": 0.6365876956318308,
+        "eye_length_max_m": 0.7038791677144091,
+        "min_arm_m": 0.17984908828795854,
+        "neutral_required_moment_Nm": 63541.593533685584,
+        "ideal_derated_pair_pull_N": 507701.00777419563,
+        "nominal_min_ratio": 1.4370046184419423,
+        "sweep_samples": 31,
+        "unqualified_custom_proposal": true,
+        "sizing_scope": "Worst specified CoP over grounded crouch FK; prescribed own-joint range in this crouch only. Force envelope provisional upperbody2200kg+2legs800kg allowances+external3000kg times1.5. Custom bore/rod,30MPa eta.85,NOT actual mass/continuous rating. No mount/valve/hose qualification."
+      },
+      {
+        "a_world_m": [
+          0.28200099519683147,
+          0.5,
+          0.6531119174500621
+        ],
+        "b_world_m": [
+          -0.2275104174600231,
+          0.5,
+          0.3626856830450139
+        ],
+        "lateral_offsets_m": [
+          -0.36,
+          0.36
+        ],
+        "bore_m": 0.13,
+        "rod_m": 0.065,
+        "outside_diameter_m": 0.15,
+        "barrel_length_m": 0.2899271409521146,
+        "proposed_stroke_m": 0.08492714095211461,
+        "eye_length_min_m": 0.517544748619994,
+        "eye_length_max_m": 0.5864718895721086,
+        "min_arm_m": 0.19007936949327284,
+        "neutral_required_moment_Nm": 63541.593533685584,
+        "ideal_derated_pair_pull_N": 507701.00777419563,
+        "nominal_min_ratio": 1.5187451570231474,
+        "sweep_samples": 31,
+        "unqualified_custom_proposal": true,
+        "sizing_scope": "Worst specified CoP over grounded crouch FK; prescribed own-joint range in this crouch only. Force envelope provisional upperbody2200kg+2legs800kg allowances+external3000kg times1.5. Custom bore/rod,30MPa eta.85,NOT actual mass/continuous rating. No mount/valve/hose qualification."
+      },
+      {
+        "a_world_m": [
+          0.3778496425169941,
+          0.5,
+          0.6879979720692802
+        ],
+        "b_world_m": [
+          -0.2275104174600231,
+          0.5,
+          0.3626856830450139
+        ],
+        "lateral_offsets_m": [
+          -0.36,
+          0.36
+        ],
+        "bore_m": 0.13,
+        "rod_m": 0.065,
+        "outside_diameter_m": 0.15,
+        "barrel_length_m": 0.29024219636296655,
+        "proposed_stroke_m": 0.08524219636296658,
+        "eye_length_min_m": 0.6179905790527477,
+        "eye_length_max_m": 0.6872327754157143,
+        "min_arm_m": 0.19169389244954904,
+        "neutral_required_moment_Nm": 63541.593533685584,
+        "ideal_derated_pair_pull_N": 507701.00777419563,
+        "nominal_min_ratio": 1.5316452888327383,
+        "sweep_samples": 31,
+        "unqualified_custom_proposal": true,
+        "sizing_scope": "Worst specified CoP over grounded crouch FK; prescribed own-joint range in this crouch only. Force envelope provisional upperbody2200kg+2legs800kg allowances+external3000kg times1.5. Custom bore/rod,30MPa eta.85,NOT actual mass/continuous rating. No mount/valve/hose qualification."
+      },
+      {
+        "a_world_m": [
+          0.32988381526242516,
+          0.5,
+          0.521554950540035
+        ],
+        "b_world_m": [
+          -0.2275104174600231,
+          0.5,
+          0.3626856830450139
+        ],
+        "lateral_offsets_m": [
+          -0.36,
+          0.36
+        ],
+        "bore_m": 0.13,
+        "rod_m": 0.065,
+        "outside_diameter_m": 0.15,
+        "barrel_length_m": 0.29077089939914924,
+        "proposed_stroke_m": 0.08577089939914927,
+        "eye_length_min_m": 0.5098218669693169,
+        "eye_length_max_m": 0.5795927663684661,
+        "min_arm_m": 0.19474069358792442,
+        "neutral_required_moment_Nm": 63541.593533685584,
+        "ideal_derated_pair_pull_N": 507701.00777419563,
+        "nominal_min_ratio": 1.555989406164651,
+        "sweep_samples": 31,
+        "unqualified_custom_proposal": true,
+        "sizing_scope": "Worst specified CoP over grounded crouch FK; prescribed own-joint range in this crouch only. Force envelope provisional upperbody2200kg+2legs800kg allowances+external3000kg times1.5. Custom bore/rod,30MPa eta.85,NOT actual mass/continuous rating. No mount/valve/hose qualification."
+      },
+      {
+        "a_world_m": [
+          0.4257324625825878,
+          0.5,
+          0.556441005159253
+        ],
+        "b_world_m": [
+          -0.2275104174600231,
+          0.5,
+          0.3626856830450139
+        ],
+        "lateral_offsets_m": [
+          -0.36,
+          0.36
+        ],
+        "bore_m": 0.13,
+        "rod_m": 0.065,
+        "outside_diameter_m": 0.15,
+        "barrel_length_m": 0.2908341847638142,
+        "proposed_stroke_m": 0.0858341847638142,
+        "eye_length_min_m": 0.6115375090817384,
+        "eye_length_max_m": 0.6813716938455526,
+        "min_arm_m": 0.1954310064934995,
+        "neutral_required_moment_Nm": 63541.593533685584,
+        "ideal_derated_pair_pull_N": 507701.00777419563,
+        "nominal_min_ratio": 1.5615050462100053,
+        "sweep_samples": 31,
+        "unqualified_custom_proposal": true,
+        "sizing_scope": "Worst specified CoP over grounded crouch FK; prescribed own-joint range in this crouch only. Force envelope provisional upperbody2200kg+2legs800kg allowances+external3000kg times1.5. Custom bore/rod,30MPa eta.85,NOT actual mass/continuous rating. No mount/valve/hose qualification."
+      }
+    ],
+    [
+      {
+        "a_world_m": [
+          0.006046922374589966,
+          0.5,
+          0.39548764959244953
+        ],
+        "b_world_m": [
+          0.3576390676354103,
+          0.5,
+          0.1658476690885259
+        ],
+        "lateral_offsets_m": [
+          -0.2,
+          0.2
+        ],
+        "bore_m": 0.09,
+        "rod_m": 0.045,
+        "outside_diameter_m": 0.11,
+        "barrel_length_m": 0.24626720128484475,
+        "proposed_stroke_m": 0.041267201284844776,
+        "eye_length_min_m": 0.41994232610555965,
+        "eye_length_max_m": 0.4452095273904044,
+        "min_arm_m": 0.13565260450712502,
+        "neutral_required_moment_Nm": 25215.624,
+        "ideal_derated_pair_pull_N": 243335.98597461442,
+        "nominal_min_ratio": 1.3090756852880456,
+        "sweep_samples": 31,
+        "unqualified_custom_proposal": true,
+        "sizing_scope": "Worst specified CoP over grounded crouch FK; prescribed own-joint range in this crouch only. Force envelope provisional upperbody2200kg+2legs800kg allowances+external3000kg times1.5. Custom bore/rod,30MPa eta.85,NOT actual mass/continuous rating. No mount/valve/hose qualification."
+      },
+      {
+        "a_world_m": [
+          -0.05823183859406396,
+          0.5,
+          0.4720920939043473
+        ],
+        "b_world_m": [
+          0.28763906763541036,
+          0.5,
+          0.1938476690885259
+        ],
+        "lateral_offsets_m": [
+          -0.2,
+          0.2
+        ],
+        "bore_m": 0.09,
+        "rod_m": 0.045,
+        "outside_diameter_m": 0.11,
+        "barrel_length_m": 0.24664471945270905,
+        "proposed_stroke_m": 0.041644719452709075,
+        "eye_length_min_m": 0.44389936214989667,
+        "eye_length_max_m": 0.46954408160260575,
+        "min_arm_m": 0.137361872990548,
+        "neutral_required_moment_Nm": 25215.624,
+        "ideal_derated_pair_pull_N": 243335.98597461442,
+        "nominal_min_ratio": 1.3255704796151289,
+        "sweep_samples": 31,
+        "unqualified_custom_proposal": true,
+        "sizing_scope": "Worst specified CoP over grounded crouch FK; prescribed own-joint range in this crouch only. Force envelope provisional upperbody2200kg+2legs800kg allowances+external3000kg times1.5. Custom bore/rod,30MPa eta.85,NOT actual mass/continuous rating. No mount/valve/hose qualification."
+      },
+      {
+        "a_world_m": [
+          0.006046922374589966,
+          0.5,
+          0.39548764959244953
+        ],
+        "b_world_m": [
+          0.4276390676354103,
+          0.5,
+          0.13784766908852591
+        ],
+        "lateral_offsets_m": [
+          -0.2,
+          0.2
+        ],
+        "bore_m": 0.09,
+        "rod_m": 0.045,
+        "outside_diameter_m": 0.11,
+        "barrel_length_m": 0.24697902575528696,
+        "proposed_stroke_m": 0.04197902575528699,
+        "eye_length_min_m": 0.49408328903099197,
+        "eye_length_max_m": 0.520062314786279,
+        "min_arm_m": 0.13895474436499516,
+        "neutral_required_moment_Nm": 25215.624,
+        "ideal_derated_pair_pull_N": 243335.98597461442,
+        "nominal_min_ratio": 1.3409420177706726,
+        "sweep_samples": 31,
+        "unqualified_custom_proposal": true,
+        "sizing_scope": "Worst specified CoP over grounded crouch FK; prescribed own-joint range in this crouch only. Force envelope provisional upperbody2200kg+2legs800kg allowances+external3000kg times1.5. Custom bore/rod,30MPa eta.85,NOT actual mass/continuous rating. No mount/valve/hose qualification."
+      },
+      {
+        "a_world_m": [
+          -0.05823183859406396,
+          0.5,
+          0.4720920939043473
+        ],
+        "b_world_m": [
+          0.3576390676354103,
+          0.5,
+          0.1658476690885259
+        ],
+        "lateral_offsets_m": [
+          -0.2,
+          0.2
+        ],
+        "bore_m": 0.09,
+        "rod_m": 0.045,
+        "outside_diameter_m": 0.11,
+        "barrel_length_m": 0.24830250580569113,
+        "proposed_stroke_m": 0.04330250580569116,
+        "eye_length_min_m": 0.5164632207417073,
+        "eye_length_max_m": 0.5437657265473984,
+        "min_arm_m": 0.1447743643031382,
+        "neutral_required_moment_Nm": 25215.624,
+        "ideal_derated_pair_pull_N": 243335.98597461442,
+        "nominal_min_ratio": 1.3971025536212054,
+        "sweep_samples": 31,
+        "unqualified_custom_proposal": true,
+        "sizing_scope": "Worst specified CoP over grounded crouch FK; prescribed own-joint range in this crouch only. Force envelope provisional upperbody2200kg+2legs800kg allowances+external3000kg times1.5. Custom bore/rod,30MPa eta.85,NOT actual mass/continuous rating. No mount/valve/hose qualification."
+      },
+      {
+        "a_world_m": [
+          -0.05823183859406396,
+          0.5,
+          0.4720920939043473
+        ],
+        "b_world_m": [
+          0.4276390676354103,
+          0.5,
+          0.13784766908852591
+        ],
+        "lateral_offsets_m": [
+          -0.2,
+          0.2
+        ],
+        "bore_m": 0.09,
+        "rod_m": 0.045,
+        "outside_diameter_m": 0.11,
+        "barrel_length_m": 0.2495336004125256,
+        "proposed_stroke_m": 0.04453360041252562,
+        "eye_length_min_m": 0.5897371219795392,
+        "eye_length_max_m": 0.6182707223920648,
+        "min_arm_m": 0.1503374119371041,
+        "neutral_required_moment_Nm": 25215.624,
+        "ideal_derated_pair_pull_N": 243335.98597461442,
+        "nominal_min_ratio": 1.4507871136794788,
+        "sweep_samples": 31,
+        "unqualified_custom_proposal": true,
+        "sizing_scope": "Worst specified CoP over grounded crouch FK; prescribed own-joint range in this crouch only. Force envelope provisional upperbody2200kg+2legs800kg allowances+external3000kg times1.5. Custom bore/rod,30MPa eta.85,NOT actual mass/continuous rating. No mount/valve/hose qualification."
+      },
+      {
+        "a_world_m": [
+          0.11329314441124688,
+          0.5,
+          0.48547791494856507
+        ],
+        "b_world_m": [
+          0.3576390676354103,
+          0.5,
+          0.1658476690885259
+        ],
+        "lateral_offsets_m": [
+          -0.2,
+          0.2
+        ],
+        "bore_m": 0.09,
+        "rod_m": 0.045,
+        "outside_diameter_m": 0.11,
+        "barrel_length_m": 0.25968021444396977,
+        "proposed_stroke_m": 0.054680214443969796,
+        "eye_length_min_m": 0.4023287514767219,
+        "eye_length_max_m": 0.4410089659206917,
+        "min_arm_m": 0.2122917868763558,
+        "neutral_required_moment_Nm": 25215.624,
+        "ideal_derated_pair_pull_N": 243335.98597461442,
+        "nominal_min_ratio": 2.048659643476233,
+        "sweep_samples": 31,
+        "unqualified_custom_proposal": true,
+        "sizing_scope": "Worst specified CoP over grounded crouch FK; prescribed own-joint range in this crouch only. Force envelope provisional upperbody2200kg+2legs800kg allowances+external3000kg times1.5. Custom bore/rod,30MPa eta.85,NOT actual mass/continuous rating. No mount/valve/hose qualification."
+      }
+    ]
+  ]
+}

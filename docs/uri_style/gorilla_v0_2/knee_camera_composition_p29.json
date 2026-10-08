@@ -1,0 +1,166 @@
+{
+  "title": "Gorilla v0.2 — warm-white knee caps, blue cheeks, dark inset, camera yellow frame P29",
+  "base": "/home/ethan/Projects/Sai_Art/docs/uri_style/gorilla_v0_2/images/gorilla_four_view_uri_knee_guards_p27.png",
+  "overlay": "/home/ethan/Projects/Sai_Art/docs/uri_style/gorilla_v0_2/images/camera_frame_and_knee_marker_generated_p29.png",
+  "output": "/home/ethan/Projects/Sai_Art/docs/uri_style/gorilla_v0_2/images/gorilla_four_view_knee_camera_p29.png",
+  "regions": [
+    [
+      160,
+      350,
+      265,
+      446
+    ],
+    [
+      365,
+      350,
+      464,
+      446
+    ],
+    [
+      805,
+      350,
+      890,
+      454
+    ],
+    [
+      166,
+      957,
+      282,
+      1057
+    ],
+    [
+      348,
+      957,
+      464,
+      1057
+    ],
+    [
+      810,
+      960,
+      900,
+      1028
+    ],
+    [
+      984,
+      960,
+      1074,
+      1028
+    ],
+    [
+      298,
+      112,
+      334,
+      184
+    ],
+    [
+      821,
+      114,
+      844,
+      178
+    ]
+  ],
+  "preserve_checks": {
+    "FRONT_upper_left_intake_and_shoulder": [
+      0,
+      0,
+      298,
+      342
+    ],
+    "FRONT_upper_right_intake_and_shoulder": [
+      334,
+      0,
+      626,
+      342
+    ],
+    "FRONT_upper_center_above_camera": [
+      298,
+      0,
+      334,
+      112
+    ],
+    "FRONT_upper_center_below_camera": [
+      298,
+      184,
+      334,
+      342
+    ],
+    "FRONT_left_hand": [
+      60,
+      307,
+      155,
+      426
+    ],
+    "FRONT_right_hand": [
+      467,
+      307,
+      544,
+      426
+    ],
+    "LEFT_front_torso_above_sensor": [
+      628,
+      0,
+      850,
+      114
+    ],
+    "LEFT_front_torso_below_sensor": [
+      628,
+      178,
+      850,
+      300
+    ],
+    "REAR_torso_pad_and_exhausts": [
+      0,
+      633,
+      626,
+      824
+    ],
+    "TOP_chest_and_shoulders": [
+      632,
+      633,
+      1250,
+      960
+    ],
+    "FRONT_feet": [
+      60,
+      480,
+      550,
+      598
+    ],
+    "LEFT_feet": [
+      750,
+      490,
+      1080,
+      598
+    ],
+    "REAR_feet": [
+      60,
+      1080,
+      550,
+      1200
+    ],
+    "all_labels_bottom": [
+      0,
+      1200,
+      1254,
+      1254
+    ],
+    "all_labels_top": [
+      0,
+      598,
+      1254,
+      632
+    ],
+    "LEFT_upper_body": [
+      850,
+      0,
+      1254,
+      320
+    ],
+    "LEFT_hand": [
+      940,
+      312,
+      1010,
+      399
+    ]
+  }
+}

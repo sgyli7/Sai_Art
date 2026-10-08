@@ -1,0 +1,9 @@
+{
+  "source_sha256": "60d2a518c84fdb56ba1079be36add2543d9fb351f119aefbd1c83fe702e9952c",
+  "glb_sha256": "9499698b72156617e411aa1e54e061cf6e6d6716ff7bb70470ff7eb28517aa1e",
+  "part_count": 66,
+  "max_vertex_distance_m": 6.674040961811924e-08,
+  "coordinate_conversion": "source SI Z-up -> GLB Y-up; (x,y,z) -> (x,z,-y)",
+  "appearance_mesh_exchange_checked": true,
+  "physical_accepted": false
+}

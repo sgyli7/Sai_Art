@@ -1,0 +1,40 @@
+URI / v4.1 — FUNCTIONAL RICHNESS, CLEAN ELEGANCE, CONTENT SEPARATION
+
+STYLE reference images control rendering language only: delicate technical contours, luminous blue/ivory/saffron color relationships, refined materials, smooth large forms and the hierarchy of detailed assemblies. The subject/design brief controls geometry, topology, component layout and function. Transfer visual language without transplanting the reference objects, their faces, silhouettes, reels, earpieces, branding, captions or page layouts into the new subject.
+
+A SURFACE_CLEANLINESS reference controls surface integrity, coherent seams and the absence of graphical noise only. A PROPORTION reference controls only explicitly approved body regions and coarse ratios. Keep these roles separate, even when they come from previous generated images. Preserve the user's required machine type and task action when developing its functional structure.
+
+Create a refined science-fiction illustration that is clean, elegant and richly constructed. Richness comes from complete, precisely fitted assemblies at meaningful scales: connected load-bearing parts, organized joints, layered covers, seals, hinges, tool interfaces, optical modules and service components appropriate to the subject. A detail belongs because it performs a function or completes a readable assembly. Use orderly groups and continuous contours so many parts remain individually intelligible.
+
+Maintain clean continuous painted surfaces and graceful large shapes around these assemblies. Cover surfaces contain intentional access-panel boundaries and grouped functional features. Fasteners appear at actual removable cover edges or structural connections, arranged coherently. Functional optical/service openings are small, bounded and correctly located. Rich detail does not require scattering circles, holes, black dots or tiny scratches over every plate. Eliminate arbitrary puncture patterns and decorative pseudo-engineering. Both physical dirt and nonfunctional graphical noise count as a dirty result.
+
+Draw fine crisp dark-blue-gray contours, restrained complete seam lines and controlled illustrated volume. Light reflects cleanly across smoothly maintained warm-white/ivory and powder/azure-blue enamel, clear glass, machined silver, rubber and cloth. Add confident but ordered saffron yellow-orange color accents. Keep dark areas inside real narrow recesses or clearly separated working components; complex areas must remain layered rather than merge into black scribble. Broad light/color planes remain readable at thumbnail scale and the fine assemblies reward close viewing. Favor airy clear light when the brief permits. Match a sophisticated ink-and-color concept illustration rather than an aged painting, plain icon or photograph.
+
+For designed objects/buildings, derive structure and functional detail from the task, then express them with compatible rounded shells, filleted boxes, cylinders and coherent integrated hardware. For people retain natural anatomy, identity and skin; supply fine hair, cloth folds, seams and relevant accessories. For animals/plants keep organic structure and refined natural detail; machinery appears only if requested. For scenes use clear perspective and broad sky/water/ground areas around richly described local structures. Exact forms, colors, weather and lighting follow explicit subject constraints.
+
+Paint is intact. Use no unrequested distress, grain overlay, chips, rust, random flecks, damage, logos or extra words. A clean design retains rich purposeful construction; a simplified blank toy also misses the target. Inspect separately for functional richness, surface integrity, visual order, source-object leakage and subject requirements.
+
+
+Use case: stylized-concept
+Asset type: formal Gorilla V0.1 Rev A orthographic appearance turnaround sheet.
+Primary request: Depict EXACTLY the same machine in the supplied appearance master from FOUR orthographic directions. This is a view rotation of one designed object, not four redesigns. Preserve all major panel boundaries, body proportions, color blocks, joints, hand design and silhouette identity. One landscape design sheet with a balanced 2 by 2 layout on warm-white paper.
+
+Inputs:
+1. SUBJECT / FIXED APPEARANCE MASTER: Gorilla V0.1. This controls all geometry and visual identity. Continuous sloping azure top cap shared by head/torso, narrow recessed dark perception band under the forward low brow, tapering ivory main front, compact connected shoulders, short waist, azure pelvis with saffron central release, rounded strong thighs/calves with azure knee caps, broad ivory/azure feet. Retain the modest arched back and strong forearms; these are its restrained gorilla character.
+2. URI headphones: STYLE only, clean rich component construction and fine ink contour.
+3. URI waterfront: STYLE only, ivory/azure/saffron and airy visual order.
+4. URI architecture: STYLE only, continuous shell planes, fine seam hierarchies and material finish.
+
+LAYOUT AND EXACT VIEWS:
+Upper left: true FRONT elevation, symmetrical stance, arms slightly clear of the hips. The forward cap becomes a broad smoothly directed brow, not a separate head. One continuous upper core over short waist; intact ivory front cover, small inset optics. Feet point forward. Full machine.
+Upper right: true LEFT SIDE profile, robot facing LEFT on the sheet. Reveal the continuous sloped roof-to-front sensor hood-to-tapered lower housing profile and compact rear body depth. Two arms and two legs are naturally overlapping in a genuine side projection; no fake three-quarter spread. Full machine.
+Lower left: true REAR elevation, same stance, same shoulder height and limb proportions. Continue the shell envelope naturally around the back. A single closely fitted azure dorsal service cover within ivory back/shoulder planes, two small bounded orange release handles, restrained side cooling slots. The cover follows the existing arched back and stops above the waist. No large extra backpack. Protected waist/hip connections and the backs of the limb covers remain readable. Full machine.
+Lower right: true TOP view from directly overhead looking down, aligned with robot FRONT toward the BOTTOM of this panel. Show the same cap geometry, shoulder supports and dorsal service cover, arm lengths and foot placement as visible from this projection. Body components naturally occlude lower ones; do not invent a second frontal view.
+
+Front, side and rear use identical full-body height, consistent neutral pose and aligned ground lines within their panels. Top view uses the same object but may occupy a different rectangle due to projection. Flat orthographic projection, no perspective distortion, no hero pose. No background scenery, people, dimensions, measurement grid or CAD claims.
+
+A consistent FOUR-DIGIT industrial tool hand: THREE parallel articulated load fingers plus one opposing thumb. Rounded-square knuckle blocks, supported broad palm pads, compact wrist collar. Hand components do not change count between views. Major joints, shells and color patches match the master in every projection. Small hidden-side details are restrained continuations of the visible design, not added ornaments.
+
+Formal URI ink-and-color product-design illustration. Pristine enamel, warm ivory, clear azure, restrained saffron release accents; clean silver/graphite mechanics, precise grouped details and delicate complete contours. Preserve the fine assembly richness without scratches, chips, grime, random dots or broken edges. Dark areas stay bounded to real joints. Light even studio illustration so every silhouette is easy to compare.
+
+Only four short labels below the panels: FRONT, LEFT SIDE, REAR, TOP. No other text, logos, page headers, arrows, decorative framing or watermark. Plenty of margins and breathing room. All four panels must fit fully on the sheet with no cropped feet, hands or cap. This is a formal appearance design sheet for review.

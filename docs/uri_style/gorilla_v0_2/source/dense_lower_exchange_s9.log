@@ -1,0 +1,10 @@
+COMPLETE_NATIVE_FRAME front_oblique
+COMPLETE_NATIVE_FRAME rear_oblique
+DENSE_NATIVE_EXCHANGE_EXPORTED lower_dense_assembled_s9.glb
+Data are loaded, start creating Blender stuff
+glTF import finished in 9.49s
+DENSE_ASSEMBLY_REVIEW_READY True
+Blender 4.0.2
+Read blend: "/home/ethan/Projects/Sai_Art/docs/uri_style/gorilla_v0_2/source/lower_dense_assembled_s9.blend"
+
+Blender quit

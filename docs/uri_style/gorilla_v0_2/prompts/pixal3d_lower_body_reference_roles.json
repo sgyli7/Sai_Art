@@ -1,0 +1,22 @@
+{
+  "mode": "built_in_imagegen",
+  "intent": "new_illustrated_lower_body_from_original_3d_reconstruction",
+  "prompt": "prompts/pixal3d_lower_body_redraw_p1.txt",
+  "references": [
+    "/home/ethan/Projects/Sai_Art/docs/uri_style/gorilla_v0_2/images/reference_direction_g1.png",
+    "/home/ethan/Projects/Sai_Art/docs/uri_style/gorilla_v0_2/images/turn_90_g1.png",
+    "/home/ethan/Projects/Sai_Art/docs/uri_style/gorilla_v0_2/images/turn_180_g1.png",
+    "/home/ethan/Projects/Sai_Art/docs/uri_style/gorilla_v0_1/images/locked_four_view_review_rev_aa3.png",
+    "/home/ethan/Projects/Sai_Art/.agents/skills/uri-style/assets/style_01_race_car_hangar.png",
+    "/home/ethan/Projects/Sai_Art/.agents/skills/uri-style/assets/style_03_tracked_mobile_station.png",
+    "/home/ethan/Projects/Sai_Art/.agents/skills/uri-style/assets/style_05_white_blue_racer.png"
+  ],
+  "geometry_source": "generated/reference_raw_geometry_00001_.glb",
+  "rejected_blender_revisions": [
+    "g2",
+    "g3",
+    "g4",
+    "g5"
+  ],
+  "source_geometry_modified_for_this_redraw": false
+}

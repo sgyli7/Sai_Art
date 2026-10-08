@@ -1,0 +1,365 @@
+{
+  "revision": "p19",
+  "source": "source/top_registration_p19.blend",
+  "basis": "references/user_four_view_top_fix_p19.jpg",
+  "scope": "Manually registered appearance envelopes and exact orthographic camera; not final complete robot CAD",
+  "white_shell_sections_z_half_width_front_rear": [
+    [
+      0.66,
+      0.026,
+      -0.175,
+      0.072
+    ],
+    [
+      0.715,
+      0.043,
+      -0.187,
+      0.092
+    ],
+    [
+      0.79,
+      0.075,
+      -0.19,
+      0.132
+    ],
+    [
+      0.86,
+      0.112,
+      -0.168,
+      0.159
+    ],
+    [
+      0.925,
+      0.145,
+      -0.117,
+      0.158
+    ],
+    [
+      0.965,
+      0.142,
+      -0.072,
+      0.134
+    ],
+    [
+      0.989,
+      0.119,
+      -0.022,
+      0.106
+    ],
+    [
+      0.994,
+      0.102,
+      0.01,
+      0.093
+    ]
+  ],
+  "white_shell_plan_extent_xy": [
+    0.29,
+    0.349
+  ],
+  "top_camera_axis": [
+    0,
+    0,
+    -1
+  ],
+  "front_direction_in_top": "page bottom",
+  "strict_shared_mesh_mirror": true,
+  "mirrors": [
+    {
+      "left": "L_blue_torso_side",
+      "right": "R_blue_torso_side",
+      "shared_mesh_data": true,
+      "maximum_vertex_mirror_error": 0.0
+    },
+    {
+      "left": "L_shoulder_blue",
+      "right": "R_shoulder_blue",
+      "shared_mesh_data": true,
+      "maximum_vertex_mirror_error": 0.0
+    },
+    {
+      "left": "L_upper_arm_white",
+      "right": "R_upper_arm_white",
+      "shared_mesh_data": true,
+      "maximum_vertex_mirror_error": 0.0
+    },
+    {
+      "left": "L_arm_blue_cap",
+      "right": "R_arm_blue_cap",
+      "shared_mesh_data": true,
+      "maximum_vertex_mirror_error": 0.0
+    },
+    {
+      "left": "L_upper_arm_lower_white",
+      "right": "R_upper_arm_lower_white",
+      "shared_mesh_data": true,
+      "maximum_vertex_mirror_error": 0.0
+    },
+    {
+      "left": "L_elbow_hub",
+      "right": "R_elbow_hub",
+      "shared_mesh_data": true,
+      "maximum_vertex_mirror_error": 0.0
+    },
+    {
+      "left": "L_forearm_blue",
+      "right": "R_forearm_blue",
+      "shared_mesh_data": true,
+      "maximum_vertex_mirror_error": 0.0
+    },
+    {
+      "left": "L_hand_white",
+      "right": "R_hand_white",
+      "shared_mesh_data": true,
+      "maximum_vertex_mirror_error": 0.0
+    },
+    {
+      "left": "L_fingers_dark",
+      "right": "R_fingers_dark",
+      "shared_mesh_data": true,
+      "maximum_vertex_mirror_error": 0.0
+    },
+    {
+      "left": "L_hip_cover",
+      "right": "R_hip_cover",
+      "shared_mesh_data": true,
+      "maximum_vertex_mirror_error": 0.0
+    },
+    {
+      "left": "L_thigh_blue",
+      "right": "R_thigh_blue",
+      "shared_mesh_data": true,
+      "maximum_vertex_mirror_error": 0.0
+    },
+    {
+      "left": "L_knee_gold",
+      "right": "R_knee_gold",
+      "shared_mesh_data": true,
+      "maximum_vertex_mirror_error": 0.0
+    },
+    {
+      "left": "L_return_joint",
+      "right": "R_return_joint",
+      "shared_mesh_data": true,
+      "maximum_vertex_mirror_error": 0.0
+    },
+    {
+      "left": "L_shank_blue",
+      "right": "R_shank_blue",
+      "shared_mesh_data": true,
+      "maximum_vertex_mirror_error": 0.0
+    },
+    {
+      "left": "L_ankle_hub",
+      "right": "R_ankle_hub",
+      "shared_mesh_data": true,
+      "maximum_vertex_mirror_error": 0.0
+    },
+    {
+      "left": "L_complete_foot",
+      "right": "R_complete_foot",
+      "shared_mesh_data": true,
+      "maximum_vertex_mirror_error": 0.0
+    }
+  ],
+  "topology": [
+    {
+      "name": "L_blue_torso_side",
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0
+    },
+    {
+      "name": "L_shoulder_blue",
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0
+    },
+    {
+      "name": "L_upper_arm_white",
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0
+    },
+    {
+      "name": "L_arm_blue_cap",
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0
+    },
+    {
+      "name": "L_upper_arm_lower_white",
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0
+    },
+    {
+      "name": "L_elbow_hub",
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0
+    },
+    {
+      "name": "L_forearm_blue",
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0
+    },
+    {
+      "name": "L_hand_white",
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0
+    },
+    {
+      "name": "L_fingers_dark",
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0
+    },
+    {
+      "name": "L_hip_cover",
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0
+    },
+    {
+      "name": "L_thigh_blue",
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0
+    },
+    {
+      "name": "L_knee_gold",
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0
+    },
+    {
+      "name": "L_return_joint",
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0
+    },
+    {
+      "name": "L_shank_blue",
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0
+    },
+    {
+      "name": "L_ankle_hub",
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0
+    },
+    {
+      "name": "L_complete_foot",
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0
+    },
+    {
+      "name": "Central_warm_white_shell",
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0
+    },
+    {
+      "name": "Central_crown_panel",
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0
+    }
+  ],
+  "views": {
+    "top": {
+      "path": "images/native_registration_top_p19.png",
+      "projected_span": [
+        0.7699999809265137,
+        0.42932984232902527
+      ],
+      "camera_matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          -0.023664921522140503
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          4.508500099182129
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "ortho_scale": 0.9399999976158142
+    },
+    "left": {
+      "path": "images/native_registration_left_p19.png",
+      "projected_span": [
+        0.4293298760705546,
+        0.977000011161836
+      ],
+      "camera_matrix": [
+        [
+          7.549790126404332e-08,
+          -7.549790126404332e-08,
+          1.0,
+          4.0
+        ],
+        [
+          1.0,
+          5.6999328827277325e-15,
+          -7.549790126404332e-08,
+          -0.02366522327065468
+        ],
+        [
+          0.0,
+          1.0,
+          7.549790126404332e-08,
+          0.5085002779960632
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "ortho_scale": 1.149999976158142
+    },
+    "front": {
+      "path": "images/native_registration_front_p19.png",
+      "projected_span": [
+        0.7699999809265137,
+        0.9769999874321805
+      ],
+      "camera_matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          -4.371138828673793e-08,
+          -1.0,
+          -4.023664951324463
+        ],
+        [
+          0.0,
+          1.0,
+          -4.371138828673793e-08,
+          0.508499801158905
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "ortho_scale": 1.149999976158142
+    }
+  },
+  "detailed_lower_master_not_modified": "source/lower_modular_components_b6.blend",
+  "physical_or_mass_validation": false,
+  "full_model_appearance_acceptance": false,
+  "source_sha256": "5abd3232941e6747e4ba0f48051fb47da41821c6d2d2d5035aff913b2fb4749c"
+}

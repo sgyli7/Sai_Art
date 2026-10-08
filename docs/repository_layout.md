@@ -1,5 +1,15 @@
 # Sai_Art 目录导航
 
+## 项目导航
+
+| 项目 | 浏览入口 | 制作源与历史 |
+| --- | --- | --- |
+| **Gorilla V0.2** | [设定集](../robots/gorilla/README.md)、[五款四视图](../robots/gorilla/artbook.md)、[B7 3D 与交付包](../robots/gorilla/README.md#3d-资产与交付包) | [V0.2 制作源](uri_style/gorilla_v0_2/README.md)、[V0.1 历史](uri_style/gorilla_v0_1/README.md) |
+| Sainiverse V0.1 | [载具资料与演示](../vehicles/Sainiverse_v0.1/README.md) | `vehicles/Sainiverse_v0.1/` |
+
+Gorilla 当前交付集中在 `robots/gorilla/v0_2_p30/`，是冻结 P30 包的逐字节浏览副本。原始制作和迭代仍在 `docs/uri_style/gorilla_v0_1/` 与 `gorilla_v0_2/`，保留旧脚本与共享交付引用；设定集默认指向 P30，旧 AA3、S 系列与 P22 等放在历史导航中。模型、归档 ZIP 和大型几何数组使用 Git LFS，图片和设定文档可直接在 GitHub 浏览。
+
+
 资产新增或迁移按 [本地规则](../art_engineering_rules.md)。跨仓库职责维护源位于 Sai_Lab `Godot_Sim2Sim/docs/repository_ownership.md`（本地检出根可用 `SAI_LAB_ROOT` 指定）。缺少 Lab 时资产工作继续；本导航描述当前交付，不表示运行代码已迁走。
 
 | 当前位置 | 角色 / 维护方式 |

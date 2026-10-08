@@ -1,0 +1,106 @@
+{
+  "scene_sha256": "2472ab88ed6e735407e05af6f7d83f662707a61a7fce03d4b4705ae43e1bce20",
+  "envelope_screen_sha256": "245b59ce452817f8bc0bb386f94d4307d787b2e443f2c472174e049104231c0c",
+  "selection": {
+    "options": [
+      {
+        "a_world_m": [
+          -0.2777694885252219,
+          0.5,
+          0.9095614311355378
+        ],
+        "b_world_m": [
+          0.18615234787666882,
+          0.5,
+          0.6182258628308439
+        ],
+        "lateral_offsets_m": [
+          -0.2,
+          0.2
+        ],
+        "bore_m": 0.12,
+        "rod_m": 0.06,
+        "outside_diameter_m": 0.13999999999999999,
+        "barrel_length_m": 0.3006571656458089,
+        "proposed_stroke_m": 0.09565716564580894,
+        "eye_length_min_m": 0.4681565651513677,
+        "eye_length_max_m": 0.5478137307971767,
+        "min_arm_m": 0.19851576456022027,
+        "neutral_required_moment_Nm": 56594.78475410686,
+        "ideal_derated_pair_pull_N": 432597.3083993146,
+        "nominal_min_ratio": 1.5174081109541024,
+        "sweep_samples": 31,
+        "unqualified_custom_proposal": true,
+        "sizing_scope": "Worst specified CoP over grounded crouch FK; prescribed own-joint range in this crouch only. Force envelope provisional upperbody2200kg+2legs800kg allowances+external3000kg times1.5. Custom bore/rod,30MPa eta.85,NOT actual mass/continuous rating. No mount/valve/hose qualification."
+      },
+      {
+        "a_world_m": [
+          0.4736152826481814,
+          0.5,
+          0.4248840382492258
+        ],
+        "b_world_m": [
+          -0.2275104174600231,
+          0.5,
+          0.3626856830450139
+        ],
+        "lateral_offsets_m": [
+          -0.36,
+          0.36
+        ],
+        "bore_m": 0.13,
+        "rod_m": 0.065,
+        "outside_diameter_m": 0.15,
+        "barrel_length_m": 0.2882914720825782,
+        "proposed_stroke_m": 0.08329147208257824,
+        "eye_length_min_m": 0.6365876956318308,
+        "eye_length_max_m": 0.7038791677144091,
+        "min_arm_m": 0.17984908828795854,
+        "neutral_required_moment_Nm": 63541.593533685584,
+        "ideal_derated_pair_pull_N": 507701.00777419563,
+        "nominal_min_ratio": 1.4370046184419423,
+        "sweep_samples": 31,
+        "unqualified_custom_proposal": true,
+        "sizing_scope": "Worst specified CoP over grounded crouch FK; prescribed own-joint range in this crouch only. Force envelope provisional upperbody2200kg+2legs800kg allowances+external3000kg times1.5. Custom bore/rod,30MPa eta.85,NOT actual mass/continuous rating. No mount/valve/hose qualification."
+      },
+      {
+        "a_world_m": [
+          0.006046922374589966,
+          0.5,
+          0.39548764959244953
+        ],
+        "b_world_m": [
+          0.3576390676354103,
+          0.5,
+          0.1658476690885259
+        ],
+        "lateral_offsets_m": [
+          -0.2,
+          0.2
+        ],
+        "bore_m": 0.09,
+        "rod_m": 0.045,
+        "outside_diameter_m": 0.11,
+        "barrel_length_m": 0.24626720128484475,
+        "proposed_stroke_m": 0.041267201284844776,
+        "eye_length_min_m": 0.41994232610555965,
+        "eye_length_max_m": 0.4452095273904044,
+        "min_arm_m": 0.13565260450712502,
+        "neutral_required_moment_Nm": 25215.624,
+        "ideal_derated_pair_pull_N": 243335.98597461442,
+        "nominal_min_ratio": 1.3090756852880456,
+        "sweep_samples": 31,
+        "unqualified_custom_proposal": true,
+        "sizing_scope": "Worst specified CoP over grounded crouch FK; prescribed own-joint range in this crouch only. Force envelope provisional upperbody2200kg+2legs800kg allowances+external3000kg times1.5. Custom bore/rod,30MPa eta.85,NOT actual mass/continuous rating. No mount/valve/hose qualification."
+      }
+    ],
+    "indices": [
+      6,
+      1,
+      0
+    ],
+    "tested_pose_count": 13
+  },
+  "method": "Actual finite material mounting/cylinder rejection at 13 prescribed grounded crouch poses. All different-body pairs; MUST recheck full 121 poses. No dynamic/strength acceptance.",
+  "physical_accepted": false
+}

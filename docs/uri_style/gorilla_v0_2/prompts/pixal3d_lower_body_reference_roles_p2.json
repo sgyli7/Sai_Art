@@ -1,0 +1,62 @@
+{
+  "prompt": "/home/ethan/Projects/Sai_Art/docs/uri_style/gorilla_v0_2/prompts/pixal3d_lower_body_redraw_p2.txt",
+  "tool": "built_in_image_gen",
+  "status": "not_generated_tool_rejected_more_than_5_reference_paths",
+  "references": [
+    {
+      "index": 1,
+      "path": "/home/ethan/Projects/Sai_Art/docs/uri_style/gorilla_v0_2/references/user_pixal_lower_body.jpg",
+      "role": "LOWER_BODY_GEOMETRY_PROPORTION_PRIMARY_IGNORE_PAINT_DEFECTIVE_FOOT",
+      "sha256": "39c26feffdb56239ee2297c9fce6bd1aae35ecb1851f0292f43a7eb12330730e"
+    },
+    {
+      "index": 2,
+      "path": "/home/ethan/Projects/Sai_Art/docs/uri_style/gorilla_v0_2/images/turn_90_g1.png",
+      "role": "LOWER_BODY_SIDE_GEOMETRY_IGNORE_WEAPONS_DEFECTIVE_FOOT",
+      "sha256": "309e181a42682241c3826a80c890a72324431c325fb6f7c83cf89424c4bd4ccb"
+    },
+    {
+      "index": 3,
+      "path": "/home/ethan/Projects/Sai_Art/docs/uri_style/gorilla_v0_1/images/locked_four_view_review_rev_aa3.png",
+      "role": "UPPER_BODY_IDENTITY_V01_PALETTE_COMPOSITION",
+      "sha256": "5c0469708d7c878ac6253e6ac3e6276198bf3694235bbed3da66c8c743b5aba4"
+    },
+    {
+      "index": 4,
+      "path": "/home/ethan/Projects/Sai_Art/docs/uri_style/gorilla_v0_2/references/foot_reference_complete_foreheel.jpg",
+      "role": "FOOT_COMPLETENESS_CONTINUITY",
+      "sha256": "6688a64220e4114cb8edf14abbadf0b6906a3b822ce7ab2d1fab2033d7624b06"
+    },
+    {
+      "index": 5,
+      "path": "/home/ethan/Projects/Sai_Art/docs/uri_style/gorilla_v0_2/references/foot_reference_low_integrated.jpg",
+      "role": "FOOT_SILHOUETTE_CONTINUITY",
+      "sha256": "5f63f30f07b4ff0cdb5a0a3838434f956589cf07da76bfc20dce98032fc4a335"
+    },
+    {
+      "index": 6,
+      "path": "/home/ethan/Projects/Sai_Art/docs/uri_style/gorilla_v0_2/references/foot_reference_model_joint_bridge.jpg",
+      "role": "FOOT_TOPOLOGY",
+      "sha256": "bb4112b18581da837246e59faad0ada988eced641fa43b093bb4f863aabf93f0"
+    },
+    {
+      "index": 7,
+      "path": "/home/ethan/Projects/Sai_Art/.agents/skills/uri-style/assets/style_01_race_car_hangar.png",
+      "role": "STYLE_ONLY",
+      "sha256": "1aed979f442030b644db5b86c79ad69d44f14092f865eb28f157663476eec8c9"
+    },
+    {
+      "index": 8,
+      "path": "/home/ethan/Projects/Sai_Art/.agents/skills/uri-style/assets/style_03_tracked_mobile_station.png",
+      "role": "STYLE_ONLY",
+      "sha256": "da14249a726ca5009b222a0dd7dc2c7a1fdbfe49ef31b8080936e855e8eb1f6f"
+    },
+    {
+      "index": 9,
+      "path": "/home/ethan/Projects/Sai_Art/.agents/skills/uri-style/assets/style_05_white_blue_racer.png",
+      "role": "STYLE_ONLY",
+      "sha256": "fc5f342e892842887e738798b5870b9245fb3c7376a028c5f503301ac687f1bc"
+    }
+  ],
+  "latest_user_foot_instruction": "Complete Pixal3D half foot using all three supplied complete foot examples; preserve v0.1 palette."
+}

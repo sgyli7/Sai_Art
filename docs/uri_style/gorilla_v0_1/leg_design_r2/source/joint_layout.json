@@ -1,0 +1,79 @@
+{
+  "revision": "leg_design_r2",
+  "source_sha256": "60d2a518c84fdb56ba1079be36add2543d9fb351f119aefbd1c83fe702e9952c",
+  "role": "appearance_layout_candidate_not_active_SI_contract",
+  "coordinate_frame": {
+    "forward": "+X",
+    "left": "+Y",
+    "up": "+Z",
+    "units": "m"
+  },
+  "left_stations_m": {
+    "hip": [
+      -0.10523543391570422,
+      0.39,
+      1.2744285302277962
+    ],
+    "knee": [
+      0.3755971772911481,
+      0.39,
+      0.7935959190209438
+    ],
+    "fold": [
+      -0.26339380484326963,
+      0.39,
+      0.561022221559489
+    ],
+    "ankle": [
+      0.057999999999999996,
+      0.39,
+      0.178
+    ]
+  },
+  "right_stations_m": {
+    "hip": [
+      -0.10523543391570422,
+      -0.39,
+      1.2744285302277962
+    ],
+    "knee": [
+      0.3755971772911481,
+      -0.39,
+      0.7935959190209438
+    ],
+    "fold": [
+      -0.26339380484326963,
+      -0.39,
+      0.561022221559489
+    ],
+    "ankle": [
+      0.057999999999999996,
+      -0.39,
+      0.178
+    ]
+  },
+  "joint_axis": [
+    0,
+    1,
+    0
+  ],
+  "link_lengths_m": [
+    0.68,
+    0.68,
+    0.5
+  ],
+  "reference_pitches_from_down_vertical_deg": [
+    45.0,
+    -70.0,
+    40.0
+  ],
+  "deep_crouch_pitches_from_down_vertical_deg": [
+    55.0,
+    -80.0,
+    50.0
+  ],
+  "reference_height_with_upper_context_m": 2.26381231356825,
+  "deep_crouch_height_with_upper_context_m": 1.996890325715948,
+  "old_height_lock_released": true,
+  "physical_accepted": false
+}

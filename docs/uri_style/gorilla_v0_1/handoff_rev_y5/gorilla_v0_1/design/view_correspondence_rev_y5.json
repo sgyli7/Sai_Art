@@ -1,0 +1,43 @@
+{
+  "name": "Gorilla V0.1",
+  "revision": "Y5",
+  "status": "appearance_handoff_candidate_not_user_approved",
+  "unit": "metre",
+  "envelope_source": "dimension_lock.json",
+  "envelope_m": {
+    "width": 2.586977,
+    "depth": 1.071836,
+    "height": 2.65
+  },
+  "axes": {
+    "user_image_description": {
+      "X": "width",
+      "Y": "height",
+      "Z": "depth"
+    },
+    "frozen_blender": {
+      "X": "width",
+      "Y": "depth; front -Y",
+      "Z": "height; up +Z"
+    }
+  },
+  "appearance_authority": "images/orthographic_three_view_rev_y5.png",
+  "views": [
+    "front",
+    "left",
+    "rear"
+  ],
+  "side_facing": "page-left",
+  "front_projected_width_height": "retained from W as explicitly instructed by user; not re-fit to an inferred near-square silhouette",
+  "sagittal_chain": "hip -> thigh -> knee J1 -> shank -> extra fold J2 -> short carrier -> ankle J3 -> compound foot",
+  "side_projection": "one visible serial leg/foot contour; matching opposite leg occluded, no fork",
+  "radiators": "forward normals; profile sidewall only",
+  "paint": "original azure/ivory/saffron, whole front central lid orange",
+  "withdrawn_authorities": [
+    "view_contract_rev_v.json invented metric joint anchors",
+    "view_contract_rev_w2.json invented metric joint anchors",
+    "source/redraw_geometry_targets_rev_v3.png single-board foot target",
+    "source/orthographic_registration_rev_w2.png inferred silhouette/coordinates"
+  ],
+  "validation_scope": "Illustration-level correspondence only. Coarse frozen bounds are exact source values; final shell depth/mesh/link centers are not measured CAD, physics, topology optimization or stability evidence. Engineering reconstruction must use source dimensions and reference geometry, not scale inferred from raster labels."
+}

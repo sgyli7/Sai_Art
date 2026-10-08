@@ -1,0 +1,50 @@
+
+PRIMARY TASK: A NEW coordinated FRONT / LEFT / REAR orthographic Gorilla design drawing. Redesign the torso FORE-AFT VOLUME and all leg/foot structures. Keep previous front projected width/height and arm/hand styling only. Do NOT trace the failed old side torso and boot legs.
+
+INPUT ORDER AND AUTHORITY:
+IMAGE 1 is the ORIGINAL PRIMARY GEOMETRY AUTHORITY. Its massive upper body is a curved tetrahedral/wedge volume. This is the body to understand and reconstruct from front, strict left side and rear. The form stands FORWARD of the shoulder/arm root and tapers into the waist; it is a whole enclosure, not a skinny crescent brow. Remove gun, military markings, dull green and all distress.
+IMAGE 2 controls ONLY existing frontal X-width and Y-height, established blue/ivory/orange PAINT REGIONS and the shoulders, upper arms, blue forearms, ivory/graphite hands and rear service panel. Its LEFT body geometry, legs and shoes are REJECTED. Do not inherit those structures.
+IMAGES 3/4/5 control URI STYLE only. No reference-object copying.
+
+BODY RECONSTRUCTION IS THE PRIORITY:
+Observe image 1's top slab's continuous intrinsic curvature, broad anterior mass, curved forward face, converging side faces, and thickness behind the face. Build that SAME organization at image 2's retained front width and height.
+LEFT view must have a deep FILLED WEDGE/TETRAHEDRAL sagittal section, with broad armor mass projecting well ahead of the shoulder axis, a top surface sweeping forward-down to a restrained anterior nose, and the lower front surface retreating toward the waist. It has a separate rear body wall enclosing functional volume. NOT the old C-shaped arched band wrapping the shoulder. There must be substantial occupied torso thickness in front of the shoulder, not only a slender white strip.
+FRONT stays broad at top and tapering toward the narrow lower waist as before, with an elegant one-piece warm ivory primary front face and small orange central inset. Its 4 dominant face relationships are sculpted with smoothly changing curvature and restrained fillets. No simple sphere, flattened crab lid, depressed top, segmented polygon mask, added center ridge, extra spikes or face ornaments. Do not increase overall height. Restore correct depth by redistributing volume, not by changing the accepted X/Y size.
+Paired bright azure upper guard blocks are SEPARATE thick volumes. Their medial edges have an obvious bounded air gap to the ivory core. Their own top/side/underside show thickness; not pasted ribbons along the core. Keep matching shapes and original blue side fields.
+Radiator openings both face exactly forward, parallel, with original black fins and orange borders. LEFT shows the actual shallow housing sidewall and front edge, not a full side-facing black opening. No giant blank block.
+Front central pelvis cover entirely orange; rear separate panel stays ivory/orange as before.
+
+LEG REBUILD, NOT EDITING OLD LEG PARTS:
+A real THREE-LINK Z chain from hip to ankle: thigh goes forward/down to a forward knee, long middle shank retreats strongly backward/down to a rear lower-fold joint, then a clearly shorter stout terminal goes forward/down to a low independent ankle. TWO intermediate folds plus independent ankle. No additional ornamental fourth leg section. These pivots are distinctly staggered fore-aft; no straight stacked-cuff leg.
+Thigh still heavy blue with an orange front cap, main shank blue/graphite and an intentional structural opening; terminal graphite/ivory with a short connected carrier. Upper thigh and knee appear ahead of the hanging hand so the whole chain is understandable without changing the arms. One main coherent drive per pivot.
+One unbranched LEFT chain and one foot; opposite identical leg fully occluded. Exactly two identical mirrored legs front/rear. No fork, second side foot, crossing, splay or disconnected strut.
+
+FOOT:
+Compact low compound industrial foot, ankle carried over a real broad contact mass, short formed forefoot with purposeful internal connection and a rear heel landing. Structural recess bounded inside the real foot assembly. No tall U-shaped empty perimeter cage, pointed toe rail, long diagonally exposed spear strut or sealed shoe-cap boot. No tiny decorative ball hinges at foot edges. Toe and heel meet same ground line; two matching feet front/rear. Foot is much lower than shank, and its support footprint is broad.
+
+MECHANICAL SIMPLICITY:
+Delete rows of ball/cap/ring spacers at shoulders, elbow roots, hips and ankles. One necessary joint body, connected carrier and genuine motion gap at each interface. No clutter disguised by additional cover panels; external color regions stay. Do not wipe to blank toy — retain purposeful structure and a few complete assemblies.
+
+OUTPUT:
+FRONT, LEFT (page-left facing), REAR, same scale, common crown/sole and corresponding hip/knee/lower-fold/ankle elevations. Strict orthographic, no three-quarter view. Width/height retained from image 2 rather than a new near-square ratio. Matching armor boundaries, color regions and components between views; bilateral symmetry.
+Retain previous shoulder/arm/hand design, original bright azure (not navy), warm ivory, substantial orange fields, graphite mechanisms. Ivory/graphite feet. No gun, no grime, no tiny puncture texture, no new symbols.
+Airy white studio sheet with fine URI technical ink, controlled continuous curved surface highlights and clear material boundaries. Header "H 2.650 m   W 2.587 m   D 1.072 m"; view labels only. This is a user-review structural draft.
+
+
+URI / v4.1 — FUNCTIONAL RICHNESS, CLEAN ELEGANCE, CONTENT SEPARATION
+
+STYLE reference images control rendering language only: delicate technical contours, luminous blue/ivory/saffron color relationships, refined materials, smooth large forms and the hierarchy of detailed assemblies. The subject/design brief controls geometry, topology, component layout and function. Transfer visual language without transplanting the reference objects, their faces, silhouettes, reels, earpieces, branding, captions or page layouts into the new subject.
+
+A SURFACE_CLEANLINESS reference controls surface integrity, coherent seams and the absence of graphical noise only. A PROPORTION reference controls only explicitly approved body regions and coarse ratios. Keep these roles separate, even when they come from previous generated images. Preserve the user's required machine type and task action when developing its functional structure.
+
+Create a refined science-fiction illustration that is clean, elegant and richly constructed. Richness comes from complete, precisely fitted assemblies at meaningful scales: connected load-bearing parts, organized joints, layered covers, seals, hinges, tool interfaces, optical modules and service components appropriate to the subject. A detail belongs because it performs a function or completes a readable assembly. Use orderly groups and continuous contours so many parts remain individually intelligible.
+
+Maintain clean continuous painted surfaces and graceful large shapes around these assemblies. Cover surfaces contain intentional access-panel boundaries and grouped functional features. Fasteners appear at actual removable cover edges or structural connections, arranged coherently. Functional optical/service openings are small, bounded and correctly located. Rich detail does not require scattering circles, holes, black dots or tiny scratches over every plate. Eliminate arbitrary puncture patterns and decorative pseudo-engineering. Both physical dirt and nonfunctional graphical noise count as a dirty result.
+
+Draw fine crisp dark-blue-gray contours, restrained complete seam lines and controlled illustrated volume. Light reflects cleanly across smoothly maintained warm-white/ivory and powder/azure-blue enamel, clear glass, machined silver, rubber and cloth. Add confident but ordered saffron yellow-orange color accents. Keep dark areas inside real narrow recesses or clearly separated working components; complex areas must remain layered rather than merge into black scribble. Broad light/color planes remain readable at thumbnail scale and the fine assemblies reward close viewing. Favor airy clear light when the brief permits. Match a sophisticated ink-and-color concept illustration rather than an aged painting, plain icon or photograph.
+
+For designed objects/buildings, derive structure and functional detail from the task, then express them with compatible rounded shells, filleted boxes, cylinders and coherent integrated hardware. For people retain natural anatomy, identity and skin; supply fine hair, cloth folds, seams and relevant accessories. For animals/plants keep organic structure and refined natural detail; machinery appears only if requested. For scenes use clear perspective and broad sky/water/ground areas around richly described local structures. Exact forms, colors, weather and lighting follow explicit subject constraints.
+
+Paint is intact. Use no unrequested distress, grain overlay, chips, rust, random flecks, damage, logos or extra words. A clean design retains rich purposeful construction; a simplified blank toy also misses the target. Inspect separately for functional richness, surface integrity, visual order, source-object leakage and subject requirements.
+
+

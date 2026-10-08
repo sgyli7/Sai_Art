@@ -1,0 +1,78 @@
+{
+  "image": "/home/ethan/Projects/Sai_Art/docs/uri_style/gorilla_v0_2/images/gorilla_four_view_spatial_refined_p16.png",
+  "sha256": "d00f5b1ba2314c964c0786848ff31130a2895923698577c7f7863b8a84133ad6",
+  "dimensions_px": [
+    1254,
+    1254
+  ],
+  "measurement_scope": "visible raster extents after frame/text exclusion",
+  "limitations": [
+    "Antialiasing, highlights, shadows and disconnected small features affect extents.",
+    "This is not proof of common 3D geometry, source fidelity, collision clearance or load capacity."
+  ],
+  "panels": {
+    "FRONT": {
+      "bbox_panel_px": [
+        88,
+        18,
+        535,
+        600
+      ],
+      "visible_width_px": 448,
+      "visible_height_px": 583,
+      "retained_component_areas_px": [
+        150387,
+        1348
+      ]
+    },
+    "LEFT": {
+      "bbox_panel_px": [
+        161,
+        13,
+        430,
+        599
+      ],
+      "visible_width_px": 270,
+      "visible_height_px": 587,
+      "retained_component_areas_px": [
+        89422
+      ]
+    },
+    "REAR": {
+      "bbox_panel_px": [
+        86,
+        16,
+        539,
+        578
+      ],
+      "visible_width_px": 454,
+      "visible_height_px": 563,
+      "retained_component_areas_px": [
+        147694
+      ]
+    },
+    "TOP": {
+      "bbox_panel_px": [
+        109,
+        136,
+        496,
+        420
+      ],
+      "visible_width_px": 388,
+      "visible_height_px": 285,
+      "retained_component_areas_px": [
+        65005
+      ]
+    }
+  },
+  "elevation_height_spread_fraction": 0.0415464512406232,
+  "top_to_front_visible_width_ratio": 0.8660714285714286,
+  "top_uniform_scale_to_match_front": 1.1546391752577319,
+  "top_to_left_visible_depth_ratio": 1.0555555555555556,
+  "top_depth_scale_to_match_left": 0.9473684210526315,
+  "raster_alignment_findings": {
+    "elevation_height_difference_exceeds_2_percent": true,
+    "top_width_difference_exceeds_2_percent": true,
+    "top_depth_difference_exceeds_2_percent": true
+  }
+}

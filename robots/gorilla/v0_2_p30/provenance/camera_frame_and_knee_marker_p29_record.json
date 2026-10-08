@@ -1,0 +1,78 @@
+{
+  "revision": "p29",
+  "prompt": "/home/ethan/Projects/Sai_Art/docs/uri_style/gorilla_v0_2/prompts/camera_frame_and_knee_marker_p29.txt",
+  "skill": "/home/ethan/Projects/Sai_Art/.agents/skills/uri-style/SKILL.md",
+  "references": [
+    {
+      "path": "/home/ethan/Projects/Sai_Art/docs/uri_style/gorilla_v0_2/images/blue_knee_and_sensor_bay_generated_p28.png",
+      "role": "EDIT_TARGET",
+      "sha256": "a6866b941c6e5ade4c89b1a7e50f68173b93509467effc9d447b5f8437d127ce"
+    },
+    {
+      "path": "/home/ethan/Projects/Sai_Art/.agents/skills/uri-style/assets/style_01_race_car_hangar.png",
+      "role": "STYLE",
+      "sha256": "1aed979f442030b644db5b86c79ad69d44f14092f865eb28f157663476eec8c9"
+    },
+    {
+      "path": "/home/ethan/Projects/Sai_Art/.agents/skills/uri-style/assets/style_03_tracked_mobile_station.png",
+      "role": "STYLE",
+      "sha256": "da14249a726ca5009b222a0dd7dc2c7a1fdbfe49ef31b8080936e855e8eb1f6f"
+    },
+    {
+      "path": "/home/ethan/Projects/Sai_Art/.agents/skills/uri-style/assets/style_05_white_blue_racer.png",
+      "role": "STYLE",
+      "sha256": "fc5f342e892842887e738798b5870b9245fb3c7376a028c5f503301ac687f1bc"
+    }
+  ],
+  "scope": "Warm-white knee primary caps, blue side cheeks, black short inset instead of knee yellow strip; current chest camera cassette with yellow outer frame. Other upper design preserved.",
+  "latest_user_authorization": "不过看着还可以，你把上半身 Camera 保留吧，但是加个黄色外框框起来。",
+  "knee_correction": "Small yellow knee detail, not the whole kneecap, is being changed in this revision.",
+  "model_modified": false,
+  "status": "local_edits_verified_superseded_by_seven_item_review_p30",
+  "user_accepted": false,
+  "latest_knee_color_marks": [
+    {
+      "point": [
+        0.179,
+        0.79
+      ],
+      "request": "warm-white main knee cap"
+    },
+    {
+      "point": [
+        0.32,
+        0.774
+      ],
+      "request": "warm-white main knee cap"
+    },
+    {
+      "point": [
+        0.172,
+        0.293
+      ],
+      "request": "warm-white main knee cap"
+    },
+    {
+      "point": [
+        0.335,
+        0.296
+      ],
+      "request": "warm-white main knee cap"
+    },
+    {
+      "point": [
+        0.313,
+        0.311
+      ],
+      "request": "blue side cheeks"
+    }
+  ],
+  "generated_original": "/home/ethan/.codex/generated_images/01a0f3ab-7a57-7172-b8c5-e517aa2973da/exec-d0d067ac-b625-403a-b765-11a4729dae29.png",
+  "generated_copy": "/home/ethan/Projects/Sai_Art/docs/uri_style/gorilla_v0_2/images/camera_frame_and_knee_marker_generated_p29.png",
+  "generated_sha256": "f7241c5352800e1dbc74f9db28a4b6e8f384423a5d78c564d5e90d2815ddd410",
+  "tool": "built-in imagegen",
+  "composition": "/home/ethan/Projects/Sai_Art/docs/uri_style/gorilla_v0_2/knee_camera_composition_p29.json",
+  "original_upper_body_base": "/home/ethan/Projects/Sai_Art/docs/uri_style/gorilla_v0_2/images/gorilla_four_view_uri_knee_guards_p27.png",
+  "composite": "/home/ethan/Projects/Sai_Art/docs/uri_style/gorilla_v0_2/images/gorilla_four_view_knee_camera_p29.png",
+  "verification": "/home/ethan/Projects/Sai_Art/docs/uri_style/gorilla_v0_2/images/gorilla_four_view_knee_camera_p29.verification.json"
+}

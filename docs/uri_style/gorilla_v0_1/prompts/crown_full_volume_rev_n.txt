@@ -1,0 +1,29 @@
+Use case: precise-object-edit
+任务：只重画图1机器人的整个头顶表面。上一次没改成功，凹陷必须彻底消失。
+
+图1是编辑对象。保留其躯干前护具、侧进气、肩臂、三段Z腿、简洁手掌、简洁脚掌、颜色和站姿。图1上方中央的下沉区域、两侧高起的边缘、马鞍状顶轮廓全都删除，整个顶面重新生成，不能继承这块错误造型。
+图2是【仅头顶的实体曲面体量参考】：这张修改前的顶面是完整、饱满、没有中央凹坑的。用它来校正图1错误的顶面体量；只参考顶面实际的厚实曲面，不移植其蓝色顶片、盖片边线和其他部位。新顶面全部象牙白。
+图3、4、5分别为URI耳机、海滨、建筑原画，只参考画风、材质、色彩与细线层次，不复制物体。
+
+关键形体：厚实、低伏、完整的中央护具。前后方向是从较平缓的宽后部向前方渐进转折的连续曲面，横向是从饱满中央自然向两侧下转。上表面每个横截面都让中央至少与两侧一样高，中央绝不能低于两侧；后部到前部也没有局部低洼或波浪状起伏。填满旧凹陷、去掉旧翘边，形成有力而连续的保护体量。
+高级感来自不同方向变化的曲率、逐渐变化的截面与干净的整体收束，借鉴Zaha Hadid的整体流线表达。形体克制而优雅，不能画成规则半球、均匀蛋壳或圆角盒子，也不能拿人工凹槽来表现复杂。保持机器人的力量感与自然向前的方向。
+顶面不加蓝盖片、赛车条纹、附加头饰、棱角拼片、凹槽、坑洞、沟、飘带或刻意的装饰褶皱。用连续干净的暖白高光表现实体曲面；没有人脸、眼睛、头盔或动物面孔。
+保留图1其他部分。双腿的股段—膝—中段—额外折转—短末段—独立踝—脚掌连接不变；三个承载指加对向拇指不变；简单前掌和独立小后跟不变。继续沿用H2.65m、最大W2.586977m、最大D1.071836m的绘画尺寸意图，不展示尺寸或公式。
+出一张完整机甲主设计稿，同样的三分之四站姿、暖白背景、轻地影、完整头顶手掌脚掌与舒适边距。无文字、无图表、无建筑、无数学模型。暖白／蓝／少量橙黄，精密丰富且干净的URI技术线稿和色彩原画。只把头顶这一处真正改正确。
+
+
+URI / v4.1 — FUNCTIONAL RICHNESS, CLEAN ELEGANCE, CONTENT SEPARATION
+
+STYLE reference images control rendering language only: delicate technical contours, luminous blue/ivory/saffron color relationships, refined materials, smooth large forms and the hierarchy of detailed assemblies. The subject/design brief controls geometry, topology, component layout and function. Transfer visual language without transplanting the reference objects, their faces, silhouettes, reels, earpieces, branding, captions or page layouts into the new subject.
+
+A SURFACE_CLEANLINESS reference controls surface integrity, coherent seams and the absence of graphical noise only. A PROPORTION reference controls only explicitly approved body regions and coarse ratios. Keep these roles separate, even when they come from previous generated images. Preserve the user's required machine type and task action when developing its functional structure.
+
+Create a refined science-fiction illustration that is clean, elegant and richly constructed. Richness comes from complete, precisely fitted assemblies at meaningful scales: connected load-bearing parts, organized joints, layered covers, seals, hinges, tool interfaces, optical modules and service components appropriate to the subject. A detail belongs because it performs a function or completes a readable assembly. Use orderly groups and continuous contours so many parts remain individually intelligible.
+
+Maintain clean continuous painted surfaces and graceful large shapes around these assemblies. Cover surfaces contain intentional access-panel boundaries and grouped functional features. Fasteners appear at actual removable cover edges or structural connections, arranged coherently. Functional optical/service openings are small, bounded and correctly located. Rich detail does not require scattering circles, holes, black dots or tiny scratches over every plate. Eliminate arbitrary puncture patterns and decorative pseudo-engineering. Both physical dirt and nonfunctional graphical noise count as a dirty result.
+
+Draw fine crisp dark-blue-gray contours, restrained complete seam lines and controlled illustrated volume. Light reflects cleanly across smoothly maintained warm-white/ivory and powder/azure-blue enamel, clear glass, machined silver, rubber and cloth. Add confident but ordered saffron yellow-orange color accents. Keep dark areas inside real narrow recesses or clearly separated working components; complex areas must remain layered rather than merge into black scribble. Broad light/color planes remain readable at thumbnail scale and the fine assemblies reward close viewing. Favor airy clear light when the brief permits. Match a sophisticated ink-and-color concept illustration rather than an aged painting, plain icon or photograph.
+
+For designed objects/buildings, derive structure and functional detail from the task, then express them with compatible rounded shells, filleted boxes, cylinders and coherent integrated hardware. For people retain natural anatomy, identity and skin; supply fine hair, cloth folds, seams and relevant accessories. For animals/plants keep organic structure and refined natural detail; machinery appears only if requested. For scenes use clear perspective and broad sky/water/ground areas around richly described local structures. Exact forms, colors, weather and lighting follow explicit subject constraints.
+
+Paint is intact. Use no unrequested distress, grain overlay, chips, rust, random flecks, damage, logos or extra words. A clean design retains rich purposeful construction; a simplified blank toy also misses the target. Inspect separately for functional richness, surface integrity, visual order, source-object leakage and subject requirements.

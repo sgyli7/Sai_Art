@@ -1,0 +1,112 @@
+{
+  "title": "Gorilla v0.2 \u2014 corrected TOP, graphite knee modules, rear exhausts P26",
+  "base": "/home/ethan/Projects/Sai_Art/docs/uri_style/gorilla_v0_2/images/gorilla_four_view_knee_modules_p25.png",
+  "overlay": "/home/ethan/Projects/Sai_Art/docs/uri_style/gorilla_v0_2/images/black_knees_rear_exhausts_generated_p26.png",
+  "output": "/home/ethan/Projects/Sai_Art/docs/uri_style/gorilla_v0_2/images/gorilla_four_view_black_knees_exhausts_p26.png",
+  "regions": [
+    [
+      158,
+      342,
+      294,
+      446
+    ],
+    [
+      326,
+      342,
+      462,
+      446
+    ],
+    [
+      787,
+      351,
+      904,
+      458
+    ],
+    [
+      911,
+      379,
+      944,
+      414
+    ],
+    [
+      162,
+      945,
+      291,
+      1068
+    ],
+    [
+      339,
+      945,
+      467,
+      1068
+    ],
+    [
+      804,
+      972,
+      902,
+      1025
+    ],
+    [
+      978,
+      972,
+      1077,
+      1025
+    ],
+    [
+      249,
+      698,
+      279,
+      762
+    ],
+    [
+      353,
+      698,
+      384,
+      762
+    ]
+  ],
+  "preserve_checks": {
+    "FRONT_upper_body_and_intakes": [
+      0,
+      0,
+      626,
+      342
+    ],
+    "LEFT_upper_body": [
+      628,
+      0,
+      1254,
+      300
+    ],
+    "REAR_blue_pad": [
+      282,
+      684,
+      348,
+      777
+    ],
+    "TOP_upper_body": [
+      632,
+      633,
+      1250,
+      968
+    ],
+    "FRONT_label": [
+      0,
+      598,
+      625,
+      631
+    ],
+    "LEFT_label": [
+      628,
+      598,
+      1254,
+      631
+    ],
+    "REAR_TOP_labels": [
+      0,
+      1200,
+      1254,
+      1254
+    ]
+  }
+}

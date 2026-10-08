@@ -1,0 +1,7 @@
+NATIVE_COMPONENT_POSE reference_bent 3
+NATIVE_COMPONENT_POSE further_fold 3
+NATIVE_COMPONENT_POSE partial_extension 4
+NATIVE_COMPONENT_POSE ankle_pitch 3
+NATIVE_COMPONENT_INSPECTION False False
+Blender 4.0.2
+Read blend: "/home/ethan/Projects/Sai_Art/docs/uri_style/gorilla_v0_2/source/lower_modular_components_b5.blend"

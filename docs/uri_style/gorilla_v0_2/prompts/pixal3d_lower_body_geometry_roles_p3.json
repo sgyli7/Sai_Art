@@ -1,0 +1,49 @@
+{
+  "status": "generated_requires_targeted_correction",
+  "stage": "1_geometry_identity_palette",
+  "tool": "built_in_image_gen",
+  "prompt": "/home/ethan/Projects/Sai_Art/docs/uri_style/gorilla_v0_2/prompts/pixal3d_lower_body_geometry_p3.txt",
+  "reference_limit": 5,
+  "reason_for_staging": "Built-in rejected nine paths: accepts at most five. Geometry and foot references first; fixed URI style anchors follow with accepted geometry image as edit target.",
+  "references": [
+    {
+      "index": 1,
+      "path": "/home/ethan/Projects/Sai_Art/docs/uri_style/gorilla_v0_2/references/user_pixal_lower_body.jpg",
+      "role": "LOWER_GEOMETRY_PROPORTION_IGNORE_PAINT_DEFECTIVE_FOOT",
+      "sha256": "39c26feffdb56239ee2297c9fce6bd1aae35ecb1851f0292f43a7eb12330730e"
+    },
+    {
+      "index": 2,
+      "path": "/home/ethan/Projects/Sai_Art/docs/uri_style/gorilla_v0_1/images/locked_four_view_review_rev_aa3.png",
+      "role": "V01_UPPER_IDENTITY_PALETTE_COMPOSITION",
+      "sha256": "5c0469708d7c878ac6253e6ac3e6276198bf3694235bbed3da66c8c743b5aba4"
+    },
+    {
+      "index": 3,
+      "path": "/home/ethan/Projects/Sai_Art/docs/uri_style/gorilla_v0_2/references/foot_reference_complete_foreheel.jpg",
+      "role": "FOOT_COMPLETENESS_CONTINUITY",
+      "sha256": "6688a64220e4114cb8edf14abbadf0b6906a3b822ce7ab2d1fab2033d7624b06"
+    },
+    {
+      "index": 4,
+      "path": "/home/ethan/Projects/Sai_Art/docs/uri_style/gorilla_v0_2/references/foot_reference_low_integrated.jpg",
+      "role": "LOW_FOOT_SILHOUETTE_CONTINUITY",
+      "sha256": "5f63f30f07b4ff0cdb5a0a3838434f956589cf07da76bfc20dce98032fc4a335"
+    },
+    {
+      "index": 5,
+      "path": "/home/ethan/Projects/Sai_Art/docs/uri_style/gorilla_v0_2/references/foot_reference_model_joint_bridge.jpg",
+      "role": "FOOT_TOPOLOGY",
+      "sha256": "bb4112b18581da837246e59faad0ada988eced641fa43b093bb4f863aabf93f0"
+    }
+  ],
+  "output": "/home/ethan/Projects/Sai_Art/docs/uri_style/gorilla_v0_2/images/pixal_lower_body_four_view_p3.png",
+  "output_sha256": "f8037dd4b19cf6fd0d03dfd87afe5b7e77b07655c71f69a791b9cd6a7f4f6657",
+  "built_in_output": "/home/ethan/.codex/generated_images/01a0f3ab-7a57-7172-b8c5-e517aa2973da/exec-3f7846dc-97a0-4a63-a0c8-47307d67a9d1.png",
+  "visual_findings": [
+    "Front and side upper anatomy leaked from rough primary reconstruction; restore v0.1 upper identity.",
+    "Rear thighs partly reused old design; align covers and knee positions to new front/side.",
+    "Top projection is oblique and front lamp fully visible; correct overhead projection.",
+    "Feet complete but too boot-like; integrate connected low forefoot/heel bridge."
+  ]
+}

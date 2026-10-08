@@ -1,0 +1,85 @@
+16:38:41 | ERROR: Draco mesh compression is not available because library could not be found at /home/ethan/Softwares/blender-local/root/usr/bin/4.0/python/lib/python3.12/site-packages/libextern_draco.so
+16:38:41 | INFO: Starting glTF 2.0 export
+16:38:41 | INFO: Extracting primitive: L_hip_common_axle_master_mesh
+16:38:41 | INFO: Primitives created: 1
+16:38:41 | INFO: Extracting primitive: L_hip_side_cover_-1_master_mesh
+16:38:41 | INFO: Primitives created: 1
+16:38:41 | INFO: Extracting primitive: L_hip_side_cover_1_master_mesh
+16:38:41 | INFO: Primitives created: 1
+16:38:41 | INFO: Extracting primitive: L_hip_side_cover_rim_-1_master_mesh
+16:38:41 | INFO: Primitives created: 1
+16:38:41 | INFO: Extracting primitive: L_hip_side_cover_rim_1_master_mesh
+16:38:41 | INFO: Primitives created: 1
+16:38:41 | INFO: Extracting primitive: L_knee_common_axle_master_mesh
+16:38:41 | INFO: Primitives created: 1
+16:38:41 | INFO: Extracting primitive: L_knee_front_shield_master_mesh
+16:38:41 | INFO: Primitives created: 1
+16:38:41 | INFO: Extracting primitive: L_knee_side_cover_-1_master_mesh
+16:38:41 | INFO: Primitives created: 1
+16:38:41 | INFO: Extracting primitive: L_knee_side_cover_1_master_mesh
+16:38:41 | INFO: Primitives created: 1
+16:38:41 | INFO: Extracting primitive: L_knee_side_cover_rim_-1_master_mesh
+16:38:41 | INFO: Primitives created: 1
+16:38:41 | INFO: Extracting primitive: L_knee_side_cover_rim_1_master_mesh
+16:38:41 | INFO: Primitives created: 1
+16:38:41 | INFO: Extracting primitive: L_hock_common_axle_master_mesh
+16:38:41 | INFO: Primitives created: 1
+16:38:41 | INFO: Extracting primitive: L_hock_side_cover_-1_master_mesh
+16:38:41 | INFO: Primitives created: 1
+16:38:41 | INFO: Extracting primitive: L_hock_side_cover_1_master_mesh
+16:38:41 | INFO: Primitives created: 1
+16:38:41 | INFO: Extracting primitive: L_hock_side_cover_rim_-1_master_mesh
+16:38:41 | INFO: Primitives created: 1
+16:38:41 | INFO: Extracting primitive: L_hock_side_cover_rim_1_master_mesh
+16:38:41 | INFO: Primitives created: 1
+16:38:41 | INFO: Extracting primitive: L_return_carrier_master_mesh
+16:38:41 | INFO: Primitives created: 1
+16:38:41 | INFO: Extracting primitive: L_ankle_common_axle_master_mesh
+16:38:41 | INFO: Primitives created: 1
+16:38:41 | INFO: Extracting primitive: L_ankle_side_cover_-1_master_mesh
+16:38:41 | INFO: Primitives created: 1
+16:38:41 | INFO: Extracting primitive: L_ankle_side_cover_1_master_mesh
+16:38:41 | INFO: Primitives created: 1
+16:38:41 | INFO: Extracting primitive: L_ankle_side_cover_rim_-1_master_mesh
+16:38:41 | INFO: Primitives created: 1
+16:38:41 | INFO: Extracting primitive: L_ankle_side_cover_rim_1_master_mesh
+16:38:41 | INFO: Primitives created: 1
+16:38:41 | INFO: Extracting primitive: L_foot_central_carrier_master_mesh
+16:38:41 | INFO: Primitives created: 2
+16:38:41 | INFO: Extracting primitive: L_sole_contact_-0.037_master_mesh
+16:38:41 | INFO: Primitives created: 1
+16:38:41 | INFO: Extracting primitive: L_sole_contact_-0.176_master_mesh
+16:38:41 | INFO: Primitives created: 1
+16:38:41 | INFO: Extracting primitive: L_sole_contact_0.052_master_mesh
+16:38:41 | INFO: Primitives created: 1
+16:38:41 | INFO: Extracting primitive: L_hock_rear_guard_master_mesh
+16:38:41 | INFO: Primitives created: 2
+16:38:41 | INFO: Extracting primitive: L_hock_rear_service_panel_master_mesh.001
+16:38:43 | INFO: Primitives created: 1
+16:38:43 | INFO: Extracting primitive: L_shank_ankle_carrier_master_mesh
+16:38:43 | INFO: Primitives created: 2
+16:38:43 | INFO: Extracting primitive: L_shank_front_service_panel_master_mesh
+16:38:43 | INFO: Primitives created: 1
+16:38:43 | INFO: Extracting primitive: L_shank_front_side_shell_master_mesh
+16:38:43 | INFO: Primitives created: 1
+16:38:43 | INFO: Extracting primitive: L_thigh_carrier_master_mesh
+16:38:43 | INFO: Primitives created: 1
+16:38:43 | INFO: Extracting primitive: L_thigh_front_service_panel_master_mesh
+16:38:43 | INFO: Primitives created: 1
+16:38:43 | INFO: Extracting primitive: L_thigh_inner_lateral_panel_master_mesh.001
+16:38:44 | INFO: Primitives created: 1
+16:38:45 | INFO: Extracting primitive: L_thigh_main_shell_master_mesh.001
+16:38:49 | INFO: Primitives created: 1
+16:38:50 | INFO: Extracting primitive: L_thigh_outer_lateral_panel_master_mesh
+16:38:50 | INFO: Primitives created: 1
+16:38:50 | INFO: Extracting primitive: L_thigh_rear_hip_cover_master_mesh
+16:38:50 | INFO: Primitives created: 1
+16:38:50 | INFO: Extracting primitive: L_thigh_rear_hip_panel_master_mesh
+16:38:50 | INFO: Primitives created: 1
+16:38:51 | INFO: Finished glTF 2.0 export in 9.839226722717285 s
+
+ORIGINAL_SELECTED_B7_GLB_EXPORTED 76
+Blender 4.0.2
+Read blend: "/home/ethan/Projects/Sai_Art/docs/uri_style/gorilla_v0_2/source/lower_modular_components_b7.blend"
+
+Blender quit

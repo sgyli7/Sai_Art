@@ -1,0 +1,663 @@
+{
+  "asset": "Gorilla v0.2",
+  "revision": "P30",
+  "scope": "Completed Art appearance delivery: five four-view palettes and original selected B7 lower-body model",
+  "created_at_utc": "2026-10-03T17:55:58.526691+00:00",
+  "theme_count": 5,
+  "art_design_phase_closed_by_user": true,
+  "whole_robot_native_CAD_qualified": false,
+  "model_validation": {
+    "asset": "Original user-selected gray lower modular B7",
+    "source_blend": "/home/ethan/Projects/Sai_Art/docs/uri_style/gorilla_v0_2/source/lower_modular_components_b7.blend",
+    "source_sha256": "b75b3f29aa0a91145ed6dacf2cd25e1caece7527155146dd00507cd70edb6beb",
+    "glb": "/home/ethan/Projects/Sai_Art/docs/uri_style/gorilla_v0_2/exports/lower_modular_components_b7.glb",
+    "glb_sha256": "327bc4da753b9b90db8c2338221591461097e6a802e40e9db21d5ec020e42787",
+    "glb_header_version": 2,
+    "self_contained": true,
+    "external_resources": false,
+    "mesh_instances": 76,
+    "mesh_definitions": 38,
+    "nodes": 85,
+    "all_nodes_reachable": true,
+    "tree_valid": true,
+    "original_gray_materials": true,
+    "source_unchanged": true,
+    "unit_convention": "Normalized appearance units; scale not a manufacturing dimension",
+    "axis_convention": "+Y up; source +Z up converted by native Blender glTF exporter",
+    "topology_and_physics_requalified": false,
+    "original_topology_report": "lower_modular_components_b7.json",
+    "whole_robot_CAD_qualification": false,
+    "checks_passed": true
+  },
+  "source_records": [
+    {
+      "path": "themes/images/uri_p30.png",
+      "source_path": "/home/ethan/Projects/Sai_Art/docs/uri_style/gorilla_v0_2/themes/images/uri_p30.png",
+      "source_repository": "Sai_Art",
+      "source_version": "P30 palette update",
+      "sha256": "0076f5caa96e70a7d082ab3b862edcdb2516379181aa5ab687f77824d22c60a3",
+      "source_sha256": "0076f5caa96e70a7d082ab3b862edcdb2516379181aa5ab687f77824d22c60a3",
+      "adapted_for_portable_paths": false
+    },
+    {
+      "path": "themes/images/uri_p30.svg",
+      "source_path": "/home/ethan/Projects/Sai_Art/docs/uri_style/gorilla_v0_2/themes/images/uri_p30.svg",
+      "source_repository": "Sai_Art",
+      "source_version": "P30 native SVG page embedding",
+      "sha256": "c45c74a7ecc5f0481816bef7d18a5832590fd9938964c639a91ab78c927a70ef",
+      "source_sha256": "c45c74a7ecc5f0481816bef7d18a5832590fd9938964c639a91ab78c927a70ef",
+      "adapted_for_portable_paths": false
+    },
+    {
+      "path": "themes/images/yellow_purple_p30.png",
+      "source_path": "/home/ethan/Projects/Sai_Art/docs/uri_style/gorilla_v0_2/themes/images/yellow_purple_p30.png",
+      "source_repository": "Sai_Art",
+      "source_version": "P30 palette update",
+      "sha256": "c082c37f33cc6af49dd638bd2f5a61b87f0de6203c39741e71c35211ebd908c7",
+      "source_sha256": "c082c37f33cc6af49dd638bd2f5a61b87f0de6203c39741e71c35211ebd908c7",
+      "adapted_for_portable_paths": false
+    },
+    {
+      "path": "themes/images/yellow_purple_p30.svg",
+      "source_path": "/home/ethan/Projects/Sai_Art/docs/uri_style/gorilla_v0_2/themes/images/yellow_purple_p30.svg",
+      "source_repository": "Sai_Art",
+      "source_version": "P30 native SVG page embedding",
+      "sha256": "38be3b464e8b7483d88e83e801e1c4657a0c671f16b1262fef47e7ce68084058",
+      "source_sha256": "38be3b464e8b7483d88e83e801e1c4657a0c671f16b1262fef47e7ce68084058",
+      "adapted_for_portable_paths": false
+    },
+    {
+      "path": "themes/prompts/yellow_purple_p30.txt",
+      "source_path": "/home/ethan/Projects/Sai_Art/docs/uri_style/gorilla_v0_2/themes/prompts/yellow_purple_p30.txt",
+      "source_repository": "Sai_Art",
+      "source_version": "P30 exact palette prompt",
+      "sha256": "dd4ff07495af701626281b67bed2a395daed91bfb67fb846eb319f48327af1b8",
+      "source_sha256": "dd4ff07495af701626281b67bed2a395daed91bfb67fb846eb319f48327af1b8",
+      "adapted_for_portable_paths": false
+    },
+    {
+      "path": "themes/images/white_orange_p30.png",
+      "source_path": "/home/ethan/Projects/Sai_Art/docs/uri_style/gorilla_v0_2/themes/images/white_orange_p30.png",
+      "source_repository": "Sai_Art",
+      "source_version": "P30 palette update",
+      "sha256": "260fc2d59b7ec4b7b962b7fcc73e7e92126d76635eb24e248cd0cfb0dd3f4ae4",
+      "source_sha256": "260fc2d59b7ec4b7b962b7fcc73e7e92126d76635eb24e248cd0cfb0dd3f4ae4",
+      "adapted_for_portable_paths": false
+    },
+    {
+      "path": "themes/images/white_orange_p30.svg",
+      "source_path": "/home/ethan/Projects/Sai_Art/docs/uri_style/gorilla_v0_2/themes/images/white_orange_p30.svg",
+      "source_repository": "Sai_Art",
+      "source_version": "P30 native SVG page embedding",
+      "sha256": "dbe8b1680fb7e14957529984c2e0e172536e12be7d880f1f6c6cf277ab254c45",
+      "source_sha256": "dbe8b1680fb7e14957529984c2e0e172536e12be7d880f1f6c6cf277ab254c45",
+      "adapted_for_portable_paths": false
+    },
+    {
+      "path": "themes/prompts/white_orange_p30.txt",
+      "source_path": "/home/ethan/Projects/Sai_Art/docs/uri_style/gorilla_v0_2/themes/prompts/white_orange_p30.txt",
+      "source_repository": "Sai_Art",
+      "source_version": "P30 exact palette prompt",
+      "sha256": "164e1fe84edb7928cd4510306455538376608cb0fefebb88dd9322a1d2366787",
+      "source_sha256": "164e1fe84edb7928cd4510306455538376608cb0fefebb88dd9322a1d2366787",
+      "adapted_for_portable_paths": false
+    },
+    {
+      "path": "themes/images/black_gold_p30.png",
+      "source_path": "/home/ethan/Projects/Sai_Art/docs/uri_style/gorilla_v0_2/themes/images/black_gold_p30.png",
+      "source_repository": "Sai_Art",
+      "source_version": "P30 palette update",
+      "sha256": "034a4631076c2e9484f14ab540f78c0d4c5954432f7cce12fd2c30b922377534",
+      "source_sha256": "034a4631076c2e9484f14ab540f78c0d4c5954432f7cce12fd2c30b922377534",
+      "adapted_for_portable_paths": false
+    },
+    {
+      "path": "themes/images/black_gold_p30.svg",
+      "source_path": "/home/ethan/Projects/Sai_Art/docs/uri_style/gorilla_v0_2/themes/images/black_gold_p30.svg",
+      "source_repository": "Sai_Art",
+      "source_version": "P30 native SVG page embedding",
+      "sha256": "a8cf3fa9fd2c69579d436864e444c0b501b51daefac424ddbe520944b90ec0b8",
+      "source_sha256": "a8cf3fa9fd2c69579d436864e444c0b501b51daefac424ddbe520944b90ec0b8",
+      "adapted_for_portable_paths": false
+    },
+    {
+      "path": "themes/prompts/black_gold_p30.txt",
+      "source_path": "/home/ethan/Projects/Sai_Art/docs/uri_style/gorilla_v0_2/themes/prompts/black_gold_p30.txt",
+      "source_repository": "Sai_Art",
+      "source_version": "P30 exact palette prompt",
+      "sha256": "0fc224cc0b7d00f339c514518b37928223fa8fd8ec79aab479caa2a860f36684",
+      "source_sha256": "0fc224cc0b7d00f339c514518b37928223fa8fd8ec79aab479caa2a860f36684",
+      "adapted_for_portable_paths": false
+    },
+    {
+      "path": "themes/images/desert_p30.png",
+      "source_path": "/home/ethan/Projects/Sai_Art/docs/uri_style/gorilla_v0_2/themes/images/desert_p30.png",
+      "source_repository": "Sai_Art",
+      "source_version": "P30 palette update",
+      "sha256": "c832c0d58fa3d54106d5380771a34cba3f6349d23d33601272bd4939539781d7",
+      "source_sha256": "c832c0d58fa3d54106d5380771a34cba3f6349d23d33601272bd4939539781d7",
+      "adapted_for_portable_paths": false
+    },
+    {
+      "path": "themes/images/desert_p30.svg",
+      "source_path": "/home/ethan/Projects/Sai_Art/docs/uri_style/gorilla_v0_2/themes/images/desert_p30.svg",
+      "source_repository": "Sai_Art",
+      "source_version": "P30 native SVG page embedding",
+      "sha256": "41c392d4caadee36e2e90beff5689eeb494cc81cdf19db6829c6d0ee76d7043c",
+      "source_sha256": "41c392d4caadee36e2e90beff5689eeb494cc81cdf19db6829c6d0ee76d7043c",
+      "adapted_for_portable_paths": false
+    },
+    {
+      "path": "themes/prompts/desert_p30.txt",
+      "source_path": "/home/ethan/Projects/Sai_Art/docs/uri_style/gorilla_v0_2/themes/prompts/desert_p30.txt",
+      "source_repository": "Sai_Art",
+      "source_version": "P30 exact palette prompt",
+      "sha256": "eca9ab653320a8cfa49e444df13f4c04909603ea5c3120c6e6b457db91602ea1",
+      "source_sha256": "eca9ab653320a8cfa49e444df13f4c04909603ea5c3120c6e6b457db91602ea1",
+      "adapted_for_portable_paths": false
+    },
+    {
+      "path": "themes/prompts/white_orange_coupler_fix_p30.txt",
+      "source_path": "/home/ethan/Projects/Sai_Art/docs/uri_style/gorilla_v0_2/themes/prompts/white_orange_coupler_fix_p30.txt",
+      "source_repository": "Sai_Art",
+      "source_version": "P30 palette local correction",
+      "sha256": "4375aff66c933dc482dc23fa827f1e3d334d084400ceedc4391e9f57e2cda578",
+      "source_sha256": "4375aff66c933dc482dc23fa827f1e3d334d084400ceedc4391e9f57e2cda578",
+      "adapted_for_portable_paths": false
+    },
+    {
+      "path": "themes/theme_overview.png",
+      "source_path": "/home/ethan/Projects/Sai_Art/docs/uri_style/gorilla_v0_2/themes/theme_overview.png",
+      "source_repository": "Sai_Art",
+      "source_version": "P30 five-theme update",
+      "sha256": "03dbc99c5fc1c339de02f17edfefd38e5099c428961f2712aad9e5842c914ea6",
+      "source_sha256": "03dbc99c5fc1c339de02f17edfefd38e5099c428961f2712aad9e5842c914ea6",
+      "adapted_for_portable_paths": false
+    },
+    {
+      "path": "themes/theme_overview.svg",
+      "source_path": "/home/ethan/Projects/Sai_Art/docs/uri_style/gorilla_v0_2/themes/theme_overview.svg",
+      "source_repository": "Sai_Art",
+      "source_version": "P30 five-theme update",
+      "sha256": "3c77d88ed4b06c7f7fb250a9edb7d09ba4804ca52d988176fc9e7dc2b85810a9",
+      "source_sha256": "3c77d88ed4b06c7f7fb250a9edb7d09ba4804ca52d988176fc9e7dc2b85810a9",
+      "adapted_for_portable_paths": false
+    },
+    {
+      "path": "themes/index.html",
+      "source_path": "/home/ethan/Projects/Sai_Art/docs/uri_style/gorilla_v0_2/themes/index.html",
+      "source_repository": "Sai_Art",
+      "source_version": "P30 five-theme update",
+      "sha256": "f3e3e151c2deae0d3d94e76b818a9b6e7053a05ff206e7da7d7855063d0cec23",
+      "source_sha256": "f3e3e151c2deae0d3d94e76b818a9b6e7053a05ff206e7da7d7855063d0cec23",
+      "adapted_for_portable_paths": false
+    },
+    {
+      "path": "themes/theme_catalog.json",
+      "source_path": "/home/ethan/Projects/Sai_Art/docs/uri_style/gorilla_v0_2/themes/theme_catalog.json",
+      "source_repository": "Sai_Art",
+      "source_version": "P30 five-theme update",
+      "sha256": "2a99fd25ecbc1f72f6218b5bfd3f0f44e2ccf4fab4b71fcd6775f4b89e2b8e43",
+      "source_sha256": "94e87d5edd92a17376d528940be5011d57b8c0ce3b5fad73f454072fec083a51",
+      "adapted_for_portable_paths": true
+    },
+    {
+      "path": "themes/white_orange_coupler_composition_p30.json",
+      "source_path": "/home/ethan/Projects/Sai_Art/docs/uri_style/gorilla_v0_2/themes/white_orange_coupler_composition_p30.json",
+      "source_repository": "Sai_Art",
+      "source_version": "P30 five-theme update",
+      "sha256": "4534a5829b36b59b7bdceea586c13cb145994609e2a50e9f663a5b5daa0e7213",
+      "source_sha256": "4534a5829b36b59b7bdceea586c13cb145994609e2a50e9f663a5b5daa0e7213",
+      "adapted_for_portable_paths": false
+    },
+    {
+      "path": "provenance/white_orange_local_fix_verification.json",
+      "source_path": "/home/ethan/Projects/Sai_Art/docs/uri_style/gorilla_v0_2/themes/images/white_orange_p30.verification.json",
+      "source_repository": "Sai_Art",
+      "source_version": "P30 local edit pixel preservation",
+      "sha256": "ea16a00fe11eb4d59193f1a9ea411eea73a3ca1c2c28ec404d206898ae5c6cc8",
+      "source_sha256": "ea16a00fe11eb4d59193f1a9ea411eea73a3ca1c2c28ec404d206898ae5c6cc8",
+      "adapted_for_portable_paths": false
+    },
+    {
+      "path": "model/source/lower_modular_components_b7.blend",
+      "source_path": "/home/ethan/Projects/Sai_Art/docs/uri_style/gorilla_v0_2/source/lower_modular_components_b7.blend",
+      "source_repository": "Sai_Art",
+      "source_version": "B7 user-selected original gray asset, unchanged",
+      "sha256": "b75b3f29aa0a91145ed6dacf2cd25e1caece7527155146dd00507cd70edb6beb",
+      "source_sha256": "b75b3f29aa0a91145ed6dacf2cd25e1caece7527155146dd00507cd70edb6beb",
+      "adapted_for_portable_paths": false
+    },
+    {
+      "path": "model/exports/lower_modular_components_b7.glb",
+      "source_path": "/home/ethan/Projects/Sai_Art/docs/uri_style/gorilla_v0_2/exports/lower_modular_components_b7.glb",
+      "source_repository": "Sai_Art",
+      "source_version": "B7 native Blender GLB export",
+      "sha256": "327bc4da753b9b90db8c2338221591461097e6a802e40e9db21d5ec020e42787",
+      "source_sha256": "327bc4da753b9b90db8c2338221591461097e6a802e40e9db21d5ec020e42787",
+      "adapted_for_portable_paths": false
+    },
+    {
+      "path": "model/reports/lower_modular_components_b7.json",
+      "source_path": "/home/ethan/Projects/Sai_Art/docs/uri_style/gorilla_v0_2/lower_modular_components_b7.json",
+      "source_repository": "Sai_Art",
+      "source_version": "B7 original geometry and P30 export verification",
+      "sha256": "6e91d2e97ff26483995e8ff886667276a890b38c93869d910271eba287fef7a0",
+      "source_sha256": "6e91d2e97ff26483995e8ff886667276a890b38c93869d910271eba287fef7a0",
+      "adapted_for_portable_paths": false
+    },
+    {
+      "path": "model/reports/selected_b7_asset_export.json",
+      "source_path": "/home/ethan/Projects/Sai_Art/docs/uri_style/gorilla_v0_2/selected_b7_asset_export.json",
+      "source_repository": "Sai_Art",
+      "source_version": "B7 original geometry and P30 export verification",
+      "sha256": "4b49644664aa97ac32137c9f6104cfaa958676022bffb5b2163bb77f6e63935e",
+      "source_sha256": "4b49644664aa97ac32137c9f6104cfaa958676022bffb5b2163bb77f6e63935e",
+      "adapted_for_portable_paths": false
+    },
+    {
+      "path": "model/reports/selected_b7_asset_validation_p30.json",
+      "source_path": "/home/ethan/Projects/Sai_Art/docs/uri_style/gorilla_v0_2/selected_b7_asset_validation_p30.json",
+      "source_repository": "Sai_Art",
+      "source_version": "B7 original geometry and P30 export verification",
+      "sha256": "51663af2fd32fce16d04d41e52645e72d7811d6fe835181fd7a5f3d318120658",
+      "source_sha256": "51663af2fd32fce16d04d41e52645e72d7811d6fe835181fd7a5f3d318120658",
+      "adapted_for_portable_paths": false
+    },
+    {
+      "path": "model/previews/lower_modular_components_front_b7.png",
+      "source_path": "/home/ethan/Projects/Sai_Art/docs/uri_style/gorilla_v0_2/images/lower_modular_components_front_b7.png",
+      "source_repository": "Sai_Art",
+      "source_version": "B7 original native inspection views",
+      "sha256": "0f8c7acd5bc000d5c32fa9511d50653a2cf8e5c711a24fa4e0ce733c0cfb858d",
+      "source_sha256": "0f8c7acd5bc000d5c32fa9511d50653a2cf8e5c711a24fa4e0ce733c0cfb858d",
+      "adapted_for_portable_paths": false
+    },
+    {
+      "path": "model/previews/lower_modular_components_left_b7.png",
+      "source_path": "/home/ethan/Projects/Sai_Art/docs/uri_style/gorilla_v0_2/images/lower_modular_components_left_b7.png",
+      "source_repository": "Sai_Art",
+      "source_version": "B7 original native inspection views",
+      "sha256": "0c69a6a87fbf34c6594cfc84c5939a3cdd2ba813b1aac8f70c59ea0fa5434432",
+      "source_sha256": "0c69a6a87fbf34c6594cfc84c5939a3cdd2ba813b1aac8f70c59ea0fa5434432",
+      "adapted_for_portable_paths": false
+    },
+    {
+      "path": "model/previews/lower_modular_components_rear_b7.png",
+      "source_path": "/home/ethan/Projects/Sai_Art/docs/uri_style/gorilla_v0_2/images/lower_modular_components_rear_b7.png",
+      "source_repository": "Sai_Art",
+      "source_version": "B7 original native inspection views",
+      "sha256": "356bcee37e3245360d704b911648631992dd8c190f58c0d173f5c9c40a689f45",
+      "source_sha256": "356bcee37e3245360d704b911648631992dd8c190f58c0d173f5c9c40a689f45",
+      "adapted_for_portable_paths": false
+    },
+    {
+      "path": "model/previews/lower_modular_components_top_b7.png",
+      "source_path": "/home/ethan/Projects/Sai_Art/docs/uri_style/gorilla_v0_2/images/lower_modular_components_top_b7.png",
+      "source_repository": "Sai_Art",
+      "source_version": "B7 original native inspection views",
+      "sha256": "f8a017cc0e21589d76ba11f441fd3215b9895f76096d4ffc2e94a790cbff86f5",
+      "source_sha256": "f8a017cc0e21589d76ba11f441fd3215b9895f76096d4ffc2e94a790cbff86f5",
+      "adapted_for_portable_paths": false
+    },
+    {
+      "path": "model/previews/lower_modular_components_front_oblique_b7.png",
+      "source_path": "/home/ethan/Projects/Sai_Art/docs/uri_style/gorilla_v0_2/images/lower_modular_components_front_oblique_b7.png",
+      "source_repository": "Sai_Art",
+      "source_version": "B7 original native inspection views",
+      "sha256": "0152e0bd5884a86b45ea71c751f9b28d958105981f747e353b42fe53d126303b",
+      "source_sha256": "0152e0bd5884a86b45ea71c751f9b28d958105981f747e353b42fe53d126303b",
+      "adapted_for_portable_paths": false
+    },
+    {
+      "path": "model/previews/lower_modular_components_rear_oblique_b7.png",
+      "source_path": "/home/ethan/Projects/Sai_Art/docs/uri_style/gorilla_v0_2/images/lower_modular_components_rear_oblique_b7.png",
+      "source_repository": "Sai_Art",
+      "source_version": "B7 original native inspection views",
+      "sha256": "49421e06d12506278017149005a98cb3f4b742976a214ffa7f424232f62fec2a",
+      "source_sha256": "49421e06d12506278017149005a98cb3f4b742976a214ffa7f424232f62fec2a",
+      "adapted_for_portable_paths": false
+    },
+    {
+      "path": "model/previews/lower_modular_components_ankle_front_detail_b7.png",
+      "source_path": "/home/ethan/Projects/Sai_Art/docs/uri_style/gorilla_v0_2/images/lower_modular_components_ankle_front_detail_b7.png",
+      "source_repository": "Sai_Art",
+      "source_version": "B7 original native inspection views",
+      "sha256": "4b0e00a47ee77c2accea19881072d1771fe535223954dd37157953d6378a4151",
+      "source_sha256": "4b0e00a47ee77c2accea19881072d1771fe535223954dd37157953d6378a4151",
+      "adapted_for_portable_paths": false
+    },
+    {
+      "path": "model/previews/lower_modular_components_ankle_rear_detail_b7.png",
+      "source_path": "/home/ethan/Projects/Sai_Art/docs/uri_style/gorilla_v0_2/images/lower_modular_components_ankle_rear_detail_b7.png",
+      "source_repository": "Sai_Art",
+      "source_version": "B7 original native inspection views",
+      "sha256": "71affa9670e4b48aac08e0e48696f87a4d25c186b6dba14da89424c4c8346d2a",
+      "source_sha256": "71affa9670e4b48aac08e0e48696f87a4d25c186b6dba14da89424c4c8346d2a",
+      "adapted_for_portable_paths": false
+    },
+    {
+      "path": "provenance/uri_knee_normal_perspective_p30_record.json",
+      "source_path": "/home/ethan/Projects/Sai_Art/docs/uri_style/gorilla_v0_2/uri_knee_normal_perspective_p30_record.json",
+      "source_repository": "Sai_Art",
+      "source_version": "Current art source and retained feature history",
+      "sha256": "ae29ce975ae173cae810ef5cdbc6f01d0a0bd4c838f70125b9ad3fb3af65bd57",
+      "source_sha256": "ae29ce975ae173cae810ef5cdbc6f01d0a0bd4c838f70125b9ad3fb3af65bd57",
+      "adapted_for_portable_paths": false
+    },
+    {
+      "path": "provenance/camera_frame_and_knee_marker_p29_record.json",
+      "source_path": "/home/ethan/Projects/Sai_Art/docs/uri_style/gorilla_v0_2/camera_frame_and_knee_marker_p29_record.json",
+      "source_repository": "Sai_Art",
+      "source_version": "Current art source and retained feature history",
+      "sha256": "aa057eccbbfa316cce81e638da47a8eed2b5c8a02e02d5ddc8f54e691d1def99",
+      "source_sha256": "aa057eccbbfa316cce81e638da47a8eed2b5c8a02e02d5ddc8f54e691d1def99",
+      "adapted_for_portable_paths": false
+    },
+    {
+      "path": "provenance/top_shoulders_local_edit_p24_record.json",
+      "source_path": "/home/ethan/Projects/Sai_Art/docs/uri_style/gorilla_v0_2/top_shoulders_local_edit_p24_record.json",
+      "source_repository": "Sai_Art",
+      "source_version": "Current art source and retained feature history",
+      "sha256": "4216cba306b1b435aea03adddf02015f7e20d12873fd72786260ff51933fd37b",
+      "source_sha256": "4216cba306b1b435aea03adddf02015f7e20d12873fd72786260ff51933fd37b",
+      "adapted_for_portable_paths": false
+    },
+    {
+      "path": "provenance/thermal_outlets_and_knee_seam_fix_p26_record.json",
+      "source_path": "/home/ethan/Projects/Sai_Art/docs/uri_style/gorilla_v0_2/thermal_outlets_and_knee_seam_fix_p26_record.json",
+      "source_repository": "Sai_Art",
+      "source_version": "Current art source and retained feature history",
+      "sha256": "a89024d08e839e7bc457f1dc231ba092e82b14615c6a43b0b83fc51f73463487",
+      "source_sha256": "a89024d08e839e7bc457f1dc231ba092e82b14615c6a43b0b83fc51f73463487",
+      "adapted_for_portable_paths": false
+    },
+    {
+      "path": "provenance/uri_knee_normal_perspective_p30.txt",
+      "source_path": "/home/ethan/Projects/Sai_Art/docs/uri_style/gorilla_v0_2/prompts/uri_knee_normal_perspective_p30.txt",
+      "source_repository": "Sai_Art",
+      "source_version": "P30 exact design prompt",
+      "sha256": "010520c72785213bb0b04e4140d05fc05f2b2e68d0cd9a9fb82741143ad0a0f0",
+      "source_sha256": "010520c72785213bb0b04e4140d05fc05f2b2e68d0cd9a9fb82741143ad0a0f0",
+      "adapted_for_portable_paths": false
+    },
+    {
+      "path": "provenance/style_references/style_01_race_car_hangar.png",
+      "source_path": "/home/ethan/Projects/Sai_Art/.agents/skills/uri-style/assets/style_01_race_car_hangar.png",
+      "source_repository": "Sai_Art",
+      "source_version": "URI v5 style-only fixed original",
+      "sha256": "1aed979f442030b644db5b86c79ad69d44f14092f865eb28f157663476eec8c9",
+      "source_sha256": "1aed979f442030b644db5b86c79ad69d44f14092f865eb28f157663476eec8c9",
+      "adapted_for_portable_paths": false
+    },
+    {
+      "path": "provenance/style_references/style_03_tracked_mobile_station.png",
+      "source_path": "/home/ethan/Projects/Sai_Art/.agents/skills/uri-style/assets/style_03_tracked_mobile_station.png",
+      "source_repository": "Sai_Art",
+      "source_version": "URI v5 style-only fixed original",
+      "sha256": "da14249a726ca5009b222a0dd7dc2c7a1fdbfe49ef31b8080936e855e8eb1f6f",
+      "source_sha256": "da14249a726ca5009b222a0dd7dc2c7a1fdbfe49ef31b8080936e855e8eb1f6f",
+      "adapted_for_portable_paths": false
+    },
+    {
+      "path": "provenance/style_references/style_05_white_blue_racer.png",
+      "source_path": "/home/ethan/Projects/Sai_Art/.agents/skills/uri-style/assets/style_05_white_blue_racer.png",
+      "source_repository": "Sai_Art",
+      "source_version": "URI v5 style-only fixed original",
+      "sha256": "fc5f342e892842887e738798b5870b9245fb3c7376a028c5f503301ac687f1bc",
+      "source_sha256": "fc5f342e892842887e738798b5870b9245fb3c7376a028c5f503301ac687f1bc",
+      "adapted_for_portable_paths": false
+    },
+    {
+      "path": "tools/package_appearance_p30.py",
+      "source_path": "/home/ethan/Projects/Sai_Art/docs/uri_style/gorilla_v0_2/source/package_appearance_p30.py",
+      "source_repository": "Sai_Art",
+      "source_version": "P30 packaging source",
+      "sha256": "cda6a6ab53ecedc843e1f37e476b6d2b4bebde3ee048b7ffbff8a71af7136114",
+      "source_sha256": "cda6a6ab53ecedc843e1f37e476b6d2b4bebde3ee048b7ffbff8a71af7136114",
+      "adapted_for_portable_paths": false
+    },
+    {
+      "path": "tools/compose_four_view_revision.py",
+      "source_path": "/home/ethan/Projects/Sai_Art/docs/uri_style/gorilla_v0_2/source/compose_four_view_revision.py",
+      "source_repository": "Sai_Art",
+      "source_version": "Native SVG local page composition source",
+      "sha256": "8ad5faf6bb51cd109a4c003adb96c6ea95e8904a67504f26b3fa9e1eec524104",
+      "source_sha256": "8ad5faf6bb51cd109a4c003adb96c6ea95e8904a67504f26b3fa9e1eec524104",
+      "adapted_for_portable_paths": false
+    }
+  ],
+  "exclusions": [
+    "Rejected P22 whole assembly",
+    "C15 upper candidate",
+    "P25 colored B7 experiment",
+    "Unexecuted P31 art draft"
+  ],
+  "files": [
+    {
+      "path": "README.md",
+      "bytes": 2504,
+      "sha256": "671cc2a5a0cbc4b52df0f3fa143d3594e8654a79ad86753c73fe4729067889b7"
+    },
+    {
+      "path": "model/exports/lower_modular_components_b7.glb",
+      "bytes": 100620064,
+      "sha256": "327bc4da753b9b90db8c2338221591461097e6a802e40e9db21d5ec020e42787"
+    },
+    {
+      "path": "model/previews/lower_modular_components_ankle_front_detail_b7.png",
+      "bytes": 1345499,
+      "sha256": "4b0e00a47ee77c2accea19881072d1771fe535223954dd37157953d6378a4151"
+    },
+    {
+      "path": "model/previews/lower_modular_components_ankle_rear_detail_b7.png",
+      "bytes": 1646529,
+      "sha256": "71affa9670e4b48aac08e0e48696f87a4d25c186b6dba14da89424c4c8346d2a"
+    },
+    {
+      "path": "model/previews/lower_modular_components_front_b7.png",
+      "bytes": 1806328,
+      "sha256": "0f8c7acd5bc000d5c32fa9511d50653a2cf8e5c711a24fa4e0ce733c0cfb858d"
+    },
+    {
+      "path": "model/previews/lower_modular_components_front_oblique_b7.png",
+      "bytes": 1398224,
+      "sha256": "0152e0bd5884a86b45ea71c751f9b28d958105981f747e353b42fe53d126303b"
+    },
+    {
+      "path": "model/previews/lower_modular_components_left_b7.png",
+      "bytes": 1672847,
+      "sha256": "0c69a6a87fbf34c6594cfc84c5939a3cdd2ba813b1aac8f70c59ea0fa5434432"
+    },
+    {
+      "path": "model/previews/lower_modular_components_rear_b7.png",
+      "bytes": 1847556,
+      "sha256": "356bcee37e3245360d704b911648631992dd8c190f58c0d173f5c9c40a689f45"
+    },
+    {
+      "path": "model/previews/lower_modular_components_rear_oblique_b7.png",
+      "bytes": 1388432,
+      "sha256": "49421e06d12506278017149005a98cb3f4b742976a214ffa7f424232f62fec2a"
+    },
+    {
+      "path": "model/previews/lower_modular_components_top_b7.png",
+      "bytes": 1860430,
+      "sha256": "f8a017cc0e21589d76ba11f441fd3215b9895f76096d4ffc2e94a790cbff86f5"
+    },
+    {
+      "path": "model/reports/lower_modular_components_b7.json",
+      "bytes": 50316,
+      "sha256": "6e91d2e97ff26483995e8ff886667276a890b38c93869d910271eba287fef7a0"
+    },
+    {
+      "path": "model/reports/selected_b7_asset_export.json",
+      "bytes": 869,
+      "sha256": "4b49644664aa97ac32137c9f6104cfaa958676022bffb5b2163bb77f6e63935e"
+    },
+    {
+      "path": "model/reports/selected_b7_asset_validation_p30.json",
+      "bytes": 1079,
+      "sha256": "51663af2fd32fce16d04d41e52645e72d7811d6fe835181fd7a5f3d318120658"
+    },
+    {
+      "path": "model/source/lower_modular_components_b7.blend",
+      "bytes": 84114061,
+      "sha256": "b75b3f29aa0a91145ed6dacf2cd25e1caece7527155146dd00507cd70edb6beb"
+    },
+    {
+      "path": "provenance/camera_frame_and_knee_marker_p29_record.json",
+      "bytes": 3225,
+      "sha256": "aa057eccbbfa316cce81e638da47a8eed2b5c8a02e02d5ddc8f54e691d1def99"
+    },
+    {
+      "path": "provenance/style_references/style_01_race_car_hangar.png",
+      "bytes": 2093830,
+      "sha256": "1aed979f442030b644db5b86c79ad69d44f14092f865eb28f157663476eec8c9"
+    },
+    {
+      "path": "provenance/style_references/style_03_tracked_mobile_station.png",
+      "bytes": 1295827,
+      "sha256": "da14249a726ca5009b222a0dd7dc2c7a1fdbfe49ef31b8080936e855e8eb1f6f"
+    },
+    {
+      "path": "provenance/style_references/style_05_white_blue_racer.png",
+      "bytes": 1845960,
+      "sha256": "fc5f342e892842887e738798b5870b9245fb3c7376a028c5f503301ac687f1bc"
+    },
+    {
+      "path": "provenance/thermal_outlets_and_knee_seam_fix_p26_record.json",
+      "bytes": 2119,
+      "sha256": "a89024d08e839e7bc457f1dc231ba092e82b14615c6a43b0b83fc51f73463487"
+    },
+    {
+      "path": "provenance/top_shoulders_local_edit_p24_record.json",
+      "bytes": 2366,
+      "sha256": "4216cba306b1b435aea03adddf02015f7e20d12873fd72786260ff51933fd37b"
+    },
+    {
+      "path": "provenance/uri_knee_normal_perspective_p30.txt",
+      "bytes": 11988,
+      "sha256": "010520c72785213bb0b04e4140d05fc05f2b2e68d0cd9a9fb82741143ad0a0f0"
+    },
+    {
+      "path": "provenance/uri_knee_normal_perspective_p30_record.json",
+      "bytes": 3858,
+      "sha256": "ae29ce975ae173cae810ef5cdbc6f01d0a0bd4c838f70125b9ad3fb3af65bd57"
+    },
+    {
+      "path": "provenance/white_orange_local_fix_verification.json",
+      "bytes": 1727,
+      "sha256": "ea16a00fe11eb4d59193f1a9ea411eea73a3ca1c2c28ec404d206898ae5c6cc8"
+    },
+    {
+      "path": "themes/images/black_gold_p30.png",
+      "bytes": 1719838,
+      "sha256": "034a4631076c2e9484f14ab540f78c0d4c5954432f7cce12fd2c30b922377534"
+    },
+    {
+      "path": "themes/images/black_gold_p30.svg",
+      "bytes": 2293315,
+      "sha256": "a8cf3fa9fd2c69579d436864e444c0b501b51daefac424ddbe520944b90ec0b8"
+    },
+    {
+      "path": "themes/images/desert_p30.png",
+      "bytes": 1731320,
+      "sha256": "c832c0d58fa3d54106d5380771a34cba3f6349d23d33601272bd4939539781d7"
+    },
+    {
+      "path": "themes/images/desert_p30.svg",
+      "bytes": 2308623,
+      "sha256": "41c392d4caadee36e2e90beff5689eeb494cc81cdf19db6829c6d0ee76d7043c"
+    },
+    {
+      "path": "themes/images/uri_p30.png",
+      "bytes": 1762471,
+      "sha256": "0076f5caa96e70a7d082ab3b862edcdb2516379181aa5ab687f77824d22c60a3"
+    },
+    {
+      "path": "themes/images/uri_p30.svg",
+      "bytes": 2350156,
+      "sha256": "c45c74a7ecc5f0481816bef7d18a5832590fd9938964c639a91ab78c927a70ef"
+    },
+    {
+      "path": "themes/images/white_orange_p30.png",
+      "bytes": 1711316,
+      "sha256": "260fc2d59b7ec4b7b962b7fcc73e7e92126d76635eb24e248cd0cfb0dd3f4ae4"
+    },
+    {
+      "path": "themes/images/white_orange_p30.svg",
+      "bytes": 2281951,
+      "sha256": "dbe8b1680fb7e14957529984c2e0e172536e12be7d880f1f6c6cf277ab254c45"
+    },
+    {
+      "path": "themes/images/yellow_purple_p30.png",
+      "bytes": 1722382,
+      "sha256": "c082c37f33cc6af49dd638bd2f5a61b87f0de6203c39741e71c35211ebd908c7"
+    },
+    {
+      "path": "themes/images/yellow_purple_p30.svg",
+      "bytes": 2296707,
+      "sha256": "38be3b464e8b7483d88e83e801e1c4657a0c671f16b1262fef47e7ce68084058"
+    },
+    {
+      "path": "themes/index.html",
+      "bytes": 1540,
+      "sha256": "f3e3e151c2deae0d3d94e76b818a9b6e7053a05ff206e7da7d7855063d0cec23"
+    },
+    {
+      "path": "themes/prompts/black_gold_p30.txt",
+      "bytes": 8825,
+      "sha256": "0fc224cc0b7d00f339c514518b37928223fa8fd8ec79aab479caa2a860f36684"
+    },
+    {
+      "path": "themes/prompts/desert_p30.txt",
+      "bytes": 8790,
+      "sha256": "eca9ab653320a8cfa49e444df13f4c04909603ea5c3120c6e6b457db91602ea1"
+    },
+    {
+      "path": "themes/prompts/white_orange_coupler_fix_p30.txt",
+      "bytes": 6678,
+      "sha256": "4375aff66c933dc482dc23fa827f1e3d334d084400ceedc4391e9f57e2cda578"
+    },
+    {
+      "path": "themes/prompts/white_orange_p30.txt",
+      "bytes": 8831,
+      "sha256": "164e1fe84edb7928cd4510306455538376608cb0fefebb88dd9322a1d2366787"
+    },
+    {
+      "path": "themes/prompts/yellow_purple_p30.txt",
+      "bytes": 8815,
+      "sha256": "dd4ff07495af701626281b67bed2a395daed91bfb67fb846eb319f48327af1b8"
+    },
+    {
+      "path": "themes/theme_catalog.json",
+      "bytes": 10395,
+      "sha256": "2a99fd25ecbc1f72f6218b5bfd3f0f44e2ccf4fab4b71fcd6775f4b89e2b8e43"
+    },
+    {
+      "path": "themes/theme_overview.png",
+      "bytes": 1654409,
+      "sha256": "03dbc99c5fc1c339de02f17edfefd38e5099c428961f2712aad9e5842c914ea6"
+    },
+    {
+      "path": "themes/theme_overview.svg",
+      "bytes": 1650,
+      "sha256": "3c77d88ed4b06c7f7fb250a9edb7d09ba4804ca52d988176fc9e7dc2b85810a9"
+    },
+    {
+      "path": "themes/white_orange_coupler_composition_p30.json",
+      "bytes": 1022,
+      "sha256": "4534a5829b36b59b7bdceea586c13cb145994609e2a50e9f663a5b5daa0e7213"
+    },
+    {
+      "path": "tools/compose_four_view_revision.py",
+      "bytes": 5516,
+      "sha256": "8ad5faf6bb51cd109a4c003adb96c6ea95e8904a67504f26b3fa9e1eec524104"
+    },
+    {
+      "path": "tools/package_appearance_p30.py",
+      "bytes": 13601,
+      "sha256": "cda6a6ab53ecedc843e1f37e476b6d2b4bebde3ee048b7ffbff8a71af7136114"
+    }
+  ]
+}

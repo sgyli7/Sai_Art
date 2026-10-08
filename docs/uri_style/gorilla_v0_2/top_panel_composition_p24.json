@@ -1,0 +1,47 @@
+{
+  "title": "Gorilla v0.2 \u2014 corrected TOP with v0.1 shoulders, P24",
+  "base": "/home/ethan/Projects/Sai_Art/docs/uri_style/gorilla_v0_2/references/user_four_view_top_fix_p19.jpg",
+  "overlay": "/home/ethan/Projects/Sai_Art/docs/uri_style/gorilla_v0_2/images/top_shoulders_corrected_p24.png",
+  "output": "/home/ethan/Projects/Sai_Art/docs/uri_style/gorilla_v0_2/images/gorilla_four_view_top_replaced_p24.png",
+  "regions": [
+    [
+      632,
+      633,
+      1250,
+      1187
+    ]
+  ],
+  "transform": {
+    "scale": 0.423728813559322,
+    "translate": [
+      675.3220338983051,
+      683.7457627118645
+    ]
+  },
+  "preserve_checks": {
+    "FRONT": [
+      0,
+      0,
+      626,
+      631
+    ],
+    "LEFT": [
+      628,
+      0,
+      1254,
+      631
+    ],
+    "REAR": [
+      0,
+      633,
+      626,
+      1254
+    ],
+    "TOP_label": [
+      632,
+      1187,
+      1250,
+      1254
+    ]
+  }
+}

@@ -1,0 +1,209 @@
+{
+  "asset": "Gorilla v0.2 appearance",
+  "art_revision": "P30",
+  "requested_theme_count": 5,
+  "base": "images/uri_p30.png",
+  "base_sha256": "0076f5caa96e70a7d082ab3b862edcdb2516379181aa5ab687f77824d22c60a3",
+  "design_phase_closed_by_user": true,
+  "user_closure": "都结束了，记得更新全部5款配色，打包3D资产，整体通知 Gorilla 硬件工程你已经交付完成。",
+  "legacy_palette_plan": "/home/ethan/Projects/Sai_Art/docs/uri_style/gorilla_v0_1/themes/candidate_palette_plan.json",
+  "themes": [
+    {
+      "id": "uri",
+      "name": "URI",
+      "image": "images/uri_p30.png",
+      "sha256": "0076f5caa96e70a7d082ab3b862edcdb2516379181aa5ab687f77824d22c60a3",
+      "status": "updated_from_user_closed_current_design_source",
+      "recolored": false
+    },
+    {
+      "id": "yellow_purple",
+      "name": "黄紫",
+      "shell": "muted warm graphite gray #6C6A68",
+      "armor": "soft industrial lavender #89729E",
+      "accent": "ochre yellow #E0BD38",
+      "basis": "Self-designed candidate inspired by the found historical MicroDuck graphite/yellow/purple palette; not claimed to be one of a verified four-theme catalog.",
+      "prompt": "prompts/yellow_purple_p30.txt",
+      "image": "images/yellow_purple_p30.png",
+      "status": "updated_from_user_closed_current_design_source",
+      "references": [
+        {
+          "path": "/home/ethan/Projects/Sai_Art/docs/uri_style/gorilla_v0_2/images/gorilla_four_view_final_p30.png",
+          "role": "EDIT_TARGET",
+          "sha256": "0076f5caa96e70a7d082ab3b862edcdb2516379181aa5ab687f77824d22c60a3"
+        },
+        {
+          "path": "/home/ethan/Projects/Sai_Art/docs/uri_style/gorilla_v0_1/themes/images/yellow_purple.png",
+          "role": "COLOR_ONLY",
+          "sha256": "21623e06167e73ebb482f38d1cc60183474487b6a05e11f42df7094021027209"
+        },
+        {
+          "path": "/home/ethan/Projects/Sai_Art/.agents/skills/uri-style/assets/style_01_race_car_hangar.png",
+          "role": "STYLE_ONLY",
+          "sha256": "1aed979f442030b644db5b86c79ad69d44f14092f865eb28f157663476eec8c9"
+        },
+        {
+          "path": "/home/ethan/Projects/Sai_Art/.agents/skills/uri-style/assets/style_03_tracked_mobile_station.png",
+          "role": "STYLE_ONLY",
+          "sha256": "da14249a726ca5009b222a0dd7dc2c7a1fdbfe49ef31b8080936e855e8eb1f6f"
+        },
+        {
+          "path": "/home/ethan/Projects/Sai_Art/.agents/skills/uri-style/assets/style_05_white_blue_racer.png",
+          "role": "STYLE_ONLY",
+          "sha256": "fc5f342e892842887e738798b5870b9245fb3c7376a028c5f503301ac687f1bc"
+        }
+      ],
+      "generated_original": "/home/ethan/.codex/generated_images/01a0f3ab-7a57-7172-b8c5-e517aa2973da/exec-e49c3fbb-4e0d-43b4-805b-644406d58c56.png",
+      "sha256": "c082c37f33cc6af49dd638bd2f5a61b87f0de6203c39741e71c35211ebd908c7",
+      "tool": "built-in imagegen",
+      "model_modified": false
+    },
+    {
+      "id": "white_orange",
+      "name": "白橙",
+      "shell": "clean neutral porcelain white #F1F0EA",
+      "armor": "light cool silver-gray #B7BEC2",
+      "accent": "confident vermilion-orange #E26A32",
+      "basis": "Self-designed palette candidate, not a verified MicroDuck original theme.",
+      "prompt": "prompts/white_orange_p30.txt",
+      "image": "images/white_orange_p30.png",
+      "status": "updated_from_user_closed_current_design_source",
+      "references": [
+        {
+          "path": "/home/ethan/Projects/Sai_Art/docs/uri_style/gorilla_v0_2/images/gorilla_four_view_final_p30.png",
+          "role": "EDIT_TARGET",
+          "sha256": "0076f5caa96e70a7d082ab3b862edcdb2516379181aa5ab687f77824d22c60a3"
+        },
+        {
+          "path": "/home/ethan/Projects/Sai_Art/docs/uri_style/gorilla_v0_1/themes/images/white_orange.png",
+          "role": "COLOR_ONLY",
+          "sha256": "546302784d7186edceb1cfccddcab249139388234e9fd68ba5b72de858c1cc72"
+        },
+        {
+          "path": "/home/ethan/Projects/Sai_Art/.agents/skills/uri-style/assets/style_01_race_car_hangar.png",
+          "role": "STYLE_ONLY",
+          "sha256": "1aed979f442030b644db5b86c79ad69d44f14092f865eb28f157663476eec8c9"
+        },
+        {
+          "path": "/home/ethan/Projects/Sai_Art/.agents/skills/uri-style/assets/style_03_tracked_mobile_station.png",
+          "role": "STYLE_ONLY",
+          "sha256": "da14249a726ca5009b222a0dd7dc2c7a1fdbfe49ef31b8080936e855e8eb1f6f"
+        },
+        {
+          "path": "/home/ethan/Projects/Sai_Art/.agents/skills/uri-style/assets/style_05_white_blue_racer.png",
+          "role": "STYLE_ONLY",
+          "sha256": "fc5f342e892842887e738798b5870b9245fb3c7376a028c5f503301ac687f1bc"
+        }
+      ],
+      "generated_original": "/home/ethan/.codex/generated_images/01a0f3ab-7a57-7172-b8c5-e517aa2973da/exec-8ec93a20-96f3-4b01-ae49-5ff92aec0c82.png",
+      "sha256": "260fc2d59b7ec4b7b962b7fcc73e7e92126d76635eb24e248cd0cfb0dd3f4ae4",
+      "tool": "built-in imagegen",
+      "model_modified": false,
+      "local_fix_prompt": "prompts/white_orange_coupler_fix_p30.txt",
+      "local_fix_generated_original": "/home/ethan/.codex/generated_images/01a0f3ab-7a57-7172-b8c5-e517aa2973da/exec-39df5f43-40d1-4cd3-86b6-bad0ac43b1a5.png",
+      "local_fix_composition": "/home/ethan/Projects/Sai_Art/docs/uri_style/gorilla_v0_2/themes/white_orange_coupler_composition_p30.json",
+      "local_fix_verification": "/home/ethan/Projects/Sai_Art/docs/uri_style/gorilla_v0_2/themes/images/white_orange_p30.verification.json"
+    },
+    {
+      "id": "black_gold",
+      "name": "黑金",
+      "shell": "satin charcoal enamel #363A3F",
+      "armor": "dark graphite blue-gray #505963",
+      "accent": "restrained metallic warm gold #D4AD51",
+      "basis": "Self-designed palette candidate, not a verified MicroDuck original theme.",
+      "prompt": "prompts/black_gold_p30.txt",
+      "image": "images/black_gold_p30.png",
+      "status": "updated_from_user_closed_current_design_source",
+      "references": [
+        {
+          "path": "/home/ethan/Projects/Sai_Art/docs/uri_style/gorilla_v0_2/images/gorilla_four_view_final_p30.png",
+          "role": "EDIT_TARGET",
+          "sha256": "0076f5caa96e70a7d082ab3b862edcdb2516379181aa5ab687f77824d22c60a3"
+        },
+        {
+          "path": "/home/ethan/Projects/Sai_Art/docs/uri_style/gorilla_v0_1/themes/images/black_gold_rev_2.png",
+          "role": "COLOR_ONLY",
+          "sha256": "6fc524f27bc9cfa00bb9e8bac12a427b70222ff4bed3247625cecebf761bf410"
+        },
+        {
+          "path": "/home/ethan/Projects/Sai_Art/.agents/skills/uri-style/assets/style_01_race_car_hangar.png",
+          "role": "STYLE_ONLY",
+          "sha256": "1aed979f442030b644db5b86c79ad69d44f14092f865eb28f157663476eec8c9"
+        },
+        {
+          "path": "/home/ethan/Projects/Sai_Art/.agents/skills/uri-style/assets/style_03_tracked_mobile_station.png",
+          "role": "STYLE_ONLY",
+          "sha256": "da14249a726ca5009b222a0dd7dc2c7a1fdbfe49ef31b8080936e855e8eb1f6f"
+        },
+        {
+          "path": "/home/ethan/Projects/Sai_Art/.agents/skills/uri-style/assets/style_05_white_blue_racer.png",
+          "role": "STYLE_ONLY",
+          "sha256": "fc5f342e892842887e738798b5870b9245fb3c7376a028c5f503301ac687f1bc"
+        }
+      ],
+      "generated_original": "/home/ethan/.codex/generated_images/01a0f3ab-7a57-7172-b8c5-e517aa2973da/exec-037b6b4a-317c-4dc2-bb57-b9eb1691898d.png",
+      "sha256": "034a4631076c2e9484f14ab540f78c0d4c5954432f7cce12fd2c30b922377534",
+      "tool": "built-in imagegen",
+      "model_modified": false
+    },
+    {
+      "id": "desert",
+      "name": "沙漠",
+      "shell": "warm sand beige #D7C5A4",
+      "armor": "muted sage-olive #8A9278",
+      "accent": "burnt amber #BE8140",
+      "basis": "Self-designed palette candidate, not a verified MicroDuck original theme.",
+      "prompt": "prompts/desert_p30.txt",
+      "image": "images/desert_p30.png",
+      "status": "updated_from_user_closed_current_design_source",
+      "references": [
+        {
+          "path": "/home/ethan/Projects/Sai_Art/docs/uri_style/gorilla_v0_2/images/gorilla_four_view_final_p30.png",
+          "role": "EDIT_TARGET",
+          "sha256": "0076f5caa96e70a7d082ab3b862edcdb2516379181aa5ab687f77824d22c60a3"
+        },
+        {
+          "path": "/home/ethan/Projects/Sai_Art/docs/uri_style/gorilla_v0_1/themes/images/desert.png",
+          "role": "COLOR_ONLY",
+          "sha256": "1d26d67da57e444d2941e022769018e2fb6988ba60c6ad66b75a4143c451f9e5"
+        },
+        {
+          "path": "/home/ethan/Projects/Sai_Art/.agents/skills/uri-style/assets/style_01_race_car_hangar.png",
+          "role": "STYLE_ONLY",
+          "sha256": "1aed979f442030b644db5b86c79ad69d44f14092f865eb28f157663476eec8c9"
+        },
+        {
+          "path": "/home/ethan/Projects/Sai_Art/.agents/skills/uri-style/assets/style_03_tracked_mobile_station.png",
+          "role": "STYLE_ONLY",
+          "sha256": "da14249a726ca5009b222a0dd7dc2c7a1fdbfe49ef31b8080936e855e8eb1f6f"
+        },
+        {
+          "path": "/home/ethan/Projects/Sai_Art/.agents/skills/uri-style/assets/style_05_white_blue_racer.png",
+          "role": "STYLE_ONLY",
+          "sha256": "fc5f342e892842887e738798b5870b9245fb3c7376a028c5f503301ac687f1bc"
+        }
+      ],
+      "generated_original": "/home/ethan/.codex/generated_images/01a0f3ab-7a57-7172-b8c5-e517aa2973da/exec-1bd55bc8-e791-4c29-87fe-d152124f72fc.png",
+      "sha256": "c832c0d58fa3d54106d5380771a34cba3f6349d23d33601272bd4939539781d7",
+      "tool": "built-in imagegen",
+      "model_modified": false
+    }
+  ],
+  "model_palette_independent": true,
+  "whole_robot_native_geometry_qualified": false,
+  "method": "Built-in imagegen palette-only edits, using the same final P30 sheet as geometry/pose source.",
+  "status": "five_palettes_updated_for_delivery",
+  "theme_count_verified": true,
+  "visual_review": {
+    "knee_module_allocation": true,
+    "dark_knee_pull_not_sensor_bar": true,
+    "camera_cassette_accent_frame": true,
+    "smooth_crown_retained": true,
+    "front_intake_and_outward_rear_exhausts_retained": true,
+    "new_bent_legs_complete_feet_retained": true,
+    "old_palette_reference_geometry_not_adopted": true
+  },
+  "visual_review_scope": "Appearance/color inspection of generated images, not same-model CAD proof.",
+  "overview": "theme_overview.png",
+  "preview": "index.html"
+}

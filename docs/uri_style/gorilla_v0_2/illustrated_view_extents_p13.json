@@ -1,0 +1,76 @@
+{
+  "image": "/home/ethan/Projects/Sai_Art/docs/uri_style/gorilla_v0_2/images/gorilla_four_view_spatial_balance_p13.png",
+  "sha256": "ffdc13a126a268a7bbf156c7592b3e36d96cdf87a7e66d26da0101b026219237",
+  "dimensions_px": [
+    1254,
+    1254
+  ],
+  "measurement_scope": "visible raster extents after frame/text exclusion",
+  "limitations": [
+    "Antialiasing, highlights, shadows and disconnected small features affect extents.",
+    "This is not proof of common 3D geometry, source fidelity, collision clearance or load capacity."
+  ],
+  "panels": {
+    "FRONT": {
+      "bbox_panel_px": [
+        88,
+        19,
+        535,
+        600
+      ],
+      "visible_width_px": 448,
+      "visible_height_px": 582,
+      "retained_component_areas_px": [
+        154912,
+        373
+      ]
+    },
+    "LEFT": {
+      "bbox_panel_px": [
+        160,
+        14,
+        431,
+        599
+      ],
+      "visible_width_px": 272,
+      "visible_height_px": 586,
+      "retained_component_areas_px": [
+        92329
+      ]
+    },
+    "REAR": {
+      "bbox_panel_px": [
+        87,
+        16,
+        540,
+        577
+      ],
+      "visible_width_px": 454,
+      "visible_height_px": 562,
+      "retained_component_areas_px": [
+        150460
+      ]
+    },
+    "TOP": {
+      "bbox_panel_px": [
+        49,
+        78,
+        546,
+        495
+      ],
+      "visible_width_px": 498,
+      "visible_height_px": 418,
+      "retained_component_areas_px": [
+        130633,
+        1908
+      ]
+    }
+  },
+  "elevation_height_spread_fraction": 0.04161849710982659,
+  "top_to_front_visible_width_ratio": 1.1116071428571428,
+  "top_uniform_scale_to_match_front": 0.8995983935742972,
+  "raster_alignment_findings": {
+    "elevation_height_difference_exceeds_2_percent": true,
+    "top_width_difference_exceeds_2_percent": true
+  }
+}

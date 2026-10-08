@@ -1,0 +1,225 @@
+{
+  "revision": "K",
+  "purpose": "restrained reference-based convex crown study; J saddle cancelled after explicit user rejection",
+  "coordinates": "metres; y forward, z up; x transverse",
+  "envelope_reference": "dimension_lock.json",
+  "center_meridian": "two quintic Hermite spans sharing position, first derivative and second derivative",
+  "knots": [
+    {
+      "y": -0.44,
+      "z": 2.58,
+      "w": 0.61,
+      "dy": 0.78,
+      "dz": 0.08,
+      "dw": -0.02,
+      "ddy": 0,
+      "ddz": -0.6,
+      "ddw": -0.1
+    },
+    {
+      "y": 0.2,
+      "z": 2.37,
+      "w": 0.5,
+      "dy": 0.38,
+      "dz": -0.46,
+      "dw": -0.19,
+      "ddy": -0.35,
+      "ddz": -0.45,
+      "ddw": -0.06
+    },
+    {
+      "y": 0.36,
+      "z": 1.7,
+      "w": 0.255,
+      "dy": -0.05,
+      "dz": -0.62,
+      "dw": -0.2,
+      "ddy": -0.2,
+      "ddz": 0.1,
+      "ddw": 0.05
+    }
+  ],
+  "polynomial_coefficients_ascending": [
+    {
+      "y": [
+        -0.44,
+        0.78,
+        0.0,
+        0.024999999999999967,
+        -0.3500000000000002,
+        0.1850000000000001
+      ],
+      "z": [
+        2.58,
+        0.08,
+        -0.3,
+        -0.0649999999999997,
+        0.1199999999999995,
+        -0.04499999999999979
+      ],
+      "w": [
+        0.61,
+        -0.02,
+        -0.05,
+        -0.09999999999999977,
+        0.06999999999999959,
+        -0.009999999999999856
+      ]
+    },
+    {
+      "y": [
+        0.2,
+        0.38,
+        -0.175,
+        -0.055000000000000354,
+        -0.03499999999999942,
+        0.04499999999999979
+      ],
+      "z": [
+        2.37,
+        -0.46,
+        -0.225,
+        -0.7350000000000013,
+        1.2550000000000021,
+        -0.5050000000000009
+      ],
+      "w": [
+        0.5,
+        -0.19,
+        -0.03,
+        -0.3949999999999999,
+        0.6149999999999999,
+        -0.24499999999999994
+      ]
+    }
+  ],
+  "transverse_intent": "z=zc(t)-h(t)*u^2-q(t)*u^4 with h(t)>0,q(t)>0 throughout. Broad low camber with unequal longitudinal/transverse curvature; no transverse sign change, saddle or central hollow. Smoothly varying section widths and curvature, not one constant-radius sphere.",
+  "span_join_absolute_errors_position_derivative_second_derivative": {
+    "y": [
+      1.6653345369377348e-16,
+      4.996003610813204e-16,
+      6.661338147750939e-16
+    ],
+    "z": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "w": [
+      5.551115123125783e-17,
+      2.498001805406602e-16,
+      7.216449660063518e-16
+    ]
+  },
+  "profile_curvature_range_per_m": [
+    0.5360331093161006,
+    2.061745506749793
+  ],
+  "sampled_profile": [
+    {
+      "segment": 0,
+      "t": 0.0,
+      "y": -0.44,
+      "z": 2.58,
+      "w": 0.61
+    },
+    {
+      "segment": 0,
+      "t": 0.2,
+      "y": -0.284301,
+      "z": 2.583658,
+      "w": 0.603309
+    },
+    {
+      "segment": 0,
+      "t": 0.4,
+      "y": -0.133466,
+      "z": 2.562451,
+      "w": 0.58929
+    },
+    {
+      "segment": 0,
+      "t": 0.6,
+      "y": 0.002426,
+      "z": 2.518013,
+      "w": 0.566694
+    },
+    {
+      "segment": 0,
+      "t": 0.8,
+      "y": 0.114061,
+      "z": 2.453126,
+      "w": 0.536195
+    },
+    {
+      "segment": 0,
+      "t": 1.0,
+      "y": 0.2,
+      "z": 2.37,
+      "w": 0.5
+    },
+    {
+      "segment": 1,
+      "t": 0.0,
+      "y": 0.2,
+      "z": 2.37,
+      "w": 0.5
+    },
+    {
+      "segment": 1,
+      "t": 0.2,
+      "y": 0.268518,
+      "z": 2.264966,
+      "w": 0.458546
+    },
+    {
+      "segment": 1,
+      "t": 0.4,
+      "y": 0.320045,
+      "z": 2.129917,
+      "w": 0.407155
+    },
+    {
+      "segment": 1,
+      "t": 0.6,
+      "y": 0.352083,
+      "z": 1.977619,
+      "w": 0.350533
+    },
+    {
+      "segment": 1,
+      "t": 0.8,
+      "y": 0.36425,
+      "z": 1.83025,
+      "w": 0.298182
+    },
+    {
+      "segment": 1,
+      "t": 1.0,
+      "y": 0.36,
+      "z": 1.7,
+      "w": 0.255
+    }
+  ],
+  "bounds_sampled": {
+    "y": [
+      -0.44,
+      0.364515319808
+    ],
+    "z": [
+      1.7,
+      2.5852197973815
+    ],
+    "w": [
+      0.2550000000000001,
+      0.61
+    ]
+  },
+  "raster_limit": "Direction study only; final shape must be judged against original structural reference, not made complex merely to illustrate an equation.",
+  "transverse_center_second_derivatives_at_stations": [
+    -0.1,
+    -0.16,
+    -0.07
+  ],
+  "supersedes": "surface_study_rev_j.json: user rejected concavity as arbitrary geometry"
+}

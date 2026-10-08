@@ -1,0 +1,2135 @@
+{
+  "source_sha256": "60d2a518c84fdb56ba1079be36add2543d9fb351f119aefbd1c83fe702e9952c",
+  "checker_sha256": "b5d6c8a4b2e5c4173fa3a97d4b9637f3912c99649dc85cca64ff7b40cd7cf037",
+  "pose_samples": 121,
+  "same_meshes_as_renders": true,
+  "collision_events": [],
+  "floor_events": [],
+  "bounds_by_pose": [
+    {
+      "sample": 0,
+      "height_m": 2.26381231356825
+    },
+    {
+      "sample": 1,
+      "height_m": 2.261714988879443
+    },
+    {
+      "sample": 2,
+      "height_m": 2.2596153492441813
+    },
+    {
+      "sample": 3,
+      "height_m": 2.2575133991040395
+    },
+    {
+      "sample": 4,
+      "height_m": 2.255409142905479
+    },
+    {
+      "sample": 5,
+      "height_m": 2.2533025850998403
+    },
+    {
+      "sample": 6,
+      "height_m": 2.2511937301433322
+    },
+    {
+      "sample": 7,
+      "height_m": 2.2490825824970235
+    },
+    {
+      "sample": 8,
+      "height_m": 2.246969146626832
+    },
+    {
+      "sample": 9,
+      "height_m": 2.2448534270035165
+    },
+    {
+      "sample": 10,
+      "height_m": 2.2427354281026677
+    },
+    {
+      "sample": 11,
+      "height_m": 2.2406151544046957
+    },
+    {
+      "sample": 12,
+      "height_m": 2.238492610394825
+    },
+    {
+      "sample": 13,
+      "height_m": 2.236367800563081
+    },
+    {
+      "sample": 14,
+      "height_m": 2.234240729404284
+    },
+    {
+      "sample": 15,
+      "height_m": 2.2321114014180363
+    },
+    {
+      "sample": 16,
+      "height_m": 2.229979821108714
+    },
+    {
+      "sample": 17,
+      "height_m": 2.2278459929854604
+    },
+    {
+      "sample": 18,
+      "height_m": 2.2257099215621707
+    },
+    {
+      "sample": 19,
+      "height_m": 2.223571611357487
+    },
+    {
+      "sample": 20,
+      "height_m": 2.2214310668947883
+    },
+    {
+      "sample": 21,
+      "height_m": 2.2192882927021778
+    },
+    {
+      "sample": 22,
+      "height_m": 2.217143293312477
+    },
+    {
+      "sample": 23,
+      "height_m": 2.214996073263214
+    },
+    {
+      "sample": 24,
+      "height_m": 2.2128466370966144
+    },
+    {
+      "sample": 25,
+      "height_m": 2.2106949893595926
+    },
+    {
+      "sample": 26,
+      "height_m": 2.20854113460374
+    },
+    {
+      "sample": 27,
+      "height_m": 2.2063850773853178
+    },
+    {
+      "sample": 28,
+      "height_m": 2.2042268222652464
+    },
+    {
+      "sample": 29,
+      "height_m": 2.202066373809094
+    },
+    {
+      "sample": 30,
+      "height_m": 2.199903736587071
+    },
+    {
+      "sample": 31,
+      "height_m": 2.197738915174016
+    },
+    {
+      "sample": 32,
+      "height_m": 2.1955719141493883
+    },
+    {
+      "sample": 33,
+      "height_m": 2.1934027380972596
+    },
+    {
+      "sample": 34,
+      "height_m": 2.1912313916063004
+    },
+    {
+      "sample": 35,
+      "height_m": 2.1890578792697735
+    },
+    {
+      "sample": 36,
+      "height_m": 2.186882205685524
+    },
+    {
+      "sample": 37,
+      "height_m": 2.1847043754559676
+    },
+    {
+      "sample": 38,
+      "height_m": 2.1825243931880838
+    },
+    {
+      "sample": 39,
+      "height_m": 2.180342263493402
+    },
+    {
+      "sample": 40,
+      "height_m": 2.1781579909879976
+    },
+    {
+      "sample": 41,
+      "height_m": 2.175971580292476
+    },
+    {
+      "sample": 42,
+      "height_m": 2.1737830360319665
+    },
+    {
+      "sample": 43,
+      "height_m": 2.1715923628361136
+    },
+    {
+      "sample": 44,
+      "height_m": 2.169399565339062
+    },
+    {
+      "sample": 45,
+      "height_m": 2.167204648179453
+    },
+    {
+      "sample": 46,
+      "height_m": 2.1650076160004113
+    },
+    {
+      "sample": 47,
+      "height_m": 2.162808473449534
+    },
+    {
+      "sample": 48,
+      "height_m": 2.160607225178884
+    },
+    {
+      "sample": 49,
+      "height_m": 2.1584038758449786
+    },
+    {
+      "sample": 50,
+      "height_m": 2.1561984301087795
+    },
+    {
+      "sample": 51,
+      "height_m": 2.153990892635683
+    },
+    {
+      "sample": 52,
+      "height_m": 2.15178126809551
+    },
+    {
+      "sample": 53,
+      "height_m": 2.149569561162497
+    },
+    {
+      "sample": 54,
+      "height_m": 2.1473557765152846
+    },
+    {
+      "sample": 55,
+      "height_m": 2.14513991883691
+    },
+    {
+      "sample": 56,
+      "height_m": 2.1429219928147942
+    },
+    {
+      "sample": 57,
+      "height_m": 2.140702003140735
+    },
+    {
+      "sample": 58,
+      "height_m": 2.138479954510895
+    },
+    {
+      "sample": 59,
+      "height_m": 2.1362558516257915
+    },
+    {
+      "sample": 60,
+      "height_m": 2.1340296991902887
+    },
+    {
+      "sample": 61,
+      "height_m": 2.1318015019135856
+    },
+    {
+      "sample": 62,
+      "height_m": 2.1295712645092078
+    },
+    {
+      "sample": 63,
+      "height_m": 2.1273389916949945
+    },
+    {
+      "sample": 64,
+      "height_m": 2.125104688193093
+    },
+    {
+      "sample": 65,
+      "height_m": 2.1228683587299457
+    },
+    {
+      "sample": 66,
+      "height_m": 2.1206300080362794
+    },
+    {
+      "sample": 67,
+      "height_m": 2.1183896408470977
+    },
+    {
+      "sample": 68,
+      "height_m": 2.11614726190167
+    },
+    {
+      "sample": 69,
+      "height_m": 2.1139028759435208
+    },
+    {
+      "sample": 70,
+      "height_m": 2.1116564877204205
+    },
+    {
+      "sample": 71,
+      "height_m": 2.109408101984375
+    },
+    {
+      "sample": 72,
+      "height_m": 2.1071577234916163
+    },
+    {
+      "sample": 73,
+      "height_m": 2.1049053570025915
+    },
+    {
+      "sample": 74,
+      "height_m": 2.1026510072819518
+    },
+    {
+      "sample": 75,
+      "height_m": 2.100394679098547
+    },
+    {
+      "sample": 76,
+      "height_m": 2.0981363772254076
+    },
+    {
+      "sample": 77,
+      "height_m": 2.095876106439744
+    },
+    {
+      "sample": 78,
+      "height_m": 2.093613871522928
+    },
+    {
+      "sample": 79,
+      "height_m": 2.0913496772604883
+    },
+    {
+      "sample": 80,
+      "height_m": 2.089083528442097
+    },
+    {
+      "sample": 81,
+      "height_m": 2.086815429861562
+    },
+    {
+      "sample": 82,
+      "height_m": 2.084545386316816
+    },
+    {
+      "sample": 83,
+      "height_m": 2.0822734026099052
+    },
+    {
+      "sample": 84,
+      "height_m": 2.0799994835469793
+    },
+    {
+      "sample": 85,
+      "height_m": 2.0777236339382834
+    },
+    {
+      "sample": 86,
+      "height_m": 2.075445858598147
+    },
+    {
+      "sample": 87,
+      "height_m": 2.0731661623449713
+    },
+    {
+      "sample": 88,
+      "height_m": 2.0708845500012223
+    },
+    {
+      "sample": 89,
+      "height_m": 2.0686010263934196
+    },
+    {
+      "sample": 90,
+      "height_m": 2.0663155963521245
+    },
+    {
+      "sample": 91,
+      "height_m": 2.064028264711932
+    },
+    {
+      "sample": 92,
+      "height_m": 2.0617390363114607
+    },
+    {
+      "sample": 93,
+      "height_m": 2.05944791599334
+    },
+    {
+      "sample": 94,
+      "height_m": 2.057154908604202
+    },
+    {
+      "sample": 95,
+      "height_m": 2.054860018994671
+    },
+    {
+      "sample": 96,
+      "height_m": 2.0525632520193526
+    },
+    {
+      "sample": 97,
+      "height_m": 2.0502646125368242
+    },
+    {
+      "sample": 98,
+      "height_m": 2.0479641054096236
+    },
+    {
+      "sample": 99,
+      "height_m": 2.04566173550424
+    },
+    {
+      "sample": 100,
+      "height_m": 2.0433575076911032
+    },
+    {
+      "sample": 101,
+      "height_m": 2.0410514268445734
+    },
+    {
+      "sample": 102,
+      "height_m": 2.038743497842929
+    },
+    {
+      "sample": 103,
+      "height_m": 2.03643372556836
+    },
+    {
+      "sample": 104,
+      "height_m": 2.034122114906955
+    },
+    {
+      "sample": 105,
+      "height_m": 2.031808670748692
+    },
+    {
+      "sample": 106,
+      "height_m": 2.0294933979874257
+    },
+    {
+      "sample": 107,
+      "height_m": 2.027176301520881
+    },
+    {
+      "sample": 108,
+      "height_m": 2.0248573862506403
+    },
+    {
+      "sample": 109,
+      "height_m": 2.0225366570821324
+    },
+    {
+      "sample": 110,
+      "height_m": 2.020214118924624
+    },
+    {
+      "sample": 111,
+      "height_m": 2.0178897766912103
+    },
+    {
+      "sample": 112,
+      "height_m": 2.0155636352987996
+    },
+    {
+      "sample": 113,
+      "height_m": 2.0132356996681073
+    },
+    {
+      "sample": 114,
+      "height_m": 2.0109059747236455
+    },
+    {
+      "sample": 115,
+      "height_m": 2.0085744653937097
+    },
+    {
+      "sample": 116,
+      "height_m": 2.0062411766103723
+    },
+    {
+      "sample": 117,
+      "height_m": 2.0039061133094673
+    },
+    {
+      "sample": 118,
+      "height_m": 2.0015692804305845
+    },
+    {
+      "sample": 119,
+      "height_m": 1.999230682917056
+    },
+    {
+      "sample": 120,
+      "height_m": 1.9968903257159478
+    }
+  ],
+  "sampled_appearance_geometry_clear": true,
+  "physical_accepted": false,
+  "scope": "Finite appearance/guide volumes along prescribed unloaded FK, with both legs and upper context. No installed drives, force capacity, fatigue, bearing or manufacturing acceptance; preexisting upperbody internal fit excluded.",
+  "mesh_checks": [
+    {
+      "name": "upper_crown_top_panel_line_00",
+      "finite_positive_solid": true
+    },
+    {
+      "name": "upper_crown_top_panel_line_01",
+      "finite_positive_solid": true
+    },
+    {
+      "name": "upper_crown_top_panel_line_02",
+      "finite_positive_solid": true
+    },
+    {
+      "name": "upper_crown_fastener_0",
+      "finite_positive_solid": true
+    },
+    {
+      "name": "upper_crown_fastener_1",
+      "finite_positive_solid": true
+    },
+    {
+      "name": "upper_crown_fastener_2",
+      "finite_positive_solid": true
+    },
+    {
+      "name": "upper_crown_fastener_3",
+      "finite_positive_solid": true
+    },
+    {
+      "name": "upper_central_indicator_recess",
+      "finite_positive_solid": true
+    },
+    {
+      "name": "upper_central_indicator_gold_frame",
+      "finite_positive_solid": true
+    },
+    {
+      "name": "upper_central_indicator_lit_strip",
+      "finite_positive_solid": true
+    },
+    {
+      "name": "upper_rear_crown_panel_seam_00",
+      "finite_positive_solid": true
+    },
+    {
+      "name": "upper_rear_crown_panel_seam_01",
+      "finite_positive_solid": true
+    },
+    {
+      "name": "upper_rear_crown_panel_seam_02",
+      "finite_positive_solid": true
+    },
+    {
+      "name": "upper_dark_central_waist_coupler",
+      "finite_positive_solid": true
+    },
+    {
+      "name": "upper_dark_pelvis_inner_layer",
+      "finite_positive_solid": true
+    },
+    {
+      "name": "upper_pelvis_front_black_latch",
+      "finite_positive_solid": true
+    },
+    {
+      "name": "upper_left_deltoid_gold_marker",
+      "finite_positive_solid": true
+    },
+    {
+      "name": "upper_left_upper_arm_gold_marker",
+      "finite_positive_solid": true
+    },
+    {
+      "name": "upper_left_forearm_gold_marker",
+      "finite_positive_solid": true
+    },
+    {
+      "name": "upper_right_deltoid_gold_marker",
+      "finite_positive_solid": true
+    },
+    {
+      "name": "upper_right_upper_arm_gold_marker",
+      "finite_positive_solid": true
+    },
+    {
+      "name": "upper_right_forearm_gold_marker",
+      "finite_positive_solid": true
+    },
+    {
+      "name": "upper_continuous_ivory_torso_armor_cover",
+      "finite_positive_solid": true
+    },
+    {
+      "name": "upper_left_blue_rear_shoulder_edge_cover",
+      "finite_positive_solid": true
+    },
+    {
+      "name": "upper_right_blue_rear_shoulder_edge_cover",
+      "finite_positive_solid": true
+    },
+    {
+      "name": "upper_left_ivory_hood_window_side_lip",
+      "finite_positive_solid": true
+    },
+    {
+      "name": "upper_right_ivory_hood_window_side_lip",
+      "finite_positive_solid": true
+    },
+    {
+      "name": "upper_rear_service_door_shadow",
+      "finite_positive_solid": true
+    },
+    {
+      "name": "upper_rear_blue_service_door",
+      "finite_positive_solid": true
+    },
+    {
+      "name": "upper_rear_control_screen_module_envelope",
+      "finite_positive_solid": true
+    },
+    {
+      "name": "upper_rear_control_screen_glass",
+      "finite_positive_solid": true
+    },
+    {
+      "name": "upper_rear_control_screen_header",
+      "finite_positive_solid": true
+    },
+    {
+      "name": "upper_rear_control_screen_touch_zone_status",
+      "finite_positive_solid": true
+    },
+    {
+      "name": "upper_rear_control_screen_label_status",
+      "finite_positive_solid": true
+    },
+    {
+      "name": "upper_rear_control_screen_zone_indicator_status",
+      "finite_positive_solid": true
+    },
+    {
+      "name": "upper_rear_control_screen_touch_zone_task",
+      "finite_positive_solid": true
+    },
+    {
+      "name": "upper_rear_control_screen_label_task",
+      "finite_positive_solid": true
+    },
+    {
+      "name": "upper_rear_control_screen_zone_indicator_task",
+      "finite_positive_solid": true
+    },
+    {
+      "name": "upper_rear_control_screen_touch_zone_local",
+      "finite_positive_solid": true
+    },
+    {
+      "name": "upper_rear_control_screen_label_local",
+      "finite_positive_solid": true
+    },
+    {
+      "name": "upper_rear_control_screen_zone_indicator_local",
+      "finite_positive_solid": true
+    },
+    {
+      "name": "upper_rear_service_latch",
+      "finite_positive_solid": true
+    },
+    {
+      "name": "upper_rear_door_upper_tab",
+      "finite_positive_solid": true
+    },
+    {
+      "name": "upper_rear_door_screw_0",
+      "finite_positive_solid": true
+    },
+    {
+      "name": "upper_rear_door_screw_1",
+      "finite_positive_solid": true
+    },
+    {
+      "name": "upper_rear_door_screw_2",
+      "finite_positive_solid": true
+    },
+    {
+      "name": "upper_rear_door_screw_3",
+      "finite_positive_solid": true
+    },
+    {
+      "name": "upper_ivory_crown_inset",
+      "finite_positive_solid": true
+    },
+    {
+      "name": "upper_saffron_front_pelvis_cartridge",
+      "finite_positive_solid": true
+    },
+    {
+      "name": "upper_ivory_rear_pelvis_cartridge",
+      "finite_positive_solid": true
+    },
+    {
+      "name": "upper_left_rear_yellow_pelvis_band",
+      "finite_positive_solid": true
+    },
+    {
+      "name": "upper_right_rear_yellow_pelvis_band",
+      "finite_positive_solid": true
+    },
+    {
+      "name": "upper_ivory_rear_short_waist_connector",
+      "finite_positive_solid": true
+    },
+    {
+      "name": "upper_left_blue_continuous_shoulder_sweep",
+      "finite_positive_solid": true
+    },
+    {
+      "name": "upper_left_blue_shoulder_upper_return",
+      "finite_positive_solid": true
+    },
+    {
+      "name": "upper_left_blue_rear_shoulder_guard",
+      "finite_positive_solid": true
+    },
+    {
+      "name": "upper_left_blue_shoulder_diagonal_front_wing",
+      "finite_positive_solid": true
+    },
+    {
+      "name": "upper_left_blue_chest_cheek_wrap",
+      "finite_positive_solid": true
+    },
+    {
+      "name": "upper_left_blue_chest_cheek_side_return",
+      "finite_positive_solid": true
+    },
+    {
+      "name": "upper_left_radiator_ivory_socket",
+      "finite_positive_solid": true
+    },
+    {
+      "name": "upper_left_radiator_gold_trim",
+      "finite_positive_solid": true
+    },
+    {
+      "name": "upper_left_radiator_black_well",
+      "finite_positive_solid": true
+    },
+    {
+      "name": "upper_left_radiator_turning_plenum",
+      "finite_positive_solid": true
+    },
+    {
+      "name": "upper_left_radiator_louver_00",
+      "finite_positive_solid": true
+    },
+    {
+      "name": "upper_left_radiator_louver_01",
+      "finite_positive_solid": true
+    },
+    {
+      "name": "upper_left_radiator_louver_02",
+      "finite_positive_solid": true
+    },
+    {
+      "name": "upper_left_radiator_louver_03",
+      "finite_positive_solid": true
+    },
+    {
+      "name": "upper_left_radiator_louver_04",
+      "finite_positive_solid": true
+    },
+    {
+      "name": "upper_left_radiator_louver_05",
+      "finite_positive_solid": true
+    },
+    {
+      "name": "upper_left_radiator_louver_06",
+      "finite_positive_solid": true
+    },
+    {
+      "name": "upper_left_radiator_louver_07",
+      "finite_positive_solid": true
+    },
+    {
+      "name": "upper_left_radiator_louver_08",
+      "finite_positive_solid": true
+    },
+    {
+      "name": "upper_left_radiator_louver_09",
+      "finite_positive_solid": true
+    },
+    {
+      "name": "upper_left_radiator_louver_10",
+      "finite_positive_solid": true
+    },
+    {
+      "name": "upper_left_vent_fastener_0",
+      "finite_positive_solid": true
+    },
+    {
+      "name": "upper_left_vent_fastener_1",
+      "finite_positive_solid": true
+    },
+    {
+      "name": "upper_left_vent_fastener_2",
+      "finite_positive_solid": true
+    },
+    {
+      "name": "upper_left_vent_fastener_3",
+      "finite_positive_solid": true
+    },
+    {
+      "name": "upper_left_dark_torso_side_housing",
+      "finite_positive_solid": true
+    },
+    {
+      "name": "upper_left_torso_side_layer_00",
+      "finite_positive_solid": true
+    },
+    {
+      "name": "upper_left_torso_side_layer_lip_00",
+      "finite_positive_solid": true
+    },
+    {
+      "name": "upper_left_torso_side_layer_01",
+      "finite_positive_solid": true
+    },
+    {
+      "name": "upper_left_torso_side_layer_lip_01",
+      "finite_positive_solid": true
+    },
+    {
+      "name": "upper_left_torso_side_layer_02",
+      "finite_positive_solid": true
+    },
+    {
+      "name": "upper_left_torso_side_layer_lip_02",
+      "finite_positive_solid": true
+    },
+    {
+      "name": "upper_left_torso_side_layer_03",
+      "finite_positive_solid": true
+    },
+    {
+      "name": "upper_left_torso_side_layer_lip_03",
+      "finite_positive_solid": true
+    },
+    {
+      "name": "upper_left_blue_forearm_wrap",
+      "finite_positive_solid": true
+    },
+    {
+      "name": "upper_left_blue_deltoid_wrap",
+      "finite_positive_solid": true
+    },
+    {
+      "name": "upper_left_ivory_shoulder_cap",
+      "finite_positive_solid": true
+    },
+    {
+      "name": "upper_left_shoulder_open_bearing_seat",
+      "finite_positive_solid": true
+    },
+    {
+      "name": "upper_left_ivory_lower_upper_arm",
+      "finite_positive_solid": true
+    },
+    {
+      "name": "upper_left_blue_elbow_yoke",
+      "finite_positive_solid": true
+    },
+    {
+      "name": "upper_right_blue_continuous_shoulder_sweep",
+      "finite_positive_solid": true
+    },
+    {
+      "name": "upper_right_blue_shoulder_upper_return",
+      "finite_positive_solid": true
+    },
+    {
+      "name": "upper_right_blue_rear_shoulder_guard",
+      "finite_positive_solid": true
+    },
+    {
+      "name": "upper_right_blue_shoulder_diagonal_front_wing",
+      "finite_positive_solid": true
+    },
+    {
+      "name": "upper_right_blue_chest_cheek_wrap",
+      "finite_positive_solid": true
+    },
+    {
+      "name": "upper_right_blue_chest_cheek_side_return",
+      "finite_positive_solid": true
+    },
+    {
+      "name": "upper_right_radiator_ivory_socket",
+      "finite_positive_solid": true
+    },
+    {
+      "name": "upper_right_radiator_gold_trim",
+      "finite_positive_solid": true
+    },
+    {
+      "name": "upper_right_radiator_black_well",
+      "finite_positive_solid": true
+    },
+    {
+      "name": "upper_right_radiator_turning_plenum",
+      "finite_positive_solid": true
+    },
+    {
+      "name": "upper_right_radiator_louver_00",
+      "finite_positive_solid": true
+    },
+    {
+      "name": "upper_right_radiator_louver_01",
+      "finite_positive_solid": true
+    },
+    {
+      "name": "upper_right_radiator_louver_02",
+      "finite_positive_solid": true
+    },
+    {
+      "name": "upper_right_radiator_louver_03",
+      "finite_positive_solid": true
+    },
+    {
+      "name": "upper_right_radiator_louver_04",
+      "finite_positive_solid": true
+    },
+    {
+      "name": "upper_right_radiator_louver_05",
+      "finite_positive_solid": true
+    },
+    {
+      "name": "upper_right_radiator_louver_06",
+      "finite_positive_solid": true
+    },
+    {
+      "name": "upper_right_radiator_louver_07",
+      "finite_positive_solid": true
+    },
+    {
+      "name": "upper_right_radiator_louver_08",
+      "finite_positive_solid": true
+    },
+    {
+      "name": "upper_right_radiator_louver_09",
+      "finite_positive_solid": true
+    },
+    {
+      "name": "upper_right_radiator_louver_10",
+      "finite_positive_solid": true
+    },
+    {
+      "name": "upper_right_vent_fastener_0",
+      "finite_positive_solid": true
+    },
+    {
+      "name": "upper_right_vent_fastener_1",
+      "finite_positive_solid": true
+    },
+    {
+      "name": "upper_right_vent_fastener_2",
+      "finite_positive_solid": true
+    },
+    {
+      "name": "upper_right_vent_fastener_3",
+      "finite_positive_solid": true
+    },
+    {
+      "name": "upper_right_dark_torso_side_housing",
+      "finite_positive_solid": true
+    },
+    {
+      "name": "upper_right_torso_side_layer_00",
+      "finite_positive_solid": true
+    },
+    {
+      "name": "upper_right_torso_side_layer_lip_00",
+      "finite_positive_solid": true
+    },
+    {
+      "name": "upper_right_torso_side_layer_01",
+      "finite_positive_solid": true
+    },
+    {
+      "name": "upper_right_torso_side_layer_lip_01",
+      "finite_positive_solid": true
+    },
+    {
+      "name": "upper_right_torso_side_layer_02",
+      "finite_positive_solid": true
+    },
+    {
+      "name": "upper_right_torso_side_layer_lip_02",
+      "finite_positive_solid": true
+    },
+    {
+      "name": "upper_right_torso_side_layer_03",
+      "finite_positive_solid": true
+    },
+    {
+      "name": "upper_right_torso_side_layer_lip_03",
+      "finite_positive_solid": true
+    },
+    {
+      "name": "upper_right_blue_forearm_wrap",
+      "finite_positive_solid": true
+    },
+    {
+      "name": "upper_right_blue_deltoid_wrap",
+      "finite_positive_solid": true
+    },
+    {
+      "name": "upper_right_ivory_shoulder_cap",
+      "finite_positive_solid": true
+    },
+    {
+      "name": "upper_right_shoulder_open_bearing_seat",
+      "finite_positive_solid": true
+    },
+    {
+      "name": "upper_right_ivory_lower_upper_arm",
+      "finite_positive_solid": true
+    },
+    {
+      "name": "upper_right_blue_elbow_yoke",
+      "finite_positive_solid": true
+    },
+    {
+      "name": "upper_left_shoulder_inner_barrel",
+      "finite_positive_solid": true
+    },
+    {
+      "name": "upper_left_shoulder_barrel_band_0",
+      "finite_positive_solid": true
+    },
+    {
+      "name": "upper_left_shoulder_barrel_band_1",
+      "finite_positive_solid": true
+    },
+    {
+      "name": "upper_left_shoulder_negative_y_support_cheek",
+      "finite_positive_solid": true
+    },
+    {
+      "name": "upper_left_shoulder_negative_y_recessed_face",
+      "finite_positive_solid": true
+    },
+    {
+      "name": "upper_left_shoulder_negative_y_thin_rim",
+      "finite_positive_solid": true
+    },
+    {
+      "name": "upper_left_shoulder_negative_y_central_cap",
+      "finite_positive_solid": true
+    },
+    {
+      "name": "upper_left_shoulder_negative_y_cap_step",
+      "finite_positive_solid": true
+    },
+    {
+      "name": "upper_left_shoulder_positive_y_support_cheek",
+      "finite_positive_solid": true
+    },
+    {
+      "name": "upper_left_shoulder_positive_y_recessed_face",
+      "finite_positive_solid": true
+    },
+    {
+      "name": "upper_left_shoulder_positive_y_thin_rim",
+      "finite_positive_solid": true
+    },
+    {
+      "name": "upper_left_shoulder_positive_y_central_cap",
+      "finite_positive_solid": true
+    },
+    {
+      "name": "upper_left_shoulder_positive_y_cap_step",
+      "finite_positive_solid": true
+    },
+    {
+      "name": "upper_left_elbow_inner_barrel",
+      "finite_positive_solid": true
+    },
+    {
+      "name": "upper_left_elbow_barrel_band_0",
+      "finite_positive_solid": true
+    },
+    {
+      "name": "upper_left_elbow_barrel_band_1",
+      "finite_positive_solid": true
+    },
+    {
+      "name": "upper_left_elbow_negative_y_support_cheek",
+      "finite_positive_solid": true
+    },
+    {
+      "name": "upper_left_elbow_negative_y_recessed_face",
+      "finite_positive_solid": true
+    },
+    {
+      "name": "upper_left_elbow_negative_y_thin_rim",
+      "finite_positive_solid": true
+    },
+    {
+      "name": "upper_left_elbow_negative_y_central_cap",
+      "finite_positive_solid": true
+    },
+    {
+      "name": "upper_left_elbow_negative_y_cap_step",
+      "finite_positive_solid": true
+    },
+    {
+      "name": "upper_left_elbow_positive_y_support_cheek",
+      "finite_positive_solid": true
+    },
+    {
+      "name": "upper_left_elbow_positive_y_recessed_face",
+      "finite_positive_solid": true
+    },
+    {
+      "name": "upper_left_elbow_positive_y_thin_rim",
+      "finite_positive_solid": true
+    },
+    {
+      "name": "upper_left_elbow_positive_y_central_cap",
+      "finite_positive_solid": true
+    },
+    {
+      "name": "upper_left_elbow_positive_y_cap_step",
+      "finite_positive_solid": true
+    },
+    {
+      "name": "upper_left_elbow_forward_shallow_cover",
+      "finite_positive_solid": true
+    },
+    {
+      "name": "upper_left_elbow_forward_recessed_face",
+      "finite_positive_solid": true
+    },
+    {
+      "name": "upper_left_elbow_forward_thin_gold_ring",
+      "finite_positive_solid": true
+    },
+    {
+      "name": "upper_left_elbow_forward_dark_center",
+      "finite_positive_solid": true
+    },
+    {
+      "name": "upper_left_wrist_inner_barrel",
+      "finite_positive_solid": true
+    },
+    {
+      "name": "upper_left_wrist_barrel_band_0",
+      "finite_positive_solid": true
+    },
+    {
+      "name": "upper_left_wrist_barrel_band_1",
+      "finite_positive_solid": true
+    },
+    {
+      "name": "upper_left_wrist_negative_y_support_cheek",
+      "finite_positive_solid": true
+    },
+    {
+      "name": "upper_left_wrist_negative_y_recessed_face",
+      "finite_positive_solid": true
+    },
+    {
+      "name": "upper_left_wrist_negative_y_thin_rim",
+      "finite_positive_solid": true
+    },
+    {
+      "name": "upper_left_wrist_negative_y_central_cap",
+      "finite_positive_solid": true
+    },
+    {
+      "name": "upper_left_wrist_negative_y_cap_step",
+      "finite_positive_solid": true
+    },
+    {
+      "name": "upper_left_wrist_positive_y_support_cheek",
+      "finite_positive_solid": true
+    },
+    {
+      "name": "upper_left_wrist_positive_y_recessed_face",
+      "finite_positive_solid": true
+    },
+    {
+      "name": "upper_left_wrist_positive_y_thin_rim",
+      "finite_positive_solid": true
+    },
+    {
+      "name": "upper_left_wrist_positive_y_central_cap",
+      "finite_positive_solid": true
+    },
+    {
+      "name": "upper_left_wrist_positive_y_cap_step",
+      "finite_positive_solid": true
+    },
+    {
+      "name": "upper_left_palm_inner_carrier",
+      "finite_positive_solid": true
+    },
+    {
+      "name": "upper_left_ivory_palm_dorsal",
+      "finite_positive_solid": true
+    },
+    {
+      "name": "upper_left_ivory_palm_reverse_cover",
+      "finite_positive_solid": true
+    },
+    {
+      "name": "upper_left_palm_lower_dark_seam",
+      "finite_positive_solid": true
+    },
+    {
+      "name": "upper_left_palm_upper_exposed_hinge",
+      "finite_positive_solid": true
+    },
+    {
+      "name": "upper_left_palm_lower_exposed_hinge",
+      "finite_positive_solid": true
+    },
+    {
+      "name": "upper_left_finger_1_root_joint",
+      "finite_positive_solid": true
+    },
+    {
+      "name": "upper_left_finger_1_proximal_casting",
+      "finite_positive_solid": true
+    },
+    {
+      "name": "upper_left_finger_1_ivory_first_pad",
+      "finite_positive_solid": true
+    },
+    {
+      "name": "upper_left_finger_1_ivory_reverse_first_pad",
+      "finite_positive_solid": true
+    },
+    {
+      "name": "upper_left_finger_1_interphalangeal_joint",
+      "finite_positive_solid": true
+    },
+    {
+      "name": "upper_left_finger_1_curved_distal",
+      "finite_positive_solid": true
+    },
+    {
+      "name": "upper_left_finger_1_tip_contact_pad",
+      "finite_positive_solid": true
+    },
+    {
+      "name": "upper_left_finger_2_root_joint",
+      "finite_positive_solid": true
+    },
+    {
+      "name": "upper_left_finger_2_proximal_casting",
+      "finite_positive_solid": true
+    },
+    {
+      "name": "upper_left_finger_2_ivory_first_pad",
+      "finite_positive_solid": true
+    },
+    {
+      "name": "upper_left_finger_2_ivory_reverse_first_pad",
+      "finite_positive_solid": true
+    },
+    {
+      "name": "upper_left_finger_2_interphalangeal_joint",
+      "finite_positive_solid": true
+    },
+    {
+      "name": "upper_left_finger_2_curved_distal",
+      "finite_positive_solid": true
+    },
+    {
+      "name": "upper_left_finger_2_tip_contact_pad",
+      "finite_positive_solid": true
+    },
+    {
+      "name": "upper_left_finger_3_root_joint",
+      "finite_positive_solid": true
+    },
+    {
+      "name": "upper_left_finger_3_proximal_casting",
+      "finite_positive_solid": true
+    },
+    {
+      "name": "upper_left_finger_3_ivory_first_pad",
+      "finite_positive_solid": true
+    },
+    {
+      "name": "upper_left_finger_3_ivory_reverse_first_pad",
+      "finite_positive_solid": true
+    },
+    {
+      "name": "upper_left_finger_3_interphalangeal_joint",
+      "finite_positive_solid": true
+    },
+    {
+      "name": "upper_left_finger_3_curved_distal",
+      "finite_positive_solid": true
+    },
+    {
+      "name": "upper_left_finger_3_tip_contact_pad",
+      "finite_positive_solid": true
+    },
+    {
+      "name": "upper_left_thumb_root_web",
+      "finite_positive_solid": true
+    },
+    {
+      "name": "upper_left_thumb_root_pin",
+      "finite_positive_solid": true
+    },
+    {
+      "name": "upper_left_thumb_proximal_casting",
+      "finite_positive_solid": true
+    },
+    {
+      "name": "upper_left_thumb_ivory_first_pad",
+      "finite_positive_solid": true
+    },
+    {
+      "name": "upper_left_thumb_middle_pin",
+      "finite_positive_solid": true
+    },
+    {
+      "name": "upper_left_thumb_black_terminal",
+      "finite_positive_solid": true
+    },
+    {
+      "name": "upper_left_palm_wrist_negative_y_short_neck",
+      "finite_positive_solid": true
+    },
+    {
+      "name": "upper_left_palm_wrist_positive_y_short_neck",
+      "finite_positive_solid": true
+    },
+    {
+      "name": "upper_right_shoulder_inner_barrel",
+      "finite_positive_solid": true
+    },
+    {
+      "name": "upper_right_shoulder_barrel_band_0",
+      "finite_positive_solid": true
+    },
+    {
+      "name": "upper_right_shoulder_barrel_band_1",
+      "finite_positive_solid": true
+    },
+    {
+      "name": "upper_right_shoulder_negative_y_support_cheek",
+      "finite_positive_solid": true
+    },
+    {
+      "name": "upper_right_shoulder_negative_y_recessed_face",
+      "finite_positive_solid": true
+    },
+    {
+      "name": "upper_right_shoulder_negative_y_thin_rim",
+      "finite_positive_solid": true
+    },
+    {
+      "name": "upper_right_shoulder_negative_y_central_cap",
+      "finite_positive_solid": true
+    },
+    {
+      "name": "upper_right_shoulder_negative_y_cap_step",
+      "finite_positive_solid": true
+    },
+    {
+      "name": "upper_right_shoulder_positive_y_support_cheek",
+      "finite_positive_solid": true
+    },
+    {
+      "name": "upper_right_shoulder_positive_y_recessed_face",
+      "finite_positive_solid": true
+    },
+    {
+      "name": "upper_right_shoulder_positive_y_thin_rim",
+      "finite_positive_solid": true
+    },
+    {
+      "name": "upper_right_shoulder_positive_y_central_cap",
+      "finite_positive_solid": true
+    },
+    {
+      "name": "upper_right_shoulder_positive_y_cap_step",
+      "finite_positive_solid": true
+    },
+    {
+      "name": "upper_right_elbow_inner_barrel",
+      "finite_positive_solid": true
+    },
+    {
+      "name": "upper_right_elbow_barrel_band_0",
+      "finite_positive_solid": true
+    },
+    {
+      "name": "upper_right_elbow_barrel_band_1",
+      "finite_positive_solid": true
+    },
+    {
+      "name": "upper_right_elbow_negative_y_support_cheek",
+      "finite_positive_solid": true
+    },
+    {
+      "name": "upper_right_elbow_negative_y_recessed_face",
+      "finite_positive_solid": true
+    },
+    {
+      "name": "upper_right_elbow_negative_y_thin_rim",
+      "finite_positive_solid": true
+    },
+    {
+      "name": "upper_right_elbow_negative_y_central_cap",
+      "finite_positive_solid": true
+    },
+    {
+      "name": "upper_right_elbow_negative_y_cap_step",
+      "finite_positive_solid": true
+    },
+    {
+      "name": "upper_right_elbow_positive_y_support_cheek",
+      "finite_positive_solid": true
+    },
+    {
+      "name": "upper_right_elbow_positive_y_recessed_face",
+      "finite_positive_solid": true
+    },
+    {
+      "name": "upper_right_elbow_positive_y_thin_rim",
+      "finite_positive_solid": true
+    },
+    {
+      "name": "upper_right_elbow_positive_y_central_cap",
+      "finite_positive_solid": true
+    },
+    {
+      "name": "upper_right_elbow_positive_y_cap_step",
+      "finite_positive_solid": true
+    },
+    {
+      "name": "upper_right_elbow_forward_shallow_cover",
+      "finite_positive_solid": true
+    },
+    {
+      "name": "upper_right_elbow_forward_recessed_face",
+      "finite_positive_solid": true
+    },
+    {
+      "name": "upper_right_elbow_forward_thin_gold_ring",
+      "finite_positive_solid": true
+    },
+    {
+      "name": "upper_right_elbow_forward_dark_center",
+      "finite_positive_solid": true
+    },
+    {
+      "name": "upper_right_wrist_inner_barrel",
+      "finite_positive_solid": true
+    },
+    {
+      "name": "upper_right_wrist_barrel_band_0",
+      "finite_positive_solid": true
+    },
+    {
+      "name": "upper_right_wrist_barrel_band_1",
+      "finite_positive_solid": true
+    },
+    {
+      "name": "upper_right_wrist_negative_y_support_cheek",
+      "finite_positive_solid": true
+    },
+    {
+      "name": "upper_right_wrist_negative_y_recessed_face",
+      "finite_positive_solid": true
+    },
+    {
+      "name": "upper_right_wrist_negative_y_thin_rim",
+      "finite_positive_solid": true
+    },
+    {
+      "name": "upper_right_wrist_negative_y_central_cap",
+      "finite_positive_solid": true
+    },
+    {
+      "name": "upper_right_wrist_negative_y_cap_step",
+      "finite_positive_solid": true
+    },
+    {
+      "name": "upper_right_wrist_positive_y_support_cheek",
+      "finite_positive_solid": true
+    },
+    {
+      "name": "upper_right_wrist_positive_y_recessed_face",
+      "finite_positive_solid": true
+    },
+    {
+      "name": "upper_right_wrist_positive_y_thin_rim",
+      "finite_positive_solid": true
+    },
+    {
+      "name": "upper_right_wrist_positive_y_central_cap",
+      "finite_positive_solid": true
+    },
+    {
+      "name": "upper_right_wrist_positive_y_cap_step",
+      "finite_positive_solid": true
+    },
+    {
+      "name": "upper_right_palm_inner_carrier",
+      "finite_positive_solid": true
+    },
+    {
+      "name": "upper_right_ivory_palm_dorsal",
+      "finite_positive_solid": true
+    },
+    {
+      "name": "upper_right_ivory_palm_reverse_cover",
+      "finite_positive_solid": true
+    },
+    {
+      "name": "upper_right_palm_lower_dark_seam",
+      "finite_positive_solid": true
+    },
+    {
+      "name": "upper_right_palm_upper_exposed_hinge",
+      "finite_positive_solid": true
+    },
+    {
+      "name": "upper_right_palm_lower_exposed_hinge",
+      "finite_positive_solid": true
+    },
+    {
+      "name": "upper_right_finger_1_root_joint",
+      "finite_positive_solid": true
+    },
+    {
+      "name": "upper_right_finger_1_proximal_casting",
+      "finite_positive_solid": true
+    },
+    {
+      "name": "upper_right_finger_1_ivory_first_pad",
+      "finite_positive_solid": true
+    },
+    {
+      "name": "upper_right_finger_1_ivory_reverse_first_pad",
+      "finite_positive_solid": true
+    },
+    {
+      "name": "upper_right_finger_1_interphalangeal_joint",
+      "finite_positive_solid": true
+    },
+    {
+      "name": "upper_right_finger_1_curved_distal",
+      "finite_positive_solid": true
+    },
+    {
+      "name": "upper_right_finger_1_tip_contact_pad",
+      "finite_positive_solid": true
+    },
+    {
+      "name": "upper_right_finger_2_root_joint",
+      "finite_positive_solid": true
+    },
+    {
+      "name": "upper_right_finger_2_proximal_casting",
+      "finite_positive_solid": true
+    },
+    {
+      "name": "upper_right_finger_2_ivory_first_pad",
+      "finite_positive_solid": true
+    },
+    {
+      "name": "upper_right_finger_2_ivory_reverse_first_pad",
+      "finite_positive_solid": true
+    },
+    {
+      "name": "upper_right_finger_2_interphalangeal_joint",
+      "finite_positive_solid": true
+    },
+    {
+      "name": "upper_right_finger_2_curved_distal",
+      "finite_positive_solid": true
+    },
+    {
+      "name": "upper_right_finger_2_tip_contact_pad",
+      "finite_positive_solid": true
+    },
+    {
+      "name": "upper_right_finger_3_root_joint",
+      "finite_positive_solid": true
+    },
+    {
+      "name": "upper_right_finger_3_proximal_casting",
+      "finite_positive_solid": true
+    },
+    {
+      "name": "upper_right_finger_3_ivory_first_pad",
+      "finite_positive_solid": true
+    },
+    {
+      "name": "upper_right_finger_3_ivory_reverse_first_pad",
+      "finite_positive_solid": true
+    },
+    {
+      "name": "upper_right_finger_3_interphalangeal_joint",
+      "finite_positive_solid": true
+    },
+    {
+      "name": "upper_right_finger_3_curved_distal",
+      "finite_positive_solid": true
+    },
+    {
+      "name": "upper_right_finger_3_tip_contact_pad",
+      "finite_positive_solid": true
+    },
+    {
+      "name": "upper_right_thumb_root_web",
+      "finite_positive_solid": true
+    },
+    {
+      "name": "upper_right_thumb_root_pin",
+      "finite_positive_solid": true
+    },
+    {
+      "name": "upper_right_thumb_proximal_casting",
+      "finite_positive_solid": true
+    },
+    {
+      "name": "upper_right_thumb_ivory_first_pad",
+      "finite_positive_solid": true
+    },
+    {
+      "name": "upper_right_thumb_middle_pin",
+      "finite_positive_solid": true
+    },
+    {
+      "name": "upper_right_thumb_black_terminal",
+      "finite_positive_solid": true
+    },
+    {
+      "name": "upper_right_palm_wrist_negative_y_short_neck",
+      "finite_positive_solid": true
+    },
+    {
+      "name": "upper_right_palm_wrist_positive_y_short_neck",
+      "finite_positive_solid": true
+    },
+    {
+      "name": "upper_structure_spine_box",
+      "finite_positive_solid": true
+    },
+    {
+      "name": "upper_left_structure_shoulder_crossmember",
+      "finite_positive_solid": true
+    },
+    {
+      "name": "upper_left_structure_upper_arm_box",
+      "finite_positive_solid": true
+    },
+    {
+      "name": "upper_left_structure_forearm_box",
+      "finite_positive_solid": true
+    },
+    {
+      "name": "upper_right_structure_shoulder_crossmember",
+      "finite_positive_solid": true
+    },
+    {
+      "name": "upper_right_structure_upper_arm_box",
+      "finite_positive_solid": true
+    },
+    {
+      "name": "upper_right_structure_forearm_box",
+      "finite_positive_solid": true
+    },
+    {
+      "name": "upper_left_forearm_upper_edge_00_00",
+      "finite_positive_solid": true
+    },
+    {
+      "name": "upper_left_forearm_upper_edge_00_01",
+      "finite_positive_solid": true
+    },
+    {
+      "name": "upper_left_forearm_upper_edge_00_02",
+      "finite_positive_solid": true
+    },
+    {
+      "name": "upper_left_forearm_upper_edge_00_03",
+      "finite_positive_solid": true
+    },
+    {
+      "name": "upper_left_forearm_upper_edge_00_04",
+      "finite_positive_solid": true
+    },
+    {
+      "name": "upper_left_forearm_upper_edge_00_05",
+      "finite_positive_solid": true
+    },
+    {
+      "name": "upper_left_forearm_upper_edge_00_06",
+      "finite_positive_solid": true
+    },
+    {
+      "name": "upper_left_forearm_upper_edge_00_07",
+      "finite_positive_solid": true
+    },
+    {
+      "name": "upper_left_forearm_upper_edge_01_00",
+      "finite_positive_solid": true
+    },
+    {
+      "name": "upper_left_forearm_upper_edge_01_01",
+      "finite_positive_solid": true
+    },
+    {
+      "name": "upper_left_forearm_upper_edge_01_02",
+      "finite_positive_solid": true
+    },
+    {
+      "name": "upper_left_forearm_upper_edge_01_03",
+      "finite_positive_solid": true
+    },
+    {
+      "name": "upper_left_forearm_upper_edge_01_04",
+      "finite_positive_solid": true
+    },
+    {
+      "name": "upper_left_forearm_upper_edge_01_05",
+      "finite_positive_solid": true
+    },
+    {
+      "name": "upper_left_forearm_upper_edge_01_06",
+      "finite_positive_solid": true
+    },
+    {
+      "name": "upper_left_forearm_upper_edge_01_07",
+      "finite_positive_solid": true
+    },
+    {
+      "name": "upper_left_forearm_upper_edge_02_00",
+      "finite_positive_solid": true
+    },
+    {
+      "name": "upper_left_forearm_upper_edge_02_01",
+      "finite_positive_solid": true
+    },
+    {
+      "name": "upper_left_forearm_upper_edge_02_02",
+      "finite_positive_solid": true
+    },
+    {
+      "name": "upper_left_forearm_upper_edge_02_03",
+      "finite_positive_solid": true
+    },
+    {
+      "name": "upper_left_forearm_upper_edge_02_04",
+      "finite_positive_solid": true
+    },
+    {
+      "name": "upper_left_forearm_upper_edge_02_05",
+      "finite_positive_solid": true
+    },
+    {
+      "name": "upper_left_forearm_upper_edge_02_06",
+      "finite_positive_solid": true
+    },
+    {
+      "name": "upper_right_forearm_upper_edge_00_00",
+      "finite_positive_solid": true
+    },
+    {
+      "name": "upper_right_forearm_upper_edge_00_01",
+      "finite_positive_solid": true
+    },
+    {
+      "name": "upper_right_forearm_upper_edge_00_02",
+      "finite_positive_solid": true
+    },
+    {
+      "name": "upper_right_forearm_upper_edge_00_03",
+      "finite_positive_solid": true
+    },
+    {
+      "name": "upper_right_forearm_upper_edge_00_04",
+      "finite_positive_solid": true
+    },
+    {
+      "name": "upper_right_forearm_upper_edge_00_05",
+      "finite_positive_solid": true
+    },
+    {
+      "name": "upper_right_forearm_upper_edge_00_06",
+      "finite_positive_solid": true
+    },
+    {
+      "name": "upper_right_forearm_upper_edge_01_00",
+      "finite_positive_solid": true
+    },
+    {
+      "name": "upper_right_forearm_upper_edge_01_01",
+      "finite_positive_solid": true
+    },
+    {
+      "name": "upper_right_forearm_upper_edge_01_02",
+      "finite_positive_solid": true
+    },
+    {
+      "name": "upper_right_forearm_upper_edge_01_03",
+      "finite_positive_solid": true
+    },
+    {
+      "name": "upper_right_forearm_upper_edge_01_04",
+      "finite_positive_solid": true
+    },
+    {
+      "name": "upper_right_forearm_upper_edge_01_05",
+      "finite_positive_solid": true
+    },
+    {
+      "name": "upper_right_forearm_upper_edge_01_06",
+      "finite_positive_solid": true
+    },
+    {
+      "name": "upper_right_forearm_upper_edge_01_07",
+      "finite_positive_solid": true
+    },
+    {
+      "name": "upper_right_forearm_upper_edge_02_00",
+      "finite_positive_solid": true
+    },
+    {
+      "name": "upper_right_forearm_upper_edge_02_01",
+      "finite_positive_solid": true
+    },
+    {
+      "name": "upper_right_forearm_upper_edge_02_02",
+      "finite_positive_solid": true
+    },
+    {
+      "name": "upper_right_forearm_upper_edge_02_03",
+      "finite_positive_solid": true
+    },
+    {
+      "name": "upper_right_forearm_upper_edge_02_04",
+      "finite_positive_solid": true
+    },
+    {
+      "name": "upper_right_forearm_upper_edge_02_05",
+      "finite_positive_solid": true
+    },
+    {
+      "name": "upper_right_forearm_upper_edge_02_06",
+      "finite_positive_solid": true
+    },
+    {
+      "name": "upper_right_forearm_upper_edge_02_07",
+      "finite_positive_solid": true
+    },
+    {
+      "name": "upper_proposed_hip_pitch_carrier",
+      "finite_positive_solid": true
+    },
+    {
+      "name": "left_frame_thigh",
+      "finite_positive_solid": true
+    },
+    {
+      "name": "left_frame_middle",
+      "finite_positive_solid": true
+    },
+    {
+      "name": "left_shaft_knee",
+      "finite_positive_solid": true
+    },
+    {
+      "name": "left_frame_distal",
+      "finite_positive_solid": true
+    },
+    {
+      "name": "left_shaft_fold",
+      "finite_positive_solid": true
+    },
+    {
+      "name": "left_toe_contact_pad",
+      "finite_positive_solid": true
+    },
+    {
+      "name": "left_heel_contact_pad",
+      "finite_positive_solid": true
+    },
+    {
+      "name": "left_pressure_carrier",
+      "finite_positive_solid": true
+    },
+    {
+      "name": "left_shaft_ankle",
+      "finite_positive_solid": true
+    },
+    {
+      "name": "left_thigh_blue_armor",
+      "finite_positive_solid": true
+    },
+    {
+      "name": "left_middle_blue_armor",
+      "finite_positive_solid": true
+    },
+    {
+      "name": "left_distal_blue_armor",
+      "finite_positive_solid": true
+    },
+    {
+      "name": "left_thigh_lower_orange_panel",
+      "finite_positive_solid": true
+    },
+    {
+      "name": "left_knee_joint_cover_-1",
+      "finite_positive_solid": true
+    },
+    {
+      "name": "left_knee_orange_rim_-1",
+      "finite_positive_solid": true
+    },
+    {
+      "name": "left_knee_joint_cover_1",
+      "finite_positive_solid": true
+    },
+    {
+      "name": "left_knee_orange_rim_1",
+      "finite_positive_solid": true
+    },
+    {
+      "name": "left_fold_joint_cover_-1",
+      "finite_positive_solid": true
+    },
+    {
+      "name": "left_fold_orange_rim_-1",
+      "finite_positive_solid": true
+    },
+    {
+      "name": "left_fold_joint_cover_1",
+      "finite_positive_solid": true
+    },
+    {
+      "name": "left_fold_orange_rim_1",
+      "finite_positive_solid": true
+    },
+    {
+      "name": "left_ankle_joint_cover_-1",
+      "finite_positive_solid": true
+    },
+    {
+      "name": "left_ankle_orange_rim_-1",
+      "finite_positive_solid": true
+    },
+    {
+      "name": "left_ankle_joint_cover_1",
+      "finite_positive_solid": true
+    },
+    {
+      "name": "left_ankle_orange_rim_1",
+      "finite_positive_solid": true
+    },
+    {
+      "name": "left_foot_continuous_keel",
+      "finite_positive_solid": true
+    },
+    {
+      "name": "left_foot_toe_ivory_side_-1",
+      "finite_positive_solid": true
+    },
+    {
+      "name": "left_foot_toe_ivory_side_1",
+      "finite_positive_solid": true
+    },
+    {
+      "name": "left_foot_heel_ivory_side_-1",
+      "finite_positive_solid": true
+    },
+    {
+      "name": "left_foot_heel_ivory_side_1",
+      "finite_positive_solid": true
+    },
+    {
+      "name": "left_foot_heel_dark_guard",
+      "finite_positive_solid": true
+    },
+    {
+      "name": "left_foot_front_top_plate",
+      "finite_positive_solid": true
+    },
+    {
+      "name": "left_foot_ivory_low_hull",
+      "finite_positive_solid": true
+    },
+    {
+      "name": "right_frame_thigh",
+      "finite_positive_solid": true
+    },
+    {
+      "name": "right_frame_middle",
+      "finite_positive_solid": true
+    },
+    {
+      "name": "right_shaft_knee",
+      "finite_positive_solid": true
+    },
+    {
+      "name": "right_frame_distal",
+      "finite_positive_solid": true
+    },
+    {
+      "name": "right_shaft_fold",
+      "finite_positive_solid": true
+    },
+    {
+      "name": "right_toe_contact_pad",
+      "finite_positive_solid": true
+    },
+    {
+      "name": "right_heel_contact_pad",
+      "finite_positive_solid": true
+    },
+    {
+      "name": "right_pressure_carrier",
+      "finite_positive_solid": true
+    },
+    {
+      "name": "right_shaft_ankle",
+      "finite_positive_solid": true
+    },
+    {
+      "name": "right_thigh_blue_armor",
+      "finite_positive_solid": true
+    },
+    {
+      "name": "right_middle_blue_armor",
+      "finite_positive_solid": true
+    },
+    {
+      "name": "right_distal_blue_armor",
+      "finite_positive_solid": true
+    },
+    {
+      "name": "right_thigh_lower_orange_panel",
+      "finite_positive_solid": true
+    },
+    {
+      "name": "right_knee_joint_cover_-1",
+      "finite_positive_solid": true
+    },
+    {
+      "name": "right_knee_orange_rim_-1",
+      "finite_positive_solid": true
+    },
+    {
+      "name": "right_knee_joint_cover_1",
+      "finite_positive_solid": true
+    },
+    {
+      "name": "right_knee_orange_rim_1",
+      "finite_positive_solid": true
+    },
+    {
+      "name": "right_fold_joint_cover_-1",
+      "finite_positive_solid": true
+    },
+    {
+      "name": "right_fold_orange_rim_-1",
+      "finite_positive_solid": true
+    },
+    {
+      "name": "right_fold_joint_cover_1",
+      "finite_positive_solid": true
+    },
+    {
+      "name": "right_fold_orange_rim_1",
+      "finite_positive_solid": true
+    },
+    {
+      "name": "right_ankle_joint_cover_-1",
+      "finite_positive_solid": true
+    },
+    {
+      "name": "right_ankle_orange_rim_-1",
+      "finite_positive_solid": true
+    },
+    {
+      "name": "right_ankle_joint_cover_1",
+      "finite_positive_solid": true
+    },
+    {
+      "name": "right_ankle_orange_rim_1",
+      "finite_positive_solid": true
+    },
+    {
+      "name": "right_foot_continuous_keel",
+      "finite_positive_solid": true
+    },
+    {
+      "name": "right_foot_toe_ivory_side_-1",
+      "finite_positive_solid": true
+    },
+    {
+      "name": "right_foot_toe_ivory_side_1",
+      "finite_positive_solid": true
+    },
+    {
+      "name": "right_foot_heel_ivory_side_-1",
+      "finite_positive_solid": true
+    },
+    {
+      "name": "right_foot_heel_ivory_side_1",
+      "finite_positive_solid": true
+    },
+    {
+      "name": "right_foot_heel_dark_guard",
+      "finite_positive_solid": true
+    },
+    {
+      "name": "right_foot_front_top_plate",
+      "finite_positive_solid": true
+    },
+    {
+      "name": "right_foot_ivory_low_hull",
+      "finite_positive_solid": true
+    }
+  ]
+}

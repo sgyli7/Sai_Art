@@ -1,0 +1,43 @@
+{
+  "revision": "p20",
+  "prompt": "/home/ethan/Projects/Sai_Art/docs/uri_style/gorilla_v0_2/prompts/top_native_projection_finish_p20.txt",
+  "status": "native_top_projection_finishing",
+  "references": [
+    {
+      "index": 1,
+      "path": "/home/ethan/Projects/Sai_Art/docs/uri_style/gorilla_v0_2/images/native_registration_top_p19.png",
+      "role": "EDIT_TARGET_GEOMETRY_CAMERA",
+      "sha256": "b53f6dbe6be99a0c91b0f9619278db2a7f7f5d4b92259851343c4aa0b563a82c"
+    },
+    {
+      "index": 2,
+      "path": "/home/ethan/Projects/Sai_Art/docs/uri_style/gorilla_v0_2/references/user_four_view_top_fix_p19.jpg",
+      "role": "SUBJECT_PART_DESIGN_COLOR_IGNORING_BAD_TOP",
+      "sha256": "cb804e621736804e6ae08c17b4d25811923415e5bd90880b8d4e5c4ec94e1cfb"
+    },
+    {
+      "index": 3,
+      "path": "/home/ethan/Projects/Sai_Art/.agents/skills/uri-style/assets/style_01_race_car_hangar.png",
+      "role": "STYLE_ONLY",
+      "sha256": "1aed979f442030b644db5b86c79ad69d44f14092f865eb28f157663476eec8c9"
+    },
+    {
+      "index": 4,
+      "path": "/home/ethan/Projects/Sai_Art/.agents/skills/uri-style/assets/style_03_tracked_mobile_station.png",
+      "role": "STYLE_ONLY",
+      "sha256": "da14249a726ca5009b222a0dd7dc2c7a1fdbfe49ef31b8080936e855e8eb1f6f"
+    },
+    {
+      "index": 5,
+      "path": "/home/ethan/Projects/Sai_Art/.agents/skills/uri-style/assets/style_05_white_blue_racer.png",
+      "role": "STYLE_ONLY",
+      "sha256": "fc5f342e892842887e738798b5870b9245fb3c7376a028c5f503301ac687f1bc"
+    }
+  ],
+  "style_subset_reason": "Target, projection and style anchors1/3/5; no restyling or subject redesign",
+  "native_guide": "native_top_registration_p19.json",
+  "prior_result": "images/top_projection_incomplete_p19.png",
+  "prior_failure": "White shell improved, arm/shank projection remained frontal; unsuitable as true TOP.",
+  "scope": "Replace only TOP artwork after native camera verification; retain original other three views.",
+  "full_complete_model_qualified": false
+}

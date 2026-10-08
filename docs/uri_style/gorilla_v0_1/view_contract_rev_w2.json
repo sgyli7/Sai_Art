@@ -1,0 +1,79 @@
+{
+  "name": "Gorilla V0.1",
+  "revision": "W2",
+  "role": "Orthographic illustration / engineering handoff spatial targets, not solved CAD or validated hardware dimensions",
+  "unit": "metre",
+  "orientation": {
+    "front": "-Y",
+    "up": "+Z"
+  },
+  "envelope_m": {
+    "height": 2.65,
+    "width": 2.586977,
+    "depth": 1.071836
+  },
+  "envelope_source": "dimension_lock.json",
+  "three_view_order": [
+    "front",
+    "left",
+    "rear"
+  ],
+  "side_facing": "left; forward -Y is page-left",
+  "sagittal_topology": "hip -> thigh -> knee_j1 -> middle -> extra_fold_j2 -> distal -> ankle_j3 -> foot",
+  "nominal_right_leg_illustration_anchors_xyz_m": {
+    "hip": [
+      0.38,
+      0.0,
+      1.45
+    ],
+    "knee_j1": [
+      0.5,
+      -0.29,
+      0.88
+    ],
+    "extra_fold_j2": [
+      0.52,
+      0.12,
+      0.38
+    ],
+    "ankle_j3": [
+      0.53,
+      -0.05,
+      0.13
+    ]
+  },
+  "nominal_links": [
+    {
+      "from": "hip",
+      "to": "knee_j1",
+      "length_m": 0.650692
+    },
+    {
+      "from": "knee_j1",
+      "to": "extra_fold_j2",
+      "length_m": 0.646916
+    },
+    {
+      "from": "extra_fold_j2",
+      "to": "ankle_j3",
+      "length_m": 0.30249
+    }
+  ],
+  "anchor_status": "NEW appearance-layout proposal for consistent Z posture; not derived from measured raster or added to the frozen Blender",
+  "matching_left_leg": "mirror X only",
+  "foot_target": {
+    "toe_y_m": -0.35,
+    "heel_y_m": 0.21,
+    "sole_z_m": 0.0,
+    "width_m": 0.47,
+    "length_m": 0.56,
+    "structure": "compound formed front support, open ankle yoke and compact heel; few necessary members"
+  },
+  "appearance_authority": "images/orthographic_three_view_rev_w2.png",
+  "upper_guard": "original bright azure, independent curved hexahedral volume, clear upper-inner gap, one compact root",
+  "inner_torso_side_panel": "original bright azure",
+  "paint_hierarchy": "blue-led contiguous areas; secondary ivory; coherent saffron fields, graphite limited to recessed functional members",
+  "validation_scope": "Exact dimensions and anchor coordinates in this contract are illustration targets; generated multi-view art is not same-source CAD evidence.",
+  "status": "superseded_not_geometry_authority",
+  "superseded_reason": "User rejects inferred sagittal structure. X width and Y height of W kept; depth from original user reference. Joint anchors are agent proposals, not user/reference-derived."
+}

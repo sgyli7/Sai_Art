@@ -1,0 +1,46 @@
+{
+  "stage": "top_projection_palette_correction",
+  "status": "generated_palette_repair_pass_top_fail",
+  "tool": "built_in_image_gen",
+  "prompt": "/home/ethan/Projects/Sai_Art/docs/uri_style/gorilla_v0_2/prompts/pixal3d_top_palette_correction_p8.txt",
+  "references": [
+    {
+      "index": 1,
+      "path": "/home/ethan/Projects/Sai_Art/docs/uri_style/gorilla_v0_2/images/pixal_whole_robot_four_view_p7.png",
+      "role": "EDIT_TARGET_PRESERVE_THREE_ELEVATIONS_REPLACE_TOP",
+      "sha256": "dd37c0ec6c582b9d3e549d2829216f0c4ad28e3818f99936e7d2d348b87dbc86"
+    },
+    {
+      "index": 2,
+      "path": "/home/ethan/Projects/Sai_Art/docs/uri_style/gorilla_v0_1/images/locked_four_view_review_rev_aa3.png",
+      "role": "UPPER_TOP_IDENTITY_V01_PALETTE_ONLY",
+      "sha256": "5c0469708d7c878ac6253e6ac3e6276198bf3694235bbed3da66c8c743b5aba4"
+    },
+    {
+      "index": 3,
+      "path": "/home/ethan/Projects/Sai_Art/.agents/skills/uri-style/assets/style_01_race_car_hangar.png",
+      "role": "STYLE_ONLY",
+      "sha256": "1aed979f442030b644db5b86c79ad69d44f14092f865eb28f157663476eec8c9"
+    },
+    {
+      "index": 4,
+      "path": "/home/ethan/Projects/Sai_Art/.agents/skills/uri-style/assets/style_03_tracked_mobile_station.png",
+      "role": "STYLE_ONLY",
+      "sha256": "da14249a726ca5009b222a0dd7dc2c7a1fdbfe49ef31b8080936e855e8eb1f6f"
+    },
+    {
+      "index": 5,
+      "path": "/home/ethan/Projects/Sai_Art/.agents/skills/uri-style/assets/style_05_white_blue_racer.png",
+      "role": "STYLE_ONLY",
+      "sha256": "fc5f342e892842887e738798b5870b9245fb3c7376a028c5f503301ac687f1bc"
+    }
+  ],
+  "output": "/home/ethan/Projects/Sai_Art/docs/uri_style/gorilla_v0_2/images/pixal_whole_robot_four_view_p8.png",
+  "output_sha256": "3f419ee030efd66efcd9f5508b10475be9b25f06e866c2931ec94cc64a19f488",
+  "built_in_output": "/home/ethan/.codex/generated_images/01a0f3ab-7a57-7172-b8c5-e517aa2973da/exec-11819498-0e3f-4bea-811a-c2a62b636fc8.png",
+  "visual_findings": [
+    "Front/side/rear new legs remain; white thigh armor repainted blue.",
+    "Top still contains apparent duplicated feet behind body and forward vent faces.",
+    "Use existing actual top-down native projection of user-selected model for occlusion rather than further blind panel edits."
+  ]
+}

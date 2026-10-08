@@ -2,8 +2,1436 @@
   "schema_version": 1,
   "recorded_date": "2026-09-27",
   "path_convention": "Paths are relative to Godot_Sim2Sim for Lab, repository root for Art. legacy_paths are exact paths, never prefix exemptions.",
-  "compatibility_additions": [],
-  "source_records": [],
+  "compatibility_additions": [
+    {
+      "path": ".agents/skills/uri-style/SKILL.md",
+      "reason": "用户明确要求的本项目 Codex skill 制作源；.agents/skills/uri-style 与 SKILL.md 使用技能发现规范的保留路径/名称。普通制作文件仍按 snake_case。"
+    },
+    {
+      "path": ".agents/skills/uri-style/references/gpt_prompt.txt",
+      "reason": "用户明确要求的本项目 Codex skill 制作源；.agents/skills/uri-style 与 SKILL.md 使用技能发现规范的保留路径/名称。普通制作文件仍按 snake_case。"
+    },
+    {
+      "path": ".agents/skills/uri-style/references/calibration.md",
+      "reason": "用户明确要求的本项目 Codex skill 制作源；.agents/skills/uri-style 与 SKILL.md 使用技能发现规范的保留路径/名称。普通制作文件仍按 snake_case。"
+    },
+    {
+      "path": ".agents/skills/uri-style/references/mecha_design.md",
+      "reason": "用户明确要求的本项目 Codex skill 制作源；.agents/skills/uri-style 与 SKILL.md 使用技能发现规范的保留路径/名称。普通制作文件仍按 snake_case。"
+    },
+    {
+      "path": ".agents/skills/uri-style/agents/openai.yaml",
+      "reason": "用户明确要求的本项目 Codex skill 制作源；.agents/skills/uri-style 与 SKILL.md 使用技能发现规范的保留路径/名称。普通制作文件仍按 snake_case。"
+    },
+    {
+      "path": "docs/uri_style/gorilla_v0_1/source/build_blockout.py",
+      "reason": "本次外观概念稿的辅助 Blender 尺寸定位制作源，和制作记录一同保存在 URI 设计文档分支；用户明确限制为内部辅助，非物理、控制或运行代码。"
+    },
+    {
+      "path": "docs/uri_style/gorilla_v0_1/source/build_review_book.py",
+      "reason": "本次两页外观审阅 PDF/静态索引的制作源，和对应图稿同目录维护；仅排版原图，不生成活动运行或跨仓库部署实现。"
+    },
+    {
+      "path": "docs/uri_style/gorilla_v0_1/review.html",
+      "reason": "Gorilla 外观稿的本地静态审阅索引，只链接保存的图片/PDF，无 JavaScript、应用运行或部署逻辑；和设计文档同目录交付。"
+    },
+    {
+      "path": "docs/uri_style/gorilla_v0_1/source/build_manifold_study.py",
+      "reason": "已停止的外观曲面辅助图制作源，仅生成数学参考 PNG／JSON；用户要求回到主设计后归档，非建模交付、控制、物理或活动运行实现。"
+    },
+    {
+      "path": ".agents/skills/uri-style/assets/source_manifest.json",
+      "reason": "本项目 URI skill 的新五图来源、顺序、尺寸与哈希清单；与全局 skill 和 GitHub 维护源同步。"
+    },
+    {
+      "path": "docs/uri_style/gorilla_v0_1/leg_design_r2/source/build_leg_design.py",
+      "reason": "Gorilla asset-authoring / static preview source retained in its established authoring path to preserve scripts and frozen handoff references; no runtime deployment ownership change."
+    },
+    {
+      "path": "docs/uri_style/gorilla_v0_1/leg_design_r2/source/check_articulation.py",
+      "reason": "Gorilla asset-authoring / static preview source retained in its established authoring path to preserve scripts and frozen handoff references; no runtime deployment ownership change."
+    },
+    {
+      "path": "docs/uri_style/gorilla_v0_1/leg_design_r2/source/fix_top_camera.py",
+      "reason": "Gorilla asset-authoring / static preview source retained in its established authoring path to preserve scripts and frozen handoff references; no runtime deployment ownership change."
+    },
+    {
+      "path": "docs/uri_style/gorilla_v0_1/leg_design_r2/source/prepare_handoff.py",
+      "reason": "Gorilla asset-authoring / static preview source retained in its established authoring path to preserve scripts and frozen handoff references; no runtime deployment ownership change."
+    },
+    {
+      "path": "docs/uri_style/gorilla_v0_1/leg_design_r2/source/render_leg_design.py",
+      "reason": "Gorilla asset-authoring / static preview source retained in its established authoring path to preserve scripts and frozen handoff references; no runtime deployment ownership change."
+    },
+    {
+      "path": "docs/uri_style/gorilla_v0_1/leg_design_r3/source/build_leg_design.py",
+      "reason": "Gorilla asset-authoring / static preview source retained in its established authoring path to preserve scripts and frozen handoff references; no runtime deployment ownership change."
+    },
+    {
+      "path": "docs/uri_style/gorilla_v0_1/leg_design_r3/source/check_articulation.py",
+      "reason": "Gorilla asset-authoring / static preview source retained in its established authoring path to preserve scripts and frozen handoff references; no runtime deployment ownership change."
+    },
+    {
+      "path": "docs/uri_style/gorilla_v0_1/leg_design_r3/source/render_leg_design.py",
+      "reason": "Gorilla asset-authoring / static preview source retained in its established authoring path to preserve scripts and frozen handoff references; no runtime deployment ownership change."
+    },
+    {
+      "path": "docs/uri_style/gorilla_v0_1/leg_redesign_r1/build_layout_and_screen.py",
+      "reason": "Gorilla asset-authoring / static preview source retained in its established authoring path to preserve scripts and frozen handoff references; no runtime deployment ownership change."
+    },
+    {
+      "path": "docs/uri_style/gorilla_v0_1/leg_redesign_r1/native/assemble_drives.py",
+      "reason": "Gorilla asset-authoring / static preview source retained in its established authoring path to preserve scripts and frozen handoff references; no runtime deployment ownership change."
+    },
+    {
+      "path": "docs/uri_style/gorilla_v0_1/leg_redesign_r1/native/build_candidate.py",
+      "reason": "Gorilla asset-authoring / static preview source retained in its established authoring path to preserve scripts and frozen handoff references; no runtime deployment ownership change."
+    },
+    {
+      "path": "docs/uri_style/gorilla_v0_1/leg_redesign_r1/native/build_upper_fit_interface.py",
+      "reason": "Gorilla asset-authoring / static preview source retained in its established authoring path to preserve scripts and frozen handoff references; no runtime deployment ownership change."
+    },
+    {
+      "path": "docs/uri_style/gorilla_v0_1/leg_redesign_r1/native/build_whole_fit.py",
+      "reason": "Gorilla asset-authoring / static preview source retained in its established authoring path to preserve scripts and frozen handoff references; no runtime deployment ownership change."
+    },
+    {
+      "path": "docs/uri_style/gorilla_v0_1/leg_redesign_r1/native/check_candidate.py",
+      "reason": "Gorilla asset-authoring / static preview source retained in its established authoring path to preserve scripts and frozen handoff references; no runtime deployment ownership change."
+    },
+    {
+      "path": "docs/uri_style/gorilla_v0_1/leg_redesign_r1/native/check_grounded_crouch.py",
+      "reason": "Gorilla asset-authoring / static preview source retained in its established authoring path to preserve scripts and frozen handoff references; no runtime deployment ownership change."
+    },
+    {
+      "path": "docs/uri_style/gorilla_v0_1/leg_redesign_r1/native/check_loaded_material_replay.py",
+      "reason": "Gorilla asset-authoring / static preview source retained in its established authoring path to preserve scripts and frozen handoff references; no runtime deployment ownership change."
+    },
+    {
+      "path": "docs/uri_style/gorilla_v0_1/leg_redesign_r1/native/check_whole_fit.py",
+      "reason": "Gorilla asset-authoring / static preview source retained in its established authoring path to preserve scripts and frozen handoff references; no runtime deployment ownership change."
+    },
+    {
+      "path": "docs/uri_style/gorilla_v0_1/leg_redesign_r1/native/history/shorter_extra_30deg_rejected/build_candidate.py",
+      "reason": "Gorilla asset-authoring / static preview source retained in its established authoring path to preserve scripts and frozen handoff references; no runtime deployment ownership change."
+    },
+    {
+      "path": "docs/uri_style/gorilla_v0_1/leg_redesign_r1/native/history/tall_stance_superseded_20261003/build_candidate.py",
+      "reason": "Gorilla asset-authoring / static preview source retained in its established authoring path to preserve scripts and frozen handoff references; no runtime deployment ownership change."
+    },
+    {
+      "path": "docs/uri_style/gorilla_v0_1/leg_redesign_r1/native/history/wide_drives_whole_fit_rejected_20261003/assemble_drives.py",
+      "reason": "Gorilla asset-authoring / static preview source retained in its established authoring path to preserve scripts and frozen handoff references; no runtime deployment ownership change."
+    },
+    {
+      "path": "docs/uri_style/gorilla_v0_1/leg_redesign_r1/native/render_candidate.py",
+      "reason": "Gorilla asset-authoring / static preview source retained in its established authoring path to preserve scripts and frozen handoff references; no runtime deployment ownership change."
+    },
+    {
+      "path": "docs/uri_style/gorilla_v0_1/leg_redesign_r1/native/render_whole_fit.py",
+      "reason": "Gorilla asset-authoring / static preview source retained in its established authoring path to preserve scripts and frozen handoff references; no runtime deployment ownership change."
+    },
+    {
+      "path": "docs/uri_style/gorilla_v0_1/leg_redesign_r1/native/run_loaded_leg_probe.py",
+      "reason": "Gorilla asset-authoring / static preview source retained in its established authoring path to preserve scripts and frozen handoff references; no runtime deployment ownership change."
+    },
+    {
+      "path": "docs/uri_style/gorilla_v0_1/leg_redesign_r1/native/screen_drives.py",
+      "reason": "Gorilla asset-authoring / static preview source retained in its established authoring path to preserve scripts and frozen handoff references; no runtime deployment ownership change."
+    },
+    {
+      "path": "docs/uri_style/gorilla_v0_1/leg_redesign_r1/native/select_compact_whole_assembly.py",
+      "reason": "Gorilla asset-authoring / static preview source retained in its established authoring path to preserve scripts and frozen handoff references; no runtime deployment ownership change."
+    },
+    {
+      "path": "docs/uri_style/gorilla_v0_1/leg_redesign_r1/native/select_drive_set.py",
+      "reason": "Gorilla asset-authoring / static preview source retained in its established authoring path to preserve scripts and frozen handoff references; no runtime deployment ownership change."
+    },
+    {
+      "path": "docs/uri_style/gorilla_v0_1/leg_redesign_r1/native/select_finite_assembly.py",
+      "reason": "Gorilla asset-authoring / static preview source retained in its established authoring path to preserve scripts and frozen handoff references; no runtime deployment ownership change."
+    },
+    {
+      "path": "docs/uri_style/gorilla_v0_1/reference_rebuild_r4/source/assemble_geometry_review.py",
+      "reason": "Gorilla asset-authoring / static preview source retained in its established authoring path to preserve scripts and frozen handoff references; no runtime deployment ownership change."
+    },
+    {
+      "path": "docs/uri_style/gorilla_v0_1/reference_rebuild_r4/source/audit_reference_geometry.py",
+      "reason": "Gorilla asset-authoring / static preview source retained in its established authoring path to preserve scripts and frozen handoff references; no runtime deployment ownership change."
+    },
+    {
+      "path": "docs/uri_style/gorilla_v0_1/reference_rebuild_r4/source/build_reference_geometry.py",
+      "reason": "Gorilla asset-authoring / static preview source retained in its established authoring path to preserve scripts and frozen handoff references; no runtime deployment ownership change."
+    },
+    {
+      "path": "docs/uri_style/gorilla_v0_1/reference_rebuild_r4/source/render_reference_geometry.py",
+      "reason": "Gorilla asset-authoring / static preview source retained in its established authoring path to preserve scripts and frozen handoff references; no runtime deployment ownership change."
+    },
+    {
+      "path": "docs/uri_style/gorilla_v0_1/reference_rebuild_r4/source/resolve_static_clearance.py",
+      "reason": "Gorilla asset-authoring / static preview source retained in its established authoring path to preserve scripts and frozen handoff references; no runtime deployment ownership change."
+    },
+    {
+      "path": "docs/uri_style/gorilla_v0_1/source/build_locked_view_layout_rev_aa3.py",
+      "reason": "Gorilla asset-authoring / static preview source retained in its established authoring path to preserve scripts and frozen handoff references; no runtime deployment ownership change."
+    },
+    {
+      "path": "docs/uri_style/gorilla_v0_1/themes/build_theme_preview.py",
+      "reason": "Gorilla asset-authoring / static preview source retained in its established authoring path to preserve scripts and frozen handoff references; no runtime deployment ownership change."
+    },
+    {
+      "path": "docs/uri_style/gorilla_v0_1/themes/index.html",
+      "reason": "Gorilla asset-authoring / static preview source retained in its established authoring path to preserve scripts and frozen handoff references; no runtime deployment ownership change."
+    },
+    {
+      "path": "docs/uri_style/gorilla_v0_2/delivery/gorilla_v0_2_p30/themes/index.html",
+      "reason": "Gorilla asset-authoring / static preview source retained in its established authoring path to preserve scripts and frozen handoff references; no runtime deployment ownership change."
+    },
+    {
+      "path": "docs/uri_style/gorilla_v0_2/delivery/gorilla_v0_2_p30/tools/compose_four_view_revision.py",
+      "reason": "Gorilla asset-authoring / static preview source retained in its established authoring path to preserve scripts and frozen handoff references; no runtime deployment ownership change."
+    },
+    {
+      "path": "docs/uri_style/gorilla_v0_2/delivery/gorilla_v0_2_p30/tools/package_appearance_p30.py",
+      "reason": "Gorilla asset-authoring / static preview source retained in its established authoring path to preserve scripts and frozen handoff references; no runtime deployment ownership change."
+    },
+    {
+      "path": "docs/uri_style/gorilla_v0_2/source/assemble_dense_lower_s8.py",
+      "reason": "Gorilla asset-authoring / static preview source retained in its established authoring path to preserve scripts and frozen handoff references; no runtime deployment ownership change."
+    },
+    {
+      "path": "docs/uri_style/gorilla_v0_2/source/assemble_v0_1_upper_for_top_p22.py",
+      "reason": "Gorilla asset-authoring / static preview source retained in its established authoring path to preserve scripts and frozen handoff references; no runtime deployment ownership change."
+    },
+    {
+      "path": "docs/uri_style/gorilla_v0_2/source/build_lower_body_spatial_s2.py",
+      "reason": "Gorilla asset-authoring / static preview source retained in its established authoring path to preserve scripts and frozen handoff references; no runtime deployment ownership change."
+    },
+    {
+      "path": "docs/uri_style/gorilla_v0_2/source/build_modular_lower_fit_b1.py",
+      "reason": "Gorilla asset-authoring / static preview source retained in its established authoring path to preserve scripts and frozen handoff references; no runtime deployment ownership change."
+    },
+    {
+      "path": "docs/uri_style/gorilla_v0_2/source/build_native_top_registration_p19.py",
+      "reason": "Gorilla asset-authoring / static preview source retained in its established authoring path to preserve scripts and frozen handoff references; no runtime deployment ownership change."
+    },
+    {
+      "path": "docs/uri_style/gorilla_v0_2/source/build_native_top_registration_p21.py",
+      "reason": "Gorilla asset-authoring / static preview source retained in its established authoring path to preserve scripts and frozen handoff references; no runtime deployment ownership change."
+    },
+    {
+      "path": "docs/uri_style/gorilla_v0_2/source/build_top_projection_guide_p15.py",
+      "reason": "Gorilla asset-authoring / static preview source retained in its established authoring path to preserve scripts and frozen handoff references; no runtime deployment ownership change."
+    },
+    {
+      "path": "docs/uri_style/gorilla_v0_2/source/check_illustrated_view_extents.py",
+      "reason": "Gorilla asset-authoring / static preview source retained in its established authoring path to preserve scripts and frozen handoff references; no runtime deployment ownership change."
+    },
+    {
+      "path": "docs/uri_style/gorilla_v0_2/source/check_side_layout_p13.py",
+      "reason": "Gorilla asset-authoring / static preview source retained in its established authoring path to preserve scripts and frozen handoff references; no runtime deployment ownership change."
+    },
+    {
+      "path": "docs/uri_style/gorilla_v0_2/source/clean_reference_in_blender.py",
+      "reason": "Gorilla asset-authoring / static preview source retained in its established authoring path to preserve scripts and frozen handoff references; no runtime deployment ownership change."
+    },
+    {
+      "path": "docs/uri_style/gorilla_v0_2/source/color_lower_by_component_p25.py",
+      "reason": "Gorilla asset-authoring / static preview source retained in its established authoring path to preserve scripts and frozen handoff references; no runtime deployment ownership change."
+    },
+    {
+      "path": "docs/uri_style/gorilla_v0_2/source/complete_modular_interfaces_b3.py",
+      "reason": "Gorilla asset-authoring / static preview source retained in its established authoring path to preserve scripts and frozen handoff references; no runtime deployment ownership change."
+    },
+    {
+      "path": "docs/uri_style/gorilla_v0_2/source/compose_four_view_revision.py",
+      "reason": "Gorilla asset-authoring / static preview source retained in its established authoring path to preserve scripts and frozen handoff references; no runtime deployment ownership change."
+    },
+    {
+      "path": "docs/uri_style/gorilla_v0_2/source/compose_top_local_fix_p19.py",
+      "reason": "Gorilla asset-authoring / static preview source retained in its established authoring path to preserve scripts and frozen handoff references; no runtime deployment ownership change."
+    },
+    {
+      "path": "docs/uri_style/gorilla_v0_2/source/diagnose_dense_topology_s6.py",
+      "reason": "Gorilla asset-authoring / static preview source retained in its established authoring path to preserve scripts and frozen handoff references; no runtime deployment ownership change."
+    },
+    {
+      "path": "docs/uri_style/gorilla_v0_2/source/export_selected_b7_asset.py",
+      "reason": "Gorilla asset-authoring / static preview source retained in its established authoring path to preserve scripts and frozen handoff references; no runtime deployment ownership change."
+    },
+    {
+      "path": "docs/uri_style/gorilla_v0_2/source/extract_primary_volume_guide_b8.py",
+      "reason": "Gorilla asset-authoring / static preview source retained in its established authoring path to preserve scripts and frozen handoff references; no runtime deployment ownership change."
+    },
+    {
+      "path": "docs/uri_style/gorilla_v0_2/source/extract_reference_fit_points_b1.py",
+      "reason": "Gorilla asset-authoring / static preview source retained in its established authoring path to preserve scripts and frozen handoff references; no runtime deployment ownership change."
+    },
+    {
+      "path": "docs/uri_style/gorilla_v0_2/source/generate_complete_foot_reference_s6.py",
+      "reason": "Gorilla asset-authoring / static preview source retained in its established authoring path to preserve scripts and frozen handoff references; no runtime deployment ownership change."
+    },
+    {
+      "path": "docs/uri_style/gorilla_v0_2/source/import_reference_highpoly.py",
+      "reason": "Gorilla asset-authoring / static preview source retained in its established authoring path to preserve scripts and frozen handoff references; no runtime deployment ownership change."
+    },
+    {
+      "path": "docs/uri_style/gorilla_v0_2/source/inspect_complete_foot_reference_s6.py",
+      "reason": "Gorilla asset-authoring / static preview source retained in its established authoring path to preserve scripts and frozen handoff references; no runtime deployment ownership change."
+    },
+    {
+      "path": "docs/uri_style/gorilla_v0_2/source/inspect_fitted_components_b4.py",
+      "reason": "Gorilla asset-authoring / static preview source retained in its established authoring path to preserve scripts and frozen handoff references; no runtime deployment ownership change."
+    },
+    {
+      "path": "docs/uri_style/gorilla_v0_2/source/inspect_native_cloud.py",
+      "reason": "Gorilla asset-authoring / static preview source retained in its established authoring path to preserve scripts and frozen handoff references; no runtime deployment ownership change."
+    },
+    {
+      "path": "docs/uri_style/gorilla_v0_2/source/inspect_reconstruction_points.py",
+      "reason": "Gorilla asset-authoring / static preview source retained in its established authoring path to preserve scripts and frozen handoff references; no runtime deployment ownership change."
+    },
+    {
+      "path": "docs/uri_style/gorilla_v0_2/source/inspect_shared_geometry_blender_s1.py",
+      "reason": "Gorilla asset-authoring / static preview source retained in its established authoring path to preserve scripts and frozen handoff references; no runtime deployment ownership change."
+    },
+    {
+      "path": "docs/uri_style/gorilla_v0_2/source/level_dense_reference_feet_s9.py",
+      "reason": "Gorilla asset-authoring / static preview source retained in its established authoring path to preserve scripts and frozen handoff references; no runtime deployment ownership change."
+    },
+    {
+      "path": "docs/uri_style/gorilla_v0_2/source/manifold_source_sheets.py",
+      "reason": "Gorilla asset-authoring / static preview source retained in its established authoring path to preserve scripts and frozen handoff references; no runtime deployment ownership change."
+    },
+    {
+      "path": "docs/uri_style/gorilla_v0_2/source/package_appearance_p30.py",
+      "reason": "Gorilla asset-authoring / static preview source retained in its established authoring path to preserve scripts and frozen handoff references; no runtime deployment ownership change."
+    },
+    {
+      "path": "docs/uri_style/gorilla_v0_2/source/prepare_dense_lower_review_s9.py",
+      "reason": "Gorilla asset-authoring / static preview source retained in its established authoring path to preserve scripts and frozen handoff references; no runtime deployment ownership change."
+    },
+    {
+      "path": "docs/uri_style/gorilla_v0_2/source/prepare_working_mesh.py",
+      "reason": "Gorilla asset-authoring / static preview source retained in its established authoring path to preserve scripts and frozen handoff references; no runtime deployment ownership change."
+    },
+    {
+      "path": "docs/uri_style/gorilla_v0_2/source/rebuild_fitted_components_b4.py",
+      "reason": "Gorilla asset-authoring / static preview source retained in its established authoring path to preserve scripts and frozen handoff references; no runtime deployment ownership change."
+    },
+    {
+      "path": "docs/uri_style/gorilla_v0_2/source/refine_gorilla_g3.py",
+      "reason": "Gorilla asset-authoring / static preview source retained in its established authoring path to preserve scripts and frozen handoff references; no runtime deployment ownership change."
+    },
+    {
+      "path": "docs/uri_style/gorilla_v0_2/source/refine_lower_body_spatial_s3.py",
+      "reason": "Gorilla asset-authoring / static preview source retained in its established authoring path to preserve scripts and frozen handoff references; no runtime deployment ownership change."
+    },
+    {
+      "path": "docs/uri_style/gorilla_v0_2/source/render_lower_module_guide_s4.py",
+      "reason": "Gorilla asset-authoring / static preview source retained in its established authoring path to preserve scripts and frozen handoff references; no runtime deployment ownership change."
+    },
+    {
+      "path": "docs/uri_style/gorilla_v0_2/source/render_lower_module_guide_s5.py",
+      "reason": "Gorilla asset-authoring / static preview source retained in its established authoring path to preserve scripts and frozen handoff references; no runtime deployment ownership change."
+    },
+    {
+      "path": "docs/uri_style/gorilla_v0_2/source/repair_actual_upper_top_p23.py",
+      "reason": "Gorilla asset-authoring / static preview source retained in its established authoring path to preserve scripts and frozen handoff references; no runtime deployment ownership change."
+    },
+    {
+      "path": "docs/uri_style/gorilla_v0_2/source/repair_dense_lower_surface_s6.py",
+      "reason": "Gorilla asset-authoring / static preview source retained in its established authoring path to preserve scripts and frozen handoff references; no runtime deployment ownership change."
+    },
+    {
+      "path": "docs/uri_style/gorilla_v0_2/source/repair_dense_sheet_topology_s7.py",
+      "reason": "Gorilla asset-authoring / static preview source retained in its established authoring path to preserve scripts and frozen handoff references; no runtime deployment ownership change."
+    },
+    {
+      "path": "docs/uri_style/gorilla_v0_2/source/repair_fitted_patch_solid_b7.py",
+      "reason": "Gorilla asset-authoring / static preview source retained in its established authoring path to preserve scripts and frozen handoff references; no runtime deployment ownership change."
+    },
+    {
+      "path": "docs/uri_style/gorilla_v0_2/source/retopologize_gorilla_g4.py",
+      "reason": "Gorilla asset-authoring / static preview source retained in its established authoring path to preserve scripts and frozen handoff references; no runtime deployment ownership change."
+    },
+    {
+      "path": "docs/uri_style/gorilla_v0_2/source/retopologize_gorilla_g5.py",
+      "reason": "Gorilla asset-authoring / static preview source retained in its established authoring path to preserve scripts and frozen handoff references; no runtime deployment ownership change."
+    },
+    {
+      "path": "docs/uri_style/gorilla_v0_2/source/run_blender.sh",
+      "reason": "Gorilla asset-authoring / static preview source retained in its established authoring path to preserve scripts and frozen handoff references; no runtime deployment ownership change."
+    },
+    {
+      "path": "docs/uri_style/gorilla_v0_2/source/run_reference_3d.py",
+      "reason": "Gorilla asset-authoring / static preview source retained in its established authoring path to preserve scripts and frozen handoff references; no runtime deployment ownership change."
+    },
+    {
+      "path": "docs/uri_style/gorilla_v0_2/themes/index.html",
+      "reason": "Gorilla asset-authoring / static preview source retained in its established authoring path to preserve scripts and frozen handoff references; no runtime deployment ownership change."
+    },
+    {
+      "path": "robots/gorilla/README.md",
+      "reason": "README.md uses the GitHub directory landing-page convention for project / artbook navigation."
+    },
+    {
+      "path": "robots/gorilla/v0_2_p30/README.md",
+      "reason": "README.md uses the GitHub directory landing-page convention for project / artbook navigation."
+    },
+    {
+      "path": "docs/uri_style/README.md",
+      "reason": "README.md uses the GitHub directory landing-page convention for project / artbook navigation."
+    },
+    {
+      "path": "docs/uri_style/gorilla_v0_1/README.md",
+      "reason": "README.md uses the GitHub directory landing-page convention for project / artbook navigation."
+    },
+    {
+      "path": "docs/uri_style/gorilla_v0_2/README.md",
+      "reason": "README.md uses the GitHub directory landing-page convention for project / artbook navigation."
+    },
+    {
+      "path": "vehicles/Sainiverse_v0.1/README.md",
+      "reason": "README.md uses the GitHub directory landing-page convention for project / artbook navigation."
+    }
+  ],
+  "source_records": [
+    {
+      "path": "docs/uri_style/integrated_core_concept.png",
+      "repository": "built-in imagegen",
+      "revision": "/home/ethan/.codex/generated_images/01a0f3ab-7a57-7172-b8c5-e517aa2973da/exec-14ceffd0-a547-4012-885d-f2a34502d8ee.png",
+      "sha256": "6b068d42588b2f390095af9a144ad4e5ef0a6e0eb3c404b316adbe64b269489a",
+      "reason": "Generated illustration X; Edited W to reduce distress, increase lower-body/foot bulk and shorten lower-front tip. Thick limbs improved directionally; requested length/scale ratios not verified and some fine edge noise remains. Aesthetic and all engineering gates remain open."
+    },
+    {
+      "path": "docs/uri_style/gorilla_v0_1/references/approved_direction.png",
+      "repository": "user attachment or project URI reference",
+      "revision": "/home/ethan/Projects/Sai_Art/docs/uri_style/integrated_core_concept.png",
+      "sha256": "6b068d42588b2f390095af9a144ad4e5ef0a6e0eb3c404b316adbe64b269489a",
+      "reason": "approved continuous-core direction"
+    },
+    {
+      "path": "docs/uri_style/gorilla_v0_1/references/full_torso_reference.png",
+      "repository": "user attachment or project URI reference",
+      "revision": "/tmp/codex-clipboard-334d8daa-eefa-4a2e-b2cf-54bb6a98fbc1.png",
+      "sha256": "a2f1a7174d287a521b17a704a30bebc34f1e176e2354c29ba67e794b430af13a",
+      "reason": "user-provided full torso geometry"
+    },
+    {
+      "path": "docs/uri_style/gorilla_v0_1/references/leg_structure_reference.png",
+      "repository": "user attachment or project URI reference",
+      "revision": "/tmp/codex-clipboard-97df6097-34c9-422f-8eb8-e5c2ebb06f82.png",
+      "sha256": "7b103fb671ee5530c576d5054033626e3b960d7ac2d54ee678807057894fe22d",
+      "reason": "primary structural reference, no weapons or wear"
+    },
+    {
+      "path": "docs/uri_style/gorilla_v0_1/references/leg_structure_reference_02.png",
+      "repository": "user attachment or project URI reference",
+      "revision": "/tmp/codex-clipboard-8a409479-a16f-4697-8e86-ff0fffd9fbdb.png",
+      "sha256": "38733623b7a795de916c1365e96aad7515b58b99876c4b1050b292f765889ded",
+      "reason": "secondary structural reference"
+    },
+    {
+      "path": "docs/uri_style/gorilla_v0_1/references/integrated_angular_structure_reference.png",
+      "repository": "user attachment or project URI reference",
+      "revision": "/tmp/codex-clipboard-be53d997-690c-47a3-8e0f-7becf5bc4f08.png",
+      "sha256": "cddd8d5d518dde22995835d6dee356a07afc19a58496aedcee8d9089946fc2a9",
+      "reason": "additional industrial structure study; not actual imagegen input yet"
+    },
+    {
+      "path": "docs/uri_style/gorilla_v0_1/references/z_leg_structure_reference.png",
+      "repository": "user attachment or project URI reference",
+      "revision": "/tmp/codex-clipboard-ab8d932e-7aaf-4927-987e-644d8796d073.png",
+      "sha256": "351ceeb2d1b6f3418335b8c46a8d3cfb74026e39e12ced6b3b43b94378248f0e",
+      "reason": "additional fold-joint leg grammar"
+    },
+    {
+      "path": "docs/uri_style/gorilla_v0_1/references/style_01_headphones.png",
+      "repository": "user attachment or project URI reference",
+      "revision": "/home/ethan/Projects/Sai_Art/.agents/skills/uri-style/assets/style_01_headphones.png",
+      "sha256": "78270e8007dea7ebd84e580bb5fa1d936cc9118b375e9b8845b3cffc84d51c0c",
+      "reason": "fixed URI full-size STYLE original"
+    },
+    {
+      "path": "docs/uri_style/gorilla_v0_1/references/style_03_waterfront.png",
+      "repository": "user attachment or project URI reference",
+      "revision": "/home/ethan/Projects/Sai_Art/.agents/skills/uri-style/assets/style_03_waterfront.png",
+      "sha256": "25b75c83586e01222dde9cd164035afe9cba005b08cd2674eb6b9993aa12c053",
+      "reason": "fixed URI full-size STYLE original"
+    },
+    {
+      "path": "docs/uri_style/gorilla_v0_1/references/style_06_architecture.png",
+      "repository": "user attachment or project URI reference",
+      "revision": "/home/ethan/Projects/Sai_Art/.agents/skills/uri-style/assets/style_06_architecture.png",
+      "sha256": "51118389231d7cf1832b8b466aa31af2b6950f04cc91b77473e1f94b5a56e59c",
+      "reason": "fixed URI full-size STYLE original"
+    },
+    {
+      "path": "docs/uri_style/gorilla_v0_1/images/appearance_master.png",
+      "repository": "built-in imagegen",
+      "revision": "/home/ethan/.codex/generated_images/01a0f3ab-7a57-7172-b8c5-e517aa2973da/exec-c34c8deb-af2f-437c-834b-3d3498c2369c.png",
+      "sha256": "c0aa37b1f95f1c8a3bd2e2fb17375cf1a91c39bc1af9d4ecea5b22ff72c20fd6",
+      "reason": "Gorilla A / G1; superseded_after_user_torso_feedback. Original continuous-core identity retained; later request broadens torso."
+    },
+    {
+      "path": "docs/uri_style/gorilla_v0_1/images/orthographic_exploration_rev_a.png",
+      "repository": "built-in imagegen",
+      "revision": "/home/ethan/.codex/generated_images/01a0f3ab-7a57-7172-b8c5-e517aa2973da/exec-14385df3-ca97-4444-bb78-a88bd6c085ae.png",
+      "sha256": "882a55925f6e74d4d0f98c990043c64f1ac680434936dc1dc9a286674093f697",
+      "reason": "Gorilla A / G2; superseded_exploration. Initial freehand four-view plate, not a validated same-assembly projection."
+    },
+    {
+      "path": "docs/uri_style/gorilla_v0_1/images/blocky_torso_exploration_rev_b.png",
+      "repository": "built-in imagegen",
+      "revision": "/home/ethan/.codex/generated_images/01a0f3ab-7a57-7172-b8c5-e517aa2973da/exec-b10390ea-9959-4030-98b5-3ab91ef85993.png",
+      "sha256": "cfd600e8cf44a7944fc0ea61621acc1cc7f7c73fddeb0c9f63937cf4da818b54",
+      "reason": "Gorilla B / G3; rejected_blockout_appearance_leakage. Primitive geometry displaced approved appearance. User clarified blockout supplies size and location only."
+    },
+    {
+      "path": "docs/uri_style/gorilla_v0_1/images/appearance_master_rev_d.png",
+      "repository": "built-in imagegen",
+      "revision": "/home/ethan/.codex/generated_images/01a0f3ab-7a57-7172-b8c5-e517aa2973da/exec-9daf275a-5362-41fe-b5c2-188b3735f88c.png",
+      "sha256": "adb26ca8de29cf7096be992b10799fa8cb218e2098c4957a0466c489e79ae2e4",
+      "reason": "Gorilla D / G4; superseded_by_new_leg_structure. Fuller torso revision using artwork appearance authority; no blockout image."
+    },
+    {
+      "path": "docs/uri_style/gorilla_v0_1/images/turnaround_rev_d.png",
+      "repository": "built-in imagegen",
+      "revision": "/home/ethan/.codex/generated_images/01a0f3ab-7a57-7172-b8c5-e517aa2973da/exec-1e33c69c-77f8-4e49-9c10-4af34aef4e30.png",
+      "sha256": "0ca6f7ea345ba15d849157eb04d2d4da721ad01542aaae8d2193e0ac28a90d26",
+      "reason": "Gorilla D / G5; superseded_rear_heel_error. Agent found front toe geometry duplicated into rear feet."
+    },
+    {
+      "path": "docs/uri_style/gorilla_v0_1/images/details_rev_d.png",
+      "repository": "built-in imagegen",
+      "revision": "/home/ethan/.codex/generated_images/01a0f3ab-7a57-7172-b8c5-e517aa2973da/exec-ac2dc613-9fb4-49dd-9f00-4439d0419a5e.png",
+      "sha256": "04e3f95f744267d0e6a0680e0a3e26bbb7d21a930642d4db221721f915fa62ee",
+      "reason": "Gorilla D / G6; superseded_rear_heel_error. Rear feet and rear-view title required local correction."
+    },
+    {
+      "path": "docs/uri_style/gorilla_v0_1/images/turnaround_final_rev_d.png",
+      "repository": "built-in imagegen",
+      "revision": "/home/ethan/.codex/generated_images/01a0f3ab-7a57-7172-b8c5-e517aa2973da/exec-c2852a17-ea6a-45c6-a79f-edf6de82d639.png",
+      "sha256": "bf0a24358abc3f77bd417d264626edc6aa2b8289765aaa9dd2d1f00b383ea3ec",
+      "reason": "Gorilla D / G7; superseded_by_new_leg_structure. Rear toe bumpers removed and heel covers restored."
+    },
+    {
+      "path": "docs/uri_style/gorilla_v0_1/images/details_final_rev_d.png",
+      "repository": "built-in imagegen",
+      "revision": "/home/ethan/.codex/generated_images/01a0f3ab-7a57-7172-b8c5-e517aa2973da/exec-970d679a-f5c1-4f30-9e32-1947476e69f3.png",
+      "sha256": "a2b249066345203fb9b445f7f073efe83e2b66018f853c001e2462b92e535d63",
+      "reason": "Gorilla D / G8; superseded_by_new_leg_structure. Corrected rear heels, title REAR."
+    },
+    {
+      "path": "docs/uri_style/gorilla_v0_1/images/structure_variant_rev_e.png",
+      "repository": "built-in imagegen",
+      "revision": "/home/ethan/.codex/generated_images/01a0f3ab-7a57-7172-b8c5-e517aa2973da/exec-538e3e66-53a3-4b28-8f9e-d4c997dd692f.png",
+      "sha256": "2f1a797dbc2fa5d16b9f6813bb66e92a622f99311147448c2dafc8d841072334",
+      "reason": "Gorilla E / G9; user_rejected_leg_topology_and_upper_core. Used ordinary two-link legs; user explicitly requests Z legs with one extra intermediate joint and criticizes upper core."
+    },
+    {
+      "path": "docs/uri_style/gorilla_v0_1/images/z_leg_variant_rev_f.png",
+      "repository": "built-in imagegen",
+      "revision": "/home/ethan/.codex/generated_images/01a0f3ab-7a57-7172-b8c5-e517aa2973da/exec-faa0ded1-6fbf-44fa-862d-e50cfc477759.png",
+      "sha256": "fdd3b5d29c1e5568b4bf550a230317618438cac6c32f36af463190621333862c",
+      "reason": "Gorilla F / G10; current_review_candidate. Actual three-link leg chain and two intermediate fold joints visible in the side inset; newly organized continuous upper core. Cosmetic seam/cover differences among rendered angles still possible."
+    },
+    {
+      "path": "docs/uri_style/gorilla_v0_1/images/turnaround_rev_f.png",
+      "repository": "built-in imagegen",
+      "revision": "/home/ethan/.codex/generated_images/01a0f3ab-7a57-7172-b8c5-e517aa2973da/exec-ef0d7054-a44d-41d3-8c0d-fafd482b5b84.png",
+      "sha256": "8c0cda9f9d3b7f61277f9a64025c6a09d5a6a319ff27d1795c036645df1abe7b",
+      "reason": "Gorilla F / G11; current_review_candidate. Front/rear show all three link levels; side preserves two fold joints plus distinct ankle; rear heels visually separated from front toe. Profile faces right despite requested left-facing composition; LEFT SIDE title identifies viewpoint. Raster views are conceptual, not identical CAD projections."
+    },
+    {
+      "path": "docs/uri_style/gorilla_v0_1/source/blockout_views/front.png",
+      "repository": "Sai_Art appearance tool",
+      "revision": "docs/uri_style/gorilla_v0_1/source/build_blockout.py SHA256 9080ee17a7467a89e85b0afe966810ebae6dc152fa119bf5ce1460035f9de51d",
+      "sha256": "8d6711bae1d7442d6a773c0476bd150cd52e425ac8f242ec8f94495cf9bc66e7",
+      "reason": "Existing C coarse-model projection; internal size/location reference only, rejected as appearance template; not final design artwork."
+    },
+    {
+      "path": "docs/uri_style/gorilla_v0_1/source/blockout_views/front_three_quarter.png",
+      "repository": "Sai_Art appearance tool",
+      "revision": "docs/uri_style/gorilla_v0_1/source/build_blockout.py SHA256 9080ee17a7467a89e85b0afe966810ebae6dc152fa119bf5ce1460035f9de51d",
+      "sha256": "132fa1ded999c06ed05abd09fa3bec97fa36f3dab056351c2c71d70fd01b7541",
+      "reason": "Existing C coarse-model projection; internal size/location reference only, rejected as appearance template; not final design artwork."
+    },
+    {
+      "path": "docs/uri_style/gorilla_v0_1/source/blockout_views/left.png",
+      "repository": "Sai_Art appearance tool",
+      "revision": "docs/uri_style/gorilla_v0_1/source/build_blockout.py SHA256 9080ee17a7467a89e85b0afe966810ebae6dc152fa119bf5ce1460035f9de51d",
+      "sha256": "4056e599023d9e281dc37ce88580cb74724066800ec1d8777993635f2b51763b",
+      "reason": "Existing C coarse-model projection; internal size/location reference only, rejected as appearance template; not final design artwork."
+    },
+    {
+      "path": "docs/uri_style/gorilla_v0_1/source/blockout_views/orthographic_sheet.png",
+      "repository": "Sai_Art appearance tool",
+      "revision": "docs/uri_style/gorilla_v0_1/source/build_blockout.py SHA256 9080ee17a7467a89e85b0afe966810ebae6dc152fa119bf5ce1460035f9de51d",
+      "sha256": "65f7a01fef259bfe43061160a6bebb16afdf099ecb66214b89d6c508f5a14ad6",
+      "reason": "Existing C coarse-model projection; internal size/location reference only, rejected as appearance template; not final design artwork."
+    },
+    {
+      "path": "docs/uri_style/gorilla_v0_1/source/blockout_views/rear.png",
+      "repository": "Sai_Art appearance tool",
+      "revision": "docs/uri_style/gorilla_v0_1/source/build_blockout.py SHA256 9080ee17a7467a89e85b0afe966810ebae6dc152fa119bf5ce1460035f9de51d",
+      "sha256": "180f580d5e470bf7461ace071e71bd08839a517e7e4d7dcbe894b47c78cacc8c",
+      "reason": "Existing C coarse-model projection; internal size/location reference only, rejected as appearance template; not final design artwork."
+    },
+    {
+      "path": "docs/uri_style/gorilla_v0_1/source/blockout_views/rear_three_quarter.png",
+      "repository": "Sai_Art appearance tool",
+      "revision": "docs/uri_style/gorilla_v0_1/source/build_blockout.py SHA256 9080ee17a7467a89e85b0afe966810ebae6dc152fa119bf5ce1460035f9de51d",
+      "sha256": "07aa3cbb9d1933315585b18967f6b35c160ca5179fc5126a8eeddd1376fe8c1c",
+      "reason": "Existing C coarse-model projection; internal size/location reference only, rejected as appearance template; not final design artwork."
+    },
+    {
+      "path": "docs/uri_style/gorilla_v0_1/source/blockout_views/top.png",
+      "repository": "Sai_Art appearance tool",
+      "revision": "docs/uri_style/gorilla_v0_1/source/build_blockout.py SHA256 9080ee17a7467a89e85b0afe966810ebae6dc152fa119bf5ce1460035f9de51d",
+      "sha256": "873a835ab1b4b294d14a8dfa3b544cce252a1cf4d7dc276f52e70f0426c8a6c9",
+      "reason": "Existing C coarse-model projection; internal size/location reference only, rejected as appearance template; not final design artwork."
+    },
+    {
+      "path": "docs/uri_style/gorilla_v0_1/source/gorilla_appearance_blockout.blend",
+      "repository": "Sai_Art appearance tool",
+      "revision": "docs/uri_style/gorilla_v0_1/source/build_blockout.py SHA256 9080ee17a7467a89e85b0afe966810ebae6dc152fa119bf5ce1460035f9de51d",
+      "sha256": "f533ff25e3b70224191bda7a7cd54470a4a1b302e85c17ef0f41cf5d931b0cf8",
+      "reason": "Frozen coarse size/location helper, no engineering/model deliverable."
+    },
+    {
+      "path": "docs/uri_style/gorilla_v0_1/images/hard_armor_lower_leg_rev_g.png",
+      "repository": "built-in imagegen",
+      "revision": "G12 / Rev G / exact prompt docs/uri_style/gorilla_v0_1/prompts/hard_armor_lower_leg_rev_g.txt SHA256 f133d3aac12226c1d74cc1839768247d9f1bdfe89442ff72be6a093e59ca201b",
+      "source_path": "/home/ethan/.codex/generated_images/01a0f3ab-7a57-7172-b8c5-e517aa2973da/exec-62808fbd-bc74-4ed7-8252-c88e0d4ff0e2.png",
+      "sha256": "a53918c6034b2d0317c064418533cd12eaf98cd0cfa495729d8728a5e0106c02",
+      "reason": "Appearance concept image copied byte-for-byte; user_rejected_head_legs_and_feet; no external engineering handoff."
+    },
+    {
+      "path": "docs/uri_style/gorilla_v0_1/images/reference_first_rev_h.png",
+      "repository": "built-in imagegen",
+      "revision": "G13 / Rev H / exact prompt docs/uri_style/gorilla_v0_1/prompts/reference_first_rev_h.txt SHA256 2c0cba170079331783546e079369445342e16d4cf2ffa7f464ab592ea133ba31",
+      "source_path": "/home/ethan/.codex/generated_images/01a0f3ab-7a57-7172-b8c5-e517aa2973da/exec-a421f9fe-7c2e-4942-833d-d1e1b29f3fb0.png",
+      "sha256": "215b555829e657507e219713ad7741f1e6f8d67e715aea92cf75d24f1776b033",
+      "reason": "Appearance concept image copied byte-for-byte; user_rejected_surface_language_and_cleanliness; no external engineering handoff."
+    },
+    {
+      "path": "docs/uri_style/gorilla_v0_1/images/freeform_surface_rev_i.png",
+      "repository": "built-in imagegen",
+      "revision": "G14 / Rev I / exact prompt docs/uri_style/gorilla_v0_1/prompts/freeform_surface_rev_i.txt SHA256 548207b14a7b2e3efed0912cb6d323681ceb87b0c654f1ca1d867f156f9371de",
+      "source_path": "/home/ethan/.codex/generated_images/01a0f3ab-7a57-7172-b8c5-e517aa2973da/exec-8e9117a0-639a-4c0f-81ca-845ed837ab6a.png",
+      "sha256": "a4dad17c2512bd99096bd40f82fa360f0c30a9ff5ae77d4aacb688e21e614bb9",
+      "reason": "Appearance concept image copied byte-for-byte; awaiting_user_surface_and_appearance_review; no external engineering handoff."
+    },
+    {
+      "path": "docs/uri_style/gorilla_v0_1/images/freeform_surface_rev_i2.png",
+      "repository": "built-in imagegen",
+      "revision": "G15 / Rev I2 / exact prompt docs/uri_style/gorilla_v0_1/prompts/freeform_surface_rev_i2.txt SHA256 e57c0a0a67f41cea6c85a018f3bfc69eff9cff21f3e28dc0f8a61b2f200b86d0",
+      "source_path": "/home/ethan/.codex/generated_images/01a0f3ab-7a57-7172-b8c5-e517aa2973da/exec-2f01840b-58da-42f6-87ae-d844470369f9.png",
+      "sha256": "eb04f532625abcd6187f8c3be833ec3a55a4438abde156dd5d1c9c9c38108235",
+      "reason": "Appearance concept copied byte-for-byte; superseded_by_user_crown_hand_foot_feedback; no external engineering handoff."
+    },
+    {
+      "path": "docs/uri_style/gorilla_v0_1/images/crown_graspers_feet_rev_j.png",
+      "repository": "built-in imagegen",
+      "revision": "G16 / Rev J / exact prompt docs/uri_style/gorilla_v0_1/prompts/crown_graspers_feet_rev_j.txt SHA256 ec4eea67280270393ee306b69cffd4bdd5843588dec28619e10698e6f66b56b7",
+      "source_path": "/home/ethan/.codex/generated_images/01a0f3ab-7a57-7172-b8c5-e517aa2973da/exec-f4835387-3b04-4349-b259-013beb887a97.png",
+      "sha256": "2a9810b31bc8f0d232ac2ba051c4a8072a6ec63235cd17fb6313a9bbbaaf333b",
+      "reason": "Appearance concept copied byte-for-byte; awaiting_user_appearance_review; no external engineering handoff."
+    },
+    {
+      "path": "docs/uri_style/gorilla_v0_1/images/main_design_rev_m.png",
+      "repository": "built-in imagegen",
+      "revision": "G17 / Rev M / exact prompt docs/uri_style/gorilla_v0_1/prompts/main_design_rev_m.txt SHA256 f4e48303e41bb6d9dfc4f0e53ff4b13d9021b3b33c256fe3a9c9fa5e690e9e3f",
+      "source_path": "/home/ethan/.codex/generated_images/01a0f3ab-7a57-7172-b8c5-e517aa2973da/exec-a98c6147-86c7-4eeb-a3c0-6c64fd297050.png",
+      "sha256": "df5fdfb4c5e49dd79de4eb903c8bae17c3bced16137ab0972f986ad2049c28e6",
+      "reason": "Appearance artwork copied byte-for-byte; user_rejected_persistent_crown_hollow; no external engineering handoff."
+    },
+    {
+      "path": "docs/uri_style/gorilla_v0_1/images/main_design_rev_n.png",
+      "repository": "built-in imagegen",
+      "revision": "G18 / Rev N / exact prompt docs/uri_style/gorilla_v0_1/prompts/crown_full_volume_rev_n.txt SHA256 fc3aa53c13faf8d56b329741bc21c6b0969a37c075356063572a9cb76eaeab8d",
+      "source_path": "/home/ethan/.codex/generated_images/01a0f3ab-7a57-7172-b8c5-e517aa2973da/exec-b878fba6-d6e1-419b-83fd-a14cc96e9ff4.png",
+      "sha256": "2764a6e7a715abf4b87e73192fd63131e3ddf716b046e52586ec53c6446509da",
+      "reason": "Appearance artwork copied byte-for-byte; awaiting_user_main_design_review; no external engineering handoff."
+    },
+    {
+      "path": "docs/uri_style/gorilla_v0_1/source/raw_fermat_projection_rev_l.png",
+      "repository": "Sai_Art abandoned appearance helper",
+      "revision": "docs/uri_style/gorilla_v0_1/source/build_manifold_study.py SHA256 afdf870b1a9ae041c70afe7339233a60efd97e8614077f4bcd24226221e1fda0",
+      "sha256": "164b4123d6b51554cc798026a6e210cd6c248dbba1b1cbe897dad5ceeb0b3aaf",
+      "reason": "Computed reference-only mathematical plot; experimental path stopped at user request, excluded from final image inputs/deliverables."
+    },
+    {
+      "path": "docs/uri_style/gorilla_v0_1/source/manifold_projection_guide_rev_l.png",
+      "repository": "Sai_Art abandoned appearance helper",
+      "revision": "docs/uri_style/gorilla_v0_1/source/build_manifold_study.py SHA256 afdf870b1a9ae041c70afe7339233a60efd97e8614077f4bcd24226221e1fda0",
+      "sha256": "80795a5a12d1df8e159cec0965da7f4f07b6366644ce3fc0dc156e34c55cbf12",
+      "reason": "Computed reference-only mathematical plot; experimental path stopped at user request, excluded from final image inputs/deliverables."
+    },
+    {
+      "path": "docs/uri_style/gorilla_v0_1/images/symmetric_front_rev_o.png",
+      "repository": "built-in imagegen",
+      "revision": "G19 / Rev O / exact prompt docs/uri_style/gorilla_v0_1/prompts/symmetric_front_rev_o.txt SHA256 66b0a0b2f75ec93b7f04a8f9c50bbbb9b75e26130119ac7d0cf0f8df4999ccaf",
+      "source_path": "/home/ethan/.codex/generated_images/01a0f3ab-7a57-7172-b8c5-e517aa2973da/exec-29fff2f9-8ecc-472a-858a-7ce72a3c976f.png",
+      "sha256": "283635e8ebf082c58798416b436ab64972f75fa0cf191d7412b72df1d6680758",
+      "reason": "Appearance artwork copied byte-for-byte; front main design awaiting user review; no external engineering handoff."
+    },
+    {
+      "path": "docs/uri_style/gorilla_v0_1/images/crown_attack_rev_p.png",
+      "repository": "built-in imagegen",
+      "revision": "G20 / Rev P / exact prompt docs/uri_style/gorilla_v0_1/prompts/crown_attack_rev_p.txt SHA256 c0342ab3d2e71f34f70316b6e35c8b6e74d94a10900208f6eda72134c519ce8a",
+      "source_path": "/home/ethan/.codex/generated_images/01a0f3ab-7a57-7172-b8c5-e517aa2973da/exec-a443d92c-53a3-4a9c-aecd-fd49affd3890.png",
+      "sha256": "9bd0486f6ad04ce5a0dca16a056011c9573e5b27d9aba6d748831621bad78f21",
+      "reason": "Appearance artwork copied byte-for-byte; agent_rejected_top_frame_contact_and_fluting; no external engineering handoff."
+    },
+    {
+      "path": "docs/uri_style/gorilla_v0_1/images/crown_attack_finish_rev_p2.png",
+      "repository": "built-in imagegen",
+      "revision": "G21 / Rev P2 / exact prompt docs/uri_style/gorilla_v0_1/prompts/crown_attack_finish_rev_p2.txt SHA256 ead7915ff44eaddc181a4219c36fd6fff4e46b663cdf600a118502a788b84707",
+      "source_path": "/home/ethan/.codex/generated_images/01a0f3ab-7a57-7172-b8c5-e517aa2973da/exec-59eda897-7ae5-43f1-96ac-c94f8eb9d695.png",
+      "sha256": "4e6286642e56a21abb7470411d36254749004d82a75150197995b1a0ede0b68a",
+      "reason": "Appearance artwork copied byte-for-byte; awaiting_user_main_design_review; no external engineering handoff."
+    },
+    {
+      "path": "docs/uri_style/gorilla_v0_1/images/streamlined_functional_rev_q.png",
+      "repository": "built-in imagegen",
+      "revision": "G22 / Rev Q / exact prompt docs/uri_style/gorilla_v0_1/prompts/streamlined_functional_rev_q.txt SHA256 f7562a067d97fa0adb4e44aa571a6b28becec3736ed7ca9864974fc8ce55d39f",
+      "source_path": "/home/ethan/.codex/generated_images/01a0f3ab-7a57-7172-b8c5-e517aa2973da/exec-6861cc1b-2025-46c8-b4c8-771b6cdff22d.png",
+      "sha256": "d9376a316c8ee41b29a6ebc8906c52407c9cfbe1194537d07fce23939e84331a",
+      "reason": "Appearance artwork copied byte-for-byte; agent_rejected_incomplete_regional_changes; no external engineering handoff."
+    },
+    {
+      "path": "docs/uri_style/gorilla_v0_1/images/streamlined_regional_redraw_rev_q2.png",
+      "repository": "built-in imagegen",
+      "revision": "G23 / Rev Q2 / exact prompt docs/uri_style/gorilla_v0_1/prompts/streamlined_regional_redraw_rev_q2.txt SHA256 bc06f934a37ea04a0e0cbd2a0ad7d3476a9ca3e98d20b6609791924cc07d04bc",
+      "source_path": "/home/ethan/.codex/generated_images/01a0f3ab-7a57-7172-b8c5-e517aa2973da/exec-8adc6546-7d13-49c2-b780-006e59b75799.png",
+      "sha256": "1f283f2003843069dc8bfdf7447133d4aed1c5542ce18c2eb8894f9ebae3c388",
+      "reason": "Appearance artwork copied byte-for-byte; awaiting_user_main_design_review; no external engineering handoff."
+    },
+    {
+      "path": "docs/uri_style/gorilla_v0_1/references/foot_folded_reference_03.png",
+      "repository": "user attachment",
+      "revision": "2026-10-01 foot correction",
+      "source_path": "/tmp/codex-clipboard-d15a55dc-96f9-4a13-8e4f-57f3e4e47fb5.png",
+      "sha256": "b2da51762b809c65d80e27555ac224c649f0fc2c4359981d9f87609befdccb73",
+      "reason": "foot geometry: thin formed support, restrained upturned toe and separate heel; copied byte-for-byte"
+    },
+    {
+      "path": "docs/uri_style/gorilla_v0_1/references/foot_compact_reference_04.png",
+      "repository": "user attachment",
+      "revision": "2026-10-01 foot correction",
+      "source_path": "/tmp/codex-clipboard-ca66692a-dd8f-4ee0-8e85-d7a2acfeeb41.png",
+      "sha256": "c5dc9cfdda225e63fdb1467f19e1a34cfa51fd9b4f43092afbeaccbd35ed2460",
+      "reason": "secondary user foot study; not used as imagegen input in this call; copied byte-for-byte"
+    },
+    {
+      "path": "docs/uri_style/gorilla_v0_1/references/leg_foot_synthesis_reference_05.png",
+      "repository": "user attachment",
+      "revision": "2026-10-01 leg and foot synthesis",
+      "source_path": "/tmp/codex-clipboard-c082b2b4-3da1-4f6f-a933-e9379537a2f8.png",
+      "sha256": "0a16d270d29d8cf76bc042a76db0c323b183a7b2c06fbe855fbcf09fcfcfe5b3",
+      "reason": "lower-link hierarchy and distinct ankle/foot study; observed, not imagegen input; copied byte-for-byte"
+    },
+    {
+      "path": "docs/uri_style/gorilla_v0_1/references/leg_foot_synthesis_reference_06.png",
+      "repository": "user attachment",
+      "revision": "2026-10-01 leg and foot synthesis",
+      "source_path": "/tmp/codex-clipboard-b9449a2e-32ea-4f5b-a87b-ff077fefebb3.png",
+      "sha256": "5982613fa472e4b7505ed5ef6f7edb09a92b70b415e4427a778ca5cf0176df42",
+      "reason": "compact terminal linkage and concise foot study; observed, not imagegen input; copied byte-for-byte"
+    },
+    {
+      "path": "docs/uri_style/gorilla_v0_1/references/leg_foot_synthesis_reference_07.png",
+      "repository": "user attachment",
+      "revision": "2026-10-01 leg and foot synthesis",
+      "source_path": "/tmp/codex-clipboard-f56a7016-7d01-47ef-a687-0cde60ea7355.png",
+      "sha256": "35f67a0a830b7e010b166305ed2667cf0b46c707a827dac3707869df92ef19c0",
+      "reason": "slender distal member and functional ankle/heel study; observed, not imagegen input; copied byte-for-byte"
+    },
+    {
+      "path": "docs/uri_style/gorilla_v0_1/references/leg_foot_synthesis_reference_08.png",
+      "repository": "user attachment",
+      "revision": "2026-10-01 leg and foot synthesis",
+      "source_path": "/tmp/codex-clipboard-d06d10cf-15e6-4844-beb3-852f7e5bf83b.png",
+      "sha256": "d49f326f70ed1f25757f9a4028e43e75327b584684fb998131bb9b97b9e5b35b",
+      "reason": "primary lower-chain and formed forefoot/heel geometry for Rev R; no weapons, upper body or source finish; copied byte-for-byte"
+    },
+    {
+      "path": "docs/uri_style/gorilla_v0_1/references/leg_foot_synthesis_reference_09.png",
+      "repository": "user attachment",
+      "revision": "2026-10-01 leg and foot synthesis",
+      "source_path": "/tmp/codex-clipboard-dbb68ef5-eac3-47ef-9639-05043869b1e1.png",
+      "sha256": "32cded2bb0986633317c6987373022b5f7cfa5239032584fe39826018e9b1ecf",
+      "reason": "distinct articulated lower groups and low foot study; observed, not imagegen input; copied byte-for-byte"
+    },
+    {
+      "path": "docs/uri_style/gorilla_v0_1/images/guard_link_foot_rev_r.png",
+      "repository": "built-in imagegen",
+      "revision": "G24 / Rev R / exact prompt docs/uri_style/gorilla_v0_1/prompts/guard_link_foot_rev_r.txt SHA256 34f7264a5e93d7457b6f70fba653064e0eb90115fe71d349137d8141021ebb06",
+      "source_path": "/home/ethan/.codex/generated_images/01a0f3ab-7a57-7172-b8c5-e517aa2973da/exec-a7cb2738-79b3-4200-b0f5-079405281270.png",
+      "sha256": "75afeea284c8a9581cb205f9b3acb9cfb11f9543adf1c4f2e7ea6922a71c29e3",
+      "reason": "Appearance artwork copied byte-for-byte; awaiting user review; no external engineering handoff."
+    },
+    {
+      "path": "docs/uri_style/gorilla_v0_1/images/balanced_original_blue_rev_s.png",
+      "repository": "built-in imagegen",
+      "revision": "G25 / Rev S / exact prompt docs/uri_style/gorilla_v0_1/prompts/balanced_original_blue_rev_s.txt SHA256 1e0c751fc7c01c71910ccbded7f2294eeabf229a48f0626d5e3fbdd9b7492ab0",
+      "source_path": "/home/ethan/.codex/generated_images/01a0f3ab-7a57-7172-b8c5-e517aa2973da/exec-f2103610-7461-4d70-ac20-18717c11e426.png",
+      "sha256": "fb525b3d0cec7a3eae211aa3663961e2ae0dfba392cf91b93d8359bc0bde47f6",
+      "reason": "Appearance artwork copied byte-for-byte; awaiting user review; no external engineering handoff."
+    },
+    {
+      "path": "docs/uri_style/gorilla_v0_1/references/user_upper_contour_rev_t.png",
+      "repository": "user attachment",
+      "revision": "2026-10-01 upper contour correction",
+      "source_path": "/tmp/codex-clipboard-288e30e9-56c0-41c3-83c8-0b56e2ff843a.png",
+      "sha256": "08c5be17f025d55a35588e1c5d378c704bddad840df450dcc7314f9493bea774",
+      "reason": "User geometry guide copied byte-for-byte; drawing strokes are guide only."
+    },
+    {
+      "path": "docs/uri_style/gorilla_v0_1/images/minimal_sketch_grounded_rev_t.png",
+      "repository": "built-in imagegen",
+      "revision": "G26 / Rev T / exact prompt docs/uri_style/gorilla_v0_1/prompts/minimal_sketch_grounded_rev_t.txt SHA256 edce903a282c0ae770efc95423589944cf3b49ffcd77498fd2580ae74c8ded4f",
+      "source_path": "/home/ethan/.codex/generated_images/01a0f3ab-7a57-7172-b8c5-e517aa2973da/exec-5aa046d5-51d1-4e14-8475-1d059391c7b1.png",
+      "sha256": "bff615ac400d0ec0a18b3243bb2a54f62755a2549ba35850de31f1077710b5df",
+      "reason": "Appearance artwork copied byte-for-byte. See generation manifest for review status. No external engineering handoff."
+    },
+    {
+      "path": "docs/uri_style/gorilla_v0_1/images/minimal_support_finish_rev_t2.png",
+      "repository": "built-in imagegen",
+      "revision": "G27 / Rev T2 / exact prompt docs/uri_style/gorilla_v0_1/prompts/minimal_support_finish_rev_t2.txt SHA256 aabf840fb6ceb2821de6f3f97dbd31858122e40377a64a686ea45b0c5b231284",
+      "source_path": "/home/ethan/.codex/generated_images/01a0f3ab-7a57-7172-b8c5-e517aa2973da/exec-11823869-d179-47bd-8af3-6bcdd082358c.png",
+      "sha256": "3d511cb7473cdf619f1803863c3a76d0bc732488a6d0d2c5d1e7188765288d58",
+      "reason": "Appearance artwork copied byte-for-byte. See generation manifest for review status. No external engineering handoff."
+    },
+    {
+      "path": "docs/uri_style/gorilla_v0_1/images/spatial_core_internal_simplification_rev_u.png",
+      "repository": "built-in imagegen",
+      "revision": "G28 / Rev U / exact prompt docs/uri_style/gorilla_v0_1/prompts/raised_surface_internal_simplification_rev_u.txt SHA256 4cd1cef2122745c9399c086d40be0b865b2c18a884ff125ff061864bf3a3a7e3",
+      "source_path": "/home/ethan/.codex/generated_images/01a0f3ab-7a57-7172-b8c5-e517aa2973da/exec-bd7e428b-8a61-48da-8198-e09224454cdd.png",
+      "sha256": "b63e342c959da3471e147bfef3c3dd1195abc5970f316b848ec6ce091c332817",
+      "reason": "Appearance artwork copied byte-for-byte. See generation manifest for review status. No external engineering handoff."
+    },
+    {
+      "path": "docs/uri_style/gorilla_v0_1/references/user_core_volume_guard_rev_u.png",
+      "repository": "user attachment",
+      "revision": "2026-10-01 core volume and graphite guard regions",
+      "source_path": "/tmp/codex-clipboard-f7def01e-c84f-4c4b-a2ca-50eb292c7436.png",
+      "sha256": "bc82abc9bafc5b91494fd9f0c1c6c7d6ed4407eabaa2f4c71e6c74de986574f7",
+      "reason": "User geometry/material reference copied byte-for-byte; actual G28 input 2."
+    },
+    {
+      "path": "docs/uri_style/gorilla_v0_1/references/palette_01_blue_optical.png",
+      "repository": "user attachment",
+      "revision": "2026-10-02 palette distribution correction",
+      "source_path": "/tmp/codex-clipboard-ae11346e-efb9-433b-8f06-590f89134ef1.png",
+      "sha256": "5da87c1921b9f038eedb0051b7fcbb5c7810c98183d1ae70a663c71d7af722bf",
+      "reason": "Preserved original byte-for-byte; color distribution authority, not geometry."
+    },
+    {
+      "path": "docs/uri_style/gorilla_v0_1/references/palette_02_blue_vehicle.png",
+      "repository": "user attachment",
+      "revision": "2026-10-02 palette distribution correction",
+      "source_path": "/tmp/codex-clipboard-35979e89-cc40-4b98-830d-ffeb82d51b5a.png",
+      "sha256": "73d341781bf20f5f22ba2bfaf328b78f7ea6c1de4ee21c0830c5b0dbb95e6c93",
+      "reason": "Preserved original byte-for-byte; color distribution authority, not geometry."
+    },
+    {
+      "path": "docs/uri_style/gorilla_v0_1/references/palette_03_blue_architecture.png",
+      "repository": "user attachment",
+      "revision": "2026-10-02 palette distribution correction",
+      "source_path": "/tmp/codex-clipboard-62fade8e-bf90-4909-891c-af66990973ec.png",
+      "sha256": "e84820049c4d4d64a59f2b45fe92b27c6b8de9aa6b18dd9f16a44b9bba88af7e",
+      "reason": "Preserved original byte-for-byte; color distribution authority, not geometry."
+    },
+    {
+      "path": "docs/uri_style/gorilla_v0_1/references/palette_04_ivory_vehicle.png",
+      "repository": "user attachment",
+      "revision": "2026-10-02 palette distribution correction",
+      "source_path": "/tmp/codex-clipboard-dff278b4-4e09-4bde-8e32-41382578ff3d.png",
+      "sha256": "4244572b98c01599b8b73a9859fbf9e8e7df3d14a0f8a955c5cb124234bd366a",
+      "reason": "Preserved original byte-for-byte; color distribution authority, not geometry."
+    },
+    {
+      "path": "docs/uri_style/gorilla_v0_1/images/blue_clearance_z_stance_rev_v.png",
+      "repository": "built-in imagegen",
+      "revision": "G29 / V / user rejected",
+      "source_path": "/home/ethan/.codex/generated_images/01a0f3ab-7a57-7172-b8c5-e517aa2973da/exec-3004fe84-d4b9-4871-a76f-1ab4195da8d7.png",
+      "sha256": "49f14e1a9bd25b895695038031404dfa5fbf8364029a1f3220c3aa96d535d0a4",
+      "reason": "Historical rejected appearance artwork; not current delivery."
+    },
+    {
+      "path": "docs/uri_style/gorilla_v0_1/images/symmetric_blue_master_rev_v2.png",
+      "repository": "built-in imagegen",
+      "revision": "G30 / V2",
+      "source_path": "/home/ethan/.codex/generated_images/01a0f3ab-7a57-7172-b8c5-e517aa2973da/exec-5c93bf9a-3a4c-4844-b574-cb2ed4fd413b.png",
+      "sha256": "b59055867e74766c4f069899bfbfc30975c43bf369fb3f0db7f40172d41ad9fe",
+      "reason": "Historical iteration; not current delivery"
+    },
+    {
+      "path": "docs/uri_style/gorilla_v0_1/images/orthographic_three_view_rev_w.png",
+      "repository": "built-in imagegen",
+      "revision": "G31 / W",
+      "source_path": "/home/ethan/.codex/generated_images/01a0f3ab-7a57-7172-b8c5-e517aa2973da/exec-f254fd03-a165-4319-b49a-88fab4aab95f.png",
+      "sha256": "75e57c88356740b3723d9f1c33bc70822c885886054b8934da6a2bde7a755d9d",
+      "reason": "Historical iteration; not current delivery"
+    },
+    {
+      "path": "docs/uri_style/gorilla_v0_1/images/original_depth_z_profile_rev_x1.png",
+      "repository": "built-in imagegen",
+      "revision": "G32 / X1",
+      "source_path": "/home/ethan/.codex/generated_images/01a0f3ab-7a57-7172-b8c5-e517aa2973da/exec-9a4d0643-d95a-44ec-abea-1132dacb6970.png",
+      "sha256": "81f8e19b11ee5230830358f01f6808d618d71476cf352991887f6c4a578ad758",
+      "reason": "Historical iteration; not current delivery"
+    },
+    {
+      "path": "docs/uri_style/gorilla_v0_1/images/bounded_z_leg_depth_edit_rev_y2.png",
+      "repository": "built-in imagegen",
+      "revision": "G33 / Y2",
+      "source_path": "/home/ethan/.codex/generated_images/01a0f3ab-7a57-7172-b8c5-e517aa2973da/exec-938cbabc-3993-4507-ac55-9f201019f3fc.png",
+      "sha256": "6cc3629dc0965a9da0806feb09fb9785bffea1d7ae52b43b507eaceb9aae5dbf",
+      "reason": "Historical iteration; not current delivery"
+    },
+    {
+      "path": "docs/uri_style/gorilla_v0_1/images/lower_chain_compound_foot_only_rev_y3.png",
+      "repository": "built-in imagegen",
+      "revision": "G34 / Y3",
+      "source_path": "/home/ethan/.codex/generated_images/01a0f3ab-7a57-7172-b8c5-e517aa2973da/exec-c5e7f8c0-2a6e-4e9d-bd90-f29ab24e28bf.png",
+      "sha256": "e1f403047f3a80ab3f145a7099b6b701f69614b5c7762ae6e9271365792bf58f",
+      "reason": "Historical iteration; not current delivery"
+    },
+    {
+      "path": "docs/uri_style/gorilla_v0_1/images/forward_radiators_minimal_interfaces_orange_lid_rev_y4.png",
+      "repository": "built-in imagegen",
+      "revision": "G35 / Y4",
+      "source_path": "/home/ethan/.codex/generated_images/01a0f3ab-7a57-7172-b8c5-e517aa2973da/exec-43d8555a-fe9d-4575-97a5-2512a652f30c.png",
+      "sha256": "a200e6fbefa25ed1df2bd098bd84b347562d2fc8ceacce6e7cb9e940baa95bc7",
+      "reason": "Historical iteration; not current delivery"
+    },
+    {
+      "path": "docs/uri_style/gorilla_v0_1/images/orthographic_three_view_rev_y5.png",
+      "repository": "built-in imagegen",
+      "revision": "G36 / Y5",
+      "source_path": "/home/ethan/.codex/generated_images/01a0f3ab-7a57-7172-b8c5-e517aa2973da/exec-e1dff166-d059-457d-83f2-6dc6ec0a6f4e.png",
+      "sha256": "829c45ee4f50fa8fd1f8fd213a6b98827a214f7961bf5b63ee91138f69d366c6",
+      "reason": "Current appearance candidate"
+    },
+    {
+      "path": ".agents/skills/uri-style/assets/style_01_race_car_hangar.png",
+      "repository": "user-provided image attachments in URI reference replacement request",
+      "revision": "2026-10-03 / user image 1 / codex-clipboard-76919b37-ede7-4907-82eb-0cd692fa0573.png",
+      "sha256": "1aed979f442030b644db5b86c79ad69d44f14092f865eb28f157663476eec8c9",
+      "reason": "User explicitly selected the new URI v5 reference set; uploaded PNG bytes copied unchanged."
+    },
+    {
+      "path": ".agents/skills/uri-style/assets/style_02_blue_optical_pod.png",
+      "repository": "user-provided image attachments in URI reference replacement request",
+      "revision": "2026-10-03 / user image 2 / codex-clipboard-8b6430d2-203b-426c-a6f9-4033d7e014f3.png",
+      "sha256": "69d56cdd5f53efa28ef008fee152419a945dcd51a35e572375268194126c6f98",
+      "reason": "User explicitly selected the new URI v5 reference set; uploaded PNG bytes copied unchanged."
+    },
+    {
+      "path": ".agents/skills/uri-style/assets/style_03_tracked_mobile_station.png",
+      "repository": "user-provided image attachments in URI reference replacement request",
+      "revision": "2026-10-03 / user image 3 / codex-clipboard-2980c3a6-4562-431d-a5a0-a383d35bafb5.png",
+      "sha256": "da14249a726ca5009b222a0dd7dc2c7a1fdbfe49ef31b8080936e855e8eb1f6f",
+      "reason": "User explicitly selected the new URI v5 reference set; uploaded PNG bytes copied unchanged."
+    },
+    {
+      "path": ".agents/skills/uri-style/assets/style_04_service_entry.png",
+      "repository": "user-provided image attachments in URI reference replacement request",
+      "revision": "2026-10-03 / user image 4 / codex-clipboard-a515d760-eb18-4d1c-b5bf-727b48b18e09.png",
+      "sha256": "57670970191600eecf06f6ea8531baa6bb45277db6cb883e252e9882f8a349f8",
+      "reason": "User explicitly selected the new URI v5 reference set; uploaded PNG bytes copied unchanged."
+    },
+    {
+      "path": ".agents/skills/uri-style/assets/style_05_white_blue_racer.png",
+      "repository": "user-provided image attachments in URI reference replacement request",
+      "revision": "2026-10-03 / user image 5 / codex-clipboard-392698eb-e700-4244-ac5b-9b23e2d60ef1.png",
+      "sha256": "fc5f342e892842887e738798b5870b9245fb3c7376a028c5f503301ac687f1bc",
+      "reason": "User explicitly selected the new URI v5 reference set; uploaded PNG bytes copied unchanged."
+    },
+    {
+      "path": "robots/gorilla/v0_2_p30/README.md",
+      "repository": "https://github.com/sgyli7/Sai_Art",
+      "revision": "Gorilla V0.2 frozen P30 appearance handoff",
+      "source_path": "docs/uri_style/gorilla_v0_2/delivery/gorilla_v0_2_p30/README.md",
+      "sha256": "671cc2a5a0cbc4b52df0f3fa143d3594e8654a79ad86753c73fe4729067889b7",
+      "reason": "Byte-identical publication copy for the Gorilla artbook; original frozen archive and authoring paths retained."
+    },
+    {
+      "path": "robots/gorilla/v0_2_p30/manifest.json",
+      "repository": "https://github.com/sgyli7/Sai_Art",
+      "revision": "Gorilla V0.2 frozen P30 appearance handoff",
+      "source_path": "docs/uri_style/gorilla_v0_2/delivery/gorilla_v0_2_p30/manifest.json",
+      "sha256": "6ec8fe9ba205a7eba2eb34b63920b9aac8cd858edadfda45c64513e94824b784",
+      "reason": "Byte-identical publication copy for the Gorilla artbook; original frozen archive and authoring paths retained."
+    },
+    {
+      "path": "robots/gorilla/v0_2_p30/model/exports/lower_modular_components_b7.glb",
+      "repository": "https://github.com/sgyli7/Sai_Art",
+      "revision": "Gorilla V0.2 frozen P30 appearance handoff",
+      "source_path": "docs/uri_style/gorilla_v0_2/delivery/gorilla_v0_2_p30/model/exports/lower_modular_components_b7.glb",
+      "sha256": "327bc4da753b9b90db8c2338221591461097e6a802e40e9db21d5ec020e42787",
+      "reason": "Byte-identical publication copy for the Gorilla artbook; original frozen archive and authoring paths retained."
+    },
+    {
+      "path": "robots/gorilla/v0_2_p30/model/previews/lower_modular_components_ankle_front_detail_b7.png",
+      "repository": "https://github.com/sgyli7/Sai_Art",
+      "revision": "Gorilla V0.2 frozen P30 appearance handoff",
+      "source_path": "docs/uri_style/gorilla_v0_2/delivery/gorilla_v0_2_p30/model/previews/lower_modular_components_ankle_front_detail_b7.png",
+      "sha256": "4b0e00a47ee77c2accea19881072d1771fe535223954dd37157953d6378a4151",
+      "reason": "Byte-identical publication copy for the Gorilla artbook; original frozen archive and authoring paths retained."
+    },
+    {
+      "path": "robots/gorilla/v0_2_p30/model/previews/lower_modular_components_ankle_rear_detail_b7.png",
+      "repository": "https://github.com/sgyli7/Sai_Art",
+      "revision": "Gorilla V0.2 frozen P30 appearance handoff",
+      "source_path": "docs/uri_style/gorilla_v0_2/delivery/gorilla_v0_2_p30/model/previews/lower_modular_components_ankle_rear_detail_b7.png",
+      "sha256": "71affa9670e4b48aac08e0e48696f87a4d25c186b6dba14da89424c4c8346d2a",
+      "reason": "Byte-identical publication copy for the Gorilla artbook; original frozen archive and authoring paths retained."
+    },
+    {
+      "path": "robots/gorilla/v0_2_p30/model/previews/lower_modular_components_front_b7.png",
+      "repository": "https://github.com/sgyli7/Sai_Art",
+      "revision": "Gorilla V0.2 frozen P30 appearance handoff",
+      "source_path": "docs/uri_style/gorilla_v0_2/delivery/gorilla_v0_2_p30/model/previews/lower_modular_components_front_b7.png",
+      "sha256": "0f8c7acd5bc000d5c32fa9511d50653a2cf8e5c711a24fa4e0ce733c0cfb858d",
+      "reason": "Byte-identical publication copy for the Gorilla artbook; original frozen archive and authoring paths retained."
+    },
+    {
+      "path": "robots/gorilla/v0_2_p30/model/previews/lower_modular_components_front_oblique_b7.png",
+      "repository": "https://github.com/sgyli7/Sai_Art",
+      "revision": "Gorilla V0.2 frozen P30 appearance handoff",
+      "source_path": "docs/uri_style/gorilla_v0_2/delivery/gorilla_v0_2_p30/model/previews/lower_modular_components_front_oblique_b7.png",
+      "sha256": "0152e0bd5884a86b45ea71c751f9b28d958105981f747e353b42fe53d126303b",
+      "reason": "Byte-identical publication copy for the Gorilla artbook; original frozen archive and authoring paths retained."
+    },
+    {
+      "path": "robots/gorilla/v0_2_p30/model/previews/lower_modular_components_left_b7.png",
+      "repository": "https://github.com/sgyli7/Sai_Art",
+      "revision": "Gorilla V0.2 frozen P30 appearance handoff",
+      "source_path": "docs/uri_style/gorilla_v0_2/delivery/gorilla_v0_2_p30/model/previews/lower_modular_components_left_b7.png",
+      "sha256": "0c69a6a87fbf34c6594cfc84c5939a3cdd2ba813b1aac8f70c59ea0fa5434432",
+      "reason": "Byte-identical publication copy for the Gorilla artbook; original frozen archive and authoring paths retained."
+    },
+    {
+      "path": "robots/gorilla/v0_2_p30/model/previews/lower_modular_components_rear_b7.png",
+      "repository": "https://github.com/sgyli7/Sai_Art",
+      "revision": "Gorilla V0.2 frozen P30 appearance handoff",
+      "source_path": "docs/uri_style/gorilla_v0_2/delivery/gorilla_v0_2_p30/model/previews/lower_modular_components_rear_b7.png",
+      "sha256": "356bcee37e3245360d704b911648631992dd8c190f58c0d173f5c9c40a689f45",
+      "reason": "Byte-identical publication copy for the Gorilla artbook; original frozen archive and authoring paths retained."
+    },
+    {
+      "path": "robots/gorilla/v0_2_p30/model/previews/lower_modular_components_rear_oblique_b7.png",
+      "repository": "https://github.com/sgyli7/Sai_Art",
+      "revision": "Gorilla V0.2 frozen P30 appearance handoff",
+      "source_path": "docs/uri_style/gorilla_v0_2/delivery/gorilla_v0_2_p30/model/previews/lower_modular_components_rear_oblique_b7.png",
+      "sha256": "49421e06d12506278017149005a98cb3f4b742976a214ffa7f424232f62fec2a",
+      "reason": "Byte-identical publication copy for the Gorilla artbook; original frozen archive and authoring paths retained."
+    },
+    {
+      "path": "robots/gorilla/v0_2_p30/model/previews/lower_modular_components_top_b7.png",
+      "repository": "https://github.com/sgyli7/Sai_Art",
+      "revision": "Gorilla V0.2 frozen P30 appearance handoff",
+      "source_path": "docs/uri_style/gorilla_v0_2/delivery/gorilla_v0_2_p30/model/previews/lower_modular_components_top_b7.png",
+      "sha256": "f8a017cc0e21589d76ba11f441fd3215b9895f76096d4ffc2e94a790cbff86f5",
+      "reason": "Byte-identical publication copy for the Gorilla artbook; original frozen archive and authoring paths retained."
+    },
+    {
+      "path": "robots/gorilla/v0_2_p30/model/reports/lower_modular_components_b7.json",
+      "repository": "https://github.com/sgyli7/Sai_Art",
+      "revision": "Gorilla V0.2 frozen P30 appearance handoff",
+      "source_path": "docs/uri_style/gorilla_v0_2/delivery/gorilla_v0_2_p30/model/reports/lower_modular_components_b7.json",
+      "sha256": "6e91d2e97ff26483995e8ff886667276a890b38c93869d910271eba287fef7a0",
+      "reason": "Byte-identical publication copy for the Gorilla artbook; original frozen archive and authoring paths retained."
+    },
+    {
+      "path": "robots/gorilla/v0_2_p30/model/reports/selected_b7_asset_export.json",
+      "repository": "https://github.com/sgyli7/Sai_Art",
+      "revision": "Gorilla V0.2 frozen P30 appearance handoff",
+      "source_path": "docs/uri_style/gorilla_v0_2/delivery/gorilla_v0_2_p30/model/reports/selected_b7_asset_export.json",
+      "sha256": "4b49644664aa97ac32137c9f6104cfaa958676022bffb5b2163bb77f6e63935e",
+      "reason": "Byte-identical publication copy for the Gorilla artbook; original frozen archive and authoring paths retained."
+    },
+    {
+      "path": "robots/gorilla/v0_2_p30/model/reports/selected_b7_asset_validation_p30.json",
+      "repository": "https://github.com/sgyli7/Sai_Art",
+      "revision": "Gorilla V0.2 frozen P30 appearance handoff",
+      "source_path": "docs/uri_style/gorilla_v0_2/delivery/gorilla_v0_2_p30/model/reports/selected_b7_asset_validation_p30.json",
+      "sha256": "51663af2fd32fce16d04d41e52645e72d7811d6fe835181fd7a5f3d318120658",
+      "reason": "Byte-identical publication copy for the Gorilla artbook; original frozen archive and authoring paths retained."
+    },
+    {
+      "path": "robots/gorilla/v0_2_p30/model/source/lower_modular_components_b7.blend",
+      "repository": "https://github.com/sgyli7/Sai_Art",
+      "revision": "Gorilla V0.2 frozen P30 appearance handoff",
+      "source_path": "docs/uri_style/gorilla_v0_2/delivery/gorilla_v0_2_p30/model/source/lower_modular_components_b7.blend",
+      "sha256": "b75b3f29aa0a91145ed6dacf2cd25e1caece7527155146dd00507cd70edb6beb",
+      "reason": "Byte-identical publication copy for the Gorilla artbook; original frozen archive and authoring paths retained."
+    },
+    {
+      "path": "robots/gorilla/v0_2_p30/provenance/camera_frame_and_knee_marker_p29_record.json",
+      "repository": "https://github.com/sgyli7/Sai_Art",
+      "revision": "Gorilla V0.2 frozen P30 appearance handoff",
+      "source_path": "docs/uri_style/gorilla_v0_2/delivery/gorilla_v0_2_p30/provenance/camera_frame_and_knee_marker_p29_record.json",
+      "sha256": "aa057eccbbfa316cce81e638da47a8eed2b5c8a02e02d5ddc8f54e691d1def99",
+      "reason": "Byte-identical publication copy for the Gorilla artbook; original frozen archive and authoring paths retained."
+    },
+    {
+      "path": "robots/gorilla/v0_2_p30/provenance/style_references/style_01_race_car_hangar.png",
+      "repository": "https://github.com/sgyli7/Sai_Art",
+      "revision": "Gorilla V0.2 frozen P30 appearance handoff",
+      "source_path": "docs/uri_style/gorilla_v0_2/delivery/gorilla_v0_2_p30/provenance/style_references/style_01_race_car_hangar.png",
+      "sha256": "1aed979f442030b644db5b86c79ad69d44f14092f865eb28f157663476eec8c9",
+      "reason": "Byte-identical publication copy for the Gorilla artbook; original frozen archive and authoring paths retained."
+    },
+    {
+      "path": "robots/gorilla/v0_2_p30/provenance/style_references/style_03_tracked_mobile_station.png",
+      "repository": "https://github.com/sgyli7/Sai_Art",
+      "revision": "Gorilla V0.2 frozen P30 appearance handoff",
+      "source_path": "docs/uri_style/gorilla_v0_2/delivery/gorilla_v0_2_p30/provenance/style_references/style_03_tracked_mobile_station.png",
+      "sha256": "da14249a726ca5009b222a0dd7dc2c7a1fdbfe49ef31b8080936e855e8eb1f6f",
+      "reason": "Byte-identical publication copy for the Gorilla artbook; original frozen archive and authoring paths retained."
+    },
+    {
+      "path": "robots/gorilla/v0_2_p30/provenance/style_references/style_05_white_blue_racer.png",
+      "repository": "https://github.com/sgyli7/Sai_Art",
+      "revision": "Gorilla V0.2 frozen P30 appearance handoff",
+      "source_path": "docs/uri_style/gorilla_v0_2/delivery/gorilla_v0_2_p30/provenance/style_references/style_05_white_blue_racer.png",
+      "sha256": "fc5f342e892842887e738798b5870b9245fb3c7376a028c5f503301ac687f1bc",
+      "reason": "Byte-identical publication copy for the Gorilla artbook; original frozen archive and authoring paths retained."
+    },
+    {
+      "path": "robots/gorilla/v0_2_p30/provenance/thermal_outlets_and_knee_seam_fix_p26_record.json",
+      "repository": "https://github.com/sgyli7/Sai_Art",
+      "revision": "Gorilla V0.2 frozen P30 appearance handoff",
+      "source_path": "docs/uri_style/gorilla_v0_2/delivery/gorilla_v0_2_p30/provenance/thermal_outlets_and_knee_seam_fix_p26_record.json",
+      "sha256": "a89024d08e839e7bc457f1dc231ba092e82b14615c6a43b0b83fc51f73463487",
+      "reason": "Byte-identical publication copy for the Gorilla artbook; original frozen archive and authoring paths retained."
+    },
+    {
+      "path": "robots/gorilla/v0_2_p30/provenance/top_shoulders_local_edit_p24_record.json",
+      "repository": "https://github.com/sgyli7/Sai_Art",
+      "revision": "Gorilla V0.2 frozen P30 appearance handoff",
+      "source_path": "docs/uri_style/gorilla_v0_2/delivery/gorilla_v0_2_p30/provenance/top_shoulders_local_edit_p24_record.json",
+      "sha256": "4216cba306b1b435aea03adddf02015f7e20d12873fd72786260ff51933fd37b",
+      "reason": "Byte-identical publication copy for the Gorilla artbook; original frozen archive and authoring paths retained."
+    },
+    {
+      "path": "robots/gorilla/v0_2_p30/provenance/uri_knee_normal_perspective_p30.txt",
+      "repository": "https://github.com/sgyli7/Sai_Art",
+      "revision": "Gorilla V0.2 frozen P30 appearance handoff",
+      "source_path": "docs/uri_style/gorilla_v0_2/delivery/gorilla_v0_2_p30/provenance/uri_knee_normal_perspective_p30.txt",
+      "sha256": "010520c72785213bb0b04e4140d05fc05f2b2e68d0cd9a9fb82741143ad0a0f0",
+      "reason": "Byte-identical publication copy for the Gorilla artbook; original frozen archive and authoring paths retained."
+    },
+    {
+      "path": "robots/gorilla/v0_2_p30/provenance/uri_knee_normal_perspective_p30_record.json",
+      "repository": "https://github.com/sgyli7/Sai_Art",
+      "revision": "Gorilla V0.2 frozen P30 appearance handoff",
+      "source_path": "docs/uri_style/gorilla_v0_2/delivery/gorilla_v0_2_p30/provenance/uri_knee_normal_perspective_p30_record.json",
+      "sha256": "ae29ce975ae173cae810ef5cdbc6f01d0a0bd4c838f70125b9ad3fb3af65bd57",
+      "reason": "Byte-identical publication copy for the Gorilla artbook; original frozen archive and authoring paths retained."
+    },
+    {
+      "path": "robots/gorilla/v0_2_p30/provenance/white_orange_local_fix_verification.json",
+      "repository": "https://github.com/sgyli7/Sai_Art",
+      "revision": "Gorilla V0.2 frozen P30 appearance handoff",
+      "source_path": "docs/uri_style/gorilla_v0_2/delivery/gorilla_v0_2_p30/provenance/white_orange_local_fix_verification.json",
+      "sha256": "ea16a00fe11eb4d59193f1a9ea411eea73a3ca1c2c28ec404d206898ae5c6cc8",
+      "reason": "Byte-identical publication copy for the Gorilla artbook; original frozen archive and authoring paths retained."
+    },
+    {
+      "path": "robots/gorilla/v0_2_p30/themes/images/black_gold_p30.png",
+      "repository": "https://github.com/sgyli7/Sai_Art",
+      "revision": "Gorilla V0.2 frozen P30 appearance handoff",
+      "source_path": "docs/uri_style/gorilla_v0_2/delivery/gorilla_v0_2_p30/themes/images/black_gold_p30.png",
+      "sha256": "034a4631076c2e9484f14ab540f78c0d4c5954432f7cce12fd2c30b922377534",
+      "reason": "Byte-identical publication copy for the Gorilla artbook; original frozen archive and authoring paths retained."
+    },
+    {
+      "path": "robots/gorilla/v0_2_p30/themes/images/black_gold_p30.svg",
+      "repository": "https://github.com/sgyli7/Sai_Art",
+      "revision": "Gorilla V0.2 frozen P30 appearance handoff",
+      "source_path": "docs/uri_style/gorilla_v0_2/delivery/gorilla_v0_2_p30/themes/images/black_gold_p30.svg",
+      "sha256": "a8cf3fa9fd2c69579d436864e444c0b501b51daefac424ddbe520944b90ec0b8",
+      "reason": "Byte-identical publication copy for the Gorilla artbook; original frozen archive and authoring paths retained."
+    },
+    {
+      "path": "robots/gorilla/v0_2_p30/themes/images/desert_p30.png",
+      "repository": "https://github.com/sgyli7/Sai_Art",
+      "revision": "Gorilla V0.2 frozen P30 appearance handoff",
+      "source_path": "docs/uri_style/gorilla_v0_2/delivery/gorilla_v0_2_p30/themes/images/desert_p30.png",
+      "sha256": "c832c0d58fa3d54106d5380771a34cba3f6349d23d33601272bd4939539781d7",
+      "reason": "Byte-identical publication copy for the Gorilla artbook; original frozen archive and authoring paths retained."
+    },
+    {
+      "path": "robots/gorilla/v0_2_p30/themes/images/desert_p30.svg",
+      "repository": "https://github.com/sgyli7/Sai_Art",
+      "revision": "Gorilla V0.2 frozen P30 appearance handoff",
+      "source_path": "docs/uri_style/gorilla_v0_2/delivery/gorilla_v0_2_p30/themes/images/desert_p30.svg",
+      "sha256": "41c392d4caadee36e2e90beff5689eeb494cc81cdf19db6829c6d0ee76d7043c",
+      "reason": "Byte-identical publication copy for the Gorilla artbook; original frozen archive and authoring paths retained."
+    },
+    {
+      "path": "robots/gorilla/v0_2_p30/themes/images/uri_p30.png",
+      "repository": "https://github.com/sgyli7/Sai_Art",
+      "revision": "Gorilla V0.2 frozen P30 appearance handoff",
+      "source_path": "docs/uri_style/gorilla_v0_2/delivery/gorilla_v0_2_p30/themes/images/uri_p30.png",
+      "sha256": "0076f5caa96e70a7d082ab3b862edcdb2516379181aa5ab687f77824d22c60a3",
+      "reason": "Byte-identical publication copy for the Gorilla artbook; original frozen archive and authoring paths retained."
+    },
+    {
+      "path": "robots/gorilla/v0_2_p30/themes/images/uri_p30.svg",
+      "repository": "https://github.com/sgyli7/Sai_Art",
+      "revision": "Gorilla V0.2 frozen P30 appearance handoff",
+      "source_path": "docs/uri_style/gorilla_v0_2/delivery/gorilla_v0_2_p30/themes/images/uri_p30.svg",
+      "sha256": "c45c74a7ecc5f0481816bef7d18a5832590fd9938964c639a91ab78c927a70ef",
+      "reason": "Byte-identical publication copy for the Gorilla artbook; original frozen archive and authoring paths retained."
+    },
+    {
+      "path": "robots/gorilla/v0_2_p30/themes/images/white_orange_p30.png",
+      "repository": "https://github.com/sgyli7/Sai_Art",
+      "revision": "Gorilla V0.2 frozen P30 appearance handoff",
+      "source_path": "docs/uri_style/gorilla_v0_2/delivery/gorilla_v0_2_p30/themes/images/white_orange_p30.png",
+      "sha256": "260fc2d59b7ec4b7b962b7fcc73e7e92126d76635eb24e248cd0cfb0dd3f4ae4",
+      "reason": "Byte-identical publication copy for the Gorilla artbook; original frozen archive and authoring paths retained."
+    },
+    {
+      "path": "robots/gorilla/v0_2_p30/themes/images/white_orange_p30.svg",
+      "repository": "https://github.com/sgyli7/Sai_Art",
+      "revision": "Gorilla V0.2 frozen P30 appearance handoff",
+      "source_path": "docs/uri_style/gorilla_v0_2/delivery/gorilla_v0_2_p30/themes/images/white_orange_p30.svg",
+      "sha256": "dbe8b1680fb7e14957529984c2e0e172536e12be7d880f1f6c6cf277ab254c45",
+      "reason": "Byte-identical publication copy for the Gorilla artbook; original frozen archive and authoring paths retained."
+    },
+    {
+      "path": "robots/gorilla/v0_2_p30/themes/images/yellow_purple_p30.png",
+      "repository": "https://github.com/sgyli7/Sai_Art",
+      "revision": "Gorilla V0.2 frozen P30 appearance handoff",
+      "source_path": "docs/uri_style/gorilla_v0_2/delivery/gorilla_v0_2_p30/themes/images/yellow_purple_p30.png",
+      "sha256": "c082c37f33cc6af49dd638bd2f5a61b87f0de6203c39741e71c35211ebd908c7",
+      "reason": "Byte-identical publication copy for the Gorilla artbook; original frozen archive and authoring paths retained."
+    },
+    {
+      "path": "robots/gorilla/v0_2_p30/themes/images/yellow_purple_p30.svg",
+      "repository": "https://github.com/sgyli7/Sai_Art",
+      "revision": "Gorilla V0.2 frozen P30 appearance handoff",
+      "source_path": "docs/uri_style/gorilla_v0_2/delivery/gorilla_v0_2_p30/themes/images/yellow_purple_p30.svg",
+      "sha256": "38be3b464e8b7483d88e83e801e1c4657a0c671f16b1262fef47e7ce68084058",
+      "reason": "Byte-identical publication copy for the Gorilla artbook; original frozen archive and authoring paths retained."
+    },
+    {
+      "path": "robots/gorilla/v0_2_p30/themes/index.html",
+      "repository": "https://github.com/sgyli7/Sai_Art",
+      "revision": "Gorilla V0.2 frozen P30 appearance handoff",
+      "source_path": "docs/uri_style/gorilla_v0_2/delivery/gorilla_v0_2_p30/themes/index.html",
+      "sha256": "f3e3e151c2deae0d3d94e76b818a9b6e7053a05ff206e7da7d7855063d0cec23",
+      "reason": "Byte-identical publication copy for the Gorilla artbook; original frozen archive and authoring paths retained."
+    },
+    {
+      "path": "robots/gorilla/v0_2_p30/themes/prompts/black_gold_p30.txt",
+      "repository": "https://github.com/sgyli7/Sai_Art",
+      "revision": "Gorilla V0.2 frozen P30 appearance handoff",
+      "source_path": "docs/uri_style/gorilla_v0_2/delivery/gorilla_v0_2_p30/themes/prompts/black_gold_p30.txt",
+      "sha256": "0fc224cc0b7d00f339c514518b37928223fa8fd8ec79aab479caa2a860f36684",
+      "reason": "Byte-identical publication copy for the Gorilla artbook; original frozen archive and authoring paths retained."
+    },
+    {
+      "path": "robots/gorilla/v0_2_p30/themes/prompts/desert_p30.txt",
+      "repository": "https://github.com/sgyli7/Sai_Art",
+      "revision": "Gorilla V0.2 frozen P30 appearance handoff",
+      "source_path": "docs/uri_style/gorilla_v0_2/delivery/gorilla_v0_2_p30/themes/prompts/desert_p30.txt",
+      "sha256": "eca9ab653320a8cfa49e444df13f4c04909603ea5c3120c6e6b457db91602ea1",
+      "reason": "Byte-identical publication copy for the Gorilla artbook; original frozen archive and authoring paths retained."
+    },
+    {
+      "path": "robots/gorilla/v0_2_p30/themes/prompts/white_orange_coupler_fix_p30.txt",
+      "repository": "https://github.com/sgyli7/Sai_Art",
+      "revision": "Gorilla V0.2 frozen P30 appearance handoff",
+      "source_path": "docs/uri_style/gorilla_v0_2/delivery/gorilla_v0_2_p30/themes/prompts/white_orange_coupler_fix_p30.txt",
+      "sha256": "4375aff66c933dc482dc23fa827f1e3d334d084400ceedc4391e9f57e2cda578",
+      "reason": "Byte-identical publication copy for the Gorilla artbook; original frozen archive and authoring paths retained."
+    },
+    {
+      "path": "robots/gorilla/v0_2_p30/themes/prompts/white_orange_p30.txt",
+      "repository": "https://github.com/sgyli7/Sai_Art",
+      "revision": "Gorilla V0.2 frozen P30 appearance handoff",
+      "source_path": "docs/uri_style/gorilla_v0_2/delivery/gorilla_v0_2_p30/themes/prompts/white_orange_p30.txt",
+      "sha256": "164e1fe84edb7928cd4510306455538376608cb0fefebb88dd9322a1d2366787",
+      "reason": "Byte-identical publication copy for the Gorilla artbook; original frozen archive and authoring paths retained."
+    },
+    {
+      "path": "robots/gorilla/v0_2_p30/themes/prompts/yellow_purple_p30.txt",
+      "repository": "https://github.com/sgyli7/Sai_Art",
+      "revision": "Gorilla V0.2 frozen P30 appearance handoff",
+      "source_path": "docs/uri_style/gorilla_v0_2/delivery/gorilla_v0_2_p30/themes/prompts/yellow_purple_p30.txt",
+      "sha256": "dd4ff07495af701626281b67bed2a395daed91bfb67fb846eb319f48327af1b8",
+      "reason": "Byte-identical publication copy for the Gorilla artbook; original frozen archive and authoring paths retained."
+    },
+    {
+      "path": "robots/gorilla/v0_2_p30/themes/theme_catalog.json",
+      "repository": "https://github.com/sgyli7/Sai_Art",
+      "revision": "Gorilla V0.2 frozen P30 appearance handoff",
+      "source_path": "docs/uri_style/gorilla_v0_2/delivery/gorilla_v0_2_p30/themes/theme_catalog.json",
+      "sha256": "2a99fd25ecbc1f72f6218b5bfd3f0f44e2ccf4fab4b71fcd6775f4b89e2b8e43",
+      "reason": "Byte-identical publication copy for the Gorilla artbook; original frozen archive and authoring paths retained."
+    },
+    {
+      "path": "robots/gorilla/v0_2_p30/themes/theme_overview.png",
+      "repository": "https://github.com/sgyli7/Sai_Art",
+      "revision": "Gorilla V0.2 frozen P30 appearance handoff",
+      "source_path": "docs/uri_style/gorilla_v0_2/delivery/gorilla_v0_2_p30/themes/theme_overview.png",
+      "sha256": "03dbc99c5fc1c339de02f17edfefd38e5099c428961f2712aad9e5842c914ea6",
+      "reason": "Byte-identical publication copy for the Gorilla artbook; original frozen archive and authoring paths retained."
+    },
+    {
+      "path": "robots/gorilla/v0_2_p30/themes/theme_overview.svg",
+      "repository": "https://github.com/sgyli7/Sai_Art",
+      "revision": "Gorilla V0.2 frozen P30 appearance handoff",
+      "source_path": "docs/uri_style/gorilla_v0_2/delivery/gorilla_v0_2_p30/themes/theme_overview.svg",
+      "sha256": "3c77d88ed4b06c7f7fb250a9edb7d09ba4804ca52d988176fc9e7dc2b85810a9",
+      "reason": "Byte-identical publication copy for the Gorilla artbook; original frozen archive and authoring paths retained."
+    },
+    {
+      "path": "robots/gorilla/v0_2_p30/themes/white_orange_coupler_composition_p30.json",
+      "repository": "https://github.com/sgyli7/Sai_Art",
+      "revision": "Gorilla V0.2 frozen P30 appearance handoff",
+      "source_path": "docs/uri_style/gorilla_v0_2/delivery/gorilla_v0_2_p30/themes/white_orange_coupler_composition_p30.json",
+      "sha256": "4534a5829b36b59b7bdceea586c13cb145994609e2a50e9f663a5b5daa0e7213",
+      "reason": "Byte-identical publication copy for the Gorilla artbook; original frozen archive and authoring paths retained."
+    },
+    {
+      "path": "robots/gorilla/v0_2_p30/tools/compose_four_view_revision.py",
+      "repository": "https://github.com/sgyli7/Sai_Art",
+      "revision": "Gorilla V0.2 frozen P30 appearance handoff",
+      "source_path": "docs/uri_style/gorilla_v0_2/delivery/gorilla_v0_2_p30/tools/compose_four_view_revision.py",
+      "sha256": "8ad5faf6bb51cd109a4c003adb96c6ea95e8904a67504f26b3fa9e1eec524104",
+      "reason": "Byte-identical publication copy for the Gorilla artbook; original frozen archive and authoring paths retained."
+    },
+    {
+      "path": "robots/gorilla/v0_2_p30/tools/package_appearance_p30.py",
+      "repository": "https://github.com/sgyli7/Sai_Art",
+      "revision": "Gorilla V0.2 frozen P30 appearance handoff",
+      "source_path": "docs/uri_style/gorilla_v0_2/delivery/gorilla_v0_2_p30/tools/package_appearance_p30.py",
+      "sha256": "cda6a6ab53ecedc843e1f37e476b6d2b4bebde3ee048b7ffbff8a71af7136114",
+      "reason": "Byte-identical publication copy for the Gorilla artbook; original frozen archive and authoring paths retained."
+    },
+    {
+      "path": "docs/uri_style/reference_history/v4_1/style_04_person.png",
+      "repository": "user-provided local collection /home/ethan/图片/截图/uri",
+      "revision": "snapshot 2026-10-01 / 截图 2026-10-01 02-37-20.png",
+      "sha256": "ad98a8531548f78daa0fbf7f3353fd9b49d1fcd5faa32a9d01b2bfb1b33f5e73",
+      "reason": "URI skill bundled original style reference; pixels copied unchanged. Archived after user replaced the complete STYLE set; not a current generation reference.",
+      "previous_path": ".agents/skills/uri-style/assets/style_04_person.png",
+      "status": "superseded 2026-10-03; historical reproduction only"
+    },
+    {
+      "path": "docs/uri_style/reference_history/v4_1/style_05_control_room.png",
+      "repository": "user-provided local collection /home/ethan/图片/截图/uri",
+      "revision": "snapshot 2026-10-01 / 截图 2026-10-01 02-45-01.png",
+      "sha256": "9f635177296b690055f5233e9736a17a005c579319b7d8d2c9563b2d8940b3d3",
+      "reason": "URI skill bundled original style reference; pixels copied unchanged. Archived after user replaced the complete STYLE set; not a current generation reference.",
+      "previous_path": ".agents/skills/uri-style/assets/style_05_control_room.png",
+      "status": "superseded 2026-10-03; historical reproduction only"
+    },
+    {
+      "path": "docs/uri_style/reference_history/v4_1/style_02_recorder.png",
+      "repository": "user-provided local collection /home/ethan/图片/截图/uri",
+      "revision": "snapshot 2026-10-01 / 截图 2026-10-01 02-41-52.png",
+      "sha256": "1b0564e089b7610394e5987a55d0eac565d36c86950635855572dd9f88d7e451",
+      "reason": "Unchanged original; removed from default v4 after source-object leakage, retained only for relevant audio equipment subjects. Archived after user replaced the complete STYLE set; not a current generation reference.",
+      "previous_path": ".agents/skills/uri-style/assets/style_02_recorder.png",
+      "status": "superseded 2026-10-03; historical reproduction only"
+    },
+    {
+      "path": "docs/uri_style/reference_history/v4_1/style_03_waterfront.png",
+      "repository": "user-provided local collection /home/ethan/图片/截图/uri",
+      "revision": "snapshot 2026-10-01 / 截图 2026-10-01 02-33-09.png",
+      "sha256": "25b75c83586e01222dde9cd164035afe9cba005b08cd2674eb6b9993aa12c053",
+      "reason": "URI skill bundled original style reference; pixels copied unchanged. Archived after user replaced the complete STYLE set; not a current generation reference.",
+      "previous_path": ".agents/skills/uri-style/assets/style_03_waterfront.png",
+      "status": "superseded 2026-10-03; historical reproduction only"
+    },
+    {
+      "path": "docs/uri_style/reference_history/v4_1/style_01_headphones.png",
+      "repository": "user-provided local collection /home/ethan/图片/截图/uri",
+      "revision": "snapshot 2026-10-01 / 截图 2026-10-01 02-41-54.png",
+      "sha256": "78270e8007dea7ebd84e580bb5fa1d936cc9118b375e9b8845b3cffc84d51c0c",
+      "reason": "URI skill bundled original style reference; pixels copied unchanged. Archived after user replaced the complete STYLE set; not a current generation reference.",
+      "previous_path": ".agents/skills/uri-style/assets/style_01_headphones.png",
+      "status": "superseded 2026-10-03; historical reproduction only"
+    },
+    {
+      "path": "docs/uri_style/robot_proportion_reference.png",
+      "repository": "user attachment 02995c80-dedf-4a57-8dbc-5b94088af061",
+      "revision": "image-2.png provided 2026-10-01",
+      "sha256": "c278274aba4768a11557baf571ff0a1812f0815d072ecacb81b4020f8ec48abf",
+      "reason": "Original robot used solely as proportion reference for fresh design."
+    },
+    {
+      "path": "docs/uri_style/reference_history/v4_1/style_06_architecture.png",
+      "repository": "user-provided local collection /home/ethan/图片/截图/uri",
+      "revision": "snapshot 2026-10-01 / 截图 2026-10-01 02-34-49.png",
+      "sha256": "51118389231d7cf1832b8b466aa31af2b6950f04cc91b77473e1f94b5a56e59c",
+      "reason": "Unchanged original v4 core STYLE reference: continuous elegant architectural forms and detail hierarchy. Archived after user replaced the complete STYLE set; not a current generation reference.",
+      "previous_path": ".agents/skills/uri-style/assets/style_06_architecture.png",
+      "status": "superseded 2026-10-03; historical reproduction only"
+    },
+    {
+      "path": "docs/uri_style/genomaru_user_proportion.png",
+      "repository": "user attachment",
+      "revision": "/tmp/codex-clipboard-80f700b1-1cb5-453d-ac66-f1762df05cf0.png",
+      "sha256": "c7ed9ebae830a0660adc47a1ee2e152b7c018a8b5c87049abc2f95faf67718c6",
+      "reason": "User Genomaru head/body proportion reference; ornaments excluded."
+    },
+    {
+      "path": "docs/uri_style/senjinmaru_user_structure.png",
+      "repository": "user attachment",
+      "revision": "/tmp/codex-clipboard-aa787f5a-353a-4935-a87e-fa1b3a09b697.png",
+      "sha256": "8bdde82d91680454da8c5ddd468419278dcade38e41ffa39ca981365a0a79eca",
+      "reason": "User Senjinmaru example for spatial grammar; head/front and shoulders/back replace vertical head/chest/abdomen stacking."
+    },
+    {
+      "path": "docs/uri_style/industrial_fusion_reference_01.png",
+      "repository": "user attachment",
+      "revision": "/tmp/codex-clipboard-e6795759-1d9d-44d2-bf49-2fb53cfd8bea.png",
+      "sha256": "a2f1a7174d287a521b17a704a30bebc34f1e176e2354c29ba67e794b430af13a",
+      "reason": "User industrial concept for continuous upper-body geometry; rendering, weapons and wear excluded."
+    },
+    {
+      "path": "docs/uri_style/industrial_fusion_reference_02.png",
+      "repository": "user attachment",
+      "revision": "/tmp/codex-clipboard-2e801f43-ebf4-4e7d-ba33-d20a52457ae1.png",
+      "sha256": "b3bbbadd85000e92b4ef59f4d767113f94eaeb066b5dc6301bc9743b5d461b15",
+      "reason": "User compact industrial concept for body grammar; rendering, weapons and wear excluded."
+    },
+    {
+      "path": "docs/uri_style/early_biped_proportion_reference.png",
+      "repository": "user-revisited built-in imagegen output",
+      "revision": "/home/ethan/.codex/generated_images/01a0f3ab-7a57-7172-b8c5-e517aa2973da/exec-4a6685e4-de22-4d0d-a802-7e44305c3090.png",
+      "sha256": "0409939541c6314a626a7ceaeb8076a83ff35a61cb40e4f27131796a26e34448",
+      "reason": "User says early body direction is closer but still headless; reference only for specified coarse body attributes."
+    },
+    {
+      "path": "docs/uri_style/integrated_core_draft.png",
+      "repository": "built-in imagegen",
+      "revision": "/home/ethan/.codex/generated_images/01a0f3ab-7a57-7172-b8c5-e517aa2973da/exec-5ee9589b-2ca0-4493-94d7-06bcef27104f.png",
+      "sha256": "fc37ed16b5cb4c7dc1ff6097408375013c69b208a4f6a090492f8977150a8d88",
+      "reason": "Generated illustration V; Still copied old flat chest-box despite upper-core brief; moving sensor higher did not solve continuous head/body organization."
+    },
+    {
+      "path": "docs/uri_style/integrated_core_geometry_draft.png",
+      "repository": "built-in imagegen",
+      "revision": "/home/ethan/.codex/generated_images/01a0f3ab-7a57-7172-b8c5-e517aa2973da/exec-1b0ec395-3dd2-478d-ab5b-397ed56cd587.png",
+      "sha256": "15a5f1553c2a0c28c3c49a43283016e1bc0afddaf8353caf6b3b40def06f86f0",
+      "reason": "Generated illustration W; New continuous sloping upper core and integrated sensing; no old generated robot in inputs. Industrial-reference wear leaked into surface and legs became elongated. Not user approved."
+    }
+  ],
   "repository_role": "art",
   "repository_url": "https://github.com/sgyli7/Sai_Art",
   "baseline_commit": "4e48b8ff41ad3e33436e4155346d83906bfc46eb",
@@ -1229,6 +2657,16 @@
       ],
       "role": "local_generated_output",
       "edit_policy": "Retain existing preparation behavior; no sync/build/launch during this cleanup."
+    },
+    {
+      "paths": [
+        "robots/gorilla/",
+        "docs/uri_style/gorilla_v0_1/",
+        "docs/uri_style/gorilla_v0_2/"
+      ],
+      "role": "gorilla_artbook_authoring_and_frozen_publication",
+      "current_maintenance_repository": "https://github.com/sgyli7/Sai_Art",
+      "edit_policy": "Current artbook is P30 with original selected gray B7; preserve authoring history and frozen archive bytes. Runtime and manufacturing work remain with their owning repositories."
     }
   ],
   "snapshot_provenance": {
@@ -1353,5 +2791,14 @@
     "launcher_path": "vehicles/Sainiverse_v0.1/source/launch.py",
     "launcher_sha256": "1d1dfc72b604f9d2a87969eb8306e2f1c383497e9c1b5f7704a2f33b71ac9792",
     "edit_policy": "Read-only provenance; no launcher, argument/environment, resource lookup, config restore, physics or runtime change in directory cleanup."
+  },
+  "gorilla_publication": {
+    "current_entry": "robots/gorilla/README.md",
+    "artbook": "robots/gorilla/artbook.md",
+    "asset_catalog": "robots/gorilla/asset_catalog.json",
+    "current_revision": "p30",
+    "selected_model": "b7",
+    "date": "2026-10-09",
+    "storage": "Git LFS for Gorilla models / archives / large geometry dumps; PNG and navigation files remain normal Git blobs."
   }
 }

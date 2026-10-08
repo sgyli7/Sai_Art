@@ -1,0 +1,77 @@
+{
+  "spec": "/home/ethan/Projects/Sai_Art/docs/uri_style/gorilla_v0_2/uri_knee_panel_composition_p27.json",
+  "base": "/home/ethan/Projects/Sai_Art/docs/uri_style/gorilla_v0_2/images/gorilla_four_view_black_knees_exhausts_p26.png",
+  "base_sha256": "3b4a6326918f6870f9e19f43c51a6322a31cb5e34ef98e574e7ec36174c96095",
+  "overlay": "/home/ethan/Projects/Sai_Art/docs/uri_style/gorilla_v0_2/images/uri_knee_guard_redesign_generated_p27.png",
+  "overlay_sha256": "0884ae225c0b1942a7972cb7f5b420d4c99608ec3555f9640b2d7b9fac2e2f10",
+  "output": "/home/ethan/Projects/Sai_Art/docs/uri_style/gorilla_v0_2/images/gorilla_four_view_uri_knee_guards_p27.png",
+  "output_sha256": "96facbbd42b50781fb72e4ed77890c7e103a21e477d40627a368db847c24f523",
+  "svg": "/home/ethan/Projects/Sai_Art/docs/uri_style/gorilla_v0_2/images/gorilla_four_view_uri_knee_guards_p27.svg",
+  "svg_sha256": "c76eea1143993091d4d2be4edd0d3659aca80bd3b37d906bf4d9ed6767e1170c",
+  "authorized_regions": [
+    [
+      158,
+      342,
+      294,
+      446
+    ],
+    [
+      326,
+      342,
+      462,
+      446
+    ],
+    [
+      787,
+      344,
+      928,
+      458
+    ],
+    [
+      925,
+      388,
+      948,
+      430
+    ],
+    [
+      162,
+      945,
+      291,
+      1068
+    ],
+    [
+      339,
+      945,
+      467,
+      1068
+    ],
+    [
+      799,
+      962,
+      905,
+      1028
+    ],
+    [
+      975,
+      962,
+      1082,
+      1028
+    ]
+  ],
+  "unchanged_region_checks": {
+    "FRONT_torso_shoulders_intakes": true,
+    "LEFT_torso_shoulders": true,
+    "REAR_torso_pad_exhausts": true,
+    "TOP_chest_shoulders": true,
+    "FRONT_label": true,
+    "LEFT_label": true,
+    "REAR_TOP_labels": true
+  },
+  "verification_baseline": "/home/ethan/Projects/Sai_Art/docs/uri_style/gorilla_v0_2/images/gorilla_four_view_uri_knee_guards_p27_original_native_baseline.png",
+  "source_embedded_bytes_unchanged": true,
+  "native_decoder_vs_pillow_original_max_channel_difference": 0,
+  "changed_pixels_outside_authorized_regions": 0,
+  "image_editing_method": "Imagegen raster edit; native SVG layout embeds original bytes without raster painting.",
+  "whole_v0_2_qualified": false,
+  "user_accepted": false
+}

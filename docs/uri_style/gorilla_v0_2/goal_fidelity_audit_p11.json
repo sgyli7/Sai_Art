@@ -1,0 +1,144 @@
+{
+  "created_at": "2026-10-03T18:55:48.875531+08:00",
+  "previous_goal_turn_classification": "progress: real redraw outputs, saved evidence and upper/lower integration; no claim of completion",
+  "goal_status": "active_completion_unproven",
+  "latest_authoritative_references": {
+    "lower_structure": "references/user_pixal_lower_body.jpg",
+    "color_and_upper_identity": "../gorilla_v0_1/images/locked_four_view_review_rev_aa3.png",
+    "foot_completion": [
+      "references/foot_reference_complete_foreheel.jpg",
+      "references/foot_reference_low_integrated.jpg",
+      "references/foot_reference_model_joint_bridge.jpg"
+    ]
+  },
+  "requirements": [
+    {
+      "item": "Faithful new thigh and continuous shank masses from selected model",
+      "state": "partially_evidenced",
+      "evidence": "p11 visible panels and selected lower reference; exact contour/proportion agreement not proven"
+    },
+    {
+      "item": "Original v0.1 upper body and paint allocation",
+      "state": "visible_identity_retained_exact_restoration_unproven",
+      "evidence": "p11 against locked v0.1 reference"
+    },
+    {
+      "item": "Complete full-width forefoot and heel replacing defective half-foot",
+      "state": "visible_features_present_topology_needs_revision",
+      "evidence": "p11 has complete contacts but secondary circular ankle/foot connector remains below shank"
+    },
+    {
+      "item": "One broad low main ankle within continuous descending shank/foot structure",
+      "state": "contradicted_by_current_intermediate_connectors",
+      "evidence": "p11 LEFT compared with low integrated foot reference"
+    },
+    {
+      "item": "Same pose, scale and corresponding geometry in four views",
+      "state": "incomplete",
+      "evidence": "illustrated_view_extents_p11.json; raster width/height discrepancy and no updated common mesh"
+    },
+    {
+      "item": "Bent nonhuman Z posture, height allowed to reduce without stretching legs",
+      "state": "visible_bend_present_geometric_verification_unproven",
+      "evidence": "p11 LEFT; no measured same-model pose sweep"
+    },
+    {
+      "item": "No weapons; clean purposeful rich URI finish",
+      "state": "visually_supported",
+      "evidence": "p11 visible full sheet"
+    },
+    {
+      "item": "Whole v0.2 native sources, coordinate/scale/interface annotations, themes and handoff",
+      "state": "still_open_deferred_after_latest_request_to_draw_from_pixal_model",
+      "evidence": "current_design_status.json delivery_target; p11 record explicitly says no common updated foot CAD"
+    }
+  ],
+  "raster_extent_evidence": {
+    "image": "/home/ethan/Projects/Sai_Art/docs/uri_style/gorilla_v0_2/images/gorilla_four_view_pixal_lower_candidate_p11.png",
+    "sha256": "d64589b95574ac2e824748b533ec1be5c40f555e37f2b48e21c8487e20ea8217",
+    "dimensions_px": [
+      1254,
+      1254
+    ],
+    "measurement_scope": "visible raster extents after frame/text exclusion",
+    "limitations": [
+      "Antialiasing, highlights, shadows and disconnected small features affect extents.",
+      "This is not proof of common 3D geometry, source fidelity, collision clearance or load capacity."
+    ],
+    "panels": {
+      "FRONT": {
+        "bbox_panel_px": [
+          89,
+          19,
+          535,
+          600
+        ],
+        "visible_width_px": 447,
+        "visible_height_px": 582,
+        "retained_component_areas_px": [
+          155328,
+          262
+        ]
+      },
+      "LEFT": {
+        "bbox_panel_px": [
+          154,
+          14,
+          437,
+          600
+        ],
+        "visible_width_px": 284,
+        "visible_height_px": 587,
+        "retained_component_areas_px": [
+          102100
+        ]
+      },
+      "REAR": {
+        "bbox_panel_px": [
+          87,
+          16,
+          539,
+          577
+        ],
+        "visible_width_px": 453,
+        "visible_height_px": 562,
+        "retained_component_areas_px": [
+          149921
+        ]
+      },
+      "TOP": {
+        "bbox_panel_px": [
+          37,
+          94,
+          559,
+          497
+        ],
+        "visible_width_px": 523,
+        "visible_height_px": 404,
+        "retained_component_areas_px": [
+          130868,
+          1399
+        ]
+      }
+    },
+    "elevation_height_spread_fraction": 0.043327556325823226,
+    "top_to_front_visible_width_ratio": 1.1700223713646531,
+    "top_uniform_scale_to_match_front": 0.8546845124282982,
+    "raster_alignment_findings": {
+      "elevation_height_difference_exceeds_2_percent": true,
+      "top_width_difference_exceeds_2_percent": true
+    }
+  },
+  "next_corrections": [
+    "Retain P11 leg/foot design and palette; correct modest torso/thigh forward depth in LEFT and corresponding TOP",
+    "Separately check view registration and common displayed scale"
+  ],
+  "completion_claim": false,
+  "latest_user_steering": {
+    "at": "2026-10-03T19:09:34.344662+08:00",
+    "accepted_scope": "P11 design direction as the next revision baseline, not full mechanical or native-delivery acceptance",
+    "request": "Improve spatial correctness; LEFT overly forward-protruding and visual balance not central. P11 accepted as revision baseline.",
+    "attachment": "references/user_p11_balance_feedback.jpg"
+  },
+  "prior_ankle_overhaul_plan_status": "Superseded before generation; current user asks spatial refinement of P11."
+}

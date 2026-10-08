@@ -1,0 +1,89 @@
+{
+  "spec": "/home/ethan/Projects/Sai_Art/docs/uri_style/gorilla_v0_2/black_knees_exhausts_composition_p26.json",
+  "base": "/home/ethan/Projects/Sai_Art/docs/uri_style/gorilla_v0_2/images/gorilla_four_view_knee_modules_p25.png",
+  "base_sha256": "35f8286002279c41e4b8dccd9239531c156b964619a30c608f6aa58d322491db",
+  "overlay": "/home/ethan/Projects/Sai_Art/docs/uri_style/gorilla_v0_2/images/black_knees_rear_exhausts_generated_p26.png",
+  "overlay_sha256": "7f797c347955bf30b2d43f3b417c576d885c56279f1898ade1e662489531ac85",
+  "output": "/home/ethan/Projects/Sai_Art/docs/uri_style/gorilla_v0_2/images/gorilla_four_view_black_knees_exhausts_p26.png",
+  "output_sha256": "3b4a6326918f6870f9e19f43c51a6322a31cb5e34ef98e574e7ec36174c96095",
+  "svg": "/home/ethan/Projects/Sai_Art/docs/uri_style/gorilla_v0_2/images/gorilla_four_view_black_knees_exhausts_p26.svg",
+  "svg_sha256": "cb7c3893410a40071f8837dc4cc75571d852460fd6f0065151833281cb3508cf",
+  "authorized_regions": [
+    [
+      158,
+      342,
+      294,
+      446
+    ],
+    [
+      326,
+      342,
+      462,
+      446
+    ],
+    [
+      787,
+      351,
+      904,
+      458
+    ],
+    [
+      911,
+      379,
+      944,
+      414
+    ],
+    [
+      162,
+      945,
+      291,
+      1068
+    ],
+    [
+      339,
+      945,
+      467,
+      1068
+    ],
+    [
+      804,
+      972,
+      902,
+      1025
+    ],
+    [
+      978,
+      972,
+      1077,
+      1025
+    ],
+    [
+      249,
+      698,
+      279,
+      762
+    ],
+    [
+      353,
+      698,
+      384,
+      762
+    ]
+  ],
+  "unchanged_region_checks": {
+    "FRONT_upper_body_and_intakes": true,
+    "LEFT_upper_body": true,
+    "REAR_blue_pad": true,
+    "TOP_upper_body": true,
+    "FRONT_label": true,
+    "LEFT_label": true,
+    "REAR_TOP_labels": true
+  },
+  "verification_baseline": "/home/ethan/Projects/Sai_Art/docs/uri_style/gorilla_v0_2/images/gorilla_four_view_black_knees_exhausts_p26_original_native_baseline.png",
+  "source_embedded_bytes_unchanged": true,
+  "native_decoder_vs_pillow_original_max_channel_difference": 0,
+  "changed_pixels_outside_authorized_regions": 0,
+  "image_editing_method": "Imagegen raster edit; native SVG layout embeds original bytes without raster painting.",
+  "whole_v0_2_qualified": false,
+  "user_accepted": false
+}

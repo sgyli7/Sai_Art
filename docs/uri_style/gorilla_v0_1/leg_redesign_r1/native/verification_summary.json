@@ -1,0 +1,22 @@
+{
+  "source_sha256": "82a167fa15535498587227d89ae31b01d3c32cdb3d6a4f8fbba1f427ef80ca7c",
+  "reference_hip_height_m": 1.2744285302277962,
+  "leg_lengths_m": [
+    0.68,
+    0.68,
+    0.5
+  ],
+  "old_total_height_constraint_released": true,
+  "whole_height_not_finalized": true,
+  "finite_sampled_assembly_collision_count": 0,
+  "dynamic_steps": 40000,
+  "dynamic_material_collision_count": 0,
+  "maximum_joint_tracking_error_deg": 0.06567203870619004,
+  "maximum_directional_force_ratio": 0.7902621437491666,
+  "physical_accepted": false,
+  "scope": "Lowered single-leg rigid-body candidate only. Not wholebody, rated load, structural/fatigue or manufacturing acceptance.",
+  "status": "historical_single_leg_only_whole_fit_rejected_not_current_handoff",
+  "whole_fit_collision_events": 10864,
+  "whole_fit_report": "whole_fit_report.json",
+  "current_art_handoff": "../../leg_design_r2/readme.md"
+}

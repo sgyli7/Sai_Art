@@ -1,0 +1,23 @@
+{
+  "reference": "source/lower_dense_assembled_s9.blend",
+  "reference_object": "pixal_clear_side_leg",
+  "role": "Read-only outer-volume fitting measurements; never imported as the finished model",
+  "guide": "source/primary_reference_volume_guide_b8.npz",
+  "guide_sha256": "dc6f472730029f7e7076c8c32742d7c8ad4e2a4a1cc637c32fa6b8422bdb4f62",
+  "pitch": 0.0015,
+  "shape": [
+    136,
+    249,
+    310
+  ],
+  "raw_surface_voxels": 293331,
+  "solid_voxels": 1982218,
+  "origin": [
+    0.066,
+    -0.2535,
+    -0.3915
+  ],
+  "processing": "Triangle sampling, one-cell closing and enclosed-volume filling for outer armor fitting",
+  "foot_included": false,
+  "geometry_or_physics_accepted": false
+}

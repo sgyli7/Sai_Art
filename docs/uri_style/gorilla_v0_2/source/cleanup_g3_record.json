@@ -1,0 +1,151 @@
+{
+  "revision": "g3",
+  "source_preserved": true,
+  "input_glb_sha256": "60ba19b16ac5d6fdbe9d341502931ff52c49e2741b1087c366e05ba8f7fed971",
+  "removed_vertex_regions": {
+    "handheld_weapon": 56283,
+    "back_weapon": 11337,
+    "disconnected_fragments": 3789
+  },
+  "native_operations": [
+    "3D weapon face removal",
+    "native smooth octree dual-contour remesh depth 9",
+    "55 smoothing iterations and unobscured-side geometric reflection",
+    "camera-coordinate calibration",
+    "editable lamp, forward radiator, rear service hatch and thigh armor restoration"
+  ],
+  "calibration_degrees": {
+    "yaw": -35,
+    "roll_y": -4,
+    "photo_elevation_x": 10
+  },
+  "coordinate_frame": {
+    "up": "+Z",
+    "front": "-Y",
+    "left": "+X",
+    "scale": "normalized appearance units"
+  },
+  "bounds": [
+    [
+      -0.40382981300354004,
+      -0.3571682870388031,
+      -0.4538644850254059
+    ],
+    [
+      0.4039345979690552,
+      0.2657012641429901,
+      0.44420987367630005
+    ]
+  ],
+  "vertices": 1525130,
+  "faces": 1545764,
+  "radiator_faces": [
+    {
+      "side": -1,
+      "center": [
+        -0.119,
+        -0.19367824840545655,
+        0.26
+      ],
+      "opening_normal": [
+        0,
+        -1,
+        0
+      ]
+    },
+    {
+      "side": 1,
+      "center": [
+        0.119,
+        -0.20235692310333253,
+        0.26
+      ],
+      "opening_normal": [
+        0,
+        -1,
+        0
+      ]
+    }
+  ],
+  "views": [
+    {
+      "name": "front",
+      "path": "images/front_native_g3.png",
+      "eye": [
+        5.239248275756836e-05,
+        -3.0457334518432617,
+        -0.0048273056745529175
+      ],
+      "target": [
+        5.239248275756836e-05,
+        -0.045733511447906494,
+        -0.0048273056745529175
+      ],
+      "orthographic_scale": 1.0687085390090942
+    },
+    {
+      "name": "left",
+      "path": "images/left_native_g3.png",
+      "eye": [
+        3.0000524520874023,
+        -0.045733511447906494,
+        -0.0048273056745529175
+      ],
+      "target": [
+        5.239248275756836e-05,
+        -0.045733511447906494,
+        -0.0048273056745529175
+      ],
+      "orthographic_scale": 1.0687085390090942
+    },
+    {
+      "name": "rear",
+      "path": "images/rear_native_g3.png",
+      "eye": [
+        5.239248275756836e-05,
+        2.9542665481567383,
+        -0.0048273056745529175
+      ],
+      "target": [
+        5.239248275756836e-05,
+        -0.045733511447906494,
+        -0.0048273056745529175
+      ],
+      "orthographic_scale": 1.0687085390090942
+    },
+    {
+      "name": "top",
+      "path": "images/top_native_g3.png",
+      "eye": [
+        5.239248275756836e-05,
+        -0.045733511447906494,
+        2.9951727390289307
+      ],
+      "target": [
+        5.239248275756836e-05,
+        -0.045733511447906494,
+        -0.0048273056745529175
+      ],
+      "orthographic_scale": 1.0687085390090942
+    },
+    {
+      "name": "reference",
+      "path": "images/reference_native_g3.png",
+      "eye": [
+        1.7220523357391357,
+        -2.5027334690093994,
+        0.535172700881958
+      ],
+      "target": [
+        5.239248275756836e-05,
+        -0.045733511447906494,
+        -0.0048273056745529175
+      ],
+      "orthographic_scale": 1.0687085390090942
+    }
+  ],
+  "same_geometry_and_pose_all_views": true,
+  "imagegen_used": false,
+  "qualification": "native appearance cleanup candidate; not mechanically dimensioned or load qualified",
+  "elapsed_seconds": 86.11618614196777
+}

@@ -1,0 +1,71 @@
+{
+  "revision": "L",
+  "purpose": "local shape/normal-flow reference for art only, no new model deliverable",
+  "source_method": "https://homes.luddy.indiana.edu/hansona/",
+  "implicit_equation": "z1^5+z2^5=1, complex variables; local real 2-manifold in R4; a slice of a quintic CY, not the full real 6-dimensional manifold or Ricci-flat metric",
+  "parameterization": "z1=r*exp(i*phi), z2=(1-z1^5)^(1/5) on one smooth principal branch",
+  "r_domain": [
+    0.3,
+    0.96
+  ],
+  "phi_domain": [
+    -0.52,
+    0.52
+  ],
+  "projection_R4_to_R3": [
+    [
+      0.0,
+      0.8775825618903728,
+      0.0,
+      -0.479425538604203
+    ],
+    [
+      -0.9393727128473789,
+      0.0,
+      -0.34289780745545134,
+      0.0
+    ],
+    [
+      0.34289780745545134,
+      0.0,
+      -0.9393727128473789,
+      0.0
+    ]
+  ],
+  "projection_row_orthogonality_error": 1.1102230246251565e-16,
+  "art_scaling_after_projection": [
+    1.3719764454727035,
+    1.23888254440803,
+    0.8241124747188061
+  ],
+  "complex_equation_max_residual": 2.288783399261119e-15,
+  "distance_to_branch_locus_min": 0.18462730240000003,
+  "projected_parameter_area_min": 0.43198261957385836,
+  "sampled_bounds_m": {
+    "x": [
+      -0.61,
+      0.61
+    ],
+    "y": [
+      -0.39000000000000007,
+      0.39000000000000007
+    ],
+    "z": [
+      2.12,
+      2.54
+    ]
+  },
+  "limit": "Partial open drawing patch, not a closed shell, not a CAD or collision/strength/printability proof. Imagegen may interpret rather than exactly reproduce it. Guide iso-curves must not become decorative seams in final artwork.",
+  "sha256_source": "afdf870b1a9ae041c70afe7339233a60efd97e8614077f4bcd24226221e1fda0",
+  "art_adaptation": {
+    "method": "cross-section width and sagittal locators fitted to crown envelope; transverse profile remains coupled to all projected complex coordinates",
+    "formulas": {
+      "x": "(0.28+0.33t)*Px/maxabs(Px)",
+      "y": "0.28-0.73t+0.065*(Py-Py0)/maxabs(Py-Py0)",
+      "z": "2.30+0.28t-0.035t(1-t)+(0.065+0.105t)*(Pz-Pz0)/maxabs(Pz-Pz0)"
+    },
+    "sampled_parameter_area_min": 0.6597528416994506,
+    "purpose": "normal and shape flow guide only; no seams, material or model detail authority",
+    "status": "non-isometric physical-form adaptation, not a raw CY projection or complete CY manifold"
+  }
+}

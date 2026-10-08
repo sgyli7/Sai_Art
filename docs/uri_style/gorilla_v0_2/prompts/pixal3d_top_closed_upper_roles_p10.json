@@ -1,0 +1,47 @@
+{
+  "stage": "standalone_top_restore_closed_upper",
+  "status": "generated_candidate_top_for_integration",
+  "tool": "built_in_image_gen",
+  "prompt": "/home/ethan/Projects/Sai_Art/docs/uri_style/gorilla_v0_2/prompts/pixal3d_top_closed_upper_p10.txt",
+  "references": [
+    {
+      "index": 1,
+      "path": "/home/ethan/Projects/Sai_Art/docs/uri_style/gorilla_v0_2/images/pixal_top_native_guided_p9.png",
+      "role": "EDIT_TARGET_TRUE_TOP_LOWER_POSITION_REPLACE_UPPER",
+      "sha256": "02ae0e3a6613309134ea268265375df574637a06855ebb8fa2a30c01f0a886e8"
+    },
+    {
+      "index": 2,
+      "path": "/home/ethan/Projects/Sai_Art/docs/uri_style/gorilla_v0_1/images/locked_four_view_review_rev_aa3.png",
+      "role": "EXACT_ORIGINAL_UPPER_TOP_IDENTITY_PALETTE",
+      "sha256": "5c0469708d7c878ac6253e6ac3e6276198bf3694235bbed3da66c8c743b5aba4"
+    },
+    {
+      "index": 3,
+      "path": "/home/ethan/Projects/Sai_Art/.agents/skills/uri-style/assets/style_01_race_car_hangar.png",
+      "role": "STYLE_ONLY",
+      "sha256": "1aed979f442030b644db5b86c79ad69d44f14092f865eb28f157663476eec8c9"
+    },
+    {
+      "index": 4,
+      "path": "/home/ethan/Projects/Sai_Art/.agents/skills/uri-style/assets/style_03_tracked_mobile_station.png",
+      "role": "STYLE_ONLY",
+      "sha256": "da14249a726ca5009b222a0dd7dc2c7a1fdbfe49ef31b8080936e855e8eb1f6f"
+    },
+    {
+      "index": 5,
+      "path": "/home/ethan/Projects/Sai_Art/.agents/skills/uri-style/assets/style_05_white_blue_racer.png",
+      "role": "STYLE_ONLY",
+      "sha256": "fc5f342e892842887e738798b5870b9245fb3c7376a028c5f503301ac687f1bc"
+    }
+  ],
+  "output": "/home/ethan/Projects/Sai_Art/docs/uri_style/gorilla_v0_2/images/pixal_top_closed_upper_p10.png",
+  "output_sha256": "131652c47adaf6c55ba367a32bd711ae7814768f9ce7c7a16acc4d000a59052e",
+  "built_in_output": "/home/ethan/.codex/generated_images/01a0f3ab-7a57-7172-b8c5-e517aa2973da/exec-e8ca0837-da18-40d5-9af7-aa06b7af4006.png",
+  "visual_findings": [
+    "Closed original wedge upper shell restored; back fork and arm-side artifacts removed.",
+    "Exactly two complete feet; no duplicate feet behind roof.",
+    "Forward radiator faces absent apart from narrow rim edges.",
+    "Illustrated top projection based on native occlusion guide; not same-mesh CAD proof."
+  ]
+}

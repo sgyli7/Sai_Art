@@ -1,0 +1,34 @@
+{
+  "revision": "AA3",
+  "status": "candidate_for_user_review",
+  "layout": "2x2: FRONT LEFT / REAR TOP",
+  "selected_source": {
+    "path": "/home/ethan/Projects/Sai_Art/docs/uri_style/gorilla_v0_1/images/original_wedge_rebuild_rev_z1.png",
+    "sha256": "f737106f29b6894f11ecd1c2747f8c59ba8da85178e5a2485ae66d0e5d2a8af5"
+  },
+  "local_ai_correction_source": {
+    "path": "/home/ethan/Projects/Sai_Art/docs/uri_style/gorilla_v0_1/images/locked_front_rear_local_corrections_rev_aa1.png",
+    "sha256": "6e1c043bab8b43d71dd24bf4bc731451bc4e2214634795193971cb249e453c5d"
+  },
+  "left_top_source": {
+    "path": "/home/ethan/Projects/Sai_Art/docs/uri_style/gorilla_v0_1/images/locked_machine_left_top_rev_aa2.png",
+    "sha256": "47835aa0ac34dff4c3d1eb467dbcd0b24d2184a2d73aa1363778653f35292110"
+  },
+  "top_lamp_correction_source": {
+    "path": "/home/ethan/Projects/Sai_Art/docs/uri_style/gorilla_v0_1/images/top_lamp_edge_only_rev_aa3.png",
+    "sha256": "824967a97a5338175792e04cbd47987dd64e89612fc135aaad6707c1434daead"
+  },
+  "allowed_overlay_regions": {
+    "front_radiators": "<rect x=\"169\" y=\"188\" width=\"74\" height=\"115\"/><rect x=\"362\" y=\"188\" width=\"78\" height=\"115\"/>",
+    "front_hip_interior": "<path d=\"M 227,337 L 282,339 L 281,374 L 260,390 L 260,464 L 238,464 L 231,419 Z\"/><path d=\"M 379,337 L 324,339 L 325,374 L 346,390 L 346,464 L 368,464 L 375,419 Z\"/>",
+    "rear_shoulder_interior": "<path d=\"M 1072,173 L 1113,166 L 1113,215 L 1127,278 L 1124,327 L 1092,333 L 1075,280 Z\"/><path d=\"M 1402,173 L 1361,166 L 1361,215 L 1347,278 L 1350,327 L 1382,333 L 1399,280 Z\"/>",
+    "top_lamp_edge": "<rect x=\"1053\" y=\"630\" width=\"69\" height=\"46\"/>"
+  },
+  "preservation": "FRONT and REAR reference the unchanged selected source raster, with clipped imagegen overlays only inside the user-authorized local regions. No warping, recoloring, redrawing or mirroring in composition. Uniform page rescaling only.",
+  "upright_scale_anchor": "Selected source top 86 / ground 895; LEFT source top 28 / ground 925; visually align overall height. No inference of measured CAD depth.",
+  "top_scale_anchor": "Match projected arm-span width to FRONT; visual illustration only.",
+  "svg": "/home/ethan/Projects/Sai_Art/docs/uri_style/gorilla_v0_1/images/locked_four_view_review_rev_aa3.svg",
+  "svg_sha256": "0deb94aca7b26da225cb3f79cc993459f29597f4c2f1c4ff135ece63b71a1f11",
+  "png": "/home/ethan/Projects/Sai_Art/docs/uri_style/gorilla_v0_1/images/locked_four_view_review_rev_aa3.png",
+  "png_sha256": "5c0469708d7c878ac6253e6ac3e6276198bf3694235bbed3da66c8c743b5aba4"
+}

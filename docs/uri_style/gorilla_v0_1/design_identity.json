@@ -1,0 +1,57 @@
+{
+  "product_name": "Gorilla V0.1",
+  "art_revision": "AA3",
+  "scope": "appearance design; existing coarse model used only for size and placement, no new modelling or hardware work",
+  "review_status": "selected_front_rear_local_exceptions_and_new_angles_for_review",
+  "approved_direction": "references/approved_direction.png",
+  "preserve": [
+    "continuous full upper core",
+    "abstract integrated head-body identity",
+    "compact secondary shoulders",
+    "ivory/azure/saffron palette",
+    "short visible waist",
+    "powerful useful manipulators",
+    "genuine three-link Z legs",
+    "low broad feet",
+    "clean ordered rich construction"
+  ],
+  "restrained_gorilla_elements": [
+    "slightly arched shoulder/back silhouette",
+    "weighty forearms",
+    "supported palms and rounded-square knuckle blocks"
+  ],
+  "hand_visual_intent": "three broad two-segment load fingers plus opposing thumb, enclosed sculpted palm; art intent only",
+  "design_height_intent_m": 2.65,
+  "height_status": "visual design intent, not measured CAD size",
+  "current_master": null,
+  "current_three_view": null,
+  "dimension_lock": "dimension_lock.json",
+  "leg_topology": "hip -> thigh -> knee J1 -> middle shank -> extra fold J2 -> distal support -> ankle J3 -> foot",
+  "external_handoff": "WITHDRAWN: no further task messaging, package creation or delivery; current sheet needs user review.",
+  "surface_design_intent": "Existing upper core retained at approved projected width/height; whole is wedge/tetrahedral-like with intrinsic continuous curvature and sagittal depth, not planar patchwork or higher summit. Original azure guard regions retained.",
+  "surface_study": null,
+  "surface_study_scope": "No mathematical/model study used in current artwork. Topology reference expresses appearance intent; no computed optimum.",
+  "leg_topology_visual_status": "Selected FRONT/REAR retained; LEFT continuous unbranched compound chain reconstructed for review, no measured CAD correspondence claim.",
+  "foot_visual_intent": "Current FRONT/REAR foot shape is locked to user-selected G37. LEFT reconstructs that same ivory toe, dark sole/heel and compound link inventory; earlier open-foot redesign does not override this selection.",
+  "auxiliary_tool_status": "mathematical/tool study stopped at user request; final artwork generated without its geometry guide",
+  "current_view": "2x2 FRONT LEFT / REAR TOP review candidate",
+  "bilateral_design_intent": "Matching mirrored geometry, cover boundaries, color layout and joint levels across the sagittal center plane. Visually reviewed at major assembly level; imagegen raster has small shading/detail differences and is not exact mirrored CAD.",
+  "forearm_visual_intent": "One original bright-azure guard per forearm. Actual elbow rod/ball clutter reduced into fewer integrated drive members, saffron painted/inlaid accents retained.",
+  "lower_leg_guard_intent": "Match the blue main shank, short blue terminal cuff and three joint levels in the selected G37 FRONT/REAR. Do not use Z7 invented orange calf islands or another replacement leg design.",
+  "internal_mechanical_visual_intent": "Fewer integrated shoulder/hip drives and connected graphite roots; redundant bead/cap/ring populations removed, exterior palette retained.",
+  "current_master_status": "no_user_approved_complete_sheet",
+  "radiator_orientation": "Both opening planes face forward; LEFT sees closed sidewall/edge, not a full side-facing grille.",
+  "front_pelvis_cover": "one whole orange painted cover; rear separate panels retain color",
+  "rejected_art": "images/orthographic_three_view_rev_y5.png",
+  "current_review_artifact": "images/locked_four_view_review_rev_aa3.png",
+  "selected_front_rear": {
+    "source": "images/original_wedge_rebuild_rev_z1.png",
+    "approved_by_user": "FRONT and REAR source views and paint selection",
+    "later_authorized_exceptions": [
+      "forward-facing radiators",
+      "reduce unnecessary FRONT hip interior",
+      "reduce unnecessary REAR shoulder interior"
+    ],
+    "composition": "Use original raster, only clipped local imagegen overlays within permitted regions."
+  }
+}

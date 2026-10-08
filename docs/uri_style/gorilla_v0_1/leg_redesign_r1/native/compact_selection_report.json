@@ -1,0 +1,234 @@
+{
+  "scene_sha256": "2472ab88ed6e735407e05af6f7d83f662707a61a7fce03d4b4705ae43e1bce20",
+  "whole_fit_sha256": "4484341ecbc9fef63241ac875675c100d7ae7e95b8aef43633bdb9b182786ef6",
+  "selector_sha256": "a0b5548517df6eee653ef85a8f0d078a2e70a34005acab10df26d84d5d20075a",
+  "assembly_builder_sha256": "4011bbade6ddfb297e76a5183d55baa47cf94cbea11d199a11ee099f60e3c7a4",
+  "options_sha256": "245b59ce452817f8bc0bb386f94d4307d787b2e443f2c472174e049104231c0c",
+  "pose_indices": [
+    0,
+    10,
+    20,
+    30,
+    40,
+    50,
+    60,
+    70,
+    80,
+    90,
+    100,
+    110,
+    120
+  ],
+  "per_joint": [
+    {
+      "joint": 0,
+      "tested": 244,
+      "kept": 1,
+      "rejections": [
+        {
+          "pair": [
+            "upperbody",
+            "knee_0_fixed_fork"
+          ],
+          "count": 63
+        },
+        {
+          "pair": [
+            "knee_0_moving_fork",
+            "frame_distal"
+          ],
+          "count": 142
+        },
+        {
+          "pair": [
+            "upperbody",
+            "knee_1_cylinder"
+          ],
+          "count": 3
+        },
+        {
+          "pair": [
+            "upperbody",
+            "knee_0_moving_fork"
+          ],
+          "count": 2
+        },
+        {
+          "pair": [
+            "knee_0_moving_fork",
+            "pressure_carrier"
+          ],
+          "count": 8
+        },
+        {
+          "pair": [
+            "upperbody",
+            "knee_1_moving_fork"
+          ],
+          "count": 12
+        },
+        {
+          "pair": [
+            "knee_0_moving_fork",
+            "frame_thigh"
+          ],
+          "count": 2
+        },
+        {
+          "pair": [
+            "knee_0_fixed_fork",
+            "frame_middle"
+          ],
+          "count": 1
+        },
+        {
+          "pair": [
+            "knee_0_fixed_fork",
+            "frame_distal"
+          ],
+          "count": 1
+        },
+        {
+          "pair": [
+            "upperbody",
+            "knee_0_cylinder"
+          ],
+          "count": 5
+        },
+        {
+          "pair": [
+            "upperbody",
+            "knee_1_fixed_fork"
+          ],
+          "count": 1
+        },
+        {
+          "pair": [
+            "knee_0_moving_fork",
+            "shaft_fold"
+          ],
+          "count": 3
+        }
+      ]
+    },
+    {
+      "joint": 1,
+      "tested": 49,
+      "kept": 4,
+      "rejections": [
+        {
+          "pair": [
+            "fold_0_fixed_fork",
+            "frame_thigh"
+          ],
+          "count": 35
+        },
+        {
+          "pair": [
+            "fold_0_cylinder",
+            "shaft_ankle"
+          ],
+          "count": 1
+        },
+        {
+          "pair": [
+            "fold_0_moving_fork",
+            "pressure_carrier"
+          ],
+          "count": 4
+        },
+        {
+          "pair": [
+            "upperbody",
+            "fold_0_fixed_fork"
+          ],
+          "count": 5
+        }
+      ]
+    },
+    {
+      "joint": 2,
+      "tested": 36,
+      "kept": 1,
+      "rejections": [
+        {
+          "pair": [
+            "ankle_0_cylinder",
+            "ankle_0_piston_rod"
+          ],
+          "count": 2
+        },
+        {
+          "pair": [
+            "ankle_0_moving_fork",
+            "ankle_0_cylinder"
+          ],
+          "count": 3
+        },
+        {
+          "pair": [
+            "ankle_0_moving_fork",
+            "frame_distal"
+          ],
+          "count": 1
+        },
+        {
+          "pair": [
+            "ankle_0_fixed_fork",
+            "frame_middle"
+          ],
+          "count": 26
+        },
+        {
+          "pair": [
+            "ankle_0_cylinder",
+            "frame_distal"
+          ],
+          "count": 3
+        }
+      ]
+    }
+  ],
+  "combinations_tried": 4,
+  "combination_rejections": [
+    {
+      "pair": [
+        "fold_0_fixed_fork",
+        "ankle_0_moving_fork"
+      ],
+      "count": 1
+    },
+    {
+      "pair": [
+        "knee_0_moving_fork",
+        "ankle_0_cylinder"
+      ],
+      "count": 1
+    },
+    {
+      "pair": [
+        "knee_0_moving_fork",
+        "fold_0_cylinder"
+      ],
+      "count": 2
+    }
+  ],
+  "selection_found": false,
+  "physical_accepted": false,
+  "architecture": {
+    "hip_half_spacing_m": 0.39,
+    "knee_lateral_offsets_m": [
+      -0.19,
+      0.19
+    ],
+    "fold_lateral_offsets_m": [
+      -0.2,
+      0.2
+    ],
+    "ankle_lateral_offsets_m": [
+      0.0
+    ],
+    "ankle_bore_m": 0.13
+  },
+  "scope": "13-pose finite material rejection, including C15 upperbody and centreline. Must run full 121-pose checks, drive loading and install a real hip attachment."
+}

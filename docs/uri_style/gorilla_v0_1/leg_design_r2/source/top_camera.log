@@ -1,0 +1,377 @@
+Blender 4.0.2
+Read blend: "/home/ethan/Projects/Sai_Art/docs/uri_style/gorilla_v0_1/leg_design_r2/source/leg_design_context.blend"
+Fra:1 Mem:53.88M (Peak 53.88M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | render_floor_not_a_robot_part
+Fra:1 Mem:53.89M (Peak 53.89M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | upper_crown_top_panel_line_02
+Fra:1 Mem:53.89M (Peak 53.89M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | upper_crown_fastener_0
+Fra:1 Mem:53.92M (Peak 53.92M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | upper_crown_fastener_1
+Fra:1 Mem:53.96M (Peak 53.96M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | upper_crown_fastener_2
+Fra:1 Mem:53.96M (Peak 53.96M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | upper_crown_fastener_3
+Fra:1 Mem:54.02M (Peak 54.02M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | upper_central_indicator_recess
+Fra:1 Mem:54.05M (Peak 54.05M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | upper_central_indicator_gold_frame
+Fra:1 Mem:54.05M (Peak 54.05M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | upper_rear_crown_panel_seam_00
+Fra:1 Mem:54.08M (Peak 54.08M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | upper_rear_crown_panel_seam_01
+Fra:1 Mem:54.10M (Peak 54.10M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | upper_dark_central_waist_coupler
+Fra:1 Mem:54.11M (Peak 54.11M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | upper_dark_pelvis_inner_layer
+Fra:1 Mem:54.11M (Peak 54.11M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | upper_left_deltoid_gold_marker
+Fra:1 Mem:54.13M (Peak 54.13M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | upper_left_upper_arm_gold_marker
+Fra:1 Mem:54.14M (Peak 54.14M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | upper_right_deltoid_gold_marker
+Fra:1 Mem:54.14M (Peak 54.14M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | upper_right_upper_arm_gold_marker
+Fra:1 Mem:54.14M (Peak 54.14M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | upper_continuous_ivory_torso_armor_cover
+Fra:1 Mem:54.14M (Peak 54.14M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | upper_left_blue_rear_shoulder_edge_cover
+Fra:1 Mem:54.20M (Peak 54.20M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | upper_right_blue_rear_shoulder_edge_cover
+Fra:1 Mem:54.28M (Peak 54.28M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | upper_left_ivory_hood_window_side_lip
+Fra:1 Mem:54.31M (Peak 54.31M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | upper_right_ivory_hood_window_side_lip
+Fra:1 Mem:54.40M (Peak 54.40M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | upper_rear_service_door_shadow
+Fra:1 Mem:54.41M (Peak 54.41M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | upper_rear_blue_service_door
+Fra:1 Mem:54.43M (Peak 54.43M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | upper_rear_control_screen_module_envelope
+Fra:1 Mem:54.45M (Peak 54.45M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | upper_rear_control_screen_glass
+Fra:1 Mem:54.46M (Peak 54.46M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | upper_rear_control_screen_header
+Fra:1 Mem:54.44M (Peak 54.46M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | upper_rear_control_screen_touch_zone_status
+Fra:1 Mem:54.48M (Peak 54.48M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | upper_rear_control_screen_zone_indicator_status
+Fra:1 Mem:54.49M (Peak 54.49M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | upper_rear_control_screen_touch_zone_task
+Fra:1 Mem:54.51M (Peak 54.51M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | upper_rear_control_screen_label_task
+Fra:1 Mem:54.53M (Peak 54.53M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | upper_rear_control_screen_zone_indicator_task
+Fra:1 Mem:54.57M (Peak 54.57M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | upper_rear_control_screen_touch_zone_local
+Fra:1 Mem:54.57M (Peak 54.57M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | upper_rear_control_screen_label_local
+Fra:1 Mem:54.57M (Peak 54.57M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | upper_rear_service_latch
+Fra:1 Mem:54.60M (Peak 54.60M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | upper_rear_door_upper_tab
+Fra:1 Mem:54.66M (Peak 54.66M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | upper_rear_door_screw_0
+Fra:1 Mem:54.67M (Peak 54.67M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | upper_rear_door_screw_2
+Fra:1 Mem:54.75M (Peak 54.75M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | upper_rear_door_screw_3
+Fra:1 Mem:54.76M (Peak 54.76M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | upper_ivory_crown_inset
+Fra:1 Mem:54.79M (Peak 54.79M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | upper_saffron_front_pelvis_cartridge
+Fra:1 Mem:54.88M (Peak 54.88M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | upper_ivory_rear_pelvis_cartridge
+Fra:1 Mem:54.89M (Peak 54.89M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | upper_left_rear_yellow_pelvis_band
+Fra:1 Mem:55.00M (Peak 55.00M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | upper_right_rear_yellow_pelvis_band
+Fra:1 Mem:55.03M (Peak 55.03M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | upper_ivory_rear_short_waist_connector
+Fra:1 Mem:55.09M (Peak 55.09M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | upper_left_blue_continuous_shoulder_sweep
+Fra:1 Mem:55.14M (Peak 55.14M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | upper_left_blue_shoulder_upper_return
+Fra:1 Mem:55.16M (Peak 55.16M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | upper_left_blue_rear_shoulder_guard
+Fra:1 Mem:55.33M (Peak 55.33M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | upper_left_blue_shoulder_diagonal_front_wing
+Fra:1 Mem:55.37M (Peak 55.37M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | upper_left_blue_chest_cheek_wrap
+Fra:1 Mem:55.65M (Peak 55.65M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | upper_left_blue_chest_cheek_side_return
+Fra:1 Mem:55.75M (Peak 55.75M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | upper_left_radiator_ivory_socket
+Fra:1 Mem:55.80M (Peak 55.80M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | upper_left_radiator_gold_trim
+Fra:1 Mem:55.89M (Peak 55.89M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | upper_left_radiator_black_well
+Fra:1 Mem:55.91M (Peak 55.91M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | upper_left_radiator_turning_plenum
+Fra:1 Mem:55.92M (Peak 55.92M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | upper_left_radiator_louver_00
+Fra:1 Mem:55.95M (Peak 55.95M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | upper_left_radiator_louver_01
+Fra:1 Mem:55.96M (Peak 55.96M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | upper_left_radiator_louver_02
+Fra:1 Mem:55.96M (Peak 55.96M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | upper_left_radiator_louver_03
+Fra:1 Mem:55.98M (Peak 55.98M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | upper_left_radiator_louver_04
+Fra:1 Mem:55.98M (Peak 55.98M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | upper_left_radiator_louver_05
+Fra:1 Mem:56.03M (Peak 56.03M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | upper_left_radiator_louver_06
+Fra:1 Mem:56.05M (Peak 56.05M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | upper_left_radiator_louver_07
+Fra:1 Mem:56.12M (Peak 56.12M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | upper_left_radiator_louver_08
+Fra:1 Mem:56.14M (Peak 56.14M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | upper_left_radiator_louver_09
+Fra:1 Mem:56.14M (Peak 56.14M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | upper_left_radiator_louver_10
+Fra:1 Mem:56.15M (Peak 56.15M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | upper_left_vent_fastener_0
+Fra:1 Mem:56.19M (Peak 56.19M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | upper_left_vent_fastener_1
+Fra:1 Mem:56.20M (Peak 56.20M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | upper_left_vent_fastener_2
+Fra:1 Mem:56.15M (Peak 56.20M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | upper_left_vent_fastener_3
+Fra:1 Mem:56.18M (Peak 56.20M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | upper_left_torso_side_layer_00
+Fra:1 Mem:56.27M (Peak 56.27M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | upper_left_torso_side_layer_lip_00
+Fra:1 Mem:56.27M (Peak 56.27M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | upper_left_torso_side_layer_lip_01
+Fra:1 Mem:56.29M (Peak 56.29M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | upper_left_torso_side_layer_02
+Fra:1 Mem:56.35M (Peak 56.35M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | upper_left_torso_side_layer_lip_02
+Fra:1 Mem:56.37M (Peak 56.37M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | upper_left_torso_side_layer_03
+Fra:1 Mem:56.39M (Peak 56.39M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | upper_left_blue_forearm_wrap
+Fra:1 Mem:56.43M (Peak 56.43M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | right_foot_ivory_low_hull
+Fra:1 Mem:56.50M (Peak 56.50M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | upper_left_ivory_shoulder_cap
+Fra:1 Mem:56.55M (Peak 56.55M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | upper_left_shoulder_open_bearing_seat
+Fra:1 Mem:56.73M (Peak 56.73M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | right_foot_front_top_plate
+Fra:1 Mem:56.74M (Peak 56.74M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | right_foot_heel_dark_guard
+Fra:1 Mem:56.74M (Peak 56.74M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | right_foot_heel_ivory_side_1
+Fra:1 Mem:56.74M (Peak 56.74M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | right_foot_heel_ivory_side_-1
+Fra:1 Mem:56.74M (Peak 56.74M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | upper_left_ivory_lower_upper_arm
+Fra:1 Mem:57.04M (Peak 57.04M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | right_foot_toe_ivory_side_1
+Fra:1 Mem:57.07M (Peak 57.07M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | upper_right_blue_continuous_shoulder_sweep
+Fra:1 Mem:57.25M (Peak 57.25M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | upper_right_blue_shoulder_upper_return
+Fra:1 Mem:57.36M (Peak 57.36M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | upper_right_blue_rear_shoulder_guard
+Fra:1 Mem:57.60M (Peak 57.60M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | right_foot_toe_ivory_side_-1
+Fra:1 Mem:57.85M (Peak 57.85M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | upper_right_blue_shoulder_diagonal_front_wing
+Fra:1 Mem:58.16M (Peak 58.16M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | upper_right_blue_chest_cheek_wrap
+Fra:1 Mem:58.26M (Peak 58.26M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | right_foot_continuous_keel
+Fra:1 Mem:58.27M (Peak 58.27M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | right_ankle_orange_rim_1
+Fra:1 Mem:58.42M (Peak 58.42M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | upper_right_blue_chest_cheek_side_return
+Fra:1 Mem:58.49M (Peak 58.49M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | right_ankle_joint_cover_1
+Fra:1 Mem:58.52M (Peak 58.52M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | right_ankle_orange_rim_-1
+Fra:1 Mem:58.54M (Peak 58.54M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | upper_right_radiator_ivory_socket
+Fra:1 Mem:58.46M (Peak 58.54M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | right_ankle_joint_cover_-1
+Fra:1 Mem:58.43M (Peak 58.54M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | upper_right_radiator_black_well
+Fra:1 Mem:58.48M (Peak 58.54M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | right_fold_orange_rim_1
+Fra:1 Mem:58.53M (Peak 58.54M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | upper_right_radiator_turning_plenum
+Fra:1 Mem:58.55M (Peak 58.55M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | upper_right_radiator_louver_00
+Fra:1 Mem:58.57M (Peak 58.57M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | right_fold_joint_cover_1
+Fra:1 Mem:58.56M (Peak 58.57M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | upper_right_radiator_louver_03
+Fra:1 Mem:58.58M (Peak 58.58M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | upper_right_radiator_louver_02
+Fra:1 Mem:58.58M (Peak 58.58M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | upper_right_radiator_louver_04
+Fra:1 Mem:58.64M (Peak 58.64M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | right_fold_joint_cover_-1
+Fra:1 Mem:58.65M (Peak 58.65M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | upper_right_radiator_louver_05
+Fra:1 Mem:58.66M (Peak 58.66M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | right_knee_orange_rim_1
+Fra:1 Mem:58.68M (Peak 58.68M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | upper_right_radiator_louver_08
+Fra:1 Mem:58.68M (Peak 58.68M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | upper_right_radiator_louver_09
+Fra:1 Mem:58.70M (Peak 58.70M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | upper_right_vent_fastener_0
+Fra:1 Mem:58.76M (Peak 58.76M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | upper_right_vent_fastener_1
+Fra:1 Mem:58.77M (Peak 58.77M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | upper_right_vent_fastener_2
+Fra:1 Mem:58.81M (Peak 58.81M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | upper_right_vent_fastener_3
+Fra:1 Mem:58.84M (Peak 58.84M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | upper_right_dark_torso_side_housing
+Fra:1 Mem:58.86M (Peak 58.86M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | right_knee_orange_rim_-1
+Fra:1 Mem:58.90M (Peak 58.90M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | upper_right_torso_side_layer_00
+Fra:1 Mem:58.94M (Peak 58.94M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | upper_right_torso_side_layer_lip_00
+Fra:1 Mem:58.95M (Peak 58.95M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | upper_right_torso_side_layer_01
+Fra:1 Mem:59.02M (Peak 59.02M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | upper_right_torso_side_layer_lip_01
+Fra:1 Mem:59.02M (Peak 59.02M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | upper_right_torso_side_layer_lip_02
+Fra:1 Mem:59.05M (Peak 59.05M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | right_distal_blue_armor
+Fra:1 Mem:59.05M (Peak 59.05M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | upper_right_torso_side_layer_03
+Fra:1 Mem:59.08M (Peak 59.08M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | right_middle_blue_armor
+Fra:1 Mem:59.14M (Peak 59.14M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | right_thigh_blue_armor
+Fra:1 Mem:59.15M (Peak 59.15M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | upper_right_blue_forearm_wrap
+Fra:1 Mem:59.15M (Peak 59.15M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | upper_right_blue_deltoid_wrap
+Fra:1 Mem:59.17M (Peak 59.17M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | right_shaft_ankle
+Fra:1 Mem:59.30M (Peak 59.30M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | right_pressure_carrier
+Fra:1 Mem:59.32M (Peak 59.32M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | upper_right_ivory_shoulder_cap
+Fra:1 Mem:59.39M (Peak 59.39M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | upper_right_shoulder_open_bearing_seat
+Fra:1 Mem:59.52M (Peak 59.52M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | upper_right_ivory_lower_upper_arm
+Fra:1 Mem:59.53M (Peak 59.53M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | right_heel_contact_pad
+Fra:1 Mem:59.57M (Peak 59.57M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | right_toe_contact_pad
+Fra:1 Mem:59.57M (Peak 59.57M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | upper_right_blue_elbow_yoke
+Fra:1 Mem:59.58M (Peak 59.58M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | right_shaft_fold
+Fra:1 Mem:59.63M (Peak 59.63M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | upper_left_shoulder_inner_barrel
+Fra:1 Mem:59.90M (Peak 59.90M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | upper_left_shoulder_barrel_band_0
+Fra:1 Mem:60.01M (Peak 60.01M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | upper_left_shoulder_barrel_band_1
+Fra:1 Mem:60.05M (Peak 60.05M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | upper_left_shoulder_negative_y_support_cheek
+Fra:1 Mem:60.16M (Peak 60.16M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | upper_left_shoulder_negative_y_recessed_face
+Fra:1 Mem:60.25M (Peak 60.25M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | upper_left_shoulder_negative_y_thin_rim
+Fra:1 Mem:60.27M (Peak 60.27M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | upper_left_shoulder_negative_y_central_cap
+Fra:1 Mem:60.31M (Peak 60.31M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | right_shaft_knee
+Fra:1 Mem:60.32M (Peak 60.32M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | upper_left_shoulder_negative_y_cap_step
+Fra:1 Mem:60.38M (Peak 60.38M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | right_frame_middle
+Fra:1 Mem:60.41M (Peak 60.41M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | upper_left_shoulder_positive_y_support_cheek
+Fra:1 Mem:60.43M (Peak 60.43M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | upper_left_shoulder_positive_y_recessed_face
+Fra:1 Mem:60.49M (Peak 60.49M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | upper_left_shoulder_positive_y_thin_rim
+Fra:1 Mem:60.62M (Peak 60.62M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | upper_left_shoulder_positive_y_central_cap
+Fra:1 Mem:60.73M (Peak 60.73M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | upper_left_shoulder_positive_y_cap_step
+Fra:1 Mem:60.74M (Peak 60.74M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | right_frame_thigh
+Fra:1 Mem:60.79M (Peak 60.79M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | upper_left_elbow_inner_barrel
+Fra:1 Mem:60.78M (Peak 60.79M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | upper_left_elbow_barrel_band_0
+Fra:1 Mem:60.91M (Peak 60.91M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | upper_left_elbow_barrel_band_1
+Fra:1 Mem:60.94M (Peak 60.94M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | upper_left_elbow_negative_y_support_cheek
+Fra:1 Mem:60.88M (Peak 60.94M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | upper_left_elbow_negative_y_recessed_face
+Fra:1 Mem:60.92M (Peak 60.94M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | upper_left_elbow_negative_y_central_cap
+Fra:1 Mem:60.91M (Peak 60.94M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | left_foot_ivory_low_hull
+Fra:1 Mem:60.94M (Peak 60.94M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | upper_left_elbow_negative_y_cap_step
+Fra:1 Mem:61.02M (Peak 61.02M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | upper_left_elbow_positive_y_support_cheek
+Fra:1 Mem:61.06M (Peak 61.06M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | left_foot_front_top_plate
+Fra:1 Mem:61.09M (Peak 61.09M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | left_foot_heel_dark_guard
+Fra:1 Mem:61.09M (Peak 61.09M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | left_foot_heel_ivory_side_1
+Fra:1 Mem:61.14M (Peak 61.14M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | upper_left_elbow_positive_y_central_cap
+Fra:1 Mem:61.16M (Peak 61.16M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | upper_left_elbow_positive_y_cap_step
+Fra:1 Mem:61.17M (Peak 61.17M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | left_foot_toe_ivory_side_1
+Fra:1 Mem:61.20M (Peak 61.20M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | upper_left_elbow_forward_shallow_cover
+Fra:1 Mem:61.22M (Peak 61.22M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | upper_left_elbow_forward_recessed_face
+Fra:1 Mem:61.31M (Peak 61.34M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | upper_left_elbow_forward_thin_gold_ring
+Fra:1 Mem:61.43M (Peak 61.43M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | upper_left_elbow_forward_dark_center
+Fra:1 Mem:61.45M (Peak 61.45M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | upper_left_wrist_barrel_band_0
+Fra:1 Mem:61.49M (Peak 61.49M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | upper_left_wrist_barrel_band_1
+Fra:1 Mem:61.50M (Peak 61.50M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | upper_left_wrist_negative_y_support_cheek
+Fra:1 Mem:61.51M (Peak 61.51M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | upper_left_wrist_negative_y_recessed_face
+Fra:1 Mem:61.57M (Peak 61.57M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | upper_left_wrist_negative_y_thin_rim
+Fra:1 Mem:61.59M (Peak 61.59M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | upper_left_wrist_negative_y_central_cap
+Fra:1 Mem:61.74M (Peak 61.74M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | upper_left_wrist_negative_y_cap_step
+Fra:1 Mem:61.78M (Peak 61.78M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | upper_left_wrist_positive_y_recessed_face
+Fra:1 Mem:61.84M (Peak 61.84M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | upper_left_wrist_positive_y_thin_rim
+Fra:1 Mem:61.88M (Peak 61.88M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | upper_left_wrist_positive_y_central_cap
+Fra:1 Mem:61.90M (Peak 61.90M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | left_foot_continuous_keel
+Fra:1 Mem:61.91M (Peak 61.91M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | upper_left_palm_inner_carrier
+Fra:1 Mem:61.93M (Peak 61.93M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | upper_left_ivory_palm_dorsal
+Fra:1 Mem:61.94M (Peak 61.94M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | upper_left_ivory_palm_reverse_cover
+Fra:1 Mem:61.95M (Peak 61.95M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | left_ankle_orange_rim_1
+Fra:1 Mem:61.95M (Peak 61.95M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | upper_left_palm_lower_exposed_hinge
+Fra:1 Mem:61.96M (Peak 61.96M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | upper_left_finger_1_root_joint
+Fra:1 Mem:61.97M (Peak 61.97M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | upper_left_finger_1_proximal_casting
+Fra:1 Mem:62.02M (Peak 62.02M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | upper_left_finger_1_ivory_first_pad
+Fra:1 Mem:62.02M (Peak 62.02M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | left_ankle_joint_cover_1
+Fra:1 Mem:62.03M (Peak 62.03M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | upper_left_finger_1_curved_distal
+Fra:1 Mem:62.05M (Peak 62.05M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | upper_left_finger_1_tip_contact_pad
+Fra:1 Mem:62.06M (Peak 62.06M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | upper_left_finger_2_proximal_casting
+Fra:1 Mem:62.06M (Peak 62.06M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | upper_left_finger_2_ivory_first_pad
+Fra:1 Mem:62.07M (Peak 62.07M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | upper_left_finger_2_ivory_reverse_first_pad
+Fra:1 Mem:62.07M (Peak 62.07M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | upper_left_finger_2_interphalangeal_joint
+Fra:1 Mem:62.09M (Peak 62.09M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | upper_left_finger_2_curved_distal
+Fra:1 Mem:62.09M (Peak 62.09M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | upper_left_finger_3_root_joint
+Fra:1 Mem:62.09M (Peak 62.09M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | upper_left_finger_3_proximal_casting
+Fra:1 Mem:62.10M (Peak 62.10M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | upper_left_finger_3_ivory_first_pad
+Fra:1 Mem:62.11M (Peak 62.11M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | upper_left_finger_3_interphalangeal_joint
+Fra:1 Mem:62.11M (Peak 62.11M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | upper_left_finger_3_curved_distal
+Fra:1 Mem:62.12M (Peak 62.12M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | upper_left_finger_3_tip_contact_pad
+Fra:1 Mem:62.13M (Peak 62.12M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | upper_left_thumb_root_web
+Fra:1 Mem:62.13M (Peak 62.13M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | upper_left_thumb_root_pin
+Fra:1 Mem:62.13M (Peak 62.13M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | left_ankle_orange_rim_-1
+Fra:1 Mem:62.18M (Peak 62.18M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | upper_left_thumb_middle_pin
+Fra:1 Mem:62.18M (Peak 62.18M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | left_ankle_joint_cover_-1
+Fra:1 Mem:62.20M (Peak 62.20M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | upper_left_palm_wrist_positive_y_short_neck
+Fra:1 Mem:62.20M (Peak 62.20M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | left_fold_orange_rim_1
+Fra:1 Mem:62.20M (Peak 62.20M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | upper_right_shoulder_inner_barrel
+Fra:1 Mem:62.21M (Peak 62.21M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | upper_right_shoulder_barrel_band_0
+Fra:1 Mem:62.24M (Peak 62.24M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | upper_right_shoulder_barrel_band_1
+Fra:1 Mem:62.26M (Peak 62.26M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | upper_right_shoulder_negative_y_support_cheek
+Fra:1 Mem:62.31M (Peak 62.31M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | left_fold_orange_rim_-1
+Fra:1 Mem:62.34M (Peak 62.34M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | upper_right_shoulder_negative_y_recessed_face
+Fra:1 Mem:62.36M (Peak 62.36M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | left_fold_joint_cover_-1
+Fra:1 Mem:62.38M (Peak 62.38M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | upper_right_shoulder_negative_y_central_cap
+Fra:1 Mem:62.42M (Peak 62.42M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | upper_right_shoulder_negative_y_cap_step
+Fra:1 Mem:62.44M (Peak 62.44M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | left_knee_orange_rim_1
+Fra:1 Mem:62.47M (Peak 62.47M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | upper_right_shoulder_positive_y_support_cheek
+Fra:1 Mem:62.52M (Peak 62.52M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | upper_right_shoulder_positive_y_recessed_face
+Fra:1 Mem:62.53M (Peak 62.53M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | upper_right_shoulder_positive_y_central_cap
+Fra:1 Mem:62.56M (Peak 62.56M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | upper_right_shoulder_positive_y_cap_step
+Fra:1 Mem:62.60M (Peak 62.60M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | left_knee_orange_rim_-1
+Fra:1 Mem:62.61M (Peak 62.61M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | upper_right_elbow_inner_barrel
+Fra:1 Mem:62.67M (Peak 62.67M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | left_knee_joint_cover_-1
+Fra:1 Mem:62.70M (Peak 62.70M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | upper_right_elbow_barrel_band_0
+Fra:1 Mem:62.72M (Peak 62.72M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | upper_right_elbow_barrel_band_1
+Fra:1 Mem:62.73M (Peak 62.73M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | upper_right_elbow_negative_y_support_cheek
+Fra:1 Mem:62.79M (Peak 62.79M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | left_distal_blue_armor
+Fra:1 Mem:62.79M (Peak 62.79M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | upper_right_elbow_negative_y_thin_rim
+Fra:1 Mem:62.85M (Peak 62.85M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | upper_right_elbow_negative_y_central_cap
+Fra:1 Mem:62.88M (Peak 62.88M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | left_middle_blue_armor
+Fra:1 Mem:62.89M (Peak 62.89M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | upper_right_elbow_positive_y_support_cheek
+Fra:1 Mem:62.89M (Peak 62.89M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | upper_right_elbow_positive_y_recessed_face
+Fra:1 Mem:62.95M (Peak 62.95M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | left_shaft_ankle
+Fra:1 Mem:62.97M (Peak 62.97M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | upper_right_elbow_positive_y_thin_rim
+Fra:1 Mem:62.99M (Peak 62.99M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | upper_right_elbow_positive_y_cap_step
+Fra:1 Mem:63.04M (Peak 63.04M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | left_pressure_carrier
+Fra:1 Mem:63.10M (Peak 63.10M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | upper_right_elbow_forward_shallow_cover
+Fra:1 Mem:63.14M (Peak 63.14M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | upper_right_elbow_forward_recessed_face
+Fra:1 Mem:63.18M (Peak 63.18M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | upper_right_elbow_forward_dark_center
+Fra:1 Mem:63.21M (Peak 63.21M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | upper_right_wrist_inner_barrel
+Fra:1 Mem:63.24M (Peak 63.24M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | upper_right_wrist_barrel_band_0
+Fra:1 Mem:63.28M (Peak 63.28M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | left_heel_contact_pad
+Fra:1 Mem:63.31M (Peak 63.31M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | left_toe_contact_pad
+Fra:1 Mem:63.30M (Peak 63.31M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | upper_right_wrist_negative_y_support_cheek
+Fra:1 Mem:63.30M (Peak 63.31M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | upper_right_wrist_negative_y_recessed_face
+Fra:1 Mem:63.38M (Peak 63.38M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | upper_right_wrist_negative_y_thin_rim
+Fra:1 Mem:63.38M (Peak 63.38M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | upper_right_wrist_negative_y_cap_step
+Fra:1 Mem:63.51M (Peak 63.51M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | upper_right_wrist_positive_y_support_cheek
+Fra:1 Mem:63.52M (Peak 63.52M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | upper_right_wrist_positive_y_recessed_face
+Fra:1 Mem:63.61M (Peak 63.61M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | upper_right_wrist_positive_y_thin_rim
+Fra:1 Mem:63.62M (Peak 63.62M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | upper_right_wrist_positive_y_central_cap
+Fra:1 Mem:63.68M (Peak 63.68M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | left_shaft_knee
+Fra:1 Mem:63.70M (Peak 63.70M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | upper_right_palm_inner_carrier
+Fra:1 Mem:63.72M (Peak 63.72M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | upper_right_ivory_palm_dorsal
+Fra:1 Mem:63.72M (Peak 63.72M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | upper_right_ivory_palm_reverse_cover
+Fra:1 Mem:63.77M (Peak 63.77M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | upper_right_palm_lower_dark_seam
+Fra:1 Mem:63.78M (Peak 63.78M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | upper_right_palm_upper_exposed_hinge
+Fra:1 Mem:63.79M (Peak 63.79M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | upper_right_palm_lower_exposed_hinge
+Fra:1 Mem:63.84M (Peak 63.84M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | upper_right_finger_1_proximal_casting
+Fra:1 Mem:63.90M (Peak 63.90M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | upper_right_finger_1_ivory_first_pad
+Fra:1 Mem:63.91M (Peak 63.91M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | upper_right_finger_1_ivory_reverse_first_pad
+Fra:1 Mem:63.93M (Peak 63.93M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | upper_right_finger_1_curved_distal
+Fra:1 Mem:63.93M (Peak 63.93M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | left_frame_thigh
+Fra:1 Mem:63.97M (Peak 63.97M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | upper_right_finger_2_proximal_casting
+Fra:1 Mem:63.98M (Peak 63.98M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | upper_right_finger_2_ivory_first_pad
+Fra:1 Mem:64.07M (Peak 64.07M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | upper_right_finger_2_interphalangeal_joint
+Fra:1 Mem:64.09M (Peak 64.09M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | upper_right_finger_2_curved_distal
+Fra:1 Mem:64.11M (Peak 64.11M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | upper_right_finger_2_tip_contact_pad
+Fra:1 Mem:64.12M (Peak 64.12M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | upper_right_finger_3_proximal_casting
+Fra:1 Mem:64.14M (Peak 64.14M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | upper_right_finger_3_ivory_first_pad
+Fra:1 Mem:64.15M (Peak 64.15M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | upper_right_finger_3_ivory_reverse_first_pad
+Fra:1 Mem:64.13M (Peak 64.15M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | upper_proposed_hip_pitch_carrier
+Fra:1 Mem:64.14M (Peak 64.15M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | upper_right_finger_3_curved_distal
+Fra:1 Mem:64.14M (Peak 64.15M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | upper_right_finger_3_tip_contact_pad
+Fra:1 Mem:64.14M (Peak 64.15M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | upper_right_thumb_root_web
+Fra:1 Mem:64.15M (Peak 64.15M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | upper_right_thumb_root_pin
+Fra:1 Mem:64.15M (Peak 64.15M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | upper_right_thumb_proximal_casting
+Fra:1 Mem:64.21M (Peak 64.21M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | upper_right_thumb_ivory_first_pad
+Fra:1 Mem:64.22M (Peak 64.22M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | upper_right_thumb_black_terminal
+Fra:1 Mem:64.29M (Peak 64.29M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | upper_right_palm_wrist_negative_y_short_neck
+Fra:1 Mem:64.32M (Peak 64.32M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | upper_structure_spine_box
+Fra:1 Mem:64.36M (Peak 64.36M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | upper_left_structure_shoulder_crossmember
+Fra:1 Mem:64.36M (Peak 64.36M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | upper_left_structure_forearm_box
+Fra:1 Mem:64.38M (Peak 64.38M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | upper_right_structure_shoulder_crossmember
+Fra:1 Mem:64.40M (Peak 64.40M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | upper_right_structure_upper_arm_box
+Fra:1 Mem:64.40M (Peak 64.40M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | upper_right_structure_forearm_box
+Fra:1 Mem:64.38M (Peak 64.40M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | upper_right_forearm_upper_edge_02_07
+Fra:1 Mem:64.39M (Peak 64.40M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | upper_left_forearm_upper_edge_00_00
+Fra:1 Mem:64.39M (Peak 64.40M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | upper_left_forearm_upper_edge_00_02
+Fra:1 Mem:64.40M (Peak 64.40M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | upper_left_forearm_upper_edge_00_03
+Fra:1 Mem:64.40M (Peak 64.40M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | upper_right_forearm_upper_edge_02_06
+Fra:1 Mem:64.40M (Peak 64.40M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | upper_left_forearm_upper_edge_00_04
+Fra:1 Mem:64.40M (Peak 64.40M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | upper_left_forearm_upper_edge_00_06
+Fra:1 Mem:64.41M (Peak 64.41M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | upper_left_forearm_upper_edge_00_07
+Fra:1 Mem:64.41M (Peak 64.41M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | upper_left_forearm_upper_edge_01_01
+Fra:1 Mem:64.41M (Peak 64.41M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | upper_left_forearm_upper_edge_01_02
+Fra:1 Mem:64.41M (Peak 64.41M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | upper_left_forearm_upper_edge_01_03
+Fra:1 Mem:64.41M (Peak 64.41M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | upper_left_forearm_upper_edge_01_04
+Fra:1 Mem:64.42M (Peak 64.42M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | upper_left_forearm_upper_edge_01_05
+Fra:1 Mem:64.42M (Peak 64.42M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | upper_left_forearm_upper_edge_01_06
+Fra:1 Mem:64.42M (Peak 64.42M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | upper_left_forearm_upper_edge_01_07
+Fra:1 Mem:64.43M (Peak 64.43M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | upper_left_forearm_upper_edge_02_00
+Fra:1 Mem:64.43M (Peak 64.43M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | upper_left_forearm_upper_edge_02_01
+Fra:1 Mem:64.43M (Peak 64.43M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | upper_left_forearm_upper_edge_02_02
+Fra:1 Mem:64.43M (Peak 64.43M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | upper_right_forearm_upper_edge_02_01
+Fra:1 Mem:64.43M (Peak 64.43M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | upper_left_forearm_upper_edge_02_03
+Fra:1 Mem:64.44M (Peak 64.44M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | upper_left_forearm_upper_edge_02_04
+Fra:1 Mem:64.44M (Peak 64.44M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | upper_left_forearm_upper_edge_02_05
+Fra:1 Mem:64.44M (Peak 64.44M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | upper_left_forearm_upper_edge_02_06
+Fra:1 Mem:64.44M (Peak 64.44M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | upper_right_forearm_upper_edge_00_00
+Fra:1 Mem:64.44M (Peak 64.44M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | upper_right_forearm_upper_edge_00_01
+Fra:1 Mem:64.44M (Peak 64.44M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | upper_right_forearm_upper_edge_01_06
+Fra:1 Mem:64.45M (Peak 64.45M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | upper_right_forearm_upper_edge_01_05
+Fra:1 Mem:64.45M (Peak 64.45M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | upper_right_forearm_upper_edge_00_03
+Fra:1 Mem:64.45M (Peak 64.45M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | upper_right_forearm_upper_edge_00_05
+Fra:1 Mem:64.45M (Peak 64.45M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | upper_right_forearm_upper_edge_01_04
+Fra:1 Mem:64.45M (Peak 64.45M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | upper_right_forearm_upper_edge_00_06
+Fra:1 Mem:64.46M (Peak 64.46M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | upper_right_forearm_upper_edge_01_00
+Fra:1 Mem:64.46M (Peak 64.46M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | upper_right_forearm_upper_edge_01_01
+Fra:1 Mem:64.46M (Peak 64.46M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | upper_right_forearm_upper_edge_01_02
+Fra:1 Mem:64.46M (Peak 64.46M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | upper_right_forearm_upper_edge_01_03
+Fra:1 Mem:64.47M (Peak 64.47M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Initializing
+Fra:1 Mem:50.23M (Peak 64.47M) | Time:00:00.02 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Waiting for render to start
+Fra:1 Mem:50.23M (Peak 64.47M) | Time:00:00.02 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Loading render kernels (may take a few minutes the first time)
+Fra:1 Mem:50.23M (Peak 64.47M) | Time:00:00.02 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Updating Scene
+Fra:1 Mem:50.23M (Peak 64.47M) | Time:00:00.02 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Updating Shaders
+Fra:1 Mem:50.33M (Peak 64.47M) | Time:00:00.02 | Mem:0.01M, Peak:0.01M | Scene, ViewLayer | Updating Procedurals
+Fra:1 Mem:50.33M (Peak 64.47M) | Time:00:00.02 | Mem:0.01M, Peak:0.01M | Scene, ViewLayer | Updating Background
+Fra:1 Mem:50.33M (Peak 64.47M) | Time:00:00.02 | Mem:0.01M, Peak:0.01M | Scene, ViewLayer | Updating Camera
+Fra:1 Mem:50.33M (Peak 64.47M) | Time:00:00.02 | Mem:0.01M, Peak:0.01M | Scene, ViewLayer | Updating Meshes Flags
+Fra:1 Mem:50.33M (Peak 64.47M) | Time:00:00.02 | Mem:0.01M, Peak:0.01M | Scene, ViewLayer | Updating Objects
+Fra:1 Mem:50.33M (Peak 64.47M) | Time:00:00.02 | Mem:0.01M, Peak:0.01M | Scene, ViewLayer | Updating Objects | Copying Transformations to device
+Fra:1 Mem:50.42M (Peak 64.47M) | Time:00:00.02 | Mem:0.11M, Peak:0.11M | Scene, ViewLayer | Updating Objects | Applying Static Transformations
+Fra:1 Mem:50.42M (Peak 64.47M) | Time:00:00.02 | Mem:0.11M, Peak:0.11M | Scene, ViewLayer | Updating Particle Systems
+Fra:1 Mem:50.42M (Peak 64.47M) | Time:00:00.02 | Mem:0.11M, Peak:0.11M | Scene, ViewLayer | Updating Particle Systems | Copying Particles to device
+Fra:1 Mem:50.42M (Peak 64.47M) | Time:00:00.02 | Mem:0.11M, Peak:0.11M | Scene, ViewLayer | Updating Meshes
+Fra:1 Mem:53.36M (Peak 64.47M) | Time:00:00.02 | Mem:0.11M, Peak:0.11M | Scene, ViewLayer | Updating Mesh | Computing attributes
+Fra:1 Mem:54.57M (Peak 64.47M) | Time:00:00.02 | Mem:0.13M, Peak:0.13M | Scene, ViewLayer | Updating Mesh | Copying Attributes to device
+Fra:1 Mem:54.50M (Peak 64.47M) | Time:00:00.02 | Mem:1.25M, Peak:1.25M | Scene, ViewLayer | Updating Scene BVH | Building
+Fra:1 Mem:54.51M (Peak 64.47M) | Time:00:00.02 | Mem:1.25M, Peak:1.25M | Scene, ViewLayer | Updating Scene BVH | Building BVH
+Fra:1 Mem:65.54M (Peak 65.54M) | Time:00:00.08 | Mem:1.25M, Peak:1.25M | Scene, ViewLayer | Updating Scene BVH | Packing BVH triangles and strands
+Fra:1 Mem:66.28M (Peak 66.28M) | Time:00:00.08 | Mem:1.25M, Peak:1.25M | Scene, ViewLayer | Updating Scene BVH | Packing BVH nodes
+Fra:1 Mem:66.29M (Peak 68.63M) | Time:00:00.09 | Mem:1.25M, Peak:1.25M | Scene, ViewLayer | Updating Scene BVH | Copying BVH to device
+Fra:1 Mem:66.29M (Peak 68.63M) | Time:00:00.09 | Mem:7.14M, Peak:7.14M | Scene, ViewLayer | Updating Mesh | Computing normals
+Fra:1 Mem:72.93M (Peak 72.93M) | Time:00:00.09 | Mem:7.14M, Peak:7.14M | Scene, ViewLayer | Updating Mesh | Copying Mesh to device
+Fra:1 Mem:72.93M (Peak 72.93M) | Time:00:00.09 | Mem:13.78M, Peak:13.78M | Scene, ViewLayer | Updating Objects Flags
+Fra:1 Mem:72.93M (Peak 72.93M) | Time:00:00.09 | Mem:13.79M, Peak:13.79M | Scene, ViewLayer | Updating Primitive Offsets
+Fra:1 Mem:72.93M (Peak 72.93M) | Time:00:00.09 | Mem:13.79M, Peak:13.79M | Scene, ViewLayer | Updating Images
+Fra:1 Mem:72.93M (Peak 72.93M) | Time:00:00.09 | Mem:13.79M, Peak:13.79M | Scene, ViewLayer | Updating Camera Volume
+Fra:1 Mem:72.93M (Peak 72.93M) | Time:00:00.09 | Mem:13.79M, Peak:13.79M | Scene, ViewLayer | Updating Lookup Tables
+Fra:1 Mem:72.93M (Peak 72.93M) | Time:00:00.09 | Mem:13.87M, Peak:13.87M | Scene, ViewLayer | Updating Lights
+Fra:1 Mem:72.93M (Peak 72.93M) | Time:00:00.09 | Mem:13.87M, Peak:13.87M | Scene, ViewLayer | Updating Lights | Computing distribution
+Fra:1 Mem:72.93M (Peak 72.93M) | Time:00:00.09 | Mem:13.87M, Peak:13.87M | Scene, ViewLayer | Updating Lights | Computing tree
+Fra:1 Mem:72.94M (Peak 72.94M) | Time:00:00.09 | Mem:13.87M, Peak:13.87M | Scene, ViewLayer | Updating Integrator
+Fra:1 Mem:73.94M (Peak 73.94M) | Time:00:00.09 | Mem:14.87M, Peak:14.87M | Scene, ViewLayer | Updating Film
+Fra:1 Mem:73.94M (Peak 73.94M) | Time:00:00.09 | Mem:14.79M, Peak:14.87M | Scene, ViewLayer | Updating Lookup Tables
+Fra:1 Mem:73.94M (Peak 73.94M) | Time:00:00.09 | Mem:14.88M, Peak:14.88M | Scene, ViewLayer | Updating Baking
+Fra:1 Mem:73.94M (Peak 73.94M) | Time:00:00.09 | Mem:14.88M, Peak:14.88M | Scene, ViewLayer | Updating Device | Writing constant memory
+Fra:1 Mem:73.95M (Peak 73.95M) | Time:00:00.09 | Mem:14.88M, Peak:14.88M | Scene, ViewLayer | Sample 0/40
+Fra:1 Mem:107.95M (Peak 107.95M) | Time:00:00.81 | Remaining:00:27.83 | Mem:48.87M, Peak:48.87M | Scene, ViewLayer | Sample 1/40
+Fra:1 Mem:107.95M (Peak 107.95M) | Time:00:20.81 | Remaining:00:04.39 | Mem:48.87M, Peak:48.87M | Scene, ViewLayer | Sample 33/40
+Fra:1 Mem:123.06M (Peak 153.27M) | Time:00:25.39 | Mem:48.87M, Peak:48.87M | Scene, ViewLayer | Sample 40/40
+Fra:1 Mem:123.06M (Peak 153.27M) | Time:00:25.39 | Mem:48.87M, Peak:48.87M | Scene, ViewLayer | Finished
+Saved: '/home/ethan/Projects/Sai_Art/docs/uri_style/gorilla_v0_1/leg_design_r2/images/top.png'
+Time: 00:25.48 (Saving: 00:00.08)
+
+TOP_CAMERA_REFINED
+
+Blender quit

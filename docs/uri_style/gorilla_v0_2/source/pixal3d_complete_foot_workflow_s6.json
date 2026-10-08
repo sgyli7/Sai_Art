@@ -1,0 +1,346 @@
+{
+  "prompt": {
+    "load_image": {
+      "class_type": "LoadImage",
+      "inputs": {
+        "image": "gorilla_complete_foot_reference_s6.jpg"
+      }
+    },
+    "bg_model": {
+      "class_type": "LoadBackgroundRemovalModel",
+      "inputs": {
+        "bg_removal_name": "birefnet.safetensors"
+      }
+    },
+    "bg": {
+      "class_type": "RemoveBackground",
+      "inputs": {
+        "bg_removal_model": [
+          "bg_model",
+          0
+        ],
+        "image": [
+          "load_image",
+          0
+        ]
+      }
+    },
+    "crop": {
+      "class_type": "ImageCropToMask",
+      "inputs": {
+        "images": [
+          "load_image",
+          0
+        ],
+        "masks": [
+          "bg",
+          0
+        ],
+        "width": 1024,
+        "height": 1024,
+        "pad_factor": 1.1,
+        "grow_mask": 0,
+        "background": "#000000"
+      }
+    },
+    "clip": {
+      "class_type": "CLIPVisionLoader",
+      "inputs": {
+        "clip_name": "dino_v3_L_naf_fp32.safetensors"
+      }
+    },
+    "unet": {
+      "class_type": "UNETLoader",
+      "inputs": {
+        "unet_name": "pixal3d_int8_convrot.safetensors",
+        "weight_dtype": "default"
+      }
+    },
+    "shape_vae": {
+      "class_type": "VAELoader",
+      "inputs": {
+        "vae_name": "trellis_2_shape_vae_bf16.safetensors"
+      }
+    },
+    "empty": {
+      "class_type": "EmptyTrellis2LatentStructure",
+      "inputs": {
+        "batch_size": 1
+      }
+    },
+    "cfg_ss": {
+      "class_type": "CFGOverride",
+      "inputs": {
+        "model": [
+          "unet",
+          0
+        ],
+        "cfg": 1.0,
+        "start_percent": 0.667,
+        "end_percent": 1.0
+      }
+    },
+    "rescale_ss": {
+      "class_type": "RescaleCFG",
+      "inputs": {
+        "model": [
+          "cfg_ss",
+          0
+        ],
+        "multiplier": 0.7
+      }
+    },
+    "shift_ss": {
+      "class_type": "ModelSamplingSD3",
+      "inputs": {
+        "model": [
+          "rescale_ss",
+          0
+        ],
+        "shift": 5.0
+      }
+    },
+    "cfg_sh": {
+      "class_type": "CFGOverride",
+      "inputs": {
+        "model": [
+          "unet",
+          0
+        ],
+        "cfg": 1.0,
+        "start_percent": 0.769,
+        "end_percent": 1.0
+      }
+    },
+    "rescale_sh": {
+      "class_type": "RescaleCFG",
+      "inputs": {
+        "model": [
+          "cfg_sh",
+          0
+        ],
+        "multiplier": 0.5
+      }
+    },
+    "moge_model": {
+      "class_type": "LoadMoGeModel",
+      "inputs": {
+        "model_name": "moge_2_vitl_normal_fp16.safetensors"
+      }
+    },
+    "moge": {
+      "class_type": "MoGeInference",
+      "inputs": {
+        "moge_model": [
+          "moge_model",
+          0
+        ],
+        "image": [
+          "crop",
+          0
+        ],
+        "resolution_level": 9,
+        "fov_x_degrees": 0.0,
+        "batch_size": 4,
+        "force_projection": true,
+        "apply_mask": true,
+        "refine_steps": 3
+      }
+    },
+    "fov": {
+      "class_type": "MoGeGeometryToFOV",
+      "inputs": {
+        "moge_geometry": [
+          "moge",
+          0
+        ],
+        "axis": "horizontal",
+        "unit": "degrees"
+      }
+    },
+    "cond": {
+      "class_type": "Pixal3DConditioning",
+      "inputs": {
+        "clip_vision_model": [
+          "clip",
+          0
+        ],
+        "image": [
+          "crop",
+          0
+        ],
+        "camera_angle_x": [
+          "fov",
+          0
+        ]
+      }
+    },
+    "ks_ss": {
+      "class_type": "KSampler",
+      "inputs": {
+        "model": [
+          "shift_ss",
+          0
+        ],
+        "positive": [
+          "cond",
+          0
+        ],
+        "negative": [
+          "cond",
+          1
+        ],
+        "latent_image": [
+          "empty",
+          0
+        ],
+        "seed": 56,
+        "steps": 12,
+        "cfg": 7.5,
+        "sampler_name": "euler",
+        "scheduler": "normal",
+        "denoise": 1.0
+      }
+    },
+    "decode_ss": {
+      "class_type": "VaeDecodeStructureTrellis2",
+      "inputs": {
+        "samples": [
+          "ks_ss",
+          0
+        ],
+        "vae": [
+          "shape_vae",
+          0
+        ],
+        "resolution": "32"
+      }
+    },
+    "shape_stage": {
+      "class_type": "Trellis2ShapeStage",
+      "inputs": {
+        "positive": [
+          "cond",
+          0
+        ],
+        "negative": [
+          "cond",
+          1
+        ],
+        "voxel": [
+          "decode_ss",
+          0
+        ]
+      }
+    },
+    "ks_sh": {
+      "class_type": "KSampler",
+      "inputs": {
+        "model": [
+          "rescale_sh",
+          0
+        ],
+        "positive": [
+          "shape_stage",
+          0
+        ],
+        "negative": [
+          "shape_stage",
+          1
+        ],
+        "latent_image": [
+          "shape_stage",
+          2
+        ],
+        "seed": 42,
+        "steps": 20,
+        "cfg": 7.5,
+        "sampler_name": "euler",
+        "scheduler": "normal",
+        "denoise": 1.0
+      }
+    },
+    "upsample": {
+      "class_type": "Trellis2UpsampleStage",
+      "inputs": {
+        "positive": [
+          "shape_stage",
+          0
+        ],
+        "negative": [
+          "shape_stage",
+          1
+        ],
+        "shape_latent": [
+          "ks_sh",
+          0
+        ],
+        "vae": [
+          "shape_vae",
+          0
+        ],
+        "target_resolution": 1024
+      }
+    },
+    "ks_hr": {
+      "class_type": "KSampler",
+      "inputs": {
+        "model": [
+          "rescale_sh",
+          0
+        ],
+        "positive": [
+          "upsample",
+          0
+        ],
+        "negative": [
+          "upsample",
+          1
+        ],
+        "latent_image": [
+          "upsample",
+          2
+        ],
+        "seed": 42,
+        "steps": 12,
+        "cfg": 7.5,
+        "sampler_name": "euler",
+        "scheduler": "simple",
+        "denoise": 1.0
+      }
+    },
+    "decode_shape": {
+      "class_type": "VaeDecodeShapeTrellis",
+      "inputs": {
+        "samples": [
+          "ks_hr",
+          0
+        ],
+        "vae": [
+          "shape_vae",
+          0
+        ]
+      }
+    },
+    "save_raw": {
+      "class_type": "SaveGLB",
+      "inputs": {
+        "mesh": [
+          "decode_shape",
+          0
+        ],
+        "filename_prefix": "gorilla_v02/complete_foot_reference_s6"
+      }
+    },
+    "save_conditioning": {
+      "class_type": "SaveImage",
+      "inputs": {
+        "images": [
+          "crop",
+          0
+        ],
+        "filename_prefix": "gorilla_v02/complete_foot_reference_input_s6"
+      }
+    }
+  }
+}

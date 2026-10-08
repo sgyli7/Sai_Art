@@ -1,0 +1,382 @@
+{
+  "source": "source/lower_dense_assembled_s8.blend",
+  "primary_leg_geometry_unchanged": true,
+  "primary_leg_vertex_hashes": {
+    "pixal_clear_side_leg": "e00dc1fa3a160ee05b9e52c1e1e81ed2289e6be7cdc0b38c1ae2462762f44cc4",
+    "pixal_mirrored_leg": "4f0c62b150618544da65e5d7fa747f036ef4548ade3c09cb510811ffae90919b"
+  },
+  "foot_shape_unchanged": true,
+  "foot_placement_method": "Rigid underside registration and yaw alignment; no mesh stretching",
+  "raw_source_ground_facet": {
+    "outward_normal": [
+      -0.017971606562302504,
+      0.2165171885635447,
+      -0.9761133788726125
+    ],
+    "corners": [
+      [
+        -0.18218374252319336,
+        0.030138492584228516,
+        -0.3671450614929199
+      ],
+      [
+        -0.12354278564453125,
+        -0.039433956146240234,
+        -0.38365697860717773
+      ],
+      [
+        0.19690704345703125,
+        0.23212814331054688,
+        -0.32932019233703613
+      ]
+    ],
+    "area": 0.019577203579630536
+  },
+  "source_to_assembly_rotation": [
+    [
+      0.5706106881093506,
+      -0.7994504106439738,
+      -0.1878363211324025
+    ],
+    [
+      0.8210240337364938,
+      0.5603564472527465,
+      0.10917961370758159
+    ],
+    [
+      0.017971606562302504,
+      -0.2165171885635447,
+      0.9761133788726124
+    ]
+  ],
+  "delta_rotation_from_s8": [
+    [
+      0.9816340034735058,
+      0.033349657989580804,
+      -0.1878363211324025
+    ],
+    [
+      -0.012876099081554517,
+      0.9939386389627407,
+      0.10917961370758159
+    ],
+    [
+      0.1903388801506908,
+      -0.10475582221944867,
+      0.9761133788726124
+    ]
+  ],
+  "ground_z": -0.4522999955359563,
+  "registered_contact_triangle_xyz": [
+    [
+      0.16262129441646675,
+      -0.14846222934235873,
+      -0.4519250663927908
+    ],
+    [
+      0.19949426130790257,
+      -0.14551922933063818,
+      -0.4519250663927908
+    ],
+    [
+      0.18171235871868546,
+      0.022961192227090862,
+      -0.4519250663927908
+    ]
+  ],
+  "registered_contact_triangle_height_span": 0.0,
+  "both_feet_ground_height_equal_by_mirror": true,
+  "bounds_xyz": [
+    [
+      -0.263761043548584,
+      -0.2486441731452942,
+      -0.45229998230934143
+    ],
+    [
+      0.263761043548584,
+      0.1145731508731842,
+      0.06700000166893005
+    ]
+  ],
+  "views": {
+    "front": {
+      "image": "images/lower_dense_assembled_front_s9.png",
+      "span_px": [
+        991.7355297814178,
+        976.2780845519228
+      ],
+      "shared_geometry_sha256": "4cb9d6453d2f36a6619d24559e907c47bbbc97c9dd033a8980961cf84b6cd5c5",
+      "camera_matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          -4.371138828673793e-08,
+          -1.0,
+          -3.067035436630249
+        ],
+        [
+          0.0,
+          1.0,
+          -4.371138828673793e-08,
+          -0.1926499903202057
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    "left": {
+      "image": "images/lower_dense_assembled_left_s9.png",
+      "span_px": [
+        682.8445059064813,
+        976.2781291067496
+      ],
+      "shared_geometry_sha256": "4cb9d6453d2f36a6619d24559e907c47bbbc97c9dd033a8980961cf84b6cd5c5",
+      "camera_matrix_world": [
+        [
+          7.549790126404332e-08,
+          -7.549790126404332e-08,
+          1.0,
+          3.0
+        ],
+        [
+          1.0,
+          5.6999328827277325e-15,
+          -7.549790126404332e-08,
+          -0.06703551113605499
+        ],
+        [
+          0.0,
+          1.0,
+          7.549790126404332e-08,
+          -0.1926499903202057
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    "rear": {
+      "image": "images/lower_dense_assembled_rear_s9.png",
+      "span_px": [
+        991.7355297814178,
+        976.2781301276866
+      ],
+      "shared_geometry_sha256": "4cb9d6453d2f36a6619d24559e907c47bbbc97c9dd033a8980961cf84b6cd5c5",
+      "camera_matrix_world": [
+        [
+          -1.0,
+          -8.742277657347586e-08,
+          -8.742277657347586e-08,
+          0.0
+        ],
+        [
+          -8.742277657347586e-08,
+          4.371138118131057e-08,
+          1.0,
+          2.932964563369751
+        ],
+        [
+          -8.74227694680485e-08,
+          1.0,
+          -4.371138828673793e-08,
+          -0.1926499903202057
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    "top": {
+      "image": "images/lower_dense_assembled_top_s9.png",
+      "span_px": [
+        991.7355297814178,
+        682.844442103718
+      ],
+      "shared_geometry_sha256": "4cb9d6453d2f36a6619d24559e907c47bbbc97c9dd033a8980961cf84b6cd5c5",
+      "camera_matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          -0.06703551113605499
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          2.807349920272827
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    "front_oblique": {
+      "image": "images/lower_dense_assembled_front_oblique_s9.png",
+      "span_px": [
+        944.4616929614962,
+        1025.6410435703656
+      ],
+      "shared_geometry_sha256": "4cb9d6453d2f36a6619d24559e907c47bbbc97c9dd033a8980961cf84b6cd5c5",
+      "camera_matrix_world": [
+        [
+          0.7071067094802856,
+          -0.24402673542499542,
+          0.6636648774147034,
+          2.0019609928131104
+        ],
+        [
+          0.70710688829422,
+          0.2440265566110611,
+          -0.6636647582054138,
+          -2.051419734954834
+        ],
+        [
+          8.393525519068135e-08,
+          0.9385637640953064,
+          0.3451057970523834,
+          0.8342896699905396
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "camera_ortho_scale": 0.7459385991096497,
+      "complete_frame_margin": 0.17
+    },
+    "rear_oblique": {
+      "image": "images/lower_dense_assembled_rear_oblique_s9.png",
+      "span_px": [
+        931.3331198003967,
+        1025.6410097317716
+      ],
+      "shared_geometry_sha256": "4cb9d6453d2f36a6619d24559e907c47bbbc97c9dd033a8980961cf84b6cd5c5",
+      "camera_matrix_world": [
+        [
+          -0.7071067690849304,
+          -0.24402666091918945,
+          0.6636648178100586,
+          1.9820282459259033
+        ],
+        [
+          0.7071067690849304,
+          -0.24402663111686707,
+          0.6636648178100586,
+          1.932569146156311
+        ],
+        [
+          -1.669983618057813e-08,
+          0.9385637640953064,
+          0.3451057970523834,
+          0.8433516025543213
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "camera_ortho_scale": 0.756453812122345,
+      "complete_frame_margin": 0.17
+    }
+  },
+  "shared_geometry_sha256": "4cb9d6453d2f36a6619d24559e907c47bbbc97c9dd033a8980961cf84b6cd5c5",
+  "projection_checks": {
+    "front_left_height": true,
+    "front_top_width": true,
+    "left_top_depth": true
+  },
+  "artwork_status": "Native lower assembly study, not whole-robot v0.2 delivery",
+  "appearance_accepted": false,
+  "engineering_ready": false,
+  "collision_mass_strength_validation": false,
+  "limitations": [
+    "Remaining source reconstruction scars require local surface repair",
+    "Interface has not been fused or qualified as a bearing/structural connection",
+    "v0.1 upper body is not part of this lower assembly study"
+  ],
+  "native_source_sha256": "c41dbd9e8ce6e2b49737c905fd0dcccfcec38244d4c71878ab3e45c47764f751",
+  "four_view_layout": {
+    "svg": "images/lower_dense_assembly_four_view_s9.svg",
+    "png": "images/lower_dense_assembly_four_view_s9.png",
+    "native_render_bytes_unchanged": true
+  },
+  "exchange_check": {
+    "file": "generated/lower_dense_assembled_s9.glb",
+    "sha256": "d141d61a3ab33b4ec212a2f398f6c807ee9acf6467f3cf78d96e213111925536",
+    "native_reload_performed": true,
+    "mesh_count": 4,
+    "parts": [
+      {
+        "name": "pixal_clear_side_leg",
+        "source_vertices": 212234,
+        "imported_vertices": 212234,
+        "source_sample_to_exchange_max_distance": 0.0,
+        "exchange_sample_to_source_max_distance": 0.0,
+        "bounds_max_delta": 0.0,
+        "appearance_scope": "primary_user_selected_leg",
+        "passed_geometric_exchange_check": true
+      },
+      {
+        "name": "pixal_mirrored_leg",
+        "source_vertices": 212234,
+        "imported_vertices": 212234,
+        "source_sample_to_exchange_max_distance": 0.0,
+        "exchange_sample_to_source_max_distance": 0.0,
+        "bounds_max_delta": 0.0,
+        "appearance_scope": "primary_user_selected_leg",
+        "passed_geometric_exchange_check": true
+      },
+      {
+        "name": "complete_reference_foot_left",
+        "source_vertices": 1763919,
+        "imported_vertices": 1763919,
+        "source_sample_to_exchange_max_distance": 0.0,
+        "exchange_sample_to_source_max_distance": 0.0,
+        "bounds_max_delta": 0.0,
+        "appearance_scope": "foot_only",
+        "passed_geometric_exchange_check": true
+      },
+      {
+        "name": "complete_reference_foot_right",
+        "source_vertices": 1763919,
+        "imported_vertices": 1763919,
+        "source_sample_to_exchange_max_distance": 0.0,
+        "exchange_sample_to_source_max_distance": 0.0,
+        "bounds_max_delta": 0.0,
+        "appearance_scope": "foot_only",
+        "passed_geometric_exchange_check": true
+      }
+    ],
+    "passed": true,
+    "scope": "Shape/role transfer only; not appearance acceptance, animation, collision or manufacturing readiness"
+  }
+}

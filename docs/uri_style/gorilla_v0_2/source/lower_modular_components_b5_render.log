@@ -1,0 +1,335 @@
+NATIVE_COMPONENT_POSE reference_bent 3
+NATIVE_COMPONENT_POSE further_fold 3
+NATIVE_COMPONENT_POSE partial_extension 4
+NATIVE_COMPONENT_POSE ankle_pitch 3
+NATIVE_COMPONENT_INSPECTION False False
+Blender 4.0.2
+Read blend: "/home/ethan/Projects/Sai_Art/docs/uri_style/gorilla_v0_2/source/lower_modular_components_b5.blend"
+Fra:1 Mem:56.74M (Peak 57.26M) | Time:00:00.00 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | L_thigh_main_shell
+Fra:1 Mem:57.72M (Peak 57.72M) | Time:00:00.00 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | L_knee_front_shield
+Fra:1 Mem:58.49M (Peak 58.49M) | Time:00:00.00 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | display_ground_only
+Fra:1 Mem:58.52M (Peak 58.52M) | Time:00:00.00 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | L_ankle_side_cover_rim_1
+Fra:1 Mem:60.51M (Peak 60.56M) | Time:00:00.00 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | L_ankle_side_cover_1
+Fra:1 Mem:60.66M (Peak 60.66M) | Time:00:00.00 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | L_ankle_side_cover_rim_-1
+Fra:1 Mem:60.76M (Peak 60.76M) | Time:00:00.00 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | L_ankle_side_cover_-1
+Fra:1 Mem:61.18M (Peak 61.18M) | Time:00:00.00 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | L_ankle_common_axle
+Fra:1 Mem:61.28M (Peak 61.28M) | Time:00:00.00 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | L_hock_side_cover_rim_1
+Fra:1 Mem:61.81M (Peak 61.81M) | Time:00:00.00 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | L_hock_side_cover_1
+Fra:1 Mem:61.64M (Peak 61.81M) | Time:00:00.00 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | L_shank_front_side_shell
+Fra:1 Mem:62.62M (Peak 62.62M) | Time:00:00.00 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | L_hock_side_cover_rim_-1
+Fra:1 Mem:63.05M (Peak 63.05M) | Time:00:00.00 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | L_hock_side_cover_-1
+Fra:1 Mem:63.45M (Peak 63.45M) | Time:00:00.00 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | L_hock_common_axle
+Fra:1 Mem:63.23M (Peak 63.45M) | Time:00:00.00 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | L_knee_side_cover_rim_1
+Fra:1 Mem:63.36M (Peak 63.45M) | Time:00:00.00 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | L_shank_front_service_panel
+Fra:1 Mem:63.69M (Peak 63.69M) | Time:00:00.00 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | L_knee_side_cover_1
+Fra:1 Mem:63.04M (Peak 63.69M) | Time:00:00.00 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | L_knee_side_cover_rim_-1
+Fra:1 Mem:63.13M (Peak 63.69M) | Time:00:00.00 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | L_knee_side_cover_-1
+Fra:1 Mem:63.18M (Peak 63.69M) | Time:00:00.00 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | L_knee_common_axle
+Fra:1 Mem:63.24M (Peak 63.69M) | Time:00:00.00 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | L_hip_side_cover_rim_1
+Fra:1 Mem:63.26M (Peak 63.69M) | Time:00:00.00 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | L_hip_side_cover_1
+Fra:1 Mem:63.29M (Peak 63.69M) | Time:00:00.00 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | L_hock_rear_guard
+Fra:1 Mem:64.32M (Peak 64.32M) | Time:00:00.00 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | L_hip_side_cover_rim_-1
+Fra:1 Mem:64.02M (Peak 64.32M) | Time:00:00.00 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | L_hip_side_cover_-1
+Fra:1 Mem:64.40M (Peak 64.40M) | Time:00:00.00 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | L_hock_rear_service_panel
+Fra:1 Mem:64.67M (Peak 64.67M) | Time:00:00.00 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | L_thigh_carrier
+Fra:1 Mem:64.61M (Peak 64.67M) | Time:00:00.00 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | L_hip_common_axle
+Fra:1 Mem:64.56M (Peak 64.67M) | Time:00:00.00 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | L_sole_contact_-0.037
+Fra:1 Mem:64.59M (Peak 64.67M) | Time:00:00.00 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | L_sole_contact_0.052
+Fra:1 Mem:64.57M (Peak 64.67M) | Time:00:00.00 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | L_sole_contact_-0.176
+Fra:1 Mem:64.61M (Peak 64.67M) | Time:00:00.00 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | L_return_carrier
+Fra:1 Mem:64.59M (Peak 64.67M) | Time:00:00.00 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | L_foot_central_carrier
+Fra:1 Mem:65.72M (Peak 65.72M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | L_shank_ankle_carrier
+Fra:1 Mem:68.43M (Peak 70.35M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Initializing
+Fra:1 Mem:68.43M (Peak 70.35M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Waiting for render to start
+Fra:1 Mem:68.43M (Peak 70.35M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Loading render kernels (may take a few minutes the first time)
+Fra:1 Mem:68.43M (Peak 70.35M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Updating Scene
+Fra:1 Mem:68.43M (Peak 70.35M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Updating Shaders
+Fra:1 Mem:68.52M (Peak 70.35M) | Time:00:00.01 | Mem:0.01M, Peak:0.01M | Scene, ViewLayer | Updating Procedurals
+Fra:1 Mem:68.52M (Peak 70.35M) | Time:00:00.01 | Mem:0.01M, Peak:0.01M | Scene, ViewLayer | Updating Background
+Fra:1 Mem:68.52M (Peak 70.35M) | Time:00:00.01 | Mem:0.01M, Peak:0.01M | Scene, ViewLayer | Updating Camera
+Fra:1 Mem:68.52M (Peak 70.35M) | Time:00:00.01 | Mem:0.01M, Peak:0.01M | Scene, ViewLayer | Updating Meshes Flags
+Fra:1 Mem:68.52M (Peak 70.35M) | Time:00:00.01 | Mem:0.01M, Peak:0.01M | Scene, ViewLayer | Updating Objects
+Fra:1 Mem:68.52M (Peak 70.35M) | Time:00:00.01 | Mem:0.01M, Peak:0.01M | Scene, ViewLayer | Updating Objects | Copying Transformations to device
+Fra:1 Mem:68.54M (Peak 70.35M) | Time:00:00.01 | Mem:0.02M, Peak:0.02M | Scene, ViewLayer | Updating Objects | Applying Static Transformations
+Fra:1 Mem:68.54M (Peak 70.35M) | Time:00:00.01 | Mem:0.02M, Peak:0.02M | Scene, ViewLayer | Updating Particle Systems
+Fra:1 Mem:68.54M (Peak 70.35M) | Time:00:00.01 | Mem:0.02M, Peak:0.02M | Scene, ViewLayer | Updating Particle Systems | Copying Particles to device
+Fra:1 Mem:68.54M (Peak 70.35M) | Time:00:00.01 | Mem:0.02M, Peak:0.02M | Scene, ViewLayer | Updating Meshes
+Fra:1 Mem:71.06M (Peak 71.06M) | Time:00:00.02 | Mem:0.02M, Peak:0.02M | Scene, ViewLayer | Updating Mesh | Computing attributes
+Fra:1 Mem:72.27M (Peak 72.27M) | Time:00:00.02 | Mem:0.02M, Peak:0.02M | Scene, ViewLayer | Updating Mesh | Copying Attributes to device
+Fra:1 Mem:72.26M (Peak 72.27M) | Time:00:00.02 | Mem:1.23M, Peak:1.23M | Scene, ViewLayer | Updating Geometry BVH L_ankle_side_cover_rim_1_master_mesh 36/36 | Building BVH
+Fra:1 Mem:72.31M (Peak 72.31M) | Time:00:00.02 | Mem:1.23M, Peak:1.23M | Scene, ViewLayer | Updating Geometry BVH L_thigh_outer_lateral_panel_master_mesh 3/36 | Building BVH
+Fra:1 Mem:72.31M (Peak 72.31M) | Time:00:00.02 | Mem:1.23M, Peak:1.23M | Scene, ViewLayer | Updating Geometry BVH L_thigh_main_shell_master_mesh 1/36 | Building BVH
+Fra:1 Mem:75.13M (Peak 75.13M) | Time:00:00.02 | Mem:1.23M, Peak:1.23M | Scene, ViewLayer | Updating Geometry BVH L_thigh_main_shell_master_mesh 1/36 | Packing BVH triangles and strands
+Fra:1 Mem:75.13M (Peak 75.13M) | Time:00:00.02 | Mem:1.23M, Peak:1.23M | Scene, ViewLayer | Updating Geometry BVH L_thigh_main_shell_master_mesh 1/36 | Packing BVH nodes
+Fra:1 Mem:75.11M (Peak 75.13M) | Time:00:00.02 | Mem:1.23M, Peak:1.23M | Scene, ViewLayer | Updating Geometry BVH L_ankle_side_cover_1_master_mesh 35/36 | Building BVH
+Fra:1 Mem:75.15M (Peak 75.15M) | Time:00:00.02 | Mem:1.23M, Peak:1.23M | Scene, ViewLayer | Updating Geometry BVH L_ankle_side_cover_1_master_mesh 35/36 | Packing BVH triangles and strands
+Fra:1 Mem:75.15M (Peak 75.15M) | Time:00:00.02 | Mem:1.23M, Peak:1.23M | Scene, ViewLayer | Updating Geometry BVH L_ankle_side_cover_1_master_mesh 35/36 | Packing BVH nodes
+Fra:1 Mem:75.13M (Peak 75.15M) | Time:00:00.02 | Mem:1.23M, Peak:1.23M | Scene, ViewLayer | Updating Geometry BVH L_ankle_side_cover_rim_-1_master_mesh 34/36 | Building BVH
+Fra:1 Mem:75.18M (Peak 75.18M) | Time:00:00.02 | Mem:1.23M, Peak:1.23M | Scene, ViewLayer | Updating Geometry BVH L_ankle_side_cover_rim_-1_master_mesh 34/36 | Packing BVH triangles and strands
+Fra:1 Mem:75.18M (Peak 75.18M) | Time:00:00.02 | Mem:1.23M, Peak:1.23M | Scene, ViewLayer | Updating Geometry BVH L_ankle_side_cover_rim_-1_master_mesh 34/36 | Packing BVH nodes
+Fra:1 Mem:75.15M (Peak 75.18M) | Time:00:00.02 | Mem:1.23M, Peak:1.23M | Scene, ViewLayer | Updating Geometry BVH L_ankle_side_cover_-1_master_mesh 33/36 | Building BVH
+Fra:1 Mem:75.56M (Peak 75.56M) | Time:00:00.02 | Mem:1.23M, Peak:1.23M | Scene, ViewLayer | Updating Geometry BVH L_ankle_side_cover_-1_master_mesh 33/36 | Packing BVH triangles and strands
+Fra:1 Mem:75.56M (Peak 75.56M) | Time:00:00.02 | Mem:1.23M, Peak:1.23M | Scene, ViewLayer | Updating Geometry BVH L_ankle_side_cover_-1_master_mesh 33/36 | Packing BVH nodes
+Fra:1 Mem:75.54M (Peak 75.56M) | Time:00:00.02 | Mem:1.23M, Peak:1.23M | Scene, ViewLayer | Updating Geometry BVH L_ankle_common_axle_master_mesh 32/36 | Building BVH
+Fra:1 Mem:75.58M (Peak 75.58M) | Time:00:00.02 | Mem:1.23M, Peak:1.23M | Scene, ViewLayer | Updating Geometry BVH L_ankle_common_axle_master_mesh 32/36 | Packing BVH triangles and strands
+Fra:1 Mem:75.59M (Peak 75.59M) | Time:00:00.02 | Mem:1.23M, Peak:1.23M | Scene, ViewLayer | Updating Geometry BVH L_ankle_common_axle_master_mesh 32/36 | Packing BVH nodes
+Fra:1 Mem:75.56M (Peak 75.59M) | Time:00:00.02 | Mem:1.23M, Peak:1.23M | Scene, ViewLayer | Updating Geometry BVH L_hock_side_cover_rim_1_master_mesh 31/36 | Building BVH
+Fra:1 Mem:75.61M (Peak 75.61M) | Time:00:00.02 | Mem:1.23M, Peak:1.23M | Scene, ViewLayer | Updating Geometry BVH L_hock_side_cover_rim_1_master_mesh 31/36 | Packing BVH triangles and strands
+Fra:1 Mem:75.63M (Peak 75.63M) | Time:00:00.02 | Mem:1.23M, Peak:1.23M | Scene, ViewLayer | Updating Geometry BVH L_hock_side_cover_rim_1_master_mesh 31/36 | Packing BVH nodes
+Fra:1 Mem:75.43M (Peak 75.63M) | Time:00:00.02 | Mem:1.23M, Peak:1.23M | Scene, ViewLayer | Updating Geometry BVH L_shank_front_side_shell_master_mesh 6/36 | Building BVH
+Fra:1 Mem:76.84M (Peak 76.84M) | Time:00:00.02 | Mem:1.23M, Peak:1.23M | Scene, ViewLayer | Updating Geometry BVH L_shank_front_side_shell_master_mesh 6/36 | Packing BVH triangles and strands
+Fra:1 Mem:76.86M (Peak 76.86M) | Time:00:00.02 | Mem:1.23M, Peak:1.23M | Scene, ViewLayer | Updating Geometry BVH L_shank_front_side_shell_master_mesh 6/36 | Packing BVH nodes
+Fra:1 Mem:76.95M (Peak 76.95M) | Time:00:00.02 | Mem:1.23M, Peak:1.23M | Scene, ViewLayer | Updating Geometry BVH L_shank_front_side_shell_master_mesh 6/36 | Packing BVH triangles and strands
+Fra:1 Mem:76.95M (Peak 76.95M) | Time:00:00.02 | Mem:1.23M, Peak:1.23M | Scene, ViewLayer | Updating Geometry BVH L_shank_front_side_shell_master_mesh 6/36 | Packing BVH nodes
+Fra:1 Mem:76.69M (Peak 76.95M) | Time:00:00.02 | Mem:1.23M, Peak:1.23M | Scene, ViewLayer | Updating Geometry BVH L_shank_front_service_panel_master_mesh 7/36 | Building BVH
+Fra:1 Mem:76.92M (Peak 76.95M) | Time:00:00.02 | Mem:1.23M, Peak:1.23M | Scene, ViewLayer | Updating Geometry BVH L_hock_side_cover_1_master_mesh 30/36 | Building BVH
+Fra:1 Mem:77.41M (Peak 77.41M) | Time:00:00.02 | Mem:1.23M, Peak:1.23M | Scene, ViewLayer | Updating Geometry BVH L_hock_side_cover_1_master_mesh 30/36 | Packing BVH nodes
+Fra:1 Mem:77.41M (Peak 77.41M) | Time:00:00.02 | Mem:1.23M, Peak:1.23M | Scene, ViewLayer | Updating Geometry BVH L_hock_side_cover_1_master_mesh 30/36 | Packing BVH triangles and strands
+Fra:1 Mem:77.49M (Peak 77.49M) | Time:00:00.02 | Mem:1.23M, Peak:1.23M | Scene, ViewLayer | Updating Geometry BVH L_hock_side_cover_1_master_mesh 30/36 | Packing BVH nodes
+Fra:1 Mem:77.47M (Peak 77.49M) | Time:00:00.02 | Mem:1.23M, Peak:1.23M | Scene, ViewLayer | Updating Geometry BVH L_hock_side_cover_rim_-1_master_mesh 29/36 | Building BVH
+Fra:1 Mem:77.24M (Peak 77.49M) | Time:00:00.02 | Mem:1.23M, Peak:1.23M | Scene, ViewLayer | Updating Geometry BVH L_hock_side_cover_rim_-1_master_mesh 29/36 | Packing BVH triangles and strands
+Fra:1 Mem:77.24M (Peak 77.49M) | Time:00:00.02 | Mem:1.23M, Peak:1.23M | Scene, ViewLayer | Updating Geometry BVH L_hock_side_cover_rim_-1_master_mesh 29/36 | Packing BVH nodes
+Fra:1 Mem:77.21M (Peak 77.49M) | Time:00:00.02 | Mem:1.23M, Peak:1.23M | Scene, ViewLayer | Updating Geometry BVH L_hock_side_cover_-1_master_mesh 28/36 | Building BVH
+Fra:1 Mem:77.25M (Peak 77.49M) | Time:00:00.02 | Mem:1.23M, Peak:1.23M | Scene, ViewLayer | Updating Geometry BVH L_hock_side_cover_-1_master_mesh 28/36 | Packing BVH triangles and strands
+Fra:1 Mem:77.28M (Peak 77.49M) | Time:00:00.02 | Mem:1.23M, Peak:1.23M | Scene, ViewLayer | Updating Geometry BVH L_hock_side_cover_-1_master_mesh 28/36 | Packing BVH nodes
+Fra:1 Mem:77.08M (Peak 77.49M) | Time:00:00.02 | Mem:1.23M, Peak:1.23M | Scene, ViewLayer | Updating Geometry BVH L_hock_side_cover_-1_master_mesh 28/36 | Packing BVH triangles and strands
+Fra:1 Mem:77.09M (Peak 77.49M) | Time:00:00.02 | Mem:1.23M, Peak:1.23M | Scene, ViewLayer | Updating Geometry BVH L_hock_side_cover_-1_master_mesh 28/36 | Packing BVH nodes
+Fra:1 Mem:77.06M (Peak 77.49M) | Time:00:00.02 | Mem:1.23M, Peak:1.23M | Scene, ViewLayer | Updating Geometry BVH L_hock_common_axle_master_mesh 27/36 | Building BVH
+Fra:1 Mem:77.11M (Peak 77.49M) | Time:00:00.02 | Mem:1.23M, Peak:1.23M | Scene, ViewLayer | Updating Geometry BVH L_hock_common_axle_master_mesh 27/36 | Packing BVH triangles and strands
+Fra:1 Mem:77.11M (Peak 77.49M) | Time:00:00.02 | Mem:1.23M, Peak:1.23M | Scene, ViewLayer | Updating Geometry BVH L_hock_common_axle_master_mesh 27/36 | Packing BVH nodes
+Fra:1 Mem:77.09M (Peak 77.49M) | Time:00:00.02 | Mem:1.23M, Peak:1.23M | Scene, ViewLayer | Updating Geometry BVH L_knee_side_cover_rim_1_master_mesh 26/36 | Building BVH
+Fra:1 Mem:77.13M (Peak 77.49M) | Time:00:00.02 | Mem:1.23M, Peak:1.23M | Scene, ViewLayer | Updating Geometry BVH L_knee_side_cover_rim_1_master_mesh 26/36 | Packing BVH triangles and strands
+Fra:1 Mem:77.16M (Peak 77.49M) | Time:00:00.02 | Mem:1.23M, Peak:1.23M | Scene, ViewLayer | Updating Geometry BVH L_knee_side_cover_rim_1_master_mesh 26/36 | Packing BVH nodes
+Fra:1 Mem:77.21M (Peak 77.49M) | Time:00:00.02 | Mem:1.23M, Peak:1.23M | Scene, ViewLayer | Updating Geometry BVH L_knee_side_cover_1_master_mesh 25/36 | Building BVH
+Fra:1 Mem:76.98M (Peak 77.49M) | Time:00:00.02 | Mem:1.23M, Peak:1.23M | Scene, ViewLayer | Updating Geometry BVH L_knee_side_cover_1_master_mesh 25/36 | Packing BVH triangles and strands
+Fra:1 Mem:76.99M (Peak 77.49M) | Time:00:00.02 | Mem:1.23M, Peak:1.23M | Scene, ViewLayer | Updating Geometry BVH L_knee_side_cover_1_master_mesh 25/36 | Packing BVH nodes
+Fra:1 Mem:76.96M (Peak 77.49M) | Time:00:00.02 | Mem:1.23M, Peak:1.23M | Scene, ViewLayer | Updating Geometry BVH L_knee_side_cover_rim_-1_master_mesh 24/36 | Building BVH
+Fra:1 Mem:77.01M (Peak 77.49M) | Time:00:00.02 | Mem:1.23M, Peak:1.23M | Scene, ViewLayer | Updating Geometry BVH L_knee_side_cover_rim_-1_master_mesh 24/36 | Packing BVH triangles and strands
+Fra:1 Mem:77.01M (Peak 77.49M) | Time:00:00.02 | Mem:1.23M, Peak:1.23M | Scene, ViewLayer | Updating Geometry BVH L_knee_side_cover_rim_-1_master_mesh 24/36 | Packing BVH nodes
+Fra:1 Mem:76.98M (Peak 77.49M) | Time:00:00.02 | Mem:1.23M, Peak:1.23M | Scene, ViewLayer | Updating Geometry BVH L_knee_side_cover_-1_master_mesh 23/36 | Building BVH
+Fra:1 Mem:77.03M (Peak 77.49M) | Time:00:00.03 | Mem:1.23M, Peak:1.23M | Scene, ViewLayer | Updating Geometry BVH L_knee_side_cover_-1_master_mesh 23/36 | Packing BVH triangles and strands
+Fra:1 Mem:77.03M (Peak 77.49M) | Time:00:00.03 | Mem:1.23M, Peak:1.23M | Scene, ViewLayer | Updating Geometry BVH L_knee_side_cover_-1_master_mesh 23/36 | Packing BVH nodes
+Fra:1 Mem:77.01M (Peak 77.49M) | Time:00:00.03 | Mem:1.23M, Peak:1.23M | Scene, ViewLayer | Updating Geometry BVH L_knee_common_axle_master_mesh 22/36 | Building BVH
+Fra:1 Mem:77.05M (Peak 77.49M) | Time:00:00.03 | Mem:1.23M, Peak:1.23M | Scene, ViewLayer | Updating Geometry BVH L_hock_rear_guard_master_mesh 8/36 | Building BVH
+Fra:1 Mem:78.47M (Peak 78.47M) | Time:00:00.03 | Mem:1.23M, Peak:1.23M | Scene, ViewLayer | Updating Geometry BVH L_hock_rear_guard_master_mesh 8/36 | Packing BVH triangles and strands
+Fra:1 Mem:78.48M (Peak 78.48M) | Time:00:00.03 | Mem:1.23M, Peak:1.23M | Scene, ViewLayer | Updating Geometry BVH L_hock_rear_guard_master_mesh 8/36 | Packing BVH nodes
+Fra:1 Mem:78.45M (Peak 78.48M) | Time:00:00.03 | Mem:1.23M, Peak:1.23M | Scene, ViewLayer | Updating Geometry BVH L_hip_side_cover_rim_1_master_mesh 21/36 | Building BVH
+Fra:1 Mem:78.50M (Peak 78.50M) | Time:00:00.03 | Mem:1.23M, Peak:1.23M | Scene, ViewLayer | Updating Geometry BVH L_hip_side_cover_rim_1_master_mesh 21/36 | Packing BVH triangles and strands
+Fra:1 Mem:78.50M (Peak 78.50M) | Time:00:00.03 | Mem:1.23M, Peak:1.23M | Scene, ViewLayer | Updating Geometry BVH L_hip_side_cover_rim_1_master_mesh 21/36 | Packing BVH nodes
+Fra:1 Mem:78.48M (Peak 78.50M) | Time:00:00.03 | Mem:1.23M, Peak:1.23M | Scene, ViewLayer | Updating Geometry BVH L_hip_side_cover_1_master_mesh 20/36 | Building BVH
+Fra:1 Mem:78.52M (Peak 78.52M) | Time:00:00.03 | Mem:1.23M, Peak:1.23M | Scene, ViewLayer | Updating Geometry BVH L_hip_side_cover_1_master_mesh 20/36 | Packing BVH triangles and strands
+Fra:1 Mem:78.52M (Peak 78.52M) | Time:00:00.03 | Mem:1.23M, Peak:1.23M | Scene, ViewLayer | Updating Geometry BVH L_hip_side_cover_1_master_mesh 20/36 | Packing BVH nodes
+Fra:1 Mem:78.50M (Peak 78.52M) | Time:00:00.03 | Mem:1.23M, Peak:1.23M | Scene, ViewLayer | Updating Geometry BVH L_hip_side_cover_rim_-1_master_mesh 19/36 | Building BVH
+Fra:1 Mem:78.54M (Peak 78.54M) | Time:00:00.03 | Mem:1.23M, Peak:1.23M | Scene, ViewLayer | Updating Geometry BVH L_hip_side_cover_rim_-1_master_mesh 19/36 | Packing BVH triangles and strands
+Fra:1 Mem:78.55M (Peak 78.55M) | Time:00:00.03 | Mem:1.23M, Peak:1.23M | Scene, ViewLayer | Updating Geometry BVH L_hip_side_cover_rim_-1_master_mesh 19/36 | Packing BVH nodes
+Fra:1 Mem:78.52M (Peak 78.55M) | Time:00:00.03 | Mem:1.23M, Peak:1.23M | Scene, ViewLayer | Updating Geometry BVH L_hip_side_cover_-1_master_mesh 18/36 | Building BVH
+Fra:1 Mem:78.57M (Peak 78.57M) | Time:00:00.03 | Mem:1.23M, Peak:1.23M | Scene, ViewLayer | Updating Geometry BVH L_hock_rear_service_panel_master_mesh 9/36 | Building BVH
+Fra:1 Mem:79.26M (Peak 79.26M) | Time:00:00.03 | Mem:1.23M, Peak:1.23M | Scene, ViewLayer | Updating Geometry BVH L_hock_rear_service_panel_master_mesh 9/36 | Packing BVH triangles and strands
+Fra:1 Mem:79.27M (Peak 79.27M) | Time:00:00.03 | Mem:1.23M, Peak:1.23M | Scene, ViewLayer | Updating Geometry BVH L_hock_rear_service_panel_master_mesh 9/36 | Packing BVH nodes
+Fra:1 Mem:79.24M (Peak 79.27M) | Time:00:00.03 | Mem:1.23M, Peak:1.23M | Scene, ViewLayer | Updating Geometry BVH L_hip_common_axle_master_mesh 17/36 | Building BVH
+Fra:1 Mem:79.29M (Peak 79.29M) | Time:00:00.03 | Mem:1.23M, Peak:1.23M | Scene, ViewLayer | Updating Geometry BVH L_hip_common_axle_master_mesh 17/36 | Packing BVH triangles and strands
+Fra:1 Mem:79.29M (Peak 79.29M) | Time:00:00.03 | Mem:1.23M, Peak:1.23M | Scene, ViewLayer | Updating Geometry BVH L_hip_common_axle_master_mesh 17/36 | Packing BVH nodes
+Fra:1 Mem:79.27M (Peak 79.29M) | Time:00:00.03 | Mem:1.23M, Peak:1.23M | Scene, ViewLayer | Updating Geometry BVH L_sole_contact_-0.037_master_mesh 16/36 | Building BVH
+Fra:1 Mem:79.28M (Peak 79.29M) | Time:00:00.03 | Mem:1.23M, Peak:1.23M | Scene, ViewLayer | Updating Geometry BVH L_sole_contact_-0.037_master_mesh 16/36 | Packing BVH triangles and strands
+Fra:1 Mem:79.28M (Peak 79.29M) | Time:00:00.03 | Mem:1.23M, Peak:1.23M | Scene, ViewLayer | Updating Geometry BVH L_sole_contact_-0.037_master_mesh 16/36 | Packing BVH nodes
+Fra:1 Mem:79.28M (Peak 79.29M) | Time:00:00.03 | Mem:1.23M, Peak:1.23M | Scene, ViewLayer | Updating Geometry BVH L_sole_contact_0.052_master_mesh 15/36 | Building BVH
+Fra:1 Mem:79.29M (Peak 79.29M) | Time:00:00.03 | Mem:1.23M, Peak:1.23M | Scene, ViewLayer | Updating Geometry BVH L_sole_contact_0.052_master_mesh 15/36 | Packing BVH triangles and strands
+Fra:1 Mem:79.29M (Peak 79.29M) | Time:00:00.03 | Mem:1.23M, Peak:1.23M | Scene, ViewLayer | Updating Geometry BVH L_sole_contact_0.052_master_mesh 15/36 | Packing BVH nodes
+Fra:1 Mem:79.29M (Peak 79.29M) | Time:00:00.03 | Mem:1.23M, Peak:1.23M | Scene, ViewLayer | Updating Geometry BVH L_sole_contact_-0.176_master_mesh 14/36 | Building BVH
+Fra:1 Mem:79.30M (Peak 79.30M) | Time:00:00.03 | Mem:1.23M, Peak:1.23M | Scene, ViewLayer | Updating Geometry BVH L_sole_contact_-0.176_master_mesh 14/36 | Packing BVH triangles and strands
+Fra:1 Mem:79.30M (Peak 79.30M) | Time:00:00.03 | Mem:1.23M, Peak:1.23M | Scene, ViewLayer | Updating Geometry BVH L_sole_contact_-0.176_master_mesh 14/36 | Packing BVH nodes
+Fra:1 Mem:79.29M (Peak 79.30M) | Time:00:00.03 | Mem:1.23M, Peak:1.23M | Scene, ViewLayer | Updating Geometry BVH L_foot_central_carrier_master_mesh 13/36 | Building BVH
+Fra:1 Mem:79.85M (Peak 79.85M) | Time:00:00.03 | Mem:1.23M, Peak:1.23M | Scene, ViewLayer | Updating Geometry BVH L_thigh_carrier_master_mesh 10/36 | Building BVH
+Fra:1 Mem:80.04M (Peak 80.04M) | Time:00:00.03 | Mem:1.23M, Peak:1.23M | Scene, ViewLayer | Updating Geometry BVH L_thigh_carrier_master_mesh 10/36 | Packing BVH triangles and strands
+Fra:1 Mem:80.06M (Peak 80.06M) | Time:00:00.03 | Mem:1.23M, Peak:1.23M | Scene, ViewLayer | Updating Geometry BVH L_thigh_carrier_master_mesh 10/36 | Packing BVH nodes
+Fra:1 Mem:79.87M (Peak 80.06M) | Time:00:00.03 | Mem:1.23M, Peak:1.23M | Scene, ViewLayer | Updating Geometry BVH L_return_carrier_master_mesh 11/36 | Building BVH
+Fra:1 Mem:80.06M (Peak 80.06M) | Time:00:00.03 | Mem:1.23M, Peak:1.23M | Scene, ViewLayer | Updating Geometry BVH L_return_carrier_master_mesh 11/36 | Packing BVH triangles and strands
+Fra:1 Mem:80.07M (Peak 80.07M) | Time:00:00.03 | Mem:1.23M, Peak:1.23M | Scene, ViewLayer | Updating Geometry BVH L_return_carrier_master_mesh 11/36 | Packing BVH nodes
+Fra:1 Mem:79.97M (Peak 80.07M) | Time:00:00.03 | Mem:1.23M, Peak:1.23M | Scene, ViewLayer | Updating Geometry BVH L_return_carrier_master_mesh 11/36 | Packing BVH triangles and strands
+Fra:1 Mem:80.09M (Peak 80.09M) | Time:00:00.03 | Mem:1.23M, Peak:1.23M | Scene, ViewLayer | Updating Geometry BVH L_return_carrier_master_mesh 11/36 | Packing BVH nodes
+Fra:1 Mem:80.57M (Peak 80.57M) | Time:00:00.03 | Mem:1.23M, Peak:1.23M | Scene, ViewLayer | Updating Geometry BVH L_return_carrier_master_mesh 11/36 | Packing BVH triangles and strands
+Fra:1 Mem:80.58M (Peak 80.58M) | Time:00:00.03 | Mem:1.23M, Peak:1.23M | Scene, ViewLayer | Updating Geometry BVH L_return_carrier_master_mesh 11/36 | Packing BVH nodes
+Fra:1 Mem:79.08M (Peak 80.58M) | Time:00:00.03 | Mem:1.23M, Peak:1.23M | Scene, ViewLayer | Updating Geometry BVH L_shank_ankle_carrier_master_mesh 12/36 | Building BVH
+Fra:1 Mem:79.26M (Peak 80.58M) | Time:00:00.04 | Mem:1.23M, Peak:1.23M | Scene, ViewLayer | Updating Geometry BVH L_shank_ankle_carrier_master_mesh 12/36 | Packing BVH triangles and strands
+Fra:1 Mem:79.30M (Peak 80.58M) | Time:00:00.04 | Mem:1.23M, Peak:1.23M | Scene, ViewLayer | Updating Geometry BVH L_shank_ankle_carrier_master_mesh 12/36 | Packing BVH nodes
+Fra:1 Mem:79.45M (Peak 80.58M) | Time:00:00.04 | Mem:1.23M, Peak:1.23M | Scene, ViewLayer | Updating Geometry BVH L_shank_ankle_carrier_master_mesh 12/36 | Packing BVH triangles and strands
+Fra:1 Mem:79.46M (Peak 80.58M) | Time:00:00.04 | Mem:1.23M, Peak:1.23M | Scene, ViewLayer | Updating Geometry BVH L_shank_ankle_carrier_master_mesh 12/36 | Packing BVH nodes
+Fra:1 Mem:78.92M (Peak 80.58M) | Time:00:00.04 | Mem:1.23M, Peak:1.23M | Scene, ViewLayer | Updating Geometry BVH L_shank_ankle_carrier_master_mesh 12/36 | Packing BVH triangles and strands
+Fra:1 Mem:79.04M (Peak 80.58M) | Time:00:00.04 | Mem:1.23M, Peak:1.23M | Scene, ViewLayer | Updating Geometry BVH L_shank_ankle_carrier_master_mesh 12/36 | Packing BVH nodes
+Fra:1 Mem:78.07M (Peak 80.58M) | Time:00:00.04 | Mem:1.23M, Peak:1.23M | Scene, ViewLayer | Updating Geometry BVH L_shank_ankle_carrier_master_mesh 12/36 | Packing BVH triangles and strands
+Fra:1 Mem:78.19M (Peak 80.58M) | Time:00:00.04 | Mem:1.23M, Peak:1.23M | Scene, ViewLayer | Updating Geometry BVH L_shank_ankle_carrier_master_mesh 12/36 | Packing BVH nodes
+Fra:1 Mem:77.18M (Peak 80.58M) | Time:00:00.04 | Mem:1.23M, Peak:1.23M | Scene, ViewLayer | Updating Scene BVH | Building
+Fra:1 Mem:77.18M (Peak 80.58M) | Time:00:00.04 | Mem:1.23M, Peak:1.23M | Scene, ViewLayer | Updating Scene BVH | Building BVH
+Fra:1 Mem:77.19M (Peak 80.58M) | Time:00:00.04 | Mem:1.23M, Peak:1.23M | Scene, ViewLayer | Updating Scene BVH | Packing BVH triangles and strands
+Fra:1 Mem:77.19M (Peak 80.58M) | Time:00:00.04 | Mem:1.23M, Peak:1.23M | Scene, ViewLayer | Updating Scene BVH | Packing BVH nodes
+Fra:1 Mem:87.04M (Peak 87.04M) | Time:00:00.04 | Mem:1.23M, Peak:1.23M | Scene, ViewLayer | Updating Scene BVH | Copying BVH to device
+Fra:1 Mem:87.04M (Peak 87.04M) | Time:00:00.04 | Mem:6.16M, Peak:6.16M | Scene, ViewLayer | Updating Mesh | Computing normals
+Fra:1 Mem:93.40M (Peak 93.40M) | Time:00:00.05 | Mem:6.16M, Peak:6.16M | Scene, ViewLayer | Updating Mesh | Copying Mesh to device
+Fra:1 Mem:93.40M (Peak 93.40M) | Time:00:00.05 | Mem:12.52M, Peak:12.52M | Scene, ViewLayer | Updating Objects Flags
+Fra:1 Mem:93.40M (Peak 93.40M) | Time:00:00.05 | Mem:12.52M, Peak:12.52M | Scene, ViewLayer | Updating Primitive Offsets
+Fra:1 Mem:93.40M (Peak 93.40M) | Time:00:00.05 | Mem:12.52M, Peak:12.52M | Scene, ViewLayer | Updating Images
+Fra:1 Mem:93.40M (Peak 93.40M) | Time:00:00.05 | Mem:12.52M, Peak:12.52M | Scene, ViewLayer | Updating Camera Volume
+Fra:1 Mem:93.40M (Peak 93.40M) | Time:00:00.05 | Mem:12.52M, Peak:12.52M | Scene, ViewLayer | Updating Lookup Tables
+Fra:1 Mem:93.40M (Peak 93.40M) | Time:00:00.05 | Mem:12.60M, Peak:12.60M | Scene, ViewLayer | Updating Lights
+Fra:1 Mem:93.40M (Peak 93.40M) | Time:00:00.05 | Mem:12.60M, Peak:12.60M | Scene, ViewLayer | Updating Lights | Computing distribution
+Fra:1 Mem:93.40M (Peak 93.40M) | Time:00:00.05 | Mem:12.60M, Peak:12.60M | Scene, ViewLayer | Updating Lights | Computing tree
+Fra:1 Mem:93.40M (Peak 93.40M) | Time:00:00.05 | Mem:12.60M, Peak:12.60M | Scene, ViewLayer | Updating Integrator
+Fra:1 Mem:94.40M (Peak 94.40M) | Time:00:00.05 | Mem:13.60M, Peak:13.60M | Scene, ViewLayer | Updating Film
+Fra:1 Mem:94.41M (Peak 94.41M) | Time:00:00.05 | Mem:13.52M, Peak:13.60M | Scene, ViewLayer | Updating Lookup Tables
+Fra:1 Mem:94.41M (Peak 94.41M) | Time:00:00.05 | Mem:13.61M, Peak:13.61M | Scene, ViewLayer | Updating Baking
+Fra:1 Mem:94.41M (Peak 94.41M) | Time:00:00.05 | Mem:13.61M, Peak:13.61M | Scene, ViewLayer | Updating Device | Writing constant memory
+Fra:1 Mem:94.41M (Peak 94.41M) | Time:00:00.05 | Mem:13.61M, Peak:13.61M | Scene, ViewLayer | Sample 0/48
+Fra:1 Mem:143.87M (Peak 143.87M) | Time:00:00.49 | Remaining:00:20.58 | Mem:63.05M, Peak:63.05M | Scene, ViewLayer | Sample 1/48
+Fra:1 Mem:165.85M (Peak 209.79M) | Time:00:16.84 | Mem:63.05M, Peak:63.05M | Scene, ViewLayer | Sample 48/48
+Fra:1 Mem:165.85M (Peak 209.79M) | Time:00:16.84 | Mem:63.05M, Peak:63.05M | Scene, ViewLayer | Finished
+Saved: '/home/ethan/Projects/Sai_Art/docs/uri_style/gorilla_v0_2/images/lower_modular_components_front_b5.png'
+Time: 00:16.93 (Saving: 00:00.08)
+
+NATIVE_COMPONENT_VIEW front
+Fra:1 Mem:143.88M (Peak 143.88M) | Time:00:00.00 | Mem:63.05M, Peak:63.05M | Scene, ViewLayer | Initializing
+Fra:1 Mem:143.87M (Peak 143.88M) | Time:00:00.00 | Mem:63.05M, Peak:63.05M | Scene, ViewLayer | Waiting for render to start
+Fra:1 Mem:143.87M (Peak 143.88M) | Time:00:00.00 | Mem:63.05M, Peak:63.05M | Scene, ViewLayer | Updating Scene
+Fra:1 Mem:143.87M (Peak 143.88M) | Time:00:00.00 | Mem:63.05M, Peak:63.05M | Scene, ViewLayer | Updating Shaders
+Fra:1 Mem:143.87M (Peak 143.88M) | Time:00:00.00 | Mem:63.05M, Peak:63.05M | Scene, ViewLayer | Updating Background
+Fra:1 Mem:143.87M (Peak 143.88M) | Time:00:00.00 | Mem:63.05M, Peak:63.05M | Scene, ViewLayer | Updating Camera
+Fra:1 Mem:143.87M (Peak 143.88M) | Time:00:00.00 | Mem:63.05M, Peak:63.05M | Scene, ViewLayer | Updating Objects
+Fra:1 Mem:143.87M (Peak 143.88M) | Time:00:00.00 | Mem:63.05M, Peak:63.05M | Scene, ViewLayer | Updating Particle Systems
+Fra:1 Mem:143.87M (Peak 143.88M) | Time:00:00.00 | Mem:63.05M, Peak:63.05M | Scene, ViewLayer | Updating Meshes
+Fra:1 Mem:143.87M (Peak 143.88M) | Time:00:00.00 | Mem:63.05M, Peak:63.05M | Scene, ViewLayer | Updating Objects Flags
+Fra:1 Mem:143.87M (Peak 143.88M) | Time:00:00.00 | Mem:63.05M, Peak:63.05M | Scene, ViewLayer | Updating Primitive Offsets
+Fra:1 Mem:143.87M (Peak 143.88M) | Time:00:00.00 | Mem:63.05M, Peak:63.05M | Scene, ViewLayer | Updating Images
+Fra:1 Mem:143.87M (Peak 143.88M) | Time:00:00.00 | Mem:63.05M, Peak:63.05M | Scene, ViewLayer | Updating Camera Volume
+Fra:1 Mem:143.87M (Peak 143.88M) | Time:00:00.00 | Mem:63.05M, Peak:63.05M | Scene, ViewLayer | Updating Lookup Tables
+Fra:1 Mem:143.87M (Peak 143.88M) | Time:00:00.00 | Mem:63.05M, Peak:63.05M | Scene, ViewLayer | Updating Lights
+Fra:1 Mem:143.87M (Peak 143.88M) | Time:00:00.00 | Mem:63.05M, Peak:63.05M | Scene, ViewLayer | Updating Integrator
+Fra:1 Mem:143.87M (Peak 143.88M) | Time:00:00.00 | Mem:63.05M, Peak:63.05M | Scene, ViewLayer | Updating Film
+Fra:1 Mem:143.87M (Peak 143.88M) | Time:00:00.00 | Mem:63.05M, Peak:63.05M | Scene, ViewLayer | Updating Lookup Tables
+Fra:1 Mem:143.87M (Peak 143.88M) | Time:00:00.00 | Mem:63.05M, Peak:63.05M | Scene, ViewLayer | Updating Baking
+Fra:1 Mem:143.87M (Peak 143.88M) | Time:00:00.00 | Mem:63.05M, Peak:63.05M | Scene, ViewLayer | Updating Device | Writing constant memory
+Fra:1 Mem:143.87M (Peak 143.88M) | Time:00:00.00 | Mem:63.05M, Peak:63.05M | Scene, ViewLayer | Sample 0/48
+Fra:1 Mem:143.87M (Peak 143.88M) | Time:00:00.27 | Remaining:00:12.98 | Mem:63.05M, Peak:63.05M | Scene, ViewLayer | Sample 1/48
+Fra:1 Mem:165.85M (Peak 209.79M) | Time:00:10.81 | Mem:63.05M, Peak:63.05M | Scene, ViewLayer | Sample 48/48
+Fra:1 Mem:165.85M (Peak 209.79M) | Time:00:10.81 | Mem:63.05M, Peak:63.05M | Scene, ViewLayer | Finished
+Saved: '/home/ethan/Projects/Sai_Art/docs/uri_style/gorilla_v0_2/images/lower_modular_components_left_b5.png'
+Time: 00:10.89 (Saving: 00:00.08)
+
+NATIVE_COMPONENT_VIEW left
+Fra:1 Mem:143.88M (Peak 143.88M) | Time:00:00.00 | Mem:63.05M, Peak:63.05M | Scene, ViewLayer | Initializing
+Fra:1 Mem:143.87M (Peak 143.88M) | Time:00:00.00 | Mem:63.05M, Peak:63.05M | Scene, ViewLayer | Waiting for render to start
+Fra:1 Mem:143.87M (Peak 143.88M) | Time:00:00.00 | Mem:63.05M, Peak:63.05M | Scene, ViewLayer | Updating Scene
+Fra:1 Mem:143.87M (Peak 143.88M) | Time:00:00.00 | Mem:63.05M, Peak:63.05M | Scene, ViewLayer | Updating Shaders
+Fra:1 Mem:143.87M (Peak 143.88M) | Time:00:00.00 | Mem:63.05M, Peak:63.05M | Scene, ViewLayer | Updating Background
+Fra:1 Mem:143.87M (Peak 143.88M) | Time:00:00.00 | Mem:63.05M, Peak:63.05M | Scene, ViewLayer | Updating Camera
+Fra:1 Mem:143.87M (Peak 143.88M) | Time:00:00.00 | Mem:63.05M, Peak:63.05M | Scene, ViewLayer | Updating Objects
+Fra:1 Mem:143.87M (Peak 143.88M) | Time:00:00.00 | Mem:63.05M, Peak:63.05M | Scene, ViewLayer | Updating Particle Systems
+Fra:1 Mem:143.87M (Peak 143.88M) | Time:00:00.00 | Mem:63.05M, Peak:63.05M | Scene, ViewLayer | Updating Meshes
+Fra:1 Mem:143.87M (Peak 143.88M) | Time:00:00.00 | Mem:63.05M, Peak:63.05M | Scene, ViewLayer | Updating Objects Flags
+Fra:1 Mem:143.87M (Peak 143.88M) | Time:00:00.00 | Mem:63.05M, Peak:63.05M | Scene, ViewLayer | Updating Primitive Offsets
+Fra:1 Mem:143.87M (Peak 143.88M) | Time:00:00.00 | Mem:63.05M, Peak:63.05M | Scene, ViewLayer | Updating Images
+Fra:1 Mem:143.87M (Peak 143.88M) | Time:00:00.00 | Mem:63.05M, Peak:63.05M | Scene, ViewLayer | Updating Camera Volume
+Fra:1 Mem:143.87M (Peak 143.88M) | Time:00:00.00 | Mem:63.05M, Peak:63.05M | Scene, ViewLayer | Updating Lookup Tables
+Fra:1 Mem:143.87M (Peak 143.88M) | Time:00:00.00 | Mem:63.05M, Peak:63.05M | Scene, ViewLayer | Updating Lights
+Fra:1 Mem:143.87M (Peak 143.88M) | Time:00:00.00 | Mem:63.05M, Peak:63.05M | Scene, ViewLayer | Updating Integrator
+Fra:1 Mem:143.87M (Peak 143.88M) | Time:00:00.00 | Mem:63.05M, Peak:63.05M | Scene, ViewLayer | Updating Film
+Fra:1 Mem:143.87M (Peak 143.88M) | Time:00:00.00 | Mem:63.05M, Peak:63.05M | Scene, ViewLayer | Updating Lookup Tables
+Fra:1 Mem:143.87M (Peak 143.88M) | Time:00:00.00 | Mem:63.05M, Peak:63.05M | Scene, ViewLayer | Updating Baking
+Fra:1 Mem:143.87M (Peak 143.88M) | Time:00:00.00 | Mem:63.05M, Peak:63.05M | Scene, ViewLayer | Updating Device | Writing constant memory
+Fra:1 Mem:143.87M (Peak 143.88M) | Time:00:00.00 | Mem:63.05M, Peak:63.05M | Scene, ViewLayer | Sample 0/48
+Fra:1 Mem:143.87M (Peak 143.88M) | Time:00:00.51 | Remaining:00:23.94 | Mem:63.05M, Peak:63.05M | Scene, ViewLayer | Sample 1/48
+Fra:1 Mem:165.85M (Peak 209.79M) | Time:00:21.54 | Mem:63.05M, Peak:63.05M | Scene, ViewLayer | Sample 48/48
+Fra:1 Mem:165.85M (Peak 209.79M) | Time:00:21.54 | Mem:63.05M, Peak:63.05M | Scene, ViewLayer | Finished
+Saved: '/home/ethan/Projects/Sai_Art/docs/uri_style/gorilla_v0_2/images/lower_modular_components_rear_b5.png'
+Time: 00:21.62 (Saving: 00:00.08)
+
+NATIVE_COMPONENT_VIEW rear
+Fra:1 Mem:143.88M (Peak 143.88M) | Time:00:00.00 | Mem:63.05M, Peak:63.05M | Scene, ViewLayer | Initializing
+Fra:1 Mem:143.87M (Peak 143.88M) | Time:00:00.00 | Mem:63.05M, Peak:63.05M | Scene, ViewLayer | Waiting for render to start
+Fra:1 Mem:143.87M (Peak 143.88M) | Time:00:00.00 | Mem:63.05M, Peak:63.05M | Scene, ViewLayer | Updating Scene
+Fra:1 Mem:143.87M (Peak 143.88M) | Time:00:00.00 | Mem:63.05M, Peak:63.05M | Scene, ViewLayer | Updating Shaders
+Fra:1 Mem:143.87M (Peak 143.88M) | Time:00:00.00 | Mem:63.05M, Peak:63.05M | Scene, ViewLayer | Updating Background
+Fra:1 Mem:143.87M (Peak 143.88M) | Time:00:00.00 | Mem:63.05M, Peak:63.05M | Scene, ViewLayer | Updating Camera
+Fra:1 Mem:143.87M (Peak 143.88M) | Time:00:00.00 | Mem:63.05M, Peak:63.05M | Scene, ViewLayer | Updating Objects
+Fra:1 Mem:143.87M (Peak 143.88M) | Time:00:00.00 | Mem:63.05M, Peak:63.05M | Scene, ViewLayer | Updating Particle Systems
+Fra:1 Mem:143.87M (Peak 143.88M) | Time:00:00.00 | Mem:63.05M, Peak:63.05M | Scene, ViewLayer | Updating Meshes
+Fra:1 Mem:143.87M (Peak 143.88M) | Time:00:00.00 | Mem:63.05M, Peak:63.05M | Scene, ViewLayer | Updating Objects Flags
+Fra:1 Mem:143.87M (Peak 143.88M) | Time:00:00.00 | Mem:63.05M, Peak:63.05M | Scene, ViewLayer | Updating Primitive Offsets
+Fra:1 Mem:143.87M (Peak 143.88M) | Time:00:00.00 | Mem:63.05M, Peak:63.05M | Scene, ViewLayer | Updating Images
+Fra:1 Mem:143.87M (Peak 143.88M) | Time:00:00.00 | Mem:63.05M, Peak:63.05M | Scene, ViewLayer | Updating Camera Volume
+Fra:1 Mem:143.87M (Peak 143.88M) | Time:00:00.00 | Mem:63.05M, Peak:63.05M | Scene, ViewLayer | Updating Lookup Tables
+Fra:1 Mem:143.87M (Peak 143.88M) | Time:00:00.00 | Mem:63.05M, Peak:63.05M | Scene, ViewLayer | Updating Lights
+Fra:1 Mem:143.87M (Peak 143.88M) | Time:00:00.00 | Mem:63.05M, Peak:63.05M | Scene, ViewLayer | Updating Integrator
+Fra:1 Mem:143.87M (Peak 143.88M) | Time:00:00.00 | Mem:63.05M, Peak:63.05M | Scene, ViewLayer | Updating Film
+Fra:1 Mem:143.87M (Peak 143.88M) | Time:00:00.00 | Mem:63.05M, Peak:63.05M | Scene, ViewLayer | Updating Lookup Tables
+Fra:1 Mem:143.87M (Peak 143.88M) | Time:00:00.00 | Mem:63.05M, Peak:63.05M | Scene, ViewLayer | Updating Baking
+Fra:1 Mem:143.87M (Peak 143.88M) | Time:00:00.00 | Mem:63.05M, Peak:63.05M | Scene, ViewLayer | Updating Device | Writing constant memory
+Fra:1 Mem:143.87M (Peak 143.88M) | Time:00:00.00 | Mem:63.05M, Peak:63.05M | Scene, ViewLayer | Sample 0/48
+Fra:1 Mem:143.87M (Peak 143.88M) | Time:00:00.90 | Remaining:00:42.66 | Mem:63.05M, Peak:63.05M | Scene, ViewLayer | Sample 1/48
+Fra:1 Mem:143.87M (Peak 143.88M) | Time:00:27.24 | Remaining:00:12.38 | Mem:63.05M, Peak:63.05M | Scene, ViewLayer | Sample 33/48
+Fra:1 Mem:165.85M (Peak 209.79M) | Time:00:39.81 | Mem:63.05M, Peak:63.05M | Scene, ViewLayer | Sample 48/48
+Fra:1 Mem:165.85M (Peak 209.79M) | Time:00:39.81 | Mem:63.05M, Peak:63.05M | Scene, ViewLayer | Finished
+Saved: '/home/ethan/Projects/Sai_Art/docs/uri_style/gorilla_v0_2/images/lower_modular_components_top_b5.png'
+Time: 00:39.89 (Saving: 00:00.07)
+
+NATIVE_COMPONENT_VIEW top
+Fra:1 Mem:143.88M (Peak 143.88M) | Time:00:00.00 | Mem:63.05M, Peak:63.05M | Scene, ViewLayer | Initializing
+Fra:1 Mem:143.87M (Peak 143.88M) | Time:00:00.00 | Mem:63.05M, Peak:63.05M | Scene, ViewLayer | Waiting for render to start
+Fra:1 Mem:143.87M (Peak 143.88M) | Time:00:00.00 | Mem:63.05M, Peak:63.05M | Scene, ViewLayer | Updating Scene
+Fra:1 Mem:143.87M (Peak 143.88M) | Time:00:00.00 | Mem:63.05M, Peak:63.05M | Scene, ViewLayer | Updating Shaders
+Fra:1 Mem:143.87M (Peak 143.88M) | Time:00:00.00 | Mem:63.05M, Peak:63.05M | Scene, ViewLayer | Updating Background
+Fra:1 Mem:143.87M (Peak 143.88M) | Time:00:00.00 | Mem:63.05M, Peak:63.05M | Scene, ViewLayer | Updating Camera
+Fra:1 Mem:143.87M (Peak 143.88M) | Time:00:00.00 | Mem:63.05M, Peak:63.05M | Scene, ViewLayer | Updating Objects
+Fra:1 Mem:143.87M (Peak 143.88M) | Time:00:00.00 | Mem:63.05M, Peak:63.05M | Scene, ViewLayer | Updating Particle Systems
+Fra:1 Mem:143.87M (Peak 143.88M) | Time:00:00.00 | Mem:63.05M, Peak:63.05M | Scene, ViewLayer | Updating Meshes
+Fra:1 Mem:143.87M (Peak 143.88M) | Time:00:00.00 | Mem:63.05M, Peak:63.05M | Scene, ViewLayer | Updating Objects Flags
+Fra:1 Mem:143.87M (Peak 143.88M) | Time:00:00.00 | Mem:63.05M, Peak:63.05M | Scene, ViewLayer | Updating Primitive Offsets
+Fra:1 Mem:143.87M (Peak 143.88M) | Time:00:00.00 | Mem:63.05M, Peak:63.05M | Scene, ViewLayer | Updating Images
+Fra:1 Mem:143.87M (Peak 143.88M) | Time:00:00.00 | Mem:63.05M, Peak:63.05M | Scene, ViewLayer | Updating Camera Volume
+Fra:1 Mem:143.87M (Peak 143.88M) | Time:00:00.00 | Mem:63.05M, Peak:63.05M | Scene, ViewLayer | Updating Lookup Tables
+Fra:1 Mem:143.87M (Peak 143.88M) | Time:00:00.00 | Mem:63.05M, Peak:63.05M | Scene, ViewLayer | Updating Lights
+Fra:1 Mem:143.87M (Peak 143.88M) | Time:00:00.00 | Mem:63.05M, Peak:63.05M | Scene, ViewLayer | Updating Integrator
+Fra:1 Mem:143.87M (Peak 143.88M) | Time:00:00.00 | Mem:63.05M, Peak:63.05M | Scene, ViewLayer | Updating Film
+Fra:1 Mem:143.87M (Peak 143.88M) | Time:00:00.00 | Mem:63.05M, Peak:63.05M | Scene, ViewLayer | Updating Lookup Tables
+Fra:1 Mem:143.87M (Peak 143.88M) | Time:00:00.00 | Mem:63.05M, Peak:63.05M | Scene, ViewLayer | Updating Baking
+Fra:1 Mem:143.87M (Peak 143.88M) | Time:00:00.00 | Mem:63.05M, Peak:63.05M | Scene, ViewLayer | Updating Device | Writing constant memory
+Fra:1 Mem:143.87M (Peak 143.88M) | Time:00:00.00 | Mem:63.05M, Peak:63.05M | Scene, ViewLayer | Sample 0/48
+Fra:1 Mem:143.87M (Peak 143.88M) | Time:00:00.79 | Remaining:00:37.35 | Mem:63.05M, Peak:63.05M | Scene, ViewLayer | Sample 1/48
+Fra:1 Mem:143.87M (Peak 143.88M) | Time:00:22.33 | Remaining:00:10.15 | Mem:63.05M, Peak:63.05M | Scene, ViewLayer | Sample 33/48
+Fra:1 Mem:165.85M (Peak 209.79M) | Time:00:32.72 | Mem:63.05M, Peak:63.05M | Scene, ViewLayer | Sample 48/48
+Fra:1 Mem:165.85M (Peak 209.79M) | Time:00:32.72 | Mem:63.05M, Peak:63.05M | Scene, ViewLayer | Finished
+Saved: '/home/ethan/Projects/Sai_Art/docs/uri_style/gorilla_v0_2/images/lower_modular_components_front_oblique_b5.png'
+Time: 00:32.79 (Saving: 00:00.06)
+
+NATIVE_COMPONENT_VIEW front_oblique
+Fra:1 Mem:143.88M (Peak 143.88M) | Time:00:00.00 | Mem:63.05M, Peak:63.05M | Scene, ViewLayer | Initializing
+Fra:1 Mem:143.87M (Peak 143.88M) | Time:00:00.00 | Mem:63.05M, Peak:63.05M | Scene, ViewLayer | Waiting for render to start
+Fra:1 Mem:143.87M (Peak 143.88M) | Time:00:00.00 | Mem:63.05M, Peak:63.05M | Scene, ViewLayer | Updating Scene
+Fra:1 Mem:143.87M (Peak 143.88M) | Time:00:00.00 | Mem:63.05M, Peak:63.05M | Scene, ViewLayer | Updating Shaders
+Fra:1 Mem:143.87M (Peak 143.88M) | Time:00:00.00 | Mem:63.05M, Peak:63.05M | Scene, ViewLayer | Updating Background
+Fra:1 Mem:143.87M (Peak 143.88M) | Time:00:00.00 | Mem:63.05M, Peak:63.05M | Scene, ViewLayer | Updating Camera
+Fra:1 Mem:143.87M (Peak 143.88M) | Time:00:00.00 | Mem:63.05M, Peak:63.05M | Scene, ViewLayer | Updating Objects
+Fra:1 Mem:143.87M (Peak 143.88M) | Time:00:00.00 | Mem:63.05M, Peak:63.05M | Scene, ViewLayer | Updating Particle Systems
+Fra:1 Mem:143.87M (Peak 143.88M) | Time:00:00.00 | Mem:63.05M, Peak:63.05M | Scene, ViewLayer | Updating Meshes
+Fra:1 Mem:143.87M (Peak 143.88M) | Time:00:00.00 | Mem:63.05M, Peak:63.05M | Scene, ViewLayer | Updating Objects Flags
+Fra:1 Mem:143.87M (Peak 143.88M) | Time:00:00.00 | Mem:63.05M, Peak:63.05M | Scene, ViewLayer | Updating Primitive Offsets
+Fra:1 Mem:143.87M (Peak 143.88M) | Time:00:00.00 | Mem:63.05M, Peak:63.05M | Scene, ViewLayer | Updating Images
+Fra:1 Mem:143.87M (Peak 143.88M) | Time:00:00.00 | Mem:63.05M, Peak:63.05M | Scene, ViewLayer | Updating Camera Volume
+Fra:1 Mem:143.87M (Peak 143.88M) | Time:00:00.00 | Mem:63.05M, Peak:63.05M | Scene, ViewLayer | Updating Lookup Tables
+Fra:1 Mem:143.87M (Peak 143.88M) | Time:00:00.00 | Mem:63.05M, Peak:63.05M | Scene, ViewLayer | Updating Lights
+Fra:1 Mem:143.87M (Peak 143.88M) | Time:00:00.00 | Mem:63.05M, Peak:63.05M | Scene, ViewLayer | Updating Integrator
+Fra:1 Mem:143.87M (Peak 143.88M) | Time:00:00.00 | Mem:63.05M, Peak:63.05M | Scene, ViewLayer | Updating Film
+Fra:1 Mem:143.87M (Peak 143.88M) | Time:00:00.00 | Mem:63.05M, Peak:63.05M | Scene, ViewLayer | Updating Lookup Tables
+Fra:1 Mem:143.87M (Peak 143.88M) | Time:00:00.00 | Mem:63.05M, Peak:63.05M | Scene, ViewLayer | Updating Baking
+Fra:1 Mem:143.87M (Peak 143.88M) | Time:00:00.00 | Mem:63.05M, Peak:63.05M | Scene, ViewLayer | Updating Device | Writing constant memory
+Fra:1 Mem:143.87M (Peak 143.88M) | Time:00:00.00 | Mem:63.05M, Peak:63.05M | Scene, ViewLayer | Sample 0/48
+Fra:1 Mem:143.87M (Peak 143.88M) | Time:00:00.86 | Remaining:00:40.62 | Mem:63.05M, Peak:63.05M | Scene, ViewLayer | Sample 1/48
+Fra:1 Mem:143.87M (Peak 143.88M) | Time:00:24.46 | Remaining:00:11.11 | Mem:63.05M, Peak:63.05M | Scene, ViewLayer | Sample 33/48
+Fra:1 Mem:165.85M (Peak 209.79M) | Time:00:35.83 | Mem:63.05M, Peak:63.05M | Scene, ViewLayer | Sample 48/48
+Fra:1 Mem:165.85M (Peak 209.79M) | Time:00:35.83 | Mem:63.05M, Peak:63.05M | Scene, ViewLayer | Finished
+Saved: '/home/ethan/Projects/Sai_Art/docs/uri_style/gorilla_v0_2/images/lower_modular_components_rear_oblique_b5.png'
+Time: 00:35.90 (Saving: 00:00.06)
+
+NATIVE_COMPONENT_VIEW rear_oblique
+Info: Saved "lower_modular_components_b5.blend"
+NATIVE_COMPONENT_REVIEW_RENDERED
+
+Blender quit

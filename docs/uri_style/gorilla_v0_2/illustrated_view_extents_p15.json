@@ -1,0 +1,79 @@
+{
+  "image": "/home/ethan/Projects/Sai_Art/docs/uri_style/gorilla_v0_2/images/gorilla_four_view_top_guided_p15.png",
+  "sha256": "ec09ee4c685f4625638b282565d0a7491ee1e562b0e6ffd04ff63c3904f2a9f7",
+  "dimensions_px": [
+    1254,
+    1254
+  ],
+  "measurement_scope": "visible raster extents after frame/text exclusion",
+  "limitations": [
+    "Antialiasing, highlights, shadows and disconnected small features affect extents.",
+    "This is not proof of common 3D geometry, source fidelity, collision clearance or load capacity."
+  ],
+  "panels": {
+    "FRONT": {
+      "bbox_panel_px": [
+        89,
+        18,
+        535,
+        600
+      ],
+      "visible_width_px": 447,
+      "visible_height_px": 583,
+      "retained_component_areas_px": [
+        152857
+      ]
+    },
+    "LEFT": {
+      "bbox_panel_px": [
+        161,
+        14,
+        431,
+        599
+      ],
+      "visible_width_px": 271,
+      "visible_height_px": 586,
+      "retained_component_areas_px": [
+        90649
+      ]
+    },
+    "REAR": {
+      "bbox_panel_px": [
+        87,
+        16,
+        539,
+        577
+      ],
+      "visible_width_px": 453,
+      "visible_height_px": 562,
+      "retained_component_areas_px": [
+        147631,
+        939
+      ]
+    },
+    "TOP": {
+      "bbox_panel_px": [
+        38,
+        120,
+        563,
+        471
+      ],
+      "visible_width_px": 526,
+      "visible_height_px": 352,
+      "retained_component_areas_px": [
+        111200,
+        1655
+      ]
+    }
+  },
+  "elevation_height_spread_fraction": 0.0415944540727903,
+  "top_to_front_visible_width_ratio": 1.1767337807606264,
+  "top_uniform_scale_to_match_front": 0.8498098859315589,
+  "top_to_left_visible_depth_ratio": 1.2988929889298892,
+  "top_depth_scale_to_match_left": 0.7698863636363636,
+  "raster_alignment_findings": {
+    "elevation_height_difference_exceeds_2_percent": true,
+    "top_width_difference_exceeds_2_percent": true,
+    "top_depth_difference_exceeds_2_percent": true
+  }
+}

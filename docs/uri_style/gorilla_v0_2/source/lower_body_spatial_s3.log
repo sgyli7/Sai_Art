@@ -1,0 +1,369 @@
+Blender 4.0.2
+Read blend: "/home/ethan/Projects/Sai_Art/docs/uri_style/gorilla_v0_2/source/lower_body_spatial_s2.blend"
+Fra:1 Mem:62.01M (Peak 64.61M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | whole_contact_sole_-1
+Fra:1 Mem:62.04M (Peak 64.61M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | integrated_ankle_cheek_-1_1
+Fra:1 Mem:62.11M (Peak 64.61M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | low_ankle_cross_axle_-1
+Fra:1 Mem:64.12M (Peak 64.61M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | return_guard_module_1
+Fra:1 Mem:64.24M (Peak 64.61M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | low_ankle_face_-1_-1
+Fra:1 Mem:64.28M (Peak 64.61M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | low_ankle_center_-1_-1
+Fra:1 Mem:64.24M (Peak 64.61M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | rear_service_rod_1
+Fra:1 Mem:64.54M (Peak 64.61M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | low_ankle_center_-1_1
+Fra:1 Mem:64.60M (Peak 64.61M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | complete_forefoot_armor_-1
+Fra:1 Mem:64.71M (Peak 64.71M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | toe_contact_guard_-1
+Fra:1 Mem:64.67M (Peak 64.71M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | rear_service_cylinder_1
+Fra:1 Mem:64.69M (Peak 64.71M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | heel_contact_guard_-1
+Fra:1 Mem:64.77M (Peak 64.77M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | whole_contact_sole_1
+Fra:1 Mem:64.72M (Peak 64.77M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | load_cradle_1
+Fra:1 Mem:64.78M (Peak 64.78M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | integrated_ankle_cheek_1_-1
+Fra:1 Mem:64.72M (Peak 64.78M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | integrated_ankle_cheek_1_1
+Fra:1 Mem:64.85M (Peak 64.85M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | low_ankle_cross_axle_1
+Fra:1 Mem:64.82M (Peak 64.85M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | low_ankle_face_1_-1
+Fra:1 Mem:64.94M (Peak 64.94M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | low_ankle_center_1_-1
+Fra:1 Mem:64.97M (Peak 64.97M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | continuous_shank_shell_1
+Fra:1 Mem:65.22M (Peak 65.22M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | low_ankle_face_1_1
+Fra:1 Mem:65.26M (Peak 65.26M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | low_ankle_center_1_1
+Fra:1 Mem:65.28M (Peak 65.28M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | complete_forefoot_armor_1
+Fra:1 Mem:65.35M (Peak 65.35M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | toe_contact_guard_1
+Fra:1 Mem:65.25M (Peak 65.35M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | heel_contact_guard_1
+Fra:1 Mem:65.30M (Peak 65.35M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | thigh_access_panel_-1
+Fra:1 Mem:65.66M (Peak 65.66M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | knee_guard_module_-1
+Fra:1 Mem:65.85M (Peak 65.85M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | broad_return_cheek_-1_-1
+Fra:1 Mem:65.52M (Peak 65.85M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | return_side_face_1_1
+Fra:1 Mem:65.59M (Peak 65.85M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | broad_return_cheek_-1_1
+Fra:1 Mem:66.00M (Peak 66.00M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | hip_candidate_envelope_-1
+Fra:1 Mem:66.04M (Peak 66.04M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | hip_side_face_-1_-1
+Fra:1 Mem:66.12M (Peak 66.12M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | hip_side_face_-1_1
+Fra:1 Mem:66.08M (Peak 66.12M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | knee_candidate_envelope_-1
+Fra:1 Mem:66.22M (Peak 66.22M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | return_side_face_1_-1
+Fra:1 Mem:66.36M (Peak 66.36M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | knee_side_face_-1_-1
+Fra:1 Mem:66.44M (Peak 66.44M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | knee_side_face_-1_1
+Fra:1 Mem:66.39M (Peak 66.44M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | return_candidate_envelope_1
+Fra:1 Mem:66.43M (Peak 66.44M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | return_candidate_envelope_-1
+Fra:1 Mem:66.56M (Peak 66.56M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | return_side_face_-1_-1
+Fra:1 Mem:66.63M (Peak 66.63M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | return_side_face_-1_1
+Fra:1 Mem:66.64M (Peak 66.64M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | continuous_shank_shell_-1
+Fra:1 Mem:66.72M (Peak 66.72M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | knee_side_face_1_1
+Fra:1 Mem:66.89M (Peak 66.89M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | rear_service_cylinder_-1
+Fra:1 Mem:66.98M (Peak 66.98M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | rear_service_rod_-1
+Fra:1 Mem:67.04M (Peak 67.04M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | return_guard_module_-1
+Fra:1 Mem:67.07M (Peak 67.07M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | knee_side_face_1_-1
+Fra:1 Mem:67.44M (Peak 67.44M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | knee_guard_module_1
+Fra:1 Mem:67.58M (Peak 67.58M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | knee_candidate_envelope_1
+Fra:1 Mem:67.60M (Peak 67.60M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | broad_return_cheek_1_-1
+Fra:1 Mem:67.69M (Peak 67.69M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | broad_return_cheek_1_1
+Fra:1 Mem:67.56M (Peak 67.69M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | hip_candidate_envelope_1
+Fra:1 Mem:67.65M (Peak 67.69M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | hip_side_face_1_1
+Fra:1 Mem:67.80M (Peak 67.80M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | hip_side_face_1_-1
+Fra:1 Mem:67.87M (Peak 67.87M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Initializing
+Fra:1 Mem:67.86M (Peak 67.87M) | Time:00:00.02 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Waiting for render to start
+Fra:1 Mem:67.86M (Peak 67.87M) | Time:00:00.02 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Loading render kernels (may take a few minutes the first time)
+Fra:1 Mem:67.86M (Peak 67.87M) | Time:00:00.02 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Updating Scene
+Fra:1 Mem:67.86M (Peak 67.87M) | Time:00:00.02 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Updating Shaders
+Fra:1 Mem:67.95M (Peak 67.95M) | Time:00:00.02 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Updating Procedurals
+Fra:1 Mem:67.95M (Peak 67.95M) | Time:00:00.02 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Updating Background
+Fra:1 Mem:67.95M (Peak 67.95M) | Time:00:00.02 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Updating Camera
+Fra:1 Mem:67.95M (Peak 67.95M) | Time:00:00.02 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Updating Meshes Flags
+Fra:1 Mem:67.95M (Peak 67.95M) | Time:00:00.02 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Updating Objects
+Fra:1 Mem:67.95M (Peak 67.95M) | Time:00:00.02 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Updating Objects | Copying Transformations to device
+Fra:1 Mem:67.96M (Peak 67.96M) | Time:00:00.02 | Mem:0.02M, Peak:0.02M | Scene, ViewLayer | Updating Objects | Applying Static Transformations
+Fra:1 Mem:67.96M (Peak 67.96M) | Time:00:00.02 | Mem:0.02M, Peak:0.02M | Scene, ViewLayer | Updating Particle Systems
+Fra:1 Mem:67.96M (Peak 67.96M) | Time:00:00.02 | Mem:0.02M, Peak:0.02M | Scene, ViewLayer | Updating Particle Systems | Copying Particles to device
+Fra:1 Mem:67.96M (Peak 67.96M) | Time:00:00.02 | Mem:0.02M, Peak:0.02M | Scene, ViewLayer | Updating Meshes
+Fra:1 Mem:68.80M (Peak 68.80M) | Time:00:00.02 | Mem:0.02M, Peak:0.02M | Scene, ViewLayer | Updating Mesh | Computing attributes
+Fra:1 Mem:69.35M (Peak 69.35M) | Time:00:00.02 | Mem:0.02M, Peak:0.02M | Scene, ViewLayer | Updating Mesh | Copying Attributes to device
+Fra:1 Mem:69.34M (Peak 69.35M) | Time:00:00.02 | Mem:0.56M, Peak:0.56M | Scene, ViewLayer | Updating Scene BVH | Building
+Fra:1 Mem:69.34M (Peak 69.35M) | Time:00:00.02 | Mem:0.56M, Peak:0.56M | Scene, ViewLayer | Updating Scene BVH | Building BVH
+Fra:1 Mem:72.47M (Peak 72.47M) | Time:00:00.03 | Mem:0.56M, Peak:0.56M | Scene, ViewLayer | Updating Scene BVH | Packing BVH triangles and strands
+Fra:1 Mem:72.68M (Peak 72.68M) | Time:00:00.03 | Mem:0.56M, Peak:0.56M | Scene, ViewLayer | Updating Scene BVH | Packing BVH nodes
+Fra:1 Mem:72.70M (Peak 72.70M) | Time:00:00.03 | Mem:0.56M, Peak:0.56M | Scene, ViewLayer | Updating Scene BVH | Copying BVH to device
+Fra:1 Mem:72.70M (Peak 72.70M) | Time:00:00.03 | Mem:2.24M, Peak:2.24M | Scene, ViewLayer | Updating Mesh | Computing normals
+Fra:1 Mem:75.18M (Peak 75.18M) | Time:00:00.03 | Mem:2.24M, Peak:2.24M | Scene, ViewLayer | Updating Mesh | Copying Mesh to device
+Fra:1 Mem:75.18M (Peak 75.18M) | Time:00:00.03 | Mem:4.72M, Peak:4.72M | Scene, ViewLayer | Updating Objects Flags
+Fra:1 Mem:75.18M (Peak 75.18M) | Time:00:00.03 | Mem:4.72M, Peak:4.72M | Scene, ViewLayer | Updating Primitive Offsets
+Fra:1 Mem:75.18M (Peak 75.18M) | Time:00:00.03 | Mem:4.72M, Peak:4.72M | Scene, ViewLayer | Updating Images
+Fra:1 Mem:75.18M (Peak 75.18M) | Time:00:00.03 | Mem:4.72M, Peak:4.72M | Scene, ViewLayer | Updating Camera Volume
+Fra:1 Mem:75.18M (Peak 75.18M) | Time:00:00.03 | Mem:4.72M, Peak:4.72M | Scene, ViewLayer | Updating Lookup Tables
+Fra:1 Mem:75.18M (Peak 75.18M) | Time:00:00.03 | Mem:4.80M, Peak:4.80M | Scene, ViewLayer | Updating Lights
+Fra:1 Mem:75.18M (Peak 75.18M) | Time:00:00.03 | Mem:4.80M, Peak:4.80M | Scene, ViewLayer | Updating Lights | Computing distribution
+Fra:1 Mem:75.18M (Peak 75.18M) | Time:00:00.03 | Mem:4.80M, Peak:4.80M | Scene, ViewLayer | Updating Lights | Computing tree
+Fra:1 Mem:75.18M (Peak 75.18M) | Time:00:00.03 | Mem:4.80M, Peak:4.80M | Scene, ViewLayer | Updating Integrator
+Fra:1 Mem:76.18M (Peak 76.18M) | Time:00:00.03 | Mem:5.80M, Peak:5.80M | Scene, ViewLayer | Updating Film
+Fra:1 Mem:76.19M (Peak 76.19M) | Time:00:00.03 | Mem:5.72M, Peak:5.80M | Scene, ViewLayer | Updating Lookup Tables
+Fra:1 Mem:76.19M (Peak 76.19M) | Time:00:00.03 | Mem:5.80M, Peak:5.80M | Scene, ViewLayer | Updating Baking
+Fra:1 Mem:76.19M (Peak 76.19M) | Time:00:00.03 | Mem:5.80M, Peak:5.80M | Scene, ViewLayer | Updating Device | Writing constant memory
+Fra:1 Mem:76.19M (Peak 76.19M) | Time:00:00.03 | Mem:5.80M, Peak:5.80M | Scene, ViewLayer | Sample 0/40
+Fra:1 Mem:110.54M (Peak 110.54M) | Time:00:00.21 | Remaining:00:06.96 | Mem:40.13M, Peak:40.13M | Scene, ViewLayer | Sample 1/40
+Fra:1 Mem:125.81M (Peak 156.32M) | Time:00:05.74 | Mem:40.13M, Peak:40.13M | Scene, ViewLayer | Sample 40/40
+Fra:1 Mem:125.81M (Peak 156.32M) | Time:00:05.74 | Mem:40.13M, Peak:40.13M | Scene, ViewLayer | Finished
+Saved: '/home/ethan/Projects/Sai_Art/docs/uri_style/gorilla_v0_2/images/lower_body_native_front_s3.png'
+Time: 00:05.79 (Saving: 00:00.05)
+
+LOWER_BODY_NATIVE_VIEW front [828.1574055026156, 840.3361399769294]
+Fra:1 Mem:110.55M (Peak 110.55M) | Time:00:00.00 | Mem:40.13M, Peak:40.13M | Scene, ViewLayer | Initializing
+Fra:1 Mem:110.54M (Peak 110.55M) | Time:00:00.00 | Mem:40.13M, Peak:40.13M | Scene, ViewLayer | Waiting for render to start
+Fra:1 Mem:110.54M (Peak 110.55M) | Time:00:00.00 | Mem:40.13M, Peak:40.13M | Scene, ViewLayer | Updating Scene
+Fra:1 Mem:110.54M (Peak 110.55M) | Time:00:00.00 | Mem:40.13M, Peak:40.13M | Scene, ViewLayer | Updating Shaders
+Fra:1 Mem:110.54M (Peak 110.55M) | Time:00:00.00 | Mem:40.13M, Peak:40.13M | Scene, ViewLayer | Updating Background
+Fra:1 Mem:110.54M (Peak 110.55M) | Time:00:00.00 | Mem:40.13M, Peak:40.13M | Scene, ViewLayer | Updating Camera
+Fra:1 Mem:110.54M (Peak 110.55M) | Time:00:00.00 | Mem:40.13M, Peak:40.13M | Scene, ViewLayer | Updating Objects
+Fra:1 Mem:110.54M (Peak 110.55M) | Time:00:00.00 | Mem:40.13M, Peak:40.13M | Scene, ViewLayer | Updating Particle Systems
+Fra:1 Mem:110.54M (Peak 110.55M) | Time:00:00.00 | Mem:40.13M, Peak:40.13M | Scene, ViewLayer | Updating Meshes
+Fra:1 Mem:110.54M (Peak 110.55M) | Time:00:00.00 | Mem:40.13M, Peak:40.13M | Scene, ViewLayer | Updating Objects Flags
+Fra:1 Mem:110.54M (Peak 110.55M) | Time:00:00.00 | Mem:40.13M, Peak:40.13M | Scene, ViewLayer | Updating Primitive Offsets
+Fra:1 Mem:110.54M (Peak 110.55M) | Time:00:00.00 | Mem:40.13M, Peak:40.13M | Scene, ViewLayer | Updating Images
+Fra:1 Mem:110.54M (Peak 110.55M) | Time:00:00.00 | Mem:40.13M, Peak:40.13M | Scene, ViewLayer | Updating Camera Volume
+Fra:1 Mem:110.54M (Peak 110.55M) | Time:00:00.00 | Mem:40.13M, Peak:40.13M | Scene, ViewLayer | Updating Lookup Tables
+Fra:1 Mem:110.54M (Peak 110.55M) | Time:00:00.00 | Mem:40.13M, Peak:40.13M | Scene, ViewLayer | Updating Lights
+Fra:1 Mem:110.54M (Peak 110.55M) | Time:00:00.00 | Mem:40.13M, Peak:40.13M | Scene, ViewLayer | Updating Integrator
+Fra:1 Mem:110.54M (Peak 110.55M) | Time:00:00.00 | Mem:40.13M, Peak:40.13M | Scene, ViewLayer | Updating Film
+Fra:1 Mem:110.54M (Peak 110.55M) | Time:00:00.00 | Mem:40.13M, Peak:40.13M | Scene, ViewLayer | Updating Lookup Tables
+Fra:1 Mem:110.54M (Peak 110.55M) | Time:00:00.00 | Mem:40.13M, Peak:40.13M | Scene, ViewLayer | Updating Baking
+Fra:1 Mem:110.54M (Peak 110.55M) | Time:00:00.00 | Mem:40.13M, Peak:40.13M | Scene, ViewLayer | Updating Device | Writing constant memory
+Fra:1 Mem:110.54M (Peak 110.55M) | Time:00:00.00 | Mem:40.13M, Peak:40.13M | Scene, ViewLayer | Sample 0/40
+Fra:1 Mem:110.54M (Peak 110.55M) | Time:00:00.07 | Remaining:00:03.05 | Mem:40.13M, Peak:40.13M | Scene, ViewLayer | Sample 1/40
+Fra:1 Mem:125.81M (Peak 156.32M) | Time:00:02.75 | Mem:40.13M, Peak:40.13M | Scene, ViewLayer | Sample 40/40
+Fra:1 Mem:125.81M (Peak 156.32M) | Time:00:02.75 | Mem:40.13M, Peak:40.13M | Scene, ViewLayer | Finished
+Saved: '/home/ethan/Projects/Sai_Art/docs/uri_style/gorilla_v0_2/images/lower_body_native_left_s3.png'
+Time: 00:02.80 (Saving: 00:00.04)
+
+LOWER_BODY_NATIVE_VIEW left [443.00334796087634, 840.3361918625028]
+Fra:1 Mem:110.55M (Peak 110.55M) | Time:00:00.00 | Mem:40.13M, Peak:40.13M | Scene, ViewLayer | Initializing
+Fra:1 Mem:110.54M (Peak 110.55M) | Time:00:00.00 | Mem:40.13M, Peak:40.13M | Scene, ViewLayer | Waiting for render to start
+Fra:1 Mem:110.54M (Peak 110.55M) | Time:00:00.00 | Mem:40.13M, Peak:40.13M | Scene, ViewLayer | Updating Scene
+Fra:1 Mem:110.54M (Peak 110.55M) | Time:00:00.00 | Mem:40.13M, Peak:40.13M | Scene, ViewLayer | Updating Shaders
+Fra:1 Mem:110.54M (Peak 110.55M) | Time:00:00.00 | Mem:40.13M, Peak:40.13M | Scene, ViewLayer | Updating Background
+Fra:1 Mem:110.54M (Peak 110.55M) | Time:00:00.00 | Mem:40.13M, Peak:40.13M | Scene, ViewLayer | Updating Camera
+Fra:1 Mem:110.54M (Peak 110.55M) | Time:00:00.00 | Mem:40.13M, Peak:40.13M | Scene, ViewLayer | Updating Objects
+Fra:1 Mem:110.54M (Peak 110.55M) | Time:00:00.00 | Mem:40.13M, Peak:40.13M | Scene, ViewLayer | Updating Particle Systems
+Fra:1 Mem:110.54M (Peak 110.55M) | Time:00:00.00 | Mem:40.13M, Peak:40.13M | Scene, ViewLayer | Updating Meshes
+Fra:1 Mem:110.54M (Peak 110.55M) | Time:00:00.00 | Mem:40.13M, Peak:40.13M | Scene, ViewLayer | Updating Objects Flags
+Fra:1 Mem:110.54M (Peak 110.55M) | Time:00:00.00 | Mem:40.13M, Peak:40.13M | Scene, ViewLayer | Updating Primitive Offsets
+Fra:1 Mem:110.54M (Peak 110.55M) | Time:00:00.00 | Mem:40.13M, Peak:40.13M | Scene, ViewLayer | Updating Images
+Fra:1 Mem:110.54M (Peak 110.55M) | Time:00:00.00 | Mem:40.13M, Peak:40.13M | Scene, ViewLayer | Updating Camera Volume
+Fra:1 Mem:110.54M (Peak 110.55M) | Time:00:00.00 | Mem:40.13M, Peak:40.13M | Scene, ViewLayer | Updating Lookup Tables
+Fra:1 Mem:110.54M (Peak 110.55M) | Time:00:00.00 | Mem:40.13M, Peak:40.13M | Scene, ViewLayer | Updating Lights
+Fra:1 Mem:110.54M (Peak 110.55M) | Time:00:00.00 | Mem:40.13M, Peak:40.13M | Scene, ViewLayer | Updating Integrator
+Fra:1 Mem:110.54M (Peak 110.55M) | Time:00:00.00 | Mem:40.13M, Peak:40.13M | Scene, ViewLayer | Updating Film
+Fra:1 Mem:110.54M (Peak 110.55M) | Time:00:00.00 | Mem:40.13M, Peak:40.13M | Scene, ViewLayer | Updating Lookup Tables
+Fra:1 Mem:110.54M (Peak 110.55M) | Time:00:00.00 | Mem:40.13M, Peak:40.13M | Scene, ViewLayer | Updating Baking
+Fra:1 Mem:110.54M (Peak 110.55M) | Time:00:00.00 | Mem:40.13M, Peak:40.13M | Scene, ViewLayer | Updating Device | Writing constant memory
+Fra:1 Mem:110.54M (Peak 110.55M) | Time:00:00.00 | Mem:40.13M, Peak:40.13M | Scene, ViewLayer | Sample 0/40
+Fra:1 Mem:110.54M (Peak 110.55M) | Time:00:00.15 | Remaining:00:05.92 | Mem:40.13M, Peak:40.13M | Scene, ViewLayer | Sample 1/40
+Fra:1 Mem:125.81M (Peak 156.32M) | Time:00:05.46 | Mem:40.13M, Peak:40.13M | Scene, ViewLayer | Sample 40/40
+Fra:1 Mem:125.81M (Peak 156.32M) | Time:00:05.46 | Mem:40.13M, Peak:40.13M | Scene, ViewLayer | Finished
+Saved: '/home/ethan/Projects/Sai_Art/docs/uri_style/gorilla_v0_2/images/lower_body_native_rear_s3.png'
+Time: 00:05.50 (Saving: 00:00.04)
+
+LOWER_BODY_NATIVE_VIEW rear [828.1574172185265, 840.3362123681246]
+Fra:1 Mem:110.55M (Peak 110.55M) | Time:00:00.00 | Mem:40.13M, Peak:40.13M | Scene, ViewLayer | Initializing
+Fra:1 Mem:110.54M (Peak 110.55M) | Time:00:00.00 | Mem:40.13M, Peak:40.13M | Scene, ViewLayer | Waiting for render to start
+Fra:1 Mem:110.54M (Peak 110.55M) | Time:00:00.00 | Mem:40.13M, Peak:40.13M | Scene, ViewLayer | Updating Scene
+Fra:1 Mem:110.54M (Peak 110.55M) | Time:00:00.00 | Mem:40.13M, Peak:40.13M | Scene, ViewLayer | Updating Shaders
+Fra:1 Mem:110.54M (Peak 110.55M) | Time:00:00.00 | Mem:40.13M, Peak:40.13M | Scene, ViewLayer | Updating Background
+Fra:1 Mem:110.54M (Peak 110.55M) | Time:00:00.00 | Mem:40.13M, Peak:40.13M | Scene, ViewLayer | Updating Camera
+Fra:1 Mem:110.54M (Peak 110.55M) | Time:00:00.00 | Mem:40.13M, Peak:40.13M | Scene, ViewLayer | Updating Objects
+Fra:1 Mem:110.54M (Peak 110.55M) | Time:00:00.00 | Mem:40.13M, Peak:40.13M | Scene, ViewLayer | Updating Particle Systems
+Fra:1 Mem:110.54M (Peak 110.55M) | Time:00:00.00 | Mem:40.13M, Peak:40.13M | Scene, ViewLayer | Updating Meshes
+Fra:1 Mem:110.54M (Peak 110.55M) | Time:00:00.00 | Mem:40.13M, Peak:40.13M | Scene, ViewLayer | Updating Objects Flags
+Fra:1 Mem:110.54M (Peak 110.55M) | Time:00:00.00 | Mem:40.13M, Peak:40.13M | Scene, ViewLayer | Updating Primitive Offsets
+Fra:1 Mem:110.54M (Peak 110.55M) | Time:00:00.00 | Mem:40.13M, Peak:40.13M | Scene, ViewLayer | Updating Images
+Fra:1 Mem:110.54M (Peak 110.55M) | Time:00:00.00 | Mem:40.13M, Peak:40.13M | Scene, ViewLayer | Updating Camera Volume
+Fra:1 Mem:110.54M (Peak 110.55M) | Time:00:00.00 | Mem:40.13M, Peak:40.13M | Scene, ViewLayer | Updating Lookup Tables
+Fra:1 Mem:110.54M (Peak 110.55M) | Time:00:00.00 | Mem:40.13M, Peak:40.13M | Scene, ViewLayer | Updating Lights
+Fra:1 Mem:110.54M (Peak 110.55M) | Time:00:00.00 | Mem:40.13M, Peak:40.13M | Scene, ViewLayer | Updating Integrator
+Fra:1 Mem:110.54M (Peak 110.55M) | Time:00:00.00 | Mem:40.13M, Peak:40.13M | Scene, ViewLayer | Updating Film
+Fra:1 Mem:110.54M (Peak 110.55M) | Time:00:00.00 | Mem:40.13M, Peak:40.13M | Scene, ViewLayer | Updating Lookup Tables
+Fra:1 Mem:110.54M (Peak 110.55M) | Time:00:00.00 | Mem:40.13M, Peak:40.13M | Scene, ViewLayer | Updating Baking
+Fra:1 Mem:110.54M (Peak 110.55M) | Time:00:00.00 | Mem:40.13M, Peak:40.13M | Scene, ViewLayer | Updating Device | Writing constant memory
+Fra:1 Mem:110.54M (Peak 110.55M) | Time:00:00.00 | Mem:40.13M, Peak:40.13M | Scene, ViewLayer | Sample 0/40
+Fra:1 Mem:110.54M (Peak 110.55M) | Time:00:00.07 | Remaining:00:02.84 | Mem:40.13M, Peak:40.13M | Scene, ViewLayer | Sample 1/40
+Fra:1 Mem:125.81M (Peak 156.32M) | Time:00:02.64 | Mem:40.13M, Peak:40.13M | Scene, ViewLayer | Sample 40/40
+Fra:1 Mem:125.81M (Peak 156.32M) | Time:00:02.64 | Mem:40.13M, Peak:40.13M | Scene, ViewLayer | Finished
+Saved: '/home/ethan/Projects/Sai_Art/docs/uri_style/gorilla_v0_2/images/lower_body_native_top_s3.png'
+Time: 00:02.68 (Saving: 00:00.04)
+
+LOWER_BODY_NATIVE_VIEW top [828.1574055026156, 443.0032956658692]
+Fra:1 Mem:110.55M (Peak 110.55M) | Time:00:00.00 | Mem:40.13M, Peak:40.13M | Scene, ViewLayer | Initializing
+Fra:1 Mem:110.54M (Peak 110.55M) | Time:00:00.00 | Mem:40.13M, Peak:40.13M | Scene, ViewLayer | Waiting for render to start
+Fra:1 Mem:110.54M (Peak 110.55M) | Time:00:00.00 | Mem:40.13M, Peak:40.13M | Scene, ViewLayer | Updating Scene
+Fra:1 Mem:110.54M (Peak 110.55M) | Time:00:00.00 | Mem:40.13M, Peak:40.13M | Scene, ViewLayer | Updating Shaders
+Fra:1 Mem:110.54M (Peak 110.55M) | Time:00:00.00 | Mem:40.13M, Peak:40.13M | Scene, ViewLayer | Updating Background
+Fra:1 Mem:110.54M (Peak 110.55M) | Time:00:00.00 | Mem:40.13M, Peak:40.13M | Scene, ViewLayer | Updating Camera
+Fra:1 Mem:110.54M (Peak 110.55M) | Time:00:00.00 | Mem:40.13M, Peak:40.13M | Scene, ViewLayer | Updating Objects
+Fra:1 Mem:110.54M (Peak 110.55M) | Time:00:00.00 | Mem:40.13M, Peak:40.13M | Scene, ViewLayer | Updating Particle Systems
+Fra:1 Mem:110.54M (Peak 110.55M) | Time:00:00.00 | Mem:40.13M, Peak:40.13M | Scene, ViewLayer | Updating Meshes
+Fra:1 Mem:110.54M (Peak 110.55M) | Time:00:00.00 | Mem:40.13M, Peak:40.13M | Scene, ViewLayer | Updating Objects Flags
+Fra:1 Mem:110.54M (Peak 110.55M) | Time:00:00.00 | Mem:40.13M, Peak:40.13M | Scene, ViewLayer | Updating Primitive Offsets
+Fra:1 Mem:110.54M (Peak 110.55M) | Time:00:00.00 | Mem:40.13M, Peak:40.13M | Scene, ViewLayer | Updating Images
+Fra:1 Mem:110.54M (Peak 110.55M) | Time:00:00.00 | Mem:40.13M, Peak:40.13M | Scene, ViewLayer | Updating Camera Volume
+Fra:1 Mem:110.54M (Peak 110.55M) | Time:00:00.00 | Mem:40.13M, Peak:40.13M | Scene, ViewLayer | Updating Lookup Tables
+Fra:1 Mem:110.54M (Peak 110.55M) | Time:00:00.00 | Mem:40.13M, Peak:40.13M | Scene, ViewLayer | Updating Lights
+Fra:1 Mem:110.54M (Peak 110.55M) | Time:00:00.00 | Mem:40.13M, Peak:40.13M | Scene, ViewLayer | Updating Integrator
+Fra:1 Mem:110.54M (Peak 110.55M) | Time:00:00.00 | Mem:40.13M, Peak:40.13M | Scene, ViewLayer | Updating Film
+Fra:1 Mem:110.54M (Peak 110.55M) | Time:00:00.00 | Mem:40.13M, Peak:40.13M | Scene, ViewLayer | Updating Lookup Tables
+Fra:1 Mem:110.54M (Peak 110.55M) | Time:00:00.00 | Mem:40.13M, Peak:40.13M | Scene, ViewLayer | Updating Baking
+Fra:1 Mem:110.54M (Peak 110.55M) | Time:00:00.00 | Mem:40.13M, Peak:40.13M | Scene, ViewLayer | Updating Device | Writing constant memory
+Fra:1 Mem:110.54M (Peak 110.55M) | Time:00:00.00 | Mem:40.13M, Peak:40.13M | Scene, ViewLayer | Sample 0/40
+Fra:1 Mem:110.54M (Peak 110.55M) | Time:00:00.22 | Remaining:00:08.57 | Mem:40.13M, Peak:40.13M | Scene, ViewLayer | Sample 1/40
+Fra:1 Mem:125.81M (Peak 156.32M) | Time:00:07.04 | Mem:40.13M, Peak:40.13M | Scene, ViewLayer | Sample 40/40
+Fra:1 Mem:125.81M (Peak 156.32M) | Time:00:07.04 | Mem:40.13M, Peak:40.13M | Scene, ViewLayer | Finished
+Saved: '/home/ethan/Projects/Sai_Art/docs/uri_style/gorilla_v0_2/images/lower_body_native_front_oblique_s3.png'
+Time: 00:07.09 (Saving: 00:00.05)
+
+LOWER_BODY_NATIVE_VIEW front_oblique [816.125474172794, 1044.5339661378036]
+Fra:1 Mem:110.55M (Peak 110.55M) | Time:00:00.00 | Mem:40.13M, Peak:40.13M | Scene, ViewLayer | Initializing
+Fra:1 Mem:110.54M (Peak 110.55M) | Time:00:00.00 | Mem:40.13M, Peak:40.13M | Scene, ViewLayer | Waiting for render to start
+Fra:1 Mem:110.54M (Peak 110.55M) | Time:00:00.00 | Mem:40.13M, Peak:40.13M | Scene, ViewLayer | Updating Scene
+Fra:1 Mem:110.54M (Peak 110.55M) | Time:00:00.00 | Mem:40.13M, Peak:40.13M | Scene, ViewLayer | Updating Shaders
+Fra:1 Mem:110.54M (Peak 110.55M) | Time:00:00.00 | Mem:40.13M, Peak:40.13M | Scene, ViewLayer | Updating Background
+Fra:1 Mem:110.54M (Peak 110.55M) | Time:00:00.00 | Mem:40.13M, Peak:40.13M | Scene, ViewLayer | Updating Camera
+Fra:1 Mem:110.54M (Peak 110.55M) | Time:00:00.00 | Mem:40.13M, Peak:40.13M | Scene, ViewLayer | Updating Objects
+Fra:1 Mem:110.54M (Peak 110.55M) | Time:00:00.00 | Mem:40.13M, Peak:40.13M | Scene, ViewLayer | Updating Particle Systems
+Fra:1 Mem:110.54M (Peak 110.55M) | Time:00:00.00 | Mem:40.13M, Peak:40.13M | Scene, ViewLayer | Updating Meshes
+Fra:1 Mem:110.54M (Peak 110.55M) | Time:00:00.00 | Mem:40.13M, Peak:40.13M | Scene, ViewLayer | Updating Objects Flags
+Fra:1 Mem:110.54M (Peak 110.55M) | Time:00:00.00 | Mem:40.13M, Peak:40.13M | Scene, ViewLayer | Updating Primitive Offsets
+Fra:1 Mem:110.54M (Peak 110.55M) | Time:00:00.00 | Mem:40.13M, Peak:40.13M | Scene, ViewLayer | Updating Images
+Fra:1 Mem:110.54M (Peak 110.55M) | Time:00:00.00 | Mem:40.13M, Peak:40.13M | Scene, ViewLayer | Updating Camera Volume
+Fra:1 Mem:110.54M (Peak 110.55M) | Time:00:00.00 | Mem:40.13M, Peak:40.13M | Scene, ViewLayer | Updating Lookup Tables
+Fra:1 Mem:110.54M (Peak 110.55M) | Time:00:00.00 | Mem:40.13M, Peak:40.13M | Scene, ViewLayer | Updating Lights
+Fra:1 Mem:110.54M (Peak 110.55M) | Time:00:00.00 | Mem:40.13M, Peak:40.13M | Scene, ViewLayer | Updating Integrator
+Fra:1 Mem:110.54M (Peak 110.55M) | Time:00:00.00 | Mem:40.13M, Peak:40.13M | Scene, ViewLayer | Updating Film
+Fra:1 Mem:110.54M (Peak 110.55M) | Time:00:00.00 | Mem:40.13M, Peak:40.13M | Scene, ViewLayer | Updating Lookup Tables
+Fra:1 Mem:110.54M (Peak 110.55M) | Time:00:00.00 | Mem:40.13M, Peak:40.13M | Scene, ViewLayer | Updating Baking
+Fra:1 Mem:110.54M (Peak 110.55M) | Time:00:00.00 | Mem:40.13M, Peak:40.13M | Scene, ViewLayer | Updating Device | Writing constant memory
+Fra:1 Mem:110.54M (Peak 110.55M) | Time:00:00.00 | Mem:40.13M, Peak:40.13M | Scene, ViewLayer | Sample 0/40
+Fra:1 Mem:110.54M (Peak 110.55M) | Time:00:00.22 | Remaining:00:08.79 | Mem:40.13M, Peak:40.13M | Scene, ViewLayer | Sample 1/40
+Fra:1 Mem:125.81M (Peak 156.32M) | Time:00:07.25 | Mem:40.13M, Peak:40.13M | Scene, ViewLayer | Sample 40/40
+Fra:1 Mem:125.81M (Peak 156.32M) | Time:00:07.25 | Mem:40.13M, Peak:40.13M | Scene, ViewLayer | Finished
+Saved: '/home/ethan/Projects/Sai_Art/docs/uri_style/gorilla_v0_2/images/lower_body_native_rear_oblique_s3.png'
+Time: 00:07.30 (Saving: 00:00.05)
+
+LOWER_BODY_NATIVE_VIEW rear_oblique [816.1254313615424, 999.4274126559659]
+Info: Saved "lower_body_spatial_s3.blend"
+12:14:12 | ERROR: Draco mesh compression is not available because library could not be found at /home/ethan/Softwares/blender-local/root/usr/bin/4.0/python/lib/python3.12/site-packages/libextern_draco.so
+12:14:12 | INFO: Starting glTF 2.0 export
+12:14:12 | INFO: Extracting primitive: whole_contact_sole_-1
+12:14:12 | INFO: Primitives created: 1
+12:14:12 | INFO: Extracting primitive: load_cradle_-1
+12:14:12 | INFO: Primitives created: 1
+12:14:12 | INFO: Extracting primitive: integrated_ankle_cheek_-1_-1
+12:14:12 | INFO: Primitives created: 1
+12:14:12 | INFO: Extracting primitive: integrated_ankle_cheek_-1_1
+12:14:12 | INFO: Primitives created: 1
+12:14:12 | INFO: Extracting primitive: Cylinder
+12:14:12 | INFO: Primitives created: 1
+12:14:12 | INFO: Extracting primitive: Cylinder.001
+12:14:12 | INFO: Primitives created: 1
+12:14:12 | INFO: Extracting primitive: Cylinder.002
+12:14:12 | INFO: Primitives created: 1
+12:14:12 | INFO: Extracting primitive: Cylinder.003
+12:14:12 | INFO: Primitives created: 1
+12:14:12 | INFO: Extracting primitive: Cylinder.004
+12:14:12 | INFO: Primitives created: 1
+12:14:12 | INFO: Extracting primitive: complete_forefoot_armor_-1
+12:14:12 | INFO: Primitives created: 1
+12:14:12 | INFO: Extracting primitive: toe_contact_guard_-1
+12:14:12 | INFO: Primitives created: 1
+12:14:12 | INFO: Extracting primitive: heel_contact_guard_-1
+12:14:12 | INFO: Primitives created: 1
+12:14:12 | INFO: Extracting primitive: whole_contact_sole_1
+12:14:12 | INFO: Primitives created: 1
+12:14:12 | INFO: Extracting primitive: load_cradle_1
+12:14:12 | INFO: Primitives created: 1
+12:14:12 | INFO: Extracting primitive: integrated_ankle_cheek_1_-1
+12:14:12 | INFO: Primitives created: 1
+12:14:12 | INFO: Extracting primitive: integrated_ankle_cheek_1_1
+12:14:12 | INFO: Primitives created: 1
+12:14:12 | INFO: Extracting primitive: Cylinder.005
+12:14:12 | INFO: Primitives created: 1
+12:14:12 | INFO: Extracting primitive: Cylinder.006
+12:14:12 | INFO: Primitives created: 1
+12:14:12 | INFO: Extracting primitive: Cylinder.007
+12:14:12 | INFO: Primitives created: 1
+12:14:12 | INFO: Extracting primitive: Cylinder.008
+12:14:12 | INFO: Primitives created: 1
+12:14:12 | INFO: Extracting primitive: Cylinder.009
+12:14:12 | INFO: Primitives created: 1
+12:14:12 | INFO: Extracting primitive: complete_forefoot_armor_1
+12:14:12 | INFO: Primitives created: 1
+12:14:12 | INFO: Extracting primitive: toe_contact_guard_1
+12:14:12 | INFO: Primitives created: 1
+12:14:12 | INFO: Extracting primitive: heel_contact_guard_1
+12:14:12 | INFO: Primitives created: 1
+12:14:12 | INFO: Extracting primitive: proximal_thigh_shell_-1
+12:14:12 | INFO: Primitives created: 1
+12:14:12 | INFO: Extracting primitive: thigh_access_panel_-1
+12:14:12 | INFO: Primitives created: 1
+12:14:12 | INFO: Extracting primitive: knee_guard_module_-1
+12:14:12 | INFO: Primitives created: 1
+12:14:12 | INFO: Extracting primitive: broad_return_cheek_-1_-1
+12:14:12 | INFO: Primitives created: 1
+12:14:12 | INFO: Extracting primitive: broad_return_cheek_-1_1
+12:14:12 | INFO: Primitives created: 1
+12:14:12 | INFO: Extracting primitive: Cylinder.010
+12:14:12 | INFO: Primitives created: 1
+12:14:12 | INFO: Extracting primitive: Cylinder.011
+12:14:12 | INFO: Primitives created: 1
+12:14:12 | INFO: Extracting primitive: Cylinder.012
+12:14:12 | INFO: Primitives created: 1
+12:14:12 | INFO: Extracting primitive: Cylinder.013
+12:14:12 | INFO: Primitives created: 1
+12:14:12 | INFO: Extracting primitive: Cylinder.014
+12:14:12 | INFO: Primitives created: 1
+12:14:12 | INFO: Extracting primitive: Cylinder.015
+12:14:12 | INFO: Primitives created: 1
+12:14:12 | INFO: Extracting primitive: Cylinder.016
+12:14:12 | INFO: Primitives created: 1
+12:14:12 | INFO: Extracting primitive: Cylinder.017
+12:14:12 | INFO: Primitives created: 1
+12:14:12 | INFO: Extracting primitive: Cylinder.018
+12:14:12 | INFO: Primitives created: 1
+12:14:12 | INFO: Extracting primitive: continuous_shank_shell_-1
+12:14:12 | INFO: Primitives created: 1
+12:14:12 | INFO: Extracting primitive: Cylinder.019
+12:14:12 | INFO: Primitives created: 1
+12:14:12 | INFO: Extracting primitive: Cylinder.020
+12:14:12 | INFO: Primitives created: 1
+12:14:12 | INFO: Extracting primitive: return_guard_module_-1
+12:14:12 | INFO: Primitives created: 1
+12:14:12 | INFO: Extracting primitive: proximal_thigh_shell_1
+12:14:12 | INFO: Primitives created: 1
+12:14:12 | INFO: Extracting primitive: thigh_access_panel_1
+12:14:12 | INFO: Primitives created: 1
+12:14:12 | INFO: Extracting primitive: knee_guard_module_1
+12:14:12 | INFO: Primitives created: 1
+12:14:12 | INFO: Extracting primitive: broad_return_cheek_1_-1
+12:14:12 | INFO: Primitives created: 1
+12:14:12 | INFO: Extracting primitive: broad_return_cheek_1_1
+12:14:12 | INFO: Primitives created: 1
+12:14:12 | INFO: Extracting primitive: Cylinder.021
+12:14:12 | INFO: Primitives created: 1
+12:14:12 | INFO: Extracting primitive: Cylinder.022
+12:14:12 | INFO: Primitives created: 1
+12:14:12 | INFO: Extracting primitive: Cylinder.023
+12:14:12 | INFO: Primitives created: 1
+12:14:12 | INFO: Extracting primitive: Cylinder.024
+12:14:12 | INFO: Primitives created: 1
+12:14:12 | INFO: Extracting primitive: Cylinder.025
+12:14:12 | INFO: Primitives created: 1
+12:14:12 | INFO: Extracting primitive: Cylinder.026
+12:14:12 | INFO: Primitives created: 1
+12:14:12 | INFO: Extracting primitive: Cylinder.027
+12:14:12 | INFO: Primitives created: 1
+12:14:12 | INFO: Extracting primitive: Cylinder.028
+12:14:12 | INFO: Primitives created: 1
+12:14:12 | INFO: Extracting primitive: Cylinder.029
+12:14:12 | INFO: Primitives created: 1
+12:14:12 | INFO: Extracting primitive: continuous_shank_shell_1
+12:14:12 | INFO: Primitives created: 1
+12:14:12 | INFO: Extracting primitive: Cylinder.030
+12:14:12 | INFO: Primitives created: 1
+12:14:12 | INFO: Extracting primitive: Cylinder.031
+12:14:12 | INFO: Primitives created: 1
+12:14:12 | INFO: Extracting primitive: return_guard_module_1
+12:14:12 | INFO: Primitives created: 1
+12:14:12 | INFO: Finished glTF 2.0 export in 0.1742703914642334 s
+
+LOWER_BODY_SPATIAL_COMPLETE {"front_left_height": true, "front_rear_width": true, "front_top_width": true, "left_top_depth": true, "closed_individual_meshes": true, "positive_individual_volume": false}
+
+Blender quit

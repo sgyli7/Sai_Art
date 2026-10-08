@@ -1,0 +1,167 @@
+{
+  "revision": "LEG_R1",
+  "status": "new_art_and_sagittal_architecture_candidate_not_physical_acceptance",
+  "coordinates": "Art coordinates: X width, Y height, Z forward depth. Engineering thread uses a different axis convention; all conversions must be explicit.",
+  "stations_Z_Y_m": {
+    "HIP": [
+      -0.02,
+      1.43
+    ],
+    "J1": [
+      0.26,
+      0.94
+    ],
+    "J2": [
+      -0.13,
+      0.49
+    ],
+    "ANKLE": [
+      0.06,
+      0.16
+    ]
+  },
+  "serial_links": [
+    "HIP-J1",
+    "J1-J2",
+    "J2-ANKLE"
+  ],
+  "link_lengths_m": [
+    0.5643580423808985,
+    0.5954829972383762,
+    0.3807886552931954
+  ],
+  "ankle_to_ground_y_m": 0.16,
+  "original_overall_height_m": 2.65,
+  "original_overall_width_m": 2.586977,
+  "overall_depth": "Re-evaluate after 3D integration; do not assume old 1.071836m depth remains exact.",
+  "actuator_eye_proposals": {
+    "J2": {
+      "pivot": [
+        -0.13,
+        0.49
+      ],
+      "fixed_local": [
+        0.48,
+        0.33
+      ],
+      "moving_local": [
+        0.1425,
+        -0.2475
+      ]
+    },
+    "ankle_pitch": {
+      "pivot": [
+        0.06,
+        0.16
+      ],
+      "fixed_local": [
+        -0.04,
+        0.3
+      ],
+      "moving_local": [
+        0.24,
+        -0.01
+      ]
+    }
+  },
+  "load_sensitivity": {
+    "provisional_self_mass_kg": 2200.0,
+    "external_downward_force_mass_equivalent_kg": 3000.0,
+    "scope": "Conservative force sensitivity, NOT measured mass or 3-ton payload qualification. All force on one foot is an envelope, not demonstrated single-foot whole-body equilibrium.",
+    "static_total_N": 51012.0,
+    "static_symmetric_each_foot_N": 25506.0,
+    "amplified_single_foot_N": 76518.0,
+    "force_multiplier_assumption": 1.5,
+    "CoP_forward_z_m": [
+      -0.19,
+      0.31
+    ]
+  },
+  "actuator_screens": {
+    "J2": {
+      "angle_samples": 801,
+      "relative_angle_range_deg": [
+        -20,
+        20
+      ],
+      "minimum_absolute_effective_arm_m": 0.2022989327749627,
+      "signed_arm_range_m": [
+        0.2022989327749627,
+        0.27815796232577433
+      ],
+      "eye_length_range_m": [
+        0.5765243781037432,
+        0.7478250594997629
+      ],
+      "required_geometric_stroke_m": 0.17130068139601962,
+      "worst_vertical_force_moment_Nm": 33667.92,
+      "required_combined_cylinder_force_N": 166426.58237575673,
+      "conditional_family": {
+        "count": 2,
+        "bore_m": 0.08,
+        "rod_m": 0.04,
+        "pressure_Pa": 30000000.0,
+        "return_pressure_Pa": 300000.0,
+        "ideal_pair_pull_force_N": 223178.74211101892,
+        "ideal_min_torque_Nm": 45148.82134711775,
+        "minimum_ideal_capacity_to_demand_ratio": 1.3410041768876055
+      },
+      "scope": "Neutral-pose specified-CoP force moment paired conservatively with individual-joint lever-sweep minimum. Not a combined-pose worst case. Ideal planar pressure only; no friction, efficiency, actual cylinder dimensions, operating temperature, joints, shell or collision qualification."
+    },
+    "ankle_pitch": {
+      "angle_samples": 801,
+      "relative_angle_range_deg": [
+        -20,
+        20
+      ],
+      "minimum_absolute_effective_arm_m": 0.13366455167727936,
+      "signed_arm_range_m": [
+        0.13366455167727936,
+        0.20330360906650308
+      ],
+      "eye_length_range_m": [
+        0.3521405536423903,
+        0.47112369773557417
+      ],
+      "required_geometric_stroke_m": 0.11898314409318389,
+      "worst_vertical_force_moment_Nm": 19129.5,
+      "required_combined_cylinder_force_N": 143115.73083480203,
+      "conditional_family": {
+        "count": 2,
+        "bore_m": 0.08,
+        "rod_m": 0.04,
+        "pressure_Pa": 30000000.0,
+        "return_pressure_Pa": 300000.0,
+        "ideal_pair_pull_force_N": 223178.74211101892,
+        "ideal_min_torque_Nm": 29831.086508168493,
+        "minimum_ideal_capacity_to_demand_ratio": 1.559428448635275
+      },
+      "scope": "Neutral-pose specified-CoP force moment paired conservatively with individual-joint lever-sweep minimum. Not a combined-pose worst case. Ideal planar pressure only; no friction, efficiency, actual cylinder dimensions, operating temperature, joints, shell or collision qualification."
+    }
+  },
+  "foot_sensitivity": {
+    "fixed_heel": true,
+    "unloaded_forefoot_hinge_only": true,
+    "separate_ground_pads": true,
+    "fore_reaction_point_z_m": 0.32,
+    "heel_reaction_point_z_m": -0.18,
+    "sensitivity_CoP_z_m": 0.31,
+    "fore_reaction_N": 74987.64,
+    "heel_reaction_N": 1530.3600000000006,
+    "proposed_fore_hinge_z_m": 0.18,
+    "proposed_stop_effective_arm_m": 0.1,
+    "combined_compression_stop_force_N": 104982.69600000001,
+    "two_stop_nominal_area_each_m2": 0.0024,
+    "nominal_mean_stop_pressure_Pa": 21871395.000000004,
+    "scope": "Two prescribed contact resultants and nominal stop-face average only; actual pressure distribution, unilateral face geometry, local bending, bearing/lock/fastener strength and sole deflection unverified."
+  },
+  "pending": [
+    "Finite connected CAD and actual complete drive assemblies",
+    "Both-side bearing and shaft bending/torsion sizing",
+    "Carrier mounting, pin/stop/lock strength and fatigue",
+    "Continuous kinematic collision and hose routing",
+    "Foot contact and whole-body equilibrium",
+    "Net material mass/inertia and integrated energy/heat"
+  ],
+  "physical_accepted": false
+}

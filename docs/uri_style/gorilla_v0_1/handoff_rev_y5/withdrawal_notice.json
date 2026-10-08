@@ -1,0 +1,7 @@
+{
+  "status": "withdrawn_user_rejected",
+  "revision": "Y5",
+  "reason": "User explicitly rejected Y5 and denied delivery acceptance",
+  "zip_is_historical_only": true,
+  "further_coordination": "stopped"
+}

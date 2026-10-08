@@ -1,0 +1,106 @@
+{
+  "revision": "p11",
+  "created_at": "2026-10-03T18:31:41.455041+08:00",
+  "status": "appearance_candidate_pending_user_review",
+  "scope": "Whole Gorilla four-view illustrated redesign of lower body and feet, retaining v0.1 upper identity and palette.",
+  "tool": "built_in_image_gen",
+  "successful_generation_calls": 9,
+  "reference_path_limit": 5,
+  "pre_generation_rejected_attempt": "p2 requested 9 refs and was rejected before generation; references were then staged.",
+  "output": "/home/ethan/Projects/Sai_Art/docs/uri_style/gorilla_v0_2/images/gorilla_four_view_pixal_lower_candidate_p11.png",
+  "output_sha256": "d64589b95574ac2e824748b533ec1be5c40f555e37f2b48e21c8487e20ea8217",
+  "output_dimensions_px": [
+    1254,
+    1254
+  ],
+  "source_model": "generated/reference_raw_geometry_00001_.glb",
+  "source_model_sha256": "60ba19b16ac5d6fdbe9d341502931ff52c49e2741b1087c366e05ba8f7fed971",
+  "primary_user_selected_lower_reference": "references/user_pixal_lower_body.jpg",
+  "foot_reference_images": [
+    "references/foot_reference_complete_foreheel.jpg",
+    "references/foot_reference_low_integrated.jpg",
+    "references/foot_reference_model_joint_bridge.jpg"
+  ],
+  "upper_identity_and_color_reference": "../gorilla_v0_1/images/locked_four_view_review_rev_aa3.png",
+  "actual_native_overhead_guide": "images/top_native_g2.png",
+  "native_source_model_edited_in_this_art_pass": false,
+  "updated_foot_cad_available": false,
+  "views_exported_from_common_updated_mesh": false,
+  "mechanical_load_qualification": false,
+  "dimensions_claimed": false,
+  "user_accepted_current_artwork": false,
+  "engineering_handoff_sent": false,
+  "git_published": false,
+  "visual_review": {
+    "new_lower_body": "Model-derived curved thigh housings and continuous shaped shanks retained in three elevations.",
+    "complete_feet": "Complete connected forefoot and heel bodies shown; defective half-foot replaced.",
+    "palette": "Original v0.1 vivid blue/orange/warm-white hierarchy retained; thigh cap paint corrected to blue.",
+    "upper_identity": "Original wedge body, shoulder and arm identity, front radiators and rear hatch retained.",
+    "top": "Closed wedge roof, two feet, no extra rear feet or roof artifacts; radiators seen as narrow rims.",
+    "claim_limit": "Illustrated design candidate, not exports from an updated common CAD mesh and not structural load qualification."
+  },
+  "prompt_chain": [
+    {
+      "revision": "p3",
+      "prompt": "prompts/pixal3d_lower_body_geometry_p3.txt",
+      "reference_roles": "prompts/pixal3d_lower_body_geometry_roles_p3.json",
+      "status": "generated_requires_targeted_correction"
+    },
+    {
+      "revision": "p4",
+      "prompt": "prompts/pixal3d_lower_body_finish_p4.txt",
+      "reference_roles": "prompts/pixal3d_lower_body_finish_roles_p4.json",
+      "status": "generated_rejected_internal_review"
+    },
+    {
+      "revision": "p5",
+      "prompt": "prompts/pixal3d_lower_body_retarget_v01_p5.txt",
+      "reference_roles": "prompts/pixal3d_lower_body_retarget_roles_p5.json",
+      "status": "generated_rejected_internal_review"
+    },
+    {
+      "revision": "p6",
+      "prompt": "prompts/pixal3d_lower_body_isolated_p6.txt",
+      "reference_roles": "prompts/pixal3d_lower_body_isolated_roles_p6.json",
+      "status": "generated_lower_body_integration_source"
+    },
+    {
+      "revision": "p7",
+      "prompt": "prompts/pixal3d_whole_robot_integration_p7.txt",
+      "reference_roles": "prompts/pixal3d_whole_robot_integration_roles_p7.json",
+      "status": "generated_top_requires_correction"
+    },
+    {
+      "revision": "p8",
+      "prompt": "prompts/pixal3d_top_palette_correction_p8.txt",
+      "reference_roles": "prompts/pixal3d_top_palette_correction_roles_p8.json",
+      "status": "generated_palette_repair_pass_top_fail"
+    },
+    {
+      "revision": "p9",
+      "prompt": "prompts/pixal3d_native_top_guide_p9.txt",
+      "reference_roles": "prompts/pixal3d_native_top_guide_roles_p9.json",
+      "status": "generated_top_position_guide_upper_requires_cleanup"
+    },
+    {
+      "revision": "p10",
+      "prompt": "prompts/pixal3d_top_closed_upper_p10.txt",
+      "reference_roles": "prompts/pixal3d_top_closed_upper_roles_p10.json",
+      "status": "generated_candidate_top_for_integration"
+    },
+    {
+      "revision": "p11",
+      "prompt": "prompts/pixal3d_four_view_composite_p11.txt",
+      "reference_roles": "prompts/pixal3d_four_view_composite_roles_p11.json",
+      "status": "generated_candidate_pending_user_review"
+    }
+  ],
+  "latest_lower_body_palette_feedback": {
+    "recorded_at": "2026-10-03T19:50:16.646188+08:00",
+    "status": "user_rejected_assignment_module_based_recolor_deferred",
+    "palette": "Original URI color family retained.",
+    "assignment": "Current horizontal orange/blue bands are not approved; allocate colors by actual designed component/module boundaries after current spatial work.",
+    "geometry_guard": "Paint boundaries are not joint axes, module divisions or geometry constraints. Do not infer the Z-chain or knee/shank ownership from the rejected transverse bands.",
+    "current_spatial_work_continues": true
+  }
+}

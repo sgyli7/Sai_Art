@@ -1,0 +1,37 @@
+{
+  "source": "source/lower_dense_surface_s6.blend",
+  "parts": [
+    {
+      "source_vertices": 211367,
+      "output_vertices": 212234,
+      "source_faces": 212204,
+      "output_faces": 212204,
+      "touching_edges_processed": 974,
+      "unpaired_halfedge_cases": 0,
+      "source_vertex_positions_changed": false,
+      "scope": "Corner topology only; geometric intersections and engineering remain unverified",
+      "name": "pixal_clear_side_leg",
+      "nonmanifold_edges": 144,
+      "boundary_edges": 0,
+      "multi_face_edges": 144
+    },
+    {
+      "source_vertices": 211367,
+      "output_vertices": 212234,
+      "source_faces": 212204,
+      "output_faces": 212204,
+      "touching_edges_processed": 974,
+      "unpaired_halfedge_cases": 0,
+      "source_vertex_positions_changed": false,
+      "scope": "Corner topology only; geometric intersections and engineering remain unverified",
+      "name": "pixal_mirrored_leg",
+      "nonmanifold_edges": 144,
+      "boundary_edges": 0,
+      "multi_face_edges": 144
+    }
+  ],
+  "visible_surface_geometry_unchanged": true,
+  "all_meshes_manifold": false,
+  "appearance_accepted": false,
+  "engineering_ready": false
+}

@@ -1,0 +1,32 @@
+URI / v4.1 — FUNCTIONAL RICHNESS, CLEAN ELEGANCE, CONTENT SEPARATION
+
+STYLE reference images control rendering language only: delicate technical contours, luminous blue/ivory/saffron color relationships, refined materials, smooth large forms and the hierarchy of detailed assemblies. The subject/design brief controls geometry, topology, component layout and function. Transfer visual language without transplanting the reference objects, their faces, silhouettes, reels, earpieces, branding, captions or page layouts into the new subject.
+
+A SURFACE_CLEANLINESS reference controls surface integrity, coherent seams and the absence of graphical noise only. A PROPORTION reference controls only explicitly approved body regions and coarse ratios. Keep these roles separate, even when they come from previous generated images. Preserve the user's required machine type and task action when developing its functional structure.
+
+Create a refined science-fiction illustration that is clean, elegant and richly constructed. Richness comes from complete, precisely fitted assemblies at meaningful scales: connected load-bearing parts, organized joints, layered covers, seals, hinges, tool interfaces, optical modules and service components appropriate to the subject. A detail belongs because it performs a function or completes a readable assembly. Use orderly groups and continuous contours so many parts remain individually intelligible.
+
+Maintain clean continuous painted surfaces and graceful large shapes around these assemblies. Cover surfaces contain intentional access-panel boundaries and grouped functional features. Fasteners appear at actual removable cover edges or structural connections, arranged coherently. Functional optical/service openings are small, bounded and correctly located. Rich detail does not require scattering circles, holes, black dots or tiny scratches over every plate. Eliminate arbitrary puncture patterns and decorative pseudo-engineering. Both physical dirt and nonfunctional graphical noise count as a dirty result.
+
+Draw fine crisp dark-blue-gray contours, restrained complete seam lines and controlled illustrated volume. Light reflects cleanly across smoothly maintained warm-white/ivory and powder/azure-blue enamel, clear glass, machined silver, rubber and cloth. Add confident but ordered saffron yellow-orange color accents. Keep dark areas inside real narrow recesses or clearly separated working components; complex areas must remain layered rather than merge into black scribble. Broad light/color planes remain readable at thumbnail scale and the fine assemblies reward close viewing. Favor airy clear light when the brief permits. Match a sophisticated ink-and-color concept illustration rather than an aged painting, plain icon or photograph.
+
+For designed objects/buildings, derive structure and functional detail from the task, then express them with compatible rounded shells, filleted boxes, cylinders and coherent integrated hardware. For people retain natural anatomy, identity and skin; supply fine hair, cloth folds, seams and relevant accessories. For animals/plants keep organic structure and refined natural detail; machinery appears only if requested. For scenes use clear perspective and broad sky/water/ground areas around richly described local structures. Exact forms, colors, weather and lighting follow explicit subject constraints.
+
+Paint is intact. Use no unrequested distress, grain overlay, chips, rust, random flecks, damage, logos or extra words. A clean design retains rich purposeful construction; a simplified blank toy also misses the target. Inspect separately for functional richness, surface integrity, visual order, source-object leakage and subject requirements.
+
+SUBJECT / DESIGN BRIEF
+[Define purpose, component geometry, permitted reference roles, framing and the specific features to retain. For engineering concepts distinguish design targets from validated performance.]
+
+
+Use case: precise-object-edit
+Asset type: Gorilla V0.1 three-view appearance plate, localized rear heel correction.
+Primary request: Correct ONLY the two feet of the rightmost REAR robot in input 1. Keep the FRONT figure and LEFT SIDE figure completely unchanged. Keep the entire rear robot above the ankles unchanged. Preserve all layout, labels, torso mass, limbs, paneling, paint finish and scale.
+Input roles:
+1. EDIT TARGET: three-view FRONT / LEFT SIDE / REAR artwork. Modify only the rightmost figure's two feet, at the bottom of the rightmost third of the image.
+2. SUBJECT / FOOT ORIENTATION: front-three-quarter master of this exact robot. Its long front toe carries three graphite segmented toe caps under the blue front cover; its heel is the shorter blue upright heel housing behind the silver ankle. The toe and heel must be distinguished when viewed from behind.
+3. URI headphones — STYLE only.
+4. URI waterfront — STYLE only.
+5. URI architecture — STYLE only.
+
+In the rightmost REAR elevation we look at the BACK of the robot. Therefore show the short compact blue heel housings, the back of the silver/graphite ankle bearings, and the continuous dark rubber heel/sole edge. The long forefoot and its three graphite toe bumpers point AWAY from the viewer, hidden behind the ankles and heel cover. Remove the three front-facing segmented toe bumpers from the rear view feet. Do not swivel the legs or turn the body. Both heels are consistent with the side-view short rear heel and the master. Use complete smoothly fitted blue heel covers with clean small orderly ivory upper transitions, bounded rear mechanical gaps and one continuous graphite heel pad at ground level. Retain the exact foot width/stance and baseline of the rear figure. All three figures remain the SAME machine. No new parts, text, diagrams, dimensions, arrows or scenery.
+Finish remains clean fine-line URI concept art, immaculate ivory/azure/saffron enamel and clear precise joints. This is a strictly local correction. Return the whole original plate with only the rear feet corrected.

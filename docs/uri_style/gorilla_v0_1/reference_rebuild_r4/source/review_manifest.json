@@ -1,0 +1,13 @@
+{
+  "source_sha256": "e32864b378076a7caf142b439a2dc75c3d5047a6a1c72ae3dee15a99689f3ddf",
+  "native_source_owns_all_turnaround_geometry": true,
+  "imagegen_used": false,
+  "page_assembly_only": true,
+  "pages": [
+    "images/native_three_view_check.png",
+    "images/reference_camera_check.png"
+  ],
+  "reference_geometry_accepted": false,
+  "ready_for_engineering_handoff": false,
+  "scope": "Work-in-progress geometry audit, not completed original artwork or a replacement engineering contract."
+}

@@ -1,0 +1,199 @@
+Blender 4.0.2
+Read blend: "/home/ethan/Projects/Sai_Art/docs/uri_style/gorilla_v0_2/source/lower_dense_surface_s7.blend"
+Fra:1 Mem:1025.63M (Peak 1025.63M) | Time:00:00.00 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | complete_reference_foot_right
+Fra:1 Mem:1068.88M (Peak 1068.88M) | Time:00:00.00 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | pixal_mirrored_leg
+Fra:1 Mem:1068.88M (Peak 1068.88M) | Time:00:00.00 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | pixal_clear_side_leg
+Fra:1 Mem:1078.62M (Peak 1078.62M) | Time:00:00.00 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | complete_reference_foot_left
+Fra:1 Mem:1471.18M (Peak 1525.01M) | Time:00:00.11 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Initializing
+Fra:1 Mem:1471.18M (Peak 1525.01M) | Time:00:00.11 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Waiting for render to start
+Fra:1 Mem:1471.18M (Peak 1525.01M) | Time:00:00.11 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Loading render kernels (may take a few minutes the first time)
+Fra:1 Mem:1471.18M (Peak 1525.01M) | Time:00:00.11 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Updating Scene
+Fra:1 Mem:1471.18M (Peak 1525.01M) | Time:00:00.11 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Updating Shaders
+Fra:1 Mem:1471.26M (Peak 1525.01M) | Time:00:00.11 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Updating Procedurals
+Fra:1 Mem:1471.26M (Peak 1525.01M) | Time:00:00.11 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Updating Background
+Fra:1 Mem:1471.26M (Peak 1525.01M) | Time:00:00.11 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Updating Camera
+Fra:1 Mem:1471.26M (Peak 1525.01M) | Time:00:00.11 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Updating Meshes Flags
+Fra:1 Mem:1471.26M (Peak 1525.01M) | Time:00:00.11 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Updating Objects
+Fra:1 Mem:1471.26M (Peak 1525.01M) | Time:00:00.11 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Updating Objects | Copying Transformations to device
+Fra:1 Mem:1471.27M (Peak 1525.01M) | Time:00:00.11 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Updating Objects | Applying Static Transformations
+Fra:1 Mem:1471.27M (Peak 1525.01M) | Time:00:00.11 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Updating Particle Systems
+Fra:1 Mem:1471.27M (Peak 1525.01M) | Time:00:00.11 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Updating Particle Systems | Copying Particles to device
+Fra:1 Mem:1471.27M (Peak 1525.01M) | Time:00:00.11 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Updating Meshes
+Fra:1 Mem:1599.57M (Peak 1599.57M) | Time:00:00.24 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Updating Mesh | Computing attributes
+Fra:1 Mem:1644.80M (Peak 1644.80M) | Time:00:00.26 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Updating Mesh | Copying Attributes to device
+Fra:1 Mem:1644.80M (Peak 1644.80M) | Time:00:00.26 | Mem:45.23M, Peak:45.23M | Scene, ViewLayer | Updating Scene BVH | Building
+Fra:1 Mem:1644.80M (Peak 1644.80M) | Time:00:00.26 | Mem:45.23M, Peak:45.23M | Scene, ViewLayer | Updating Scene BVH | Building BVH
+Fra:1 Mem:2125.94M (Peak 2125.94M) | Time:00:00.83 | Mem:45.23M, Peak:45.23M | Scene, ViewLayer | Updating Scene BVH | Building BVH 4%, duplicates 0%
+Fra:1 Mem:2125.94M (Peak 2125.94M) | Time:00:01.08 | Mem:45.23M, Peak:45.23M | Scene, ViewLayer | Updating Scene BVH | Building BVH 23%, duplicates 0%
+Fra:1 Mem:2125.94M (Peak 2125.94M) | Time:00:01.33 | Mem:45.23M, Peak:45.23M | Scene, ViewLayer | Updating Scene BVH | Building BVH 51%, duplicates 0%
+Fra:1 Mem:2125.94M (Peak 2125.94M) | Time:00:01.58 | Mem:45.23M, Peak:45.23M | Scene, ViewLayer | Updating Scene BVH | Building BVH 80%, duplicates 0%
+Fra:1 Mem:2125.94M (Peak 2125.94M) | Time:00:01.77 | Mem:45.23M, Peak:45.23M | Scene, ViewLayer | Updating Scene BVH | Packing BVH triangles and strands
+Fra:1 Mem:2158.02M (Peak 2158.02M) | Time:00:01.79 | Mem:45.23M, Peak:45.23M | Scene, ViewLayer | Updating Scene BVH | Packing BVH nodes
+Fra:1 Mem:2143.44M (Peak 2279.03M) | Time:00:02.19 | Mem:45.23M, Peak:45.23M | Scene, ViewLayer | Updating Scene BVH | Copying BVH to device
+Fra:1 Mem:2143.44M (Peak 2279.03M) | Time:00:02.19 | Mem:294.55M, Peak:294.55M | Scene, ViewLayer | Updating Mesh | Computing normals
+Fra:1 Mem:2424.44M (Peak 2424.44M) | Time:00:02.28 | Mem:294.55M, Peak:294.55M | Scene, ViewLayer | Updating Mesh | Copying Mesh to device
+Fra:1 Mem:2424.44M (Peak 2424.44M) | Time:00:02.28 | Mem:575.55M, Peak:575.55M | Scene, ViewLayer | Updating Objects Flags
+Fra:1 Mem:2424.44M (Peak 2424.44M) | Time:00:02.28 | Mem:575.55M, Peak:575.55M | Scene, ViewLayer | Updating Primitive Offsets
+Fra:1 Mem:2424.44M (Peak 2424.44M) | Time:00:02.28 | Mem:575.55M, Peak:575.55M | Scene, ViewLayer | Updating Images
+Fra:1 Mem:2424.44M (Peak 2424.44M) | Time:00:02.28 | Mem:575.55M, Peak:575.55M | Scene, ViewLayer | Updating Camera Volume
+Fra:1 Mem:2424.44M (Peak 2424.44M) | Time:00:02.28 | Mem:575.55M, Peak:575.55M | Scene, ViewLayer | Updating Lookup Tables
+Fra:1 Mem:2424.44M (Peak 2424.44M) | Time:00:02.28 | Mem:575.63M, Peak:575.63M | Scene, ViewLayer | Updating Lights
+Fra:1 Mem:2424.44M (Peak 2424.44M) | Time:00:02.28 | Mem:575.63M, Peak:575.63M | Scene, ViewLayer | Updating Lights | Computing distribution
+Fra:1 Mem:2424.44M (Peak 2424.44M) | Time:00:02.28 | Mem:575.63M, Peak:575.63M | Scene, ViewLayer | Updating Lights | Computing tree
+Fra:1 Mem:2424.44M (Peak 2424.44M) | Time:00:02.28 | Mem:575.63M, Peak:575.63M | Scene, ViewLayer | Updating Integrator
+Fra:1 Mem:2425.44M (Peak 2425.44M) | Time:00:02.28 | Mem:576.63M, Peak:576.63M | Scene, ViewLayer | Updating Film
+Fra:1 Mem:2425.44M (Peak 2425.44M) | Time:00:02.28 | Mem:576.55M, Peak:576.63M | Scene, ViewLayer | Updating Lookup Tables
+Fra:1 Mem:2425.44M (Peak 2425.44M) | Time:00:02.28 | Mem:576.64M, Peak:576.64M | Scene, ViewLayer | Updating Baking
+Fra:1 Mem:2425.44M (Peak 2425.44M) | Time:00:02.28 | Mem:576.64M, Peak:576.64M | Scene, ViewLayer | Updating Device | Writing constant memory
+Fra:1 Mem:2425.44M (Peak 2425.44M) | Time:00:02.28 | Mem:576.64M, Peak:576.64M | Scene, ViewLayer | Sample 0/32
+Fra:1 Mem:2474.91M (Peak 2474.91M) | Time:00:02.65 | Remaining:00:11.31 | Mem:626.07M, Peak:626.07M | Scene, ViewLayer | Sample 1/32
+Fra:1 Mem:2496.88M (Peak 2540.83M) | Time:00:11.69 | Mem:626.07M, Peak:626.07M | Scene, ViewLayer | Sample 32/32
+Fra:1 Mem:2496.88M (Peak 2540.83M) | Time:00:11.69 | Mem:626.07M, Peak:626.07M | Scene, ViewLayer | Finished
+Saved: '/home/ethan/Projects/Sai_Art/docs/uri_style/gorilla_v0_2/images/lower_dense_assembled_front_s8.png'
+Time: 00:11.77 (Saving: 00:00.08)
+
+DENSE_SOURCE_ASSEMBLY_VIEW front
+Fra:1 Mem:2474.91M (Peak 2474.91M) | Time:00:00.00 | Mem:626.07M, Peak:626.07M | Scene, ViewLayer | Initializing
+Fra:1 Mem:2474.91M (Peak 2474.91M) | Time:00:00.00 | Mem:626.07M, Peak:626.07M | Scene, ViewLayer | Waiting for render to start
+Fra:1 Mem:2474.91M (Peak 2474.91M) | Time:00:00.00 | Mem:626.07M, Peak:626.07M | Scene, ViewLayer | Updating Scene
+Fra:1 Mem:2474.91M (Peak 2474.91M) | Time:00:00.00 | Mem:626.07M, Peak:626.07M | Scene, ViewLayer | Updating Shaders
+Fra:1 Mem:2474.91M (Peak 2474.91M) | Time:00:00.00 | Mem:626.07M, Peak:626.07M | Scene, ViewLayer | Updating Background
+Fra:1 Mem:2474.91M (Peak 2474.91M) | Time:00:00.00 | Mem:626.07M, Peak:626.07M | Scene, ViewLayer | Updating Camera
+Fra:1 Mem:2474.91M (Peak 2474.91M) | Time:00:00.00 | Mem:626.07M, Peak:626.07M | Scene, ViewLayer | Updating Objects
+Fra:1 Mem:2474.91M (Peak 2474.91M) | Time:00:00.00 | Mem:626.07M, Peak:626.07M | Scene, ViewLayer | Updating Particle Systems
+Fra:1 Mem:2474.91M (Peak 2474.91M) | Time:00:00.00 | Mem:626.07M, Peak:626.07M | Scene, ViewLayer | Updating Meshes
+Fra:1 Mem:2474.91M (Peak 2474.91M) | Time:00:00.00 | Mem:626.07M, Peak:626.07M | Scene, ViewLayer | Updating Objects Flags
+Fra:1 Mem:2474.91M (Peak 2474.91M) | Time:00:00.00 | Mem:626.07M, Peak:626.07M | Scene, ViewLayer | Updating Primitive Offsets
+Fra:1 Mem:2474.91M (Peak 2474.91M) | Time:00:00.00 | Mem:626.07M, Peak:626.07M | Scene, ViewLayer | Updating Images
+Fra:1 Mem:2474.91M (Peak 2474.91M) | Time:00:00.00 | Mem:626.07M, Peak:626.07M | Scene, ViewLayer | Updating Camera Volume
+Fra:1 Mem:2474.91M (Peak 2474.91M) | Time:00:00.00 | Mem:626.07M, Peak:626.07M | Scene, ViewLayer | Updating Lookup Tables
+Fra:1 Mem:2474.91M (Peak 2474.91M) | Time:00:00.00 | Mem:626.07M, Peak:626.07M | Scene, ViewLayer | Updating Lights
+Fra:1 Mem:2474.91M (Peak 2474.91M) | Time:00:00.00 | Mem:626.07M, Peak:626.07M | Scene, ViewLayer | Updating Integrator
+Fra:1 Mem:2474.91M (Peak 2474.91M) | Time:00:00.00 | Mem:626.07M, Peak:626.07M | Scene, ViewLayer | Updating Film
+Fra:1 Mem:2474.91M (Peak 2474.91M) | Time:00:00.00 | Mem:626.07M, Peak:626.07M | Scene, ViewLayer | Updating Lookup Tables
+Fra:1 Mem:2474.91M (Peak 2474.91M) | Time:00:00.00 | Mem:626.07M, Peak:626.07M | Scene, ViewLayer | Updating Baking
+Fra:1 Mem:2474.91M (Peak 2474.91M) | Time:00:00.00 | Mem:626.07M, Peak:626.07M | Scene, ViewLayer | Updating Device | Writing constant memory
+Fra:1 Mem:2474.91M (Peak 2474.91M) | Time:00:00.00 | Mem:626.07M, Peak:626.07M | Scene, ViewLayer | Sample 0/32
+Fra:1 Mem:2474.91M (Peak 2474.91M) | Time:00:00.39 | Remaining:00:12.22 | Mem:626.07M, Peak:626.07M | Scene, ViewLayer | Sample 1/32
+Fra:1 Mem:2496.88M (Peak 2540.83M) | Time:00:09.33 | Mem:626.07M, Peak:626.07M | Scene, ViewLayer | Sample 32/32
+Fra:1 Mem:2496.88M (Peak 2540.83M) | Time:00:09.33 | Mem:626.07M, Peak:626.07M | Scene, ViewLayer | Finished
+Saved: '/home/ethan/Projects/Sai_Art/docs/uri_style/gorilla_v0_2/images/lower_dense_assembled_left_s8.png'
+Time: 00:09.44 (Saving: 00:00.11)
+
+DENSE_SOURCE_ASSEMBLY_VIEW left
+Fra:1 Mem:2474.91M (Peak 2474.91M) | Time:00:00.00 | Mem:626.07M, Peak:626.07M | Scene, ViewLayer | Initializing
+Fra:1 Mem:2474.91M (Peak 2474.91M) | Time:00:00.00 | Mem:626.07M, Peak:626.07M | Scene, ViewLayer | Waiting for render to start
+Fra:1 Mem:2474.91M (Peak 2474.91M) | Time:00:00.00 | Mem:626.07M, Peak:626.07M | Scene, ViewLayer | Updating Scene
+Fra:1 Mem:2474.91M (Peak 2474.91M) | Time:00:00.00 | Mem:626.07M, Peak:626.07M | Scene, ViewLayer | Updating Shaders
+Fra:1 Mem:2474.91M (Peak 2474.91M) | Time:00:00.00 | Mem:626.07M, Peak:626.07M | Scene, ViewLayer | Updating Background
+Fra:1 Mem:2474.91M (Peak 2474.91M) | Time:00:00.00 | Mem:626.07M, Peak:626.07M | Scene, ViewLayer | Updating Camera
+Fra:1 Mem:2474.91M (Peak 2474.91M) | Time:00:00.00 | Mem:626.07M, Peak:626.07M | Scene, ViewLayer | Updating Objects
+Fra:1 Mem:2474.91M (Peak 2474.91M) | Time:00:00.00 | Mem:626.07M, Peak:626.07M | Scene, ViewLayer | Updating Particle Systems
+Fra:1 Mem:2474.91M (Peak 2474.91M) | Time:00:00.00 | Mem:626.07M, Peak:626.07M | Scene, ViewLayer | Updating Meshes
+Fra:1 Mem:2474.91M (Peak 2474.91M) | Time:00:00.00 | Mem:626.07M, Peak:626.07M | Scene, ViewLayer | Updating Objects Flags
+Fra:1 Mem:2474.91M (Peak 2474.91M) | Time:00:00.00 | Mem:626.07M, Peak:626.07M | Scene, ViewLayer | Updating Primitive Offsets
+Fra:1 Mem:2474.91M (Peak 2474.91M) | Time:00:00.00 | Mem:626.07M, Peak:626.07M | Scene, ViewLayer | Updating Images
+Fra:1 Mem:2474.91M (Peak 2474.91M) | Time:00:00.00 | Mem:626.07M, Peak:626.07M | Scene, ViewLayer | Updating Camera Volume
+Fra:1 Mem:2474.91M (Peak 2474.91M) | Time:00:00.00 | Mem:626.07M, Peak:626.07M | Scene, ViewLayer | Updating Lookup Tables
+Fra:1 Mem:2474.91M (Peak 2474.91M) | Time:00:00.00 | Mem:626.07M, Peak:626.07M | Scene, ViewLayer | Updating Lights
+Fra:1 Mem:2474.91M (Peak 2474.91M) | Time:00:00.00 | Mem:626.07M, Peak:626.07M | Scene, ViewLayer | Updating Integrator
+Fra:1 Mem:2474.91M (Peak 2474.91M) | Time:00:00.00 | Mem:626.07M, Peak:626.07M | Scene, ViewLayer | Updating Film
+Fra:1 Mem:2474.91M (Peak 2474.91M) | Time:00:00.00 | Mem:626.07M, Peak:626.07M | Scene, ViewLayer | Updating Lookup Tables
+Fra:1 Mem:2474.91M (Peak 2474.91M) | Time:00:00.00 | Mem:626.07M, Peak:626.07M | Scene, ViewLayer | Updating Baking
+Fra:1 Mem:2474.91M (Peak 2474.91M) | Time:00:00.00 | Mem:626.07M, Peak:626.07M | Scene, ViewLayer | Updating Device | Writing constant memory
+Fra:1 Mem:2474.91M (Peak 2474.91M) | Time:00:00.00 | Mem:626.07M, Peak:626.07M | Scene, ViewLayer | Sample 0/32
+Fra:1 Mem:2474.91M (Peak 2474.91M) | Time:00:00.56 | Remaining:00:17.49 | Mem:626.07M, Peak:626.07M | Scene, ViewLayer | Sample 1/32
+Fra:1 Mem:2496.88M (Peak 2540.83M) | Time:00:12.14 | Mem:626.07M, Peak:626.07M | Scene, ViewLayer | Sample 32/32
+Fra:1 Mem:2496.88M (Peak 2540.83M) | Time:00:12.14 | Mem:626.07M, Peak:626.07M | Scene, ViewLayer | Finished
+Saved: '/home/ethan/Projects/Sai_Art/docs/uri_style/gorilla_v0_2/images/lower_dense_assembled_rear_s8.png'
+Time: 00:12.21 (Saving: 00:00.06)
+
+DENSE_SOURCE_ASSEMBLY_VIEW rear
+Fra:1 Mem:2474.91M (Peak 2474.91M) | Time:00:00.00 | Mem:626.07M, Peak:626.07M | Scene, ViewLayer | Initializing
+Fra:1 Mem:2474.91M (Peak 2474.91M) | Time:00:00.00 | Mem:626.07M, Peak:626.07M | Scene, ViewLayer | Waiting for render to start
+Fra:1 Mem:2474.91M (Peak 2474.91M) | Time:00:00.00 | Mem:626.07M, Peak:626.07M | Scene, ViewLayer | Updating Scene
+Fra:1 Mem:2474.91M (Peak 2474.91M) | Time:00:00.00 | Mem:626.07M, Peak:626.07M | Scene, ViewLayer | Updating Shaders
+Fra:1 Mem:2474.91M (Peak 2474.91M) | Time:00:00.00 | Mem:626.07M, Peak:626.07M | Scene, ViewLayer | Updating Background
+Fra:1 Mem:2474.91M (Peak 2474.91M) | Time:00:00.00 | Mem:626.07M, Peak:626.07M | Scene, ViewLayer | Updating Camera
+Fra:1 Mem:2474.91M (Peak 2474.91M) | Time:00:00.00 | Mem:626.07M, Peak:626.07M | Scene, ViewLayer | Updating Objects
+Fra:1 Mem:2474.91M (Peak 2474.91M) | Time:00:00.00 | Mem:626.07M, Peak:626.07M | Scene, ViewLayer | Updating Particle Systems
+Fra:1 Mem:2474.91M (Peak 2474.91M) | Time:00:00.00 | Mem:626.07M, Peak:626.07M | Scene, ViewLayer | Updating Meshes
+Fra:1 Mem:2474.91M (Peak 2474.91M) | Time:00:00.00 | Mem:626.07M, Peak:626.07M | Scene, ViewLayer | Updating Objects Flags
+Fra:1 Mem:2474.91M (Peak 2474.91M) | Time:00:00.00 | Mem:626.07M, Peak:626.07M | Scene, ViewLayer | Updating Primitive Offsets
+Fra:1 Mem:2474.91M (Peak 2474.91M) | Time:00:00.00 | Mem:626.07M, Peak:626.07M | Scene, ViewLayer | Updating Images
+Fra:1 Mem:2474.91M (Peak 2474.91M) | Time:00:00.00 | Mem:626.07M, Peak:626.07M | Scene, ViewLayer | Updating Camera Volume
+Fra:1 Mem:2474.91M (Peak 2474.91M) | Time:00:00.00 | Mem:626.07M, Peak:626.07M | Scene, ViewLayer | Updating Lookup Tables
+Fra:1 Mem:2474.91M (Peak 2474.91M) | Time:00:00.00 | Mem:626.07M, Peak:626.07M | Scene, ViewLayer | Updating Lights
+Fra:1 Mem:2474.91M (Peak 2474.91M) | Time:00:00.00 | Mem:626.07M, Peak:626.07M | Scene, ViewLayer | Updating Integrator
+Fra:1 Mem:2474.91M (Peak 2474.91M) | Time:00:00.00 | Mem:626.07M, Peak:626.07M | Scene, ViewLayer | Updating Film
+Fra:1 Mem:2474.91M (Peak 2474.91M) | Time:00:00.00 | Mem:626.07M, Peak:626.07M | Scene, ViewLayer | Updating Lookup Tables
+Fra:1 Mem:2474.91M (Peak 2474.91M) | Time:00:00.00 | Mem:626.07M, Peak:626.07M | Scene, ViewLayer | Updating Baking
+Fra:1 Mem:2474.91M (Peak 2474.91M) | Time:00:00.00 | Mem:626.07M, Peak:626.07M | Scene, ViewLayer | Updating Device | Writing constant memory
+Fra:1 Mem:2474.91M (Peak 2474.91M) | Time:00:00.00 | Mem:626.07M, Peak:626.07M | Scene, ViewLayer | Sample 0/32
+Fra:1 Mem:2474.91M (Peak 2474.91M) | Time:00:00.24 | Remaining:00:07.71 | Mem:626.07M, Peak:626.07M | Scene, ViewLayer | Sample 1/32
+Fra:1 Mem:2496.88M (Peak 2540.83M) | Time:00:06.72 | Mem:626.07M, Peak:626.07M | Scene, ViewLayer | Sample 32/32
+Fra:1 Mem:2496.88M (Peak 2540.83M) | Time:00:06.72 | Mem:626.07M, Peak:626.07M | Scene, ViewLayer | Finished
+Saved: '/home/ethan/Projects/Sai_Art/docs/uri_style/gorilla_v0_2/images/lower_dense_assembled_top_s8.png'
+Time: 00:06.78 (Saving: 00:00.06)
+
+DENSE_SOURCE_ASSEMBLY_VIEW top
+Fra:1 Mem:2474.91M (Peak 2474.91M) | Time:00:00.00 | Mem:626.07M, Peak:626.07M | Scene, ViewLayer | Initializing
+Fra:1 Mem:2474.91M (Peak 2474.91M) | Time:00:00.00 | Mem:626.07M, Peak:626.07M | Scene, ViewLayer | Waiting for render to start
+Fra:1 Mem:2474.91M (Peak 2474.91M) | Time:00:00.00 | Mem:626.07M, Peak:626.07M | Scene, ViewLayer | Updating Scene
+Fra:1 Mem:2474.91M (Peak 2474.91M) | Time:00:00.00 | Mem:626.07M, Peak:626.07M | Scene, ViewLayer | Updating Shaders
+Fra:1 Mem:2474.91M (Peak 2474.91M) | Time:00:00.00 | Mem:626.07M, Peak:626.07M | Scene, ViewLayer | Updating Background
+Fra:1 Mem:2474.91M (Peak 2474.91M) | Time:00:00.00 | Mem:626.07M, Peak:626.07M | Scene, ViewLayer | Updating Camera
+Fra:1 Mem:2474.91M (Peak 2474.91M) | Time:00:00.00 | Mem:626.07M, Peak:626.07M | Scene, ViewLayer | Updating Objects
+Fra:1 Mem:2474.91M (Peak 2474.91M) | Time:00:00.00 | Mem:626.07M, Peak:626.07M | Scene, ViewLayer | Updating Particle Systems
+Fra:1 Mem:2474.91M (Peak 2474.91M) | Time:00:00.00 | Mem:626.07M, Peak:626.07M | Scene, ViewLayer | Updating Meshes
+Fra:1 Mem:2474.91M (Peak 2474.91M) | Time:00:00.00 | Mem:626.07M, Peak:626.07M | Scene, ViewLayer | Updating Objects Flags
+Fra:1 Mem:2474.91M (Peak 2474.91M) | Time:00:00.00 | Mem:626.07M, Peak:626.07M | Scene, ViewLayer | Updating Primitive Offsets
+Fra:1 Mem:2474.91M (Peak 2474.91M) | Time:00:00.00 | Mem:626.07M, Peak:626.07M | Scene, ViewLayer | Updating Images
+Fra:1 Mem:2474.91M (Peak 2474.91M) | Time:00:00.00 | Mem:626.07M, Peak:626.07M | Scene, ViewLayer | Updating Camera Volume
+Fra:1 Mem:2474.91M (Peak 2474.91M) | Time:00:00.00 | Mem:626.07M, Peak:626.07M | Scene, ViewLayer | Updating Lookup Tables
+Fra:1 Mem:2474.91M (Peak 2474.91M) | Time:00:00.00 | Mem:626.07M, Peak:626.07M | Scene, ViewLayer | Updating Lights
+Fra:1 Mem:2474.91M (Peak 2474.91M) | Time:00:00.00 | Mem:626.07M, Peak:626.07M | Scene, ViewLayer | Updating Integrator
+Fra:1 Mem:2474.91M (Peak 2474.91M) | Time:00:00.00 | Mem:626.07M, Peak:626.07M | Scene, ViewLayer | Updating Film
+Fra:1 Mem:2474.91M (Peak 2474.91M) | Time:00:00.00 | Mem:626.07M, Peak:626.07M | Scene, ViewLayer | Updating Lookup Tables
+Fra:1 Mem:2474.91M (Peak 2474.91M) | Time:00:00.00 | Mem:626.07M, Peak:626.07M | Scene, ViewLayer | Updating Baking
+Fra:1 Mem:2474.91M (Peak 2474.91M) | Time:00:00.00 | Mem:626.07M, Peak:626.07M | Scene, ViewLayer | Updating Device | Writing constant memory
+Fra:1 Mem:2474.91M (Peak 2474.91M) | Time:00:00.00 | Mem:626.07M, Peak:626.07M | Scene, ViewLayer | Sample 0/32
+Fra:1 Mem:2474.91M (Peak 2474.91M) | Time:00:00.59 | Remaining:00:18.55 | Mem:626.07M, Peak:626.07M | Scene, ViewLayer | Sample 1/32
+Fra:1 Mem:2496.88M (Peak 2540.83M) | Time:00:15.81 | Mem:626.07M, Peak:626.07M | Scene, ViewLayer | Sample 32/32
+Fra:1 Mem:2496.88M (Peak 2540.83M) | Time:00:15.81 | Mem:626.07M, Peak:626.07M | Scene, ViewLayer | Finished
+Saved: '/home/ethan/Projects/Sai_Art/docs/uri_style/gorilla_v0_2/images/lower_dense_assembled_front_oblique_s8.png'
+Time: 00:15.88 (Saving: 00:00.07)
+
+DENSE_SOURCE_ASSEMBLY_VIEW front_oblique
+Fra:1 Mem:2474.91M (Peak 2474.91M) | Time:00:00.00 | Mem:626.07M, Peak:626.07M | Scene, ViewLayer | Initializing
+Fra:1 Mem:2474.91M (Peak 2474.91M) | Time:00:00.00 | Mem:626.07M, Peak:626.07M | Scene, ViewLayer | Waiting for render to start
+Fra:1 Mem:2474.91M (Peak 2474.91M) | Time:00:00.00 | Mem:626.07M, Peak:626.07M | Scene, ViewLayer | Updating Scene
+Fra:1 Mem:2474.91M (Peak 2474.91M) | Time:00:00.00 | Mem:626.07M, Peak:626.07M | Scene, ViewLayer | Updating Shaders
+Fra:1 Mem:2474.91M (Peak 2474.91M) | Time:00:00.00 | Mem:626.07M, Peak:626.07M | Scene, ViewLayer | Updating Background
+Fra:1 Mem:2474.91M (Peak 2474.91M) | Time:00:00.00 | Mem:626.07M, Peak:626.07M | Scene, ViewLayer | Updating Camera
+Fra:1 Mem:2474.91M (Peak 2474.91M) | Time:00:00.00 | Mem:626.07M, Peak:626.07M | Scene, ViewLayer | Updating Objects
+Fra:1 Mem:2474.91M (Peak 2474.91M) | Time:00:00.00 | Mem:626.07M, Peak:626.07M | Scene, ViewLayer | Updating Particle Systems
+Fra:1 Mem:2474.91M (Peak 2474.91M) | Time:00:00.00 | Mem:626.07M, Peak:626.07M | Scene, ViewLayer | Updating Meshes
+Fra:1 Mem:2474.91M (Peak 2474.91M) | Time:00:00.00 | Mem:626.07M, Peak:626.07M | Scene, ViewLayer | Updating Objects Flags
+Fra:1 Mem:2474.91M (Peak 2474.91M) | Time:00:00.00 | Mem:626.07M, Peak:626.07M | Scene, ViewLayer | Updating Primitive Offsets
+Fra:1 Mem:2474.91M (Peak 2474.91M) | Time:00:00.00 | Mem:626.07M, Peak:626.07M | Scene, ViewLayer | Updating Images
+Fra:1 Mem:2474.91M (Peak 2474.91M) | Time:00:00.00 | Mem:626.07M, Peak:626.07M | Scene, ViewLayer | Updating Camera Volume
+Fra:1 Mem:2474.91M (Peak 2474.91M) | Time:00:00.00 | Mem:626.07M, Peak:626.07M | Scene, ViewLayer | Updating Lookup Tables
+Fra:1 Mem:2474.91M (Peak 2474.91M) | Time:00:00.00 | Mem:626.07M, Peak:626.07M | Scene, ViewLayer | Updating Lights
+Fra:1 Mem:2474.91M (Peak 2474.91M) | Time:00:00.00 | Mem:626.07M, Peak:626.07M | Scene, ViewLayer | Updating Integrator
+Fra:1 Mem:2474.91M (Peak 2474.91M) | Time:00:00.00 | Mem:626.07M, Peak:626.07M | Scene, ViewLayer | Updating Film
+Fra:1 Mem:2474.91M (Peak 2474.91M) | Time:00:00.00 | Mem:626.07M, Peak:626.07M | Scene, ViewLayer | Updating Lookup Tables
+Fra:1 Mem:2474.91M (Peak 2474.91M) | Time:00:00.00 | Mem:626.07M, Peak:626.07M | Scene, ViewLayer | Updating Baking
+Fra:1 Mem:2474.91M (Peak 2474.91M) | Time:00:00.00 | Mem:626.07M, Peak:626.07M | Scene, ViewLayer | Updating Device | Writing constant memory
+Fra:1 Mem:2474.91M (Peak 2474.91M) | Time:00:00.00 | Mem:626.07M, Peak:626.07M | Scene, ViewLayer | Sample 0/32
+Fra:1 Mem:2474.91M (Peak 2474.91M) | Time:00:00.62 | Remaining:00:19.43 | Mem:626.07M, Peak:626.07M | Scene, ViewLayer | Sample 1/32
+Fra:1 Mem:2496.88M (Peak 2540.83M) | Time:00:16.49 | Mem:626.07M, Peak:626.07M | Scene, ViewLayer | Sample 32/32
+Fra:1 Mem:2496.88M (Peak 2540.83M) | Time:00:16.49 | Mem:626.07M, Peak:626.07M | Scene, ViewLayer | Finished
+Saved: '/home/ethan/Projects/Sai_Art/docs/uri_style/gorilla_v0_2/images/lower_dense_assembled_rear_oblique_s8.png'
+Time: 00:16.56 (Saving: 00:00.07)
+
+DENSE_SOURCE_ASSEMBLY_VIEW rear_oblique
+Info: Saved "lower_dense_assembled_s8.blend"
+DENSE_SOURCE_ASSEMBLY_COMPLETE {"front_left_height": true, "front_top_width": true, "left_top_depth": true}
+
+Blender quit

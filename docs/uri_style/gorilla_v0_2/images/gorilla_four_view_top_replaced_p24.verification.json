@@ -1,0 +1,32 @@
+{
+  "spec": "/home/ethan/Projects/Sai_Art/docs/uri_style/gorilla_v0_2/top_panel_composition_p24.json",
+  "base": "/home/ethan/Projects/Sai_Art/docs/uri_style/gorilla_v0_2/references/user_four_view_top_fix_p19.jpg",
+  "base_sha256": "cb804e621736804e6ae08c17b4d25811923415e5bd90880b8d4e5c4ec94e1cfb",
+  "overlay": "/home/ethan/Projects/Sai_Art/docs/uri_style/gorilla_v0_2/images/top_shoulders_corrected_p24.png",
+  "overlay_sha256": "b1bbf8c2798ea2b4c5eab9cfcd292db486c27f5ee762ab33b2a7388a8789d9be",
+  "output": "/home/ethan/Projects/Sai_Art/docs/uri_style/gorilla_v0_2/images/gorilla_four_view_top_replaced_p24.png",
+  "output_sha256": "70c77eff1eb4b7b94d39c103aacad41220ede8e6ade10d391180818fbfcf2f40",
+  "svg": "/home/ethan/Projects/Sai_Art/docs/uri_style/gorilla_v0_2/images/gorilla_four_view_top_replaced_p24.svg",
+  "svg_sha256": "2d67f05f6cebd5d74ea4d4d2ed1917884a2fde7558adb93790e9cd5db5e31c73",
+  "authorized_regions": [
+    [
+      632,
+      633,
+      1250,
+      1187
+    ]
+  ],
+  "unchanged_region_checks": {
+    "FRONT": true,
+    "LEFT": true,
+    "REAR": true,
+    "TOP_label": true
+  },
+  "verification_baseline": "/home/ethan/Projects/Sai_Art/docs/uri_style/gorilla_v0_2/images/gorilla_four_view_top_replaced_p24_original_native_baseline.png",
+  "source_embedded_bytes_unchanged": true,
+  "native_decoder_vs_pillow_original_max_channel_difference": 3,
+  "changed_pixels_outside_authorized_regions": 0,
+  "image_editing_method": "Imagegen raster edit; native SVG layout embeds original bytes without raster painting.",
+  "whole_v0_2_qualified": false,
+  "user_accepted": false
+}

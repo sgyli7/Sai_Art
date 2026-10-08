@@ -1,0 +1,275 @@
+{
+  "source_sha256": "7cb15555163b722780c619e7245e4c857764e65cb3bf30738ee06e01fe94f14e",
+  "checker_sha256": "eaeed1d95e5ed2026ad53c18d17c12a62db779f4e789b9fb5798a3565d2a5921",
+  "geometry": [
+    {
+      "name": "frame_thigh",
+      "status": "Error.NoError",
+      "volume_m3": 0.009468688646355571,
+      "closed_connected_components": 1
+    },
+    {
+      "name": "frame_middle",
+      "status": "Error.NoError",
+      "volume_m3": 0.008975995138542862,
+      "closed_connected_components": 1
+    },
+    {
+      "name": "shaft_knee",
+      "status": "Error.NoError",
+      "volume_m3": 0.0013028676042980776,
+      "closed_connected_components": 1
+    },
+    {
+      "name": "frame_distal",
+      "status": "Error.NoError",
+      "volume_m3": 0.006935487810102208,
+      "closed_connected_components": 1
+    },
+    {
+      "name": "shaft_fold",
+      "status": "Error.NoError",
+      "volume_m3": 0.0013028676042980785,
+      "closed_connected_components": 1
+    },
+    {
+      "name": "toe_contact_pad",
+      "status": "Error.NoError",
+      "volume_m3": 0.002525900036728382,
+      "closed_connected_components": 1
+    },
+    {
+      "name": "heel_contact_pad",
+      "status": "Error.NoError",
+      "volume_m3": 0.001341599990391731,
+      "closed_connected_components": 1
+    },
+    {
+      "name": "pressure_carrier",
+      "status": "Error.NoError",
+      "volume_m3": 0.0065968213663328504,
+      "closed_connected_components": 3
+    },
+    {
+      "name": "shaft_ankle",
+      "status": "Error.NoError",
+      "volume_m3": 0.0013028676042980778,
+      "closed_connected_components": 1
+    }
+  ],
+  "net_material_mass_kg_by_body": {
+    "thigh": 74.32920587389123,
+    "middle": 80.67724221341572,
+    "distal": 64.6592596851565,
+    "shoe": 66.24812123447269
+  },
+  "net_material_details": {
+    "thigh": {
+      "steel_net_volume_m3": 0.009468688646355571,
+      "pad_net_volume_m3": 0.0,
+      "steel_positive_material_components": 1,
+      "enclosed_negative_cavity_shells": 0
+    },
+    "middle": {
+      "steel_net_volume_m3": 0.010277355695976525,
+      "pad_net_volume_m3": 0.0,
+      "steel_positive_material_components": 1,
+      "enclosed_negative_cavity_shells": 0
+    },
+    "distal": {
+      "steel_net_volume_m3": 0.008236848367535859,
+      "pad_net_volume_m3": 0.0,
+      "steel_positive_material_components": 1,
+      "enclosed_negative_cavity_shells": 0
+    },
+    "shoe": {
+      "steel_net_volume_m3": 0.007897308433712174,
+      "pad_net_volume_m3": 0.003867500027120113,
+      "steel_positive_material_components": 1,
+      "enclosed_negative_cavity_shells": 2
+    }
+  },
+  "scope": "Finite frame and custom drive/mount candidate. Source identifies missing/unqualified parts. NO pressure-part qualification, finite-element strength, wholebody contact dynamics or hardware acceptance.",
+  "fk_probe_count": 246,
+  "q_values_are_not_safe_joint_limits": true,
+  "collision_method": "Manifold64 finite material CSG; no masks, all different-owner pairs. Intersection volume threshold1e-10m3. Finite pose samples, NOT continuous certification.",
+  "collisions": [],
+  "neutral_short_gaps_m": {
+    "frame_thigh / shaft_knee": 0.00039951818248172317,
+    "frame_middle / shaft_fold": 0.00039951818248194635,
+    "frame_distal / shaft_ankle": 0.0003995181824820306
+  },
+  "same_body_steel_connected": {
+    "thigh": true,
+    "middle": true,
+    "distal": true,
+    "shoe": true
+  },
+  "contact_cases": [
+    {
+      "cop_forward_m": -0.19,
+      "cop_left_m": 0.5,
+      "force_N": 76518.0,
+      "unilateral_reactions_feasible": true,
+      "equilibrium_max_residual_N_Nm": 0.0,
+      "vertex_reactions_N": [
+        39560.32651656617,
+        12666.24500068825,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        24291.428482745578,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "cop_forward_m": -0.045,
+      "cop_left_m": 0.5,
+      "force_N": 76518.0,
+      "unilateral_reactions_feasible": true,
+      "equilibrium_max_residual_N_Nm": 4.547473508864641e-13,
+      "vertex_reactions_N": [
+        0.0,
+        0.0,
+        32462.18135443636,
+        0.0,
+        0.0,
+        0.0,
+        7367.569346128301,
+        36688.24929943534,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "cop_forward_m": 0.2,
+      "cop_left_m": 0.5,
+      "force_N": 76518.0,
+      "unilateral_reactions_feasible": true,
+      "equilibrium_max_residual_N_Nm": 0.0,
+      "vertex_reactions_N": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        24139.607207607172,
+        0.0,
+        0.0,
+        0.0,
+        10247.946071994407,
+        42130.44672039842,
+        0.0
+      ]
+    },
+    {
+      "cop_forward_m": 0.31,
+      "cop_left_m": 0.5,
+      "force_N": 76518.0,
+      "unilateral_reactions_feasible": true,
+      "equilibrium_max_residual_N_Nm": 0.0,
+      "vertex_reactions_N": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        3264.160801816496,
+        0.0,
+        0.0,
+        0.0,
+        26530.794268511137,
+        46723.04492967237,
+        0.0
+      ]
+    }
+  ],
+  "contact_vertices_xy_m": [
+    [
+      -0.289999999,
+      0.359999999
+    ],
+    [
+      -0.289999999,
+      0.640000001
+    ],
+    [
+      -0.140000001,
+      0.359999999
+    ],
+    [
+      -0.140000001,
+      0.640000001
+    ],
+    [
+      -0.100000001,
+      0.399999999
+    ],
+    [
+      -0.100000001,
+      0.600000001
+    ],
+    [
+      0.024999999,
+      0.344999999
+    ],
+    [
+      0.024999999,
+      0.655000001
+    ],
+    [
+      0.289999999,
+      0.344999999
+    ],
+    [
+      0.289999999,
+      0.655000001
+    ],
+    [
+      0.350000001,
+      0.405000001
+    ],
+    [
+      0.350000001,
+      0.594999999
+    ]
+  ],
+  "neutral_required_moments": [
+    {
+      "joint": "knee",
+      "largest_neutral_vertical_force_moment_Nm": 50195.73335824403,
+      "actual_drive_selected": false,
+      "capacity_pass": null
+    },
+    {
+      "joint": "fold",
+      "largest_neutral_vertical_force_moment_Nm": 46948.65761426136,
+      "actual_drive_selected": false,
+      "capacity_pass": null
+    },
+    {
+      "joint": "ankle",
+      "largest_neutral_vertical_force_moment_Nm": 19298.636907534477,
+      "actual_drive_selected": false,
+      "capacity_pass": null
+    }
+  ],
+  "pressure_case_assumption": {
+    "provisional_upperbody_self_mass_allowance_kg": 2200,
+    "external_downforce_mass_equivalent_kg": 3000,
+    "force_factor": 1.5,
+    "not_actual_mass_or_payload_qualification": true
+  },
+  "dynamic_steps": 0,
+  "physical_accepted": false,
+  "elapsed_seconds": 0.34989094734191895,
+  "neutral_ground_min_z_m": 0.0,
+  "source_file": "candidate_scene.json"
+}

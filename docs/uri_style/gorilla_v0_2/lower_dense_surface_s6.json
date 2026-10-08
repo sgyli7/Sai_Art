@@ -1,0 +1,236 @@
+{
+  "source": "source/lower_body_spatial_s2.blend",
+  "source_sha256": "8f59b648dcd195cd75d205adbae69c0177ea8bcf4025862c2b159cb8b853de4f",
+  "scope": "Actual source leg skin retained. Only the upper cut interface capped.",
+  "whole_robot_upper_body": "Original v0.1 unchanged; absent from this lower-body study",
+  "foot_scope": "Absent; rejected coarse feet are not reused as the final geometry",
+  "parts": [
+    {
+      "name": "pixal_clear_side_leg",
+      "original_vertices": 219006,
+      "new_vertices": 211367,
+      "visible_vertices_checked": 210435,
+      "retained_surface_max_vertex_distance": 0.0,
+      "retained_original_max_distance": 0.0,
+      "exact_visible_fraction": 1.0,
+      "original_visible_retained_fraction": 1.0,
+      "scope": "Measured retained surface away from cut; not reference-image accuracy or engineering",
+      "nonmanifold_edges": 974,
+      "signed_volume": 0.006166890257949507,
+      "capped_faces": 6
+    },
+    {
+      "name": "pixal_mirrored_leg",
+      "original_vertices": 219006,
+      "new_vertices": 211367,
+      "visible_vertices_checked": 210435,
+      "retained_surface_max_vertex_distance": 0.0,
+      "retained_original_max_distance": 0.0,
+      "exact_visible_fraction": 1.0,
+      "original_visible_retained_fraction": 1.0,
+      "scope": "Measured retained surface away from cut; not reference-image accuracy or engineering",
+      "nonmanifold_edges": 974,
+      "signed_volume": 0.006166890219322885,
+      "capped_faces": 6
+    }
+  ],
+  "views": {
+    "front": {
+      "image": "images/lower_dense_surface_front_s6.png",
+      "span_px": [
+        840.3361344537816,
+        722.6691688055853
+      ],
+      "camera_matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          -4.371138828673793e-08,
+          -1.0,
+          -3.067035436630249
+        ],
+        [
+          0.0,
+          1.0,
+          -4.371138828673793e-08,
+          -0.15982824563980103
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "shared_geometry_sha256": "4e4f3be9f0c48cf5fa0a3891278110625e24a48f498187b15f15a1e5b4e8674f"
+    },
+    "left": {
+      "image": "images/lower_dense_surface_left_s6.png",
+      "span_px": [
+        578.6007411198898,
+        722.6692176649128
+      ],
+      "camera_matrix_world": [
+        [
+          7.549790126404332e-08,
+          -7.549790126404332e-08,
+          1.0,
+          3.0
+        ],
+        [
+          1.0,
+          5.6999328827277325e-15,
+          -7.549790126404332e-08,
+          -0.06703551113605499
+        ],
+        [
+          0.0,
+          1.0,
+          7.549790126404332e-08,
+          -0.15982824563980103
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "shared_geometry_sha256": "4e4f3be9f0c48cf5fa0a3891278110625e24a48f498187b15f15a1e5b4e8674f"
+    },
+    "rear": {
+      "image": "images/lower_dense_surface_rear_s6.png",
+      "span_px": [
+        840.3361344537816,
+        722.66922610497
+      ],
+      "camera_matrix_world": [
+        [
+          -1.0,
+          -8.742277657347586e-08,
+          -8.742277657347586e-08,
+          0.0
+        ],
+        [
+          -8.742277657347586e-08,
+          4.371138118131057e-08,
+          1.0,
+          2.932964563369751
+        ],
+        [
+          -8.74227694680485e-08,
+          1.0,
+          -4.371138828673793e-08,
+          -0.15982824563980103
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "shared_geometry_sha256": "4e4f3be9f0c48cf5fa0a3891278110625e24a48f498187b15f15a1e5b4e8674f"
+    },
+    "top": {
+      "image": "images/lower_dense_surface_top_s6.png",
+      "span_px": [
+        840.3361344537816,
+        578.6006870573239
+      ],
+      "camera_matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          -0.06703551113605499
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          2.8401718139648438
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "shared_geometry_sha256": "4e4f3be9f0c48cf5fa0a3891278110625e24a48f498187b15f15a1e5b4e8674f"
+    },
+    "front_oblique": {
+      "image": "images/lower_dense_surface_front_oblique_s6.png",
+      "span_px": [
+        935.2303087153433,
+        880.5040603423936
+      ],
+      "camera_matrix_world": [
+        [
+          0.7071067094802856,
+          -0.24402673542499542,
+          0.6636648774147034,
+          1.9909944534301758
+        ],
+        [
+          0.70710688829422,
+          0.2440265566110611,
+          -0.6636647582054138,
+          -2.058029890060425
+        ],
+        [
+          8.393525519068135e-08,
+          0.9385637640953064,
+          0.3451057970523834,
+          0.875488817691803
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "shared_geometry_sha256": "4e4f3be9f0c48cf5fa0a3891278110625e24a48f498187b15f15a1e5b4e8674f"
+    }
+  },
+  "shared_geometry_sha256": "4e4f3be9f0c48cf5fa0a3891278110625e24a48f498187b15f15a1e5b4e8674f",
+  "bounds_xyz": [
+    [
+      -0.263761043548584,
+      -0.2486441731452942,
+      -0.3866564929485321
+    ],
+    [
+      0.263761043548584,
+      0.1145731508731842,
+      0.06700000166893005
+    ]
+  ],
+  "projection_checks": {
+    "front_left_height": true,
+    "front_top_width": true,
+    "left_top_depth": true
+  },
+  "source_retention_checks": {
+    "all_retained_visible_positions_exact": true,
+    "all_original_below_cut_retained": true,
+    "all_meshes_closed": false,
+    "all_meshes_outward": true
+  },
+  "appearance_accepted": false,
+  "engineering_ready": false,
+  "collision_mass_strength_validation": false
+}

@@ -1,0 +1,47 @@
+{
+  "latest_user_direction": "Art owns the new leg appearance, proportions and layout. Engineering task owns drilling, bearings, wall/material, actuator and load design. Old 2.65m height lock remains released.",
+  "retracted_interpretation": "Preserve the old foot. User explicitly corrected this interpretation.",
+  "current_references": [
+    {
+      "source": "/tmp/codex-remote-attachments/01a0f3ab-7a57-7172-b8c5-e517aa2973da/97007000-BA1C-444D-AEA1-1E729EB1784B/1-照片-1.jpg",
+      "copy": "references/current_design_reference_01.jpg",
+      "sha256": "4e035e7b0b55227e809d871adac834cb5e98183249d43a2beff95cabde15de72"
+    },
+    {
+      "source": "/tmp/codex-remote-attachments/01a0f3ab-7a57-7172-b8c5-e517aa2973da/97007000-BA1C-444D-AEA1-1E729EB1784B/2-照片-2.jpg",
+      "copy": "references/current_design_reference_02.jpg",
+      "sha256": "103ef15989f5fdb8d7635fad29ae92b00b567693e346af194ee33491fd606d47"
+    }
+  ],
+  "current_source": "../../leg_design_r2/source/leg_design_scene.json",
+  "current_milestone": "R2 appearance/layout handoff; R1 remains historical geometry and limited single-leg probes. R1 wide drives rejected by whole-body fit; compact drive set not solved.",
+  "unchanged_originals": [
+    "AA3 accepted upperbody image",
+    "Sai_Rotbots active source, SI contract and prior foot source"
+  ],
+  "scope_limits": [
+    "Single sagittal chain, not wholebody",
+    "No OEM drive or full custom actuator qualification",
+    "No ground dynamics or fatigue acceptance"
+  ],
+  "released_constraint": "Old 2.65m total height. Upperbody design is retained; overall height pending upperbody assembly.",
+  "dimensions_proposal": {
+    "link_lengths_m": [
+      0.68,
+      0.68,
+      0.5
+    ],
+    "reference_link_pitches_from_down_vertical_deg": [
+      45,
+      -70,
+      40
+    ],
+    "reference_hip_height_m": 1.2744285302277962,
+    "deep_crouch_hip_height_m": 1.0075065423754939,
+    "whole_height_not_finalized": true
+  },
+  "physical_accepted": false,
+  "engineering_owner": "启动 Gorilla V0.1 工程方案",
+  "R1_whole_fit_status": "rejected",
+  "art_handoff": "../../gorilla_leg_design_r2_handoff.zip"
+}

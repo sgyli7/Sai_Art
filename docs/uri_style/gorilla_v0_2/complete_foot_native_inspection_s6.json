@@ -1,0 +1,100 @@
+{
+  "source_glb": "generated/complete_foot_reference_s6_00001_.glb",
+  "source_glb_sha256": "c8beab7a0970ff85a9b80421d4835ced4e11a33e4eadbc9a1ac5c689ed450f8a",
+  "native_import_transform": "glTF(x,y,z)->Blender(x,-z,y)",
+  "parts": [
+    {
+      "name": "complete_foot_highpoly_0",
+      "vertices": 3274598,
+      "faces": 7161734,
+      "bounds_xyz": [
+        [
+          -0.32816219329833984,
+          -0.4929647445678711,
+          -0.41016578674316406
+        ],
+        [
+          0.35329341888427734,
+          0.28836822509765625,
+          0.38486289978027344
+        ]
+      ]
+    }
+  ],
+  "bounds_xyz": [
+    [
+      -0.32816219329833984,
+      -0.4929647445678711,
+      -0.41016578674316406
+    ],
+    [
+      0.35329341888427734,
+      0.28836822509765625,
+      0.38486289978027344
+    ]
+  ],
+  "views": [
+    {
+      "name": "input_direction",
+      "image": "images/complete_foot_reference_input_direction_s6.png",
+      "camera_eye": [
+        0.01256561279296875,
+        -3.1022982597351074,
+        0.22734855115413666
+      ],
+      "camera_target": [
+        0.01256561279296875,
+        -0.10229825973510742,
+        -0.012651443481445312
+      ]
+    },
+    {
+      "name": "turn_45",
+      "image": "images/complete_foot_reference_turn_45_s6.png",
+      "camera_eye": [
+        2.1338858604431152,
+        -2.223618507385254,
+        0.22734855115413666
+      ],
+      "camera_target": [
+        0.01256561279296875,
+        -0.10229825973510742,
+        -0.012651443481445312
+      ]
+    },
+    {
+      "name": "turn_90",
+      "image": "images/complete_foot_reference_turn_90_s6.png",
+      "camera_eye": [
+        3.0125656127929688,
+        -0.10229825973510742,
+        0.22734855115413666
+      ],
+      "camera_target": [
+        0.01256561279296875,
+        -0.10229825973510742,
+        -0.012651443481445312
+      ]
+    },
+    {
+      "name": "turn_180",
+      "image": "images/complete_foot_reference_turn_180_s6.png",
+      "camera_eye": [
+        0.01256561279296875,
+        2.8977017402648926,
+        0.22734855115413666
+      ],
+      "camera_target": [
+        0.01256561279296875,
+        -0.10229825973510742,
+        -0.012651443481445312
+      ]
+    }
+  ],
+  "geometry_edits": [],
+  "all_views_same_native_geometry": true,
+  "scope": "Raw detailed reference reconstruction inspection; no adoption or Gorilla thigh replacement",
+  "appearance_accepted": false,
+  "engineering_ready": false,
+  "elapsed_seconds": 28.189581155776978
+}

@@ -1,0 +1,88 @@
+{
+  "title": "Gorilla v0.2 \u2014 whole-component knee color correction P25",
+  "base": "/home/ethan/Projects/Sai_Art/docs/uri_style/gorilla_v0_2/images/gorilla_four_view_top_replaced_p24.png",
+  "overlay": "/home/ethan/Projects/Sai_Art/docs/uri_style/gorilla_v0_2/images/knee_component_recolor_generated_p25.png",
+  "output": "/home/ethan/Projects/Sai_Art/docs/uri_style/gorilla_v0_2/images/gorilla_four_view_knee_modules_p25.png",
+  "regions": [
+    [
+      158,
+      342,
+      294,
+      446
+    ],
+    [
+      326,
+      342,
+      462,
+      446
+    ],
+    [
+      787,
+      351,
+      904,
+      458
+    ],
+    [
+      911,
+      379,
+      942,
+      410
+    ],
+    [
+      162,
+      945,
+      291,
+      1068
+    ],
+    [
+      339,
+      945,
+      467,
+      1068
+    ],
+    [
+      806,
+      972,
+      901,
+      1023
+    ],
+    [
+      980,
+      972,
+      1076,
+      1023
+    ]
+  ],
+  "preserve_checks": {
+    "FRONT_upper_body": [
+      0,
+      0,
+      626,
+      342
+    ],
+    "LEFT_torso_shoulders": [
+      628,
+      0,
+      1254,
+      300
+    ],
+    "REAR_upper_body": [
+      0,
+      633,
+      626,
+      824
+    ],
+    "TOP_upper_body": [
+      632,
+      633,
+      1250,
+      968
+    ],
+    "all_labels_bottom": [
+      0,
+      1200,
+      1254,
+      1254
+    ]
+  }
+}

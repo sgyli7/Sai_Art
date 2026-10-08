@@ -1,0 +1,207 @@
+{
+  "revision": "leg_design_r2",
+  "owned_deliverable": "Art appearance/layout handoff",
+  "engineering_owner": "\u542f\u52a8 Gorilla V0.1 \u5de5\u7a0b\u65b9\u6848",
+  "source_sha256": "60d2a518c84fdb56ba1079be36add2543d9fb351f119aefbd1c83fe702e9952c",
+  "files": [
+    {
+      "path": "design_brief.md",
+      "sha256": "f132a380021010ff25bffc8de54e6f651baf70265e831af086ca73f371b62c2e",
+      "bytes": 3450
+    },
+    {
+      "path": "images/deep_crouch_left.png",
+      "sha256": "3ea7c25f8267708171710867ccbf7d7693ec40bed4d4c6582ccb99f1b7f95d5f",
+      "bytes": 1388968
+    },
+    {
+      "path": "images/four_view.png",
+      "sha256": "ed9415f1a3e18e353e7377cb562b5e6b167fb11f78fb0fd7bb6ab068b6892213",
+      "bytes": 2692304
+    },
+    {
+      "path": "images/front.png",
+      "sha256": "436c86577830972e73b9b12cfa7e2f90c033429cf5168aee6d705ad3d4c17e5f",
+      "bytes": 1736883
+    },
+    {
+      "path": "images/left.png",
+      "sha256": "1d8b936e380e99846199b02bb2c94c0782e3331674ad9ae864eccaa95b4d4feb",
+      "bytes": 1406725
+    },
+    {
+      "path": "images/leg_deep_crouch_left.png",
+      "sha256": "d1a46435d63daa08c6893bbb4519169009f03a98cb0777004f88cec63fbfea0c",
+      "bytes": 1282811
+    },
+    {
+      "path": "images/leg_left.png",
+      "sha256": "780746a372f06f6beed86596d503faa81ee071d482b4f28f5fb7f0761620bd9e",
+      "bytes": 1293449
+    },
+    {
+      "path": "images/leg_review.png",
+      "sha256": "cc1c823aa558c7008c3ca808c1529e366279bf35b8e51cf17ea8aa09d1d45732",
+      "bytes": 1429432
+    },
+    {
+      "path": "images/leg_three_quarter.png",
+      "sha256": "0300a80b18f15af35f9dd8653eabbf0208b7fbddaa913094c1e4716dba9f7a3c",
+      "bytes": 694458
+    },
+    {
+      "path": "images/rear.png",
+      "sha256": "b65f7af33ffa05cfebc72a78f9f8817adfc2702e656d139da098c4e27b5282cf",
+      "bytes": 1724406
+    },
+    {
+      "path": "images/three_quarter.png",
+      "sha256": "90d4fe16a65268dfde7a50bdf1fdaa152aa592fca50831aebe4c5e61555281df",
+      "bytes": 1386569
+    },
+    {
+      "path": "images/top.png",
+      "sha256": "76bfd7d485d61bf7bd6d494ec7adf9a099717149a064c4a9544e328d3f199445",
+      "bytes": 630067
+    },
+    {
+      "path": "images/uri_leg_concept.png",
+      "sha256": "ec317d6f4aeb9850899067bd9e74b1d8c3cacd59af74fe535ab8e48f4155a2ca",
+      "bytes": 1320329
+    },
+    {
+      "path": "readme.md",
+      "sha256": "95ce8e5bec7ecdbbacd7b6c51c0590ecba111ea3f7b45d096212c8b14d084023",
+      "bytes": 1546
+    },
+    {
+      "path": "references/approved_upper_aa3.png",
+      "sha256": "5c0469708d7c878ac6253e6ac3e6276198bf3694235bbed3da66c8c743b5aba4",
+      "bytes": 2534098
+    },
+    {
+      "path": "references/current_design_reference_01.jpg",
+      "sha256": "4e035e7b0b55227e809d871adac834cb5e98183249d43a2beff95cabde15de72",
+      "bytes": 170920
+    },
+    {
+      "path": "references/current_design_reference_02.jpg",
+      "sha256": "103ef15989f5fdb8d7635fad29ae92b00b567693e346af194ee33491fd606d47",
+      "bytes": 149413
+    },
+    {
+      "path": "source/articulation_check.json",
+      "sha256": "c9b0d05eda0ba624a5e20fd3c5730cdd721879724053adbeb72a758c7990bba5",
+      "bytes": 49864
+    },
+    {
+      "path": "source/build_leg_design.py",
+      "sha256": "677dacf5af2a7a90b78efd5fcb92c409c96de73ba74748e5a9ce55d817f55471",
+      "bytes": 13662
+    },
+    {
+      "path": "source/check_articulation.py",
+      "sha256": "b5d6c8a4b2e5c4173fa3a97d4b9637f3912c99649dc85cca64ff7b40cd7cf037",
+      "bytes": 4340
+    },
+    {
+      "path": "source/exchange_check.json",
+      "sha256": "06da0cb65842ffca666b10ab494bf6f68d55fdb9133c8f2e912e3ae12c0c8966",
+      "bytes": 396
+    },
+    {
+      "path": "source/fix_top_camera.py",
+      "sha256": "0d703078585094b7f4bca2a402551a393704eb9f128d70caccb0ca21e89864d9",
+      "bytes": 1451
+    },
+    {
+      "path": "source/generation_record.json",
+      "sha256": "2bf4c9e049bac1477a847884582d29875b7477b47b15974c6a006fa93a4d4a1d",
+      "bytes": 2141
+    },
+    {
+      "path": "source/joint_layout.json",
+      "sha256": "73cfb7546a4965bc7cedeb59b1c90545106f56a90e545ea693a8feb5f3329d57",
+      "bytes": 1458
+    },
+    {
+      "path": "source/leg_design_context.blend",
+      "sha256": "ed646c0767198774588a3434d888796538fede0f9f14ce12f3b0e9834bd9e1fe",
+      "bytes": 13397884
+    },
+    {
+      "path": "source/leg_design_deep_crouch.blend",
+      "sha256": "de1e4fed246c0eac287f89bf5349f1fa84d3b602efb3840956ac25515bddc985",
+      "bytes": 13397884
+    },
+    {
+      "path": "source/leg_design_legs.glb",
+      "sha256": "9499698b72156617e411aa1e54e061cf6e6d6716ff7bb70470ff7eb28517aa1e",
+      "bytes": 743152
+    },
+    {
+      "path": "source/leg_design_scene.json",
+      "sha256": "60d2a518c84fdb56ba1079be36add2543d9fb351f119aefbd1c83fe702e9952c",
+      "bytes": 25088186
+    },
+    {
+      "path": "source/prepare_handoff.py",
+      "sha256": "6158e1221bd855a6bdb0712abb653fe0a80420473e60102387da5f0e2be3de64",
+      "bytes": 10032
+    },
+    {
+      "path": "source/render_leg_design.py",
+      "sha256": "bc9388eb8d9b9d66a47a8ccd7c0cc7c94a16858d798d58c00e7dfe69fa59cee0",
+      "bytes": 6292
+    },
+    {
+      "path": "source/render_manifest.json",
+      "sha256": "1d020576ec578e6e91ce39afa8a077f6c22dc89075b3adaff7baa21df78cbc50",
+      "bytes": 3881
+    },
+    {
+      "path": "source/uri_art_prompt.txt",
+      "sha256": "a91475e01705a87bb21a0c776a3c636bbd22ad232e51f2abed331247266a18a1",
+      "bytes": 8341
+    }
+  ],
+  "source_records": [
+    {
+      "source": "/home/ethan/Projects/Sai_Art/docs/uri_style/gorilla_v0_1/leg_redesign_r1/native/candidate_scene.json",
+      "sha256": "2472ab88ed6e735407e05af6f7d83f662707a61a7fce03d4b4705ae43e1bce20",
+      "use": "Prior finite kinematic guide, not a manufacturing requirement"
+    },
+    {
+      "source": "/home/ethan/Projects/Sai_Art/docs/uri_style/gorilla_v0_1/leg_redesign_r1/native/grounded_crouch_report.json",
+      "sha256": "6f830a080e13294a389ab8dc6dea0aa4484be369285445460272e9fc26a75286",
+      "use": "Prescribed unloaded crouch FK"
+    },
+    {
+      "source": "/home/ethan/Projects/Sai_Art/docs/uri_style/gorilla_v0_1/leg_redesign_r1/native/upper_fit_interface_scene.json",
+      "sha256": "4484341ecbc9fef63241ac875675c100d7ae7e95b8aef43633bdb9b182786ef6",
+      "use": "Unaccepted C15 upperbody fit context, retained without rescaling"
+    }
+  ],
+  "checks": {
+    "sampled_pose_count": 121,
+    "appearance_material_intersections": 0,
+    "appearance_floor_events": 0,
+    "source_bound_native_views": 9,
+    "exchange_parts": 66,
+    "max_exchange_vertex_distance_m": 6.674040961811924e-08
+  },
+  "ready_for_engineering_review": true,
+  "appearance_accepted": false,
+  "physical_accepted": false,
+  "not_frozen": [
+    "drilling",
+    "bearings",
+    "wall thickness/material",
+    "actuator architecture/SKU",
+    "hip attachment",
+    "mass/inertia",
+    "strength/fatigue",
+    "rated payload",
+    "foot articulation"
+  ]
+}

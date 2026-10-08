@@ -1,0 +1,31 @@
+{
+  "revision": "p31",
+  "prompt": "/home/ethan/Projects/Sai_Art/docs/uri_style/gorilla_v0_2/prompts/top_knee_visibility_p31.txt",
+  "references": [
+    {
+      "path": "/home/ethan/Projects/Sai_Art/docs/uri_style/gorilla_v0_2/images/uri_knee_normal_perspective_generated_p30.png",
+      "role": "EDIT_TARGET",
+      "sha256": "0076f5caa96e70a7d082ab3b862edcdb2516379181aa5ab687f77824d22c60a3"
+    },
+    {
+      "path": "/home/ethan/Projects/Sai_Art/.agents/skills/uri-style/assets/style_01_race_car_hangar.png",
+      "role": "STYLE",
+      "sha256": "1aed979f442030b644db5b86c79ad69d44f14092f865eb28f157663476eec8c9"
+    },
+    {
+      "path": "/home/ethan/Projects/Sai_Art/.agents/skills/uri-style/assets/style_03_tracked_mobile_station.png",
+      "role": "STYLE",
+      "sha256": "da14249a726ca5009b222a0dd7dc2c7a1fdbfe49ef31b8080936e855e8eb1f6f"
+    },
+    {
+      "path": "/home/ethan/Projects/Sai_Art/.agents/skills/uri-style/assets/style_05_white_blue_racer.png",
+      "role": "STYLE",
+      "sha256": "fc5f342e892842887e738798b5870b9245fb3c7376a028c5f503301ac687f1bc"
+    }
+  ],
+  "scope": "Correct only the two TOP knee-cover visible surfaces. Use LEFT face orientation to avoid showing the downward front face in TOP.",
+  "model_modified": false,
+  "status": "not_generated_user_closed_design_phase",
+  "user_accepted": false,
+  "reason": "Latest instruction ends design iteration and requests five-theme update, 3D packaging and engineering notification. Freeze the latest displayed P30 instead of drawing another geometry revision."
+}

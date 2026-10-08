@@ -1,0 +1,93 @@
+{
+  "spec": "/home/ethan/Projects/Sai_Art/docs/uri_style/gorilla_v0_2/knee_camera_composition_p29.json",
+  "base": "/home/ethan/Projects/Sai_Art/docs/uri_style/gorilla_v0_2/images/gorilla_four_view_uri_knee_guards_p27.png",
+  "base_sha256": "96facbbd42b50781fb72e4ed77890c7e103a21e477d40627a368db847c24f523",
+  "overlay": "/home/ethan/Projects/Sai_Art/docs/uri_style/gorilla_v0_2/images/camera_frame_and_knee_marker_generated_p29.png",
+  "overlay_sha256": "f7241c5352800e1dbc74f9db28a4b6e8f384423a5d78c564d5e90d2815ddd410",
+  "output": "/home/ethan/Projects/Sai_Art/docs/uri_style/gorilla_v0_2/images/gorilla_four_view_knee_camera_p29.png",
+  "output_sha256": "e6b89316785d1d1a4896ad113ca4ca7240356f6711c68becc7c78a41bcc6ade9",
+  "svg": "/home/ethan/Projects/Sai_Art/docs/uri_style/gorilla_v0_2/images/gorilla_four_view_knee_camera_p29.svg",
+  "svg_sha256": "2a39b2ab810bea5167221b9e7fa4017ec323a7e6a2ed7f3de7db42941712b21e",
+  "authorized_regions": [
+    [
+      160,
+      350,
+      265,
+      446
+    ],
+    [
+      365,
+      350,
+      464,
+      446
+    ],
+    [
+      805,
+      350,
+      890,
+      454
+    ],
+    [
+      166,
+      957,
+      282,
+      1057
+    ],
+    [
+      348,
+      957,
+      464,
+      1057
+    ],
+    [
+      810,
+      960,
+      900,
+      1028
+    ],
+    [
+      984,
+      960,
+      1074,
+      1028
+    ],
+    [
+      298,
+      112,
+      334,
+      184
+    ],
+    [
+      821,
+      114,
+      844,
+      178
+    ]
+  ],
+  "unchanged_region_checks": {
+    "FRONT_upper_left_intake_and_shoulder": true,
+    "FRONT_upper_right_intake_and_shoulder": true,
+    "FRONT_upper_center_above_camera": true,
+    "FRONT_upper_center_below_camera": true,
+    "FRONT_left_hand": true,
+    "FRONT_right_hand": true,
+    "LEFT_front_torso_above_sensor": true,
+    "LEFT_front_torso_below_sensor": true,
+    "REAR_torso_pad_and_exhausts": true,
+    "TOP_chest_and_shoulders": true,
+    "FRONT_feet": true,
+    "LEFT_feet": true,
+    "REAR_feet": true,
+    "all_labels_bottom": true,
+    "all_labels_top": true,
+    "LEFT_upper_body": true,
+    "LEFT_hand": true
+  },
+  "verification_baseline": "/home/ethan/Projects/Sai_Art/docs/uri_style/gorilla_v0_2/images/gorilla_four_view_knee_camera_p29_original_native_baseline.png",
+  "source_embedded_bytes_unchanged": true,
+  "native_decoder_vs_pillow_original_max_channel_difference": 0,
+  "changed_pixels_outside_authorized_regions": 0,
+  "image_editing_method": "Imagegen raster edit; native SVG layout embeds original bytes without raster painting.",
+  "whole_v0_2_qualified": false,
+  "user_accepted": false
+}

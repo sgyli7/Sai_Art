@@ -1,0 +1,537 @@
+{
+  "source_sha256": "82a167fa15535498587227d89ae31b01d3c32cdb3d6a4f8fbba1f427ef80ca7c",
+  "checker_sha256": "5ac7c23bb284006dbd27d9b925607f5097ebe8c9074e09b951ed27fa77acd6ca",
+  "geometry": [
+    {
+      "name": "frame_thigh",
+      "status": "Error.NoError",
+      "volume_m3": 0.007698645601878638,
+      "closed_connected_components": 1
+    },
+    {
+      "name": "frame_middle",
+      "status": "Error.NoError",
+      "volume_m3": 0.0073767433909096205,
+      "closed_connected_components": 1
+    },
+    {
+      "name": "shaft_knee",
+      "status": "Error.NoError",
+      "volume_m3": 0.0013028676042980774,
+      "closed_connected_components": 1
+    },
+    {
+      "name": "frame_distal",
+      "status": "Error.NoError",
+      "volume_m3": 0.00541849264744609,
+      "closed_connected_components": 1
+    },
+    {
+      "name": "shaft_fold",
+      "status": "Error.NoError",
+      "volume_m3": 0.0013028676042980785,
+      "closed_connected_components": 1
+    },
+    {
+      "name": "toe_contact_pad",
+      "status": "Error.NoError",
+      "volume_m3": 0.002525900036728382,
+      "closed_connected_components": 1
+    },
+    {
+      "name": "heel_contact_pad",
+      "status": "Error.NoError",
+      "volume_m3": 0.001341599990391731,
+      "closed_connected_components": 1
+    },
+    {
+      "name": "pressure_carrier",
+      "status": "Error.NoError",
+      "volume_m3": 0.006590806413938788,
+      "closed_connected_components": 3
+    },
+    {
+      "name": "shaft_ankle",
+      "status": "Error.NoError",
+      "volume_m3": 0.0013028676042980778,
+      "closed_connected_components": 1
+    },
+    {
+      "name": "knee_0_fixed_fork",
+      "status": "Error.NoError",
+      "volume_m3": 0.004477086133889419,
+      "closed_connected_components": 2
+    },
+    {
+      "name": "knee_0_moving_fork",
+      "status": "Error.NoError",
+      "volume_m3": 0.0030519982136848612,
+      "closed_connected_components": 2
+    },
+    {
+      "name": "knee_0_cylinder",
+      "status": "Error.NoError",
+      "volume_m3": 0.0018979797666494218,
+      "closed_connected_components": 1
+    },
+    {
+      "name": "knee_0_piston_rod",
+      "status": "Error.NoError",
+      "volume_m3": 0.0013539326420481553,
+      "closed_connected_components": 1
+    },
+    {
+      "name": "knee_1_fixed_fork",
+      "status": "Error.NoError",
+      "volume_m3": 0.004477086133889417,
+      "closed_connected_components": 2
+    },
+    {
+      "name": "knee_1_moving_fork",
+      "status": "Error.NoError",
+      "volume_m3": 0.0030519982136848617,
+      "closed_connected_components": 2
+    },
+    {
+      "name": "knee_1_cylinder",
+      "status": "Error.NoError",
+      "volume_m3": 0.0018979797666494186,
+      "closed_connected_components": 1
+    },
+    {
+      "name": "knee_1_piston_rod",
+      "status": "Error.NoError",
+      "volume_m3": 0.0013539326420481548,
+      "closed_connected_components": 1
+    },
+    {
+      "name": "fold_0_fixed_fork",
+      "status": "Error.NoError",
+      "volume_m3": 0.005527567334833452,
+      "closed_connected_components": 2
+    },
+    {
+      "name": "fold_0_moving_fork",
+      "status": "Error.NoError",
+      "volume_m3": 0.0039353167731863235,
+      "closed_connected_components": 2
+    },
+    {
+      "name": "fold_0_cylinder",
+      "status": "Error.NoError",
+      "volume_m3": 0.0020136048789998135,
+      "closed_connected_components": 1
+    },
+    {
+      "name": "fold_0_piston_rod",
+      "status": "Error.NoError",
+      "volume_m3": 0.0021147196348504783,
+      "closed_connected_components": 1
+    },
+    {
+      "name": "fold_1_fixed_fork",
+      "status": "Error.NoError",
+      "volume_m3": 0.005527567334833454,
+      "closed_connected_components": 2
+    },
+    {
+      "name": "fold_1_moving_fork",
+      "status": "Error.NoError",
+      "volume_m3": 0.0039353167731863235,
+      "closed_connected_components": 2
+    },
+    {
+      "name": "fold_1_cylinder",
+      "status": "Error.NoError",
+      "volume_m3": 0.002013604878999812,
+      "closed_connected_components": 1
+    },
+    {
+      "name": "fold_1_piston_rod",
+      "status": "Error.NoError",
+      "volume_m3": 0.00211471963485048,
+      "closed_connected_components": 1
+    },
+    {
+      "name": "ankle_0_fixed_fork",
+      "status": "Error.NoError",
+      "volume_m3": 0.00229192260921247,
+      "closed_connected_components": 2
+    },
+    {
+      "name": "ankle_0_moving_fork",
+      "status": "Error.NoError",
+      "volume_m3": 0.003231221013707899,
+      "closed_connected_components": 2
+    },
+    {
+      "name": "ankle_0_cylinder",
+      "status": "Error.NoError",
+      "volume_m3": 0.0012544409753835234,
+      "closed_connected_components": 1
+    },
+    {
+      "name": "ankle_0_piston_rod",
+      "status": "Error.NoError",
+      "volume_m3": 0.0007679345419082248,
+      "closed_connected_components": 1
+    },
+    {
+      "name": "ankle_1_fixed_fork",
+      "status": "Error.NoError",
+      "volume_m3": 0.0022919226092124705,
+      "closed_connected_components": 2
+    },
+    {
+      "name": "ankle_1_moving_fork",
+      "status": "Error.NoError",
+      "volume_m3": 0.0032312210137078992,
+      "closed_connected_components": 2
+    },
+    {
+      "name": "ankle_1_cylinder",
+      "status": "Error.NoError",
+      "volume_m3": 0.001254440975383518,
+      "closed_connected_components": 1
+    },
+    {
+      "name": "ankle_1_piston_rod",
+      "status": "Error.NoError",
+      "volume_m3": 0.0007679345419082246,
+      "closed_connected_components": 1
+    }
+  ],
+  "net_material_mass_kg_by_body": {
+    "thigh": 100.96820818082708,
+    "middle": 137.72178716887385,
+    "distal": 111.20892148956158,
+    "shoe": 95.6447979974373,
+    "knee_0_barrel": 14.89914116819796,
+    "knee_0_rod": 10.62837124007802,
+    "knee_1_barrel": 14.899141168197936,
+    "knee_1_rod": 10.628371240078016,
+    "fold_0_barrel": 15.806798300148536,
+    "fold_0_rod": 16.600549133576255,
+    "fold_1_barrel": 15.806798300148525,
+    "fold_1_rod": 16.60054913357627,
+    "ankle_0_barrel": 9.84736165676066,
+    "ankle_0_rod": 6.028286153979565,
+    "ankle_1_barrel": 9.847361656760617,
+    "ankle_1_rod": 6.028286153979563
+  },
+  "net_material_details": {
+    "thigh": {
+      "steel_net_volume_m3": 0.012862192124946124,
+      "pad_net_volume_m3": 0.0,
+      "steel_positive_material_components": 1,
+      "enclosed_negative_cavity_shells": 3
+    },
+    "middle": {
+      "steel_net_volume_m3": 0.01754417670941068,
+      "pad_net_volume_m3": 0.0,
+      "steel_positive_material_components": 1,
+      "enclosed_negative_cavity_shells": 7
+    },
+    "distal": {
+      "steel_net_volume_m3": 0.014166741591026951,
+      "pad_net_volume_m3": 0.0,
+      "steel_positive_material_components": 1,
+      "enclosed_negative_cavity_shells": 8
+    },
+    "shoe": {
+      "steel_net_volume_m3": 0.011642108021350978,
+      "pad_net_volume_m3": 0.003867500027120113,
+      "steel_positive_material_components": 1,
+      "enclosed_negative_cavity_shells": 5
+    },
+    "knee_0_barrel": {
+      "steel_net_volume_m3": 0.0018979797666494218,
+      "pad_net_volume_m3": 0.0,
+      "steel_positive_material_components": 1,
+      "enclosed_negative_cavity_shells": 0
+    },
+    "knee_0_rod": {
+      "steel_net_volume_m3": 0.0013539326420481553,
+      "pad_net_volume_m3": 0.0,
+      "steel_positive_material_components": 1,
+      "enclosed_negative_cavity_shells": 0
+    },
+    "knee_1_barrel": {
+      "steel_net_volume_m3": 0.0018979797666494186,
+      "pad_net_volume_m3": 0.0,
+      "steel_positive_material_components": 1,
+      "enclosed_negative_cavity_shells": 0
+    },
+    "knee_1_rod": {
+      "steel_net_volume_m3": 0.0013539326420481548,
+      "pad_net_volume_m3": 0.0,
+      "steel_positive_material_components": 1,
+      "enclosed_negative_cavity_shells": 0
+    },
+    "fold_0_barrel": {
+      "steel_net_volume_m3": 0.0020136048789998135,
+      "pad_net_volume_m3": 0.0,
+      "steel_positive_material_components": 1,
+      "enclosed_negative_cavity_shells": 0
+    },
+    "fold_0_rod": {
+      "steel_net_volume_m3": 0.0021147196348504783,
+      "pad_net_volume_m3": 0.0,
+      "steel_positive_material_components": 1,
+      "enclosed_negative_cavity_shells": 0
+    },
+    "fold_1_barrel": {
+      "steel_net_volume_m3": 0.002013604878999812,
+      "pad_net_volume_m3": 0.0,
+      "steel_positive_material_components": 1,
+      "enclosed_negative_cavity_shells": 0
+    },
+    "fold_1_rod": {
+      "steel_net_volume_m3": 0.00211471963485048,
+      "pad_net_volume_m3": 0.0,
+      "steel_positive_material_components": 1,
+      "enclosed_negative_cavity_shells": 0
+    },
+    "ankle_0_barrel": {
+      "steel_net_volume_m3": 0.0012544409753835234,
+      "pad_net_volume_m3": 0.0,
+      "steel_positive_material_components": 1,
+      "enclosed_negative_cavity_shells": 0
+    },
+    "ankle_0_rod": {
+      "steel_net_volume_m3": 0.0007679345419082248,
+      "pad_net_volume_m3": 0.0,
+      "steel_positive_material_components": 1,
+      "enclosed_negative_cavity_shells": 0
+    },
+    "ankle_1_barrel": {
+      "steel_net_volume_m3": 0.001254440975383518,
+      "pad_net_volume_m3": 0.0,
+      "steel_positive_material_components": 1,
+      "enclosed_negative_cavity_shells": 0
+    },
+    "ankle_1_rod": {
+      "steel_net_volume_m3": 0.0007679345419082246,
+      "pad_net_volume_m3": 0.0,
+      "steel_positive_material_components": 1,
+      "enclosed_negative_cavity_shells": 0
+    }
+  },
+  "scope": "Finite frame and custom drive/mount candidate. Source identifies missing/unqualified parts. NO pressure-part qualification, finite-element strength, wholebody contact dynamics or hardware acceptance.",
+  "fk_probe_count": 121,
+  "q_values_are_not_safe_joint_limits": true,
+  "collision_method": "Manifold64 finite material CSG; no masks, all different-owner pairs. Intersection volume threshold1e-10m3. Finite pose samples, NOT continuous certification.",
+  "collisions": [],
+  "neutral_short_gaps_m": {
+    "frame_thigh / shaft_knee": 0.00039951818248194635,
+    "frame_middle / shaft_fold": 0.000399518182481935,
+    "frame_distal / shaft_ankle": 0.0003995181824820306,
+    "knee_0_fixed_fork / knee_0_cylinder": 0.0003995181824819399,
+    "knee_0_moving_fork / knee_0_piston_rod": 0.0003995181824819229,
+    "knee_0_cylinder / knee_0_piston_rod": 0.00049892946161914,
+    "knee_1_fixed_fork / knee_1_cylinder": 0.00039951818248195096,
+    "knee_1_moving_fork / knee_1_piston_rod": 0.0003995181824819416,
+    "knee_1_cylinder / knee_1_piston_rod": 0.000498929461619132,
+    "fold_0_fixed_fork / fold_0_cylinder": 0.00039951818248200246,
+    "fold_0_moving_fork / fold_0_piston_rod": 0.0003995181824820185,
+    "fold_0_cylinder / fold_0_piston_rod": 0.0004989294616191672,
+    "fold_1_fixed_fork / fold_1_cylinder": 0.00039951818248201444,
+    "fold_1_moving_fork / fold_1_piston_rod": 0.00039951818248202793,
+    "fold_1_cylinder / fold_1_piston_rod": 0.0004989294616191796,
+    "ankle_0_fixed_fork / ankle_0_cylinder": 0.00039951818248202197,
+    "ankle_0_moving_fork / ankle_0_piston_rod": 0.0003995181824820219,
+    "ankle_0_cylinder / ankle_0_piston_rod": 0.0004989294616192255,
+    "ankle_1_fixed_fork / ankle_1_cylinder": 0.0003995181824820328,
+    "ankle_1_moving_fork / ankle_1_piston_rod": 0.0003995181824820219,
+    "ankle_1_cylinder / ankle_1_piston_rod": 0.0004989294616191817
+  },
+  "floor_intrusions": [],
+  "stroke_violations": [],
+  "pose_scope": "prescribed grounded crouch path; root relocation is geometric FK, not dynamic support",
+  "same_body_steel_connected": {
+    "thigh": true,
+    "middle": true,
+    "distal": true,
+    "shoe": true,
+    "knee_0_barrel": true,
+    "knee_0_rod": true,
+    "knee_1_barrel": true,
+    "knee_1_rod": true,
+    "fold_0_barrel": true,
+    "fold_0_rod": true,
+    "fold_1_barrel": true,
+    "fold_1_rod": true,
+    "ankle_0_barrel": true,
+    "ankle_0_rod": true,
+    "ankle_1_barrel": true,
+    "ankle_1_rod": true
+  },
+  "contact_cases": [
+    {
+      "cop_forward_m": -0.19,
+      "cop_left_m": 0.5,
+      "force_N": 100062.0,
+      "unilateral_reactions_feasible": true,
+      "equilibrium_max_residual_N_Nm": 0.0,
+      "vertex_reactions_N": [
+        51732.734675509615,
+        16563.551154746165,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        31765.71416974422,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "cop_forward_m": -0.045,
+      "cop_left_m": 0.5,
+      "force_N": 100062.0,
+      "unilateral_reactions_feasible": true,
+      "equilibrium_max_residual_N_Nm": 9.094947017729282e-13,
+      "vertex_reactions_N": [
+        0.0,
+        0.0,
+        42450.544848109086,
+        0.0,
+        0.0,
+        0.0,
+        9634.51376032162,
+        47976.94139156929,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "cop_forward_m": 0.2,
+      "cop_left_m": 0.5,
+      "force_N": 100062.0,
+      "unilateral_reactions_feasible": true,
+      "equilibrium_max_residual_N_Nm": 0.0,
+      "vertex_reactions_N": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        31567.178656101685,
+        0.0,
+        0.0,
+        0.0,
+        13401.160247992699,
+        55093.66109590561,
+        0.0
+      ]
+    },
+    {
+      "cop_forward_m": 0.31,
+      "cop_left_m": 0.5,
+      "force_N": 100062.0,
+      "unilateral_reactions_feasible": true,
+      "equilibrium_max_residual_N_Nm": 0.0,
+      "vertex_reactions_N": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        4268.51797160618,
+        0.0,
+        0.0,
+        0.0,
+        34694.11558189918,
+        61099.366446494634,
+        0.0
+      ]
+    }
+  ],
+  "contact_vertices_xy_m": [
+    [
+      -0.289999999,
+      0.359999999
+    ],
+    [
+      -0.289999999,
+      0.640000001
+    ],
+    [
+      -0.140000001,
+      0.359999999
+    ],
+    [
+      -0.140000001,
+      0.640000001
+    ],
+    [
+      -0.100000001,
+      0.399999999
+    ],
+    [
+      -0.100000001,
+      0.600000001
+    ],
+    [
+      0.024999999,
+      0.344999999
+    ],
+    [
+      0.024999999,
+      0.655000001
+    ],
+    [
+      0.289999999,
+      0.344999999
+    ],
+    [
+      0.289999999,
+      0.655000001
+    ],
+    [
+      0.350000001,
+      0.405000001
+    ],
+    [
+      0.350000001,
+      0.594999999
+    ]
+  ],
+  "neutral_required_moments": [
+    {
+      "joint": "knee",
+      "largest_neutral_vertical_force_moment_Nm": 56594.78475410686,
+      "actual_drive_selected": false,
+      "capacity_pass": null
+    },
+    {
+      "joint": "fold",
+      "largest_neutral_vertical_force_moment_Nm": 57374.93090022724,
+      "actual_drive_selected": false,
+      "capacity_pass": null
+    },
+    {
+      "joint": "ankle",
+      "largest_neutral_vertical_force_moment_Nm": 25215.624,
+      "actual_drive_selected": false,
+      "capacity_pass": null
+    }
+  ],
+  "pressure_case_assumption": {
+    "provisional_upperbody_self_mass_allowance_kg": 2200,
+    "provisional_per_leg_mass_allowance_kg": 800,
+    "external_downforce_mass_equivalent_kg": 3000,
+    "force_factor": 1.5,
+    "not_actual_mass_or_payload_qualification": true
+  },
+  "dynamic_steps": 0,
+  "physical_accepted": false,
+  "elapsed_seconds": 2.05265212059021,
+  "neutral_ground_min_z_m": 0.0,
+  "source_file": "assembled_scene.json"
+}

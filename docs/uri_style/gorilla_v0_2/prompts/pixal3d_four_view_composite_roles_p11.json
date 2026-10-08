@@ -1,0 +1,49 @@
+{
+  "stage": "final_four_view_compositing",
+  "status": "generated_candidate_pending_user_review",
+  "tool": "built_in_image_gen",
+  "prompt": "/home/ethan/Projects/Sai_Art/docs/uri_style/gorilla_v0_2/prompts/pixal3d_four_view_composite_p11.txt",
+  "references": [
+    {
+      "index": 1,
+      "path": "/home/ethan/Projects/Sai_Art/docs/uri_style/gorilla_v0_2/images/pixal_whole_robot_four_view_p8.png",
+      "role": "EDIT_TARGET_PRESERVE_THREE_ELEVATIONS_REPLACE_TOP",
+      "sha256": "3f419ee030efd66efcd9f5508b10475be9b25f06e866c2931ec94cc64a19f488"
+    },
+    {
+      "index": 2,
+      "path": "/home/ethan/Projects/Sai_Art/docs/uri_style/gorilla_v0_2/images/pixal_top_closed_upper_p10.png",
+      "role": "EXACT_TOP_REPLACEMENT",
+      "sha256": "131652c47adaf6c55ba367a32bd711ae7814768f9ce7c7a16acc4d000a59052e"
+    },
+    {
+      "index": 3,
+      "path": "/home/ethan/Projects/Sai_Art/.agents/skills/uri-style/assets/style_01_race_car_hangar.png",
+      "role": "STYLE_ONLY",
+      "sha256": "1aed979f442030b644db5b86c79ad69d44f14092f865eb28f157663476eec8c9"
+    },
+    {
+      "index": 4,
+      "path": "/home/ethan/Projects/Sai_Art/.agents/skills/uri-style/assets/style_03_tracked_mobile_station.png",
+      "role": "STYLE_ONLY",
+      "sha256": "da14249a726ca5009b222a0dd7dc2c7a1fdbfe49ef31b8080936e855e8eb1f6f"
+    },
+    {
+      "index": 5,
+      "path": "/home/ethan/Projects/Sai_Art/.agents/skills/uri-style/assets/style_05_white_blue_racer.png",
+      "role": "STYLE_ONLY",
+      "sha256": "fc5f342e892842887e738798b5870b9245fb3c7376a028c5f503301ac687f1bc"
+    }
+  ],
+  "output": "/home/ethan/Projects/Sai_Art/docs/uri_style/gorilla_v0_2/images/gorilla_four_view_pixal_lower_candidate_p11.png",
+  "output_sha256": "d64589b95574ac2e824748b533ec1be5c40f555e37f2b48e21c8487e20ea8217",
+  "built_in_output": "/home/ethan/.codex/generated_images/01a0f3ab-7a57-7172-b8c5-e517aa2973da/exec-2cea03fc-88f2-4439-ad01-e76cbfef70df.png",
+  "visual_review": {
+    "new_lower_body": "Model-derived curved thigh housings and continuous shaped shanks retained in three elevations.",
+    "complete_feet": "Complete connected forefoot and heel bodies shown; defective half-foot replaced.",
+    "palette": "Original v0.1 vivid blue/orange/warm-white hierarchy retained; thigh cap paint corrected to blue.",
+    "upper_identity": "Original wedge body, shoulder and arm identity, front radiators and rear hatch retained.",
+    "top": "Closed wedge roof, two feet, no extra rear feet or roof artifacts; radiators seen as narrow rims.",
+    "claim_limit": "Illustrated design candidate, not exports from an updated common CAD mesh and not structural load qualification."
+  }
+}

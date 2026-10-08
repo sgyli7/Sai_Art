@@ -1,0 +1,46 @@
+{
+  "revision": "p27",
+  "skill": "/home/ethan/Projects/Sai_Art/.agents/skills/uri-style/SKILL.md",
+  "prompt": "/home/ethan/Projects/Sai_Art/docs/uri_style/gorilla_v0_2/prompts/uri_knee_guard_redesign_p27.txt",
+  "references": [
+    {
+      "path": "/home/ethan/Projects/Sai_Art/docs/uri_style/gorilla_v0_2/images/gorilla_four_view_black_knees_exhausts_p26.png",
+      "role": "EDIT_TARGET",
+      "sha256": "3b4a6326918f6870f9e19f43c51a6322a31cb5e34ef98e574e7ec36174c96095"
+    },
+    {
+      "path": "/home/ethan/Projects/Sai_Art/.agents/skills/uri-style/assets/style_01_race_car_hangar.png",
+      "role": "STYLE",
+      "sha256": "1aed979f442030b644db5b86c79ad69d44f14092f865eb28f157663476eec8c9"
+    },
+    {
+      "path": "/home/ethan/Projects/Sai_Art/.agents/skills/uri-style/assets/style_03_tracked_mobile_station.png",
+      "role": "STYLE",
+      "sha256": "da14249a726ca5009b222a0dd7dc2c7a1fdbfe49ef31b8080936e855e8eb1f6f"
+    },
+    {
+      "path": "/home/ethan/Projects/Sai_Art/.agents/skills/uri-style/assets/style_05_white_blue_racer.png",
+      "role": "STYLE",
+      "sha256": "fc5f342e892842887e738798b5870b9245fb3c7376a028c5f503301ac687f1bc"
+    },
+    {
+      "path": "/home/ethan/Projects/Sai_Art/.agents/skills/uri-style/assets/style_04_service_entry.png",
+      "role": "STYLE_MATERIAL_HIERARCHY",
+      "sha256": "57670970191600eecf06f6ea8531baa6bb45277db6cb883e252e9882f8a349f8"
+    }
+  ],
+  "fixed_style_subset": [
+    1,
+    3,
+    5,
+    4
+  ],
+  "user_scope": "Redesign knee covers with harmonious blue/white/yellow/black; illustration only; same stance, compact TOP and thermal features kept.",
+  "status": "baseline_restored_for_marker_only_correction_p29",
+  "user_accepted": false,
+  "generated_file": "/home/ethan/.codex/generated_images/01a0f3ab-7a57-7172-b8c5-e517aa2973da/exec-36223735-2481-433d-824c-286ddb63927d.png",
+  "saved_image": "/home/ethan/Projects/Sai_Art/docs/uri_style/gorilla_v0_2/images/uri_knee_guard_redesign_generated_p27.png",
+  "saved_image_sha256": "0884ae225c0b1942a7972cb7f5b420d4c99608ec3555f9640b2d7b9fac2e2f10",
+  "superseding_revision": "p28",
+  "note": "The latest annotations target the small knee yellow strips, not the whole warm-white cap."
+}

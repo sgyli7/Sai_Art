@@ -1,0 +1,17 @@
+{
+  "status": "rejected whole fit despite single-leg probe",
+  "reason": "At hip half spacing .50m, outer drive material intersects unchanged C15 arms/hands. Central ankle trial at .31m also rejects mount/cylinder interferences. No physical acceptance.",
+  "files": {
+    "assembled_scene.json": "82a167fa15535498587227d89ae31b01d3c32cdb3d6a4f8fbba1f427ef80ca7c",
+    "assemble_drives.py": "244d58532ec2621959b746bc675c220332297876f11d69da954ec8f634f20c89",
+    "drive_set_selection.json": "0058b1e264da13c4e15abf65b60fe91c12cd2db76a3f9e00c2c07f3c86a133b8",
+    "assembly_grounded_path_report.json": "2f776c5e99972c1309bce896e1a40e6d4127f56df67c5021be689c352d6689bc",
+    "loaded_leg_probe_report.json": "0e492686b5b7381b65deabbce158472c0d78390d48b47142f72d878e48fe3464",
+    "loaded_material_replay_report.json": "22429466505f90ca2e7c8d1f900bda54260b95a6c52cbc1469052ba2ecd495c4",
+    "assembled_render_manifest.json": "0ae6c9f2acf64ad1ee4ea255ef1f97be0faf1e27bd3c45f4e4bf48ff8da79d22",
+    "whole_fit_scene.json": "b51030d8fa020a53d8901dc532e991b3a4dd54bd42f5a76d5e75aeeae6a79c7d",
+    "whole_fit_report.json": "6a8a56a5e5a551cafa1381554df27224b5ca560c87ec0e709e1a3c2c6e523023",
+    "compact_selection_report.json": "8295eaa495fe7d010330793e2cec91efabb80d755dc9f1514d573e2c0d02afec",
+    "compact_drive_selection.json": "b4b2b7dafa279bbbed090570fd6fa3845c1f92c0f9867c8316fe10cebac9afd6"
+  }
+}

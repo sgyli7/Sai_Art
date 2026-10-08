@@ -1,0 +1,17 @@
+{
+  "source": "source/lower_modular_components_b7.blend",
+  "source_sha256": "b75b3f29aa0a91145ed6dacf2cd25e1caece7527155146dd00507cd70edb6beb",
+  "preview": "images/lower_modular_components_rear_oblique_b7.png",
+  "glb": "exports/lower_modular_components_b7.glb",
+  "glb_sha256": "327bc4da753b9b90db8c2338221591461097e6a802e40e9db21d5ec020e42787",
+  "mesh_object_count": 76,
+  "original_blend_unmodified": true,
+  "original_gray_materials_retained": true,
+  "joint_hierarchy_exported": true,
+  "GLB_axis_convention": "+Y up; source +Z up converted by native Blender glTF exporter",
+  "source_units": "Normalized appearance units; scale not a manufacturing dimension",
+  "geometry_report": "lower_modular_components_b7.json",
+  "topology_or_physics_requalification_performed": false,
+  "appearance_revision_separate_from_model": true,
+  "whole_v0_2_qualified": false
+}

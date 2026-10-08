@@ -1,0 +1,910 @@
+{
+  "source": "source/lower_modular_fit_b2.blend",
+  "source_sha256": "0a190a6bfb925fe560ee0e26088988fd5cda7851c75d02b7c334e2a356ee15fd",
+  "reference_scope": "Dense model is read-only fitting/reference data; it is absent from the reconstructed scene.",
+  "primary_shape_references": [
+    "references/user_dense_assembly_front_shape_b1.jpg",
+    "references/user_dense_assembly_rear_shape_b1.jpg"
+  ],
+  "foot_reference_role": "Foot only; no silver reference leg is adopted",
+  "joints": {
+    "hip": [
+      0.19,
+      0.029,
+      0.061
+    ],
+    "knee": [
+      0.19,
+      -0.158,
+      -0.17
+    ],
+    "hock": [
+      0.19,
+      0.006,
+      -0.169
+    ],
+    "ankle": [
+      0.19,
+      -0.042,
+      -0.412
+    ]
+  },
+  "stance": "Reference-like bent pose is the zero pose; no old overall-height constraint",
+  "units": "Normalized appearance coordinates; engineering dimensions, mass, load and fits not assigned",
+  "module_roles": {
+    "L_thigh_shell": {
+      "role": "source-fitted thigh armor",
+      "owner": "thigh"
+    },
+    "L_thigh_front_panel": {
+      "role": "fitted removable armor insert",
+      "owner": "thigh"
+    },
+    "L_thigh_outer_service_panel": {
+      "role": "fitted removable armor insert",
+      "owner": "thigh"
+    },
+    "L_shank_shell": {
+      "role": "source-fitted shank cover with actuator aperture",
+      "owner": "shank"
+    },
+    "L_shank_front_panel": {
+      "role": "fitted removable armor insert",
+      "owner": "shank"
+    },
+    "L_hock_guard": {
+      "role": "source-fitted posterior hock guard",
+      "owner": "shank"
+    },
+    "L_hock_guard_panel": {
+      "role": "fitted removable armor insert",
+      "owner": "shank"
+    },
+    "L_knee_front_guard": {
+      "role": "fitted removable armor insert",
+      "owner": "thigh"
+    },
+    "L_thigh_carrier": {
+      "role": "continuous link carrier and clevis",
+      "owner": "thigh"
+    },
+    "L_return_carrier": {
+      "role": "continuous link carrier and clevis",
+      "owner": "return"
+    },
+    "L_shank_ankle_carrier": {
+      "role": "continuous link carrier and clevis",
+      "owner": "shank"
+    },
+    "L_hip_rotor": {
+      "role": "concentric rotating interface",
+      "owner": "thigh"
+    },
+    "L_hip_axle": {
+      "role": "common transverse axle",
+      "owner": "thigh"
+    },
+    "L_hip_end_cap_-1": {
+      "role": "joint end cap",
+      "owner": "thigh"
+    },
+    "L_hip_end_cap_1": {
+      "role": "joint end cap",
+      "owner": "thigh"
+    },
+    "L_knee_rotor": {
+      "role": "concentric rotating interface",
+      "owner": "return"
+    },
+    "L_knee_axle": {
+      "role": "common transverse axle",
+      "owner": "thigh"
+    },
+    "L_knee_end_cap_-1": {
+      "role": "joint end cap",
+      "owner": "thigh"
+    },
+    "L_knee_end_cap_1": {
+      "role": "joint end cap",
+      "owner": "thigh"
+    },
+    "L_hock_rotor": {
+      "role": "concentric rotating interface",
+      "owner": "shank"
+    },
+    "L_hock_axle": {
+      "role": "common transverse axle",
+      "owner": "return"
+    },
+    "L_hock_end_cap_-1": {
+      "role": "joint end cap",
+      "owner": "return"
+    },
+    "L_hock_end_cap_1": {
+      "role": "joint end cap",
+      "owner": "return"
+    },
+    "L_ankle_rotor": {
+      "role": "concentric rotating interface",
+      "owner": "foot"
+    },
+    "L_ankle_axle": {
+      "role": "common transverse axle",
+      "owner": "shank"
+    },
+    "L_ankle_end_cap_-1": {
+      "role": "joint end cap",
+      "owner": "shank"
+    },
+    "L_ankle_end_cap_1": {
+      "role": "joint end cap",
+      "owner": "shank"
+    },
+    "L_foot_central_carrier": {
+      "role": "continuous forefoot-to-heel carrier",
+      "owner": "foot"
+    },
+    "L_forefoot_support_-1": {
+      "role": "front paired foot support member",
+      "owner": "foot"
+    },
+    "L_heel_support_-1": {
+      "role": "rear paired foot support member",
+      "owner": "foot"
+    },
+    "L_toe_edge_rail_-1": {
+      "role": "ordered toe edge rail",
+      "owner": "foot"
+    },
+    "L_forefoot_support_1": {
+      "role": "front paired foot support member",
+      "owner": "foot"
+    },
+    "L_heel_support_1": {
+      "role": "rear paired foot support member",
+      "owner": "foot"
+    },
+    "L_toe_edge_rail_1": {
+      "role": "ordered toe edge rail",
+      "owner": "foot"
+    }
+  },
+  "source_surface_fit": [
+    {
+      "component": "thigh_shell",
+      "method": "42 x 128 periodic source-section envelope",
+      "source_points": 136738,
+      "outer_surface_to_reference_distance_q50": 0.004464061562595858,
+      "outer_surface_to_reference_distance_q95": 0.027324933381907675,
+      "outer_surface_to_reference_distance_max": 0.05192016994729459,
+      "scope": "Local sampled surface distance, not whole-robot appearance accuracy"
+    },
+    {
+      "component": "shank_shell",
+      "method": "42 x 128 periodic source-section envelope",
+      "source_points": 33925,
+      "outer_surface_to_reference_distance_q50": 0.002769972999904455,
+      "outer_surface_to_reference_distance_q95": 0.021485654852055676,
+      "outer_surface_to_reference_distance_max": 0.035826210712833394,
+      "scope": "Local sampled surface distance, not whole-robot appearance accuracy"
+    },
+    {
+      "component": "hock_guard",
+      "method": "42 x 128 periodic source-section envelope",
+      "source_points": 37497,
+      "outer_surface_to_reference_distance_q50": 0.0016200460871340573,
+      "outer_surface_to_reference_distance_q95": 0.019520652149632778,
+      "outer_surface_to_reference_distance_max": 0.035968660634156345,
+      "scope": "Local sampled surface distance, not whole-robot appearance accuracy"
+    }
+  ],
+  "master_topology": [
+    {
+      "name": "L_thigh_shell",
+      "vertices": 10752,
+      "faces": 10752,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "signed_volume": 0.0007947837698751268
+    },
+    {
+      "name": "L_thigh_front_panel",
+      "vertices": 1512,
+      "faces": 1510,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "signed_volume": 0.0001412695623517702
+    },
+    {
+      "name": "L_thigh_outer_service_panel",
+      "vertices": 570,
+      "faces": 568,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "signed_volume": 2.084105599923918e-05
+    },
+    {
+      "name": "L_shank_shell",
+      "vertices": 10752,
+      "faces": 10320,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "signed_volume": 0.0002175332814244126
+    },
+    {
+      "name": "L_shank_front_panel",
+      "vertices": 1380,
+      "faces": 1378,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "signed_volume": 2.4227407474282015e-05
+    },
+    {
+      "name": "L_hock_guard",
+      "vertices": 10752,
+      "faces": 10752,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "signed_volume": 0.00017918254437680034
+    },
+    {
+      "name": "L_hock_guard_panel",
+      "vertices": 1344,
+      "faces": 1342,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "signed_volume": 1.127354817784323e-05
+    },
+    {
+      "name": "L_knee_front_guard",
+      "vertices": 792,
+      "faces": 790,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "signed_volume": 5.847177828568446e-05
+    },
+    {
+      "name": "L_thigh_carrier",
+      "vertices": 1432,
+      "faces": 1044,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "signed_volume": 0.0010885422392344173
+    },
+    {
+      "name": "L_return_carrier",
+      "vertices": 1364,
+      "faces": 994,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "signed_volume": 0.0005504678255742242
+    },
+    {
+      "name": "L_shank_ankle_carrier",
+      "vertices": 1362,
+      "faces": 1003,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "signed_volume": 0.0007531803516100485
+    },
+    {
+      "name": "L_hip_rotor",
+      "vertices": 384,
+      "faces": 384,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "signed_volume": 0.00012769145182684147
+    },
+    {
+      "name": "L_hip_axle",
+      "vertices": 384,
+      "faces": 384,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "signed_volume": 6.515662089004582e-05
+    },
+    {
+      "name": "L_hip_end_cap_-1",
+      "vertices": 384,
+      "faces": 384,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "signed_volume": 9.952250410777135e-06
+    },
+    {
+      "name": "L_hip_end_cap_1",
+      "vertices": 384,
+      "faces": 384,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "signed_volume": 9.952262769108085e-06
+    },
+    {
+      "name": "L_knee_rotor",
+      "vertices": 384,
+      "faces": 384,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "signed_volume": 0.00010589179547009956
+    },
+    {
+      "name": "L_knee_axle",
+      "vertices": 384,
+      "faces": 384,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "signed_volume": 6.515662658359654e-05
+    },
+    {
+      "name": "L_knee_end_cap_-1",
+      "vertices": 384,
+      "faces": 384,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "signed_volume": 9.952249019432362e-06
+    },
+    {
+      "name": "L_knee_end_cap_1",
+      "vertices": 384,
+      "faces": 384,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "signed_volume": 9.952261377761595e-06
+    },
+    {
+      "name": "L_hock_rotor",
+      "vertices": 384,
+      "faces": 384,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "signed_volume": 0.00011659697447943571
+    },
+    {
+      "name": "L_hock_axle",
+      "vertices": 384,
+      "faces": 384,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "signed_volume": 6.515662333409055e-05
+    },
+    {
+      "name": "L_hock_end_cap_-1",
+      "vertices": 384,
+      "faces": 384,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "signed_volume": 9.952251324153333e-06
+    },
+    {
+      "name": "L_hock_end_cap_1",
+      "vertices": 384,
+      "faces": 384,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "signed_volume": 9.952263682485391e-06
+    },
+    {
+      "name": "L_ankle_rotor",
+      "vertices": 384,
+      "faces": 384,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "signed_volume": 0.0001058918150155649
+    },
+    {
+      "name": "L_ankle_axle",
+      "vertices": 384,
+      "faces": 384,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "signed_volume": 6.51566300031025e-05
+    },
+    {
+      "name": "L_ankle_end_cap_-1",
+      "vertices": 384,
+      "faces": 384,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "signed_volume": 9.95225010786357e-06
+    },
+    {
+      "name": "L_ankle_end_cap_1",
+      "vertices": 384,
+      "faces": 384,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "signed_volume": 9.952262466194126e-06
+    },
+    {
+      "name": "L_foot_central_carrier",
+      "vertices": 1420,
+      "faces": 1280,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "signed_volume": 0.0006589971638244456
+    },
+    {
+      "name": "L_forefoot_support_-1",
+      "vertices": 112,
+      "faces": 86,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "signed_volume": 1.6852570764680674e-05
+    },
+    {
+      "name": "L_heel_support_-1",
+      "vertices": 112,
+      "faces": 86,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "signed_volume": 1.5385944921737602e-05
+    },
+    {
+      "name": "L_toe_edge_rail_-1",
+      "vertices": 112,
+      "faces": 86,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "signed_volume": 9.885001845015778e-06
+    },
+    {
+      "name": "L_forefoot_support_1",
+      "vertices": 112,
+      "faces": 86,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "signed_volume": 1.685257956021622e-05
+    },
+    {
+      "name": "L_heel_support_1",
+      "vertices": 112,
+      "faces": 86,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "signed_volume": 1.538592843525617e-05
+    },
+    {
+      "name": "L_toe_edge_rail_1",
+      "vertices": 112,
+      "faces": 86,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "signed_volume": 9.885010191629614e-06
+    }
+  ],
+  "mirroring": [
+    {
+      "left": "L_thigh_shell",
+      "right": "R_thigh_shell",
+      "shared_mesh_data": true,
+      "max_paired_vertex_mirror_error": 0.0
+    },
+    {
+      "left": "L_thigh_front_panel",
+      "right": "R_thigh_front_panel",
+      "shared_mesh_data": true,
+      "max_paired_vertex_mirror_error": 0.0
+    },
+    {
+      "left": "L_thigh_outer_service_panel",
+      "right": "R_thigh_outer_service_panel",
+      "shared_mesh_data": true,
+      "max_paired_vertex_mirror_error": 0.0
+    },
+    {
+      "left": "L_shank_shell",
+      "right": "R_shank_shell",
+      "shared_mesh_data": true,
+      "max_paired_vertex_mirror_error": 0.0
+    },
+    {
+      "left": "L_shank_front_panel",
+      "right": "R_shank_front_panel",
+      "shared_mesh_data": true,
+      "max_paired_vertex_mirror_error": 0.0
+    },
+    {
+      "left": "L_hock_guard",
+      "right": "R_hock_guard",
+      "shared_mesh_data": true,
+      "max_paired_vertex_mirror_error": 0.0
+    },
+    {
+      "left": "L_hock_guard_panel",
+      "right": "R_hock_guard_panel",
+      "shared_mesh_data": true,
+      "max_paired_vertex_mirror_error": 0.0
+    },
+    {
+      "left": "L_knee_front_guard",
+      "right": "R_knee_front_guard",
+      "shared_mesh_data": true,
+      "max_paired_vertex_mirror_error": 0.0
+    },
+    {
+      "left": "L_thigh_carrier",
+      "right": "R_thigh_carrier",
+      "shared_mesh_data": true,
+      "max_paired_vertex_mirror_error": 0.0
+    },
+    {
+      "left": "L_return_carrier",
+      "right": "R_return_carrier",
+      "shared_mesh_data": true,
+      "max_paired_vertex_mirror_error": 0.0
+    },
+    {
+      "left": "L_shank_ankle_carrier",
+      "right": "R_shank_ankle_carrier",
+      "shared_mesh_data": true,
+      "max_paired_vertex_mirror_error": 0.0
+    },
+    {
+      "left": "L_hip_rotor",
+      "right": "R_hip_rotor",
+      "shared_mesh_data": true,
+      "max_paired_vertex_mirror_error": 0.0
+    },
+    {
+      "left": "L_hip_axle",
+      "right": "R_hip_axle",
+      "shared_mesh_data": true,
+      "max_paired_vertex_mirror_error": 0.0
+    },
+    {
+      "left": "L_hip_end_cap_-1",
+      "right": "R_hip_end_cap_-1",
+      "shared_mesh_data": true,
+      "max_paired_vertex_mirror_error": 0.0
+    },
+    {
+      "left": "L_hip_end_cap_1",
+      "right": "R_hip_end_cap_1",
+      "shared_mesh_data": true,
+      "max_paired_vertex_mirror_error": 0.0
+    },
+    {
+      "left": "L_knee_rotor",
+      "right": "R_knee_rotor",
+      "shared_mesh_data": true,
+      "max_paired_vertex_mirror_error": 0.0
+    },
+    {
+      "left": "L_knee_axle",
+      "right": "R_knee_axle",
+      "shared_mesh_data": true,
+      "max_paired_vertex_mirror_error": 0.0
+    },
+    {
+      "left": "L_knee_end_cap_-1",
+      "right": "R_knee_end_cap_-1",
+      "shared_mesh_data": true,
+      "max_paired_vertex_mirror_error": 0.0
+    },
+    {
+      "left": "L_knee_end_cap_1",
+      "right": "R_knee_end_cap_1",
+      "shared_mesh_data": true,
+      "max_paired_vertex_mirror_error": 0.0
+    },
+    {
+      "left": "L_hock_rotor",
+      "right": "R_hock_rotor",
+      "shared_mesh_data": true,
+      "max_paired_vertex_mirror_error": 0.0
+    },
+    {
+      "left": "L_hock_axle",
+      "right": "R_hock_axle",
+      "shared_mesh_data": true,
+      "max_paired_vertex_mirror_error": 0.0
+    },
+    {
+      "left": "L_hock_end_cap_-1",
+      "right": "R_hock_end_cap_-1",
+      "shared_mesh_data": true,
+      "max_paired_vertex_mirror_error": 0.0
+    },
+    {
+      "left": "L_hock_end_cap_1",
+      "right": "R_hock_end_cap_1",
+      "shared_mesh_data": true,
+      "max_paired_vertex_mirror_error": 0.0
+    },
+    {
+      "left": "L_ankle_rotor",
+      "right": "R_ankle_rotor",
+      "shared_mesh_data": true,
+      "max_paired_vertex_mirror_error": 0.0
+    },
+    {
+      "left": "L_ankle_axle",
+      "right": "R_ankle_axle",
+      "shared_mesh_data": true,
+      "max_paired_vertex_mirror_error": 0.0
+    },
+    {
+      "left": "L_ankle_end_cap_-1",
+      "right": "R_ankle_end_cap_-1",
+      "shared_mesh_data": true,
+      "max_paired_vertex_mirror_error": 0.0
+    },
+    {
+      "left": "L_ankle_end_cap_1",
+      "right": "R_ankle_end_cap_1",
+      "shared_mesh_data": true,
+      "max_paired_vertex_mirror_error": 0.0
+    },
+    {
+      "left": "L_foot_central_carrier",
+      "right": "R_foot_central_carrier",
+      "shared_mesh_data": true,
+      "max_paired_vertex_mirror_error": 0.0
+    },
+    {
+      "left": "L_forefoot_support_-1",
+      "right": "R_forefoot_support_-1",
+      "shared_mesh_data": true,
+      "max_paired_vertex_mirror_error": 0.0
+    },
+    {
+      "left": "L_heel_support_-1",
+      "right": "R_heel_support_-1",
+      "shared_mesh_data": true,
+      "max_paired_vertex_mirror_error": 0.0
+    },
+    {
+      "left": "L_toe_edge_rail_-1",
+      "right": "R_toe_edge_rail_-1",
+      "shared_mesh_data": true,
+      "max_paired_vertex_mirror_error": 0.0
+    },
+    {
+      "left": "L_forefoot_support_1",
+      "right": "R_forefoot_support_1",
+      "shared_mesh_data": true,
+      "max_paired_vertex_mirror_error": 0.0
+    },
+    {
+      "left": "L_heel_support_1",
+      "right": "R_heel_support_1",
+      "shared_mesh_data": true,
+      "max_paired_vertex_mirror_error": 0.0
+    },
+    {
+      "left": "L_toe_edge_rail_1",
+      "right": "R_toe_edge_rail_1",
+      "shared_mesh_data": true,
+      "max_paired_vertex_mirror_error": 0.0
+    }
+  ],
+  "all_right_modules_share_left_master_mesh": true,
+  "max_mirror_error": 0.0,
+  "views": {
+    "front": {
+      "image": "images/lower_modular_fit_front_b2.png",
+      "span_world": [
+        0.532729983329773,
+        0.5413000011643498
+      ],
+      "camera_matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          -4.371138828673793e-08,
+          -1.0,
+          -3.064798593521118
+        ],
+        [
+          0.0,
+          1.0,
+          -4.371138828673793e-08,
+          -0.180649995803833
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "ortho_scale": 0.6820380091667175
+    },
+    "left": {
+      "image": "images/lower_modular_fit_left_b2.png",
+      "span_world": [
+        0.3704005112845298,
+        0.5413000343228518
+      ],
+      "camera_matrix_world": [
+        [
+          7.549790126404332e-08,
+          -7.549790126404332e-08,
+          1.0,
+          3.0
+        ],
+        [
+          1.0,
+          5.6999328827277325e-15,
+          -7.549790126404332e-08,
+          -0.06479848921298981
+        ],
+        [
+          0.0,
+          1.0,
+          7.549790126404332e-08,
+          -0.180649995803833
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "ortho_scale": 0.6820380091667175
+    },
+    "rear": {
+      "image": "images/lower_modular_fit_rear_b2.png",
+      "span_world": [
+        0.532729983329773,
+        0.5413000494977088
+      ],
+      "camera_matrix_world": [
+        [
+          -1.0,
+          -8.742277657347586e-08,
+          -8.742277657347586e-08,
+          0.0
+        ],
+        [
+          -8.742277657347586e-08,
+          4.371138118131057e-08,
+          1.0,
+          2.935201406478882
+        ],
+        [
+          -8.74227694680485e-08,
+          1.0,
+          -4.371138828673793e-08,
+          -0.180649995803833
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "ortho_scale": 0.6820380091667175
+    },
+    "top": {
+      "image": "images/lower_modular_fit_top_b2.png",
+      "span_world": [
+        0.532729983329773,
+        0.37040048092603683
+      ],
+      "camera_matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          -0.06479848921298981
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          2.819350004196167
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "ortho_scale": 0.6820380091667175
+    },
+    "front_oblique": {
+      "image": "images/lower_modular_fit_front_oblique_b2.png",
+      "span_world": [
+        0.5869166766259752,
+        0.6835560239889534
+      ],
+      "camera_matrix_world": [
+        [
+          0.7071067094802856,
+          -0.24402658641338348,
+          0.6636649370193481,
+          1.999009609222412
+        ],
+        [
+          0.7071068286895752,
+          0.24402639269828796,
+          -0.6636648774147034,
+          -2.0505120754241943
+        ],
+        [
+          1.0536729178056703e-07,
+          0.938563883304596,
+          0.3451055586338043,
+          0.8494091033935547
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "ortho_scale": 0.7997605204582214
+    },
+    "rear_oblique": {
+      "image": "images/lower_modular_fit_rear_oblique_b2.png",
+      "span_world": [
+        0.5869166485986999,
+        0.6492092149117346
+      ],
+      "camera_matrix_world": [
+        [
+          -0.7071067690849304,
+          -0.24402666091918945,
+          0.6636648178100586,
+          1.989500880241394
+        ],
+        [
+          0.7071067690849304,
+          -0.24402663111686707,
+          0.6636648178100586,
+          1.9379982948303223
+        ],
+        [
+          -1.669983618057813e-08,
+          0.9385637640953064,
+          0.3451057970523834,
+          0.8348425030708313
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "ortho_scale": 0.7595747709274292
+    }
+  },
+  "bounds_xyz": [
+    [
+      -0.2663649916648865,
+      -0.24999873340129852,
+      -0.4512999951839447
+    ],
+    [
+      0.2663649916648865,
+      0.12040174752473831,
+      0.09000000357627869
+    ]
+  ],
+  "projection_checks": {
+    "front_left_height": true,
+    "front_top_width": true,
+    "left_top_depth": true
+  },
+  "appearance_accepted": false,
+  "engineering_ready": false,
+  "connection_kinematic_motion_checks": "Pending actual source review and affected interface tests",
+  "elapsed_seconds": 83.0982677936554
+}

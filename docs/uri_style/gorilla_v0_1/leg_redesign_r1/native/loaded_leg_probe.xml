@@ -1,0 +1,171 @@
+<mujoco model="Gorilla finite leg provisional loaded probe">
+  <compiler angle="radian" inertiafromgeom="false" alignfree="false" />
+  <option timestep=".0002" gravity="0 0 -14.715" integrator="implicitfast" solver="Newton" iterations="100" tolerance="1e-10" cone="elliptic" />
+  <asset>
+    <mesh name="frame_thigh" file="/home/ethan/Projects/Sai_Art/docs/uri_style/gorilla_v0_1/leg_redesign_r1/native/loaded_probe_meshes/frame_thigh.stl" />
+    <mesh name="knee_0_fixed_fork" file="/home/ethan/Projects/Sai_Art/docs/uri_style/gorilla_v0_1/leg_redesign_r1/native/loaded_probe_meshes/knee_0_fixed_fork.stl" />
+    <mesh name="knee_1_fixed_fork" file="/home/ethan/Projects/Sai_Art/docs/uri_style/gorilla_v0_1/leg_redesign_r1/native/loaded_probe_meshes/knee_1_fixed_fork.stl" />
+    <mesh name="frame_middle" file="/home/ethan/Projects/Sai_Art/docs/uri_style/gorilla_v0_1/leg_redesign_r1/native/loaded_probe_meshes/frame_middle.stl" />
+    <mesh name="shaft_knee" file="/home/ethan/Projects/Sai_Art/docs/uri_style/gorilla_v0_1/leg_redesign_r1/native/loaded_probe_meshes/shaft_knee.stl" />
+    <mesh name="knee_0_moving_fork" file="/home/ethan/Projects/Sai_Art/docs/uri_style/gorilla_v0_1/leg_redesign_r1/native/loaded_probe_meshes/knee_0_moving_fork.stl" />
+    <mesh name="knee_1_moving_fork" file="/home/ethan/Projects/Sai_Art/docs/uri_style/gorilla_v0_1/leg_redesign_r1/native/loaded_probe_meshes/knee_1_moving_fork.stl" />
+    <mesh name="fold_0_fixed_fork" file="/home/ethan/Projects/Sai_Art/docs/uri_style/gorilla_v0_1/leg_redesign_r1/native/loaded_probe_meshes/fold_0_fixed_fork.stl" />
+    <mesh name="fold_1_fixed_fork" file="/home/ethan/Projects/Sai_Art/docs/uri_style/gorilla_v0_1/leg_redesign_r1/native/loaded_probe_meshes/fold_1_fixed_fork.stl" />
+    <mesh name="frame_distal" file="/home/ethan/Projects/Sai_Art/docs/uri_style/gorilla_v0_1/leg_redesign_r1/native/loaded_probe_meshes/frame_distal.stl" />
+    <mesh name="shaft_fold" file="/home/ethan/Projects/Sai_Art/docs/uri_style/gorilla_v0_1/leg_redesign_r1/native/loaded_probe_meshes/shaft_fold.stl" />
+    <mesh name="fold_0_moving_fork" file="/home/ethan/Projects/Sai_Art/docs/uri_style/gorilla_v0_1/leg_redesign_r1/native/loaded_probe_meshes/fold_0_moving_fork.stl" />
+    <mesh name="fold_1_moving_fork" file="/home/ethan/Projects/Sai_Art/docs/uri_style/gorilla_v0_1/leg_redesign_r1/native/loaded_probe_meshes/fold_1_moving_fork.stl" />
+    <mesh name="ankle_0_fixed_fork" file="/home/ethan/Projects/Sai_Art/docs/uri_style/gorilla_v0_1/leg_redesign_r1/native/loaded_probe_meshes/ankle_0_fixed_fork.stl" />
+    <mesh name="ankle_1_fixed_fork" file="/home/ethan/Projects/Sai_Art/docs/uri_style/gorilla_v0_1/leg_redesign_r1/native/loaded_probe_meshes/ankle_1_fixed_fork.stl" />
+    <mesh name="toe_contact_pad" file="/home/ethan/Projects/Sai_Art/docs/uri_style/gorilla_v0_1/leg_redesign_r1/native/loaded_probe_meshes/toe_contact_pad.stl" />
+    <mesh name="heel_contact_pad" file="/home/ethan/Projects/Sai_Art/docs/uri_style/gorilla_v0_1/leg_redesign_r1/native/loaded_probe_meshes/heel_contact_pad.stl" />
+    <mesh name="pressure_carrier" file="/home/ethan/Projects/Sai_Art/docs/uri_style/gorilla_v0_1/leg_redesign_r1/native/loaded_probe_meshes/pressure_carrier.stl" />
+    <mesh name="shaft_ankle" file="/home/ethan/Projects/Sai_Art/docs/uri_style/gorilla_v0_1/leg_redesign_r1/native/loaded_probe_meshes/shaft_ankle.stl" />
+    <mesh name="ankle_0_moving_fork" file="/home/ethan/Projects/Sai_Art/docs/uri_style/gorilla_v0_1/leg_redesign_r1/native/loaded_probe_meshes/ankle_0_moving_fork.stl" />
+    <mesh name="ankle_1_moving_fork" file="/home/ethan/Projects/Sai_Art/docs/uri_style/gorilla_v0_1/leg_redesign_r1/native/loaded_probe_meshes/ankle_1_moving_fork.stl" />
+    <mesh name="knee_0_cylinder" file="/home/ethan/Projects/Sai_Art/docs/uri_style/gorilla_v0_1/leg_redesign_r1/native/loaded_probe_meshes/knee_0_cylinder.stl" />
+    <mesh name="knee_0_piston_rod" file="/home/ethan/Projects/Sai_Art/docs/uri_style/gorilla_v0_1/leg_redesign_r1/native/loaded_probe_meshes/knee_0_piston_rod.stl" />
+    <mesh name="knee_1_cylinder" file="/home/ethan/Projects/Sai_Art/docs/uri_style/gorilla_v0_1/leg_redesign_r1/native/loaded_probe_meshes/knee_1_cylinder.stl" />
+    <mesh name="knee_1_piston_rod" file="/home/ethan/Projects/Sai_Art/docs/uri_style/gorilla_v0_1/leg_redesign_r1/native/loaded_probe_meshes/knee_1_piston_rod.stl" />
+    <mesh name="fold_0_cylinder" file="/home/ethan/Projects/Sai_Art/docs/uri_style/gorilla_v0_1/leg_redesign_r1/native/loaded_probe_meshes/fold_0_cylinder.stl" />
+    <mesh name="fold_0_piston_rod" file="/home/ethan/Projects/Sai_Art/docs/uri_style/gorilla_v0_1/leg_redesign_r1/native/loaded_probe_meshes/fold_0_piston_rod.stl" />
+    <mesh name="fold_1_cylinder" file="/home/ethan/Projects/Sai_Art/docs/uri_style/gorilla_v0_1/leg_redesign_r1/native/loaded_probe_meshes/fold_1_cylinder.stl" />
+    <mesh name="fold_1_piston_rod" file="/home/ethan/Projects/Sai_Art/docs/uri_style/gorilla_v0_1/leg_redesign_r1/native/loaded_probe_meshes/fold_1_piston_rod.stl" />
+    <mesh name="ankle_0_cylinder" file="/home/ethan/Projects/Sai_Art/docs/uri_style/gorilla_v0_1/leg_redesign_r1/native/loaded_probe_meshes/ankle_0_cylinder.stl" />
+    <mesh name="ankle_0_piston_rod" file="/home/ethan/Projects/Sai_Art/docs/uri_style/gorilla_v0_1/leg_redesign_r1/native/loaded_probe_meshes/ankle_0_piston_rod.stl" />
+    <mesh name="ankle_1_cylinder" file="/home/ethan/Projects/Sai_Art/docs/uri_style/gorilla_v0_1/leg_redesign_r1/native/loaded_probe_meshes/ankle_1_cylinder.stl" />
+    <mesh name="ankle_1_piston_rod" file="/home/ethan/Projects/Sai_Art/docs/uri_style/gorilla_v0_1/leg_redesign_r1/native/loaded_probe_meshes/ankle_1_piston_rod.stl" />
+  </asset>
+  <worldbody>
+    <geom name="floor" type="plane" size="5 5 0.1" friction="0.8 0.01 0.001" solref="0.004 1" solimp="0.95 0.99 0.001" condim="3" />
+    <body name="thigh" pos="-0.105235433916 0.5 1.27442853023">
+      <freejoint name="free_root" />
+      <body name="middle" pos="0.480832611207 0 -0.480832611207">
+        <joint name="knee" type="hinge" axis="0 1 0" damping="10" limited="false" />
+        <body name="distal" pos="-0.638990982134 0 -0.232573697461">
+          <joint name="fold" type="hinge" axis="0 1 0" damping="10" limited="false" />
+          <body name="shoe" pos="0.321393804843 0 -0.383022221559">
+            <joint name="ankle" type="hinge" axis="0 1 0" damping="10" limited="false" />
+            <site name="ankle_0_mount_eye" pos="0.299639067635 -0.2 -0.0121523309115" size=".003" />
+            <site name="ankle_1_mount_eye" pos="0.299639067635 0.2 -0.0121523309115" size=".003" />
+            <inertial pos="0.0976782811264 1.11022302463e-16 -0.0896677862795" mass="95.6447979974" fullinertia="1.38295520694 4.85557081001 5.60781397764 -1.74690715626e-15 -0.233843502212 -9.08196636744e-16" />
+            <geom name="toe_contact_pad" type="mesh" mesh="toe_contact_pad" rgba="0.06 0.07 0.08 1" contype="1" conaffinity="1" friction="0.8 0.01 0.001" solref="0.004 1" solimp="0.95 0.99 0.001" condim="3" />
+            <geom name="heel_contact_pad" type="mesh" mesh="heel_contact_pad" rgba="0.06 0.07 0.08 1" contype="1" conaffinity="1" friction="0.8 0.01 0.001" solref="0.004 1" solimp="0.95 0.99 0.001" condim="3" />
+            <geom name="pressure_carrier" type="mesh" mesh="pressure_carrier" rgba="0.27 0.3 0.32 1" contype="0" conaffinity="0" friction="0.8 0.01 0.001" solref="0.004 1" solimp="0.95 0.99 0.001" condim="3" />
+            <geom name="shaft_ankle" type="mesh" mesh="shaft_ankle" rgba="0.5 0.55 0.59 1" contype="0" conaffinity="0" friction="0.8 0.01 0.001" solref="0.004 1" solimp="0.95 0.99 0.001" condim="3" />
+            <geom name="ankle_0_moving_fork" type="mesh" mesh="ankle_0_moving_fork" rgba="0.32 0.36 0.39 1" contype="0" conaffinity="0" friction="0.8 0.01 0.001" solref="0.004 1" solimp="0.95 0.99 0.001" condim="3" />
+            <geom name="ankle_1_moving_fork" type="mesh" mesh="ankle_1_moving_fork" rgba="0.32 0.36 0.39 1" contype="0" conaffinity="0" friction="0.8 0.01 0.001" solref="0.004 1" solimp="0.95 0.99 0.001" condim="3" />
+          </body>
+          <site name="fold_0_mount_eye" pos="0.0358833873832 -0.36 -0.198336538514" size=".003" />
+          <site name="fold_1_mount_eye" pos="0.0358833873832 0.36 -0.198336538514" size=".003" />
+          <body name="ankle_0_barrel" pos="0.269440727218 -0.2 -0.165534571967" quat="0.476005803886 0 0.879442138328 0">
+            <joint name="ankle_0_swing" type="hinge" axis="0 1 0" damping=".05" limited="false" />
+            <body name="ankle_0_rod" pos="-3.20836264277e-17 0 0.419942326106">
+              <joint name="ankle_0_slide" type="slide" axis="0 0 1" range="-0.008 0.0332672012848" damping="100" solreflimit="0.002 1" />
+              <site name="ankle_0_rod_eye" pos="0 0 0" size=".003" />
+              <inertial pos="5.71576694276e-09 -1.11022302463e-16 -0.150263503296" mass="6.02828615398" fullinertia="0.0841507796499 0.0851932487707 0.00352450472754 2.90882637277e-17 -3.61141488406e-09 -4.4535820912e-17" />
+              <geom name="ankle_0_piston_rod" type="mesh" mesh="ankle_0_piston_rod" rgba="0.47 0.51 0.54 1" contype="0" conaffinity="0" friction="0.8 0.01 0.001" solref="0.004 1" solimp="0.95 0.99 0.001" condim="3" />
+            </body>
+            <inertial pos="3.06944693672e-09 -2.77555756156e-16 0.156592907312" mass="9.84736165676" fullinertia="0.11720349866 0.118250960827 0.0188107865973 -1.23580457474e-16 3.33808970097e-09 -5.88992677118e-16" />
+            <geom name="ankle_0_cylinder" type="mesh" mesh="ankle_0_cylinder" rgba="0.47 0.51 0.54 1" contype="0" conaffinity="0" friction="0.8 0.01 0.001" solref="0.004 1" solimp="0.95 0.99 0.001" condim="3" />
+          </body>
+          <body name="ankle_1_barrel" pos="0.269440727218 0.2 -0.165534571967" quat="0.476005803886 0 0.879442138328 0">
+            <joint name="ankle_1_swing" type="hinge" axis="0 1 0" damping=".05" limited="false" />
+            <body name="ankle_1_rod" pos="-3.20836264277e-17 0 0.419942326106">
+              <joint name="ankle_1_slide" type="slide" axis="0 0 1" range="-0.008 0.0332672012848" damping="100" solreflimit="0.002 1" />
+              <site name="ankle_1_rod_eye" pos="0 0 0" size=".003" />
+              <inertial pos="5.71576698923e-09 -9.99200722163e-16 -0.150263503296" mass="6.02828615398" fullinertia="0.0841507796499 0.0851932487707 0.00352450472754 1.58883474771e-15 -3.61141456184e-09 -4.87094427332e-16" />
+              <geom name="ankle_1_piston_rod" type="mesh" mesh="ankle_1_piston_rod" rgba="0.47 0.51 0.54 1" contype="0" conaffinity="0" friction="0.8 0.01 0.001" solref="0.004 1" solimp="0.95 0.99 0.001" condim="3" />
+            </body>
+            <inertial pos="3.06944689025e-09 -1.88737914186e-15 0.156592907312" mass="9.84736165676" fullinertia="0.11720349866 0.118250960827 0.0188107865973 1.03995009164e-15 3.33808972503e-09 -2.3704255136e-15" />
+            <geom name="ankle_1_cylinder" type="mesh" mesh="ankle_1_cylinder" rgba="0.47 0.51 0.54 1" contype="0" conaffinity="0" friction="0.8 0.01 0.001" solref="0.004 1" solimp="0.95 0.99 0.001" condim="3" />
+          </body>
+          <inertial pos="0.0935279618633 -4.99600361081e-16 -0.184674338124" mass="111.20892149" fullinertia="4.86236353731 3.44766865238 5.55027397122 8.51098705401e-15 0.780523212141 -1.02131844648e-14" />
+          <geom name="frame_distal" type="mesh" mesh="frame_distal" rgba="0.26 0.3 0.33 1" contype="0" conaffinity="0" friction="0.8 0.01 0.001" solref="0.004 1" solimp="0.95 0.99 0.001" condim="3" />
+          <geom name="shaft_fold" type="mesh" mesh="shaft_fold" rgba="0.5 0.55 0.59 1" contype="0" conaffinity="0" friction="0.8 0.01 0.001" solref="0.004 1" solimp="0.95 0.99 0.001" condim="3" />
+          <geom name="fold_0_moving_fork" type="mesh" mesh="fold_0_moving_fork" rgba="0.32 0.36 0.39 1" contype="0" conaffinity="0" friction="0.8 0.01 0.001" solref="0.004 1" solimp="0.95 0.99 0.001" condim="3" />
+          <geom name="fold_1_moving_fork" type="mesh" mesh="fold_1_moving_fork" rgba="0.32 0.36 0.39 1" contype="0" conaffinity="0" friction="0.8 0.01 0.001" solref="0.004 1" solimp="0.95 0.99 0.001" condim="3" />
+          <geom name="ankle_0_fixed_fork" type="mesh" mesh="ankle_0_fixed_fork" rgba="0.32 0.36 0.39 1" contype="0" conaffinity="0" friction="0.8 0.01 0.001" solref="0.004 1" solimp="0.95 0.99 0.001" condim="3" />
+          <geom name="ankle_1_fixed_fork" type="mesh" mesh="ankle_1_fixed_fork" rgba="0.32 0.36 0.39 1" contype="0" conaffinity="0" friction="0.8 0.01 0.001" solref="0.004 1" solimp="0.95 0.99 0.001" condim="3" />
+        </body>
+        <site name="knee_0_mount_eye" pos="-0.189444829414 -0.2 -0.17537005619" size=".003" />
+        <site name="knee_1_mount_eye" pos="-0.189444829414 0.2 -0.17537005619" size=".003" />
+        <body name="fold_0_barrel" pos="0.098018105357 -0.36 -0.368711880772" quat="0.675142539368 0 -0.737687299291 0">
+          <joint name="fold_0_swing" type="hinge" axis="0 1 0" damping=".05" limited="false" />
+          <body name="fold_0_rod" pos="2.99093681258e-18 0 0.703879167714">
+            <joint name="fold_0_slide" type="slide" axis="0 0 1" range="-0.0752914720826 0.008" damping="100" solreflimit="0.002 1" />
+            <site name="fold_0_rod_eye" pos="0 0 0" size=".003" />
+            <inertial pos="2.48717094133e-09 -8.32667268469e-17 -0.286257899462" mass="16.6005491336" fullinertia="0.510551426825 0.511547459066 0.0140142419574 9.40092810323e-18 -1.02479781893e-08 1.05971167186e-16" />
+            <geom name="fold_0_piston_rod" type="mesh" mesh="fold_0_piston_rod" rgba="0.47 0.51 0.54 1" contype="0" conaffinity="0" friction="0.8 0.01 0.001" solref="0.004 1" solimp="0.95 0.99 0.001" condim="3" />
+          </body>
+          <inertial pos="-1.78141149656e-09 0 0.188001217476" mass="15.8067983001" fullinertia="0.240464110274 0.241511572415 0.0596135967687 0 -3.9939691543e-09 0" />
+          <geom name="fold_0_cylinder" type="mesh" mesh="fold_0_cylinder" rgba="0.47 0.51 0.54 1" contype="0" conaffinity="0" friction="0.8 0.01 0.001" solref="0.004 1" solimp="0.95 0.99 0.001" condim="3" />
+        </body>
+        <body name="fold_1_barrel" pos="0.098018105357 0.36 -0.368711880772" quat="0.675142539368 0 -0.737687299291 0">
+          <joint name="fold_1_swing" type="hinge" axis="0 1 0" damping=".05" limited="false" />
+          <body name="fold_1_rod" pos="2.99093681258e-18 0 0.703879167714">
+            <joint name="fold_1_slide" type="slide" axis="0 0 1" range="-0.0752914720826 0.008" damping="100" solreflimit="0.002 1" />
+            <site name="fold_1_rod_eye" pos="0 0 0" size=".003" />
+            <inertial pos="2.48717104498e-09 -2.22044604925e-15 -0.286257899462" mass="16.6005491336" fullinertia="0.510551426825 0.511547459066 0.0140142419574 -6.78552631631e-16 -1.02479785093e-08 1.98268843418e-15" />
+            <geom name="fold_1_piston_rod" type="mesh" mesh="fold_1_piston_rod" rgba="0.47 0.51 0.54 1" contype="0" conaffinity="0" friction="0.8 0.01 0.001" solref="0.004 1" solimp="0.95 0.99 0.001" condim="3" />
+          </body>
+          <inertial pos="-1.78141151043e-09 4.4408920985e-16 0.188001217476" mass="15.8067983001" fullinertia="0.240464110274 0.241511572415 0.0596135967687 -2.76893028694e-15 -3.99396953608e-09 -2.31768573799e-15" />
+          <geom name="fold_1_cylinder" type="mesh" mesh="fold_1_cylinder" rgba="0.47 0.51 0.54 1" contype="0" conaffinity="0" friction="0.8 0.01 0.001" solref="0.004 1" solimp="0.95 0.99 0.001" condim="3" />
+        </body>
+        <inertial pos="-0.114370368076 2.22044604925e-16 -0.186367414649" mass="137.721787169" fullinertia="5.46890625628 10.4657863894 11.4837602905 -1.36175792864e-14 1.41585417461 0" />
+        <geom name="frame_middle" type="mesh" mesh="frame_middle" rgba="0.26 0.3 0.33 1" contype="0" conaffinity="0" friction="0.8 0.01 0.001" solref="0.004 1" solimp="0.95 0.99 0.001" condim="3" />
+        <geom name="shaft_knee" type="mesh" mesh="shaft_knee" rgba="0.5 0.55 0.59 1" contype="0" conaffinity="0" friction="0.8 0.01 0.001" solref="0.004 1" solimp="0.95 0.99 0.001" condim="3" />
+        <geom name="knee_0_moving_fork" type="mesh" mesh="knee_0_moving_fork" rgba="0.32 0.36 0.39 1" contype="0" conaffinity="0" friction="0.8 0.01 0.001" solref="0.004 1" solimp="0.95 0.99 0.001" condim="3" />
+        <geom name="knee_1_moving_fork" type="mesh" mesh="knee_1_moving_fork" rgba="0.32 0.36 0.39 1" contype="0" conaffinity="0" friction="0.8 0.01 0.001" solref="0.004 1" solimp="0.95 0.99 0.001" condim="3" />
+        <geom name="fold_0_fixed_fork" type="mesh" mesh="fold_0_fixed_fork" rgba="0.32 0.36 0.39 1" contype="0" conaffinity="0" friction="0.8 0.01 0.001" solref="0.004 1" solimp="0.95 0.99 0.001" condim="3" />
+        <geom name="fold_1_fixed_fork" type="mesh" mesh="fold_1_fixed_fork" rgba="0.32 0.36 0.39 1" contype="0" conaffinity="0" friction="0.8 0.01 0.001" solref="0.004 1" solimp="0.95 0.99 0.001" condim="3" />
+      </body>
+      <body name="virtual_load_fixture" pos="0 0 0">
+        <inertial pos="0 0 0" mass="6000" diaginertia="400 400 400" />
+        <site name="fixture_point" size=".02" rgba="1 0.4 0.05 1" />
+      </body>
+      <body name="knee_0_barrel" pos="-0.17253405461 -0.2 -0.364867099092" quat="0.483831057013 0 0.875161418408 0">
+        <joint name="knee_0_swing" type="hinge" axis="0 1 0" damping=".05" limited="false" />
+        <body name="knee_0_rod" pos="1.52792871076e-17 0 0.547813730797">
+          <joint name="knee_0_slide" type="slide" axis="0 0 1" range="-0.0876571656458 0.008" damping="100" solreflimit="0.002 1" />
+          <site name="knee_0_rod_eye" pos="0 0 0" size=".003" />
+          <inertial pos="8.8533320092e-09 -1.66533453694e-16 -0.194681617064" mass="10.6283712401" fullinertia="0.17018096822 0.171190529482 0.00884244992159 -6.99545022267e-16 -1.45501363911e-08 -4.86412786915e-16" />
+          <geom name="knee_0_piston_rod" type="mesh" mesh="knee_0_piston_rod" rgba="0.47 0.51 0.54 1" contype="0" conaffinity="0" friction="0.8 0.01 0.001" solref="0.004 1" solimp="0.95 0.99 0.001" condim="3" />
+        </body>
+        <inertial pos="3.34173960635e-09 -3.88578058619e-16 0.191994202477" mass="14.8991411682" fullinertia="0.237751873858 0.238799336673 0.0490040691469 -1.11681060435e-15 7.27600547727e-09 1.78039604647e-16" />
+        <geom name="knee_0_cylinder" type="mesh" mesh="knee_0_cylinder" rgba="0.47 0.51 0.54 1" contype="0" conaffinity="0" friction="0.8 0.01 0.001" solref="0.004 1" solimp="0.95 0.99 0.001" condim="3" />
+      </body>
+      <body name="knee_1_barrel" pos="-0.17253405461 0.2 -0.364867099092" quat="0.483831057013 0 0.875161418408 0">
+        <joint name="knee_1_swing" type="hinge" axis="0 1 0" damping=".05" limited="false" />
+        <body name="knee_1_rod" pos="1.52792871076e-17 0 0.547813730797">
+          <joint name="knee_1_slide" type="slide" axis="0 0 1" range="-0.0876571656458 0.008" damping="100" solreflimit="0.002 1" />
+          <site name="knee_1_rod_eye" pos="0 0 0" size=".003" />
+          <inertial pos="8.8533320092e-09 -2.22044604925e-15 -0.194681617064" mass="10.6283712401" fullinertia="0.17018096822 0.171190529482 0.0088424499216 1.7244157526e-15 -1.45501351687e-08 4.54777946511e-16" />
+          <geom name="knee_1_piston_rod" type="mesh" mesh="knee_1_piston_rod" rgba="0.47 0.51 0.54 1" contype="0" conaffinity="0" friction="0.8 0.01 0.001" solref="0.004 1" solimp="0.95 0.99 0.001" condim="3" />
+        </body>
+        <inertial pos="3.34174048029e-09 -1.99840144433e-15 0.191994202477" mass="14.8991411682" fullinertia="0.237751873858 0.238799336673 0.049004069147 5.39711087435e-15 7.27599514733e-09 7.40931838598e-15" />
+        <geom name="knee_1_cylinder" type="mesh" mesh="knee_1_cylinder" rgba="0.47 0.51 0.54 1" contype="0" conaffinity="0" friction="0.8 0.01 0.001" solref="0.004 1" solimp="0.95 0.99 0.001" condim="3" />
+      </body>
+      <inertial pos="0.0820524434669 -1.66533453694e-16 -0.252131455767" mass="100.968208181" fullinertia="3.09193253363 7.65636565669 7.21328702582 8.51098705401e-16 0.744377905198 -7.48966860753e-14" />
+      <geom name="frame_thigh" type="mesh" mesh="frame_thigh" rgba="0.26 0.3 0.33 1" contype="0" conaffinity="0" friction="0.8 0.01 0.001" solref="0.004 1" solimp="0.95 0.99 0.001" condim="3" />
+      <geom name="knee_0_fixed_fork" type="mesh" mesh="knee_0_fixed_fork" rgba="0.32 0.36 0.39 1" contype="0" conaffinity="0" friction="0.8 0.01 0.001" solref="0.004 1" solimp="0.95 0.99 0.001" condim="3" />
+      <geom name="knee_1_fixed_fork" type="mesh" mesh="knee_1_fixed_fork" rgba="0.32 0.36 0.39 1" contype="0" conaffinity="0" friction="0.8 0.01 0.001" solref="0.004 1" solimp="0.95 0.99 0.001" condim="3" />
+    </body>
+  </worldbody>
+  <equality>
+    <connect name="knee_0_closure" site1="knee_0_rod_eye" site2="knee_0_mount_eye" solref="0.002 1" solimp="0.99 0.999 0.0001" />
+    <connect name="knee_1_closure" site1="knee_1_rod_eye" site2="knee_1_mount_eye" solref="0.002 1" solimp="0.99 0.999 0.0001" />
+    <connect name="fold_0_closure" site1="fold_0_rod_eye" site2="fold_0_mount_eye" solref="0.002 1" solimp="0.99 0.999 0.0001" />
+    <connect name="fold_1_closure" site1="fold_1_rod_eye" site2="fold_1_mount_eye" solref="0.002 1" solimp="0.99 0.999 0.0001" />
+    <connect name="ankle_0_closure" site1="ankle_0_rod_eye" site2="ankle_0_mount_eye" solref="0.002 1" solimp="0.99 0.999 0.0001" />
+    <connect name="ankle_1_closure" site1="ankle_1_rod_eye" site2="ankle_1_mount_eye" solref="0.002 1" solimp="0.99 0.999 0.0001" />
+  </equality>
+  <actuator>
+    <motor name="knee_0_force" joint="knee_0_slide" gear="1" ctrllimited="true" ctrlrange="-216298.6542 288398.2056" />
+    <motor name="knee_1_force" joint="knee_1_slide" gear="1" ctrllimited="true" ctrlrange="-216298.6542 288398.2056" />
+    <motor name="fold_0_force" joint="fold_0_slide" gear="1" ctrllimited="true" ctrlrange="-253850.503887 338467.338516" />
+    <motor name="fold_1_force" joint="fold_1_slide" gear="1" ctrllimited="true" ctrlrange="-253850.503887 338467.338516" />
+    <motor name="ankle_0_force" joint="ankle_0_slide" gear="1" ctrllimited="true" ctrlrange="-121667.992987 162223.99065" />
+    <motor name="ankle_1_force" joint="ankle_1_slide" gear="1" ctrllimited="true" ctrlrange="-121667.992987 162223.99065" />
+  </actuator>
+</mujoco>

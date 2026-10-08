@@ -1,0 +1,75 @@
+{
+  "spec": "/home/ethan/Projects/Sai_Art/docs/uri_style/gorilla_v0_2/knee_panel_composition_p25.json",
+  "base": "/home/ethan/Projects/Sai_Art/docs/uri_style/gorilla_v0_2/images/gorilla_four_view_top_replaced_p24.png",
+  "base_sha256": "70c77eff1eb4b7b94d39c103aacad41220ede8e6ade10d391180818fbfcf2f40",
+  "overlay": "/home/ethan/Projects/Sai_Art/docs/uri_style/gorilla_v0_2/images/knee_component_recolor_generated_p25.png",
+  "overlay_sha256": "8fc899ab630f057e94b0c1892f220d05431d9ac730f790311ffb3e6f9916ed54",
+  "output": "/home/ethan/Projects/Sai_Art/docs/uri_style/gorilla_v0_2/images/gorilla_four_view_knee_modules_p25.png",
+  "output_sha256": "35f8286002279c41e4b8dccd9239531c156b964619a30c608f6aa58d322491db",
+  "svg": "/home/ethan/Projects/Sai_Art/docs/uri_style/gorilla_v0_2/images/gorilla_four_view_knee_modules_p25.svg",
+  "svg_sha256": "ddf120e2ddad9fb208bd097d5bc63f6e396f8174e312991eca39a5204d095778",
+  "authorized_regions": [
+    [
+      158,
+      342,
+      294,
+      446
+    ],
+    [
+      326,
+      342,
+      462,
+      446
+    ],
+    [
+      787,
+      351,
+      904,
+      458
+    ],
+    [
+      911,
+      379,
+      942,
+      410
+    ],
+    [
+      162,
+      945,
+      291,
+      1068
+    ],
+    [
+      339,
+      945,
+      467,
+      1068
+    ],
+    [
+      806,
+      972,
+      901,
+      1023
+    ],
+    [
+      980,
+      972,
+      1076,
+      1023
+    ]
+  ],
+  "unchanged_region_checks": {
+    "FRONT_upper_body": true,
+    "LEFT_torso_shoulders": true,
+    "REAR_upper_body": true,
+    "TOP_upper_body": true,
+    "all_labels_bottom": true
+  },
+  "verification_baseline": "/home/ethan/Projects/Sai_Art/docs/uri_style/gorilla_v0_2/images/gorilla_four_view_knee_modules_p25_original_native_baseline.png",
+  "source_embedded_bytes_unchanged": true,
+  "native_decoder_vs_pillow_original_max_channel_difference": 0,
+  "changed_pixels_outside_authorized_regions": 0,
+  "image_editing_method": "Imagegen raster edit; native SVG layout embeds original bytes without raster painting.",
+  "whole_v0_2_qualified": false,
+  "user_accepted": false
+}

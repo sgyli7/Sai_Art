@@ -1,0 +1,15 @@
+{
+  "name": "Gorilla V0.1",
+  "source_manifest": "source/blockout_manifest.json",
+  "source_manifest_sha256": "e920a141fa7c427f2e8afafc183440eb7a9b1dcb3c6b707343385b7e02b7e5b4",
+  "source_blend": "source/gorilla_appearance_blockout.blend",
+  "source_blend_sha256": "f533ff25e3b70224191bda7a7cd54470a4a1b302e85c17ef0f41cf5d931b0cf8",
+  "envelope_m": {
+    "width": 2.586977,
+    "depth": 1.071836,
+    "height": 2.65
+  },
+  "role": "overall width/depth/height and spatial locator only; appearance authority is artwork and current user reference",
+  "status": "frozen coarse-model envelope; no further modelling",
+  "raster_constraint": "numeric art-scale target supplied to imagegen; raster artwork is not metric CAD evidence"
+}

@@ -1,0 +1,14 @@
+{
+  "feedback": [
+    {
+      "recorded_at": "2026-10-03T19:45:11.058997+08:00",
+      "source": "direct_user_feedback",
+      "request": "下半身配色错误：没有按模块分色，沿用了此前错误的横向分色。",
+      "priority": "after_current_spatial_structure_task",
+      "status": "pending",
+      "constraint": "Keep original URI palette, but assign colors by actual component/module boundaries. Do not treat existing horizontal thigh/knee color bands as approved.",
+      "scope": "lower_body_color_allocation",
+      "current_task_interruption_requested": false
+    }
+  ]
+}

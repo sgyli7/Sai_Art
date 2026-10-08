@@ -1,0 +1,2872 @@
+{
+  "revision": "p22",
+  "source": "source/v0_1_upper_art_lower_registration_p22.blend",
+  "source_sha256": "a708d44ce81ca7ac36b560d0235e1e3dd1fc0f0b7a82c40e3b6fe8c36adfab94",
+  "upstream_task": {
+    "thread_id": "01a0fa4c-3989-7342-8b07-da32d3a9129f",
+    "title": "Gorilla \u786c\u4ef6\u5de5\u7a0b",
+    "read_before_reliance": true
+  },
+  "sources": [
+    {
+      "original_path": "/home/ethan/Projects/Sai_Rotbots/robots/gorilla_v0_1/cad/source/appearance_c.blend",
+      "local_snapshot": "source/upstream_v0_1_appearance_c15.blend",
+      "sha256": "3edc1ca35064750b60f94c4a2e5c62864d6072b7955280d266ef9c36aa3a15bb"
+    },
+    {
+      "original_path": "/home/ethan/Projects/Sai_Rotbots/robots/gorilla_v0_1/cad/source/appearance_c_scene.json",
+      "local_snapshot": "references/upstream_v0_1_appearance_c15_scene.json",
+      "sha256": "7a1e49f45838303ca5fd86265dc9980c10cde85ed7626424136afd3863aa5886"
+    },
+    {
+      "original_path": "/home/ethan/Projects/Sai_Art/docs/uri_style/gorilla_v0_2/source/lower_modular_components_b6.blend",
+      "sha256": "d5d92b95245dfc41d53ad3df0d65ad99f15a96c3aca59743b76447ed85ac6b96"
+    }
+  ],
+  "original_source_part_count": 613,
+  "upper_source_part_count": 334,
+  "upper_rigid_z_translation_m": -0.24,
+  "upper_no_shape_changes": true,
+  "upper_preservation_checks": [
+    {
+      "name": "crown_top_panel_line_00",
+      "mesh_data_unchanged": true,
+      "rigid_placement_vertex_error_max_m": 5.364418242947977e-09
+    },
+    {
+      "name": "crown_top_panel_line_01",
+      "mesh_data_unchanged": true,
+      "rigid_placement_vertex_error_max_m": 5.364418242947977e-09
+    },
+    {
+      "name": "crown_top_panel_line_02",
+      "mesh_data_unchanged": true,
+      "rigid_placement_vertex_error_max_m": 5.364418242947977e-09
+    },
+    {
+      "name": "crown_fastener_0",
+      "mesh_data_unchanged": true,
+      "rigid_placement_vertex_error_max_m": 5.364418242947977e-09
+    },
+    {
+      "name": "crown_fastener_1",
+      "mesh_data_unchanged": true,
+      "rigid_placement_vertex_error_max_m": 5.364418242947977e-09
+    },
+    {
+      "name": "crown_fastener_2",
+      "mesh_data_unchanged": true,
+      "rigid_placement_vertex_error_max_m": 5.364418242947977e-09
+    },
+    {
+      "name": "crown_fastener_3",
+      "mesh_data_unchanged": true,
+      "rigid_placement_vertex_error_max_m": 5.364418242947977e-09
+    },
+    {
+      "name": "central_indicator_recess",
+      "mesh_data_unchanged": true,
+      "rigid_placement_vertex_error_max_m": 5.364418020903372e-09
+    },
+    {
+      "name": "central_indicator_gold_frame",
+      "mesh_data_unchanged": true,
+      "rigid_placement_vertex_error_max_m": 5.364418020903372e-09
+    },
+    {
+      "name": "central_indicator_lit_strip",
+      "mesh_data_unchanged": true,
+      "rigid_placement_vertex_error_max_m": 5.364418020903372e-09
+    },
+    {
+      "name": "rear_crown_panel_seam_00",
+      "mesh_data_unchanged": true,
+      "rigid_placement_vertex_error_max_m": 5.364418242947977e-09
+    },
+    {
+      "name": "rear_crown_panel_seam_01",
+      "mesh_data_unchanged": true,
+      "rigid_placement_vertex_error_max_m": 5.364418242947977e-09
+    },
+    {
+      "name": "rear_crown_panel_seam_02",
+      "mesh_data_unchanged": true,
+      "rigid_placement_vertex_error_max_m": 5.364418242947977e-09
+    },
+    {
+      "name": "left_deltoid_gold_marker",
+      "mesh_data_unchanged": true,
+      "rigid_placement_vertex_error_max_m": 5.364418020903372e-09
+    },
+    {
+      "name": "left_upper_arm_gold_marker",
+      "mesh_data_unchanged": true,
+      "rigid_placement_vertex_error_max_m": 5.364418020903372e-09
+    },
+    {
+      "name": "left_forearm_gold_marker",
+      "mesh_data_unchanged": true,
+      "rigid_placement_vertex_error_max_m": 5.364418020903372e-09
+    },
+    {
+      "name": "right_deltoid_gold_marker",
+      "mesh_data_unchanged": true,
+      "rigid_placement_vertex_error_max_m": 5.364418020903372e-09
+    },
+    {
+      "name": "right_upper_arm_gold_marker",
+      "mesh_data_unchanged": true,
+      "rigid_placement_vertex_error_max_m": 5.364418020903372e-09
+    },
+    {
+      "name": "right_forearm_gold_marker",
+      "mesh_data_unchanged": true,
+      "rigid_placement_vertex_error_max_m": 5.364418020903372e-09
+    },
+    {
+      "name": "continuous_ivory_torso_armor_cover",
+      "mesh_data_unchanged": true,
+      "rigid_placement_vertex_error_max_m": 5.364418242947977e-09
+    },
+    {
+      "name": "left_blue_rear_shoulder_edge_cover",
+      "mesh_data_unchanged": true,
+      "rigid_placement_vertex_error_max_m": 5.364418242947977e-09
+    },
+    {
+      "name": "right_blue_rear_shoulder_edge_cover",
+      "mesh_data_unchanged": true,
+      "rigid_placement_vertex_error_max_m": 5.364418242947977e-09
+    },
+    {
+      "name": "left_ivory_hood_window_side_lip",
+      "mesh_data_unchanged": true,
+      "rigid_placement_vertex_error_max_m": 5.364418242947977e-09
+    },
+    {
+      "name": "right_ivory_hood_window_side_lip",
+      "mesh_data_unchanged": true,
+      "rigid_placement_vertex_error_max_m": 5.364418242947977e-09
+    },
+    {
+      "name": "rear_service_door_shadow",
+      "mesh_data_unchanged": true,
+      "rigid_placement_vertex_error_max_m": 5.364418242947977e-09
+    },
+    {
+      "name": "rear_blue_service_door",
+      "mesh_data_unchanged": true,
+      "rigid_placement_vertex_error_max_m": 5.364418242947977e-09
+    },
+    {
+      "name": "rear_control_screen_module_envelope",
+      "mesh_data_unchanged": true,
+      "rigid_placement_vertex_error_max_m": 5.364418242947977e-09
+    },
+    {
+      "name": "rear_control_screen_glass",
+      "mesh_data_unchanged": true,
+      "rigid_placement_vertex_error_max_m": 5.364418242947977e-09
+    },
+    {
+      "name": "rear_control_screen_header",
+      "mesh_data_unchanged": true,
+      "rigid_placement_vertex_error_max_m": 5.364418242947977e-09
+    },
+    {
+      "name": "rear_control_screen_touch_zone_status",
+      "mesh_data_unchanged": true,
+      "rigid_placement_vertex_error_max_m": 5.364418242947977e-09
+    },
+    {
+      "name": "rear_control_screen_label_status",
+      "mesh_data_unchanged": true,
+      "rigid_placement_vertex_error_max_m": 5.364418242947977e-09
+    },
+    {
+      "name": "rear_control_screen_zone_indicator_status",
+      "mesh_data_unchanged": true,
+      "rigid_placement_vertex_error_max_m": 5.364418242947977e-09
+    },
+    {
+      "name": "rear_control_screen_touch_zone_task",
+      "mesh_data_unchanged": true,
+      "rigid_placement_vertex_error_max_m": 5.364418020903372e-09
+    },
+    {
+      "name": "rear_control_screen_label_task",
+      "mesh_data_unchanged": true,
+      "rigid_placement_vertex_error_max_m": 5.364418020903372e-09
+    },
+    {
+      "name": "rear_control_screen_zone_indicator_task",
+      "mesh_data_unchanged": true,
+      "rigid_placement_vertex_error_max_m": 5.364418020903372e-09
+    },
+    {
+      "name": "rear_control_screen_touch_zone_local",
+      "mesh_data_unchanged": true,
+      "rigid_placement_vertex_error_max_m": 5.364418020903372e-09
+    },
+    {
+      "name": "rear_control_screen_label_local",
+      "mesh_data_unchanged": true,
+      "rigid_placement_vertex_error_max_m": 5.364418020903372e-09
+    },
+    {
+      "name": "rear_control_screen_zone_indicator_local",
+      "mesh_data_unchanged": true,
+      "rigid_placement_vertex_error_max_m": 5.364418020903372e-09
+    },
+    {
+      "name": "rear_service_latch",
+      "mesh_data_unchanged": true,
+      "rigid_placement_vertex_error_max_m": 5.364418242947977e-09
+    },
+    {
+      "name": "rear_door_upper_tab",
+      "mesh_data_unchanged": true,
+      "rigid_placement_vertex_error_max_m": 5.364418242947977e-09
+    },
+    {
+      "name": "rear_door_screw_0",
+      "mesh_data_unchanged": true,
+      "rigid_placement_vertex_error_max_m": 5.364418242947977e-09
+    },
+    {
+      "name": "rear_door_screw_1",
+      "mesh_data_unchanged": true,
+      "rigid_placement_vertex_error_max_m": 5.364418242947977e-09
+    },
+    {
+      "name": "rear_door_screw_2",
+      "mesh_data_unchanged": true,
+      "rigid_placement_vertex_error_max_m": 5.364418020903372e-09
+    },
+    {
+      "name": "rear_door_screw_3",
+      "mesh_data_unchanged": true,
+      "rigid_placement_vertex_error_max_m": 5.364418020903372e-09
+    },
+    {
+      "name": "ivory_crown_inset",
+      "mesh_data_unchanged": true,
+      "rigid_placement_vertex_error_max_m": 5.364418242947977e-09
+    },
+    {
+      "name": "left_blue_continuous_shoulder_sweep",
+      "mesh_data_unchanged": true,
+      "rigid_placement_vertex_error_max_m": 5.364418242947977e-09
+    },
+    {
+      "name": "left_blue_shoulder_upper_return",
+      "mesh_data_unchanged": true,
+      "rigid_placement_vertex_error_max_m": 5.364418242947977e-09
+    },
+    {
+      "name": "left_blue_rear_shoulder_guard",
+      "mesh_data_unchanged": true,
+      "rigid_placement_vertex_error_max_m": 5.364418242947977e-09
+    },
+    {
+      "name": "left_blue_shoulder_diagonal_front_wing",
+      "mesh_data_unchanged": true,
+      "rigid_placement_vertex_error_max_m": 5.364418242947977e-09
+    },
+    {
+      "name": "left_blue_chest_cheek_wrap",
+      "mesh_data_unchanged": true,
+      "rigid_placement_vertex_error_max_m": 5.364418242947977e-09
+    },
+    {
+      "name": "left_blue_chest_cheek_side_return",
+      "mesh_data_unchanged": true,
+      "rigid_placement_vertex_error_max_m": 5.364418020903372e-09
+    },
+    {
+      "name": "left_radiator_ivory_socket",
+      "mesh_data_unchanged": true,
+      "rigid_placement_vertex_error_max_m": 5.364418242947977e-09
+    },
+    {
+      "name": "left_radiator_gold_trim",
+      "mesh_data_unchanged": true,
+      "rigid_placement_vertex_error_max_m": 5.364418242947977e-09
+    },
+    {
+      "name": "left_radiator_black_well",
+      "mesh_data_unchanged": true,
+      "rigid_placement_vertex_error_max_m": 5.364418242947977e-09
+    },
+    {
+      "name": "left_radiator_turning_plenum",
+      "mesh_data_unchanged": true,
+      "rigid_placement_vertex_error_max_m": 5.364418242947977e-09
+    },
+    {
+      "name": "left_radiator_louver_00",
+      "mesh_data_unchanged": true,
+      "rigid_placement_vertex_error_max_m": 5.364418242947977e-09
+    },
+    {
+      "name": "left_radiator_louver_01",
+      "mesh_data_unchanged": true,
+      "rigid_placement_vertex_error_max_m": 5.364418020903372e-09
+    },
+    {
+      "name": "left_radiator_louver_02",
+      "mesh_data_unchanged": true,
+      "rigid_placement_vertex_error_max_m": 5.364418020903372e-09
+    },
+    {
+      "name": "left_radiator_louver_03",
+      "mesh_data_unchanged": true,
+      "rigid_placement_vertex_error_max_m": 5.364418020903372e-09
+    },
+    {
+      "name": "left_radiator_louver_04",
+      "mesh_data_unchanged": true,
+      "rigid_placement_vertex_error_max_m": 5.364418020903372e-09
+    },
+    {
+      "name": "left_radiator_louver_05",
+      "mesh_data_unchanged": true,
+      "rigid_placement_vertex_error_max_m": 5.364418020903372e-09
+    },
+    {
+      "name": "left_radiator_louver_06",
+      "mesh_data_unchanged": true,
+      "rigid_placement_vertex_error_max_m": 5.364418020903372e-09
+    },
+    {
+      "name": "left_radiator_louver_07",
+      "mesh_data_unchanged": true,
+      "rigid_placement_vertex_error_max_m": 5.364418020903372e-09
+    },
+    {
+      "name": "left_radiator_louver_08",
+      "mesh_data_unchanged": true,
+      "rigid_placement_vertex_error_max_m": 5.364418020903372e-09
+    },
+    {
+      "name": "left_radiator_louver_09",
+      "mesh_data_unchanged": true,
+      "rigid_placement_vertex_error_max_m": 5.364418020903372e-09
+    },
+    {
+      "name": "left_radiator_louver_10",
+      "mesh_data_unchanged": true,
+      "rigid_placement_vertex_error_max_m": 5.364418020903372e-09
+    },
+    {
+      "name": "left_vent_fastener_0",
+      "mesh_data_unchanged": true,
+      "rigid_placement_vertex_error_max_m": 5.364418242947977e-09
+    },
+    {
+      "name": "left_vent_fastener_1",
+      "mesh_data_unchanged": true,
+      "rigid_placement_vertex_error_max_m": 5.364418242947977e-09
+    },
+    {
+      "name": "left_vent_fastener_2",
+      "mesh_data_unchanged": true,
+      "rigid_placement_vertex_error_max_m": 5.364418020903372e-09
+    },
+    {
+      "name": "left_vent_fastener_3",
+      "mesh_data_unchanged": true,
+      "rigid_placement_vertex_error_max_m": 5.364418020903372e-09
+    },
+    {
+      "name": "left_dark_torso_side_housing",
+      "mesh_data_unchanged": true,
+      "rigid_placement_vertex_error_max_m": 5.364418242947977e-09
+    },
+    {
+      "name": "left_torso_side_layer_00",
+      "mesh_data_unchanged": true,
+      "rigid_placement_vertex_error_max_m": 5.364418242947977e-09
+    },
+    {
+      "name": "left_torso_side_layer_lip_00",
+      "mesh_data_unchanged": true,
+      "rigid_placement_vertex_error_max_m": 5.364418242947977e-09
+    },
+    {
+      "name": "left_torso_side_layer_01",
+      "mesh_data_unchanged": true,
+      "rigid_placement_vertex_error_max_m": 5.364418020903372e-09
+    },
+    {
+      "name": "left_torso_side_layer_lip_01",
+      "mesh_data_unchanged": true,
+      "rigid_placement_vertex_error_max_m": 5.364418020903372e-09
+    },
+    {
+      "name": "left_torso_side_layer_02",
+      "mesh_data_unchanged": true,
+      "rigid_placement_vertex_error_max_m": 5.364418020903372e-09
+    },
+    {
+      "name": "left_torso_side_layer_lip_02",
+      "mesh_data_unchanged": true,
+      "rigid_placement_vertex_error_max_m": 5.364418020903372e-09
+    },
+    {
+      "name": "left_torso_side_layer_03",
+      "mesh_data_unchanged": true,
+      "rigid_placement_vertex_error_max_m": 5.364418020903372e-09
+    },
+    {
+      "name": "left_torso_side_layer_lip_03",
+      "mesh_data_unchanged": true,
+      "rigid_placement_vertex_error_max_m": 5.364418020903372e-09
+    },
+    {
+      "name": "left_blue_forearm_wrap",
+      "mesh_data_unchanged": true,
+      "rigid_placement_vertex_error_max_m": 5.364418020903372e-09
+    },
+    {
+      "name": "left_blue_deltoid_wrap",
+      "mesh_data_unchanged": true,
+      "rigid_placement_vertex_error_max_m": 5.364418242947977e-09
+    },
+    {
+      "name": "left_ivory_shoulder_cap",
+      "mesh_data_unchanged": true,
+      "rigid_placement_vertex_error_max_m": 5.364418242947977e-09
+    },
+    {
+      "name": "left_shoulder_open_bearing_seat",
+      "mesh_data_unchanged": true,
+      "rigid_placement_vertex_error_max_m": 5.364418242947977e-09
+    },
+    {
+      "name": "left_ivory_lower_upper_arm",
+      "mesh_data_unchanged": true,
+      "rigid_placement_vertex_error_max_m": 5.364418020903372e-09
+    },
+    {
+      "name": "left_blue_elbow_yoke",
+      "mesh_data_unchanged": true,
+      "rigid_placement_vertex_error_max_m": 5.364418020903372e-09
+    },
+    {
+      "name": "right_blue_continuous_shoulder_sweep",
+      "mesh_data_unchanged": true,
+      "rigid_placement_vertex_error_max_m": 5.364418242947977e-09
+    },
+    {
+      "name": "right_blue_shoulder_upper_return",
+      "mesh_data_unchanged": true,
+      "rigid_placement_vertex_error_max_m": 5.364418242947977e-09
+    },
+    {
+      "name": "right_blue_rear_shoulder_guard",
+      "mesh_data_unchanged": true,
+      "rigid_placement_vertex_error_max_m": 5.364418242947977e-09
+    },
+    {
+      "name": "right_blue_shoulder_diagonal_front_wing",
+      "mesh_data_unchanged": true,
+      "rigid_placement_vertex_error_max_m": 5.364418242947977e-09
+    },
+    {
+      "name": "right_blue_chest_cheek_wrap",
+      "mesh_data_unchanged": true,
+      "rigid_placement_vertex_error_max_m": 5.364418242947977e-09
+    },
+    {
+      "name": "right_blue_chest_cheek_side_return",
+      "mesh_data_unchanged": true,
+      "rigid_placement_vertex_error_max_m": 5.364418020903372e-09
+    },
+    {
+      "name": "right_radiator_ivory_socket",
+      "mesh_data_unchanged": true,
+      "rigid_placement_vertex_error_max_m": 5.364418242947977e-09
+    },
+    {
+      "name": "right_radiator_gold_trim",
+      "mesh_data_unchanged": true,
+      "rigid_placement_vertex_error_max_m": 5.364418242947977e-09
+    },
+    {
+      "name": "right_radiator_black_well",
+      "mesh_data_unchanged": true,
+      "rigid_placement_vertex_error_max_m": 5.364418242947977e-09
+    },
+    {
+      "name": "right_radiator_turning_plenum",
+      "mesh_data_unchanged": true,
+      "rigid_placement_vertex_error_max_m": 5.364418242947977e-09
+    },
+    {
+      "name": "right_radiator_louver_00",
+      "mesh_data_unchanged": true,
+      "rigid_placement_vertex_error_max_m": 5.364418242947977e-09
+    },
+    {
+      "name": "right_radiator_louver_01",
+      "mesh_data_unchanged": true,
+      "rigid_placement_vertex_error_max_m": 5.364418020903372e-09
+    },
+    {
+      "name": "right_radiator_louver_02",
+      "mesh_data_unchanged": true,
+      "rigid_placement_vertex_error_max_m": 5.364418020903372e-09
+    },
+    {
+      "name": "right_radiator_louver_03",
+      "mesh_data_unchanged": true,
+      "rigid_placement_vertex_error_max_m": 5.364418020903372e-09
+    },
+    {
+      "name": "right_radiator_louver_04",
+      "mesh_data_unchanged": true,
+      "rigid_placement_vertex_error_max_m": 5.364418020903372e-09
+    },
+    {
+      "name": "right_radiator_louver_05",
+      "mesh_data_unchanged": true,
+      "rigid_placement_vertex_error_max_m": 5.364418020903372e-09
+    },
+    {
+      "name": "right_radiator_louver_06",
+      "mesh_data_unchanged": true,
+      "rigid_placement_vertex_error_max_m": 5.364418020903372e-09
+    },
+    {
+      "name": "right_radiator_louver_07",
+      "mesh_data_unchanged": true,
+      "rigid_placement_vertex_error_max_m": 5.364418020903372e-09
+    },
+    {
+      "name": "right_radiator_louver_08",
+      "mesh_data_unchanged": true,
+      "rigid_placement_vertex_error_max_m": 5.364418020903372e-09
+    },
+    {
+      "name": "right_radiator_louver_09",
+      "mesh_data_unchanged": true,
+      "rigid_placement_vertex_error_max_m": 5.364418020903372e-09
+    },
+    {
+      "name": "right_radiator_louver_10",
+      "mesh_data_unchanged": true,
+      "rigid_placement_vertex_error_max_m": 5.364418020903372e-09
+    },
+    {
+      "name": "right_vent_fastener_0",
+      "mesh_data_unchanged": true,
+      "rigid_placement_vertex_error_max_m": 5.364418242947977e-09
+    },
+    {
+      "name": "right_vent_fastener_1",
+      "mesh_data_unchanged": true,
+      "rigid_placement_vertex_error_max_m": 5.364418242947977e-09
+    },
+    {
+      "name": "right_vent_fastener_2",
+      "mesh_data_unchanged": true,
+      "rigid_placement_vertex_error_max_m": 5.364418020903372e-09
+    },
+    {
+      "name": "right_vent_fastener_3",
+      "mesh_data_unchanged": true,
+      "rigid_placement_vertex_error_max_m": 5.364418020903372e-09
+    },
+    {
+      "name": "right_dark_torso_side_housing",
+      "mesh_data_unchanged": true,
+      "rigid_placement_vertex_error_max_m": 5.364418242947977e-09
+    },
+    {
+      "name": "right_torso_side_layer_00",
+      "mesh_data_unchanged": true,
+      "rigid_placement_vertex_error_max_m": 5.364418242947977e-09
+    },
+    {
+      "name": "right_torso_side_layer_lip_00",
+      "mesh_data_unchanged": true,
+      "rigid_placement_vertex_error_max_m": 5.364418242947977e-09
+    },
+    {
+      "name": "right_torso_side_layer_01",
+      "mesh_data_unchanged": true,
+      "rigid_placement_vertex_error_max_m": 5.364418020903372e-09
+    },
+    {
+      "name": "right_torso_side_layer_lip_01",
+      "mesh_data_unchanged": true,
+      "rigid_placement_vertex_error_max_m": 5.364418020903372e-09
+    },
+    {
+      "name": "right_torso_side_layer_02",
+      "mesh_data_unchanged": true,
+      "rigid_placement_vertex_error_max_m": 5.364418020903372e-09
+    },
+    {
+      "name": "right_torso_side_layer_lip_02",
+      "mesh_data_unchanged": true,
+      "rigid_placement_vertex_error_max_m": 5.364418020903372e-09
+    },
+    {
+      "name": "right_torso_side_layer_03",
+      "mesh_data_unchanged": true,
+      "rigid_placement_vertex_error_max_m": 5.364418020903372e-09
+    },
+    {
+      "name": "right_torso_side_layer_lip_03",
+      "mesh_data_unchanged": true,
+      "rigid_placement_vertex_error_max_m": 5.364418020903372e-09
+    },
+    {
+      "name": "right_blue_forearm_wrap",
+      "mesh_data_unchanged": true,
+      "rigid_placement_vertex_error_max_m": 5.364418020903372e-09
+    },
+    {
+      "name": "right_blue_deltoid_wrap",
+      "mesh_data_unchanged": true,
+      "rigid_placement_vertex_error_max_m": 5.364418242947977e-09
+    },
+    {
+      "name": "right_ivory_shoulder_cap",
+      "mesh_data_unchanged": true,
+      "rigid_placement_vertex_error_max_m": 5.364418242947977e-09
+    },
+    {
+      "name": "right_shoulder_open_bearing_seat",
+      "mesh_data_unchanged": true,
+      "rigid_placement_vertex_error_max_m": 5.364418242947977e-09
+    },
+    {
+      "name": "right_ivory_lower_upper_arm",
+      "mesh_data_unchanged": true,
+      "rigid_placement_vertex_error_max_m": 5.364418020903372e-09
+    },
+    {
+      "name": "right_blue_elbow_yoke",
+      "mesh_data_unchanged": true,
+      "rigid_placement_vertex_error_max_m": 5.364418020903372e-09
+    },
+    {
+      "name": "left_shoulder_inner_barrel",
+      "mesh_data_unchanged": true,
+      "rigid_placement_vertex_error_max_m": 5.364418242947977e-09
+    },
+    {
+      "name": "left_shoulder_barrel_band_0",
+      "mesh_data_unchanged": true,
+      "rigid_placement_vertex_error_max_m": 5.364418242947977e-09
+    },
+    {
+      "name": "left_shoulder_barrel_band_1",
+      "mesh_data_unchanged": true,
+      "rigid_placement_vertex_error_max_m": 5.364418242947977e-09
+    },
+    {
+      "name": "left_shoulder_negative_y_support_cheek",
+      "mesh_data_unchanged": true,
+      "rigid_placement_vertex_error_max_m": 5.364418242947977e-09
+    },
+    {
+      "name": "left_shoulder_negative_y_recessed_face",
+      "mesh_data_unchanged": true,
+      "rigid_placement_vertex_error_max_m": 5.364418242947977e-09
+    },
+    {
+      "name": "left_shoulder_negative_y_thin_rim",
+      "mesh_data_unchanged": true,
+      "rigid_placement_vertex_error_max_m": 5.364418242947977e-09
+    },
+    {
+      "name": "left_shoulder_negative_y_central_cap",
+      "mesh_data_unchanged": true,
+      "rigid_placement_vertex_error_max_m": 5.364418242947977e-09
+    },
+    {
+      "name": "left_shoulder_negative_y_cap_step",
+      "mesh_data_unchanged": true,
+      "rigid_placement_vertex_error_max_m": 5.364418242947977e-09
+    },
+    {
+      "name": "left_shoulder_positive_y_support_cheek",
+      "mesh_data_unchanged": true,
+      "rigid_placement_vertex_error_max_m": 5.364418242947977e-09
+    },
+    {
+      "name": "left_shoulder_positive_y_recessed_face",
+      "mesh_data_unchanged": true,
+      "rigid_placement_vertex_error_max_m": 5.364418242947977e-09
+    },
+    {
+      "name": "left_shoulder_positive_y_thin_rim",
+      "mesh_data_unchanged": true,
+      "rigid_placement_vertex_error_max_m": 5.364418242947977e-09
+    },
+    {
+      "name": "left_shoulder_positive_y_central_cap",
+      "mesh_data_unchanged": true,
+      "rigid_placement_vertex_error_max_m": 5.364418242947977e-09
+    },
+    {
+      "name": "left_shoulder_positive_y_cap_step",
+      "mesh_data_unchanged": true,
+      "rigid_placement_vertex_error_max_m": 5.364418242947977e-09
+    },
+    {
+      "name": "left_elbow_inner_barrel",
+      "mesh_data_unchanged": true,
+      "rigid_placement_vertex_error_max_m": 5.364418020903372e-09
+    },
+    {
+      "name": "left_elbow_barrel_band_0",
+      "mesh_data_unchanged": true,
+      "rigid_placement_vertex_error_max_m": 5.364418020903372e-09
+    },
+    {
+      "name": "left_elbow_barrel_band_1",
+      "mesh_data_unchanged": true,
+      "rigid_placement_vertex_error_max_m": 5.364418020903372e-09
+    },
+    {
+      "name": "left_elbow_negative_y_support_cheek",
+      "mesh_data_unchanged": true,
+      "rigid_placement_vertex_error_max_m": 5.364418020903372e-09
+    },
+    {
+      "name": "left_elbow_negative_y_recessed_face",
+      "mesh_data_unchanged": true,
+      "rigid_placement_vertex_error_max_m": 5.364418020903372e-09
+    },
+    {
+      "name": "left_elbow_negative_y_thin_rim",
+      "mesh_data_unchanged": true,
+      "rigid_placement_vertex_error_max_m": 5.364418020903372e-09
+    },
+    {
+      "name": "left_elbow_negative_y_central_cap",
+      "mesh_data_unchanged": true,
+      "rigid_placement_vertex_error_max_m": 5.364418020903372e-09
+    },
+    {
+      "name": "left_elbow_negative_y_cap_step",
+      "mesh_data_unchanged": true,
+      "rigid_placement_vertex_error_max_m": 5.364418020903372e-09
+    },
+    {
+      "name": "left_elbow_positive_y_support_cheek",
+      "mesh_data_unchanged": true,
+      "rigid_placement_vertex_error_max_m": 5.364418020903372e-09
+    },
+    {
+      "name": "left_elbow_positive_y_recessed_face",
+      "mesh_data_unchanged": true,
+      "rigid_placement_vertex_error_max_m": 5.364418020903372e-09
+    },
+    {
+      "name": "left_elbow_positive_y_thin_rim",
+      "mesh_data_unchanged": true,
+      "rigid_placement_vertex_error_max_m": 5.364418020903372e-09
+    },
+    {
+      "name": "left_elbow_positive_y_central_cap",
+      "mesh_data_unchanged": true,
+      "rigid_placement_vertex_error_max_m": 5.364418020903372e-09
+    },
+    {
+      "name": "left_elbow_positive_y_cap_step",
+      "mesh_data_unchanged": true,
+      "rigid_placement_vertex_error_max_m": 5.364418020903372e-09
+    },
+    {
+      "name": "left_elbow_forward_shallow_cover",
+      "mesh_data_unchanged": true,
+      "rigid_placement_vertex_error_max_m": 5.364418020903372e-09
+    },
+    {
+      "name": "left_elbow_forward_recessed_face",
+      "mesh_data_unchanged": true,
+      "rigid_placement_vertex_error_max_m": 5.364418020903372e-09
+    },
+    {
+      "name": "left_elbow_forward_thin_gold_ring",
+      "mesh_data_unchanged": true,
+      "rigid_placement_vertex_error_max_m": 5.364418020903372e-09
+    },
+    {
+      "name": "left_elbow_forward_dark_center",
+      "mesh_data_unchanged": true,
+      "rigid_placement_vertex_error_max_m": 5.364418020903372e-09
+    },
+    {
+      "name": "left_wrist_inner_barrel",
+      "mesh_data_unchanged": true,
+      "rigid_placement_vertex_error_max_m": 5.364418020903372e-09
+    },
+    {
+      "name": "left_wrist_barrel_band_0",
+      "mesh_data_unchanged": true,
+      "rigid_placement_vertex_error_max_m": 5.364418020903372e-09
+    },
+    {
+      "name": "left_wrist_barrel_band_1",
+      "mesh_data_unchanged": true,
+      "rigid_placement_vertex_error_max_m": 5.364418020903372e-09
+    },
+    {
+      "name": "left_wrist_negative_y_support_cheek",
+      "mesh_data_unchanged": true,
+      "rigid_placement_vertex_error_max_m": 5.364418020903372e-09
+    },
+    {
+      "name": "left_wrist_negative_y_recessed_face",
+      "mesh_data_unchanged": true,
+      "rigid_placement_vertex_error_max_m": 5.364418020903372e-09
+    },
+    {
+      "name": "left_wrist_negative_y_thin_rim",
+      "mesh_data_unchanged": true,
+      "rigid_placement_vertex_error_max_m": 5.364418020903372e-09
+    },
+    {
+      "name": "left_wrist_negative_y_central_cap",
+      "mesh_data_unchanged": true,
+      "rigid_placement_vertex_error_max_m": 5.364418020903372e-09
+    },
+    {
+      "name": "left_wrist_negative_y_cap_step",
+      "mesh_data_unchanged": true,
+      "rigid_placement_vertex_error_max_m": 5.364418020903372e-09
+    },
+    {
+      "name": "left_wrist_positive_y_support_cheek",
+      "mesh_data_unchanged": true,
+      "rigid_placement_vertex_error_max_m": 5.364418020903372e-09
+    },
+    {
+      "name": "left_wrist_positive_y_recessed_face",
+      "mesh_data_unchanged": true,
+      "rigid_placement_vertex_error_max_m": 5.364418020903372e-09
+    },
+    {
+      "name": "left_wrist_positive_y_thin_rim",
+      "mesh_data_unchanged": true,
+      "rigid_placement_vertex_error_max_m": 5.364418020903372e-09
+    },
+    {
+      "name": "left_wrist_positive_y_central_cap",
+      "mesh_data_unchanged": true,
+      "rigid_placement_vertex_error_max_m": 5.364418020903372e-09
+    },
+    {
+      "name": "left_wrist_positive_y_cap_step",
+      "mesh_data_unchanged": true,
+      "rigid_placement_vertex_error_max_m": 5.364418020903372e-09
+    },
+    {
+      "name": "left_palm_inner_carrier",
+      "mesh_data_unchanged": true,
+      "rigid_placement_vertex_error_max_m": 5.364418020903372e-09
+    },
+    {
+      "name": "left_ivory_palm_dorsal",
+      "mesh_data_unchanged": true,
+      "rigid_placement_vertex_error_max_m": 5.364418020903372e-09
+    },
+    {
+      "name": "left_ivory_palm_reverse_cover",
+      "mesh_data_unchanged": true,
+      "rigid_placement_vertex_error_max_m": 5.364418020903372e-09
+    },
+    {
+      "name": "left_palm_lower_dark_seam",
+      "mesh_data_unchanged": true,
+      "rigid_placement_vertex_error_max_m": 5.364418020903372e-09
+    },
+    {
+      "name": "left_palm_upper_exposed_hinge",
+      "mesh_data_unchanged": true,
+      "rigid_placement_vertex_error_max_m": 5.364418020903372e-09
+    },
+    {
+      "name": "left_palm_lower_exposed_hinge",
+      "mesh_data_unchanged": true,
+      "rigid_placement_vertex_error_max_m": 5.364418020903372e-09
+    },
+    {
+      "name": "left_finger_1_root_joint",
+      "mesh_data_unchanged": true,
+      "rigid_placement_vertex_error_max_m": 5.364418020903372e-09
+    },
+    {
+      "name": "left_finger_1_proximal_casting",
+      "mesh_data_unchanged": true,
+      "rigid_placement_vertex_error_max_m": 5.364418020903372e-09
+    },
+    {
+      "name": "left_finger_1_ivory_first_pad",
+      "mesh_data_unchanged": true,
+      "rigid_placement_vertex_error_max_m": 5.364418020903372e-09
+    },
+    {
+      "name": "left_finger_1_ivory_reverse_first_pad",
+      "mesh_data_unchanged": true,
+      "rigid_placement_vertex_error_max_m": 5.364418020903372e-09
+    },
+    {
+      "name": "left_finger_1_interphalangeal_joint",
+      "mesh_data_unchanged": true,
+      "rigid_placement_vertex_error_max_m": 5.364418020903372e-09
+    },
+    {
+      "name": "left_finger_1_curved_distal",
+      "mesh_data_unchanged": true,
+      "rigid_placement_vertex_error_max_m": 5.364418020903372e-09
+    },
+    {
+      "name": "left_finger_1_tip_contact_pad",
+      "mesh_data_unchanged": true,
+      "rigid_placement_vertex_error_max_m": 5.364418020903372e-09
+    },
+    {
+      "name": "left_finger_2_root_joint",
+      "mesh_data_unchanged": true,
+      "rigid_placement_vertex_error_max_m": 5.364418020903372e-09
+    },
+    {
+      "name": "left_finger_2_proximal_casting",
+      "mesh_data_unchanged": true,
+      "rigid_placement_vertex_error_max_m": 5.364418020903372e-09
+    },
+    {
+      "name": "left_finger_2_ivory_first_pad",
+      "mesh_data_unchanged": true,
+      "rigid_placement_vertex_error_max_m": 5.364418020903372e-09
+    },
+    {
+      "name": "left_finger_2_ivory_reverse_first_pad",
+      "mesh_data_unchanged": true,
+      "rigid_placement_vertex_error_max_m": 5.364418020903372e-09
+    },
+    {
+      "name": "left_finger_2_interphalangeal_joint",
+      "mesh_data_unchanged": true,
+      "rigid_placement_vertex_error_max_m": 5.364418020903372e-09
+    },
+    {
+      "name": "left_finger_2_curved_distal",
+      "mesh_data_unchanged": true,
+      "rigid_placement_vertex_error_max_m": 5.364418020903372e-09
+    },
+    {
+      "name": "left_finger_2_tip_contact_pad",
+      "mesh_data_unchanged": true,
+      "rigid_placement_vertex_error_max_m": 5.364418020903372e-09
+    },
+    {
+      "name": "left_finger_3_root_joint",
+      "mesh_data_unchanged": true,
+      "rigid_placement_vertex_error_max_m": 5.364418020903372e-09
+    },
+    {
+      "name": "left_finger_3_proximal_casting",
+      "mesh_data_unchanged": true,
+      "rigid_placement_vertex_error_max_m": 5.364418020903372e-09
+    },
+    {
+      "name": "left_finger_3_ivory_first_pad",
+      "mesh_data_unchanged": true,
+      "rigid_placement_vertex_error_max_m": 5.364418020903372e-09
+    },
+    {
+      "name": "left_finger_3_ivory_reverse_first_pad",
+      "mesh_data_unchanged": true,
+      "rigid_placement_vertex_error_max_m": 5.364418020903372e-09
+    },
+    {
+      "name": "left_finger_3_interphalangeal_joint",
+      "mesh_data_unchanged": true,
+      "rigid_placement_vertex_error_max_m": 5.364418020903372e-09
+    },
+    {
+      "name": "left_finger_3_curved_distal",
+      "mesh_data_unchanged": true,
+      "rigid_placement_vertex_error_max_m": 5.364418020903372e-09
+    },
+    {
+      "name": "left_finger_3_tip_contact_pad",
+      "mesh_data_unchanged": true,
+      "rigid_placement_vertex_error_max_m": 5.364418020903372e-09
+    },
+    {
+      "name": "left_thumb_root_web",
+      "mesh_data_unchanged": true,
+      "rigid_placement_vertex_error_max_m": 5.364418020903372e-09
+    },
+    {
+      "name": "left_thumb_root_pin",
+      "mesh_data_unchanged": true,
+      "rigid_placement_vertex_error_max_m": 5.364418020903372e-09
+    },
+    {
+      "name": "left_thumb_proximal_casting",
+      "mesh_data_unchanged": true,
+      "rigid_placement_vertex_error_max_m": 5.364418020903372e-09
+    },
+    {
+      "name": "left_thumb_ivory_first_pad",
+      "mesh_data_unchanged": true,
+      "rigid_placement_vertex_error_max_m": 5.364418020903372e-09
+    },
+    {
+      "name": "left_thumb_middle_pin",
+      "mesh_data_unchanged": true,
+      "rigid_placement_vertex_error_max_m": 5.364418020903372e-09
+    },
+    {
+      "name": "left_thumb_black_terminal",
+      "mesh_data_unchanged": true,
+      "rigid_placement_vertex_error_max_m": 5.364418020903372e-09
+    },
+    {
+      "name": "left_palm_wrist_negative_y_short_neck",
+      "mesh_data_unchanged": true,
+      "rigid_placement_vertex_error_max_m": 5.364418020903372e-09
+    },
+    {
+      "name": "left_palm_wrist_positive_y_short_neck",
+      "mesh_data_unchanged": true,
+      "rigid_placement_vertex_error_max_m": 5.364418020903372e-09
+    },
+    {
+      "name": "right_shoulder_inner_barrel",
+      "mesh_data_unchanged": true,
+      "rigid_placement_vertex_error_max_m": 5.364418242947977e-09
+    },
+    {
+      "name": "right_shoulder_barrel_band_0",
+      "mesh_data_unchanged": true,
+      "rigid_placement_vertex_error_max_m": 5.364418242947977e-09
+    },
+    {
+      "name": "right_shoulder_barrel_band_1",
+      "mesh_data_unchanged": true,
+      "rigid_placement_vertex_error_max_m": 5.364418242947977e-09
+    },
+    {
+      "name": "right_shoulder_negative_y_support_cheek",
+      "mesh_data_unchanged": true,
+      "rigid_placement_vertex_error_max_m": 5.364418242947977e-09
+    },
+    {
+      "name": "right_shoulder_negative_y_recessed_face",
+      "mesh_data_unchanged": true,
+      "rigid_placement_vertex_error_max_m": 5.364418242947977e-09
+    },
+    {
+      "name": "right_shoulder_negative_y_thin_rim",
+      "mesh_data_unchanged": true,
+      "rigid_placement_vertex_error_max_m": 5.364418242947977e-09
+    },
+    {
+      "name": "right_shoulder_negative_y_central_cap",
+      "mesh_data_unchanged": true,
+      "rigid_placement_vertex_error_max_m": 5.364418242947977e-09
+    },
+    {
+      "name": "right_shoulder_negative_y_cap_step",
+      "mesh_data_unchanged": true,
+      "rigid_placement_vertex_error_max_m": 5.364418242947977e-09
+    },
+    {
+      "name": "right_shoulder_positive_y_support_cheek",
+      "mesh_data_unchanged": true,
+      "rigid_placement_vertex_error_max_m": 5.364418242947977e-09
+    },
+    {
+      "name": "right_shoulder_positive_y_recessed_face",
+      "mesh_data_unchanged": true,
+      "rigid_placement_vertex_error_max_m": 5.364418242947977e-09
+    },
+    {
+      "name": "right_shoulder_positive_y_thin_rim",
+      "mesh_data_unchanged": true,
+      "rigid_placement_vertex_error_max_m": 5.364418242947977e-09
+    },
+    {
+      "name": "right_shoulder_positive_y_central_cap",
+      "mesh_data_unchanged": true,
+      "rigid_placement_vertex_error_max_m": 5.364418242947977e-09
+    },
+    {
+      "name": "right_shoulder_positive_y_cap_step",
+      "mesh_data_unchanged": true,
+      "rigid_placement_vertex_error_max_m": 5.364418242947977e-09
+    },
+    {
+      "name": "right_elbow_inner_barrel",
+      "mesh_data_unchanged": true,
+      "rigid_placement_vertex_error_max_m": 5.364418020903372e-09
+    },
+    {
+      "name": "right_elbow_barrel_band_0",
+      "mesh_data_unchanged": true,
+      "rigid_placement_vertex_error_max_m": 5.364418020903372e-09
+    },
+    {
+      "name": "right_elbow_barrel_band_1",
+      "mesh_data_unchanged": true,
+      "rigid_placement_vertex_error_max_m": 5.364418020903372e-09
+    },
+    {
+      "name": "right_elbow_negative_y_support_cheek",
+      "mesh_data_unchanged": true,
+      "rigid_placement_vertex_error_max_m": 5.364418020903372e-09
+    },
+    {
+      "name": "right_elbow_negative_y_recessed_face",
+      "mesh_data_unchanged": true,
+      "rigid_placement_vertex_error_max_m": 5.364418020903372e-09
+    },
+    {
+      "name": "right_elbow_negative_y_thin_rim",
+      "mesh_data_unchanged": true,
+      "rigid_placement_vertex_error_max_m": 5.364418020903372e-09
+    },
+    {
+      "name": "right_elbow_negative_y_central_cap",
+      "mesh_data_unchanged": true,
+      "rigid_placement_vertex_error_max_m": 5.364418020903372e-09
+    },
+    {
+      "name": "right_elbow_negative_y_cap_step",
+      "mesh_data_unchanged": true,
+      "rigid_placement_vertex_error_max_m": 5.364418020903372e-09
+    },
+    {
+      "name": "right_elbow_positive_y_support_cheek",
+      "mesh_data_unchanged": true,
+      "rigid_placement_vertex_error_max_m": 5.364418020903372e-09
+    },
+    {
+      "name": "right_elbow_positive_y_recessed_face",
+      "mesh_data_unchanged": true,
+      "rigid_placement_vertex_error_max_m": 5.364418020903372e-09
+    },
+    {
+      "name": "right_elbow_positive_y_thin_rim",
+      "mesh_data_unchanged": true,
+      "rigid_placement_vertex_error_max_m": 5.364418020903372e-09
+    },
+    {
+      "name": "right_elbow_positive_y_central_cap",
+      "mesh_data_unchanged": true,
+      "rigid_placement_vertex_error_max_m": 5.364418020903372e-09
+    },
+    {
+      "name": "right_elbow_positive_y_cap_step",
+      "mesh_data_unchanged": true,
+      "rigid_placement_vertex_error_max_m": 5.364418020903372e-09
+    },
+    {
+      "name": "right_elbow_forward_shallow_cover",
+      "mesh_data_unchanged": true,
+      "rigid_placement_vertex_error_max_m": 5.364418020903372e-09
+    },
+    {
+      "name": "right_elbow_forward_recessed_face",
+      "mesh_data_unchanged": true,
+      "rigid_placement_vertex_error_max_m": 5.364418020903372e-09
+    },
+    {
+      "name": "right_elbow_forward_thin_gold_ring",
+      "mesh_data_unchanged": true,
+      "rigid_placement_vertex_error_max_m": 5.364418020903372e-09
+    },
+    {
+      "name": "right_elbow_forward_dark_center",
+      "mesh_data_unchanged": true,
+      "rigid_placement_vertex_error_max_m": 5.364418020903372e-09
+    },
+    {
+      "name": "right_wrist_inner_barrel",
+      "mesh_data_unchanged": true,
+      "rigid_placement_vertex_error_max_m": 5.364418020903372e-09
+    },
+    {
+      "name": "right_wrist_barrel_band_0",
+      "mesh_data_unchanged": true,
+      "rigid_placement_vertex_error_max_m": 5.364418020903372e-09
+    },
+    {
+      "name": "right_wrist_barrel_band_1",
+      "mesh_data_unchanged": true,
+      "rigid_placement_vertex_error_max_m": 5.364418020903372e-09
+    },
+    {
+      "name": "right_wrist_negative_y_support_cheek",
+      "mesh_data_unchanged": true,
+      "rigid_placement_vertex_error_max_m": 5.364418020903372e-09
+    },
+    {
+      "name": "right_wrist_negative_y_recessed_face",
+      "mesh_data_unchanged": true,
+      "rigid_placement_vertex_error_max_m": 5.364418020903372e-09
+    },
+    {
+      "name": "right_wrist_negative_y_thin_rim",
+      "mesh_data_unchanged": true,
+      "rigid_placement_vertex_error_max_m": 5.364418020903372e-09
+    },
+    {
+      "name": "right_wrist_negative_y_central_cap",
+      "mesh_data_unchanged": true,
+      "rigid_placement_vertex_error_max_m": 5.364418020903372e-09
+    },
+    {
+      "name": "right_wrist_negative_y_cap_step",
+      "mesh_data_unchanged": true,
+      "rigid_placement_vertex_error_max_m": 5.364418020903372e-09
+    },
+    {
+      "name": "right_wrist_positive_y_support_cheek",
+      "mesh_data_unchanged": true,
+      "rigid_placement_vertex_error_max_m": 5.364418020903372e-09
+    },
+    {
+      "name": "right_wrist_positive_y_recessed_face",
+      "mesh_data_unchanged": true,
+      "rigid_placement_vertex_error_max_m": 5.364418020903372e-09
+    },
+    {
+      "name": "right_wrist_positive_y_thin_rim",
+      "mesh_data_unchanged": true,
+      "rigid_placement_vertex_error_max_m": 5.364418020903372e-09
+    },
+    {
+      "name": "right_wrist_positive_y_central_cap",
+      "mesh_data_unchanged": true,
+      "rigid_placement_vertex_error_max_m": 5.364418020903372e-09
+    },
+    {
+      "name": "right_wrist_positive_y_cap_step",
+      "mesh_data_unchanged": true,
+      "rigid_placement_vertex_error_max_m": 5.364418020903372e-09
+    },
+    {
+      "name": "right_palm_inner_carrier",
+      "mesh_data_unchanged": true,
+      "rigid_placement_vertex_error_max_m": 5.364418020903372e-09
+    },
+    {
+      "name": "right_ivory_palm_dorsal",
+      "mesh_data_unchanged": true,
+      "rigid_placement_vertex_error_max_m": 5.364418020903372e-09
+    },
+    {
+      "name": "right_ivory_palm_reverse_cover",
+      "mesh_data_unchanged": true,
+      "rigid_placement_vertex_error_max_m": 5.364418020903372e-09
+    },
+    {
+      "name": "right_palm_lower_dark_seam",
+      "mesh_data_unchanged": true,
+      "rigid_placement_vertex_error_max_m": 5.364418020903372e-09
+    },
+    {
+      "name": "right_palm_upper_exposed_hinge",
+      "mesh_data_unchanged": true,
+      "rigid_placement_vertex_error_max_m": 5.364418020903372e-09
+    },
+    {
+      "name": "right_palm_lower_exposed_hinge",
+      "mesh_data_unchanged": true,
+      "rigid_placement_vertex_error_max_m": 5.364418020903372e-09
+    },
+    {
+      "name": "right_finger_1_root_joint",
+      "mesh_data_unchanged": true,
+      "rigid_placement_vertex_error_max_m": 5.364418020903372e-09
+    },
+    {
+      "name": "right_finger_1_proximal_casting",
+      "mesh_data_unchanged": true,
+      "rigid_placement_vertex_error_max_m": 5.364418020903372e-09
+    },
+    {
+      "name": "right_finger_1_ivory_first_pad",
+      "mesh_data_unchanged": true,
+      "rigid_placement_vertex_error_max_m": 5.364418020903372e-09
+    },
+    {
+      "name": "right_finger_1_ivory_reverse_first_pad",
+      "mesh_data_unchanged": true,
+      "rigid_placement_vertex_error_max_m": 5.364418020903372e-09
+    },
+    {
+      "name": "right_finger_1_interphalangeal_joint",
+      "mesh_data_unchanged": true,
+      "rigid_placement_vertex_error_max_m": 5.364418020903372e-09
+    },
+    {
+      "name": "right_finger_1_curved_distal",
+      "mesh_data_unchanged": true,
+      "rigid_placement_vertex_error_max_m": 5.364418020903372e-09
+    },
+    {
+      "name": "right_finger_1_tip_contact_pad",
+      "mesh_data_unchanged": true,
+      "rigid_placement_vertex_error_max_m": 5.364418020903372e-09
+    },
+    {
+      "name": "right_finger_2_root_joint",
+      "mesh_data_unchanged": true,
+      "rigid_placement_vertex_error_max_m": 5.364418020903372e-09
+    },
+    {
+      "name": "right_finger_2_proximal_casting",
+      "mesh_data_unchanged": true,
+      "rigid_placement_vertex_error_max_m": 5.364418020903372e-09
+    },
+    {
+      "name": "right_finger_2_ivory_first_pad",
+      "mesh_data_unchanged": true,
+      "rigid_placement_vertex_error_max_m": 5.364418020903372e-09
+    },
+    {
+      "name": "right_finger_2_ivory_reverse_first_pad",
+      "mesh_data_unchanged": true,
+      "rigid_placement_vertex_error_max_m": 5.364418020903372e-09
+    },
+    {
+      "name": "right_finger_2_interphalangeal_joint",
+      "mesh_data_unchanged": true,
+      "rigid_placement_vertex_error_max_m": 5.364418020903372e-09
+    },
+    {
+      "name": "right_finger_2_curved_distal",
+      "mesh_data_unchanged": true,
+      "rigid_placement_vertex_error_max_m": 5.364418020903372e-09
+    },
+    {
+      "name": "right_finger_2_tip_contact_pad",
+      "mesh_data_unchanged": true,
+      "rigid_placement_vertex_error_max_m": 5.364418020903372e-09
+    },
+    {
+      "name": "right_finger_3_root_joint",
+      "mesh_data_unchanged": true,
+      "rigid_placement_vertex_error_max_m": 5.364418020903372e-09
+    },
+    {
+      "name": "right_finger_3_proximal_casting",
+      "mesh_data_unchanged": true,
+      "rigid_placement_vertex_error_max_m": 5.364418020903372e-09
+    },
+    {
+      "name": "right_finger_3_ivory_first_pad",
+      "mesh_data_unchanged": true,
+      "rigid_placement_vertex_error_max_m": 5.364418020903372e-09
+    },
+    {
+      "name": "right_finger_3_ivory_reverse_first_pad",
+      "mesh_data_unchanged": true,
+      "rigid_placement_vertex_error_max_m": 5.364418020903372e-09
+    },
+    {
+      "name": "right_finger_3_interphalangeal_joint",
+      "mesh_data_unchanged": true,
+      "rigid_placement_vertex_error_max_m": 5.364418020903372e-09
+    },
+    {
+      "name": "right_finger_3_curved_distal",
+      "mesh_data_unchanged": true,
+      "rigid_placement_vertex_error_max_m": 5.364418020903372e-09
+    },
+    {
+      "name": "right_finger_3_tip_contact_pad",
+      "mesh_data_unchanged": true,
+      "rigid_placement_vertex_error_max_m": 5.364418020903372e-09
+    },
+    {
+      "name": "right_thumb_root_web",
+      "mesh_data_unchanged": true,
+      "rigid_placement_vertex_error_max_m": 5.364418020903372e-09
+    },
+    {
+      "name": "right_thumb_root_pin",
+      "mesh_data_unchanged": true,
+      "rigid_placement_vertex_error_max_m": 5.364418020903372e-09
+    },
+    {
+      "name": "right_thumb_proximal_casting",
+      "mesh_data_unchanged": true,
+      "rigid_placement_vertex_error_max_m": 5.364418020903372e-09
+    },
+    {
+      "name": "right_thumb_ivory_first_pad",
+      "mesh_data_unchanged": true,
+      "rigid_placement_vertex_error_max_m": 5.364418020903372e-09
+    },
+    {
+      "name": "right_thumb_middle_pin",
+      "mesh_data_unchanged": true,
+      "rigid_placement_vertex_error_max_m": 5.364418020903372e-09
+    },
+    {
+      "name": "right_thumb_black_terminal",
+      "mesh_data_unchanged": true,
+      "rigid_placement_vertex_error_max_m": 5.364418020903372e-09
+    },
+    {
+      "name": "right_palm_wrist_negative_y_short_neck",
+      "mesh_data_unchanged": true,
+      "rigid_placement_vertex_error_max_m": 5.364418020903372e-09
+    },
+    {
+      "name": "right_palm_wrist_positive_y_short_neck",
+      "mesh_data_unchanged": true,
+      "rigid_placement_vertex_error_max_m": 5.364418020903372e-09
+    },
+    {
+      "name": "structure_spine_box",
+      "mesh_data_unchanged": true,
+      "rigid_placement_vertex_error_max_m": 5.364418242947977e-09
+    },
+    {
+      "name": "left_structure_shoulder_crossmember",
+      "mesh_data_unchanged": true,
+      "rigid_placement_vertex_error_max_m": 5.364418242947977e-09
+    },
+    {
+      "name": "left_structure_upper_arm_box",
+      "mesh_data_unchanged": true,
+      "rigid_placement_vertex_error_max_m": 5.364418242947977e-09
+    },
+    {
+      "name": "left_structure_forearm_box",
+      "mesh_data_unchanged": true,
+      "rigid_placement_vertex_error_max_m": 5.364418020903372e-09
+    },
+    {
+      "name": "right_structure_shoulder_crossmember",
+      "mesh_data_unchanged": true,
+      "rigid_placement_vertex_error_max_m": 5.364418242947977e-09
+    },
+    {
+      "name": "right_structure_upper_arm_box",
+      "mesh_data_unchanged": true,
+      "rigid_placement_vertex_error_max_m": 5.364418242947977e-09
+    },
+    {
+      "name": "right_structure_forearm_box",
+      "mesh_data_unchanged": true,
+      "rigid_placement_vertex_error_max_m": 5.364418020903372e-09
+    },
+    {
+      "name": "left_forearm_upper_edge_00_00",
+      "mesh_data_unchanged": true,
+      "rigid_placement_vertex_error_max_m": 5.364418020903372e-09
+    },
+    {
+      "name": "left_forearm_upper_edge_00_01",
+      "mesh_data_unchanged": true,
+      "rigid_placement_vertex_error_max_m": 5.364418020903372e-09
+    },
+    {
+      "name": "left_forearm_upper_edge_00_02",
+      "mesh_data_unchanged": true,
+      "rigid_placement_vertex_error_max_m": 5.364418020903372e-09
+    },
+    {
+      "name": "left_forearm_upper_edge_00_03",
+      "mesh_data_unchanged": true,
+      "rigid_placement_vertex_error_max_m": 5.364418020903372e-09
+    },
+    {
+      "name": "left_forearm_upper_edge_00_04",
+      "mesh_data_unchanged": true,
+      "rigid_placement_vertex_error_max_m": 5.364418020903372e-09
+    },
+    {
+      "name": "left_forearm_upper_edge_00_05",
+      "mesh_data_unchanged": true,
+      "rigid_placement_vertex_error_max_m": 5.364418020903372e-09
+    },
+    {
+      "name": "left_forearm_upper_edge_00_06",
+      "mesh_data_unchanged": true,
+      "rigid_placement_vertex_error_max_m": 5.364418020903372e-09
+    },
+    {
+      "name": "left_forearm_upper_edge_00_07",
+      "mesh_data_unchanged": true,
+      "rigid_placement_vertex_error_max_m": 5.364418020903372e-09
+    },
+    {
+      "name": "left_forearm_upper_edge_01_00",
+      "mesh_data_unchanged": true,
+      "rigid_placement_vertex_error_max_m": 5.364418020903372e-09
+    },
+    {
+      "name": "left_forearm_upper_edge_01_01",
+      "mesh_data_unchanged": true,
+      "rigid_placement_vertex_error_max_m": 5.364418020903372e-09
+    },
+    {
+      "name": "left_forearm_upper_edge_01_02",
+      "mesh_data_unchanged": true,
+      "rigid_placement_vertex_error_max_m": 5.364418020903372e-09
+    },
+    {
+      "name": "left_forearm_upper_edge_01_03",
+      "mesh_data_unchanged": true,
+      "rigid_placement_vertex_error_max_m": 5.364418020903372e-09
+    },
+    {
+      "name": "left_forearm_upper_edge_01_04",
+      "mesh_data_unchanged": true,
+      "rigid_placement_vertex_error_max_m": 5.364418020903372e-09
+    },
+    {
+      "name": "left_forearm_upper_edge_01_05",
+      "mesh_data_unchanged": true,
+      "rigid_placement_vertex_error_max_m": 5.364418020903372e-09
+    },
+    {
+      "name": "left_forearm_upper_edge_01_06",
+      "mesh_data_unchanged": true,
+      "rigid_placement_vertex_error_max_m": 5.364418020903372e-09
+    },
+    {
+      "name": "left_forearm_upper_edge_01_07",
+      "mesh_data_unchanged": true,
+      "rigid_placement_vertex_error_max_m": 5.364418020903372e-09
+    },
+    {
+      "name": "left_forearm_upper_edge_02_00",
+      "mesh_data_unchanged": true,
+      "rigid_placement_vertex_error_max_m": 5.364418020903372e-09
+    },
+    {
+      "name": "left_forearm_upper_edge_02_01",
+      "mesh_data_unchanged": true,
+      "rigid_placement_vertex_error_max_m": 5.364418020903372e-09
+    },
+    {
+      "name": "left_forearm_upper_edge_02_02",
+      "mesh_data_unchanged": true,
+      "rigid_placement_vertex_error_max_m": 5.364418020903372e-09
+    },
+    {
+      "name": "left_forearm_upper_edge_02_03",
+      "mesh_data_unchanged": true,
+      "rigid_placement_vertex_error_max_m": 5.364418020903372e-09
+    },
+    {
+      "name": "left_forearm_upper_edge_02_04",
+      "mesh_data_unchanged": true,
+      "rigid_placement_vertex_error_max_m": 5.364418020903372e-09
+    },
+    {
+      "name": "left_forearm_upper_edge_02_05",
+      "mesh_data_unchanged": true,
+      "rigid_placement_vertex_error_max_m": 5.364418020903372e-09
+    },
+    {
+      "name": "left_forearm_upper_edge_02_06",
+      "mesh_data_unchanged": true,
+      "rigid_placement_vertex_error_max_m": 5.364418020903372e-09
+    },
+    {
+      "name": "right_forearm_upper_edge_00_00",
+      "mesh_data_unchanged": true,
+      "rigid_placement_vertex_error_max_m": 5.364418020903372e-09
+    },
+    {
+      "name": "right_forearm_upper_edge_00_01",
+      "mesh_data_unchanged": true,
+      "rigid_placement_vertex_error_max_m": 5.364418020903372e-09
+    },
+    {
+      "name": "right_forearm_upper_edge_00_02",
+      "mesh_data_unchanged": true,
+      "rigid_placement_vertex_error_max_m": 5.364418020903372e-09
+    },
+    {
+      "name": "right_forearm_upper_edge_00_03",
+      "mesh_data_unchanged": true,
+      "rigid_placement_vertex_error_max_m": 5.364418020903372e-09
+    },
+    {
+      "name": "right_forearm_upper_edge_00_04",
+      "mesh_data_unchanged": true,
+      "rigid_placement_vertex_error_max_m": 5.364418020903372e-09
+    },
+    {
+      "name": "right_forearm_upper_edge_00_05",
+      "mesh_data_unchanged": true,
+      "rigid_placement_vertex_error_max_m": 5.364418020903372e-09
+    },
+    {
+      "name": "right_forearm_upper_edge_00_06",
+      "mesh_data_unchanged": true,
+      "rigid_placement_vertex_error_max_m": 5.364418020903372e-09
+    },
+    {
+      "name": "right_forearm_upper_edge_01_00",
+      "mesh_data_unchanged": true,
+      "rigid_placement_vertex_error_max_m": 5.364418020903372e-09
+    },
+    {
+      "name": "right_forearm_upper_edge_01_01",
+      "mesh_data_unchanged": true,
+      "rigid_placement_vertex_error_max_m": 5.364418020903372e-09
+    },
+    {
+      "name": "right_forearm_upper_edge_01_02",
+      "mesh_data_unchanged": true,
+      "rigid_placement_vertex_error_max_m": 5.364418020903372e-09
+    },
+    {
+      "name": "right_forearm_upper_edge_01_03",
+      "mesh_data_unchanged": true,
+      "rigid_placement_vertex_error_max_m": 5.364418020903372e-09
+    },
+    {
+      "name": "right_forearm_upper_edge_01_04",
+      "mesh_data_unchanged": true,
+      "rigid_placement_vertex_error_max_m": 5.364418020903372e-09
+    },
+    {
+      "name": "right_forearm_upper_edge_01_05",
+      "mesh_data_unchanged": true,
+      "rigid_placement_vertex_error_max_m": 5.364418020903372e-09
+    },
+    {
+      "name": "right_forearm_upper_edge_01_06",
+      "mesh_data_unchanged": true,
+      "rigid_placement_vertex_error_max_m": 5.364418020903372e-09
+    },
+    {
+      "name": "right_forearm_upper_edge_01_07",
+      "mesh_data_unchanged": true,
+      "rigid_placement_vertex_error_max_m": 5.364418020903372e-09
+    },
+    {
+      "name": "right_forearm_upper_edge_02_00",
+      "mesh_data_unchanged": true,
+      "rigid_placement_vertex_error_max_m": 5.364418020903372e-09
+    },
+    {
+      "name": "right_forearm_upper_edge_02_01",
+      "mesh_data_unchanged": true,
+      "rigid_placement_vertex_error_max_m": 5.364418020903372e-09
+    },
+    {
+      "name": "right_forearm_upper_edge_02_02",
+      "mesh_data_unchanged": true,
+      "rigid_placement_vertex_error_max_m": 5.364418020903372e-09
+    },
+    {
+      "name": "right_forearm_upper_edge_02_03",
+      "mesh_data_unchanged": true,
+      "rigid_placement_vertex_error_max_m": 5.364418020903372e-09
+    },
+    {
+      "name": "right_forearm_upper_edge_02_04",
+      "mesh_data_unchanged": true,
+      "rigid_placement_vertex_error_max_m": 5.364418020903372e-09
+    },
+    {
+      "name": "right_forearm_upper_edge_02_05",
+      "mesh_data_unchanged": true,
+      "rigid_placement_vertex_error_max_m": 5.364418020903372e-09
+    },
+    {
+      "name": "right_forearm_upper_edge_02_06",
+      "mesh_data_unchanged": true,
+      "rigid_placement_vertex_error_max_m": 5.364418020903372e-09
+    },
+    {
+      "name": "right_forearm_upper_edge_02_07",
+      "mesh_data_unchanged": true,
+      "rigid_placement_vertex_error_max_m": 5.364418020903372e-09
+    }
+  ],
+  "upstream_upper_mirror_checks": [
+    {
+      "left": "left_deltoid_gold_marker",
+      "right": "right_deltoid_gold_marker",
+      "maximum_nearest_vertex_mirror_error_m": 0.0015397518873214722
+    },
+    {
+      "left": "left_upper_arm_gold_marker",
+      "right": "right_upper_arm_gold_marker",
+      "maximum_nearest_vertex_mirror_error_m": 0.0
+    },
+    {
+      "left": "left_forearm_gold_marker",
+      "right": "right_forearm_gold_marker",
+      "maximum_nearest_vertex_mirror_error_m": 0.00018107518553733826
+    },
+    {
+      "left": "left_blue_rear_shoulder_edge_cover",
+      "right": "right_blue_rear_shoulder_edge_cover",
+      "maximum_nearest_vertex_mirror_error_m": 0.0
+    },
+    {
+      "left": "left_ivory_hood_window_side_lip",
+      "right": "right_ivory_hood_window_side_lip",
+      "maximum_nearest_vertex_mirror_error_m": 0.0
+    },
+    {
+      "left": "left_blue_continuous_shoulder_sweep",
+      "right": "right_blue_continuous_shoulder_sweep",
+      "maximum_nearest_vertex_mirror_error_m": 0.0
+    },
+    {
+      "left": "left_blue_shoulder_upper_return",
+      "right": "right_blue_shoulder_upper_return",
+      "maximum_nearest_vertex_mirror_error_m": 0.0
+    },
+    {
+      "left": "left_blue_rear_shoulder_guard",
+      "right": "right_blue_rear_shoulder_guard",
+      "maximum_nearest_vertex_mirror_error_m": 0.012910876596573008
+    },
+    {
+      "left": "left_blue_shoulder_diagonal_front_wing",
+      "right": "right_blue_shoulder_diagonal_front_wing",
+      "maximum_nearest_vertex_mirror_error_m": 0.0
+    },
+    {
+      "left": "left_blue_chest_cheek_wrap",
+      "right": "right_blue_chest_cheek_wrap",
+      "maximum_nearest_vertex_mirror_error_m": 0.0
+    },
+    {
+      "left": "left_blue_chest_cheek_side_return",
+      "right": "right_blue_chest_cheek_side_return",
+      "maximum_nearest_vertex_mirror_error_m": 0.0
+    },
+    {
+      "left": "left_radiator_ivory_socket",
+      "right": "right_radiator_ivory_socket",
+      "maximum_nearest_vertex_mirror_error_m": 0.0
+    },
+    {
+      "left": "left_radiator_gold_trim",
+      "right": "right_radiator_gold_trim",
+      "maximum_nearest_vertex_mirror_error_m": 0.0
+    },
+    {
+      "left": "left_radiator_black_well",
+      "right": "right_radiator_black_well",
+      "maximum_nearest_vertex_mirror_error_m": 0.0
+    },
+    {
+      "left": "left_radiator_turning_plenum",
+      "right": "right_radiator_turning_plenum",
+      "maximum_nearest_vertex_mirror_error_m": 0.0
+    },
+    {
+      "left": "left_radiator_louver_00",
+      "right": "right_radiator_louver_00",
+      "maximum_nearest_vertex_mirror_error_m": 0.0
+    },
+    {
+      "left": "left_radiator_louver_01",
+      "right": "right_radiator_louver_01",
+      "maximum_nearest_vertex_mirror_error_m": 2.384185791015625e-07
+    },
+    {
+      "left": "left_radiator_louver_02",
+      "right": "right_radiator_louver_02",
+      "maximum_nearest_vertex_mirror_error_m": 0.0
+    },
+    {
+      "left": "left_radiator_louver_03",
+      "right": "right_radiator_louver_03",
+      "maximum_nearest_vertex_mirror_error_m": 2.384185791015625e-07
+    },
+    {
+      "left": "left_radiator_louver_04",
+      "right": "right_radiator_louver_04",
+      "maximum_nearest_vertex_mirror_error_m": 0.0
+    },
+    {
+      "left": "left_radiator_louver_05",
+      "right": "right_radiator_louver_05",
+      "maximum_nearest_vertex_mirror_error_m": 0.0
+    },
+    {
+      "left": "left_radiator_louver_06",
+      "right": "right_radiator_louver_06",
+      "maximum_nearest_vertex_mirror_error_m": 2.384185791015625e-07
+    },
+    {
+      "left": "left_radiator_louver_07",
+      "right": "right_radiator_louver_07",
+      "maximum_nearest_vertex_mirror_error_m": 0.0
+    },
+    {
+      "left": "left_radiator_louver_08",
+      "right": "right_radiator_louver_08",
+      "maximum_nearest_vertex_mirror_error_m": 2.384185791015625e-07
+    },
+    {
+      "left": "left_radiator_louver_09",
+      "right": "right_radiator_louver_09",
+      "maximum_nearest_vertex_mirror_error_m": 0.0
+    },
+    {
+      "left": "left_radiator_louver_10",
+      "right": "right_radiator_louver_10",
+      "maximum_nearest_vertex_mirror_error_m": 0.0
+    },
+    {
+      "left": "left_vent_fastener_0",
+      "right": "right_vent_fastener_0",
+      "maximum_nearest_vertex_mirror_error_m": 4.786961795153919e-07
+    },
+    {
+      "left": "left_vent_fastener_1",
+      "right": "right_vent_fastener_1",
+      "maximum_nearest_vertex_mirror_error_m": 2.4755668231600746e-07
+    },
+    {
+      "left": "left_vent_fastener_2",
+      "right": "right_vent_fastener_2",
+      "maximum_nearest_vertex_mirror_error_m": 4.777675730550706e-07
+    },
+    {
+      "left": "left_vent_fastener_3",
+      "right": "right_vent_fastener_3",
+      "maximum_nearest_vertex_mirror_error_m": 4.786961795153919e-07
+    },
+    {
+      "left": "left_dark_torso_side_housing",
+      "right": "right_dark_torso_side_housing",
+      "maximum_nearest_vertex_mirror_error_m": 0.0
+    },
+    {
+      "left": "left_torso_side_layer_00",
+      "right": "right_torso_side_layer_00",
+      "maximum_nearest_vertex_mirror_error_m": 0.0
+    },
+    {
+      "left": "left_torso_side_layer_lip_00",
+      "right": "right_torso_side_layer_lip_00",
+      "maximum_nearest_vertex_mirror_error_m": 0.0
+    },
+    {
+      "left": "left_torso_side_layer_01",
+      "right": "right_torso_side_layer_01",
+      "maximum_nearest_vertex_mirror_error_m": 0.0
+    },
+    {
+      "left": "left_torso_side_layer_lip_01",
+      "right": "right_torso_side_layer_lip_01",
+      "maximum_nearest_vertex_mirror_error_m": 0.0
+    },
+    {
+      "left": "left_torso_side_layer_02",
+      "right": "right_torso_side_layer_02",
+      "maximum_nearest_vertex_mirror_error_m": 0.0
+    },
+    {
+      "left": "left_torso_side_layer_lip_02",
+      "right": "right_torso_side_layer_lip_02",
+      "maximum_nearest_vertex_mirror_error_m": 0.0
+    },
+    {
+      "left": "left_torso_side_layer_03",
+      "right": "right_torso_side_layer_03",
+      "maximum_nearest_vertex_mirror_error_m": 0.0
+    },
+    {
+      "left": "left_torso_side_layer_lip_03",
+      "right": "right_torso_side_layer_lip_03",
+      "maximum_nearest_vertex_mirror_error_m": 0.0
+    },
+    {
+      "left": "left_blue_forearm_wrap",
+      "right": "right_blue_forearm_wrap",
+      "maximum_nearest_vertex_mirror_error_m": 0.0
+    },
+    {
+      "left": "left_blue_deltoid_wrap",
+      "right": "right_blue_deltoid_wrap",
+      "maximum_nearest_vertex_mirror_error_m": 0.0
+    },
+    {
+      "left": "left_ivory_shoulder_cap",
+      "right": "right_ivory_shoulder_cap",
+      "maximum_nearest_vertex_mirror_error_m": 0.0
+    },
+    {
+      "left": "left_shoulder_open_bearing_seat",
+      "right": "right_shoulder_open_bearing_seat",
+      "maximum_nearest_vertex_mirror_error_m": 0.0
+    },
+    {
+      "left": "left_ivory_lower_upper_arm",
+      "right": "right_ivory_lower_upper_arm",
+      "maximum_nearest_vertex_mirror_error_m": 0.0
+    },
+    {
+      "left": "left_blue_elbow_yoke",
+      "right": "right_blue_elbow_yoke",
+      "maximum_nearest_vertex_mirror_error_m": 0.0016524950263317882
+    },
+    {
+      "left": "left_shoulder_inner_barrel",
+      "right": "right_shoulder_inner_barrel",
+      "maximum_nearest_vertex_mirror_error_m": 0.0
+    },
+    {
+      "left": "left_shoulder_barrel_band_0",
+      "right": "right_shoulder_barrel_band_0",
+      "maximum_nearest_vertex_mirror_error_m": 0.08050000667572021
+    },
+    {
+      "left": "left_shoulder_barrel_band_1",
+      "right": "right_shoulder_barrel_band_1",
+      "maximum_nearest_vertex_mirror_error_m": 0.08050000667572021
+    },
+    {
+      "left": "left_shoulder_negative_y_support_cheek",
+      "right": "right_shoulder_negative_y_support_cheek",
+      "maximum_nearest_vertex_mirror_error_m": 0.17573906677031145
+    },
+    {
+      "left": "left_shoulder_negative_y_recessed_face",
+      "right": "right_shoulder_negative_y_recessed_face",
+      "maximum_nearest_vertex_mirror_error_m": 0.20200002193450928
+    },
+    {
+      "left": "left_shoulder_negative_y_thin_rim",
+      "right": "right_shoulder_negative_y_thin_rim",
+      "maximum_nearest_vertex_mirror_error_m": 0.20399999618530273
+    },
+    {
+      "left": "left_shoulder_negative_y_central_cap",
+      "right": "right_shoulder_negative_y_central_cap",
+      "maximum_nearest_vertex_mirror_error_m": 0.20900002121925354
+    },
+    {
+      "left": "left_shoulder_negative_y_cap_step",
+      "right": "right_shoulder_negative_y_cap_step",
+      "maximum_nearest_vertex_mirror_error_m": 0.21199998259544373
+    },
+    {
+      "left": "left_shoulder_positive_y_support_cheek",
+      "right": "right_shoulder_positive_y_support_cheek",
+      "maximum_nearest_vertex_mirror_error_m": 0.1757390370933201
+    },
+    {
+      "left": "left_shoulder_positive_y_recessed_face",
+      "right": "right_shoulder_positive_y_recessed_face",
+      "maximum_nearest_vertex_mirror_error_m": 0.20200002193450928
+    },
+    {
+      "left": "left_shoulder_positive_y_thin_rim",
+      "right": "right_shoulder_positive_y_thin_rim",
+      "maximum_nearest_vertex_mirror_error_m": 0.20399999618530273
+    },
+    {
+      "left": "left_shoulder_positive_y_central_cap",
+      "right": "right_shoulder_positive_y_central_cap",
+      "maximum_nearest_vertex_mirror_error_m": 0.20899999141693115
+    },
+    {
+      "left": "left_shoulder_positive_y_cap_step",
+      "right": "right_shoulder_positive_y_cap_step",
+      "maximum_nearest_vertex_mirror_error_m": 0.21199998259544373
+    },
+    {
+      "left": "left_elbow_inner_barrel",
+      "right": "right_elbow_inner_barrel",
+      "maximum_nearest_vertex_mirror_error_m": 0.0
+    },
+    {
+      "left": "left_elbow_barrel_band_0",
+      "right": "right_elbow_barrel_band_0",
+      "maximum_nearest_vertex_mirror_error_m": 0.0864800214767456
+    },
+    {
+      "left": "left_elbow_barrel_band_1",
+      "right": "right_elbow_barrel_band_1",
+      "maximum_nearest_vertex_mirror_error_m": 0.08647996187210083
+    },
+    {
+      "left": "left_elbow_negative_y_support_cheek",
+      "right": "right_elbow_negative_y_support_cheek",
+      "maximum_nearest_vertex_mirror_error_m": 0.1883851099053733
+    },
+    {
+      "left": "left_elbow_negative_y_recessed_face",
+      "right": "right_elbow_negative_y_recessed_face",
+      "maximum_nearest_vertex_mirror_error_m": 0.21500003337860107
+    },
+    {
+      "left": "left_elbow_negative_y_thin_rim",
+      "right": "right_elbow_negative_y_thin_rim",
+      "maximum_nearest_vertex_mirror_error_m": 0.21700000762939453
+    },
+    {
+      "left": "left_elbow_negative_y_central_cap",
+      "right": "right_elbow_negative_y_central_cap",
+      "maximum_nearest_vertex_mirror_error_m": 0.22200000286102295
+    },
+    {
+      "left": "left_elbow_negative_y_cap_step",
+      "right": "right_elbow_negative_y_cap_step",
+      "maximum_nearest_vertex_mirror_error_m": 0.22499996423721313
+    },
+    {
+      "left": "left_elbow_positive_y_support_cheek",
+      "right": "right_elbow_positive_y_support_cheek",
+      "maximum_nearest_vertex_mirror_error_m": 0.1883851693881587
+    },
+    {
+      "left": "left_elbow_positive_y_recessed_face",
+      "right": "right_elbow_positive_y_recessed_face",
+      "maximum_nearest_vertex_mirror_error_m": 0.21500003337860107
+    },
+    {
+      "left": "left_elbow_positive_y_thin_rim",
+      "right": "right_elbow_positive_y_thin_rim",
+      "maximum_nearest_vertex_mirror_error_m": 0.21700000762939453
+    },
+    {
+      "left": "left_elbow_positive_y_central_cap",
+      "right": "right_elbow_positive_y_central_cap",
+      "maximum_nearest_vertex_mirror_error_m": 0.22200000286102295
+    },
+    {
+      "left": "left_elbow_positive_y_cap_step",
+      "right": "right_elbow_positive_y_cap_step",
+      "maximum_nearest_vertex_mirror_error_m": 0.22499996423721313
+    },
+    {
+      "left": "left_elbow_forward_shallow_cover",
+      "right": "right_elbow_forward_shallow_cover",
+      "maximum_nearest_vertex_mirror_error_m": 0.0
+    },
+    {
+      "left": "left_elbow_forward_recessed_face",
+      "right": "right_elbow_forward_recessed_face",
+      "maximum_nearest_vertex_mirror_error_m": 0.0
+    },
+    {
+      "left": "left_elbow_forward_thin_gold_ring",
+      "right": "right_elbow_forward_thin_gold_ring",
+      "maximum_nearest_vertex_mirror_error_m": 0.0
+    },
+    {
+      "left": "left_elbow_forward_dark_center",
+      "right": "right_elbow_forward_dark_center",
+      "maximum_nearest_vertex_mirror_error_m": 0.0
+    },
+    {
+      "left": "left_wrist_inner_barrel",
+      "right": "right_wrist_inner_barrel",
+      "maximum_nearest_vertex_mirror_error_m": 0.0
+    },
+    {
+      "left": "left_wrist_barrel_band_0",
+      "right": "right_wrist_barrel_band_0",
+      "maximum_nearest_vertex_mirror_error_m": 0.058879971504211426
+    },
+    {
+      "left": "left_wrist_barrel_band_1",
+      "right": "right_wrist_barrel_band_1",
+      "maximum_nearest_vertex_mirror_error_m": 0.058879971504211426
+    },
+    {
+      "left": "left_wrist_negative_y_support_cheek",
+      "right": "right_wrist_negative_y_support_cheek",
+      "maximum_nearest_vertex_mirror_error_m": 0.12831324380700132
+    },
+    {
+      "left": "left_wrist_negative_y_recessed_face",
+      "right": "right_wrist_negative_y_recessed_face",
+      "maximum_nearest_vertex_mirror_error_m": 0.1549999713897705
+    },
+    {
+      "left": "left_wrist_negative_y_thin_rim",
+      "right": "right_wrist_negative_y_thin_rim",
+      "maximum_nearest_vertex_mirror_error_m": 0.15700000524520874
+    },
+    {
+      "left": "left_wrist_negative_y_central_cap",
+      "right": "right_wrist_negative_y_central_cap",
+      "maximum_nearest_vertex_mirror_error_m": 0.16200000047683716
+    },
+    {
+      "left": "left_wrist_negative_y_cap_step",
+      "right": "right_wrist_negative_y_cap_step",
+      "maximum_nearest_vertex_mirror_error_m": 0.16500002145767212
+    },
+    {
+      "left": "left_wrist_positive_y_support_cheek",
+      "right": "right_wrist_positive_y_support_cheek",
+      "maximum_nearest_vertex_mirror_error_m": 0.12831324380700132
+    },
+    {
+      "left": "left_wrist_positive_y_recessed_face",
+      "right": "right_wrist_positive_y_recessed_face",
+      "maximum_nearest_vertex_mirror_error_m": 0.1549999713897705
+    },
+    {
+      "left": "left_wrist_positive_y_thin_rim",
+      "right": "right_wrist_positive_y_thin_rim",
+      "maximum_nearest_vertex_mirror_error_m": 0.15700000524520874
+    },
+    {
+      "left": "left_wrist_positive_y_central_cap",
+      "right": "right_wrist_positive_y_central_cap",
+      "maximum_nearest_vertex_mirror_error_m": 0.16200000047683716
+    },
+    {
+      "left": "left_wrist_positive_y_cap_step",
+      "right": "right_wrist_positive_y_cap_step",
+      "maximum_nearest_vertex_mirror_error_m": 0.16500002145767212
+    },
+    {
+      "left": "left_palm_inner_carrier",
+      "right": "right_palm_inner_carrier",
+      "maximum_nearest_vertex_mirror_error_m": 0.0
+    },
+    {
+      "left": "left_ivory_palm_dorsal",
+      "right": "right_ivory_palm_dorsal",
+      "maximum_nearest_vertex_mirror_error_m": 0.0
+    },
+    {
+      "left": "left_ivory_palm_reverse_cover",
+      "right": "right_ivory_palm_reverse_cover",
+      "maximum_nearest_vertex_mirror_error_m": 0.0
+    },
+    {
+      "left": "left_palm_lower_dark_seam",
+      "right": "right_palm_lower_dark_seam",
+      "maximum_nearest_vertex_mirror_error_m": 0.0
+    },
+    {
+      "left": "left_palm_upper_exposed_hinge",
+      "right": "right_palm_upper_exposed_hinge",
+      "maximum_nearest_vertex_mirror_error_m": 0.0
+    },
+    {
+      "left": "left_palm_lower_exposed_hinge",
+      "right": "right_palm_lower_exposed_hinge",
+      "maximum_nearest_vertex_mirror_error_m": 0.0
+    },
+    {
+      "left": "left_finger_1_root_joint",
+      "right": "right_finger_1_root_joint",
+      "maximum_nearest_vertex_mirror_error_m": 0.0
+    },
+    {
+      "left": "left_finger_1_proximal_casting",
+      "right": "right_finger_1_proximal_casting",
+      "maximum_nearest_vertex_mirror_error_m": 0.0
+    },
+    {
+      "left": "left_finger_1_ivory_first_pad",
+      "right": "right_finger_1_ivory_first_pad",
+      "maximum_nearest_vertex_mirror_error_m": 0.0
+    },
+    {
+      "left": "left_finger_1_ivory_reverse_first_pad",
+      "right": "right_finger_1_ivory_reverse_first_pad",
+      "maximum_nearest_vertex_mirror_error_m": 0.0
+    },
+    {
+      "left": "left_finger_1_interphalangeal_joint",
+      "right": "right_finger_1_interphalangeal_joint",
+      "maximum_nearest_vertex_mirror_error_m": 0.0
+    },
+    {
+      "left": "left_finger_1_curved_distal",
+      "right": "right_finger_1_curved_distal",
+      "maximum_nearest_vertex_mirror_error_m": 0.0
+    },
+    {
+      "left": "left_finger_1_tip_contact_pad",
+      "right": "right_finger_1_tip_contact_pad",
+      "maximum_nearest_vertex_mirror_error_m": 0.0
+    },
+    {
+      "left": "left_finger_2_root_joint",
+      "right": "right_finger_2_root_joint",
+      "maximum_nearest_vertex_mirror_error_m": 0.0
+    },
+    {
+      "left": "left_finger_2_proximal_casting",
+      "right": "right_finger_2_proximal_casting",
+      "maximum_nearest_vertex_mirror_error_m": 0.0
+    },
+    {
+      "left": "left_finger_2_ivory_first_pad",
+      "right": "right_finger_2_ivory_first_pad",
+      "maximum_nearest_vertex_mirror_error_m": 0.0
+    },
+    {
+      "left": "left_finger_2_ivory_reverse_first_pad",
+      "right": "right_finger_2_ivory_reverse_first_pad",
+      "maximum_nearest_vertex_mirror_error_m": 0.0
+    },
+    {
+      "left": "left_finger_2_interphalangeal_joint",
+      "right": "right_finger_2_interphalangeal_joint",
+      "maximum_nearest_vertex_mirror_error_m": 0.0
+    },
+    {
+      "left": "left_finger_2_curved_distal",
+      "right": "right_finger_2_curved_distal",
+      "maximum_nearest_vertex_mirror_error_m": 0.0
+    },
+    {
+      "left": "left_finger_2_tip_contact_pad",
+      "right": "right_finger_2_tip_contact_pad",
+      "maximum_nearest_vertex_mirror_error_m": 0.0
+    },
+    {
+      "left": "left_finger_3_root_joint",
+      "right": "right_finger_3_root_joint",
+      "maximum_nearest_vertex_mirror_error_m": 0.0
+    },
+    {
+      "left": "left_finger_3_proximal_casting",
+      "right": "right_finger_3_proximal_casting",
+      "maximum_nearest_vertex_mirror_error_m": 0.0
+    },
+    {
+      "left": "left_finger_3_ivory_first_pad",
+      "right": "right_finger_3_ivory_first_pad",
+      "maximum_nearest_vertex_mirror_error_m": 0.0
+    },
+    {
+      "left": "left_finger_3_ivory_reverse_first_pad",
+      "right": "right_finger_3_ivory_reverse_first_pad",
+      "maximum_nearest_vertex_mirror_error_m": 0.0
+    },
+    {
+      "left": "left_finger_3_interphalangeal_joint",
+      "right": "right_finger_3_interphalangeal_joint",
+      "maximum_nearest_vertex_mirror_error_m": 0.0
+    },
+    {
+      "left": "left_finger_3_curved_distal",
+      "right": "right_finger_3_curved_distal",
+      "maximum_nearest_vertex_mirror_error_m": 0.0
+    },
+    {
+      "left": "left_finger_3_tip_contact_pad",
+      "right": "right_finger_3_tip_contact_pad",
+      "maximum_nearest_vertex_mirror_error_m": 0.0
+    },
+    {
+      "left": "left_thumb_root_web",
+      "right": "right_thumb_root_web",
+      "maximum_nearest_vertex_mirror_error_m": 0.0
+    },
+    {
+      "left": "left_thumb_root_pin",
+      "right": "right_thumb_root_pin",
+      "maximum_nearest_vertex_mirror_error_m": 0.0
+    },
+    {
+      "left": "left_thumb_proximal_casting",
+      "right": "right_thumb_proximal_casting",
+      "maximum_nearest_vertex_mirror_error_m": 0.0
+    },
+    {
+      "left": "left_thumb_ivory_first_pad",
+      "right": "right_thumb_ivory_first_pad",
+      "maximum_nearest_vertex_mirror_error_m": 0.0
+    },
+    {
+      "left": "left_thumb_middle_pin",
+      "right": "right_thumb_middle_pin",
+      "maximum_nearest_vertex_mirror_error_m": 0.0
+    },
+    {
+      "left": "left_thumb_black_terminal",
+      "right": "right_thumb_black_terminal",
+      "maximum_nearest_vertex_mirror_error_m": 0.0
+    },
+    {
+      "left": "left_palm_wrist_negative_y_short_neck",
+      "right": "right_palm_wrist_negative_y_short_neck",
+      "maximum_nearest_vertex_mirror_error_m": 0.1025111839732929
+    },
+    {
+      "left": "left_palm_wrist_positive_y_short_neck",
+      "right": "right_palm_wrist_positive_y_short_neck",
+      "maximum_nearest_vertex_mirror_error_m": 0.09057371791197122
+    },
+    {
+      "left": "left_structure_shoulder_crossmember",
+      "right": "right_structure_shoulder_crossmember",
+      "maximum_nearest_vertex_mirror_error_m": 0.0
+    },
+    {
+      "left": "left_structure_upper_arm_box",
+      "right": "right_structure_upper_arm_box",
+      "maximum_nearest_vertex_mirror_error_m": 0.0
+    },
+    {
+      "left": "left_structure_forearm_box",
+      "right": "right_structure_forearm_box",
+      "maximum_nearest_vertex_mirror_error_m": 0.0
+    },
+    {
+      "left": "left_forearm_upper_edge_00_00",
+      "right": "right_forearm_upper_edge_00_00",
+      "maximum_nearest_vertex_mirror_error_m": 0.31173500185285374
+    },
+    {
+      "left": "left_forearm_upper_edge_00_01",
+      "right": "right_forearm_upper_edge_00_01",
+      "maximum_nearest_vertex_mirror_error_m": 0.27917071938524196
+    },
+    {
+      "left": "left_forearm_upper_edge_00_02",
+      "right": "right_forearm_upper_edge_00_02",
+      "maximum_nearest_vertex_mirror_error_m": 0.24891402396994966
+    },
+    {
+      "left": "left_forearm_upper_edge_00_03",
+      "right": "right_forearm_upper_edge_00_03",
+      "maximum_nearest_vertex_mirror_error_m": 0.22246533033524957
+    },
+    {
+      "left": "left_forearm_upper_edge_00_04",
+      "right": "right_forearm_upper_edge_00_04",
+      "maximum_nearest_vertex_mirror_error_m": 0.1982495560481459
+    },
+    {
+      "left": "left_forearm_upper_edge_00_05",
+      "right": "right_forearm_upper_edge_00_05",
+      "maximum_nearest_vertex_mirror_error_m": 0.1753391164905918
+    },
+    {
+      "left": "left_forearm_upper_edge_00_06",
+      "right": "right_forearm_upper_edge_00_06",
+      "maximum_nearest_vertex_mirror_error_m": 0.1468598530477232
+    },
+    {
+      "left": "left_forearm_upper_edge_01_00",
+      "right": "right_forearm_upper_edge_01_00",
+      "maximum_nearest_vertex_mirror_error_m": 0.10365966773300395
+    },
+    {
+      "left": "left_forearm_upper_edge_01_01",
+      "right": "right_forearm_upper_edge_01_01",
+      "maximum_nearest_vertex_mirror_error_m": 0.07409455497252959
+    },
+    {
+      "left": "left_forearm_upper_edge_01_02",
+      "right": "right_forearm_upper_edge_01_02",
+      "maximum_nearest_vertex_mirror_error_m": 0.044646778455546966
+    },
+    {
+      "left": "left_forearm_upper_edge_01_03",
+      "right": "right_forearm_upper_edge_01_03",
+      "maximum_nearest_vertex_mirror_error_m": 0.015054773600996139
+    },
+    {
+      "left": "left_forearm_upper_edge_01_04",
+      "right": "right_forearm_upper_edge_01_04",
+      "maximum_nearest_vertex_mirror_error_m": 0.01507808376422766
+    },
+    {
+      "left": "left_forearm_upper_edge_01_05",
+      "right": "right_forearm_upper_edge_01_05",
+      "maximum_nearest_vertex_mirror_error_m": 0.04517727529395707
+    },
+    {
+      "left": "left_forearm_upper_edge_01_06",
+      "right": "right_forearm_upper_edge_01_06",
+      "maximum_nearest_vertex_mirror_error_m": 0.07478753886747432
+    },
+    {
+      "left": "left_forearm_upper_edge_01_07",
+      "right": "right_forearm_upper_edge_01_07",
+      "maximum_nearest_vertex_mirror_error_m": 0.10442129501729257
+    },
+    {
+      "left": "left_forearm_upper_edge_02_00",
+      "right": "right_forearm_upper_edge_02_00",
+      "maximum_nearest_vertex_mirror_error_m": 0.13395559989074537
+    },
+    {
+      "left": "left_forearm_upper_edge_02_01",
+      "right": "right_forearm_upper_edge_02_01",
+      "maximum_nearest_vertex_mirror_error_m": 0.1630720707593118
+    },
+    {
+      "left": "left_forearm_upper_edge_02_02",
+      "right": "right_forearm_upper_edge_02_02",
+      "maximum_nearest_vertex_mirror_error_m": 0.19206697825341854
+    },
+    {
+      "left": "left_forearm_upper_edge_02_03",
+      "right": "right_forearm_upper_edge_02_03",
+      "maximum_nearest_vertex_mirror_error_m": 0.2185390938310639
+    },
+    {
+      "left": "left_forearm_upper_edge_02_04",
+      "right": "right_forearm_upper_edge_02_04",
+      "maximum_nearest_vertex_mirror_error_m": 0.24128330492964942
+    },
+    {
+      "left": "left_forearm_upper_edge_02_05",
+      "right": "right_forearm_upper_edge_02_05",
+      "maximum_nearest_vertex_mirror_error_m": 0.2659874196238286
+    },
+    {
+      "left": "left_forearm_upper_edge_02_06",
+      "right": "right_forearm_upper_edge_02_06",
+      "maximum_nearest_vertex_mirror_error_m": 0.2940556520582864
+    }
+  ],
+  "upper_mirror_error_max_m": 0.31173500185285374,
+  "lower_source": "source/lower_modular_components_b6.blend",
+  "lower_uniform_placement_matrix": [
+    [
+      0.0,
+      -2.766413450241089,
+      0.0,
+      0.03522598743438721
+    ],
+    [
+      2.766413450241089,
+      0.0,
+      0.0,
+      -0.14561854302883148
+    ],
+    [
+      0.0,
+      0.0,
+      2.766413450241089,
+      1.251248836517334
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "lower_scale": 2.7664133984243326,
+  "lower_hip_candidate_world_m": [
+    -0.045,
+    0.38,
+    1.42
+  ],
+  "lower_shared_mesh_mirror": false,
+  "lower_mirror_checks": [
+    {
+      "left": "L_thigh_rear_hip_panel",
+      "right": "R_thigh_rear_hip_panel",
+      "shared_mesh": true,
+      "maximum_vertex_mirror_error_m": 3.3143099348320604e-08
+    },
+    {
+      "left": "L_thigh_rear_hip_cover",
+      "right": "R_thigh_rear_hip_cover",
+      "shared_mesh": true,
+      "maximum_vertex_mirror_error_m": 4.739919731711062e-08
+    },
+    {
+      "left": "L_thigh_outer_lateral_panel",
+      "right": "R_thigh_outer_lateral_panel",
+      "shared_mesh": true,
+      "maximum_vertex_mirror_error_m": 8.084009800457537e-08
+    },
+    {
+      "left": "L_thigh_main_shell",
+      "right": "R_thigh_main_shell",
+      "shared_mesh": true,
+      "maximum_vertex_mirror_error_m": 1.15048028603848e-07
+    },
+    {
+      "left": "L_thigh_inner_lateral_panel",
+      "right": "R_thigh_inner_lateral_panel",
+      "shared_mesh": true,
+      "maximum_vertex_mirror_error_m": 8.029794396069434e-08
+    },
+    {
+      "left": "L_thigh_front_service_panel",
+      "right": "R_thigh_front_service_panel",
+      "shared_mesh": true,
+      "maximum_vertex_mirror_error_m": 1.1509813552246229e-07
+    },
+    {
+      "left": "L_thigh_carrier",
+      "right": "R_thigh_carrier",
+      "shared_mesh": true,
+      "maximum_vertex_mirror_error_m": 9.231541331367055e-08
+    },
+    {
+      "left": "L_sole_contact_0.052",
+      "right": "R_sole_contact_0.052",
+      "shared_mesh": true,
+      "maximum_vertex_mirror_error_m": 4.427798305783881e-08
+    },
+    {
+      "left": "L_sole_contact_-0.176",
+      "right": "R_sole_contact_-0.176",
+      "shared_mesh": true,
+      "maximum_vertex_mirror_error_m": 6.223980711372867e-08
+    },
+    {
+      "left": "L_sole_contact_-0.037",
+      "right": "R_sole_contact_-0.037",
+      "shared_mesh": true,
+      "maximum_vertex_mirror_error_m": 1.8359126469080778e-08
+    },
+    {
+      "left": "L_shank_front_side_shell",
+      "right": "R_shank_front_side_shell",
+      "shared_mesh": true,
+      "maximum_vertex_mirror_error_m": 8.187935231218635e-08
+    },
+    {
+      "left": "L_shank_front_service_panel",
+      "right": "R_shank_front_service_panel",
+      "shared_mesh": true,
+      "maximum_vertex_mirror_error_m": 6.76044291658684e-08
+    },
+    {
+      "left": "L_shank_ankle_carrier",
+      "right": "R_shank_ankle_carrier",
+      "shared_mesh": true,
+      "maximum_vertex_mirror_error_m": 8.516245342260476e-08
+    },
+    {
+      "left": "L_return_carrier",
+      "right": "R_return_carrier",
+      "shared_mesh": true,
+      "maximum_vertex_mirror_error_m": 8.270792978271047e-08
+    },
+    {
+      "left": "L_knee_side_cover_rim_1",
+      "right": "R_knee_side_cover_rim_1",
+      "shared_mesh": true,
+      "maximum_vertex_mirror_error_m": 8.918253380230112e-08
+    },
+    {
+      "left": "L_knee_side_cover_rim_-1",
+      "right": "R_knee_side_cover_rim_-1",
+      "shared_mesh": true,
+      "maximum_vertex_mirror_error_m": 8.918253380230112e-08
+    },
+    {
+      "left": "L_knee_side_cover_1",
+      "right": "R_knee_side_cover_1",
+      "shared_mesh": true,
+      "maximum_vertex_mirror_error_m": 8.905722292951168e-08
+    },
+    {
+      "left": "L_knee_side_cover_-1",
+      "right": "R_knee_side_cover_-1",
+      "shared_mesh": true,
+      "maximum_vertex_mirror_error_m": 8.905722292951168e-08
+    },
+    {
+      "left": "L_knee_front_shield",
+      "right": "R_knee_front_shield",
+      "shared_mesh": true,
+      "maximum_vertex_mirror_error_m": 1.1227419388637472e-07
+    },
+    {
+      "left": "L_knee_common_axle",
+      "right": "R_knee_common_axle",
+      "shared_mesh": true,
+      "maximum_vertex_mirror_error_m": 8.391930617079879e-08
+    },
+    {
+      "left": "L_hock_side_cover_rim_1",
+      "right": "R_hock_side_cover_rim_1",
+      "shared_mesh": true,
+      "maximum_vertex_mirror_error_m": 7.957505654410113e-08
+    },
+    {
+      "left": "L_hock_side_cover_rim_-1",
+      "right": "R_hock_side_cover_rim_-1",
+      "shared_mesh": true,
+      "maximum_vertex_mirror_error_m": 7.95750565718567e-08
+    },
+    {
+      "left": "L_hock_side_cover_1",
+      "right": "R_hock_side_cover_1",
+      "shared_mesh": true,
+      "maximum_vertex_mirror_error_m": 7.944973945406275e-08
+    },
+    {
+      "left": "L_hock_side_cover_-1",
+      "right": "R_hock_side_cover_-1",
+      "shared_mesh": true,
+      "maximum_vertex_mirror_error_m": 7.944973945406275e-08
+    },
+    {
+      "left": "L_hock_rear_service_panel",
+      "right": "R_hock_rear_service_panel",
+      "shared_mesh": true,
+      "maximum_vertex_mirror_error_m": 5.2081705004258794e-08
+    },
+    {
+      "left": "L_hock_rear_guard",
+      "right": "R_hock_rear_guard",
+      "shared_mesh": true,
+      "maximum_vertex_mirror_error_m": 5.221893578655212e-08
+    },
+    {
+      "left": "L_hock_common_axle",
+      "right": "R_hock_common_axle",
+      "shared_mesh": true,
+      "maximum_vertex_mirror_error_m": 7.431182269534986e-08
+    },
+    {
+      "left": "L_hip_side_cover_rim_1",
+      "right": "R_hip_side_cover_rim_1",
+      "shared_mesh": true,
+      "maximum_vertex_mirror_error_m": 2.7545430804354343e-08
+    },
+    {
+      "left": "L_hip_side_cover_rim_-1",
+      "right": "R_hip_side_cover_rim_-1",
+      "shared_mesh": true,
+      "maximum_vertex_mirror_error_m": 2.7545430804354343e-08
+    },
+    {
+      "left": "L_hip_side_cover_1",
+      "right": "R_hip_side_cover_1",
+      "shared_mesh": true,
+      "maximum_vertex_mirror_error_m": 2.7180474614085792e-08
+    },
+    {
+      "left": "L_hip_side_cover_-1",
+      "right": "R_hip_side_cover_-1",
+      "shared_mesh": true,
+      "maximum_vertex_mirror_error_m": 2.7180474607146898e-08
+    },
+    {
+      "left": "L_hip_common_axle",
+      "right": "R_hip_common_axle",
+      "shared_mesh": true,
+      "maximum_vertex_mirror_error_m": 2.2576654518102757e-08
+    },
+    {
+      "left": "L_foot_central_carrier",
+      "right": "R_foot_central_carrier",
+      "shared_mesh": true,
+      "maximum_vertex_mirror_error_m": 7.069549501359518e-08
+    },
+    {
+      "left": "L_ankle_side_cover_rim_1",
+      "right": "R_ankle_side_cover_rim_1",
+      "shared_mesh": true,
+      "maximum_vertex_mirror_error_m": 8.631438119799384e-08
+    },
+    {
+      "left": "L_ankle_side_cover_rim_-1",
+      "right": "R_ankle_side_cover_rim_-1",
+      "shared_mesh": true,
+      "maximum_vertex_mirror_error_m": 4.479332982310069e-08
+    },
+    {
+      "left": "L_ankle_side_cover_1",
+      "right": "R_ankle_side_cover_1",
+      "shared_mesh": true,
+      "maximum_vertex_mirror_error_m": 8.59494272698047e-08
+    },
+    {
+      "left": "L_ankle_side_cover_-1",
+      "right": "R_ankle_side_cover_-1",
+      "shared_mesh": true,
+      "maximum_vertex_mirror_error_m": 4.584861221235137e-08
+    },
+    {
+      "left": "L_ankle_common_axle",
+      "right": "R_ankle_common_axle",
+      "shared_mesh": true,
+      "maximum_vertex_mirror_error_m": 8.134561096939663e-08
+    }
+  ],
+  "bounds_world_m": [
+    [
+      -0.47200000286102295,
+      -0.9629360437393188,
+      -6.423175202829867e-08
+    ],
+    [
+      0.7172605147948715,
+      0.9629360437393188,
+      2.409383788704872
+    ]
+  ],
+  "candidate_height_m": 2.409383852936624,
+  "views": {
+    "top": {
+      "image": "images/native_c15_upper_top_p22.png",
+      "camera_type": "ORTHO",
+      "camera_matrix_world": [
+        [
+          -4.371138828673793e-08,
+          -1.0,
+          0.0,
+          0.12263026088476181
+        ],
+        [
+          1.0,
+          -4.371138828673793e-08,
+          0.0,
+          1.1817246736711695e-08
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          9.204691886901855
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "ortho_scale": 2.253270387649536,
+      "projected_geometric_span_m": [
+        1.9258720949186,
+        1.1892605410783244
+      ]
+    },
+    "front": {
+      "image": "images/native_c15_upper_front_p22.png",
+      "camera_type": "ORTHO",
+      "camera_matrix_world": [
+        [
+          7.549790126404332e-08,
+          -7.549790126404332e-08,
+          1.0,
+          8.12263011932373
+        ],
+        [
+          1.0,
+          5.6999328827277325e-15,
+          -7.549790126404332e-08,
+          -6.243938628358592e-07
+        ],
+        [
+          0.0,
+          1.0,
+          7.549790126404332e-08,
+          1.2046924829483032
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "ortho_scale": 2.8430728912353516,
+      "projected_geometric_span_m": [
+        1.9258721003288708,
+        2.4093839122267715
+      ]
+    },
+    "left": {
+      "image": "images/native_c15_upper_left_p22.png",
+      "camera_type": "ORTHO",
+      "camera_matrix_world": [
+        [
+          -1.0,
+          -8.742277657347586e-08,
+          -8.742277657347586e-08,
+          0.12262959033250809
+        ],
+        [
+          -8.742277657347586e-08,
+          4.371138118131057e-08,
+          1.0,
+          8.0
+        ],
+        [
+          -8.74227694680485e-08,
+          1.0,
+          -4.371138828673793e-08,
+          1.2046915292739868
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "ortho_scale": 2.8430728912353516,
+      "projected_geometric_span_m": [
+        1.1892604956812403,
+        2.4093839326448494
+      ]
+    },
+    "rear": {
+      "image": "images/native_c15_upper_rear_p22.png",
+      "camera_type": "ORTHO",
+      "camera_matrix_world": [
+        [
+          7.549790126404332e-08,
+          7.549790126404332e-08,
+          -1.0,
+          -7.8773698806762695
+        ],
+        [
+          -1.0,
+          5.6999328827277325e-15,
+          -7.549790126404332e-08,
+          -5.83572557388834e-07
+        ],
+        [
+          0.0,
+          1.0,
+          7.549790126404332e-08,
+          1.2046924829483032
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "ortho_scale": 2.8430728912353516,
+      "projected_geometric_span_m": [
+        1.9258721003288708,
+        2.4093838221638486
+      ]
+    }
+  },
+  "same_source_top_front_width_error_m": 5.410270897954206e-09,
+  "same_source_top_left_depth_error_m": 4.5397084091902684e-08,
+  "scope": "Appearance projection registration. Actual engineering upper meshes unchanged; existing Art lower same-source mirrored candidate. Engineering joints and physical parameters are not adopted or modified.",
+  "upper_upstream_appearance_or_physics_accepted": false,
+  "whole_body_collision_checked": false,
+  "lower_known_self_surface_defects_remain": true,
+  "whole_v0_2_qualified": false,
+  "ready_for_engineering_handoff": false
+}

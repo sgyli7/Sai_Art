@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1800" height="900" viewBox="0 0 1800 900">
+<rect width="1800" height="900" fill="#faf9f4"/>
+<style>text{font:20px sans-serif;fill:#334955}.bound{fill:none;stroke:#90a4ae;stroke-width:2;stroke-dasharray:8 6}.link{stroke:#247fa8;stroke-width:14;fill:none}.joint{fill:#f5ac28;stroke:#334955;stroke-width:2}</style>
+<text x="35" y="42">Gorilla V0.1 — metric pose / envelope targets (not outer-surface CAD)</text>
+<rect class="bound" x="76.03020249999997" y="117.25" width="607.939595" height="622.75"/>
+<line x1="46.03020249999997" y1="740" x2="713.9697975" y2="740" stroke="#78909c"/>
+<text x="280" y="805">FRONT</text>
+<text x="275" y="90">H 2.650 m</text>
+<text x="275" y="845">X: 2.586977 m</text>
+<polyline class="link" points="290.7,399.25 262.5,533.2 257.8,650.7 255.45,709.45"/>
+<circle class="joint" cx="290.7" cy="399.25" r="12"/>
+<circle class="joint" cx="262.5" cy="533.2" r="12"/>
+<circle class="joint" cx="257.8" cy="650.7" r="12"/>
+<circle class="joint" cx="255.45" cy="709.45" r="12"/>
+<line x1="208.45000000000002" y1="740" x2="302.45" y2="740" stroke="#334955" stroke-width="11"/>
+<polyline class="link" points="469.3,399.25 497.5,533.2 502.2,650.7 504.55,709.45"/>
+<circle class="joint" cx="469.3" cy="399.25" r="12"/>
+<circle class="joint" cx="497.5" cy="533.2" r="12"/>
+<circle class="joint" cx="502.2" cy="650.7" r="12"/>
+<circle class="joint" cx="504.55" cy="709.45" r="12"/>
+<line x1="457.55" y1="740" x2="551.55" y2="740" stroke="#334955" stroke-width="11"/>
+<rect class="bound" x="774.05927" y="117.25" width="251.88146" height="622.75"/>
+<line x1="744.05927" y1="740" x2="1055.94073" y2="740" stroke="#78909c"/>
+<text x="800" y="805">LEFT / forward -Y at left</text>
+<text x="795" y="90">H 2.650 m</text>
+<text x="795" y="845">Y: 1.071836 m</text>
+<polyline class="link" points="900.0,399.25 831.85,533.2 928.2,650.7 888.25,709.45"/>
+<circle class="joint" cx="900.0" cy="399.25" r="12"/>
+<text x="920.0" y="390.25">hip</text>
+<circle class="joint" cx="831.85" cy="533.2" r="12"/>
+<text x="851.85" y="524.2">knee_j1</text>
+<circle class="joint" cx="928.2" cy="650.7" r="12"/>
+<text x="948.2" y="641.7">extra_fold_j2</text>
+<circle class="joint" cx="888.25" cy="709.45" r="12"/>
+<text x="908.25" y="700.45">ankle_j3</text>
+<line x1="817.75" y1="740" x2="949.35" y2="740" stroke="#334955" stroke-width="11"/>
+<rect class="bound" x="1116.0302025" y="117.25" width="607.939595" height="622.75"/>
+<line x1="1086.0302025" y1="740" x2="1753.9697975000001" y2="740" stroke="#78909c"/>
+<text x="1320" y="805">REAR</text>
+<text x="1315" y="90">H 2.650 m</text>
+<text x="1315" y="845">X: 2.586977 m</text>
+<polyline class="link" points="1330.7,399.25 1302.5,533.2 1297.8,650.7 1295.45,709.45"/>
+<circle class="joint" cx="1330.7" cy="399.25" r="12"/>
+<circle class="joint" cx="1302.5" cy="533.2" r="12"/>
+<circle class="joint" cx="1297.8" cy="650.7" r="12"/>
+<circle class="joint" cx="1295.45" cy="709.45" r="12"/>
+<line x1="1248.45" y1="740" x2="1342.45" y2="740" stroke="#334955" stroke-width="11"/>
+<polyline class="link" points="1509.3,399.25 1537.5,533.2 1542.2,650.7 1544.55,709.45"/>
+<circle class="joint" cx="1509.3" cy="399.25" r="12"/>
+<circle class="joint" cx="1537.5" cy="533.2" r="12"/>
+<circle class="joint" cx="1542.2" cy="650.7" r="12"/>
+<circle class="joint" cx="1544.55" cy="709.45" r="12"/>
+<line x1="1497.55" y1="740" x2="1591.55" y2="740" stroke="#334955" stroke-width="11"/>
+<text x="35" y="885">H/W/D from frozen Blender envelope; joint anchors are new illustration targets. Front=-Y, up=+Z.</text>
+</svg>

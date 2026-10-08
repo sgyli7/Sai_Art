@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="2500" height="700" viewBox="0 0 2500 700">
+<rect width="2500" height="700" fill="white"/>
+<text x="25" y="40" font-family="DejaVu Sans" font-size="28" fill="#304366">GORILLA V0.2 / P30 / FIVE PALETTES</text>
+<text x="250" y="85" text-anchor="middle" font-family="DejaVu Sans" font-size="23" fill="#304366">URI</text>
+<svg x="15" y="105" width="470" height="555" viewBox="60 8 500 590" overflow="hidden"><image width="1254" height="1254" href="images/uri_p30.png"/></svg>
+<text x="750" y="85" text-anchor="middle" font-family="DejaVu Sans" font-size="23" fill="#304366">YELLOW / PURPLE</text>
+<svg x="515" y="105" width="470" height="555" viewBox="60 8 500 590" overflow="hidden"><image width="1254" height="1254" href="images/yellow_purple_p30.png"/></svg>
+<text x="1250" y="85" text-anchor="middle" font-family="DejaVu Sans" font-size="23" fill="#304366">WHITE / ORANGE</text>
+<svg x="1015" y="105" width="470" height="555" viewBox="60 8 500 590" overflow="hidden"><image width="1254" height="1254" href="images/white_orange_p30.png"/></svg>
+<text x="1750" y="85" text-anchor="middle" font-family="DejaVu Sans" font-size="23" fill="#304366">BLACK / GOLD</text>
+<svg x="1515" y="105" width="470" height="555" viewBox="60 8 500 590" overflow="hidden"><image width="1254" height="1254" href="images/black_gold_p30.png"/></svg>
+<text x="2250" y="85" text-anchor="middle" font-family="DejaVu Sans" font-size="23" fill="#304366">DESERT</text>
+<svg x="2015" y="105" width="470" height="555" viewBox="60 8 500 590" overflow="hidden"><image width="1254" height="1254" href="images/desert_p30.png"/></svg>
+</svg>

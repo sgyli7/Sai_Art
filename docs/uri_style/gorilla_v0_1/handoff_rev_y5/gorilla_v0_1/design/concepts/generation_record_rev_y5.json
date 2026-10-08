@@ -1,0 +1,48 @@
+{
+  "original_art_call": {
+    "id": "G36",
+    "art_revision": "Y5",
+    "tool": "built-in imagegen",
+    "model_version": "not exposed by tool",
+    "orchestration_model": "gpt-6.1-sol",
+    "orchestration_effort": "xhigh",
+    "model_evidence": "active turn_context 01a0f85b-2171-7011-b438-51f8d26ce616",
+    "prompt": "docs/uri_style/gorilla_v0_1/prompts/hip_root_entity_cleanup_rev_y5.txt",
+    "prompt_sha256": "ad1be035bfdddad90b4250e87eaeb22d16bc9abc2108bc6021bfd61af649e9a2",
+    "inputs_in_order": [
+      {
+        "path": "docs/uri_style/gorilla_v0_1/images/forward_radiators_minimal_interfaces_orange_lid_rev_y4.png",
+        "role": "EDIT_TARGET",
+        "sha256": "a200e6fbefa25ed1df2bd098bd84b347562d2fc8ceacce6e7cb9e940baa95bc7"
+      },
+      {
+        "path": "docs/uri_style/gorilla_v0_1/references/style_01_headphones.png",
+        "role": "STYLE",
+        "sha256": "78270e8007dea7ebd84e580bb5fa1d936cc9118b375e9b8845b3cffc84d51c0c"
+      },
+      {
+        "path": "docs/uri_style/gorilla_v0_1/references/style_03_waterfront.png",
+        "role": "STYLE",
+        "sha256": "25b75c83586e01222dde9cd164035afe9cba005b08cd2674eb6b9993aa12c053"
+      },
+      {
+        "path": "docs/uri_style/gorilla_v0_1/references/style_06_architecture.png",
+        "role": "STYLE",
+        "sha256": "51118389231d7cf1832b8b466aa31af2b6950f04cc91b77473e1f94b5a56e59c"
+      }
+    ],
+    "output": "docs/uri_style/gorilla_v0_1/images/orthographic_three_view_rev_y5.png",
+    "generated_source": "/home/ethan/.codex/generated_images/01a0f3ab-7a57-7172-b8c5-e517aa2973da/exec-e1dff166-d059-457d-83f2-6dc6ec0a6f4e.png",
+    "output_sha256": "829c45ee4f50fa8fd1f8fd213a6b98827a214f7961bf5b63ee91138f69d366c6",
+    "status": "agent_reviewed_appearance_handoff_candidate_not_user_approved",
+    "notes": "Matched FRONT/LEFT/REAR sheet. Whole upper body, hands, colors and front projected dimensions preserved at major-assembly level. Single side leg chain, open compound feet, forward radiator faces with closed side wall in LEFT, whole orange front pelvis lid, reduced shoulder/hip round fillers. Raster construction/registration remains illustrative; not same-source CAD or numerical topology proof."
+  },
+  "bundle_current_output": "design/concepts/orthographic_three_view_rev_y5.png",
+  "bundle_prompt": "design/concepts/hip_root_entity_cleanup_rev_y5.txt",
+  "bundle_inputs_in_order": [
+    "design/concepts/references/edit_input_rev_y4.png",
+    "design/concepts/references/style_01_headphones.png",
+    "design/concepts/references/style_03_waterfront.png",
+    "design/concepts/references/style_06_architecture.png"
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "revision": "p28",
+  "prompt": "/home/ethan/Projects/Sai_Art/docs/uri_style/gorilla_v0_2/prompts/blue_knee_and_sensor_bay_p28.txt",
+  "skill": "/home/ethan/Projects/Sai_Art/.agents/skills/uri-style/SKILL.md",
+  "references": [
+    {
+      "path": "/home/ethan/Projects/Sai_Art/docs/uri_style/gorilla_v0_2/images/gorilla_four_view_uri_knee_guards_p27.png",
+      "role": "EDIT_TARGET",
+      "sha256": "96facbbd42b50781fb72e4ed77890c7e103a21e477d40627a368db847c24f523"
+    },
+    {
+      "path": "/home/ethan/Projects/Sai_Art/.agents/skills/uri-style/assets/style_01_race_car_hangar.png",
+      "role": "STYLE",
+      "sha256": "1aed979f442030b644db5b86c79ad69d44f14092f865eb28f157663476eec8c9"
+    },
+    {
+      "path": "/home/ethan/Projects/Sai_Art/.agents/skills/uri-style/assets/style_03_tracked_mobile_station.png",
+      "role": "STYLE",
+      "sha256": "da14249a726ca5009b222a0dd7dc2c7a1fdbfe49ef31b8080936e855e8eb1f6f"
+    },
+    {
+      "path": "/home/ethan/Projects/Sai_Art/.agents/skills/uri-style/assets/style_05_white_blue_racer.png",
+      "role": "STYLE",
+      "sha256": "fc5f342e892842887e738798b5870b9245fb3c7376a028c5f503301ac687f1bc"
+    }
+  ],
+  "fixed_style_subset": [
+    1,
+    3,
+    5
+  ],
+  "scope": "Local illustrated knee cap design and front multimodal sensing cassette; original gray B7 model is separate.",
+  "user_marks": [
+    {
+      "point": [
+        0.267,
+        0.106
+      ],
+      "function": "Front camera/laser-scanning/infrared sensing bay"
+    },
+    {
+      "point": [
+        0.173,
+        0.318
+      ],
+      "design": "Different knee cap form; blue or black primary"
+    }
+  ],
+  "status": "current_appearance_direction_retained_camera_authorized_with_yellow_frame_revision_pending",
+  "user_accepted": false,
+  "tool": "built-in imagegen",
+  "generated_original": "/home/ethan/.codex/generated_images/01a0f3ab-7a57-7172-b8c5-e517aa2973da/exec-ab7ae27f-2249-4888-a38b-e1564402e16e.png",
+  "generated_copy": "/home/ethan/Projects/Sai_Art/docs/uri_style/gorilla_v0_2/images/blue_knee_and_sensor_bay_generated_p28.png",
+  "generated_sha256": "a6866b941c6e5ade4c89b1a7e50f68173b93509467effc9d447b5f8437d127ce",
+  "model_modified": false,
+  "rejection": "Chest sensor bar should stay symbolic and yellow. Only knee yellow detail should change; P28 literal sensor bay and main-cap recolor were not requested.",
+  "adopted_as_final": false,
+  "latest_user_steering": "Keep camera cassette now, add yellow frame; replace knee yellow strip only.",
+  "initial_annotation_misinterpretation": true
+}

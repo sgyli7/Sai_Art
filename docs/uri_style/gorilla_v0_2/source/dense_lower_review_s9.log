@@ -1,0 +1,127 @@
+Blender 4.0.2
+Read blend: "/home/ethan/Projects/Sai_Art/docs/uri_style/gorilla_v0_2/source/lower_dense_assembled_s9.blend"
+Fra:1 Mem:571.30M (Peak 571.30M) | Time:00:00.00 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | appearance_ground_display_only
+Fra:1 Mem:571.30M (Peak 571.30M) | Time:00:00.00 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | pixal_mirrored_leg
+Fra:1 Mem:576.17M (Peak 576.17M) | Time:00:00.00 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | complete_reference_foot_left
+Fra:1 Mem:640.90M (Peak 640.90M) | Time:00:00.00 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | complete_reference_foot_right
+Fra:1 Mem:1016.85M (Peak 1070.68M) | Time:00:00.13 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Initializing
+Fra:1 Mem:1016.85M (Peak 1070.68M) | Time:00:00.13 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Waiting for render to start
+Fra:1 Mem:1016.85M (Peak 1070.68M) | Time:00:00.13 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Loading render kernels (may take a few minutes the first time)
+Fra:1 Mem:1016.85M (Peak 1070.68M) | Time:00:00.13 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Updating Scene
+Fra:1 Mem:1016.85M (Peak 1070.68M) | Time:00:00.13 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Updating Shaders
+Fra:1 Mem:1016.94M (Peak 1070.68M) | Time:00:00.13 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Updating Procedurals
+Fra:1 Mem:1016.94M (Peak 1070.68M) | Time:00:00.13 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Updating Background
+Fra:1 Mem:1016.94M (Peak 1070.68M) | Time:00:00.13 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Updating Camera
+Fra:1 Mem:1016.94M (Peak 1070.68M) | Time:00:00.13 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Updating Meshes Flags
+Fra:1 Mem:1016.94M (Peak 1070.68M) | Time:00:00.13 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Updating Objects
+Fra:1 Mem:1016.94M (Peak 1070.68M) | Time:00:00.13 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Updating Objects | Copying Transformations to device
+Fra:1 Mem:1016.94M (Peak 1070.68M) | Time:00:00.13 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Updating Objects | Applying Static Transformations
+Fra:1 Mem:1016.94M (Peak 1070.68M) | Time:00:00.13 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Updating Particle Systems
+Fra:1 Mem:1016.94M (Peak 1070.68M) | Time:00:00.13 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Updating Particle Systems | Copying Particles to device
+Fra:1 Mem:1016.94M (Peak 1070.68M) | Time:00:00.13 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Updating Meshes
+Fra:1 Mem:1145.24M (Peak 1145.24M) | Time:00:00.26 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Updating Mesh | Computing attributes
+Fra:1 Mem:1190.47M (Peak 1190.47M) | Time:00:00.28 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Updating Mesh | Copying Attributes to device
+Fra:1 Mem:1190.47M (Peak 1190.47M) | Time:00:00.28 | Mem:45.23M, Peak:45.23M | Scene, ViewLayer | Updating Scene BVH | Building
+Fra:1 Mem:1190.47M (Peak 1190.47M) | Time:00:00.28 | Mem:45.23M, Peak:45.23M | Scene, ViewLayer | Updating Scene BVH | Building BVH
+Fra:1 Mem:1671.61M (Peak 1671.61M) | Time:00:00.85 | Mem:45.23M, Peak:45.23M | Scene, ViewLayer | Updating Scene BVH | Building BVH 3%, duplicates 0%
+Fra:1 Mem:1671.61M (Peak 1671.61M) | Time:00:01.10 | Mem:45.23M, Peak:45.23M | Scene, ViewLayer | Updating Scene BVH | Building BVH 26%, duplicates 0%
+Fra:1 Mem:1671.61M (Peak 1671.61M) | Time:00:01.35 | Mem:45.23M, Peak:45.23M | Scene, ViewLayer | Updating Scene BVH | Building BVH 54%, duplicates 0%
+Fra:1 Mem:1671.61M (Peak 1671.61M) | Time:00:01.60 | Mem:45.23M, Peak:45.23M | Scene, ViewLayer | Updating Scene BVH | Building BVH 82%, duplicates 0%
+Fra:1 Mem:1671.61M (Peak 1671.61M) | Time:00:01.77 | Mem:45.23M, Peak:45.23M | Scene, ViewLayer | Updating Scene BVH | Packing BVH triangles and strands
+Fra:1 Mem:1703.69M (Peak 1703.69M) | Time:00:01.79 | Mem:45.23M, Peak:45.23M | Scene, ViewLayer | Updating Scene BVH | Packing BVH nodes
+Fra:1 Mem:1691.00M (Peak 1825.65M) | Time:00:02.19 | Mem:45.23M, Peak:45.23M | Scene, ViewLayer | Updating Scene BVH | Copying BVH to device
+Fra:1 Mem:1691.00M (Peak 1825.65M) | Time:00:02.19 | Mem:295.50M, Peak:295.50M | Scene, ViewLayer | Updating Mesh | Computing normals
+Fra:1 Mem:1972.00M (Peak 1972.00M) | Time:00:02.27 | Mem:295.50M, Peak:295.50M | Scene, ViewLayer | Updating Mesh | Copying Mesh to device
+Fra:1 Mem:1972.00M (Peak 1972.00M) | Time:00:02.27 | Mem:576.50M, Peak:576.50M | Scene, ViewLayer | Updating Objects Flags
+Fra:1 Mem:1972.00M (Peak 1972.00M) | Time:00:02.27 | Mem:576.50M, Peak:576.50M | Scene, ViewLayer | Updating Primitive Offsets
+Fra:1 Mem:1972.00M (Peak 1972.00M) | Time:00:02.27 | Mem:576.50M, Peak:576.50M | Scene, ViewLayer | Updating Images
+Fra:1 Mem:1972.00M (Peak 1972.00M) | Time:00:02.27 | Mem:576.50M, Peak:576.50M | Scene, ViewLayer | Updating Camera Volume
+Fra:1 Mem:1972.00M (Peak 1972.00M) | Time:00:02.27 | Mem:576.50M, Peak:576.50M | Scene, ViewLayer | Updating Lookup Tables
+Fra:1 Mem:1972.00M (Peak 1972.00M) | Time:00:02.27 | Mem:576.58M, Peak:576.58M | Scene, ViewLayer | Updating Lights
+Fra:1 Mem:1972.00M (Peak 1972.00M) | Time:00:02.27 | Mem:576.58M, Peak:576.58M | Scene, ViewLayer | Updating Lights | Computing distribution
+Fra:1 Mem:1972.00M (Peak 1972.00M) | Time:00:02.27 | Mem:576.58M, Peak:576.58M | Scene, ViewLayer | Updating Lights | Computing tree
+Fra:1 Mem:1972.00M (Peak 1972.00M) | Time:00:02.27 | Mem:576.58M, Peak:576.58M | Scene, ViewLayer | Updating Integrator
+Fra:1 Mem:1973.00M (Peak 1973.00M) | Time:00:02.27 | Mem:577.58M, Peak:577.58M | Scene, ViewLayer | Updating Film
+Fra:1 Mem:1973.00M (Peak 1973.00M) | Time:00:02.27 | Mem:577.50M, Peak:577.58M | Scene, ViewLayer | Updating Lookup Tables
+Fra:1 Mem:1973.00M (Peak 1973.00M) | Time:00:02.27 | Mem:577.58M, Peak:577.58M | Scene, ViewLayer | Updating Baking
+Fra:1 Mem:1973.00M (Peak 1973.00M) | Time:00:02.27 | Mem:577.58M, Peak:577.58M | Scene, ViewLayer | Updating Device | Writing constant memory
+Fra:1 Mem:1973.00M (Peak 1973.00M) | Time:00:02.27 | Mem:577.58M, Peak:577.58M | Scene, ViewLayer | Sample 0/32
+Fra:1 Mem:2022.47M (Peak 2022.47M) | Time:00:03.25 | Remaining:00:30.38 | Mem:627.02M, Peak:627.02M | Scene, ViewLayer | Sample 1/32
+Fra:1 Mem:2044.44M (Peak 2088.39M) | Time:00:28.76 | Mem:627.02M, Peak:627.02M | Scene, ViewLayer | Sample 32/32
+Fra:1 Mem:2044.44M (Peak 2088.39M) | Time:00:28.76 | Mem:627.02M, Peak:627.02M | Scene, ViewLayer | Finished
+Saved: '/home/ethan/Projects/Sai_Art/docs/uri_style/gorilla_v0_2/images/lower_dense_assembled_front_oblique_s9.png'
+Time: 00:28.85 (Saving: 00:00.08)
+
+COMPLETE_NATIVE_FRAME front_oblique
+Fra:1 Mem:2022.47M (Peak 2022.47M) | Time:00:00.00 | Mem:627.02M, Peak:627.02M | Scene, ViewLayer | Initializing
+Fra:1 Mem:2022.47M (Peak 2022.47M) | Time:00:00.00 | Mem:627.02M, Peak:627.02M | Scene, ViewLayer | Waiting for render to start
+Fra:1 Mem:2022.47M (Peak 2022.47M) | Time:00:00.00 | Mem:627.02M, Peak:627.02M | Scene, ViewLayer | Updating Scene
+Fra:1 Mem:2022.47M (Peak 2022.47M) | Time:00:00.00 | Mem:627.02M, Peak:627.02M | Scene, ViewLayer | Updating Shaders
+Fra:1 Mem:2022.47M (Peak 2022.47M) | Time:00:00.00 | Mem:627.02M, Peak:627.02M | Scene, ViewLayer | Updating Background
+Fra:1 Mem:2022.47M (Peak 2022.47M) | Time:00:00.00 | Mem:627.02M, Peak:627.02M | Scene, ViewLayer | Updating Camera
+Fra:1 Mem:2022.47M (Peak 2022.47M) | Time:00:00.00 | Mem:627.02M, Peak:627.02M | Scene, ViewLayer | Updating Objects
+Fra:1 Mem:2022.47M (Peak 2022.47M) | Time:00:00.00 | Mem:627.02M, Peak:627.02M | Scene, ViewLayer | Updating Particle Systems
+Fra:1 Mem:2022.47M (Peak 2022.47M) | Time:00:00.00 | Mem:627.02M, Peak:627.02M | Scene, ViewLayer | Updating Meshes
+Fra:1 Mem:2022.47M (Peak 2022.47M) | Time:00:00.00 | Mem:627.02M, Peak:627.02M | Scene, ViewLayer | Updating Objects Flags
+Fra:1 Mem:2022.47M (Peak 2022.47M) | Time:00:00.00 | Mem:627.02M, Peak:627.02M | Scene, ViewLayer | Updating Primitive Offsets
+Fra:1 Mem:2022.47M (Peak 2022.47M) | Time:00:00.00 | Mem:627.02M, Peak:627.02M | Scene, ViewLayer | Updating Images
+Fra:1 Mem:2022.47M (Peak 2022.47M) | Time:00:00.00 | Mem:627.02M, Peak:627.02M | Scene, ViewLayer | Updating Camera Volume
+Fra:1 Mem:2022.47M (Peak 2022.47M) | Time:00:00.00 | Mem:627.02M, Peak:627.02M | Scene, ViewLayer | Updating Lookup Tables
+Fra:1 Mem:2022.47M (Peak 2022.47M) | Time:00:00.00 | Mem:627.02M, Peak:627.02M | Scene, ViewLayer | Updating Lights
+Fra:1 Mem:2022.47M (Peak 2022.47M) | Time:00:00.00 | Mem:627.02M, Peak:627.02M | Scene, ViewLayer | Updating Integrator
+Fra:1 Mem:2022.47M (Peak 2022.47M) | Time:00:00.00 | Mem:627.02M, Peak:627.02M | Scene, ViewLayer | Updating Film
+Fra:1 Mem:2022.47M (Peak 2022.47M) | Time:00:00.00 | Mem:627.02M, Peak:627.02M | Scene, ViewLayer | Updating Lookup Tables
+Fra:1 Mem:2022.47M (Peak 2022.47M) | Time:00:00.00 | Mem:627.02M, Peak:627.02M | Scene, ViewLayer | Updating Baking
+Fra:1 Mem:2022.47M (Peak 2022.47M) | Time:00:00.00 | Mem:627.02M, Peak:627.02M | Scene, ViewLayer | Updating Device | Writing constant memory
+Fra:1 Mem:2022.47M (Peak 2022.47M) | Time:00:00.00 | Mem:627.02M, Peak:627.02M | Scene, ViewLayer | Sample 0/32
+Fra:1 Mem:2022.47M (Peak 2022.47M) | Time:00:00.99 | Remaining:00:30.68 | Mem:627.02M, Peak:627.02M | Scene, ViewLayer | Sample 1/32
+Fra:1 Mem:2044.44M (Peak 2088.39M) | Time:00:26.45 | Mem:627.02M, Peak:627.02M | Scene, ViewLayer | Sample 32/32
+Fra:1 Mem:2044.44M (Peak 2088.39M) | Time:00:26.45 | Mem:627.02M, Peak:627.02M | Scene, ViewLayer | Finished
+Saved: '/home/ethan/Projects/Sai_Art/docs/uri_style/gorilla_v0_2/images/lower_dense_assembled_rear_oblique_s9.png'
+Time: 00:26.53 (Saving: 00:00.07)
+
+COMPLETE_NATIVE_FRAME rear_oblique
+Info: Saved "lower_dense_assembled_s9.blend"
+13:13:44 | ERROR: Draco mesh compression is not available because library could not be found at /home/ethan/Softwares/blender-local/root/usr/bin/4.0/python/lib/python3.12/site-packages/libextern_draco.so
+13:13:44 | INFO: Starting glTF 2.0 export
+13:13:44 | INFO: Extracting primitive: pixal_clear_side_leg_separated_sheets
+13:13:45 | INFO: Primitives created: 1
+13:13:45 | INFO: Extracting primitive: pixal_mirrored_leg_separated_sheets
+13:13:45 | INFO: Primitives created: 1
+13:13:47 | INFO: Extracting primitive: complete_foot_only_dense
+13:13:55 | INFO: Primitives created: 1
+13:13:56 | INFO: Extracting primitive: complete_foot_only_dense.001
+13:14:03 | INFO: Primitives created: 1
+13:14:03 | INFO: Finished glTF 2.0 export in 19.550487279891968 s
+
+DENSE_NATIVE_EXCHANGE_EXPORTED lower_dense_assembled_s9.glb
+Traceback (most recent call last):
+  File "/home/ethan/Projects/Sai_Art/docs/uri_style/gorilla_v0_2/source/prepare_dense_lower_review_s9.py", line 144, in <module>
+    REPORT.write_text(json.dumps(record, indent=2) + '\n')
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/json/__init__.py", line 238, in dumps
+    **kw).encode(obj)
+          ^^^^^^^^^^^
+  File "/usr/lib/python3.12/json/encoder.py", line 202, in encode
+    chunks = list(chunks)
+             ^^^^^^^^^^^^
+  File "/usr/lib/python3.12/json/encoder.py", line 432, in _iterencode
+    yield from _iterencode_dict(o, _current_indent_level)
+  File "/usr/lib/python3.12/json/encoder.py", line 406, in _iterencode_dict
+    yield from chunks
+  File "/usr/lib/python3.12/json/encoder.py", line 406, in _iterencode_dict
+    yield from chunks
+  File "/usr/lib/python3.12/json/encoder.py", line 326, in _iterencode_list
+    yield from chunks
+  File "/usr/lib/python3.12/json/encoder.py", line 406, in _iterencode_dict
+    yield from chunks
+  File "/usr/lib/python3.12/json/encoder.py", line 439, in _iterencode
+    o = _default(o)
+        ^^^^^^^^^^^
+  File "/usr/lib/python3.12/json/encoder.py", line 180, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type bool is not JSON serializable
+Data are loaded, start creating Blender stuff
+glTF import finished in 9.55s
+
+Blender quit

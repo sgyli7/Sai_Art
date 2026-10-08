@@ -1,0 +1,12 @@
+{
+  "scene_sha256": "279b34a2392d2b439cac516fd74743b330b80a2bbe51f30d59d7f6b15efe3e3c",
+  "positive_watertight_part_count": 55,
+  "observed_face_count": 23,
+  "max_observed_control_reprojection_error_px": 1.7053025658242404e-13,
+  "metric_scope": "Control-polygon reprojection only, not reference-wide accuracy or recovered 3D truth.",
+  "imagegen_used": false,
+  "hidden_geometry_verified": false,
+  "physics_verified": false,
+  "source_scene_file": "reference_scene_untrimmed.json",
+  "active_geometry_audit": "reconstruction_audit.json"
+}

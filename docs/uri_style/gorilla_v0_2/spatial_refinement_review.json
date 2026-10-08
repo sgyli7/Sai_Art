@@ -1,0 +1,31 @@
+{
+  "created_at": "2026-10-03T19:44:08.243277+08:00",
+  "status": "local_appearance_refinement_complete_full_geometry_goal_open",
+  "latest_request": "Retain current design and improve LEFT fore/aft visual balance.",
+  "selected_revision": "p13",
+  "selected_image": "images/gorilla_four_view_spatial_balance_p13.png",
+  "selected_sha256": "ffdc13a126a268a7bbf156c7592b3e36d96cdf87a7e66d26da0101b026219237",
+  "selected_record": "artwork_spatial_balance_p13_record.json",
+  "generation_calls_this_spatial_pass": 6,
+  "baseline": "p11",
+  "user_baseline_acceptance_scope": "P11 overall shape direction accepted as revision basis; lower-body color allocation explicitly rejected in subsequent feedback. No native/structural approval.",
+  "pixel_measurement": "illustrated_view_extents_p13.json",
+  "analytic_layout_plan": "side_layout_plan_p13.json",
+  "analytic_top_guide": "top_projection_position_guide_p15.json",
+  "remaining_issues": [
+    "Illustrated TOP is not a verified true orthographic export of the current shells; raster depth/width differences remain.",
+    "REAR elevation scale is not fully registered with FRONT/LEFT.",
+    "Actual mass distribution, mechanical clearance and load-bearing qualification are not established."
+  ],
+  "engineering_ready": false,
+  "full_v02_delivery_complete": false,
+  "goal_completion_claim": false,
+  "latest_lower_body_palette_feedback": {
+    "recorded_at": "2026-10-03T19:50:16.646188+08:00",
+    "status": "user_rejected_assignment_module_based_recolor_deferred",
+    "palette": "Original URI color family retained.",
+    "assignment": "Current horizontal orange/blue bands are not approved; allocate colors by actual designed component/module boundaries after current spatial work.",
+    "geometry_guard": "Paint boundaries are not joint axes, module divisions or geometry constraints. Do not infer the Z-chain or knee/shank ownership from the rejected transverse bands.",
+    "current_spatial_work_continues": true
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "source_sha256": "82a167fa15535498587227d89ae31b01d3c32cdb3d6a4f8fbba1f427ef80ca7c",
+  "dynamic_report_sha256": "0e492686b5b7381b65deabbce158472c0d78390d48b47142f72d878e48fe3464",
+  "checker_sha256": "ec6af555230ddf2db2fb5c19da59d49655d0d208f8f420e3e3e8713417217a3b",
+  "sampled_states": 80,
+  "collisions": [],
+  "non_pad_floor_intrusions": [],
+  "minimum_pad_z_m": -0.00013052366224168655,
+  "scope": "Finite material replay of every sampled body state, all different-owner pairs. Pads have numerical contact penetration; uncalibrated rigid contact is NOT an elastic pad validation. Samples NOT continuous time proof.",
+  "physical_accepted": false,
+  "elapsed_seconds": 1.4408369064331055
+}

@@ -1,0 +1,40 @@
+{
+  "revision": "p17",
+  "created_at": "2026-10-03T19:36:00.371398+08:00",
+  "status": "generated_registration_not_met_not_selected",
+  "tool": "built_in_image_gen",
+  "prompt": "/home/ethan/Projects/Sai_Art/docs/uri_style/gorilla_v0_2/prompts/pixal3d_final_registration_p17.txt",
+  "scope": "TOP lateral registration and REAR elevation registration; FRONT and LEFT locked",
+  "references": [
+    {
+      "index": 1,
+      "path": "/home/ethan/Projects/Sai_Art/docs/uri_style/gorilla_v0_2/images/gorilla_four_view_spatial_refined_p16.png",
+      "role": "EDIT_TARGET_SUBJECT_COMPOSITION_SURFACE_CLEANLINESS",
+      "sha256": "d00f5b1ba2314c964c0786848ff31130a2895923698577c7f7863b8a84133ad6"
+    },
+    {
+      "index": 2,
+      "path": "/home/ethan/Projects/Sai_Art/.agents/skills/uri-style/assets/style_01_race_car_hangar.png",
+      "role": "STYLE_ONLY",
+      "sha256": "1aed979f442030b644db5b86c79ad69d44f14092f865eb28f157663476eec8c9"
+    },
+    {
+      "index": 3,
+      "path": "/home/ethan/Projects/Sai_Art/.agents/skills/uri-style/assets/style_03_tracked_mobile_station.png",
+      "role": "STYLE_ONLY",
+      "sha256": "da14249a726ca5009b222a0dd7dc2c7a1fdbfe49ef31b8080936e855e8eb1f6f"
+    },
+    {
+      "index": 4,
+      "path": "/home/ethan/Projects/Sai_Art/.agents/skills/uri-style/assets/style_05_white_blue_racer.png",
+      "role": "STYLE_ONLY",
+      "sha256": "fc5f342e892842887e738798b5870b9245fb3c7376a028c5f503301ac687f1bc"
+    }
+  ],
+  "output": "/home/ethan/Projects/Sai_Art/docs/uri_style/gorilla_v0_2/images/gorilla_four_view_registration_p17.png",
+  "output_sha256": "734c48ece53f5141a1cae4b08228508a2911ab424ff4032e976d5647a5209c9e",
+  "output_dimensions_px": [
+    1254,
+    1254
+  ]
+}

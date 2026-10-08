@@ -1,0 +1,162 @@
+{
+  "source_sha256": "60d2a518c84fdb56ba1079be36add2543d9fb351f119aefbd1c83fe702e9952c",
+  "renderer_sha256": "bc9388eb8d9b9d66a47a8ccd7c0cc7c94a16858d798d58c00e7dfe69fa59cee0",
+  "same_native_source_all_views": true,
+  "imagegen_used": false,
+  "appearance_accepted": false,
+  "physical_accepted": false,
+  "renders": [
+    {
+      "file": "leg_left.png",
+      "camera_m": [
+        0.1,
+        6,
+        0.66
+      ],
+      "target_m": [
+        0.1,
+        0.39,
+        0.66
+      ],
+      "orthographic_scale_m": 1.55,
+      "pose_sample": 0,
+      "source_sha256": "60d2a518c84fdb56ba1079be36add2543d9fb351f119aefbd1c83fe702e9952c"
+    },
+    {
+      "file": "leg_three_quarter.png",
+      "camera_m": [
+        3,
+        5,
+        2.2
+      ],
+      "target_m": [
+        0.1,
+        0.39,
+        0.66
+      ],
+      "orthographic_scale_m": 1.58,
+      "pose_sample": 0,
+      "source_sha256": "60d2a518c84fdb56ba1079be36add2543d9fb351f119aefbd1c83fe702e9952c"
+    },
+    {
+      "file": "front.png",
+      "camera_m": [
+        6,
+        0,
+        1.131906156784125
+      ],
+      "target_m": [
+        0.002024627586752481,
+        0,
+        1.131906156784125
+      ],
+      "orthographic_scale_m": 2.6363049019707576,
+      "pose_sample": 0,
+      "source_sha256": "60d2a518c84fdb56ba1079be36add2543d9fb351f119aefbd1c83fe702e9952c"
+    },
+    {
+      "file": "left.png",
+      "camera_m": [
+        0.002024627586752481,
+        6,
+        1.131906156784125
+      ],
+      "target_m": [
+        0.002024627586752481,
+        0,
+        1.131906156784125
+      ],
+      "orthographic_scale_m": 2.6363049019707576,
+      "pose_sample": 0,
+      "source_sha256": "60d2a518c84fdb56ba1079be36add2543d9fb351f119aefbd1c83fe702e9952c"
+    },
+    {
+      "file": "rear.png",
+      "camera_m": [
+        -6,
+        0,
+        1.131906156784125
+      ],
+      "target_m": [
+        0.002024627586752481,
+        0,
+        1.131906156784125
+      ],
+      "orthographic_scale_m": 2.6363049019707576,
+      "pose_sample": 0,
+      "source_sha256": "60d2a518c84fdb56ba1079be36add2543d9fb351f119aefbd1c83fe702e9952c"
+    },
+    {
+      "file": "top.png",
+      "camera_m": [
+        0.002024627523496747,
+        0.0,
+        7.0
+      ],
+      "target_m": [
+        0.002024627586752481,
+        0,
+        0
+      ],
+      "orthographic_scale_m": 2.6363048553466797,
+      "pose_sample": 0,
+      "source_sha256": "60d2a518c84fdb56ba1079be36add2543d9fb351f119aefbd1c83fe702e9952c",
+      "camera_euler_rad": [
+        0.0,
+        0.0,
+        1.5707963705062866
+      ],
+      "forward_on_page": "down",
+      "camera_refinement_sha256": "0d703078585094b7f4bca2a402551a393704eb9f128d70caccb0ca21e89864d9",
+      "mesh_changes": false
+    },
+    {
+      "file": "three_quarter.png",
+      "camera_m": [
+        3.4,
+        5,
+        2.8
+      ],
+      "target_m": [
+        0.002024627586752481,
+        0,
+        1.131906156784125
+      ],
+      "orthographic_scale_m": 2.6363049019707576,
+      "pose_sample": 0,
+      "source_sha256": "60d2a518c84fdb56ba1079be36add2543d9fb351f119aefbd1c83fe702e9952c"
+    },
+    {
+      "file": "leg_deep_crouch_left.png",
+      "camera_m": [
+        0.1,
+        6,
+        0.58
+      ],
+      "target_m": [
+        0.1,
+        0.39,
+        0.58
+      ],
+      "orthographic_scale_m": 1.55,
+      "pose_sample": 120,
+      "source_sha256": "60d2a518c84fdb56ba1079be36add2543d9fb351f119aefbd1c83fe702e9952c"
+    },
+    {
+      "file": "deep_crouch_left.png",
+      "camera_m": [
+        0.002024627586752481,
+        6,
+        1.131906156784125
+      ],
+      "target_m": [
+        0.002024627586752481,
+        0,
+        1.131906156784125
+      ],
+      "orthographic_scale_m": 2.6363049019707576,
+      "pose_sample": 120,
+      "source_sha256": "60d2a518c84fdb56ba1079be36add2543d9fb351f119aefbd1c83fe702e9952c"
+    }
+  ]
+}

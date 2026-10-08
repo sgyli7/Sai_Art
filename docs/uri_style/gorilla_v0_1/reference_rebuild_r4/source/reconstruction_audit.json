@@ -1,0 +1,140 @@
+{
+  "revision": "reference_rebuild_r4",
+  "source_sha256": "e32864b378076a7caf142b439a2dc75c3d5047a6a1c72ae3dee15a99689f3ddf",
+  "source_parts": 55,
+  "all_parts_finite_positive": true,
+  "inter_group_static_intersections": [],
+  "max_glb_exchange_vertex_error_layout_units": 1.2815017094554598e-07,
+  "exchange_coordinate_conversion": "source X-forward Y-left Z-up -> glTF Y-up",
+  "post_relief_observed_controls": [
+    {
+      "part": "crown_roof_wedge",
+      "max_post_relief_control_error_px": 1.2710574864626038e-13,
+      "max_source_surface_distance_layout_units": 0.0
+    },
+    {
+      "part": "main_front_tapered_face",
+      "max_post_relief_control_error_px": 1.1368683772161603e-13,
+      "max_source_surface_distance_layout_units": 7.850462293418876e-17
+    },
+    {
+      "part": "near_shoulder_continuous_plate",
+      "max_post_relief_control_error_px": 1.2710574864626038e-13,
+      "max_source_surface_distance_layout_units": 0.0
+    },
+    {
+      "part": "far_shoulder_plate",
+      "max_post_relief_control_error_px": 1.7053025658242404e-13,
+      "max_source_surface_distance_layout_units": 0.0
+    },
+    {
+      "part": "near_upper_arm_shield",
+      "max_post_relief_control_error_px": 1.6077746776921858e-13,
+      "max_source_surface_distance_layout_units": 0.0
+    },
+    {
+      "part": "far_upper_arm_shield",
+      "max_post_relief_control_error_px": 1.1368683772161603e-13,
+      "max_source_surface_distance_layout_units": 0.0
+    },
+    {
+      "part": "near_forearm_shield",
+      "max_post_relief_control_error_px": 1.0247593068766006e-13,
+      "max_source_surface_distance_layout_units": 2.482534153247273e-16
+    },
+    {
+      "part": "far_forearm_shield",
+      "max_post_relief_control_error_px": 1.6077746776921858e-13,
+      "max_source_surface_distance_layout_units": 0.0
+    },
+    {
+      "part": "near_front_radiator_housing",
+      "max_post_relief_control_error_px": 5.684341886080802e-14,
+      "max_source_surface_distance_layout_units": 0.0
+    },
+    {
+      "part": "near_forward_radiator_recess",
+      "max_post_relief_control_error_px": 1.2710574864626038e-13,
+      "max_source_surface_distance_layout_units": 0.0
+    },
+    {
+      "part": "far_forward_radiator_recess",
+      "max_post_relief_control_error_px": 5.684341886080802e-14,
+      "max_source_surface_distance_layout_units": 0.0
+    },
+    {
+      "part": "reference_front_nose_lamp",
+      "max_post_relief_control_error_px": 1.7053025658242404e-13,
+      "max_source_surface_distance_layout_units": 0.0
+    },
+    {
+      "part": "reference_vertical_front_lamp",
+      "max_post_relief_control_error_px": 5.684341886080802e-14,
+      "max_source_surface_distance_layout_units": 0.0
+    },
+    {
+      "part": "reference_compact_hip_front_cover",
+      "max_post_relief_control_error_px": 2.22090144640761,
+      "max_source_surface_distance_layout_units": 0.006488539471697768
+    },
+    {
+      "part": "near_full_thigh_armor",
+      "max_post_relief_control_error_px": 8.038873388460929e-14,
+      "max_source_surface_distance_layout_units": 0.0
+    },
+    {
+      "part": "near_thigh_dark_inset",
+      "max_post_relief_control_error_px": 1.1368683772161603e-13,
+      "max_source_surface_distance_layout_units": 0.0
+    },
+    {
+      "part": "near_thigh_lower_fitted_cover",
+      "max_post_relief_control_error_px": 5.684341886080802e-14,
+      "max_source_surface_distance_layout_units": 1.1102230246251565e-16
+    },
+    {
+      "part": "far_full_thigh_armor",
+      "max_post_relief_control_error_px": 41.100515209772205,
+      "max_source_surface_distance_layout_units": 0.11431078564387911
+    },
+    {
+      "part": "far_thigh_upper_service_cover",
+      "max_post_relief_control_error_px": 46.134812542064054,
+      "max_source_surface_distance_layout_units": 0.15163929384301178
+    },
+    {
+      "part": "far_thigh_lower_knee_cover",
+      "max_post_relief_control_error_px": 27.752133922402905,
+      "max_source_surface_distance_layout_units": 0.08181803572245613
+    },
+    {
+      "part": "far_return_link_integrated_shield",
+      "max_post_relief_control_error_px": 26.0908341977022,
+      "max_source_surface_distance_layout_units": 0.07259287919482056
+    },
+    {
+      "part": "far_continuous_lower_leg",
+      "max_post_relief_control_error_px": 19.083805105286995,
+      "max_source_surface_distance_layout_units": 0.05313504282093932
+    },
+    {
+      "part": "near_continuous_lower_leg",
+      "max_post_relief_control_error_px": 21.43812244833218,
+      "max_source_surface_distance_layout_units": 0.08876011256919629
+    }
+  ],
+  "observed_pixel_controls_only": true,
+  "single_view_camera_and_depth_are_assumed": true,
+  "native_render_manifest_source_matches": true,
+  "reference_geometry_accepted": false,
+  "ready_for_painting": false,
+  "ready_for_engineering_handoff": false,
+  "imagegen_used": false,
+  "failure_reasons": [
+    "Side view still exposes unverified depths and component connections.",
+    "Static surface relief does not establish a valid articulated assembly.",
+    "Only one cropped reference camera is available. Rear, sole, and occluded geometry are undetermined.",
+    "Control-polygon reprojection cannot establish recovered 3D geometry."
+  ],
+  "required_reference": "Original 3D source or complete reference multiviews, especially posterior, side and foot."
+}

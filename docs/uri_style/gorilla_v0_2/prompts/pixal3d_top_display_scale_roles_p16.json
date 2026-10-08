@@ -1,0 +1,40 @@
+{
+  "revision": "p16",
+  "created_at": "2026-10-03T19:31:48.903095+08:00",
+  "status": "generated_under_final_measurement",
+  "tool": "built_in_image_gen",
+  "prompt": "/home/ethan/Projects/Sai_Art/docs/uri_style/gorilla_v0_2/prompts/pixal3d_top_display_scale_p16.txt",
+  "scope": "TOP subject uniform display-scale correction only",
+  "references": [
+    {
+      "index": 1,
+      "path": "/home/ethan/Projects/Sai_Art/docs/uri_style/gorilla_v0_2/images/gorilla_four_view_top_guided_p15.png",
+      "role": "EDIT_TARGET_SUBJECT_COMPOSITION_SURFACE_CLEANLINESS",
+      "sha256": "ec09ee4c685f4625638b282565d0a7491ee1e562b0e6ffd04ff63c3904f2a9f7"
+    },
+    {
+      "index": 2,
+      "path": "/home/ethan/Projects/Sai_Art/.agents/skills/uri-style/assets/style_01_race_car_hangar.png",
+      "role": "STYLE_ONLY",
+      "sha256": "1aed979f442030b644db5b86c79ad69d44f14092f865eb28f157663476eec8c9"
+    },
+    {
+      "index": 3,
+      "path": "/home/ethan/Projects/Sai_Art/.agents/skills/uri-style/assets/style_03_tracked_mobile_station.png",
+      "role": "STYLE_ONLY",
+      "sha256": "da14249a726ca5009b222a0dd7dc2c7a1fdbfe49ef31b8080936e855e8eb1f6f"
+    },
+    {
+      "index": 4,
+      "path": "/home/ethan/Projects/Sai_Art/.agents/skills/uri-style/assets/style_05_white_blue_racer.png",
+      "role": "STYLE_ONLY",
+      "sha256": "fc5f342e892842887e738798b5870b9245fb3c7376a028c5f503301ac687f1bc"
+    }
+  ],
+  "output": "/home/ethan/Projects/Sai_Art/docs/uri_style/gorilla_v0_2/images/gorilla_four_view_spatial_refined_p16.png",
+  "output_sha256": "d00f5b1ba2314c964c0786848ff31130a2895923698577c7f7863b8a84133ad6",
+  "output_dimensions_px": [
+    1254,
+    1254
+  ]
+}

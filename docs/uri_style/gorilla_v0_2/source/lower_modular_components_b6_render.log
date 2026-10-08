@@ -1,0 +1,15 @@
+Blender 4.0.2
+Read blend: "/home/ethan/Projects/Sai_Art/docs/uri_style/gorilla_v0_2/source/lower_modular_components_b6.blend"
+Traceback (most recent call last):
+  File "/home/ethan/Projects/Sai_Art/docs/uri_style/gorilla_v0_2/source/inspect_fitted_components_b4.py", line 84, in <module>
+    hit=collision(a,b,gs[a.name],gs[b.name])
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ethan/Projects/Sai_Art/docs/uri_style/gorilla_v0_2/source/inspect_fitted_components_b4.py", line 61, in collision
+    if np.any(va.min(0)>vb.max(0)) or np.any(vb.min(0)>va.max(0)):return None
+                        ^^^^^^^^^
+  File "/home/ethan/Softwares/ComfyUI/.venv/lib/python3.12/site-packages/numpy/_core/_methods.py", line 41, in _amax
+    return umr_maximum(a, axis, None, out, keepdims, initial, where)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: zero-size array to reduction operation maximum which has no identity
+
+Blender quit

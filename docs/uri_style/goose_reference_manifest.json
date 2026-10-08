@@ -1,0 +1,31 @@
+{
+  "date": "2026-10-01",
+  "thread_id": "01a0e3e2-76cc-7410-86d0-b128d874d715",
+  "thread_title": "导入 Goose 工作区资料",
+  "thread_read_successful": true,
+  "working_tree": "/home/ethan/Projects/Sai_Rotbots/.scratch/goose_stage_three_four",
+  "head_at_manifest_capture": "6c16a78bdee067b5d8a63e79b7d4c5c9ca7818d7",
+  "status": "active worktree; selected source facts, not full-machine release",
+  "files": [
+    {
+      "path": "/home/ethan/Projects/Sai_Rotbots/.scratch/goose_stage_three_four/robots/Goose_V0.1/README.md",
+      "sha256": "f541164b156e73c68bb61e3d20f62c40bed8e2ae2498a71d75b2dae1df408702"
+    },
+    {
+      "path": "/home/ethan/Projects/Sai_Rotbots/.scratch/goose_stage_three_four/robots/Goose_V0.1/design/camera_installation_checkpoint.md",
+      "sha256": "7fd97471b02f45a866eab03e11cbc78a3344d4c0df06daca0badcef1af541d17"
+    },
+    {
+      "path": "/home/ethan/Projects/Sai_Rotbots/.scratch/goose_stage_three_four/robots/Goose_V0.1/design/stage_two_parameter_handoff.md",
+      "sha256": "601315094d73bf1345eccc096dfbf570fa27cd8fe256c6eac9a7552133631bdb"
+    },
+    {
+      "path": "/home/ethan/Projects/Sai_Rotbots/.scratch/goose_stage_three_four/robots/Goose_V0.1/design/tip_grip_checkpoint.md",
+      "sha256": "29d824544224e7be0cd67fe6893d8f59ac307019c5042492a689efeec2e8796e"
+    },
+    {
+      "path": "/home/ethan/Projects/Sai_Rotbots/.scratch/goose_stage_three_four/robots/Goose_V0.1/design/manufacturing_appearance_acceptance.md",
+      "sha256": "77523715e59382ce6287e6f59b15456abf1c4c07bab11c79ec64677233c04c40"
+    }
+  ]
+}

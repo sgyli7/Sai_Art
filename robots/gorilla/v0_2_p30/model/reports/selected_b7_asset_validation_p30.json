@@ -1,0 +1,23 @@
+{
+  "asset": "Original user-selected gray lower modular B7",
+  "source_blend": "/home/ethan/Projects/Sai_Art/docs/uri_style/gorilla_v0_2/source/lower_modular_components_b7.blend",
+  "source_sha256": "b75b3f29aa0a91145ed6dacf2cd25e1caece7527155146dd00507cd70edb6beb",
+  "glb": "/home/ethan/Projects/Sai_Art/docs/uri_style/gorilla_v0_2/exports/lower_modular_components_b7.glb",
+  "glb_sha256": "327bc4da753b9b90db8c2338221591461097e6a802e40e9db21d5ec020e42787",
+  "glb_header_version": 2,
+  "self_contained": true,
+  "external_resources": false,
+  "mesh_instances": 76,
+  "mesh_definitions": 38,
+  "nodes": 85,
+  "all_nodes_reachable": true,
+  "tree_valid": true,
+  "original_gray_materials": true,
+  "source_unchanged": true,
+  "unit_convention": "Normalized appearance units; scale not a manufacturing dimension",
+  "axis_convention": "+Y up; source +Z up converted by native Blender glTF exporter",
+  "topology_and_physics_requalified": false,
+  "original_topology_report": "lower_modular_components_b7.json",
+  "whole_robot_CAD_qualification": false,
+  "checks_passed": true
+}

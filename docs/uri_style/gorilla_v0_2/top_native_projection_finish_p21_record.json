@@ -1,0 +1,42 @@
+{
+  "revision": "p21",
+  "status": "prepared_after_native_shoulder_registration",
+  "prompt": "/home/ethan/Projects/Sai_Art/docs/uri_style/gorilla_v0_2/prompts/top_native_projection_finish_p21.txt",
+  "native_projection_guide": "native_top_registration_p21.json",
+  "references": [
+    {
+      "index": 1,
+      "path": "/home/ethan/Projects/Sai_Art/docs/uri_style/gorilla_v0_2/images/native_registration_top_p21.png",
+      "role": "EDIT_TARGET_GEOMETRY_CAMERA",
+      "sha256": "c289d98903af8702398b2d4a58867c33c464ae4fe6e94bc66577a54011b68421"
+    },
+    {
+      "index": 2,
+      "path": "/home/ethan/Projects/Sai_Art/docs/uri_style/gorilla_v0_2/references/user_four_view_top_fix_p19.jpg",
+      "role": "SUBJECT_IDENTITY_FRONT_LEFT_REAR_ONLY",
+      "sha256": "cb804e621736804e6ae08c17b4d25811923415e5bd90880b8d4e5c4ec94e1cfb"
+    },
+    {
+      "index": 3,
+      "path": "/home/ethan/Projects/Sai_Art/.agents/skills/uri-style/assets/style_01_race_car_hangar.png",
+      "role": "STYLE_ONLY",
+      "sha256": "1aed979f442030b644db5b86c79ad69d44f14092f865eb28f157663476eec8c9"
+    },
+    {
+      "index": 4,
+      "path": "/home/ethan/Projects/Sai_Art/.agents/skills/uri-style/assets/style_03_tracked_mobile_station.png",
+      "role": "STYLE_ONLY",
+      "sha256": "da14249a726ca5009b222a0dd7dc2c7a1fdbfe49ef31b8080936e855e8eb1f6f"
+    },
+    {
+      "index": 5,
+      "path": "/home/ethan/Projects/Sai_Art/.agents/skills/uri-style/assets/style_05_white_blue_racer.png",
+      "role": "STYLE_ONLY",
+      "sha256": "fc5f342e892842887e738798b5870b9245fb3c7376a028c5f503301ac687f1bc"
+    }
+  ],
+  "style_subset_reason": "Tool max5 paths: native projection guide, original identity, fixed style anchors1/3/5. P20 retained as observed failure evidence only.",
+  "user_accepted": false,
+  "full_complete_model_qualified": false,
+  "input_limit_rejection": "First6-input attempt rejected before generation; current actual request uses5."
+}

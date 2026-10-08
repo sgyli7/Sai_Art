@@ -1,0 +1,41 @@
+{
+  "stage": "single_low_main_ankle_and_connected_foot",
+  "status": "superseded_before_generation_by_user_balance_request",
+  "tool": "built_in_image_gen",
+  "prompt": "/home/ethan/Projects/Sai_Art/docs/uri_style/gorilla_v0_2/prompts/pixal3d_low_ankle_structure_p12.txt",
+  "fidelity_audit": "goal_fidelity_audit_p11.json",
+  "references": [
+    {
+      "index": 1,
+      "path": "/home/ethan/Projects/Sai_Art/docs/uri_style/gorilla_v0_2/images/gorilla_four_view_pixal_lower_candidate_p11.png",
+      "role": "EDIT_TARGET_LOCK_ABOVE_ANKLE_ORIGINAL_PALETTE",
+      "sha256": "d64589b95574ac2e824748b533ec1be5c40f555e37f2b48e21c8487e20ea8217"
+    },
+    {
+      "index": 2,
+      "path": "/home/ethan/Projects/Sai_Art/docs/uri_style/gorilla_v0_2/references/foot_reference_low_integrated.jpg",
+      "role": "FOOT_SINGLE_LOW_MAIN_ANKLE_GEOMETRY_ONLY",
+      "sha256": "5f63f30f07b4ff0cdb5a0a3838434f956589cf07da76bfc20dce98032fc4a335"
+    },
+    {
+      "index": 3,
+      "path": "/home/ethan/Projects/Sai_Art/.agents/skills/uri-style/assets/style_01_race_car_hangar.png",
+      "role": "STYLE_ONLY",
+      "sha256": "1aed979f442030b644db5b86c79ad69d44f14092f865eb28f157663476eec8c9"
+    },
+    {
+      "index": 4,
+      "path": "/home/ethan/Projects/Sai_Art/.agents/skills/uri-style/assets/style_03_tracked_mobile_station.png",
+      "role": "STYLE_ONLY",
+      "sha256": "da14249a726ca5009b222a0dd7dc2c7a1fdbfe49ef31b8080936e855e8eb1f6f"
+    },
+    {
+      "index": 5,
+      "path": "/home/ethan/Projects/Sai_Art/.agents/skills/uri-style/assets/style_05_white_blue_racer.png",
+      "role": "STYLE_ONLY",
+      "sha256": "fc5f342e892842887e738798b5870b9245fb3c7376a028c5f503301ac687f1bc"
+    }
+  ],
+  "superseded_at": "2026-10-03T19:09:34.344662+08:00",
+  "reason": "User accepts p11 as revision basis and asks for spatial correctness and less forward protrusion in LEFT; retain current feet and leg design."
+}

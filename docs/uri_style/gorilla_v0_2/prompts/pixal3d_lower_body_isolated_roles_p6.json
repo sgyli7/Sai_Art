@@ -1,0 +1,49 @@
+{
+  "stage": "isolated_new_lower_body",
+  "status": "generated_lower_body_integration_source",
+  "tool": "built_in_image_gen",
+  "prompt": "/home/ethan/Projects/Sai_Art/docs/uri_style/gorilla_v0_2/prompts/pixal3d_lower_body_isolated_p6.txt",
+  "reference_selection": "Isolate model geometry and all three required foot refs first; full URI anchors accompany following whole-body integration.",
+  "references": [
+    {
+      "index": 1,
+      "path": "/home/ethan/Projects/Sai_Art/docs/uri_style/gorilla_v0_2/references/user_pixal_lower_body.jpg",
+      "role": "MODEL_LOWER_GEOMETRY_ONLY",
+      "sha256": "39c26feffdb56239ee2297c9fce6bd1aae35ecb1851f0292f43a7eb12330730e"
+    },
+    {
+      "index": 2,
+      "path": "/home/ethan/Projects/Sai_Art/docs/uri_style/gorilla_v0_2/references/foot_reference_complete_foreheel.jpg",
+      "role": "FOOT_COMPLETENESS",
+      "sha256": "6688a64220e4114cb8edf14abbadf0b6906a3b822ce7ab2d1fab2033d7624b06"
+    },
+    {
+      "index": 3,
+      "path": "/home/ethan/Projects/Sai_Art/docs/uri_style/gorilla_v0_2/references/foot_reference_low_integrated.jpg",
+      "role": "LOW_INTEGRATED_FOOT_SILHOUETTE",
+      "sha256": "5f63f30f07b4ff0cdb5a0a3838434f956589cf07da76bfc20dce98032fc4a335"
+    },
+    {
+      "index": 4,
+      "path": "/home/ethan/Projects/Sai_Art/docs/uri_style/gorilla_v0_2/references/foot_reference_model_joint_bridge.jpg",
+      "role": "FOOT_TOPOLOGY",
+      "sha256": "bb4112b18581da837246e59faad0ada988eced641fa43b093bb4f863aabf93f0"
+    },
+    {
+      "index": 5,
+      "path": "/home/ethan/Projects/Sai_Art/.agents/skills/uri-style/assets/style_01_race_car_hangar.png",
+      "role": "STYLE_ONLY",
+      "sha256": "1aed979f442030b644db5b86c79ad69d44f14092f865eb28f157663476eec8c9"
+    }
+  ],
+  "output": "/home/ethan/Projects/Sai_Art/docs/uri_style/gorilla_v0_2/images/pixal_lower_body_isolated_p6.png",
+  "output_sha256": "c2d1a160b35a015c3fe483a1d165899c34f186426bfb4a9e05182c945716c685",
+  "built_in_output": "/home/ethan/.codex/generated_images/01a0f3ab-7a57-7172-b8c5-e517aa2973da/exec-0bd7e730-79f6-4f0b-852f-d1cfef90e814.png",
+  "visual_findings": [
+    "New thigh panel/mass and continuous shank established from supplied model.",
+    "Complete connected forefoot and heel shown.",
+    "Fake hip radiator shapes leaked from source upper body; discard during integration.",
+    "Thigh white caps and yellow disk caps require restoring original paint allocation.",
+    "Illustration projections remain inferred, not same-mesh CAD or verified physical load rating."
+  ]
+}

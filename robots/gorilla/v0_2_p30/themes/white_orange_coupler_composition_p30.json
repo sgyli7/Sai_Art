@@ -1,0 +1,58 @@
+{
+  "title": "Gorilla P30 white/orange — restore two porcelain-white shell couplers",
+  "base": "/home/ethan/Projects/Sai_Art/docs/uri_style/gorilla_v0_2/themes/images/white_orange_generated_p30.png",
+  "overlay": "/home/ethan/Projects/Sai_Art/docs/uri_style/gorilla_v0_2/themes/images/white_orange_coupler_fix_generated_p30.png",
+  "output": "/home/ethan/Projects/Sai_Art/docs/uri_style/gorilla_v0_2/themes/images/white_orange_p30.png",
+  "regions": [
+    [
+      825,
+      804,
+      883,
+      835
+    ],
+    [
+      1002,
+      804,
+      1064,
+      835
+    ]
+  ],
+  "preserve_checks": {
+    "FRONT": [
+      0,
+      0,
+      626,
+      631
+    ],
+    "LEFT": [
+      628,
+      0,
+      1254,
+      631
+    ],
+    "REAR": [
+      0,
+      633,
+      626,
+      1254
+    ],
+    "TOP_main_crown_center": [
+      886,
+      813,
+      1000,
+      1015
+    ],
+    "TOP_legs_and_hands": [
+      632,
+      930,
+      1250,
+      1160
+    ],
+    "all_labels": [
+      0,
+      1200,
+      1254,
+      1254
+    ]
+  }
+}

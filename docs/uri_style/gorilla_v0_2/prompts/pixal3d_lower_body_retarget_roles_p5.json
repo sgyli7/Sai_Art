@@ -1,0 +1,48 @@
+{
+  "stage": "retarget_approved_v01_upper_replace_lower_only",
+  "status": "generated_rejected_internal_review",
+  "tool": "built_in_image_gen",
+  "prompt": "/home/ethan/Projects/Sai_Art/docs/uri_style/gorilla_v0_2/prompts/pixal3d_lower_body_retarget_v01_p5.txt",
+  "reference_selection": "Five-reference limit: exact upper and palette, primary lower geometry, complete foot, STYLE 1 and 3. STYLE 5 used in preceding pass; known failed passes excluded as edit targets.",
+  "references": [
+    {
+      "index": 1,
+      "path": "/home/ethan/Projects/Sai_Art/docs/uri_style/gorilla_v0_1/images/locked_four_view_review_rev_aa3.png",
+      "role": "EDIT_TARGET_EXACT_UPPER_AND_PALETTE_REPLACE_LOWER",
+      "sha256": "5c0469708d7c878ac6253e6ac3e6276198bf3694235bbed3da66c8c743b5aba4"
+    },
+    {
+      "index": 2,
+      "path": "/home/ethan/Projects/Sai_Art/docs/uri_style/gorilla_v0_2/references/user_pixal_lower_body.jpg",
+      "role": "NEW_LOWER_GEOMETRY_ONLY_IGNORE_PAINT_INCOMPLETE_FEET",
+      "sha256": "39c26feffdb56239ee2297c9fce6bd1aae35ecb1851f0292f43a7eb12330730e"
+    },
+    {
+      "index": 3,
+      "path": "/home/ethan/Projects/Sai_Art/docs/uri_style/gorilla_v0_2/references/foot_reference_complete_foreheel.jpg",
+      "role": "COMPLETE_FOOT_ONLY",
+      "sha256": "6688a64220e4114cb8edf14abbadf0b6906a3b822ce7ab2d1fab2033d7624b06"
+    },
+    {
+      "index": 4,
+      "path": "/home/ethan/Projects/Sai_Art/.agents/skills/uri-style/assets/style_01_race_car_hangar.png",
+      "role": "STYLE_ONLY",
+      "sha256": "1aed979f442030b644db5b86c79ad69d44f14092f865eb28f157663476eec8c9"
+    },
+    {
+      "index": 5,
+      "path": "/home/ethan/Projects/Sai_Art/.agents/skills/uri-style/assets/style_03_tracked_mobile_station.png",
+      "role": "STYLE_ONLY",
+      "sha256": "da14249a726ca5009b222a0dd7dc2c7a1fdbfe49ef31b8080936e855e8eb1f6f"
+    }
+  ],
+  "output": "/home/ethan/Projects/Sai_Art/docs/uri_style/gorilla_v0_2/images/pixal_lower_body_four_view_p5.png",
+  "output_sha256": "0bd09a2d76ecd8ec26ba733ca76b84926344f63d1f019e40a3d440c2f6f5769d",
+  "built_in_output": "/home/ethan/.codex/generated_images/01a0f3ab-7a57-7172-b8c5-e517aa2973da/exec-4167d459-f05a-4039-a7b5-a9053570376e.png",
+  "visual_findings": [
+    "Upper identity restored.",
+    "Lower anatomy too closely follows obsolete v0.1 reference; not primary model sculpted thigh/shank mass.",
+    "Feet remain old boot form rather than complete low articulated bridge.",
+    "Isolate lower assembly before full-robot integration."
+  ]
+}

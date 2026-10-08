@@ -1,0 +1,46 @@
+{
+  "stage": "standalone_top_with_native_projection_guide",
+  "status": "generated_top_position_guide_upper_requires_cleanup",
+  "tool": "built_in_image_gen",
+  "prompt": "/home/ethan/Projects/Sai_Art/docs/uri_style/gorilla_v0_2/prompts/pixal3d_native_top_guide_p9.txt",
+  "references": [
+    {
+      "index": 1,
+      "path": "/home/ethan/Projects/Sai_Art/docs/uri_style/gorilla_v0_2/images/top_native_g2.png",
+      "role": "ACTUAL_TOP_CAMERA_OCCLUSION_ONLY_IGNORE_SOURCE_SURFACE_PALETTE",
+      "sha256": "233d2c16e0359f1ec4105e23d309dba9a6b93f26c65e424f2950bd5c9d0438fd"
+    },
+    {
+      "index": 2,
+      "path": "/home/ethan/Projects/Sai_Art/docs/uri_style/gorilla_v0_2/images/pixal_whole_robot_four_view_p8.png",
+      "role": "SUBJECT_THREE_ELEVATIONS_ONLY_IGNORE_INCORRECT_TOP",
+      "sha256": "3f419ee030efd66efcd9f5508b10475be9b25f06e866c2931ec94cc64a19f488"
+    },
+    {
+      "index": 3,
+      "path": "/home/ethan/Projects/Sai_Art/docs/uri_style/gorilla_v0_1/images/locked_four_view_review_rev_aa3.png",
+      "role": "UPPER_IDENTITY_V01_PALETTE_ONLY",
+      "sha256": "5c0469708d7c878ac6253e6ac3e6276198bf3694235bbed3da66c8c743b5aba4"
+    },
+    {
+      "index": 4,
+      "path": "/home/ethan/Projects/Sai_Art/.agents/skills/uri-style/assets/style_01_race_car_hangar.png",
+      "role": "STYLE_ONLY",
+      "sha256": "1aed979f442030b644db5b86c79ad69d44f14092f865eb28f157663476eec8c9"
+    },
+    {
+      "index": 5,
+      "path": "/home/ethan/Projects/Sai_Art/.agents/skills/uri-style/assets/style_03_tracked_mobile_station.png",
+      "role": "STYLE_ONLY",
+      "sha256": "da14249a726ca5009b222a0dd7dc2c7a1fdbfe49ef31b8080936e855e8eb1f6f"
+    }
+  ],
+  "output": "/home/ethan/Projects/Sai_Art/docs/uri_style/gorilla_v0_2/images/pixal_top_native_guided_p9.png",
+  "output_sha256": "02ae0e3a6613309134ea268265375df574637a06855ebb8fa2a30c01f0a886e8",
+  "built_in_output": "/home/ethan/.codex/generated_images/01a0f3ab-7a57-7172-b8c5-e517aa2973da/exec-5159f750-b42b-427c-9044-2f10cfdc7cb3.png",
+  "visual_findings": [
+    "Native true overhead direction and toe/heel extent established, exactly two feet.",
+    "Raw upper reconstruction cockpit-like holes and rear/side artifacts leaked.",
+    "Replace upper shell with approved closed v0.1 wedge; retain lower plan positioning."
+  ]
+}

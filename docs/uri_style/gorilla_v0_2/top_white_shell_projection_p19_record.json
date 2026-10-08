@@ -1,0 +1,41 @@
+{
+  "revision": "p19",
+  "status": "prepared_after_native_projection_check",
+  "prompt": "/home/ethan/Projects/Sai_Art/docs/uri_style/gorilla_v0_2/prompts/top_white_shell_projection_p19.txt",
+  "references": [
+    {
+      "index": 1,
+      "path": "/home/ethan/Projects/Sai_Art/docs/uri_style/gorilla_v0_2/references/user_four_view_top_fix_p19.jpg",
+      "role": "EDIT_TARGET_SUBJECT_COMPOSITION",
+      "sha256": "cb804e621736804e6ae08c17b4d25811923415e5bd90880b8d4e5c4ec94e1cfb"
+    },
+    {
+      "index": 2,
+      "path": "/home/ethan/Projects/Sai_Art/docs/uri_style/gorilla_v0_2/images/native_registration_top_p19.png",
+      "role": "GEOMETRY_PROJECTION_ONLY",
+      "sha256": "a7bb163395ff751cf053560cc3487e6be17e4387e2d2dab7a779b16629f04a9a"
+    },
+    {
+      "index": 3,
+      "path": "/home/ethan/Projects/Sai_Art/.agents/skills/uri-style/assets/style_01_race_car_hangar.png",
+      "role": "STYLE_ONLY",
+      "sha256": "1aed979f442030b644db5b86c79ad69d44f14092f865eb28f157663476eec8c9"
+    },
+    {
+      "index": 4,
+      "path": "/home/ethan/Projects/Sai_Art/.agents/skills/uri-style/assets/style_03_tracked_mobile_station.png",
+      "role": "STYLE_ONLY",
+      "sha256": "da14249a726ca5009b222a0dd7dc2c7a1fdbfe49ef31b8080936e855e8eb1f6f"
+    },
+    {
+      "index": 5,
+      "path": "/home/ethan/Projects/Sai_Art/.agents/skills/uri-style/assets/style_05_white_blue_racer.png",
+      "role": "STYLE_ONLY",
+      "sha256": "fc5f342e892842887e738798b5870b9245fb3c7376a028c5f503301ac687f1bc"
+    }
+  ],
+  "style_subset_reason": "Reserve target and native projection guide, use fixed style anchors 1/3/5; established target finish is locked.",
+  "native_guide": "native_top_registration_p19.json",
+  "full_complete_model_qualified": false,
+  "preservation": "Only TOP artwork replacement; other source panels kept as original embedded raster in native SVG."
+}

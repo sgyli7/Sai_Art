@@ -1,0 +1,10 @@
+{
+  "status": "artifact_preservation_checked_not_user_acceptance",
+  "checks": {
+    "selected_original_unchanged": "f737106f29b6894f11ecd1c2747f8c59ba8da85178e5a2485ae66d0e5d2a8af5",
+    "frozen_blend_unchanged": "f533ff25e3b70224191bda7a7cd54470a4a1b302e85c17ef0f41cf5d931b0cf8",
+    "frozen_blockout_manifest_unchanged": "e920a141fa7c427f2e8afafc183440eb7a9b1dcb3c6b707343385b7e02b7e5b4"
+  },
+  "composition_record": "locked_view_composition_rev_aa3.json",
+  "limitations": "Illustrated orthographic concept candidate; visual correspondence does not establish measured CAD geometry. No handoff or user acceptance."
+}

@@ -1,0 +1,44 @@
+{
+  "revision": "p26",
+  "prompt": "/home/ethan/Projects/Sai_Art/docs/uri_style/gorilla_v0_2/prompts/thermal_outlets_and_knee_seam_fix_p26.txt",
+  "references": [
+    {
+      "path": "/home/ethan/Projects/Sai_Art/docs/uri_style/gorilla_v0_2/images/gorilla_four_view_knee_modules_p25.png",
+      "role": "EDIT_TARGET",
+      "sha256": "35f8286002279c41e4b8dccd9239531c156b964619a30c608f6aa58d322491db"
+    },
+    {
+      "path": "/home/ethan/Projects/Sai_Art/docs/uri_style/gorilla_v0_2/references/user_thermal_ports_p26.png",
+      "role": "FUNCTION_LOCATIONS_ONLY",
+      "sha256": "c01679d7f60649e537aaa19182df10ed9c43bfc5a30de63a62d7c2b1289bcee7"
+    },
+    {
+      "path": "/home/ethan/Projects/Sai_Art/.agents/skills/uri-style/assets/style_01_race_car_hangar.png",
+      "role": "STYLE",
+      "sha256": "1aed979f442030b644db5b86c79ad69d44f14092f865eb28f157663476eec8c9"
+    },
+    {
+      "path": "/home/ethan/Projects/Sai_Art/.agents/skills/uri-style/assets/style_03_tracked_mobile_station.png",
+      "role": "STYLE",
+      "sha256": "da14249a726ca5009b222a0dd7dc2c7a1fdbfe49ef31b8080936e855e8eb1f6f"
+    },
+    {
+      "path": "/home/ethan/Projects/Sai_Art/.agents/skills/uri-style/assets/style_05_white_blue_racer.png",
+      "role": "STYLE",
+      "sha256": "fc5f342e892842887e738798b5870b9245fb3c7376a028c5f503301ac687f1bc"
+    }
+  ],
+  "fixed_style_subset": [
+    1,
+    3,
+    5
+  ],
+  "scope": "Illustration only; original B7 gray source remains separate.",
+  "status": "thermal_features_retained_black_knee_finish_superseded",
+  "user_accepted": false,
+  "latest_color_choice": "All knee cover components matte graphite-black; only tiny yellow cap/tab accents; previous whole-orange choice superseded.",
+  "generated_file": "/home/ethan/.codex/generated_images/01a0f3ab-7a57-7172-b8c5-e517aa2973da/exec-1eb97722-50e3-4bfc-9f12-383f65bbd85a.png",
+  "saved_image": "/home/ethan/Projects/Sai_Art/docs/uri_style/gorilla_v0_2/images/black_knees_rear_exhausts_generated_p26.png",
+  "saved_image_sha256": "7f797c347955bf30b2d43f3b417c576d885c56279f1898ade1e662489531ac85",
+  "superseding_knee_design": "p27"
+}

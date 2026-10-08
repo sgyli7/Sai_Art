@@ -1,0 +1,449 @@
+WORKING_SURFACE_RESOLUTION 211455 570813
+WEAPON_VOLUMES_REMOVED 211455 570813
+CUT_SURFACES_SEALED 1515797 1536458
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "thigh_service_armor_-1", Modifier: "surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "knee_amber_guard_-1", Modifier: "surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "thigh_service_armor_1", Modifier: "surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "knee_amber_guard_1", Modifier: "surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "radiator_housing_-1", Modifier: "surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "radiator_amber_frame_-1", Modifier: "surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "radiator_dark_recess_-1", Modifier: "surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "radiator_louver_-1_0", Modifier: "surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "radiator_louver_-1_1", Modifier: "surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "radiator_louver_-1_2", Modifier: "surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "radiator_louver_-1_3", Modifier: "surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "radiator_louver_-1_4", Modifier: "surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "radiator_louver_-1_5", Modifier: "surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "radiator_louver_-1_6", Modifier: "surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "radiator_louver_-1_7", Modifier: "surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "radiator_louver_-1_8", Modifier: "surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "radiator_housing_1", Modifier: "surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "radiator_amber_frame_1", Modifier: "surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "radiator_dark_recess_1", Modifier: "surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "radiator_louver_1_0", Modifier: "surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "radiator_louver_1_1", Modifier: "surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "radiator_louver_1_2", Modifier: "surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "radiator_louver_1_3", Modifier: "surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "radiator_louver_1_4", Modifier: "surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "radiator_louver_1_5", Modifier: "surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "radiator_louver_1_6", Modifier: "surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "radiator_louver_1_7", Modifier: "surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "radiator_louver_1_8", Modifier: "surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "central_amber_lamp_frame", Modifier: "surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "central_amber_lamp_trim", Modifier: "surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "central_amber_lamp_lens", Modifier: "surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "rear_service_shell", Modifier: "surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "rear_service_hatch_seal", Modifier: "surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "rear_blue_service_hatch", Modifier: "surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "rear_hatch_handle", Modifier: "surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "rear_hatch_marker_-1", Modifier: "surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "rear_hatch_marker_1", Modifier: "surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "near_hand_wrist", Modifier: "surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "near_hand_palm", Modifier: "surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "near_hand_finger_base_0", Modifier: "surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "near_hand_finger_tip_0", Modifier: "surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "near_hand_finger_base_1", Modifier: "surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "near_hand_finger_tip_1", Modifier: "surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "near_hand_finger_base_2", Modifier: "surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "near_hand_finger_tip_2", Modifier: "surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "near_hand_finger_base_3", Modifier: "surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "near_hand_finger_tip_3", Modifier: "surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "near_hand_thumb", Modifier: "surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "near_hand_thumb", Modifier: "surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "near_hand_finger_tip_3", Modifier: "surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "radiator_housing_-1", Modifier: "surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "near_hand_finger_base_3", Modifier: "surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "thigh_service_armor_-1", Modifier: "surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "thigh_service_armor_1", Modifier: "surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "knee_amber_guard_1", Modifier: "surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "radiator_amber_frame_-1", Modifier: "surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "near_hand_finger_tip_2", Modifier: "surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "radiator_dark_recess_-1", Modifier: "surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "knee_amber_guard_-1", Modifier: "surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "radiator_louver_-1_0", Modifier: "surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "near_hand_finger_base_2", Modifier: "surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "radiator_louver_-1_1", Modifier: "surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "radiator_louver_-1_2", Modifier: "surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "radiator_louver_-1_3", Modifier: "surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "radiator_louver_-1_5", Modifier: "surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "near_hand_finger_tip_1", Modifier: "surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "radiator_louver_-1_6", Modifier: "surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "radiator_louver_-1_7", Modifier: "surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "radiator_louver_-1_8", Modifier: "surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "radiator_housing_1", Modifier: "surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "radiator_louver_-1_4", Modifier: "surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "near_hand_finger_base_1", Modifier: "surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "radiator_amber_frame_1", Modifier: "surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "radiator_dark_recess_1", Modifier: "surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "radiator_louver_1_0", Modifier: "surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "radiator_louver_1_1", Modifier: "surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "near_hand_finger_tip_0", Modifier: "surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "radiator_louver_1_3", Modifier: "surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "radiator_louver_1_4", Modifier: "surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "radiator_louver_1_5", Modifier: "surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "near_hand_finger_base_0", Modifier: "surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "radiator_louver_1_6", Modifier: "surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "radiator_louver_1_2", Modifier: "surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "radiator_louver_1_7", Modifier: "surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "radiator_louver_1_8", Modifier: "surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "near_hand_palm", Modifier: "surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "central_amber_lamp_frame", Modifier: "surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "central_amber_lamp_trim", Modifier: "surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "rear_service_hatch_seal", Modifier: "surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "central_amber_lamp_lens", Modifier: "surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "near_hand_wrist", Modifier: "surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "rear_blue_service_hatch", Modifier: "surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "rear_hatch_handle", Modifier: "surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "rear_service_shell", Modifier: "surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "rear_hatch_marker_1", Modifier: "surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "rear_hatch_marker_-1", Modifier: "surface_normals", Enable 'Auto Smooth' in Object Data Properties
+Blender 4.0.2
+Fra:1 Mem:652.61M (Peak 652.61M) | Time:00:00.00 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | gorilla_reference_body_g2
+Fra:1 Mem:675.74M (Peak 675.74M) | Time:00:00.00 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | thigh_service_armor_-1
+Fra:1 Mem:710.91M (Peak 710.91M) | Time:00:00.00 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | knee_amber_guard_1
+Fra:1 Mem:725.58M (Peak 725.58M) | Time:00:00.00 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | radiator_housing_-1
+Fra:1 Mem:725.59M (Peak 725.59M) | Time:00:00.00 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | radiator_amber_frame_-1
+Fra:1 Mem:725.60M (Peak 725.60M) | Time:00:00.00 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | radiator_dark_recess_-1
+Fra:1 Mem:725.60M (Peak 725.60M) | Time:00:00.00 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | radiator_louver_-1_0
+Fra:1 Mem:725.62M (Peak 725.62M) | Time:00:00.00 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | radiator_louver_-1_1
+Fra:1 Mem:725.63M (Peak 725.63M) | Time:00:00.00 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | radiator_louver_-1_2
+Fra:1 Mem:725.65M (Peak 725.65M) | Time:00:00.00 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | radiator_louver_-1_4
+Fra:1 Mem:725.66M (Peak 725.66M) | Time:00:00.00 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | radiator_louver_-1_5
+Fra:1 Mem:725.67M (Peak 725.67M) | Time:00:00.00 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | radiator_louver_-1_6
+Fra:1 Mem:725.69M (Peak 725.69M) | Time:00:00.00 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | radiator_louver_-1_7
+Fra:1 Mem:725.71M (Peak 725.71M) | Time:00:00.00 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | radiator_louver_-1_8
+Fra:1 Mem:725.72M (Peak 725.72M) | Time:00:00.00 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | radiator_amber_frame_1
+Fra:1 Mem:725.73M (Peak 725.73M) | Time:00:00.00 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | radiator_dark_recess_1
+Fra:1 Mem:725.74M (Peak 725.74M) | Time:00:00.00 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | radiator_louver_1_0
+Fra:1 Mem:725.75M (Peak 725.75M) | Time:00:00.00 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | radiator_louver_1_1
+Fra:1 Mem:725.77M (Peak 725.77M) | Time:00:00.00 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | radiator_louver_1_2
+Fra:1 Mem:725.80M (Peak 725.80M) | Time:00:00.00 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | near_hand_finger_base_3
+Fra:1 Mem:725.82M (Peak 725.82M) | Time:00:00.00 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | near_hand_finger_tip_2
+Fra:1 Mem:725.83M (Peak 725.83M) | Time:00:00.00 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | near_hand_finger_base_2
+Fra:1 Mem:725.85M (Peak 725.85M) | Time:00:00.00 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | radiator_louver_1_6
+Fra:1 Mem:725.85M (Peak 725.85M) | Time:00:00.00 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | radiator_louver_1_7
+Fra:1 Mem:725.86M (Peak 725.86M) | Time:00:00.00 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | radiator_louver_1_8
+Fra:1 Mem:725.88M (Peak 725.88M) | Time:00:00.00 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | central_amber_lamp_frame
+Fra:1 Mem:725.90M (Peak 725.90M) | Time:00:00.00 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | central_amber_lamp_trim
+Fra:1 Mem:725.92M (Peak 725.92M) | Time:00:00.00 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | central_amber_lamp_lens
+Fra:1 Mem:725.93M (Peak 725.93M) | Time:00:00.00 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | rear_service_hatch_seal
+Fra:1 Mem:725.95M (Peak 725.95M) | Time:00:00.00 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | rear_blue_service_hatch
+Fra:1 Mem:725.96M (Peak 725.96M) | Time:00:00.00 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | near_hand_finger_tip_0
+Fra:1 Mem:725.98M (Peak 725.98M) | Time:00:00.00 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | rear_hatch_handle
+Fra:1 Mem:725.98M (Peak 725.98M) | Time:00:00.00 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | rear_hatch_marker_-1
+Fra:1 Mem:726.00M (Peak 726.00M) | Time:00:00.00 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | rear_hatch_marker_1
+Fra:1 Mem:726.01M (Peak 726.01M) | Time:00:00.00 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | near_hand_palm
+Fra:1 Mem:726.01M (Peak 726.01M) | Time:00:00.00 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | near_hand_wrist
+Fra:1 Mem:772.32M (Peak 795.45M) | Time:00:00.08 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Initializing
+Fra:1 Mem:772.32M (Peak 795.45M) | Time:00:00.08 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Waiting for render to start
+Fra:1 Mem:772.32M (Peak 795.45M) | Time:00:00.08 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Loading render kernels (may take a few minutes the first time)
+Fra:1 Mem:772.32M (Peak 795.45M) | Time:00:00.08 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Updating Scene
+Fra:1 Mem:772.32M (Peak 795.45M) | Time:00:00.08 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Updating Shaders
+Fra:1 Mem:772.40M (Peak 795.45M) | Time:00:00.09 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Updating Procedurals
+Fra:1 Mem:772.40M (Peak 795.45M) | Time:00:00.09 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Updating Background
+Fra:1 Mem:772.40M (Peak 795.45M) | Time:00:00.09 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Updating Camera
+Fra:1 Mem:772.40M (Peak 795.45M) | Time:00:00.09 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Updating Meshes Flags
+Fra:1 Mem:772.40M (Peak 795.45M) | Time:00:00.09 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Updating Objects
+Fra:1 Mem:772.40M (Peak 795.45M) | Time:00:00.09 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Updating Objects | Copying Transformations to device
+Fra:1 Mem:772.41M (Peak 795.45M) | Time:00:00.09 | Mem:0.02M, Peak:0.02M | Scene, ViewLayer | Updating Objects | Applying Static Transformations
+Fra:1 Mem:772.41M (Peak 795.45M) | Time:00:00.09 | Mem:0.02M, Peak:0.02M | Scene, ViewLayer | Updating Particle Systems
+Fra:1 Mem:772.41M (Peak 795.45M) | Time:00:00.09 | Mem:0.02M, Peak:0.02M | Scene, ViewLayer | Updating Particle Systems | Copying Particles to device
+Fra:1 Mem:772.41M (Peak 795.45M) | Time:00:00.09 | Mem:0.02M, Peak:0.02M | Scene, ViewLayer | Updating Meshes
+Fra:1 Mem:819.44M (Peak 819.44M) | Time:00:00.15 | Mem:0.02M, Peak:0.02M | Scene, ViewLayer | Updating Mesh | Computing attributes
+Fra:1 Mem:836.85M (Peak 836.85M) | Time:00:00.15 | Mem:0.02M, Peak:0.02M | Scene, ViewLayer | Updating Mesh | Copying Attributes to device
+Fra:1 Mem:836.84M (Peak 836.85M) | Time:00:00.15 | Mem:17.42M, Peak:17.42M | Scene, ViewLayer | Updating Scene BVH | Building
+Fra:1 Mem:836.84M (Peak 836.85M) | Time:00:00.15 | Mem:17.42M, Peak:17.42M | Scene, ViewLayer | Updating Scene BVH | Building BVH
+Fra:1 Mem:1013.19M (Peak 1013.19M) | Time:00:00.52 | Mem:17.42M, Peak:17.42M | Scene, ViewLayer | Updating Scene BVH | Building BVH 48%, duplicates 0%
+Fra:1 Mem:1013.19M (Peak 1013.19M) | Time:00:00.69 | Mem:17.42M, Peak:17.42M | Scene, ViewLayer | Updating Scene BVH | Packing BVH triangles and strands
+Fra:1 Mem:1024.95M (Peak 1024.95M) | Time:00:00.70 | Mem:17.42M, Peak:17.42M | Scene, ViewLayer | Updating Scene BVH | Packing BVH nodes
+Fra:1 Mem:1023.55M (Peak 1071.28M) | Time:00:00.84 | Mem:17.42M, Peak:17.42M | Scene, ViewLayer | Updating Scene BVH | Copying BVH to device
+Fra:1 Mem:1023.55M (Peak 1071.28M) | Time:00:00.84 | Mem:110.77M, Peak:110.77M | Scene, ViewLayer | Updating Mesh | Computing normals
+Fra:1 Mem:1128.73M (Peak 1128.73M) | Time:00:00.87 | Mem:110.77M, Peak:110.77M | Scene, ViewLayer | Updating Mesh | Copying Mesh to device
+Fra:1 Mem:1128.73M (Peak 1128.73M) | Time:00:00.87 | Mem:215.95M, Peak:215.95M | Scene, ViewLayer | Updating Objects Flags
+Fra:1 Mem:1128.73M (Peak 1128.73M) | Time:00:00.87 | Mem:215.95M, Peak:215.95M | Scene, ViewLayer | Updating Primitive Offsets
+Fra:1 Mem:1128.73M (Peak 1128.73M) | Time:00:00.87 | Mem:215.96M, Peak:215.96M | Scene, ViewLayer | Updating Images
+Fra:1 Mem:1128.73M (Peak 1128.73M) | Time:00:00.87 | Mem:215.96M, Peak:215.96M | Scene, ViewLayer | Updating Camera Volume
+Fra:1 Mem:1128.73M (Peak 1128.73M) | Time:00:00.87 | Mem:215.96M, Peak:215.96M | Scene, ViewLayer | Updating Lookup Tables
+Fra:1 Mem:1128.73M (Peak 1128.73M) | Time:00:00.87 | Mem:216.04M, Peak:216.04M | Scene, ViewLayer | Updating Lights
+Fra:1 Mem:1128.73M (Peak 1128.73M) | Time:00:00.87 | Mem:216.04M, Peak:216.04M | Scene, ViewLayer | Updating Lights | Computing distribution
+Fra:1 Mem:1128.73M (Peak 1128.73M) | Time:00:00.88 | Mem:216.04M, Peak:216.04M | Scene, ViewLayer | Updating Lights | Computing tree
+Fra:1 Mem:1140.49M (Peak 1515.59M) | Time:00:00.88 | Mem:227.79M, Peak:227.79M | Scene, ViewLayer | Updating Integrator
+Fra:1 Mem:1141.49M (Peak 1515.59M) | Time:00:00.88 | Mem:228.79M, Peak:228.79M | Scene, ViewLayer | Updating Film
+Fra:1 Mem:1141.50M (Peak 1515.59M) | Time:00:00.88 | Mem:228.71M, Peak:228.79M | Scene, ViewLayer | Updating Lookup Tables
+Fra:1 Mem:1141.50M (Peak 1515.59M) | Time:00:00.88 | Mem:228.80M, Peak:228.80M | Scene, ViewLayer | Updating Baking
+Fra:1 Mem:1141.50M (Peak 1515.59M) | Time:00:00.88 | Mem:228.80M, Peak:228.80M | Scene, ViewLayer | Updating Device | Writing constant memory
+Fra:1 Mem:1141.50M (Peak 1515.59M) | Time:00:00.88 | Mem:228.80M, Peak:228.80M | Scene, ViewLayer | Sample 0/40
+Fra:1 Mem:1183.07M (Peak 1515.59M) | Time:00:01.36 | Remaining:00:18.57 | Mem:270.34M, Peak:270.34M | Scene, ViewLayer | Sample 1/40
+Fra:1 Mem:1201.53M (Peak 1515.59M) | Time:00:16.25 | Mem:270.34M, Peak:270.34M | Scene, ViewLayer | Sample 40/40
+Fra:1 Mem:1201.53M (Peak 1515.59M) | Time:00:16.25 | Mem:270.34M, Peak:270.34M | Scene, ViewLayer | Finished
+Saved: '/home/ethan/Projects/Sai_Art/docs/uri_style/gorilla_v0_2/images/front_native_g2.png'
+Time: 00:16.32 (Saving: 00:00.07)
+
+CLEAN_NATIVE_VIEW front
+Fra:1 Mem:1183.07M (Peak 1183.07M) | Time:00:00.00 | Mem:270.34M, Peak:270.34M | Scene, ViewLayer | Initializing
+Fra:1 Mem:1183.07M (Peak 1183.07M) | Time:00:00.00 | Mem:270.34M, Peak:270.34M | Scene, ViewLayer | Waiting for render to start
+Fra:1 Mem:1183.07M (Peak 1183.07M) | Time:00:00.00 | Mem:270.34M, Peak:270.34M | Scene, ViewLayer | Updating Scene
+Fra:1 Mem:1183.07M (Peak 1183.07M) | Time:00:00.00 | Mem:270.34M, Peak:270.34M | Scene, ViewLayer | Updating Shaders
+Fra:1 Mem:1183.07M (Peak 1183.07M) | Time:00:00.00 | Mem:270.34M, Peak:270.34M | Scene, ViewLayer | Updating Background
+Fra:1 Mem:1183.07M (Peak 1183.07M) | Time:00:00.00 | Mem:270.34M, Peak:270.34M | Scene, ViewLayer | Updating Camera
+Fra:1 Mem:1183.07M (Peak 1183.07M) | Time:00:00.00 | Mem:270.34M, Peak:270.34M | Scene, ViewLayer | Updating Objects
+Fra:1 Mem:1183.07M (Peak 1183.07M) | Time:00:00.00 | Mem:270.34M, Peak:270.34M | Scene, ViewLayer | Updating Particle Systems
+Fra:1 Mem:1183.07M (Peak 1183.07M) | Time:00:00.00 | Mem:270.34M, Peak:270.34M | Scene, ViewLayer | Updating Meshes
+Fra:1 Mem:1183.07M (Peak 1183.07M) | Time:00:00.00 | Mem:270.34M, Peak:270.34M | Scene, ViewLayer | Updating Objects Flags
+Fra:1 Mem:1183.07M (Peak 1183.07M) | Time:00:00.00 | Mem:270.34M, Peak:270.34M | Scene, ViewLayer | Updating Primitive Offsets
+Fra:1 Mem:1183.07M (Peak 1183.07M) | Time:00:00.00 | Mem:270.34M, Peak:270.34M | Scene, ViewLayer | Updating Images
+Fra:1 Mem:1183.07M (Peak 1183.07M) | Time:00:00.00 | Mem:270.34M, Peak:270.34M | Scene, ViewLayer | Updating Camera Volume
+Fra:1 Mem:1183.07M (Peak 1183.07M) | Time:00:00.00 | Mem:270.34M, Peak:270.34M | Scene, ViewLayer | Updating Lookup Tables
+Fra:1 Mem:1183.07M (Peak 1183.07M) | Time:00:00.00 | Mem:270.34M, Peak:270.34M | Scene, ViewLayer | Updating Lights
+Fra:1 Mem:1183.07M (Peak 1183.07M) | Time:00:00.00 | Mem:270.34M, Peak:270.34M | Scene, ViewLayer | Updating Integrator
+Fra:1 Mem:1183.07M (Peak 1183.07M) | Time:00:00.00 | Mem:270.34M, Peak:270.34M | Scene, ViewLayer | Updating Film
+Fra:1 Mem:1183.07M (Peak 1183.07M) | Time:00:00.00 | Mem:270.34M, Peak:270.34M | Scene, ViewLayer | Updating Lookup Tables
+Fra:1 Mem:1183.07M (Peak 1183.07M) | Time:00:00.00 | Mem:270.34M, Peak:270.34M | Scene, ViewLayer | Updating Baking
+Fra:1 Mem:1183.07M (Peak 1183.07M) | Time:00:00.00 | Mem:270.34M, Peak:270.34M | Scene, ViewLayer | Updating Device | Writing constant memory
+Fra:1 Mem:1183.07M (Peak 1183.07M) | Time:00:00.00 | Mem:270.34M, Peak:270.34M | Scene, ViewLayer | Sample 0/40
+Fra:1 Mem:1183.07M (Peak 1183.07M) | Time:00:00.36 | Remaining:00:14.32 | Mem:270.34M, Peak:270.34M | Scene, ViewLayer | Sample 1/40
+Fra:1 Mem:1201.53M (Peak 1238.46M) | Time:00:12.17 | Mem:270.34M, Peak:270.34M | Scene, ViewLayer | Sample 40/40
+Fra:1 Mem:1201.53M (Peak 1238.46M) | Time:00:12.17 | Mem:270.34M, Peak:270.34M | Scene, ViewLayer | Finished
+Saved: '/home/ethan/Projects/Sai_Art/docs/uri_style/gorilla_v0_2/images/left_native_g2.png'
+Time: 00:12.24 (Saving: 00:00.07)
+
+CLEAN_NATIVE_VIEW left
+Fra:1 Mem:1183.07M (Peak 1183.07M) | Time:00:00.00 | Mem:270.34M, Peak:270.34M | Scene, ViewLayer | Initializing
+Fra:1 Mem:1183.07M (Peak 1183.07M) | Time:00:00.00 | Mem:270.34M, Peak:270.34M | Scene, ViewLayer | Waiting for render to start
+Fra:1 Mem:1183.07M (Peak 1183.07M) | Time:00:00.00 | Mem:270.34M, Peak:270.34M | Scene, ViewLayer | Updating Scene
+Fra:1 Mem:1183.07M (Peak 1183.07M) | Time:00:00.00 | Mem:270.34M, Peak:270.34M | Scene, ViewLayer | Updating Shaders
+Fra:1 Mem:1183.07M (Peak 1183.07M) | Time:00:00.00 | Mem:270.34M, Peak:270.34M | Scene, ViewLayer | Updating Background
+Fra:1 Mem:1183.07M (Peak 1183.07M) | Time:00:00.00 | Mem:270.34M, Peak:270.34M | Scene, ViewLayer | Updating Camera
+Fra:1 Mem:1183.07M (Peak 1183.07M) | Time:00:00.00 | Mem:270.34M, Peak:270.34M | Scene, ViewLayer | Updating Objects
+Fra:1 Mem:1183.07M (Peak 1183.07M) | Time:00:00.00 | Mem:270.34M, Peak:270.34M | Scene, ViewLayer | Updating Particle Systems
+Fra:1 Mem:1183.07M (Peak 1183.07M) | Time:00:00.00 | Mem:270.34M, Peak:270.34M | Scene, ViewLayer | Updating Meshes
+Fra:1 Mem:1183.07M (Peak 1183.07M) | Time:00:00.00 | Mem:270.34M, Peak:270.34M | Scene, ViewLayer | Updating Objects Flags
+Fra:1 Mem:1183.07M (Peak 1183.07M) | Time:00:00.00 | Mem:270.34M, Peak:270.34M | Scene, ViewLayer | Updating Primitive Offsets
+Fra:1 Mem:1183.07M (Peak 1183.07M) | Time:00:00.00 | Mem:270.34M, Peak:270.34M | Scene, ViewLayer | Updating Images
+Fra:1 Mem:1183.07M (Peak 1183.07M) | Time:00:00.00 | Mem:270.34M, Peak:270.34M | Scene, ViewLayer | Updating Camera Volume
+Fra:1 Mem:1183.07M (Peak 1183.07M) | Time:00:00.00 | Mem:270.34M, Peak:270.34M | Scene, ViewLayer | Updating Lookup Tables
+Fra:1 Mem:1183.07M (Peak 1183.07M) | Time:00:00.00 | Mem:270.34M, Peak:270.34M | Scene, ViewLayer | Updating Lights
+Fra:1 Mem:1183.07M (Peak 1183.07M) | Time:00:00.00 | Mem:270.34M, Peak:270.34M | Scene, ViewLayer | Updating Integrator
+Fra:1 Mem:1183.07M (Peak 1183.07M) | Time:00:00.00 | Mem:270.34M, Peak:270.34M | Scene, ViewLayer | Updating Film
+Fra:1 Mem:1183.07M (Peak 1183.07M) | Time:00:00.00 | Mem:270.34M, Peak:270.34M | Scene, ViewLayer | Updating Lookup Tables
+Fra:1 Mem:1183.07M (Peak 1183.07M) | Time:00:00.00 | Mem:270.34M, Peak:270.34M | Scene, ViewLayer | Updating Baking
+Fra:1 Mem:1183.07M (Peak 1183.07M) | Time:00:00.00 | Mem:270.34M, Peak:270.34M | Scene, ViewLayer | Updating Device | Writing constant memory
+Fra:1 Mem:1183.07M (Peak 1183.07M) | Time:00:00.00 | Mem:270.34M, Peak:270.34M | Scene, ViewLayer | Sample 0/40
+Fra:1 Mem:1183.07M (Peak 1183.07M) | Time:00:00.57 | Remaining:00:22.23 | Mem:270.34M, Peak:270.34M | Scene, ViewLayer | Sample 1/40
+Fra:1 Mem:1201.53M (Peak 1238.46M) | Time:00:19.44 | Mem:270.34M, Peak:270.34M | Scene, ViewLayer | Sample 40/40
+Fra:1 Mem:1201.53M (Peak 1238.46M) | Time:00:19.44 | Mem:270.34M, Peak:270.34M | Scene, ViewLayer | Finished
+Saved: '/home/ethan/Projects/Sai_Art/docs/uri_style/gorilla_v0_2/images/rear_native_g2.png'
+Time: 00:19.51 (Saving: 00:00.07)
+
+CLEAN_NATIVE_VIEW rear
+Fra:1 Mem:1183.07M (Peak 1183.07M) | Time:00:00.00 | Mem:270.34M, Peak:270.34M | Scene, ViewLayer | Initializing
+Fra:1 Mem:1183.07M (Peak 1183.07M) | Time:00:00.00 | Mem:270.34M, Peak:270.34M | Scene, ViewLayer | Waiting for render to start
+Fra:1 Mem:1183.07M (Peak 1183.07M) | Time:00:00.00 | Mem:270.34M, Peak:270.34M | Scene, ViewLayer | Updating Scene
+Fra:1 Mem:1183.07M (Peak 1183.07M) | Time:00:00.00 | Mem:270.34M, Peak:270.34M | Scene, ViewLayer | Updating Shaders
+Fra:1 Mem:1183.07M (Peak 1183.07M) | Time:00:00.00 | Mem:270.34M, Peak:270.34M | Scene, ViewLayer | Updating Background
+Fra:1 Mem:1183.07M (Peak 1183.07M) | Time:00:00.00 | Mem:270.34M, Peak:270.34M | Scene, ViewLayer | Updating Camera
+Fra:1 Mem:1183.07M (Peak 1183.07M) | Time:00:00.00 | Mem:270.34M, Peak:270.34M | Scene, ViewLayer | Updating Objects
+Fra:1 Mem:1183.07M (Peak 1183.07M) | Time:00:00.00 | Mem:270.34M, Peak:270.34M | Scene, ViewLayer | Updating Particle Systems
+Fra:1 Mem:1183.07M (Peak 1183.07M) | Time:00:00.00 | Mem:270.34M, Peak:270.34M | Scene, ViewLayer | Updating Meshes
+Fra:1 Mem:1183.07M (Peak 1183.07M) | Time:00:00.00 | Mem:270.34M, Peak:270.34M | Scene, ViewLayer | Updating Objects Flags
+Fra:1 Mem:1183.07M (Peak 1183.07M) | Time:00:00.00 | Mem:270.34M, Peak:270.34M | Scene, ViewLayer | Updating Primitive Offsets
+Fra:1 Mem:1183.07M (Peak 1183.07M) | Time:00:00.00 | Mem:270.34M, Peak:270.34M | Scene, ViewLayer | Updating Images
+Fra:1 Mem:1183.07M (Peak 1183.07M) | Time:00:00.00 | Mem:270.34M, Peak:270.34M | Scene, ViewLayer | Updating Camera Volume
+Fra:1 Mem:1183.07M (Peak 1183.07M) | Time:00:00.00 | Mem:270.34M, Peak:270.34M | Scene, ViewLayer | Updating Lookup Tables
+Fra:1 Mem:1183.07M (Peak 1183.07M) | Time:00:00.00 | Mem:270.34M, Peak:270.34M | Scene, ViewLayer | Updating Lights
+Fra:1 Mem:1183.07M (Peak 1183.07M) | Time:00:00.00 | Mem:270.34M, Peak:270.34M | Scene, ViewLayer | Updating Integrator
+Fra:1 Mem:1183.07M (Peak 1183.07M) | Time:00:00.00 | Mem:270.34M, Peak:270.34M | Scene, ViewLayer | Updating Film
+Fra:1 Mem:1183.07M (Peak 1183.07M) | Time:00:00.00 | Mem:270.34M, Peak:270.34M | Scene, ViewLayer | Updating Lookup Tables
+Fra:1 Mem:1183.07M (Peak 1183.07M) | Time:00:00.00 | Mem:270.34M, Peak:270.34M | Scene, ViewLayer | Updating Baking
+Fra:1 Mem:1183.07M (Peak 1183.07M) | Time:00:00.00 | Mem:270.34M, Peak:270.34M | Scene, ViewLayer | Updating Device | Writing constant memory
+Fra:1 Mem:1183.07M (Peak 1183.07M) | Time:00:00.00 | Mem:270.34M, Peak:270.34M | Scene, ViewLayer | Sample 0/40
+Fra:1 Mem:1183.07M (Peak 1183.07M) | Time:00:00.32 | Remaining:00:12.50 | Mem:270.34M, Peak:270.34M | Scene, ViewLayer | Sample 1/40
+Fra:1 Mem:1201.53M (Peak 1238.46M) | Time:00:10.63 | Mem:270.34M, Peak:270.34M | Scene, ViewLayer | Sample 40/40
+Fra:1 Mem:1201.53M (Peak 1238.46M) | Time:00:10.63 | Mem:270.34M, Peak:270.34M | Scene, ViewLayer | Finished
+Saved: '/home/ethan/Projects/Sai_Art/docs/uri_style/gorilla_v0_2/images/top_native_g2.png'
+Time: 00:10.70 (Saving: 00:00.06)
+
+CLEAN_NATIVE_VIEW top
+Fra:1 Mem:1183.07M (Peak 1183.07M) | Time:00:00.00 | Mem:270.34M, Peak:270.34M | Scene, ViewLayer | Initializing
+Fra:1 Mem:1183.07M (Peak 1183.07M) | Time:00:00.00 | Mem:270.34M, Peak:270.34M | Scene, ViewLayer | Waiting for render to start
+Fra:1 Mem:1183.07M (Peak 1183.07M) | Time:00:00.00 | Mem:270.34M, Peak:270.34M | Scene, ViewLayer | Updating Scene
+Fra:1 Mem:1183.07M (Peak 1183.07M) | Time:00:00.00 | Mem:270.34M, Peak:270.34M | Scene, ViewLayer | Updating Shaders
+Fra:1 Mem:1183.07M (Peak 1183.07M) | Time:00:00.00 | Mem:270.34M, Peak:270.34M | Scene, ViewLayer | Updating Background
+Fra:1 Mem:1183.07M (Peak 1183.07M) | Time:00:00.00 | Mem:270.34M, Peak:270.34M | Scene, ViewLayer | Updating Camera
+Fra:1 Mem:1183.07M (Peak 1183.07M) | Time:00:00.00 | Mem:270.34M, Peak:270.34M | Scene, ViewLayer | Updating Objects
+Fra:1 Mem:1183.07M (Peak 1183.07M) | Time:00:00.00 | Mem:270.34M, Peak:270.34M | Scene, ViewLayer | Updating Particle Systems
+Fra:1 Mem:1183.07M (Peak 1183.07M) | Time:00:00.00 | Mem:270.34M, Peak:270.34M | Scene, ViewLayer | Updating Meshes
+Fra:1 Mem:1183.07M (Peak 1183.07M) | Time:00:00.00 | Mem:270.34M, Peak:270.34M | Scene, ViewLayer | Updating Objects Flags
+Fra:1 Mem:1183.07M (Peak 1183.07M) | Time:00:00.00 | Mem:270.34M, Peak:270.34M | Scene, ViewLayer | Updating Primitive Offsets
+Fra:1 Mem:1183.07M (Peak 1183.07M) | Time:00:00.00 | Mem:270.34M, Peak:270.34M | Scene, ViewLayer | Updating Images
+Fra:1 Mem:1183.07M (Peak 1183.07M) | Time:00:00.00 | Mem:270.34M, Peak:270.34M | Scene, ViewLayer | Updating Camera Volume
+Fra:1 Mem:1183.07M (Peak 1183.07M) | Time:00:00.00 | Mem:270.34M, Peak:270.34M | Scene, ViewLayer | Updating Lookup Tables
+Fra:1 Mem:1183.07M (Peak 1183.07M) | Time:00:00.00 | Mem:270.34M, Peak:270.34M | Scene, ViewLayer | Updating Lights
+Fra:1 Mem:1183.07M (Peak 1183.07M) | Time:00:00.00 | Mem:270.34M, Peak:270.34M | Scene, ViewLayer | Updating Integrator
+Fra:1 Mem:1183.07M (Peak 1183.07M) | Time:00:00.00 | Mem:270.34M, Peak:270.34M | Scene, ViewLayer | Updating Film
+Fra:1 Mem:1183.07M (Peak 1183.07M) | Time:00:00.00 | Mem:270.34M, Peak:270.34M | Scene, ViewLayer | Updating Lookup Tables
+Fra:1 Mem:1183.07M (Peak 1183.07M) | Time:00:00.00 | Mem:270.34M, Peak:270.34M | Scene, ViewLayer | Updating Baking
+Fra:1 Mem:1183.07M (Peak 1183.07M) | Time:00:00.00 | Mem:270.34M, Peak:270.34M | Scene, ViewLayer | Updating Device | Writing constant memory
+Fra:1 Mem:1183.07M (Peak 1183.07M) | Time:00:00.00 | Mem:270.34M, Peak:270.34M | Scene, ViewLayer | Sample 0/40
+Fra:1 Mem:1183.07M (Peak 1183.07M) | Time:00:00.51 | Remaining:00:20.23 | Mem:270.34M, Peak:270.34M | Scene, ViewLayer | Sample 1/40
+Fra:1 Mem:1201.53M (Peak 1238.46M) | Time:00:16.97 | Mem:270.34M, Peak:270.34M | Scene, ViewLayer | Sample 40/40
+Fra:1 Mem:1201.53M (Peak 1238.46M) | Time:00:16.97 | Mem:270.34M, Peak:270.34M | Scene, ViewLayer | Finished
+Saved: '/home/ethan/Projects/Sai_Art/docs/uri_style/gorilla_v0_2/images/reference_native_g2.png'
+Time: 00:17.04 (Saving: 00:00.07)
+
+CLEAN_NATIVE_VIEW reference
+Info: Total files 0 | Changed 0 | Failed 0
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "thigh_service_armor_-1", Modifier: "surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "knee_amber_guard_-1", Modifier: "surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "thigh_service_armor_1", Modifier: "surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "knee_amber_guard_1", Modifier: "surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "radiator_housing_-1", Modifier: "surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "radiator_amber_frame_-1", Modifier: "surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "radiator_dark_recess_-1", Modifier: "surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "radiator_louver_-1_0", Modifier: "surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "radiator_louver_-1_1", Modifier: "surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "radiator_louver_-1_2", Modifier: "surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "radiator_louver_-1_3", Modifier: "surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "radiator_louver_-1_4", Modifier: "surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "radiator_louver_-1_5", Modifier: "surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "radiator_louver_-1_6", Modifier: "surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "radiator_louver_-1_7", Modifier: "surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "radiator_louver_-1_8", Modifier: "surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "radiator_housing_1", Modifier: "surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "radiator_amber_frame_1", Modifier: "surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "radiator_dark_recess_1", Modifier: "surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "radiator_louver_1_0", Modifier: "surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "radiator_louver_1_1", Modifier: "surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "radiator_louver_1_2", Modifier: "surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "radiator_louver_1_3", Modifier: "surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "radiator_louver_1_4", Modifier: "surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "radiator_louver_1_5", Modifier: "surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "radiator_louver_1_6", Modifier: "surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "radiator_louver_1_7", Modifier: "surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "radiator_louver_1_8", Modifier: "surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "central_amber_lamp_frame", Modifier: "surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "central_amber_lamp_trim", Modifier: "surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "central_amber_lamp_lens", Modifier: "surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "rear_service_shell", Modifier: "surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "rear_service_hatch_seal", Modifier: "surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "rear_blue_service_hatch", Modifier: "surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "rear_hatch_handle", Modifier: "surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "rear_hatch_marker_-1", Modifier: "surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "rear_hatch_marker_1", Modifier: "surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "near_hand_wrist", Modifier: "surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "near_hand_palm", Modifier: "surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "near_hand_finger_base_0", Modifier: "surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "near_hand_finger_tip_0", Modifier: "surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "near_hand_finger_base_1", Modifier: "surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "near_hand_finger_tip_1", Modifier: "surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "near_hand_finger_base_2", Modifier: "surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "near_hand_finger_tip_2", Modifier: "surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "near_hand_finger_base_3", Modifier: "surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "near_hand_finger_tip_3", Modifier: "surface_normals", Enable 'Auto Smooth' in Object Data Properties
+WARN (bke.modifier): ./source/blender/blenkernel/intern/modifier.cc:461 BKE_modifier_set_error: Object: "near_hand_thumb", Modifier: "surface_normals", Enable 'Auto Smooth' in Object Data Properties
+Info: Saved "gorilla_clean_g2.blend"
+09:14:44 | ERROR: Draco mesh compression is not available because library could not be found at /home/ethan/Softwares/blender-local/root/usr/bin/4.0/python/lib/python3.12/site-packages/libextern_draco.so
+09:14:44 | INFO: Starting glTF 2.0 export
+09:14:44 | INFO: Extracting primitive: reference_cleaned_surface
+09:14:50 | INFO: Primitives created: 4
+09:14:50 | INFO: Extracting primitive: Cube
+09:14:50 | INFO: Primitives created: 1
+09:14:50 | INFO: Extracting primitive: Cube.001
+09:14:50 | INFO: Primitives created: 1
+09:14:50 | INFO: Extracting primitive: Cube.002
+09:14:50 | INFO: Primitives created: 1
+09:14:50 | INFO: Extracting primitive: Cube.003
+09:14:50 | INFO: Primitives created: 1
+09:14:50 | INFO: Extracting primitive: Cube.004
+09:14:50 | INFO: Primitives created: 1
+09:14:50 | INFO: Extracting primitive: Cube.005
+09:14:50 | INFO: Primitives created: 1
+09:14:50 | INFO: Extracting primitive: Cube.006
+09:14:50 | INFO: Primitives created: 1
+09:14:50 | INFO: Extracting primitive: Cube.007
+09:14:50 | INFO: Primitives created: 1
+09:14:50 | INFO: Extracting primitive: Cube.008
+09:14:50 | INFO: Primitives created: 1
+09:14:50 | INFO: Extracting primitive: Cube.009
+09:14:50 | INFO: Primitives created: 1
+09:14:50 | INFO: Extracting primitive: Cube.010
+09:14:50 | INFO: Primitives created: 1
+09:14:50 | INFO: Extracting primitive: Cube.011
+09:14:50 | INFO: Primitives created: 1
+09:14:50 | INFO: Extracting primitive: Cube.012
+09:14:50 | INFO: Primitives created: 1
+09:14:50 | INFO: Extracting primitive: Cube.013
+09:14:50 | INFO: Primitives created: 1
+09:14:50 | INFO: Extracting primitive: Cube.014
+09:14:50 | INFO: Primitives created: 1
+09:14:50 | INFO: Extracting primitive: Cube.015
+09:14:50 | INFO: Primitives created: 1
+09:14:50 | INFO: Extracting primitive: Cube.016
+09:14:50 | INFO: Primitives created: 1
+09:14:50 | INFO: Extracting primitive: Cube.017
+09:14:50 | INFO: Primitives created: 1
+09:14:50 | INFO: Extracting primitive: Cube.018
+09:14:50 | INFO: Primitives created: 1
+09:14:50 | INFO: Extracting primitive: Cube.019
+09:14:50 | INFO: Primitives created: 1
+09:14:50 | INFO: Extracting primitive: Cube.020
+09:14:50 | INFO: Primitives created: 1
+09:14:50 | INFO: Extracting primitive: Cube.021
+09:14:50 | INFO: Primitives created: 1
+09:14:50 | INFO: Extracting primitive: Cube.022
+09:14:50 | INFO: Primitives created: 1
+09:14:50 | INFO: Extracting primitive: Cube.023
+09:14:50 | INFO: Primitives created: 1
+09:14:50 | INFO: Extracting primitive: Cube.024
+09:14:50 | INFO: Primitives created: 1
+09:14:50 | INFO: Extracting primitive: Cube.025
+09:14:50 | INFO: Primitives created: 1
+09:14:50 | INFO: Extracting primitive: Cube.026
+09:14:50 | INFO: Primitives created: 1
+09:14:50 | INFO: Extracting primitive: Cube.027
+09:14:50 | INFO: Primitives created: 1
+09:14:50 | INFO: Extracting primitive: Cube.028
+09:14:50 | INFO: Primitives created: 1
+09:14:50 | INFO: Extracting primitive: Cube.029
+09:14:50 | INFO: Primitives created: 1
+09:14:50 | INFO: Extracting primitive: Cube.030
+09:14:50 | INFO: Primitives created: 1
+09:14:50 | INFO: Extracting primitive: Cube.031
+09:14:50 | INFO: Primitives created: 1
+09:14:50 | INFO: Extracting primitive: Cube.032
+09:14:50 | INFO: Primitives created: 1
+09:14:50 | INFO: Extracting primitive: Cube.033
+09:14:50 | INFO: Primitives created: 1
+09:14:50 | INFO: Extracting primitive: Cube.034
+09:14:50 | INFO: Primitives created: 1
+09:14:50 | INFO: Extracting primitive: Cube.035
+09:14:50 | INFO: Primitives created: 1
+09:14:50 | INFO: Extracting primitive: Cube.036
+09:14:50 | INFO: Primitives created: 1
+09:14:50 | INFO: Extracting primitive: Cube.037
+09:14:50 | INFO: Primitives created: 1
+09:14:50 | INFO: Extracting primitive: Cube.038
+09:14:50 | INFO: Primitives created: 1
+09:14:50 | INFO: Extracting primitive: Cube.039
+09:14:50 | INFO: Primitives created: 1
+09:14:50 | INFO: Extracting primitive: Cube.040
+09:14:50 | INFO: Primitives created: 1
+09:14:50 | INFO: Extracting primitive: Cube.041
+09:14:50 | INFO: Primitives created: 1
+09:14:50 | INFO: Extracting primitive: Cube.042
+09:14:50 | INFO: Primitives created: 1
+09:14:50 | INFO: Extracting primitive: Cube.043
+09:14:50 | INFO: Primitives created: 1
+09:14:50 | INFO: Extracting primitive: Cube.044
+09:14:50 | INFO: Primitives created: 1
+09:14:50 | INFO: Extracting primitive: Cube.045
+09:14:50 | INFO: Primitives created: 1
+09:14:50 | INFO: Extracting primitive: Cube.046
+09:14:50 | INFO: Primitives created: 1
+09:14:50 | INFO: Extracting primitive: Cube.047
+09:14:50 | INFO: Primitives created: 1
+09:14:50 | INFO: Finished glTF 2.0 export in 6.308355331420898 s
+
+CLEANUP_G2_COMPLETE 103.07366251945496
+
+Blender quit

@@ -1,0 +1,67 @@
+{
+  "scene_sha256": "7cb15555163b722780c619e7245e4c857764e65cb3bf30738ee06e01fe94f14e",
+  "selector_sha256": "fe2c1c1afe5650b366efc968155136a6d2328f9b0638bdf97e976c0aafdccf73",
+  "assembly_builder_sha256": "3581972cbff5509cde6b92584c53fcbfbbacf7315ea2c2744bfb8372ac6f5b0c",
+  "options_sha256": "b0d37ef0ea5b7dba0a17ce0e926be644e3f4318c6ef6279cb9374e9764997d67",
+  "probe_indices": [
+    0,
+    10,
+    20,
+    30,
+    40,
+    50,
+    60,
+    70,
+    80,
+    90,
+    100,
+    110,
+    120
+  ],
+  "per_joint": [
+    {
+      "joint": 0,
+      "checked": 36,
+      "retained": 12,
+      "rejections": [
+        {
+          "pair": [
+            "knee_0_moving_fork",
+            "frame_distal"
+          ],
+          "count": 22
+        },
+        {
+          "pair": [
+            "knee_0_moving_fork",
+            "pressure_carrier"
+          ],
+          "count": 2
+        }
+      ]
+    },
+    {
+      "joint": 1,
+      "checked": 16,
+      "retained": 12,
+      "rejections": [
+        {
+          "pair": [
+            "fold_0_fixed_fork",
+            "frame_thigh"
+          ],
+          "count": 4
+        }
+      ]
+    },
+    {
+      "joint": 2,
+      "checked": 2,
+      "retained": 2,
+      "rejections": []
+    }
+  ],
+  "complete_combinations_tried": 49,
+  "selection_found": true,
+  "physical_accepted": false
+}

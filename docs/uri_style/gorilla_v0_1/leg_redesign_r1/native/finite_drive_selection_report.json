@@ -1,0 +1,75 @@
+{
+  "scene_sha256": "2472ab88ed6e735407e05af6f7d83f662707a61a7fce03d4b4705ae43e1bce20",
+  "selector_sha256": "acb65653efd34d9dc682a96095d2b50b25ef734ea45cae56d0371517718c6f49",
+  "assembly_builder_sha256": "244d58532ec2621959b746bc675c220332297876f11d69da954ec8f634f20c89",
+  "options_sha256": "4b46a2611b9319929081bb3840fcce27a2d46945e40b2c4858407c8630110c57",
+  "probe_indices": [
+    0,
+    10,
+    20,
+    30,
+    40,
+    50,
+    60,
+    70,
+    80,
+    90,
+    100,
+    110,
+    120
+  ],
+  "per_joint": [
+    {
+      "joint": 0,
+      "checked": 39,
+      "retained": 12,
+      "rejections": [
+        {
+          "pair": [
+            "knee_0_moving_fork",
+            "pressure_carrier"
+          ],
+          "count": 8
+        },
+        {
+          "pair": [
+            "knee_0_moving_fork",
+            "frame_distal"
+          ],
+          "count": 19
+        }
+      ]
+    },
+    {
+      "joint": 1,
+      "checked": 6,
+      "retained": 4,
+      "rejections": [
+        {
+          "pair": [
+            "fold_0_fixed_fork",
+            "frame_thigh"
+          ],
+          "count": 2
+        }
+      ]
+    },
+    {
+      "joint": 2,
+      "checked": 6,
+      "retained": 5,
+      "rejections": [
+        {
+          "pair": [
+            "ankle_0_fixed_fork",
+            "frame_middle"
+          ],
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "complete_combinations_tried": 26,
+  "selection_found": true,
+  "physical_accepted": false
+}

@@ -1,0 +1,42 @@
+Use case: precise-object-edit
+Asset type: Gorilla V0.1 Rev P, front main-design concept art.
+Primary request: EDIT ONLY THE TOP CROWN AND ITS UPPER TRANSITION. The user says the current top is too flat and passive; make its protective form more forceful, assertive and aggressive while keeping sophisticated continuous compound curves. This is a local appearance revision, not a new robot.
+
+Input roles in order:
+1. EDIT TARGET / BODY AND COMPOSITION: Gorilla Rev O front drawing. Preserve its exact front camera, bilateral design, body scale, pose, cooling housings, shoulder shells, arms, simplified graspers, pelvis, three-link Z legs, extra intermediate fold joints, ankles, simple feet, colors, clean finish and background. Redesign only the flattened broad top crown and the upper third of its continuous front protector.
+2. GEOMETRY / UPPER ARMOR CHARACTER ONLY: gray industrial robot. Study its thick, forward-driving upper armor: a substantial convex crown with a forceful steep front return and taut narrowing flanks, giving one whole hard protective mass a clear direction. Translate that structural character into the original robot's elegant continuous surfaces. Do not import guns, launchers, leg geometry, dirt, military graphics, faceted plates or greebles.
+3. STYLE: URI headphones, fine technical ink and refined clean industrial assemblies only.
+4. STYLE: URI waterfront, luminous ivory/azure/saffron and ordered volumes only.
+5. STYLE: URI architecture, sophisticated continuous form and restrained fitted detail only.
+
+TOP SHAPE — THIS IS THE VISIBLE CHANGE:
+Replace the almost horizontal broad cap with a fuller, vertically stronger crown. Its center rises decisively relative to its lateral edges, with a broad integrated longitudinal convex camber running toward the front. The upper silhouette forms a purposeful rounded wedge: central summit, strong continuous downward sweep to each shoulder junction, and tight substantial curvature at the lateral returns. It should look like a thick protective prow pressing forward, not a wide flat roof. Give the top visibly more vertical depth and directional tension; avoid preserving the old shallow flattened arch.
+The central raised volume is PART OF THE ENTIRE SHELL, not a fin, crest, added bump or separate helmet. The shell remains an uninterrupted warm-ivory surface flowing into the existing front guard. In its upper front transition use a confident, steeply turning, smoothly blended brow surface with changing curvature; broad taut center, tighter flanks, and a controlled small edge radius. Resolve these as three-dimensional compound surfaces with clean continuous highlight bands. Aggression comes from mass, forward inclination and concentrated curvature, not cartoon eyebrows, spikes, geometric tessellation or an expression. Keep the existing lower protector length and centered saffron window.
+Maintain mirror symmetry across the central vertical plane. The summit, central longitudinal volume and front return align with the centered status window and pelvis. Left and right side transitions have matching outlines and material boundaries.
+
+PRESERVE THE ROBOT:
+Exact straight-on frontal illustration, no camera tilt or perspective rotation. Both shoulders and limbs remain matching pairs in the same neutral stance. No other regional redesign. Both legs retain hip -> thigh -> knee J1 -> middle link -> extra fold J2 -> short distal link -> ankle J3 -> foot, with separate joint gaps. Palms retain three broad fingers plus opposing thumb; low continuous forefeet and separate small heels stay simple.
+Frozen overall art envelope target remains H2.65m x maximum W2.586977m including arms x maximum D1.071836m. Rebalance the crown inside this overall scale, not a taller independent head. No modelling or engineering simulation deliverable.
+
+AVOID:
+Flat broad cap; passive shallow roof; simple spherical dome; concave crown, trough or saddle; blue top applique; arbitrary surface ribs; giant long nose; separate face, eyes, chin or neck; extra plates, horns or crest; weapons; dirt or scattered surface holes; new text or diagram.
+
+FINISH AND FRAMING:
+One complete robot on warm-white background, same generous framing as input 1. Preserve rich organized joints beneath immaculate broad shells, delicate crisp contours, luminous warm ivory, azure outer limb covers, restrained saffron and graphite/silver mechanics. Clear near-frontal light should show the stronger convex crown through coherent shading, not dramatic dark camouflage. No labels, insets, multiple figures or page decoration.
+
+
+URI / v4.1 — FUNCTIONAL RICHNESS, CLEAN ELEGANCE, CONTENT SEPARATION
+
+STYLE reference images control rendering language only: delicate technical contours, luminous blue/ivory/saffron color relationships, refined materials, smooth large forms and the hierarchy of detailed assemblies. The subject/design brief controls geometry, topology, component layout and function. Transfer visual language without transplanting the reference objects, their faces, silhouettes, reels, earpieces, branding, captions or page layouts into the new subject.
+
+A SURFACE_CLEANLINESS reference controls surface integrity, coherent seams and the absence of graphical noise only. A PROPORTION reference controls only explicitly approved body regions and coarse ratios. Keep these roles separate, even when they come from previous generated images. Preserve the user's required machine type and task action when developing its functional structure.
+
+Create a refined science-fiction illustration that is clean, elegant and richly constructed. Richness comes from complete, precisely fitted assemblies at meaningful scales: connected load-bearing parts, organized joints, layered covers, seals, hinges, tool interfaces, optical modules and service components appropriate to the subject. A detail belongs because it performs a function or completes a readable assembly. Use orderly groups and continuous contours so many parts remain individually intelligible.
+
+Maintain clean continuous painted surfaces and graceful large shapes around these assemblies. Cover surfaces contain intentional access-panel boundaries and grouped functional features. Fasteners appear at actual removable cover edges or structural connections, arranged coherently. Functional optical/service openings are small, bounded and correctly located. Rich detail does not require scattering circles, holes, black dots or tiny scratches over every plate. Eliminate arbitrary puncture patterns and decorative pseudo-engineering. Both physical dirt and nonfunctional graphical noise count as a dirty result.
+
+Draw fine crisp dark-blue-gray contours, restrained complete seam lines and controlled illustrated volume. Light reflects cleanly across smoothly maintained warm-white/ivory and powder/azure-blue enamel, clear glass, machined silver, rubber and cloth. Add confident but ordered saffron yellow-orange color accents. Keep dark areas inside real narrow recesses or clearly separated working components; complex areas must remain layered rather than merge into black scribble. Broad light/color planes remain readable at thumbnail scale and the fine assemblies reward close viewing. Favor airy clear light when the brief permits. Match a sophisticated ink-and-color concept illustration rather than an aged painting, plain icon or photograph.
+
+For designed objects/buildings, derive structure and functional detail from the task, then express them with compatible rounded shells, filleted boxes, cylinders and coherent integrated hardware. For people retain natural anatomy, identity and skin; supply fine hair, cloth folds, seams and relevant accessories. For animals/plants keep organic structure and refined natural detail; machinery appears only if requested. For scenes use clear perspective and broad sky/water/ground areas around richly described local structures. Exact forms, colors, weather and lighting follow explicit subject constraints.
+
+Paint is intact. Use no unrequested distress, grain overlay, chips, rust, random flecks, damage, logos or extra words. A clean design retains rich purposeful construction; a simplified blank toy also misses the target. Inspect separately for functional richness, surface integrity, visual order, source-object leakage and subject requirements.
